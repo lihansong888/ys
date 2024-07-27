@@ -84,7 +84,7 @@
       "key": "drpy_js_奇珍异兽",
       "name": "奇珍异兽[js]",
       "type": 3,
-      "api": "./lib/drpy2.min.js",
+      "api": "https://raw.githubusercontent.com/lihansong888/ys/main/drpy2.min.js",
       "ext": "https://raw.githubusercontent.com/lihansong888/ys/main/%E5%A5%87%E7%8F%8D%E5%BC%82%E5%85%BD.js"
     },
     
