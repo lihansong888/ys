@@ -1,6 +1,6 @@
 {
-    "spider": "https://link.jscdn.cn/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBb3d0QlVrR3NRUExsRFo2WmhrZDFDY0hENWpr.jar",
-    "wallpaper": "https://invalid.gq/IS8nrIwAOp7v1A",
+    "spider": "./main/candymuj3.jar",
+    "wallpaper": "https://picsum.photos/1280/720/?blur=2",
     "lives": [
         {
             "group": "redirect",
