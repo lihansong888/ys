@@ -7,7 +7,7 @@
                 {
                     "name": "live",
                     "urls": [
-                        "proxy://do=live&type=txt&ext=http://shuyuan.miaogongzi.net/shuyuan/1683376530.txt"
+                        "https://m3u.ibert.me/txt/fmml_ipv6.txt"
                     ]
                 }
             ]
