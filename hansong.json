@@ -71,6 +71,22 @@
       "api": "./lib/drpy2.min.js",
       "ext": "./lib/drpy.js"
     },
+
+{"key": "csp_Mp4Mov","name": "🧲磁力┃电影","type": 3,"api": "csp_Mp4Mov","searchable": 1,"ua": "okhttp/3.15","quickSearch": 1,"filterable": 1},
+
+{"key": "csp_New6v","name": "🧲磁力┃新6V","type": 3,"api": "csp_New6v","ua": "okhttp/3.15","searchable": 1,"quickSearch": 1,"filterable": 1,"ext":"https://www.xb6v.com"},
+
+{"key":"csp_KubaCL","name":"🧲磁力┃酷吧","type":3,"api":"csp_KubaCL","ua": "okhttp/3.15","searchable":1,"quickSearch":1,"filterable":1},
+
+{"key":"csp_MeijuMi","name":"🧲磁力┃美剧","type":3,"api":"csp_MeijuMi","ua": "okhttp/3.15","searchable":1,"quickSearch":1,"filterable":1},
+
+{"key":"csp_Xunlei8","name":"🧲磁力┃迅雷","type":3,"api":"csp_Xunlei8","ua": "okhttp/3.15","searchable":1,"quickSearch":1,"filterable":1},
+
+
+
+
+
+    
     {
       "key": "美少女",
       "name": "索尼影视",
