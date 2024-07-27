@@ -72,6 +72,15 @@
       "ext": "./lib/drpy.js"
     },
     {
+      "key": "美少女",
+      "name": "索尼影视",
+      "type": 0,
+      "api": "https://suoniapi.com/api.php/provide/vod/from/snm3u8/at/xml",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1
+    },
+    {
       "key": "drpy_js_奇珍异兽",
       "name": "奇珍异兽[js]",
       "type": 3,
