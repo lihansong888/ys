@@ -78,6 +78,16 @@
             ]
         },
         {
+      "key": "csp_Mp4Mov",
+      "name": "🧲Mp4电影",
+      "type": 3,
+      "api": "csp_Mp4Mov",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "ext": "https://www.padmp4.com"
+    },
+        {
             "key": "玉兔专场",
             "name": "玉兔采集",
             "type": 1,
