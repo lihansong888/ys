@@ -259,6 +259,7 @@ CETV-4,http://[2409:8087:1a0b:df::4020]:80/ottrrs.hl.chinamobile.com/PLTV/888888
 电视剧频道14,http://zby.xjqxz.top/dzzypd2/live.m3u8
 电视剧频道15,http://zby.xjqxz.top/dzzypd3/live.m3u8
 休闲频道_54278,#genre#
+IPX-235,https://s3.aaaaa.io/05fa7041a058d697a457547c6d19cc6a/05fa7041a058d697a457547c6d19cc6a.m3u8?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=009cd9b07b805621b20decfe747ea176%2F20240417%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20240417T090543Z&X-Amz-SignedHeaders=host&X-Amz-Expires=7200&X-Amz-Signature=fee1571649f121c91e06874a0b07c0c021bd82971a7fa306dddfb6bc9176ae23
 IPX-238,https://s3.aaaaa.io/51f12c91955ff0617f086a1ca57a3c8f/51f12c91955ff0617f086a1ca57a3c8f.m3u8?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=009cd9b07b805621b20decfe747ea176%2F20240417%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20240417T085401Z&X-Amz-SignedHeaders=host&X-Amz-Expires=7200&X-Amz-Signature=541e66700150c781a292c6504640c7879f0321beed5a602094cc2a186083dd20
 IPX-243,https://s3.aaaaa.io/0cd680bd568cc34e44a7eefcd4471d59/0cd680bd568cc34e44a7eefcd4471d59.m3u8?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=009cd9b07b805621b20decfe747ea176%2F20240417%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20240417T084809Z&X-Amz-SignedHeaders=host&X-Amz-Expires=7200&X-Amz-Signature=0fd5704add4423b6453817529abcd3cab72cbcce347b85b4304b34c42aa27bb0
 时光频道_54278,#genre#
