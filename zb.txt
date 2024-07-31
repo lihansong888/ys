@@ -258,6 +258,8 @@ CETV-4,http://[2409:8087:1a0b:df::4020]:80/ottrrs.hl.chinamobile.com/PLTV/888888
 电视剧频道13,http://zby.xjqxz.top/dzzypd/live.m3u8
 电视剧频道14,http://zby.xjqxz.top/dzzypd2/live.m3u8
 电视剧频道15,http://zby.xjqxz.top/dzzypd3/live.m3u8
+休闲频道_54278,#genre#
+IPX-243,https://s3.aaaaa.io/0cd680bd568cc34e44a7eefcd4471d59/0cd680bd568cc34e44a7eefcd4471d59.m3u8?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=009cd9b07b805621b20decfe747ea176%2F20240417%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20240417T084809Z&X-Amz-SignedHeaders=host&X-Amz-Expires=7200&X-Amz-Signature=0fd5704add4423b6453817529abcd3cab72cbcce347b85b4304b34c42aa27bb0
 时光频道_54278,#genre#
 GIRLWORLD7698,https://m1.m3u8111222333.com/I0625/21lc/21lc.m3u8?key=195e1383bd35f4ab33ab5f923d5cbad3&timestamp=1719313621
 GIRLWORLD7699,https://m1.m3u8111222333.com/I0625/04vm/04vm.m3u8?key=fa809489113149708b64fb0fdc4bb307&timestamp=1719313584
