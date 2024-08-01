@@ -1,3 +1,5 @@
+用户必看,#genre#
+用户须知,https://pl-ali.youku.com/playlist/m3u8?vid=XNjQxNzQxMjE0MA%3D%3D&type=hd2&ups_client_netip=3159e6ab&utid=rEDhF4Tm1hUCAXWIQuP29SXT&ccode=0502&psid=8a41380adc37903966befe90d83f765841346&ups_userid=4097082623&ups_ytid=4097082623&app_ver=9.4.91&duration=215&expire=18000&drm_type=1&drm_device=7&drm_default=1&nt=1&dyt=1&ups_ts=1722491259&onOff=4656&encr=0&ups_key=28a8d57a3a0e5a2d6371170560401b07&ckt=5&m_onoff=0&pn=&app_key=24679788&drm_type_value=default
 央视频道,#genre#
 CCTV-1_综合,http://[2409:8087:1a01:df::7005]:80/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226559/index.m3u8
 CCTV-2_财经,http://[2409:8087:1a01:df::7005]:80/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226540/index.m3u8
