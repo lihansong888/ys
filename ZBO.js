@@ -1,5 +1,5 @@
-用户必看,#genre#
-用户须知,https://photovideo-nj-hls.photo.qq.com/dis_kt_96dac5c42f73efd08a94b777f746deb5_1722553952/1074_0bc33sxmdcaaz4akeoncqrtdfxaeygaqa6ka.f300.m3u8
+用户须知,#genre#
+警告,https://dl-c-sz.drive.uc.cn/5tOYH4I9/3749440970/f470d01f5755478eb93424fe460fefd066afd916/66afd916d8818cd6f1b1440bb21b412c2d798bf7?auth_key=1722811212-34517-10800-a4bc8c8160248a8c37c4b6115f5aad66&sp=310&token=3-08917a23ee79367eab5e9dcfbd898751-3-2-310-3664_8b637d956d207931e23fb1f6308c1a6a-0-0-0-0-f6b4278593d1dec123f9209926143325&ud=8-N-1-0-1-N-10-N-0-2-N-N
 央视频道,#genre#
 CCTV-1_综合,http://[2409:8087:1a01:df::7005]:80/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226559/index.m3u8
 CCTV-2_财经,http://[2409:8087:1a01:df::7005]:80/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226540/index.m3u8
