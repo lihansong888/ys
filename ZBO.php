@@ -1,4 +1,5 @@
 用户须知,#genre#
+用户必读,https://gitee.com/lihansong86220952/ys/raw/master/%E5%8E%8B%E7%BC%A9_InShot_20240807_105804487_1722999552073.mp4
 警告,https://gitee.com/lihansong86220952/ys/raw/master/InShot_20240806_040828031.mp4
 央视频道,#genre#
 CCTV-1_综合,http://[2409:8087:1a01:df::7005]:80/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226559/index.m3u8
