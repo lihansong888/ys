@@ -27,25 +27,7 @@ CGTN俄语,https://0472.org/hls/cgtne.m3u8
 CGTN法语,https://0472.org/hls/cgtnf.m3u8
 CGTN西语,https://0472.org/hls/cgtnx.m3u8
 CGTN阿语,https://0472.org/hls/cgtna.m3u8
-CCTV-1_综合,http://iptvrr.sh.chinamobile.com:6060/cms001/ch00000090990000001022/index.m3u8
-CCTV-2_财经,http://iptvrr.sh.chinamobile.com:6060/cms001/ch00000090990000001220/index.m3u8
-CCTV-3_综艺,http://iptvrr.sh.chinamobile.com:6060/cms001/ch00000090990000001186/index.m3u8
-CCTV-4_中文国际,http://iptvrr.sh.chinamobile.com:6060/cms001/ch00000090990000001221/index.m3u8
-CCTV-5_体育,http://iptvrr.sh.chinamobile.com:6060/cms001/ch00000090990000001187/index.m3u8
-CCTV-6_电影,http://iptvrr.sh.chinamobile.com:6060/cms001/ch00000090990000001188/index.m3u8
-CCTV-7_国防军事,http://iptvrr.sh.chinamobile.com:6060/cms001/ch00000090990000001236/index.m3u8
-CCTV-8_电视剧,http://iptvrr.sh.chinamobile.com:6060/cms001/ch00000090990000001189/index.m3u8
-CCTV-9_纪录,http://iptvrr.sh.chinamobile.com:6060/cms001/ch00000090990000001237/index.m3u8
-CCTV-10_科教,http://iptvrr.sh.chinamobile.com:6060/cms001/ch00000090990000001238/index.m3u8
-CCTV-11_戏曲,http://iptvrr.sh.chinamobile.com:6060/cms001/ch00000090990000001309/index.m3u8
-CCTV-12_社会与法,http://iptvrr.sh.chinamobile.com:6060/cms001/ch00000090990000001239/index.m3u8
-CCTV-13_新闻,http://iptvrr.sh.chinamobile.com:6060/cms001/ch00000090990000001328/index.m3u8
-CCTV-14_少儿,http://iptvrr.sh.chinamobile.com:6060/cms001/ch00000090990000001240/index.m3u8
-CCTV-15_音乐,http://iptvrr.sh.chinamobile.com:6060/cms001/ch00000090990000001338/index.m3u8
-CCTV-16_奥林匹克,http://iptvrr.sh.chinamobile.com:6060/cms001/ch00000090990000001248/index.m3u8
-CCTV-17_农业农村,http://iptvrr.sh.chinamobile.com:6060/cms001/ch00000090990000001241/index.m3u8
-CCTV-16_奥林匹克_4K,http://iptvrr.sh.chinamobile.com:6060/cms001/ch00000090990000001258/index.m3u8
-CGTN英语,http://iptvrr.sh.chinamobile.com:6060/cms001/ch00000090990000001058/index.m3u8
+
 
 地方频道,#genre#
 安徽｜卫视,http://mywlkj.ddns.net:754/tv/qqcloud.php?id=24
