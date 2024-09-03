@@ -241,59 +241,9 @@ BesTV_𝟝「IPV6」,http://[2409:8087:5e08:24::17]:6610/000000001000/2000000002
 BesTV_𝟞「IPV6」,http://[2409:8087:5e08:24::17]:6610/000000001000/2000000002000000029/index.m3u8?stbId=3&livemode=1&HlsProfileId=&channel-id=hnbblive&Contentid=2000000002000000029&IASHttpSessionId=OTT19019320240419154124000281&yang-1989
 BesTV_𝟟「IPV6」,http://[2409:8087:5e08:24::17]:6610/000000001000/2000000002000000030/index.m3u8?stbId=3&livemode=1&HlsProfileId=&channel-id=hnbblive&Contentid=2000000002000000030&IASHttpSessionId=OTT19019320240419154124000281&yang-1989
 
-•游戏「赛事」,#genre#
-「B站」CS_2,http://live.iill.top/bilibili.php?id=21622811
-「B站」英雄联盟,http://live.iill.top/bilibili.php?id=6
-「虎牙」英雄联盟_𝟙,http://live.iill.top/huya.php?id=660000
-「虎牙」英雄联盟_𝟚,http://live.iill.top/huya.php?id=660001
-「斗鱼」英雄联盟_𝟙,http://live.iill.top/douyu.php?id=288016
-「斗鱼」英雄联盟_𝟚,http://live.iill.top/douyu.php?id=424559
-「B站」英雄联盟•手游,http://live.iill.top/bilibili.php?id=23138275
-「B站」王者荣耀_𝟙,http://live.iill.top/bilibili.php?id=55
-「B站」王者荣耀_𝟚,http://live.iill.top/bilibili.php?id=21654762
-「虎牙」王者荣耀_𝟙,http://live.iill.top/huya.php?id=660002
-「虎牙」王者荣耀_𝟚,http://live.iill.top/huya.php?id=660164
-「斗鱼」王者荣耀_𝟙,http://live.iill.top/douyu.php?id=1863767
-「斗鱼」王者荣耀_𝟚,http://live.iill.top/douyu.php?id=1984839
-「B站」绝地求生,http://live.iill.top/bilibili.php?id=98
-「虎牙」绝地求生_𝟙,http://live.iill.top/huya.php?id=660004
-「虎牙」绝地求生_𝟚,http://live.iill.top/huya.php?id=660005
-「斗鱼」绝地求生,http://live.iill.top/douyu.php?id=100
-「虎牙」和平精英,http://live.iill.top/huya.php?id=660006
-「斗鱼」和平精英,http://live.iill.top/douyu.php?id=999
-「虎牙」金铲铲之战,http://live.iill.top/huya.php?id=660579
-「斗鱼」金铲铲之战,http://live.iill.top/douyu.php?id=9715241
-「虎牙」DOTA2,http://live.iill.top/huya.php?id=660118
-「斗鱼」DOTA2,http://live.iill.top/douyu.php?id=3811559
-「斗鱼」云顶之弈,http://live.iill.top/douyu.php?id=522423
-「虎牙」永劫无间,http://live.iill.top/huya.php?id=660115
-「斗鱼」永劫无间,http://live.iill.top/huya.php?id=9662891
-「B站」使命召唤•手游,http://live.iill.top/bilibili.php?id=22741849
-「虎牙」使命召唤•手游,http://live.iill.top/huya.php?id=11718629
-「斗鱼」使命召唤•手游,http://live.iill.top/douyu.php?id=9223245
-「虎牙」穿越火线,http://live.iill.top/huya.php?id=660101
-「斗鱼」穿越火线_𝟙,http://live.iill.top/douyu.php?id=605964
-「斗鱼」穿越火线_𝟚,http://live.iill.top/douyu.php?id=5388537
-「虎牙」穿越火线•手游,http://live.iill.top/huya.php?id=660102
-「B站」第五人格,http://live.iill.top/bilibili.php?id=5555
-「虎牙」第五人格,http://live.iill.top/huya.php?id=idvesports
-「斗鱼」第五人格,http://live.iill.top/douyu.php?id=3226194
-「虎牙」逆战,http://live.iill.top/huya.php?id=nsl2021
-「B站」无畏契约,http://live.iill.top/bilibili.php?id=22908869
-「虎牙」无畏契约,http://live.iill.top/huya.php?id=660679
-「斗鱼」无畏契约,http://live.iill.top/douyu.php?id=4585645
-「斗鱼」原神,http://live.iill.top/douyu.php?id=10853239
-「B站」QQ飞车•手游,http://live.iill.top/bilibili.php?id=21743919
-「斗鱼」QQ飞车•手游,http://live.iill.top/douyu.php?id=5040227
-「斗鱼」梦幻西游·手游,http://live.iill.top/huya.php?id=9163712
-「斗鱼」街霸,http://live.iill.top/huya.php?id=11437
-「B站」JJ斗地主,http://live.iill.top/bilibili.php?id=22021983
-「斗鱼」JJ斗地主,http://live.iill.top/douyu.php?id=488743
-「斗鱼」我的世界,http://live.iill.top/douyu.php?id=738878
-「斗鱼」FIFA,http://live.iill.top/douyu.php?id=7692166
-「斗鱼」火影忍者,http://live.iill.top/douyu.php?id=1997723
-「斗鱼」跑跑卡丁车,http://live.iill.top/douyu.php?id=7722576
-「斗鱼」跑跑卡丁车•手游,http://live.iill.top/douyu.php?id=6672862
+
+
+
 
 •埋堆「轮播」,#genre#
 埋堆堆_𝟙,http://live.iill.top/huya.php?id=23740156
@@ -323,34 +273,7 @@ BesTV_𝟟「IPV6」,http://[2409:8087:5e08:24::17]:6610/000000001000/2000000002
 埋堆堆_𝟚𝟝,http://live.iill.top/huya.php?id=23734256
 埋堆堆_𝟚𝟞,http://live.iill.top/huya.php?id=23749083
 
-•影视「轮播」,#genre#
-音乐石榴「音乐」,http://live.iill.top/huya.php?id=17091681
-音乐速递「音乐」,http://live.iill.top/huya.php?id=19439762
-治愈•放松「音乐」,http://live.iill.top/huya.php?id=21241811
-阅读•学习「音乐」,http://live.iill.top/huya.php?id=21241813
-电视剧•1「解说」,http://live.iill.top/huya.php?id=21277391
-电视剧•2「解说」,http://live.iill.top/huya.php?id=25018873
-电影•1「解说」,http://live.iill.top/huya.php?id=20289754
-电影•2「解说」,http://live.iill.top/huya.php?id=24983280
-电影•3「解说」,http://live.iill.top/huya.php?id=24396428
-动漫•1「解说」,http://live.iill.top/huya.php?id=19757963
-恐怖电影「解说」,http://live.iill.top/huya.php?id=23419131
-漫威「解说」,http://live.iill.top/huya.php?id=17089779
-美剧「解说」,http://live.iill.top/huya.php?id=20488841
-七龙珠「解说」,http://live.iill.top/huya.php?id=25650806
-止戈电影「解说」,http://live.iill.top/huya.php?id=19863777
-挨饿德•1「其他」,http://live.iill.top/huya.php?id=20985858
-挨饿德•2「其他」,http://live.iill.top/huya.php?id=17693860
-互扇巴掌大赛「其他」,http://live.iill.top/huya.php?id=20072873
-荒野求生「其他」,http://live.iill.top/huya.php?id=593667
-野行者「其他」,http://live.iill.top/huya.php?id=20072663
-跳舞「其他」,http://live.iill.top/huya.php?id=24634408
-茶啊二中「动画」,http://live.iill.top/huya.php?id=11213191
-哆啦A梦「动漫」,http://live.iill.top/huya.php?id=11601963
-航海王「动漫」,http://live.iill.top/huya.php?id=16913382
-七龙珠「动漫」,http://live.iill.top/huya.php?id=11601966
-猫和老鼠「动漫」,http://live.iill.top/huya.php?id=11352879
-中华小当家「动漫」,http://live.iill.top/huya.php?id=11342413
+
 国货之光_54278,#genre#
 国产精品6685,https://t21.cdn2020.com/video/m3u8/2023/03/19/75a140fc/index.m3u8
 国产精品6686,https://t21.cdn2020.com/video/m3u8/2023/03/31/b5fdb393/index.m3u8
