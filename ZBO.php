@@ -354,6 +354,23 @@ BesTV_𝟟「IPV6」,http://[2409:8087:5e08:24::17]:6610/000000001000/2000000002
 
 
 
+港澳台,#genre#
+亚洲武侠,http://v2h.jdshipin.com/asia_action/asia_action.stream/chunklist.m3u8
+东森超视,rtmp://f13h.mine.nu/sat/tv331
+非凡新闻,rtmp://f13h.mine.nu/sat/tv581
+华视,rtmp://f13h.mine.nu/sat/tv111
+民视,rtmp://f13h.mine.nu/sat/tv051
+纬来精采,http://61.221.215.25:8800/hls/48/index.m3u8
+纬来日本,rtmp://f13h.mine.nu/sat/tv771
+纬来育乐,rtmp://f13h.mine.nu/sat/tv701
+纬来体育,rtmp://f13h.mine.nu/sat/tv771
+三立戏剧台,http://61.221.215.25:8800/hls/41/index.m3u8
+台视,rtmp://f13h.mine.nu/sat/tv071
+中视,rtmp://f13h.mine.nu/sat/tv091
+点掌财经,https://wsvideo.aniu.tv/live/aniu/playlist.m3u8
+
+
+
 
 国货之光_54278,#genre#
 国产精品6685,https://t21.cdn2020.com/video/m3u8/2023/03/19/75a140fc/index.m3u8
