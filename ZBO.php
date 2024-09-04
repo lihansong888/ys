@@ -542,7 +542,7 @@ TUSHYRAW4834,https://m1.m3u8111222333.com/I0526/28va/28va.m3u8?key=fbf28b449386d
 TUSHYRAW4835,https://m1.m3u8111222333.com/I0526/10cl/10cl.m3u8?key=fbe377831599ca55a8b88d71a073898e&timestamp=1717317520
 TUSHYRAW4836,https://m1.m3u8111222333.com/I0525/29rm/29rm.m3u8?key=92c5cd5f9238088ccccbcd216167f759&timestamp=1716609023
 TUSHYRAW4837,https://m1.m3u8111222333.com/I0525/24cl/24cl.m3u8?key=832b15e87073ad7cd8fa4d832b5554f8&timestamp=1716608977
-电视台直播_54278,#genre#
+彩虹直播_54278,#genre#
 高清直播1,http://live.mycamtv.com/teen.m3u8
 高清直播2,http://live.mycamtv.com/milf.m3u8
 高清直播3,http://live.mycamtv.com/young.m3u8
