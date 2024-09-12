@@ -206,6 +206,7 @@ CETV-4,http://[2409:8087:1a0b:df::4020]:80/ottrrs.hl.chinamobile.com/PLTV/888888
 电视剧频道7,http://zby.xjqxz.top/dzzypd3/live.m3u8
 
 港澳台直播,#genre#
+金马影院,http://pull.kktv8.com/livekktv/128600025.flv
 香港卫视,http://zhibo.hkstv.tv/livestream/mutfysrq/playlist.m3u8
 点掌财经,https://wsvideo.aniu.tv/live/aniu/playlist.m3u8
 ASTV亚洲卫视,https://play-hsbj.vzan.com/slowlive/821481626725612417/live.m3u8?zbid=2046370057&tpid=330913109&type=0
@@ -218,7 +219,7 @@ ASTV亚洲卫视,https://play-hsbj.vzan.com/slowlive/821481626725612417/live.m3u
 八大综合,http://61.221.215.25:8800/hls/56/index.m3u8
 中华娱乐,http://61.221.215.25:8800/hls/40/index.m3u8
 中天娱乐,http://61.221.215.25:8800/hls/47/index.m3u8
-金马影院,http://pull.kktv8.com/livekktv/128600025.flv
+
 AMC电影台,http://61.221.215.25:8800/hls/43/index.m3u8
 亚洲探索频道,http://61.221.215.25:8800/hls/50/index.m3u8
 香港33台,https://rthktv33-live.akamaized.net/hls/live/2101641/RTHKTV33/stream03/streamPlaylist.m3u8
