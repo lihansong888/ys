@@ -4,7 +4,7 @@
 
 
 
-休闲频道_54278,#genre#
+休闲频道,#genre#
 
 
 
@@ -152,7 +152,7 @@ STARS-079 小泉日向,https://s3.aaaaa.io/1196ffd56970b2dd38989b154fcfd918/1196
 HND-714 稻场流花,https://s3.aaaaa.io/4b692593985b46f990a58015fc4ca378/4b692593985b46f990a58015fc4ca378.m3u8?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=009cd9b07b805621b20decfe747ea176%2F20240517%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20240517T072107Z&X-Amz-SignedHeaders=host&X-Amz-Expires=7200&X-Amz-Signature=cd6a5d242aafd31a25d0010c17a82aeaf349861fabe15fa9aac9b1a9c44d3d9c
 ABP-867 野野浦暖,https://s3.aaaaa.io/0c88117c2a2b681047310522af55c7ff/0c88117c2a2b681047310522af55c7ff.m3u8?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=009cd9b07b805621b20decfe747ea176%2F20240517%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20240517T072033Z&X-Amz-SignedHeaders=host&X-Amz-Expires=7200&X-Amz-Signature=e043aca1b0afa2f70db261c4f85382ed593133f15920c86ffa2e410d7a72a7dc
 
-休闲频道2_54278,#genre#
+休闲频道2,#genre#
 ATID-362 织笠留美,https://s3.aaaaa.io/28241d830a4082c173758ee77c664f34/28241d830a4082c173758ee77c664f34.m3u8?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=009cd9b07b805621b20decfe747ea176%2F20240517%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20240517T072014Z&X-Amz-SignedHeaders=host&X-Amz-Expires=7200&X-Amz-Signature=8a5b32b7aa1dbef09ac3cb2bc8fd7e500dab2aa09ca0aedfaf13bea37ed390cf
 JUY-902 有坂深雪,https://s3.aaaaa.io/335d22af5735bbcf630a47e13c908e7f/335d22af5735bbcf630a47e13c908e7f.m3u8?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=009cd9b07b805621b20decfe747ea176%2F20240517%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20240517T071908Z&X-Amz-SignedHeaders=host&X-Amz-Expires=7200&X-Amz-Signature=3a9fa4077bf319a88548bdab858d1f7b600e742365a53bab45f55dea70b6acc4
 MISM-088 樱咲姬莉 篠田优,https://s3.aaaaa.io/4e4cf16e5e7c504fa2fab7fa789ae020/4e4cf16e5e7c504fa2fab7fa789ae020.m3u8?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=009cd9b07b805621b20decfe747ea176%2F20240517%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20240517T071750Z&X-Amz-SignedHeaders=host&X-Amz-Expires=7200&X-Amz-Signature=eac8e4127e55a35eabc664613d0d4c8a7c10b9165561b07e6955e985f34fc992
@@ -490,7 +490,7 @@ MANE-038 彩叶美织,https://s3.aaaaa.io/80d74c9100cbf96caf813af24874e26b/80d74
 SW-640 姐妹,https://s3.aaaaa.io/5343dd5194c52353fecd1f6f8a3aa4c7/5343dd5194c52353fecd1f6f8a3aa4c7.m3u8?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=009cd9b07b805621b20decfe747ea176%2F20240502%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20240502T143358Z&X-Amz-SignedHeaders=host&X-Amz-Expires=7200&X-Amz-Signature=69df3cd2460c6203edad017d234b068d0e43bf9337ae60c8094fa1b1f54930d2
 
 
-休闲频道3_54278,#genre#
+休闲频道3,#genre#
 
 
 MIAA-109 椎名空,https://s3.aaaaa.io/fec0f076d9f2a6ed0c94f4abd5a090dd/fec0f076d9f2a6ed0c94f4abd5a090dd.m3u8?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=009cd9b07b805621b20decfe747ea176%2F20240502%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20240502T143325Z&X-Amz-SignedHeaders=host&X-Amz-Expires=7200&X-Amz-Signature=5d25c72408c7fa62e5a5571079912edb7fd62650c3b15fb27c42a69ad3553873
@@ -935,7 +935,7 @@ MIAA-045 交换追击,https://s3.aaaaa.io/783e831dc1d2fcde65dd89882d5497f5/783e8
 PGD​​-833 波多野结衣,https://s3.aaaaa.io/b67d49a55ef3037d21b23ba442ab56a1/b67d49a55ef3037d21b23ba442ab56a1.m3u8?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=009cd9b07b805621b20decfe747ea176%2F20240424%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20240424T073502Z&X-Amz-SignedHeaders=host&X-Amz-Expires=7200&X-Amz-Signature=8162673c06291ef02534486727981ef9070c4d3c916419730377f51c3b82ccf5
 SSNI-192 明日花绮罗,https://s3.aaaaa.io/4c5f9a35bf1e167afe258225addfb157/4c5f9a35bf1e167afe258225addfb157.m3u8?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=009cd9b07b805621b20decfe747ea176%2F20240424%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20240424T073431Z&X-Amz-SignedHeaders=host&X-Amz-Expires=7200&X-Amz-Signature=a558a3c72e657563366ac869481309e756696facd617fa705807124187692a27
 SSNI-199 吉高宁宁,https://s3.aaaaa.io/8c21e9baa939e03b0400067d51ed1a98/8c21e9baa939e03b0400067d51ed1a98.m3u8?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=009cd9b07b805621b20decfe747ea176%2F20240424%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20240424T073354Z&X-Amz-SignedHeaders=host&X-Amz-Expires=7200&X-Amz-Signature=d0ee06f0f149a7f4ae3cae41bf054e91dd975fb21e26ebb1655ade30125d79e2
-休闲频道4_54278,#genre#
+休闲频道4,#genre#
 SSNI-443 奥田咲,https://s3.aaaaa.io/bb26c15fc3a43b4a292394c68af954de/bb26c15fc3a43b4a292394c68af954de.m3u8?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=009cd9b07b805621b20decfe747ea176%2F20240424%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20240424T073205Z&X-Amz-SignedHeaders=host&X-Amz-Expires=7200&X-Amz-Signature=4f0e42a95da6fe092b96a7a8cb457b5bd95026f8b80f7e7bd5220b1c0d26dd16
 WANZ-853 有坂深雪,https://s3.aaaaa.io/3878ef6a80f32d4fd577501b4f1f2a5f/3878ef6a80f32d4fd577501b4f1f2a5f.m3u8?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=009cd9b07b805621b20decfe747ea176%2F20240424%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20240424T073128Z&X-Amz-SignedHeaders=host&X-Amz-Expires=7200&X-Amz-Signature=aacb82ebedaf5a8d95737757748661ae23c8498a18671a9fe6a10329f0107b17
 SSNI-101 三上悠亚,https://s3.aaaaa.io/98dc96da9903ca4121e41fd9fd8ec9e7/98dc96da9903ca4121e41fd9fd8ec9e7.m3u8?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=009cd9b07b805621b20decfe747ea176%2F20240424%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20240424T073055Z&X-Amz-SignedHeaders=host&X-Amz-Expires=7200&X-Amz-Signature=69c61897020c916723fec1c33712d0fb0bc721087275b6ab39774a0080c8e242
@@ -1374,7 +1374,7 @@ IPX-238,https://s3.aaaaa.io/51f12c91955ff0617f086a1ca57a3c8f/51f12c91955ff0617f0
 IPX-243,https://s3.aaaaa.io/0cd680bd568cc34e44a7eefcd4471d59/0cd680bd568cc34e44a7eefcd4471d59.m3u8?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=009cd9b07b805621b20decfe747ea176%2F20240417%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20240417T084809Z&X-Amz-SignedHeaders=host&X-Amz-Expires=7200&X-Amz-Signature=0fd5704add4423b6453817529abcd3cab72cbcce347b85b4304b34c42aa27bb0
 SSNI-269 吉泽明步,https://s3.aaaaa.io/bc4006f7eed921fd17a8a1196a37e9de/bc4006f7eed921fd17a8a1196a37e9de.m3u8?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=009cd9b07b805621b20decfe747ea176%2F20240424%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20240424T073248Z&X-Amz-SignedHeaders=host&X-Amz-Expires=7200&X-Amz-Signature=b8e27c23f9ae83fbfaaed6060b1fbdbf99df6ea37fbca28637560bb34069527a
 
-时光频道_54278,#genre#
+时光频道,#genre#
 
 
 SEXART-NO712,https://m1.m3u8111222333.com/H1027/11ld/11ld.m3u8?key=36ce881feb98fb968fd4a526c77978c7&timestamp=1713925903
@@ -1888,7 +1888,7 @@ CLUBSEXGIRL9795,https://m1.m3u8111222333.com/G1210/01sv/01sv.m3u8?key=41c1c44204
 CLUBSEXGIRL9796,https://m1.m3u8111222333.com/G1209/21ll/21ll.m3u8?key=b682f805945b8103a62b95cf10f06f6c×tamp=1708364268
 CLUBSEXGIRL9797,https://m1.m3u8111222333.com/G1209/23sk/23sk.m3u8?key=69a8bfa1a84eea4cd274e984485a452a×tamp=1708364233
 CLUBSEXGIRL9798,https://m1.m3u8111222333.com/G1209/14vl/14vl.m3u8?key=04ae54707001fbdcbeba79088855ee9c×tamp=1708364204
-时光频道2_54278,#genre#
+时光频道2,#genre#
 
 YOUJIZZ7267,https://m1.m3u8111222333.com/G1208/20ot/20ot.m3u8?key=4963cc8500427581a8ddf6c7703d71b7&timestamp=1708243360
 YOUJIZZ7268,https://m1.m3u8111222333.com/G1208/14km/14km.m3u8?key=69a884d736f91854b78b66f08636e50c&timestamp=1708243327
@@ -2463,7 +2463,7 @@ MOODLLY487,https://m1.m3u8111222333.com/G0301/29kc/29kc.m3u8?key=c8fb184d0a4aad6
 
 
 
-时光频道3_54278,#genre#
+时光频道3,#genre#
 
 
 
@@ -2605,7 +2605,7 @@ HUANGSECANGKU-69,https://z100.cdn2020.com/video/m3u8/2019/08/16/42558909/index.m
 HUANGSECANGKU-70,https://z100.cdn2020.com/video/m3u8/2019/08/16/424a95ec/index.m3u8
 
 
-国货之光_54278,#genre#
+国货之光,#genre#
 国产精品6834,https://t21.cdn2020.com/video/m3u8/2023/02/21/e7902e21/index.m3u8
 国产精品6835,https://t21.cdn2020.com/video/m3u8/2023/02/23/99428d10/index.m3u8
 国产精品6836,https://t21.cdn2020.com/video/m3u8/2023/02/26/9fa6b32e/index.m3u8
@@ -2676,7 +2676,7 @@ HUANGSECANGKU-70,https://z100.cdn2020.com/video/m3u8/2019/08/16/424a95ec/index.m
 
 
 
-国货之光2_54278,#genre#
+国货之光2,#genre#
 
 
 
@@ -3033,7 +3033,7 @@ HUANGSECANGKU-70,https://z100.cdn2020.com/video/m3u8/2019/08/16/424a95ec/index.m
 国产精品7232,https://t21.cdn2020.com/video/m3u8/2023/03/24/0bb402bd/index.m3u8
 国产精品7233,https://t21.cdn2020.com/video/m3u8/2023/04/24/fb45a013/index.m3u8
 
-国货之光3_54278,#genre#
+国货之光3,#genre#
 
 国产精品7234,https://t21.cdn2020.com/video/m3u8/2023/04/11/18fc4940/index.m3u8
 国产精品7235,https://t21.cdn2020.com/video/m3u8/2023/01/19/07d7fb80/index.m3u8
@@ -3451,7 +3451,7 @@ HUANGSECANGKU-70,https://z100.cdn2020.com/video/m3u8/2019/08/16/424a95ec/index.m
 
 
 
-彩虹直播_54278,#genre#
+彩虹直播,#genre#
 高清直播1,http://live.mycamtv.com/teen.m3u8
 高清直播2,http://live.mycamtv.com/milf.m3u8
 高清直播3,http://live.mycamtv.com/young.m3u8
