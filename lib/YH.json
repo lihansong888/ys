@@ -5,3 +5,4 @@
 "epg": "http://epg.112114.xyz/?ch={name}&date={date}"}],
 "sites":[
 {"key":"LBZY","name":"LBZY","type":1,"api":"https://lbapi9.com/api.php/provide/vod/","searchable":0,"quickSearch":0}]}
+
