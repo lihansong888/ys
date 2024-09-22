@@ -1,0 +1,7 @@
+{"lives": [
+{"name": "DS",
+"type": 0,
+"url": "https://p.ntnas.top/https://raw.githubusercontent.com/c120487/00/main/00live05151.txt",
+"epg": "http://epg.112114.xyz/?ch={name}&date={date}"}],
+"sites":[
+{"key":"LBZY","name":"LBZY","type":1,"api":"https://lbapi9.com/api.php/provide/vod/","searchable":0,"quickSearch":0}]}
