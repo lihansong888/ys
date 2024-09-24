@@ -2280,8 +2280,7 @@
 
   
 "sites":[
-{
-            "key": "高清4K影视CR版", "name": "高清4K影视CR版", "type": 0, "api": "https://dadiapi.com/api.php", "searchable": 1, "quickSearch": 1 }]
+{"key":"LBZY","name":"高清4K影视CR版","type":1,"api":"https://lbapi9.com/api.php/provide/vod/","searchable":0,"quickSearch":0}]
 
 
 
