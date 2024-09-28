@@ -287,7 +287,7 @@ Fox新闻台,https://fox-foxnewsnow-samsungus.amagi.tv/playlist720p.m3u8
 TVB星河,http://php.jdshipin.com:8880/smt.php?id=Xinhe
 
 
-休闲频道,#genre#
+休闲频道_54278,#genre#
 
 JUY-963 神宫寺奈绪,https://s3.aaaaa.io/37af6f6bc05475da56a1fb3d295ad5cc/37af6f6bc05475da56a1fb3d295ad5cc.m3u8?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=009cd9b07b805621b20decfe747ea176%2F20240602%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20240602T082927Z&X-Amz-SignedHeaders=host&X-Amz-Expires=7200&X-Amz-Signature=be7b1413339b21bfcb00e5fd3a048fbe3a7f978b9fc5406101c5d5077fdd3ce4
 DAKH-004 妃月留衣,https://s3.aaaaa.io/b696534fab53a85fef7043a62af9b9d5/b696534fab53a85fef7043a62af9b9d5.m3u8?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=009cd9b07b805621b20decfe747ea176%2F20240602%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20240602T082854Z&X-Amz-SignedHeaders=host&X-Amz-Expires=7200&X-Amz-Signature=eb6ba6f5b4b4f28bc73d305cb10868da6b2476d14799d7c173dca1b10ddaf734
@@ -349,7 +349,7 @@ BF-587 今井夏帆,https://s3.aaaaa.io/179759393d553ec4c86a40e20933bf33/1797593
 
 
 
-时光频道,#genre#
+时光频道_54278,#genre#
 
 
 SEXART-NO712,https://m1.m3u8111222333.com/H1027/11ld/11ld.m3u8?key=36ce881feb98fb968fd4a526c77978c7&timestamp=1713925903
@@ -446,7 +446,7 @@ SEXART-NO802,https://m1.m3u8111222333.com/H0830/02dw/02dw.m3u8?key=aa187bbf7d047
 
 
 
-国货之光,#genre#
+国货之光_54278,#genre#
 
 
 
@@ -559,7 +559,7 @@ SEXART-NO802,https://m1.m3u8111222333.com/H0830/02dw/02dw.m3u8?key=aa187bbf7d047
 
 
 
-彩虹直播,#genre#
+彩虹直播_54278,#genre#
 高清直播1,http://live.mycamtv.com/teen.m3u8
 高清直播2,http://live.mycamtv.com/milf.m3u8
 高清直播3,http://live.mycamtv.com/young.m3u8
