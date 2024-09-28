@@ -180,19 +180,13 @@ NewTV_精品体育「IPV6」,http://[2409:8087:1a01:df::7005]/ottrrs.hl.chinamob
 NewTV_精品大剧「IPV6」,http://[2409:8087:1a01:df::7005]/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225670/index.m3u8
 NewTV_精品记录「IPV6」,http://[2409:8087:1a01:df::7005]/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225672/index.m3u8
 
-•体育「IPV6」,#genre#
+咪咕直播,#genre#
 咪咕运动「IPV6」,http://[2409:8087:1a01:df::7005]/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226508/index.m3u8
 咪咕直播_𝟙「IPV6」,http://[2409:8087:1a01:df::404d]/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226124/index.m3u8
 咪咕直播_𝟚「IPV6」,http://[2409:8087:1a01:df::403b]/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226147/index.m3u8
 咪咕直播_𝟛「IPV6」,http://[2409:8087:1a01:df::4033]/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226398/index.m3u8
 咪咕直播_𝟜「IPV6」,http://[2409:8087:1a01:df::4046]/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226472/index.m3u8
 BesTV_𝟙「IPV6」,http://[2409:8087:5e08:24::12]:6610/000000001000/2000000002000000024/index.m3u8?stbId=3&livemode=1&HlsProfileId=&channel-id=hnbblive&Contentid=2000000002000000024&IASHttpSessionId=OTT19019320240419154124000281&yang-1989
-BesTV_𝟚「IPV6」,http://[2409:8087:5e08:24::12]:6610/000000001000/2000000002000000025/index.m3u8?stbId=3&livemode=1&HlsProfileId=&channel-id=hnbblive&Contentid=2000000002000000025&IASHttpSessionId=OTT19019320240419154124000281&yang-1989
-BesTV_𝟛「IPV6」,http://[2409:8087:5e08:24::12]:6610/000000001000/2000000002000000026/index.m3u8?stbId=3&livemode=1&HlsProfileId=&channel-id=hnbblive&Contentid=2000000002000000026&IASHttpSessionId=OTT19019320240419154124000281&yang-1989
-BesTV_𝟜「IPV6」,http://[2409:8087:5e08:24::12]:6610/000000001000/2000000002000000027/index.m3u8?stbId=3&livemode=1&HlsProfileId=&channel-id=hnbblive&Contentid=2000000002000000027&IASHttpSessionId=OTT19019320240419154124000281&yang-1989
-BesTV_𝟝「IPV6」,http://[2409:8087:5e08:24::12]:6610/000000001000/2000000002000000028/index.m3u8?stbId=3&livemode=1&HlsProfileId=&channel-id=hnbblive&Contentid=2000000002000000028&IASHttpSessionId=OTT19019320240419154124000281&yang-1989
-BesTV_𝟞「IPV6」,http://[2409:8087:5e08:24::12]:6610/000000001000/2000000002000000029/index.m3u8?stbId=3&livemode=1&HlsProfileId=&channel-id=hnbblive&Contentid=2000000002000000029&IASHttpSessionId=OTT19019320240419154124000281&yang-1989
-BesTV_𝟟「IPV6」,http://[2409:8087:5e08:24::12]:6610/000000001000/2000000002000000030/index.m3u8?stbId=3&livemode=1&HlsProfileId=&channel-id=hnbblive&Contentid=2000000002000000030&IASHttpSessionId=OTT19019320240419154124000281&yang-1989
 
 
 
