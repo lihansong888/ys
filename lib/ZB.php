@@ -285,59 +285,6 @@ TVB星河,http://php.jdshipin.com:8880/smt.php?id=Xinhe
 
 
 
-电影轮播,#genre#
-周星驰电影,http://live.iill.top/huya.php?id=11342412
-林正英电影,http://live.iill.top/huya.php?id=11342421
-刘德华电影,http://zzy789.xyz/douyu1.php?id=2516864
-古天乐电影,http://live.iill.top/huya.php?id=29982675
-成龙电影,http://zzy789.xyz/douyu1.php?id=3379942
-李连杰电影,http://live.iill.top/huya.php?id=11342390
-甄子丹电影,http://live.iill.top/huya.php?id=11352935
-狄仁杰系列,http://live.iill.top/huya.php?id=30080229
-沈腾电影,http://live.iill.top/huya.php?id=11601968
-黄渤电影,http://cfss.cc/cdn/hy/11352876.flv
-强森电影,http://cfss.cc/cdn/hy/21059581.flv
-王晶电影,http://live.iill.top/huya.php?id=11602058
-金庸武侠,http://live.iill.top/huya.php?id=11342435
-功夫电影,http://live.iill.top/huya.php?id=11352941
-贺岁电影,http://live.iill.top/huya.php?id=11601986
-
-
-
-电视剧轮播,#genre#
-延禧攻略,http://live.iill.top/huya.php?id=26355864
-新三国,http://live.iill.top/huya.php?id=11352944
-新水浒传,http://live.iill.top/huya.php?id=11342384
-少年包青天第一部,http://live.iill.top/yy.php?id=1356043677
-神探狄仁杰第三部,http://live.iill.top/huya.php?id=11342425
-爱情公寓,http://live.iill.top/huya.php?id=11336726
-倚天屠龙记,http://live.iill.top/huya.php?id=11342403
-铁齿铜牙纪晓岚,http://live.iill.top/huya.php?id=11342396
-亮剑,http://live.iill.top/huya.php?id=30080238
-士兵突击,http://live.iill.top/huya.php?id=11342430
-康熙王朝,http://live.iill.top/huya.php?id=11352940
-鬼吹灯之精绝古城,http://live.iill.top/huya.php?id=11352871
-鬼吹灯之怒晴湘西,http://live.iill.top/huya.php?id=11602075
-鬼吹灯之龙岭迷窟,http://live.iill.top/huya.php?id=29465863
-鬼吹灯之云南虫谷,http://live.iill.top/huya.php?id=11352898
-神探狄仁杰轮播,http://live.iill.top/douyu.php?id=3395113
-少年包青天轮播,http://live.iill.top/yy.php?id=487126
-笑傲江湖,http://live.iill.top/huya.php?id=26355790
-伪装者,http://live.iill.top/yy.php?id=1354936244
-天龙八部,http://live.iill.top/douyu.php?id=12051584
-西游记后传,http://live.iill.top/yy.php?id=1353392400
-隋唐英雄传,http://live.iill.top/yy.php?id=1352475619
-仙剑奇侠传,http://live.iill.top/yy.php?id=1382749903
-仙剑奇侠传3,http://live.iill.top/douyu.php?id=12098568
-西游记续集,http://live.iill.top/douyu.php?id=3113309
-神雕侠侣,http://live.iill.top/huya.php?id=11352964
-我是特种兵,http://live.iill.top/yy.php?id=442410
-我是特种兵之利刃出鞘,http://live.iill.top/yy.php?id=18600
-狂飙,http://live.iill.top/yy.php?id=17981
-雪豹,http://live.iill.top/huya.php?id=29580970
-陈情令,http://live.iill.top/huya.php?id=29465862
-
-
 
 
 
