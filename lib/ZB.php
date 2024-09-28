@@ -282,6 +282,28 @@ Fox新闻台,https://fox-foxnewsnow-samsungus.amagi.tv/playlist720p.m3u8
 TVB星河,http://php.jdshipin.com:8880/smt.php?id=Xinhe
 
 
+
+
+
+电影轮播,#genre#
+周星驰电影,http://live.iill.top/huya.php?id=11342412
+林正英电影,http://live.iill.top/huya.php?id=11342421
+刘德华电影,http://zzy789.xyz/douyu1.php?id=2516864
+古天乐电影,http://live.iill.top/huya.php?id=29982675
+成龙电影,http://zzy789.xyz/douyu1.php?id=3379942
+李连杰电影,http://live.iill.top/huya.php?id=11342390
+甄子丹电影,http://live.iill.top/huya.php?id=11352935
+狄仁杰系列,http://live.iill.top/huya.php?id=30080229
+沈腾电影,http://live.iill.top/huya.php?id=11601968
+黄渤电影,http://cfss.cc/cdn/hy/11352876.flv
+强森电影,http://cfss.cc/cdn/hy/21059581.flv
+王晶电影,http://live.iill.top/huya.php?id=11602058
+金庸武侠,http://live.iill.top/huya.php?id=11342435
+功夫电影,http://live.iill.top/huya.php?id=11352941
+贺岁电影,http://live.iill.top/huya.php?id=11601986
+
+
+
 电视剧轮播,#genre#
 延禧攻略,http://live.iill.top/huya.php?id=26355864
 新三国,http://live.iill.top/huya.php?id=11352944
