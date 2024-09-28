@@ -1,3 +1,7 @@
+FGFFG频道,#genre#
+FGFG,http://programs.feishazb.cn/programs/20240928/lb-mhls
+SDDFDF,http://programs.feishazb.cn/programs/20240928/lb-zhz
+
 央视频道,#genre#
 CCTV-1_综合,http://[2409:8087:1a01:df::7005]:80/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226559/index.m3u8
 CCTV-2_财经,http://[2409:8087:1a01:df::7005]:80/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226540/index.m3u8
