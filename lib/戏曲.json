@@ -3360,7 +3360,7 @@
 
   
 "sites":[
-{"key":"LBZY","name":"高清4K影视CR版","type":1,"api":"https://api.apilyzy.com/api.php/provide/vod/?ac=list","searchable":0,"quickSearch":0}]
+{"key":"LBZY","name":"高清4K影视CR版","type":1,"api":"","searchable":0,"quickSearch":0}]
 
 
 
