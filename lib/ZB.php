@@ -1400,6 +1400,20 @@ Discovery,https://ali.hlspull.yximgs.com/live/4bd9ea5cc622d45f92a7c40716b8c5ff.f
 
 HDO HD,https://ali.hlspull.yximgs.com/live/b1c1c74bd8ab1ef88f245253c0e8c430.flv
 
+CNN新闻,https://ali.hlspull.yximgs.com/live/968a9b14d6890b7bd711342b74e2ae66.flv
+
+东森超视,https://ali.hlspull.yximgs.com/live/72f9ed96d372629c2910309834a0b51f.flv
+
+MOMO综合台,https://ali.hlspull.yximgs.com/live/85f923b4084604b838988c02e275bc88.flv
+
+大爱二台,https://pulltv2.wanfudaluye.com/live/tv2.m3u8
+
+大爱一台,https://pulltv1.wanfudaluye.com/live/tv1.m3u8
+
+爱尔达体育4台,https://ali.hlspull.yximgs.com/live/9344941daaca4a4867a5af48b97ff747.flv
+
+爱尔达体育3台,https://ali.hlspull.yximgs.com/live/8f7762ebf363ac0ab1f9047d597307eb.flv
+
 
 
 
