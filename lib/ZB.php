@@ -1394,6 +1394,20 @@ VIUTV,http://php.jdshipin.com:8880/TVOD/iptv.php?id=viutv
 Astro AOD,http://php.jdshipin.com:8880/TVOD/iptv.php?id=aod
 
 
+
+
+Discovery,https://ali.hlspull.yximgs.com/live/4bd9ea5cc622d45f92a7c40716b8c5ff.flv
+
+HDO HD,https://ali.hlspull.yximgs.com/live/b1c1c74bd8ab1ef88f245253c0e8c430.flv
+
+
+
+
+
+
+
+
+
 音乐欣赏2,http://61.221.215.25:8800/hls/58/index.m3u8
 亚洲新闻台,https://d2e1asnsl7br7b.cloudfront.net/7782e205e72f43aeb4a48ec97f66ebbe/index_5.m3u8
 东森超视,https://epg.pw/stream/9ee97d4efee35aa017c6d4ec03d219b96a4e63c74011ecc833877a100cf75d36.m3u8
