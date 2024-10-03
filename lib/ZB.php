@@ -1410,7 +1410,7 @@ MOMO综合台,https://ali.hlspull.yximgs.com/live/85f923b4084604b838988c02e275bc
 
 大爱一台,https://pulltv1.wanfudaluye.com/live/tv1.m3u8
 
-爱尔达体育4台,https://ali.hlspull.yximgs.com/live/9344941daaca4a4867a5af48b97ff747.flv
+爱尔达体育4台,https://ali.hlspull.yximgs.com/live/e2b2bf0e672172c02b2a071827d902bb.flv
 
 爱尔达体育3台,https://ali.hlspull.yximgs.com/live/8f7762ebf363ac0ab1f9047d597307eb.flv
 
