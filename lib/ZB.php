@@ -1414,6 +1414,9 @@ MOMO综合台,https://ali.hlspull.yximgs.com/live/85f923b4084604b838988c02e275bc
 
 爱尔达体育3台,https://ali.hlspull.yximgs.com/live/8f7762ebf363ac0ab1f9047d597307eb.flv
 
+爱尔达体育2台,https://ali.hlspull.yximgs.com/live/f985133822b55b5e58379b823fa14e1e.flv
+
+爱尔达体育1台,https://ali.hlspull.yximgs.com/live/e2abacdd5140fdf906bfe6deaecc2b73.flv
 
 
 
