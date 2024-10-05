@@ -1,4 +1,4 @@
-//double:true,
+/*//double:true,
     //推荐:'.list-ul .list-li;.list-name&&Text;*;.module-slide-author&&Text;*',
     //一级:'.book-ol&&li;h4&&Text;img&&data-original;.book-meta&&Text;a&&href',
     //二级:{
@@ -52,7 +52,7 @@
                 //"lists": ".module-play-list:eq(#id) a"
             //},
             //搜索: 'body .module-item;.module-card-item-title&&Text;.lazyload&&data-original;.module-item-note&&Text;a&&href;.module-info-item-content&&Text',
-        //},
+        //},*/
 
 
 
