@@ -1348,6 +1348,10 @@ NewTV_精品记录「IPV6」,http://[2409:8087:1a01:df::7005]/ottrrs.hl.chinamob
 电视剧频道12,http://zby.xjqxz.top/dzzypd3/live.m3u8
 
 
+影视轮播频道,#genre#
+周星驰电影系列,http://zby.xjqxz.top/live12/live.m3u8
+成龙电影系列,http://zby.xjqxz.top/cldy/live.m3u8
+
 
 港澳台直播,#genre#
 金马影院,http://pull.kktv8.com/livekktv/128600025.flv
