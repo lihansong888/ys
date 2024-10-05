@@ -1291,7 +1291,7 @@ CETV-4,http://[2409:8087:1a0b:df::4020]:80/ottrrs.hl.chinamobile.com/PLTV/888888
 乌兰察布新闻,https://livestream-bt.nmtv.cn/nmtv/2354general.m3u8?txSecret=8bca81250fd7df3b633efcbb6150b0c6&txTime=771E8800
 
 
-•NewTV「IPV6」,#genre#
+NewTV「IPV6」,#genre#
 NewTV_哒啵赛事「IPV6」,http://[2409:8087:1a01:df::7005]/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225675/index.m3u8
 NewTV_黑莓动画「IPV6」,http://[2409:8087:1a01:df::7005]/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225662/index.m3u8
 NewTV_黑莓电影「IPV6」,http://[2409:8087:1a01:df::7005]/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225743/index.m3u8
