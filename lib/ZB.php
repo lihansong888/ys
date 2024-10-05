@@ -1396,33 +1396,9 @@ Astro AOD,http://php.jdshipin.com:8880/TVOD/iptv.php?id=aod
 
 
 
-Discovery,https://ali.hlspull.yximgs.com/live/4bd9ea5cc622d45f92a7c40716b8c5ff.flv
-
-HDO HD,https://ali.hlspull.yximgs.com/live/b1c1c74bd8ab1ef88f245253c0e8c430.flv
-
-CNN新闻,https://ali.hlspull.yximgs.com/live/968a9b14d6890b7bd711342b74e2ae66.flv
-
-东森超视,https://ali.hlspull.yximgs.com/live/72f9ed96d372629c2910309834a0b51f.flv
-
-MOMO综合台,https://ali.hlspull.yximgs.com/live/85f923b4084604b838988c02e275bc88.flv
-
-大爱二台,https://pulltv2.wanfudaluye.com/live/tv2.m3u8
-
-大爱一台,https://pulltv1.wanfudaluye.com/live/tv1.m3u8
-
-爱尔达体育4台,https://ali.hlspull.yximgs.com/live/e2b2bf0e672172c02b2a071827d902bb.flv
-
-爱尔达体育3台,https://ali.hlspull.yximgs.com/live/8f7762ebf363ac0ab1f9047d597307eb.flv
-
-爱尔达体育2台,https://ali.hlspull.yximgs.com/live/f985133822b55b5e58379b823fa14e1e.flv
-
-爱尔达体育1台,https://ali.hlspull.yximgs.com/live/e2abacdd5140fdf906bfe6deaecc2b73.flv
 
 
 
-庆余年第一季,http://tc-tct.douyucdn2.cn/dyliveflv3a/7489563rl5QFUrzn.flv?wsAuth=050ceff7e3f4b4f8330562162efbdaa4&token=app-androidxlv-0-7489563-d0d0e01e46bdafdb6a9ecc585302a79f0250e2bfa51d5148&logo=0&expire=0&did=621cf626-1a5c-4c97-8ced-ec3fe93fc83f&ver=2.6.1&pt=1&st=3&sid=399403753&um=0&mcid2=0&origin=tct&mix=0&isp=
-
-庆余年,http://tc-tct.douyucdn2.cn/dyliveflv3a/7489563rl5QFUrzn.flv
 
 
 音乐欣赏2,http://61.221.215.25:8800/hls/58/index.m3u8
