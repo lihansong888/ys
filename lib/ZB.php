@@ -1353,6 +1353,15 @@ NewTV_精品记录「IPV6」,http://[2409:8087:1a01:df::7005]/ottrrs.hl.chinamob
 成龙电影系列,http://zby.xjqxz.top/cldy/live.m3u8
 
 
+
+李连杰电影,http://zby.xjqxz.top/lljdy/live.m3u8
+电影轮播一线,http://zby.xjqxz.top/zh01/live.m3u8
+
+电影轮播二线,http://zby.xjqxz.top/zh02/live.m3u8
+电影轮播三线,http://zby.xjqxz.top/zh03/live.m3u8
+电影轮播四线,http://zby.xjqxz.top/zh04/live.m3u8
+电影轮播五线,http://zby.xjqxz.top/zh05/live.m3u8
+
 港澳台直播,#genre#
 金马影院,http://pull.kktv8.com/livekktv/128600025.flv
 香港卫视,http://zhibo.hkstv.tv/livestream/mutfysrq/playlist.m3u8
