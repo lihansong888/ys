@@ -3359,22 +3359,13 @@
 
 
   
+
+
+
+
+
 "sites":[
-{
-      "key": "LAOYA2",
-      "name": "高清4K影视CR版",
-      "type": 1,
-      "api": "https://lbapi9.com/api.php/provide/vod/",
-      "playUrl": "json:https://player.77lehuo.com/aliplayer/?url=",
-      "searchable": 0,
-      "quickSearch": 0,
-      "filterable": 0
-    },]
-
-
-
-
-
+{"key":"LBZY","name":"高清4K影视CR版","type":1,"api":"https://lbapi9.com/api.php/provide/vod/","searchable":0,"quickSearch":0}]
 
 
 
