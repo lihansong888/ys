@@ -1362,6 +1362,20 @@ NewTV_精品记录「IPV6」,http://[2409:8087:1a01:df::7005]/ottrrs.hl.chinamob
 电影轮播四线,http://zby.xjqxz.top/zh04/live.m3u8
 电影轮播五线,http://zby.xjqxz.top/zh05/live.m3u8
 
+
+
+中外喜剧片轮播,http://zby.xjqxz.top/live13/live.m3u8
+好莱坞大片,http://zby.xjqxz.top/hlwdy1/live.m3u8
+港片轮播1线,http://zby.xjqxz.top/hkdy1/live.m3u8
+港片轮播2线,http://zby.xjqxz.top/hkdy2/live.m3u8
+国产院线1,http://zby.xjqxz.top/live18/live.m3u8
+国产院线2,http://zby.xjqxz.top/gcwx2/live.m3u8
+国产院线3,http://zby.xjqxz.top/gcwx3/live.m3u8
+国产院线4,http://zby.xjqxz.top/gcwx4/live.m3u8
+国产院线5,http://zby.xjqxz.top/gcwx5/live.m3u8
+
+
+
 港澳台直播,#genre#
 金马影院,http://pull.kktv8.com/livekktv/128600025.flv
 香港卫视,http://zhibo.hkstv.tv/livestream/mutfysrq/playlist.m3u8
