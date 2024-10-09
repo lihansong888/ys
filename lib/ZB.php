@@ -1355,12 +1355,16 @@ NewTV_精品记录「IPV6」,http://[2409:8087:1a01:df::7005]/ottrrs.hl.chinamob
 
 
 李连杰电影,http://zby.xjqxz.top/lljdy/live.m3u8
-电影轮播一线,http://zby.xjqxz.top/zh01/live.m3u8
 
-电影轮播二线,http://zby.xjqxz.top/zh02/live.m3u8
-电影轮播三线,http://zby.xjqxz.top/zh03/live.m3u8
-电影轮播四线,http://zby.xjqxz.top/zh04/live.m3u8
-电影轮播五线,http://zby.xjqxz.top/zh05/live.m3u8
+综合影视轮播2,http://zby.xjqxz.top/zh02/live.m3u8
+综合影视轮播3,http://zby.xjqxz.top/zh03/live.m3u8
+综合影视轮播4,http://zby.xjqxz.top/zh04/live.m3u8
+综合影视轮播5,http://zby.xjqxz.top/zh05/live.m3u8
+综合影视轮播6,http://zby.xjqxz.top/zh06/live.m3u8
+综合影视轮播7,http://zby.xjqxz.top/zh07/live.m3u8
+综合影视轮播8,http://zby.xjqxz.top/zh08/live.m3u8
+综合影视轮播9,http://zby.xjqxz.top/zh09/live.m3u8
+综合影视轮播10,http://zby.xjqxz.top/zh10/live.m3u8
 
 
 
