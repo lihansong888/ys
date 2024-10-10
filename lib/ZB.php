@@ -1542,6 +1542,13 @@ ASTV亚洲卫视,https://play-hsbj.vzan.com/slowlive/821481626725612417/live.m3u
 番薯111,http://61.216.67.119:1935/TWHG/E1/chunklist_w705811302.m3u
 人間衛視,http://61.216.67.119:1935/bltvhd/bltv1/chunklist_w1266569526.m3u
 
+中天新闻,http://ali.hlspull.yximgs.com/live/tboxpropqqtvvqqqyquuqqfvbscvqdqtwqfsqqsqqqcvuyqemqeqtxw.flv
+寰宇新闻台,http://ali.hlspull.yximgs.com/live/tboxprophxehmffquxcxqveqeqyhmnqqxqqhqdhnqbnxfdqfhyxw.flv
+壹新闻,http://ali.hlspull.yximgs.com/live/tboxpromqfoyqvqsdvbnweqtquqqxqcvfqqsqfhfqddqqlhtbchyxw.flv
+翡翠台,http://223.244.26.190:8082/tvb%E7%BF%A1%E7%BF%A0.%E7%9B%97%E6%BA%90%E8%80%85%E6%AD%BB%E5%85%A8%E5%AE%B6/%E6%98%93%E7%99%BCTV//hls.m3u8
+
+
+	    
 
 八大综合,http://61.221.215.25:8800/hls/56/index.m3u8
 中华娱乐,http://61.221.215.25:8800/hls/40/index.m3u8
