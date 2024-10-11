@@ -1612,8 +1612,6 @@ Astro AOD,http://php.jdshipin.com:8880/TVOD/iptv.php?id=aod
 新加坡中文,https://d2e1asnsl7br7b.cloudfront.net/7782e205e72f43aeb4a48ec97f66ebbe/index_4.m3u8
 新加坡中文,https://d2e1asnsl7br7b.cloudfront.net/7782e205e72f43aeb4a48ec97f66ebbe/index_4.m3u8?zshijd
 环球电视,http://zb.xzxwhcb.com:9999/hls/world.m3u8
-番薯111（2）,http://61.216.67.119:1935/TWHG/E1/chunklist_w7058102.m3u8
-番薯111（3）,http://61.216.67.119:1935/TWHG/E1/chunklist_w7058102.m3u8?blog.ntnas.top
 番薯111（4）,http://61.216.67.119:1935/TWHG/E1/chunklist_w705811302.m3u8
 GOODTV卡通,https://dqhxk7sbp7xog.cloudfront.net/osmflivech45.m3u8
 GOODTV好消息,https://dqhxk7sbp7xog.cloudfront.net/hls-live/goodtv/_definst_/liveevent/live-ch1-2.m3u8
