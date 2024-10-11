@@ -1615,8 +1615,7 @@ Astro AOD,http://php.jdshipin.com:8880/TVOD/iptv.php?id=aod
 番薯111（4）,http://61.216.67.119:1935/TWHG/E1/chunklist_w705811302.m3u8
 GOODTV卡通,https://dqhxk7sbp7xog.cloudfront.net/osmflivech45.m3u8
 GOODTV好消息,https://dqhxk7sbp7xog.cloudfront.net/hls-live/goodtv/_definst_/liveevent/live-ch1-2.m3u8
-大爱1台,https://pulltv1.wanfudaluye.com/live/tv1.m3u8
-大爱2台,https://pulltv2.wanfudaluye.com/live/tv2.m3u8
+
 大立電視,http://www.dalitv.com.tw:4568/live/dali/index.m3u8
 台视新闻,http://38.64.72.148:80/hls/modn/list/4013/chunklist0.m3u8
 新加坡国际频道,https://d2e1asnsl7br7b.cloudfront.net/7782e205e72f43aeb4a48ec97f66ebbe/index_4.m3u8
