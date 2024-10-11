@@ -1586,12 +1586,9 @@ TVBS新闻,http://61.221.215.25:8800/hls/9/index.m3u8
 
 
 
-澳视澳门,http://183.237.246.14:9931/tsfile/live/1039_1.m3u8
-华丽翡翠台,http://php.jdshipin.com:8880/TVOD/iptv.php?id=huali
-TVB星河国语台,http://php.jdshipin.com:8880/TVOD/iptv.php?id=xinghe
-VIUTV,http://php.jdshipin.com:8880/TVOD/iptv.php?id=viutv
-千禧经典台,http://php.jdshipin.com:8880/TVOD/iptv.php?id=tvbc
-Astro AOD,http://php.jdshipin.com:8880/TVOD/iptv.php?id=aod
+
+
+
 
 
 
