@@ -1613,17 +1613,14 @@ Astro AOD,http://php.jdshipin.com:8880/TVOD/iptv.php?id=aod
 新加坡中文,https://d2e1asnsl7br7b.cloudfront.net/7782e205e72f43aeb4a48ec97f66ebbe/index_4.m3u8?zshijd
 环球电视,http://zb.xzxwhcb.com:9999/hls/world.m3u8
 番薯111（4）,http://61.216.67.119:1935/TWHG/E1/chunklist_w705811302.m3u8
-GOODTV卡通,https://dqhxk7sbp7xog.cloudfront.net/osmflivech45.m3u8
-GOODTV好消息,https://dqhxk7sbp7xog.cloudfront.net/hls-live/goodtv/_definst_/liveevent/live-ch1-2.m3u8
 
-大立電視,http://www.dalitv.com.tw:4568/live/dali/index.m3u8
 台视新闻,http://38.64.72.148:80/hls/modn/list/4013/chunklist0.m3u8
 新加坡国际频道,https://d2e1asnsl7br7b.cloudfront.net/7782e205e72f43aeb4a48ec97f66ebbe/index_4.m3u8
 耀才财经,http://202.69.67.66:443/webcast/bshdlive-mobile/playlist.m3u8
 耀才财经,http://202.69.67.66:443/webcast/bshdlive-pc/playlist.m3u8?wowzasessionid=64000
 ABC新闻,https://abc-iview-mediapackagestreams-2.akamaized.net/out/v1/6e1cc6d25ec0480ea099a5399d73bc4b/index_45.m3u8
 Fox新闻台,https://fox-foxnewsnow-samsungus.amagi.tv/playlist720p.m3u8
-TVB星河,http://php.jdshipin.com:8880/smt.php?id=Xinhe
+
 
 
 
