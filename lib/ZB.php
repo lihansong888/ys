@@ -1481,12 +1481,12 @@ NewTV_精品记录「IPV6」,http://[2409:8087:1a01:df::7005]/ottrrs.hl.chinamob
 	    电影_许氏三杰,http://120.77.28.4:8648/huya.php?id=11602033 
 	    电影_经典港片,http://120.77.28.4:8648/huya.php?id=11352965 
 	    电影_镖行天下,http://120.77.28.4:8648/huya.php?id=11352969 
-	    电影_高能反转,http://120.77.28.4:8648/huya.php?id=11352887 
+ 
 	    电影_喜乐影院,http://120.77.28.4:8648/huya.php?id=21059580 
 	    电影_蘑菇影厅,http://120.77.28.4:8648/huya.php?id=11601981 
 	    电影_搞笑恐怖,http://120.77.28.4:8648/huya.php?id=11601960 
 	    电影_死神来了,http://120.77.28.4:8648/huya.php?id=11352903 
-	    电影_变形金刚,http://120.77.28.4:8648/huya.php?id=21059596 
+	    电影_巨献,http://120.77.28.4:8648/huya.php?id=21059596 
 	    电影_怪兽系列,http://120.77.28.4:8648/huya.php?id=21059554 
 	    搞笑_陈翔六点半,http://120.77.28.4:8648/huya.php?id=11274154 
 	    周星驰,http://huanqiuzhibo.cn/manifest/douyu.php?id=122402 
@@ -1502,18 +1502,15 @@ NewTV_精品记录「IPV6」,http://[2409:8087:1a01:df::7005]/ottrrs.hl.chinamob
 粤语电影,http://huanqiuzhibo.cn/manifest/douyu.php?id=1226741
 粤语电影,http://huanqiuzhibo.cn/manifest/douyu.php?id=6566671
 国产电影,http://huanqiuzhibo.cn/manifest/douyu.php?id=5423
-精彩电影,http://huanqiuzhibo.cn/manifest/douyu.php?id=9650887
-喜剧电影,http://huanqiuzhibo.cn/manifest/douyu.php?id=323876
-动作电影,http://huanqiuzhibo.cn/manifest/douyu.php?id=6763930
+
+
+
 恐怖电影,http://huanqiuzhibo.cn/manifest/douyu.php?id=218859
 恐怖鬼怪,http://huanqiuzhibo.cn/manifest/douyu.php?id=1165374
 童年阴影,http://huanqiuzhibo.cn/manifest/douyu.php?id=2935323
 惊悚电影,http://huanqiuzhibo.cn/manifest/douyu.php?id=96577
 华语影视,http://huanqiuzhibo.cn/manifest/douyu.php?id=3928
 神乐影视,http://huanqiuzhibo.cn/manifest/douyu.php?id=85894
-周末影院,http://huanqiuzhibo.cn/manifest/douyu.php?id=3637765
-周末电影,http://huanqiuzhibo.cn/manifest/douyu.php?id=3637726
-兔子影厅,http://huanqiuzhibo.cn/manifest/douyu.php?id=8985415
 冰冰影厅,http://huanqiuzhibo.cn/manifest/douyu.php?id=74374
 刀刀影院,http://huanqiuzhibo.cn/manifest/douyu.php?id=747764
 奶虫影院,http://huanqiuzhibo.cn/manifest/douyu.php?id=263824
@@ -1521,10 +1518,6 @@ NewTV_精品记录「IPV6」,http://[2409:8087:1a01:df::7005]/ottrrs.hl.chinamob
 贝爷贰厅,http://huanqiuzhibo.cn/manifest/douyu.php?id=4332
 贝爷叁厅,http://huanqiuzhibo.cn/manifest/douyu.php?id=36337
 凌儿影院,http://huanqiuzhibo.cn/manifest/douyu.php?id=1377142
-云宝影院,http://huanqiuzhibo.cn/manifest/douyu.php?id=7305938
-花卷影院,http://huanqiuzhibo.cn/manifest/douyu.php?id=52787
-菜园小饼,http://huanqiuzhibo.cn/manifest/douyu.php?id=1735337
-米娅影院,http://huanqiuzhibo.cn/manifest/douyu.php?id=6537888
 橙記港剧,http://huanqiuzhibo.cn/manifest/douyu.php?id=4549169
 大宝影视,http://huanqiuzhibo.cn/manifest/douyu.php?id=805235
 蚂蚱影视,http://huanqiuzhibo.cn/manifest/douyu.php?id=6079455
@@ -1532,19 +1525,13 @@ NewTV_精品记录「IPV6」,http://[2409:8087:1a01:df::7005]/ottrrs.hl.chinamob
 圆子影视,http://huanqiuzhibo.cn/manifest/douyu.php?id=6566658
 贝贝影视,http://huanqiuzhibo.cn/manifest/douyu.php?id=431460
 可乐影视,http://huanqiuzhibo.cn/manifest/douyu.php?id=20415
-萌牛影视,http://huanqiuzhibo.cn/manifest/douyu.php?id=7494871
-兔兔影视,http://huanqiuzhibo.cn/manifest/douyu.php?id=1504768
-无双影视,http://huanqiuzhibo.cn/manifest/douyu.php?id=4870914
 下饭神剧,http://huanqiuzhibo.cn/manifest/douyu.php?id=276200
 古装神剧,http://huanqiuzhibo.cn/manifest/douyu.php?id=338759
-晚湾影视,http://huanqiuzhibo.cn/manifest/douyu.php?id=9461178
 酒染影视,http://huanqiuzhibo.cn/manifest/douyu.php?id=7550220
 芊珏影视,http://huanqiuzhibo.cn/manifest/douyu.php?id=8814650
 热门港剧,http://huanqiuzhibo.cn/manifest/douyu.php?id=5522351
-盗墓剧集,http://huanqiuzhibo.cn/manifest/douyu.php?id=9292503
-金庸武侠,http://huanqiuzhibo.cn/manifest/douyu.php?id=7644931
-国产剧集,http://huanqiuzhibo.cn/manifest/douyu.php?id=8157860
-国产剧场,http://huanqiuzhibo.cn/manifest/douyu.php?id=308752
+
+
 
 
 
