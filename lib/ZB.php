@@ -1545,7 +1545,19 @@ ASTV亚洲卫视,https://play-hsbj.vzan.com/slowlive/821481626725612417/live.m3u
 寰宇新闻台,http://ali.hlspull.yximgs.com/live/tboxprophxehmffquxcxqveqeqyhmnqqxqqhqdhnqbnxfdqfhyxw.flv
 壹新闻,http://ali.hlspull.yximgs.com/live/tboxpromqfoyqvqsdvbnweqtquqqxqcvfqqsqfhfqddqqlhtbchyxw.flv
 翡翠台,http://223.244.26.190:8082/tvb%E7%BF%A1%E7%BF%A0.%E7%9B%97%E6%BA%90%E8%80%85%E6%AD%BB%E5%85%A8%E5%AE%B6/%E6%98%93%E7%99%BCTV//hls.m3u8
-
+三立新闻,http://ali.hlspull.yximgs.com/live/tboxprohmcyoywqqubqdfqfvchtquqxcqxvcbsqfsdxcbmqsllivexw.flv
+天映频道,http://ali.hlspull.yximgs.com/live/tboxproqeqcxlvofbqbvnqqsfqvbhfhcvxcvqsqbcvqfdvqsfcbqbnqtypq.flv
+18台,http://ali.hlspull.yximgs.com/live/tboxprovhxqcvfhoeqfqhdoqqqyhcvxclqhqotqyq9qssqfdqcvhthofsqqhyx18.flv
+镜新闻,http://ali.hlspull.yximgs.com/live/tboxproexcvqqocvuoqxucfdexqpqqyxchvlqxqfeqhcelethqqdxw.flv
+东森新闻,http://ali.hlspull.yximgs.com/live/tboxpromhqttuqqcvbyquoqdqqeqywefqqfbxfbxxvbqqqlqqhqsxw.flv
+BBC new,https://vs-hls-push-ww-live.akamaized.net/x=4/i=urn:bbc:pips:service:bbc_news_channel_hd/t=3840/v=pv14/b=5070016/main.m3u8
+THRILL恐怖电影,http://ali.hlspull.yximgs.com/live/tboxproecvqweqqosvoqqqsqqqdeqfqxqucqshvqcsqqfcqtchplqy.flv
+法国时尚台,http://lb.streaming.sk/fashiontv/stream/chunklist_w1702070444.m3u8
+非凡新闻,http://ali.hlspull.yximgs.com/live/tboxprosqtnfqqoqdcbfcxvqfuuqqweqqqsqyuhhdqsqhqynffxw.flv
+星光视界,http://ali.hlspull.yximgs.com/live/zxcvbnm9852.flv
+日本24小时新闻台,https://n24-cdn-live.ntv.co.jp/ch01/index_high.m3u8
+台视新闻台,http://ali.hlspull.yximgs.com/live/tboxproncqqtqqudtqlqcvbcvntqqqsfwetqfvcbcxvdqbqfflvcqtsxw.flv
+年代新闻,http://ali.hlspull.yximgs.com/live/tboxprooqevdyscvbudloqlnsfqewtqudvbbqxfqnqlvcqdqdnqxw.flv
 
 	    
 
