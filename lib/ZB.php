@@ -1353,6 +1353,8 @@ NewTV_精品记录「IPV6」,http://[2409:8087:1a01:df::7005]/ottrrs.hl.chinamob
 
 
 影视轮播频道,#genre#
+1905国外电影,http://103.67.53.72:82/小凯qq交流群651676234/1905.php?id=1905b
+1905国内电影,http://103.67.53.72:82/小凯qq交流群651676234/1905.php?id=1905a
 周星驰电影系列,http://zby.xjqxz.top/live12/live.m3u8
 成龙电影系列,http://zby.xjqxz.top/cldy/live.m3u8
 
