@@ -1668,8 +1668,7 @@ NewTV_精品记录「IPV6」,http://[2409:8087:1a01:df::7005]/ottrrs.hl.chinamob
 
 港澳台直播,#genre#
 金马影院,http://pull.kktv8.com/livekktv/128600025.flv
-香港卫视,http://zhibo.hkstv.tv/livestream/mutfysrq/playlist.m3u8
-	    
+香港卫视,http://zhibo.hkstv.tv/livestream/mutfysrq/playlist.m3u8	    
 点掌财经,https://wsvideo.aniu.tv/live/aniu/playlist.m3u8
 ASTV亚洲卫视,https://play-hsbj.vzan.com/slowlive/821481626725612417/live.m3u8?zbid=2046370057&tpid=330913109&type=0
 大爱1,https://pulltv1.wanfudaluye.com/live/tv1.m3u8
@@ -1677,32 +1676,23 @@ ASTV亚洲卫视,https://play-hsbj.vzan.com/slowlive/821481626725612417/live.m3u
 番薯111,http://61.216.67.119:1935/TWHG/E1/chunklist_w705811302.m3u
 人間衛視,http://61.216.67.119:1935/bltvhd/bltv1/chunklist_w1266569526.m3u
 
+
+
+	    
 凤凰中文,http://58.144.154.93/qctv.fengshows.cn/live/0701pcc72.m3u8	    
 HOLLYWOOD,https://bozztv.com/hwotta/playlist/HD3400/HD3400.m3u8
-中天新闻,http://ali.hlspull.yximgs.com/live/tboxpropqqtvvqqqyquuqqfvbscvqdqtwqfsqqsqqqcvuyqemqeqtxw.flv
-寰宇新闻台,http://ali.hlspull.yximgs.com/live/tboxprophxehmffquxcxqveqeqyhmnqqxqqhqdhnqbnxfdqfhyxw.flv
-壹新闻,http://ali.hlspull.yximgs.com/live/tboxpromqfoyqvqsdvbnweqtquqqxqcvfqqsqfhfqddqqlhtbchyxw.flv
 翡翠台,http://223.244.26.190:8082/tvb%E7%BF%A1%E7%BF%A0.%E7%9B%97%E6%BA%90%E8%80%85%E6%AD%BB%E5%85%A8%E5%AE%B6/%E6%98%93%E7%99%BCTV//hls.m3u8
-三立新闻,http://ali.hlspull.yximgs.com/live/tboxprohmcyoywqqubqdfqfvchtquqxcqxvcbsqfsdxcbmqsllivexw.flv
-天映频道,http://ali.hlspull.yximgs.com/live/tboxproqeqcxlvofbqbvnqqsfqvbhfhcvxcvqsqbcvqfdvqsfcbqbnqtypq.flv
-18台,http://ali.hlspull.yximgs.com/live/tboxprovhxqcvfhoeqfqhdoqqqyhcvxclqhqotqyq9qssqfdqcvhthofsqqhyx18.flv
-镜新闻,http://ali.hlspull.yximgs.com/live/tboxproexcvqqocvuoqxucfdexqpqqyxchvlqxqfeqhcelethqqdxw.flv
-东森新闻,http://ali.hlspull.yximgs.com/live/tboxpromhqttuqqcvbyquoqdqqeqywefqqfbxfbxxvbqqqlqqhqsxw.flv
 BBC new,https://vs-hls-push-ww-live.akamaized.net/x=4/i=urn:bbc:pips:service:bbc_news_channel_hd/t=3840/v=pv14/b=5070016/main.m3u8
-THRILL恐怖电影,http://ali.hlspull.yximgs.com/live/tboxproecvqweqqosvoqqqsqqqdeqfqxqucqshvqcsqqfcqtchplqy.flv
 法国时尚台,http://lb.streaming.sk/fashiontv/stream/chunklist_w1702070444.m3u8
-非凡新闻,http://ali.hlspull.yximgs.com/live/tboxprosqtnfqqoqdcbfcxvqfuuqqweqqqsqyuhhdqsqhqynffxw.flv
 星光视界,http://ali.hlspull.yximgs.com/live/zxcvbnm9852.flv
 日本24小时新闻台,https://n24-cdn-live.ntv.co.jp/ch01/index_high.m3u8
-台视新闻台,http://ali.hlspull.yximgs.com/live/tboxproncqqtqqudtqlqcvbcvntqqqsfwetqfvcbcxvdqbqfflvcqtsxw.flv
-年代新闻,http://ali.hlspull.yximgs.com/live/tboxprooqevdyscvbudloqlnsfqewtqudvbbqxfqnqlvcqdqdnqxw.flv
+
 
 	    
 
 八大综合,http://61.221.215.25:8800/hls/56/index.m3u8
 中华娱乐,http://61.221.215.25:8800/hls/40/index.m3u8
 中天娱乐,http://61.221.215.25:8800/hls/47/index.m3u8
-
 AMC电影台,http://61.221.215.25:8800/hls/43/index.m3u8
 亚洲探索频道,http://61.221.215.25:8800/hls/50/index.m3u8
 香港33台,https://rthktv33-live.akamaized.net/hls/live/2101641/RTHKTV33/stream03/streamPlaylist.m3u8
@@ -1710,13 +1700,10 @@ AMC电影台,http://61.221.215.25:8800/hls/43/index.m3u8
 香港35台,https://rthktv35-live.akamaized.net/hls/live/2101643/RTHKTV35/stream02/streamPlaylist.m3u8
 八大戏剧,http://61.221.215.25:8800/hls/39/index.m3u8
 三立戏剧,http://61.221.215.25:8800/hls/41/index.m3u8
-
 纬来精彩,http://61.221.215.25:8800/hls/48/index.m3u8
 49号,http://61.221.215.25:8800/hls/49/index.m3u8
-
 八大第一,http://61.221.215.25:8800/hls/55/index.m3u8
 动物星球,http://61.221.215.25:8800/hls/57/index.m3u8
-
 无线星河国,http://php.jdshipin.com:8880/smt.php?id=Xinhe
 香港面包台,https://video.bread-tv.com:8091/hls-live24/online/index.m3u8
 国际探索频道,http://61.221.215.25:8800/hls/1/index.m3u8
@@ -1730,17 +1717,10 @@ TVBS新闻,http://61.221.215.25:8800/hls/9/index.m3u8
 
 
 
-
-
-
-
-
-
 音乐欣赏2,http://61.221.215.25:8800/hls/58/index.m3u8
 亚洲新闻台,https://d2e1asnsl7br7b.cloudfront.net/7782e205e72f43aeb4a48ec97f66ebbe/index_5.m3u8
 东森超视,https://epg.pw/stream/9ee97d4efee35aa017c6d4ec03d219b96a4e63c74011ecc833877a100cf75d36.m3u8
 民视新闻台,https://epg.pw/stream/7270ae89dc1f30cfec2c03d01b6e2fbc50863f60936b534814dfd28caa72181e.m3u8
-
 半岛新闻,http://live-hls-web-aja.getaj.net/AJA/02.m3u8
 东森电影,http://1b6467f415.iok.la:9931/tsfile/live/1043_1.m3u8
 大立电视,http://www.dalitv.com.tw:4568/live/dali/index.m3u8
@@ -1748,7 +1728,6 @@ TVBS新闻,http://61.221.215.25:8800/hls/9/index.m3u8
 新加坡中文,https://d2e1asnsl7br7b.cloudfront.net/7782e205e72f43aeb4a48ec97f66ebbe/index_4.m3u8?zshijd
 环球电视,http://zb.xzxwhcb.com:9999/hls/world.m3u8
 番薯111（4）,http://61.216.67.119:1935/TWHG/E1/chunklist_w705811302.m3u8
-
 台视新闻,http://38.64.72.148:80/hls/modn/list/4013/chunklist0.m3u8
 新加坡国际频道,https://d2e1asnsl7br7b.cloudfront.net/7782e205e72f43aeb4a48ec97f66ebbe/index_4.m3u8
 耀才财经,http://202.69.67.66:443/webcast/bshdlive-mobile/playlist.m3u8
