@@ -1334,7 +1334,10 @@ NewTV_精品大剧「IPV6」,http://[2409:8087:1a01:df::7005]/ottrrs.hl.chinamob
 NewTV_精品记录「IPV6」,http://[2409:8087:1a01:df::7005]/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225672/index.m3u8
 
 
-NewTV频道,#genre# 
+
+
+
+	    
 NewTV精品综合,http://111.31.22.5/cache.ott.fifalive.itv.cmvideo.cn/000000001000/1000000004000019008/1.m3u8?channel-id=ystenlive&Contentid=1000000004000019008&livemode=1&stbId=3 
 NewTV精品综合,https://vip.taoiptv.cn/source/itv.php?id=NewTV精品综合.m3u8&sign=aqk34i 
 NewTV精品综合,http://114.55.117.163:8081/iptv/itv.php?id=NewTV精品综合.m3u8&sign=aqk34i 
@@ -1355,29 +1358,29 @@ NewTV爱情喜剧,https://vip.taoiptv.cn/source/itv.php?id=NewTV爱情喜剧.m3u
 NewTV爱情喜剧,http://114.55.117.163:8081/iptv/itv.php?id=NewTV爱情喜剧.m3u8&sign=aqk34i 
 NewTV超级电视剧,http://111.31.22.5/cache.ott.fifalive.itv.cmvideo.cn/000000001000/1000000006000268003/1.m3u8?channel-id=ystenlive&Contentid=1000000006000268003&livemode=1&stbId=3 
 NewTV超级电视剧,https://vip.taoiptv.cn/source/itv.php?id=NewTV超级电视剧.m3u8&sign=aqk34i 
-	    NewTV超级电视剧,http://114.55.117.163:8081/iptv/itv.php?id=NewTV超级电视剧.m3u8&sign=aqk34i 
-	    NewTV超级电影,http://111.31.22.5/cache.ott.fifalive.itv.cmvideo.cn/000000001000/1000000003000012426/1.m3u8?channel-id=ystenlive&Contentid=1000000003000012426&livemode=1&stbId=3 
-	    NewTV超级电影,https://vip.taoiptv.cn/source/itv.php?id=NewTV超级电影.m3u8&sign=aqk34i 
-	    NewTV超级电影,http://114.55.117.163:8081/iptv/itv.php?id=NewTV超级电影.m3u8&sign=aqk34i 
-	    NewTV超级体育,http://111.31.22.5/cache.ott.fifalive.itv.cmvideo.cn/000000001000/1000000001000009601/1.m3u8?channel-id=ystenlive&Contentid=1000000001000009601&livemode=1&stbId=3 
-	    NewTV超级体育,https://vip.taoiptv.cn/source/itv.php?id=NewTV超级体育.m3u8&sign=aqk34i 
-	    NewTV超级体育,http://114.55.117.163:8081/iptv/itv.php?id=NewTV超级体育.m3u8&sign=aqk34i 
-	    NewTV超级综艺,http://111.31.22.5/cache.ott.fifalive.itv.cmvideo.cn/000000001000/1000000006000268002/1.m3u8?channel-id=ystenlive&Contentid=1000000006000268002&livemode=1&stbId=3 
-	    NewTV超级综艺,https://vip.taoiptv.cn/source/itv.php?id=NewTV超级综艺.m3u8&sign=aqk34i 
-	    NewTV超级综艺,http://114.55.117.163:8081/iptv/itv.php?id=NewTV超级综艺.m3u8&sign=aqk34i 
-	    NewTV潮妈辣婆,http://111.31.22.5/cache.ott.fifalive.itv.cmvideo.cn/000000001000/2000000003000000018/1.m3u8?channel-id=hnbblive&Contentid=2000000003000000018&livemode=1&stbId=3 
-	    NewTV潮妈辣婆,https://vip.taoiptv.cn/source/itv.php?id=NewTV潮妈辣婆.m3u8&sign=aqk34i 
-	    NewTV潮妈辣婆,http://114.55.117.163:8081/iptv/itv.php?id=NewTV潮妈辣婆.m3u8&sign=aqk34i 
-	    NewTV东北热剧,http://111.31.22.5/cache.ott.fifalive.itv.cmvideo.cn/000000001000/1000000005000266013/1.m3u8?channel-id=ystenlive&Contentid=1000000005000266013&livemode=1&stbId=3 
-	    NewTV东北热剧,https://vip.taoiptv.cn/source/itv.php?id=NewTV东北热剧.m3u8&sign=aqk34i 
-	    NewTV东北热剧,http://114.55.117.163:8081/iptv/itv.php?id=NewTV东北热剧.m3u8&sign=aqk34i 
-	    NewTV动作电影,http://111.31.22.5/cache.ott.fifalive.itv.cmvideo.cn/000000001000/1000000004000018653/1.m3u8?channel-id=ystenlive&Contentid=1000000004000018653&livemode=1&stbId=3 
-	    NewTV动作电影,https://vip.taoiptv.cn/source/itv.php?id=NewTV动作电影.m3u8&sign=aqk34i 
-	    NewTV动作电影,http://114.55.117.163:8081/iptv/itv.php?id=NewTV动作电影.m3u8&sign=aqk34i 
-	   NewTV古装剧场,http://111.31.22.5/cache.ott.fifalive.itv.cmvideo.cn/000000001000/2000000003000000024/1.m3u8?channel-id=hnbblive&Contentid=2000000003000000024&livemode=1&stbId=3 
-	    NewTV古装剧场,https://vip.taoiptv.cn/source/itv.php?id=NewTV古装剧场.m3u8&sign=aqk34i 
-	    NewTV古装剧场,http://114.55.117.163:8081/iptv/itv.php?id=NewTV古装剧场.m3u8&sign=aqk34i 
-	    NewTV欢乐剧场,http://111.31.22.5/cache.ott.fifalive.itv.cmvideo.cn/000000001000/1000000005000266012/1.m3u8?channel-id=ystenlive&Contentid=1000000005000266012&livemode=1&stbId=3 
+NewTV超级电视剧,http://114.55.117.163:8081/iptv/itv.php?id=NewTV超级电视剧.m3u8&sign=aqk34i 
+NewTV超级电影,http://111.31.22.5/cache.ott.fifalive.itv.cmvideo.cn/000000001000/1000000003000012426/1.m3u8?channel-id=ystenlive&Contentid=1000000003000012426&livemode=1&stbId=3 
+NewTV超级电影,https://vip.taoiptv.cn/source/itv.php?id=NewTV超级电影.m3u8&sign=aqk34i 
+NewTV超级电影,http://114.55.117.163:8081/iptv/itv.php?id=NewTV超级电影.m3u8&sign=aqk34i 
+NewTV超级体育,http://111.31.22.5/cache.ott.fifalive.itv.cmvideo.cn/000000001000/1000000001000009601/1.m3u8?channel-id=ystenlive&Contentid=1000000001000009601&livemode=1&stbId=3 
+NewTV超级体育,https://vip.taoiptv.cn/source/itv.php?id=NewTV超级体育.m3u8&sign=aqk34i 
+NewTV超级体育,http://114.55.117.163:8081/iptv/itv.php?id=NewTV超级体育.m3u8&sign=aqk34i 
+NewTV超级综艺,http://111.31.22.5/cache.ott.fifalive.itv.cmvideo.cn/000000001000/1000000006000268002/1.m3u8?channel-id=ystenlive&Contentid=1000000006000268002&livemode=1&stbId=3 
+NewTV超级综艺,https://vip.taoiptv.cn/source/itv.php?id=NewTV超级综艺.m3u8&sign=aqk34i 
+NewTV超级综艺,http://114.55.117.163:8081/iptv/itv.php?id=NewTV超级综艺.m3u8&sign=aqk34i 
+NewTV潮妈辣婆,http://111.31.22.5/cache.ott.fifalive.itv.cmvideo.cn/000000001000/2000000003000000018/1.m3u8?channel-id=hnbblive&Contentid=2000000003000000018&livemode=1&stbId=3 
+NewTV潮妈辣婆,https://vip.taoiptv.cn/source/itv.php?id=NewTV潮妈辣婆.m3u8&sign=aqk34i 
+NewTV潮妈辣婆,http://114.55.117.163:8081/iptv/itv.php?id=NewTV潮妈辣婆.m3u8&sign=aqk34i 
+NewTV东北热剧,http://111.31.22.5/cache.ott.fifalive.itv.cmvideo.cn/000000001000/1000000005000266013/1.m3u8?channel-id=ystenlive&Contentid=1000000005000266013&livemode=1&stbId=3 
+NewTV东北热剧,https://vip.taoiptv.cn/source/itv.php?id=NewTV东北热剧.m3u8&sign=aqk34i 
+NewTV东北热剧,http://114.55.117.163:8081/iptv/itv.php?id=NewTV东北热剧.m3u8&sign=aqk34i 
+NewTV动作电影,http://111.31.22.5/cache.ott.fifalive.itv.cmvideo.cn/000000001000/1000000004000018653/1.m3u8?channel-id=ystenlive&Contentid=1000000004000018653&livemode=1&stbId=3 
+NewTV动作电影,https://vip.taoiptv.cn/source/itv.php?id=NewTV动作电影.m3u8&sign=aqk34i 
+NewTV动作电影,http://114.55.117.163:8081/iptv/itv.php?id=NewTV动作电影.m3u8&sign=aqk34i 
+NewTV古装剧场,http://111.31.22.5/cache.ott.fifalive.itv.cmvideo.cn/000000001000/2000000003000000024/1.m3u8?channel-id=hnbblive&Contentid=2000000003000000024&livemode=1&stbId=3 
+NewTV古装剧场,https://vip.taoiptv.cn/source/itv.php?id=NewTV古装剧场.m3u8&sign=aqk34i 
+NewTV古装剧场,http://114.55.117.163:8081/iptv/itv.php?id=NewTV古装剧场.m3u8&sign=aqk34i 
+NewTV欢乐剧场,http://111.31.22.5/cache.ott.fifalive.itv.cmvideo.cn/000000001000/1000000005000266012/1.m3u8?channel-id=ystenlive&Contentid=1000000005000266012&livemode=1&stbId=3 
 	    NewTV欢乐剧场,https://vip.taoiptv.cn/source/itv.php?id=NewTV欢乐剧场.m3u8&sign=aqk34i 
 	    NewTV欢乐剧场,http://114.55.117.163:8081/iptv/itv.php?id=NewTV欢乐剧场.m3u8&sign=aqk34i 
 	    NewTV家庭剧场,http://111.31.22.5/cache.ott.fifalive.itv.cmvideo.cn/000000001000/1000000004000008284/1.m3u8?channel-id=ystenlive&Contentid=1000000004000008284&livemode=1&stbId=3 
