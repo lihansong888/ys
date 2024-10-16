@@ -1830,3 +1830,85 @@ Fox新闻台,https://fox-foxnewsnow-samsungus.amagi.tv/playlist720p.m3u8
 高清直播41,http://cdn.adultiptv.net/blonde.m3u8
 高清直播42,http://cdn.adultiptv.net/gay.m3u8
 高清直播43,http://cdn.adultiptv.net/asian.m3u8
+
+
+AdultIPTV.net Anal (720p),https://cdn.adultiptv.net/anal.m3u8
+AdultIPTV.net Asian (720p),https://cdn.adultiptv.net/asian.m3u8
+AdultIPTV.net Big Ass (720p),https://cdn.adultiptv.net/bigass.m3u8
+AdultIPTV.net Big Dick (720p),https://cdn.adultiptv.net/bigdick.m3u8
+AdultIPTV.net Big Tits (720p),https://cdn.adultiptv.net/bigtits.m3u8
+AdultIPTV.net Blonde (720p),https://cdn.adultiptv.net/blonde.m3u8
+AdultIPTV.net Blowjob (720p),https://cdn.adultiptv.net/blowjob.m3u8
+AdultIPTV.net Brunette (720p),https://cdn.adultiptv.net/brunette.m3u8
+AdultIPTV.net Compilation (720p),https://cdn.adultiptv.net/compilation.m3u8
+AdultIPTV.net Cuckold (720p),https://cdn.adultiptv.net/cuckold.m3u8
+AdultIPTV.net Fetish (720p),https://cdn.adultiptv.net/fetish.m3u8
+AdultIPTV.net Gangbang (720p),https://cdn.adultiptv.net/gangbang.m3u8
+AdultIPTV.net Gay (720p),https://cdn.adultiptv.net/gay.m3u8
+AdultIPTV.net Hardcore (720p),https://cdn.adultiptv.net/hardcore.m3u8
+AdultIPTV.net Interracial (720p),https://cdn.adultiptv.net/interracial.m3u8
+AdultIPTV.net Latina (720p),https://cdn.adultiptv.net/latina.m3u8
+AdultIPTV.net Lesbian (720p),https://cdn.adultiptv.net/lesbian.m3u8
+AdultIPTV.net Live Cams (720p),https://cdn.adultiptv.net/livecams.m3u8
+AdultIPTV.net MILF (720p),https://cdn.adultiptv.net/milf.m3u8
+AdultIPTV.net Pornstar (720p),https://cdn.adultiptv.net/pornstar.m3u8
+AdultIPTV.net POV (720p),https://cdn.adultiptv.net/pov.m3u8
+AdultIPTV.net Rough (720p),https://cdn.adultiptv.net/rough.m3u8
+AdultIPTV.net Russian (720p),https://cdn.adultiptv.net/russian.m3u8
+AdultIPTV.net Teen (720p),https://cdn.adultiptv.net/teen.m3u8
+AdultIPTV.net Threesome (720p),https://cdn.adultiptv.net/threesome.m3u8
+AdultIPTV.net Woman (720p),https://live.redtraffic.net/woman.m3u8
+Babestation24 (720p),https://sdn-global-live-streaming-packager-cache.3qsdn.com/9528/9528_264_live.m3u8
+Blue Hustler (720p),http://193.33.240.8:8080/hustler_hd/index.m3u8
+Brazzers TV Europe (720p),https://cdn-main.lolokoko.tv/BRAZZERS.stream/chunks.m3u8
+Dorcel TV (720p),https://cdn-main.lolokoko.tv/DorcelTV.stream/playlist.m3u8
+EroX HD (720p),https://cdn-main.lolokoko.tv/Eroxx.stream/playlist.m3u8
+EroXXX HD (720p),https://cdn-main.lolokoko.tv/Eroxxx.stream/playlist.m3u8
+Hustler HD (720p),https://cdn-main.lolokoko.tv/HUSTLER.stream/chunks.m3u8
+Jasmin TV (1080p),http://109.71.163.112:1935/live/hd.jasminchannel.stream/playlist.m3u8
+Jenny For You (720p),https://59ec5453559f0.streamlock.net/jennyforyou/jennyforyou/playlist.m3u8
+Miami TV (720p),https://59ec5453559f0.streamlock.net/miamitv/smil:miamitv/playlist.m3u8
+Miami TV Jenny Live (720p) [Not 24/7],https://59ec5453559f0.streamlock.net/JennyLive/JennyLive/playlist.m3u8
+Miami TV Mexico (1080p),https://59ec5453559f0.streamlock.net/mexicotv/smil:miamitvmexico/playlist.m3u8
+MyCamTV Anal (720p),https://live.mycamtv.com/anal.m3u8
+MyCamTV Arab (720p),http://live.mycamtv.com/arab.m3u8
+MyCamTV Asian (720p),https://live.mycamtv.com/asian.m3u8
+MyCamTV Big Ass (720p),https://live.mycamtv.com/defstream.m3u8
+MyCamTV Big Tits (720p),https://live.mycamtv.com/bigtits.m3u8
+MyCamTV Blonde (720p),https://live.mycamtv.com/blonde.m3u8
+MyCamTV Blowjob (720p),http://live.mycamtv.com/blowjob.m3u8
+MyCamTV Brunette (720p),https://live.mycamtv.com/brunette.m3u8
+MyCamTV Latina (720p),https://live.mycamtv.com/latina.m3u8
+MyCamTV Medium (720p),http://live.mycamtv.com/medium.m3u8
+MyCamTV MILF (720p),http://live.mycamtv.com/milf.m3u8
+MyCamTV Skinny (720p),https://live.mycamtv.com/arab.m3u8
+MyCamTV Squirt (720p),https://live.mycamtv.com/squirt.m3u8
+MyCamTV Teen (720p),http://live.mycamtv.com/teen.m3u8
+MyCamTV White (720p),https://live.mycamtv.com/white.m3u8
+MyCamTV Young (720p),http://live.mycamtv.com/young.m3u8
+O-la-la! (576p),http://31.148.48.15/O-la-la/index.m3u8
+Penthouse Gold (1080p),http://51.159.102.100/PenthouseGold/index.m3u8
+Playboy TV Latin America (1080p),http://190.11.225.124:5000/live/playboy_hd/playlist.m3u8
+Private TV (576p),http://149.62.183.194:9293/play/a07t
+Private TV HD (720p),https://cdn-main.lolokoko.tv/Private.stream/playlist.m3u8
+Redlight HD (720p),https://cdn-main.lolokoko.tv/REDLIGHT.stream/chunks.m3u8
+Silk (1080p) [Geo-blocked],http://live-1.otcnet.ru/shelkhdmts/playlist.m3u8
+Visit-X TV (720p),https://stream.visit-x.tv/vxtv/live/playlist.m3u8
+东热01,https://video1.rhsj520.com/nyrm3/2011225/DR/n0011/index.m3u8
+东热02,https://video1.rhsj520.com/nyrm3/2011225/DR/n0010/index.m3u8
+东热03,https://video1.rhsj520.com/nyrm3/2011225/DR/n0008/index.m3u8
+东热04,https://video1.rhsj520.com/nyrm3/2011225/DR/n0001/index.m3u8
+一本00,https://vip4.ddyunbo.com/20210208/6LaKp6lZ/index.m3u8
+二本01,https://vip4.ddyunbo.com/20210209/dEzJjeSU/index.m3u8
+三本02,https://vip4.ddyunbo.com/20210210/IjSENz6s/index.m3u8
+一本03,http://live.redtraffic.xyz:80/bigass.m3u8
+二本04,http://live.redtraffic.xyz:80/blowjob.m3u8
+欧美01,http://live.redtraffic.xyz/threesome.m3u8?fluxuslust.m3u8
+欧美02,http://live.redtraffic.xyz/bigass.m3u8?fluxuslust.m3u8
+松视1,http://live.redtraffic.xyz:80/fetish.m3u8
+松视2,http://live.redtraffic.xyz:80/bigdick.m3u8
+玩美台,http://live.redtraffic.xyz:80/pov.m3u8
+限制级,http://cdn.adultiptv.net/blonde.m3u8?streamType=livеhls
+
+Animation;XXX,#genre#
+XXX Cartoons (520p),http://144.76.58.245:2307/cartoon/index.m3u8
