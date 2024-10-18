@@ -1925,17 +1925,17 @@ Fox新闻台,https://fox-foxnewsnow-samsungus.amagi.tv/playlist720p.m3u8
 
 
 十大频道直播_54278,#genre#
-Desire312,http://88.212.7.11/live/test_desire_hd_hevc/playlist.m3u8 
+Desire312 HD,http://88.212.7.11/live/test_desire_hd_hevc/playlist.m3u8 
 
-Brazzers54,http://88.212.7.11/live/test_brazzers_hd_hevc/playlist.m3u8 
+Brazzers54 HD,http://88.212.7.11/live/test_brazzers_hd_hevc/playlist.m3u8 
 
-Dorcel62,http://88.212.7.11/live/test_dorcel_hd_hevc/playlist.m3u8 
+Dorcel62 HD,http://88.212.7.11/live/test_dorcel_hd_hevc/playlist.m3u8 
 
-Eroxxx667,http://88.212.7.11/live/test_eroxxx_hd_hevc/playlist.m3u8
+Eroxxx667 HD,http://88.212.7.11/live/test_eroxxx_hd_hevc/playlist.m3u8
 
-Extasy22,http://88.212.7.11/live/test_extasy_hd_hevc/playlist.m3u8
+Extasy22 HD,http://88.212.7.11/live/test_extasy_hd_hevc/playlist.m3u8
 
-Erox34,http://88.212.7.11/live/test_erox_hd_hevc/playlist.m3u8
+Erox34 HD,http://88.212.7.11/live/test_erox_hd_hevc/playlist.m3u8
 
 
 彩虹直播_54278,#genre#
