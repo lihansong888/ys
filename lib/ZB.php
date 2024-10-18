@@ -1306,22 +1306,7 @@ newtv金牌综艺,http://[2409:8087:1a01:df::7005]:80/ottrrs.hl.chinamobile.com/
 
 
 
-贵州台,#genre#
-贵州2频道公共频道,http://9bwaz8y2.gzstv.com/live/CH02_lo.m3u8?txSecret=cece1fb7f1fedd4928579751ffa857b4&txTime=66D6AD7F
-贵州3频道影视文艺频道,http://9bwaz8y2.gzstv.com/live/CH03_lo.m3u8?txSecret=4413aa6e149e3727b92e61f6528e07aa&txTime=66D6A6D3
-贵州4频道大众生活频道,http://9bwaz8y2.gzstv.com/live/CH04_lo.m3u8?txSecret=93ab07b951f2c6b4e2aaaa6671561c99&txTime=66D6A574
-贵州5频道,https://9bwaz8y2.gzstv.com/live/CH05_lo.m3u8?txSecret=9b0520b1ac9d3dde05ca3068ae1fe1bf&txTime=66D6AD18
-贵州6频道科教健康频道,http://9bwaz8y2.gzstv.com/live/CH06_lo.m3u8?txSecret=b8634f36191a21646b5d356eff72ddf3&txTime=66D6AF7D
-贵州移动电视频道,https://9bwaz8y2.gzstv.com/live/CH13_lo.m3u8?txSecret=b32de666ff5ce7885ca2690f137011ee&txTime=66D6AF8A
 
-青海台,#genre#
-青海经视频道,http://stream.qhbtv.com/qhsh/sd/live.m3u8?_upt=e4e9fe741725348067
-青海都市频道,http://stream.qhbtv.com/qhds/sd/live.m3u8?_upt=ea03ed711725339376
-西宁新闻综合频道,https://liveout.xntv.tv/a65jur/96iln2.m3u8
-西宁生活服务频道,https://liveout.xntv.tv/a65jur/90p2i1.m3u8
-
-西藏台,#genre#
-西藏影视文化频道,https://tv.vtibet.cn/live/gHxCmvaVjK68XL.m3u8?secret=7c291e222cc0d5b5fd69f071e338c1b4&time=66d6b081
 
 
 
