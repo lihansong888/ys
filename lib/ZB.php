@@ -1432,32 +1432,9 @@ NewTV欢乐剧场,http://111.31.22.5/cache.ott.fifalive.itv.cmvideo.cn/000000001
 	    NewTV哒啵赛事,https://vip.taoiptv.cn/source/itv.php?id=NewTV哒啵赛事.m3u8&sign=aqk34i 
 	    NewTV哒啵赛事,http://114.55.117.163:8081/iptv/itv.php?id=NewTV哒啵赛事.m3u8&sign=aqk34i
 
-ce'shiceshi,#genre#
 
-直播 720,http://cdn.adultiptv.net/livecams.m3u8
-肛交 720,http://cdn.adultiptv.net/anal.m3u8
-巨尻 720,http://cdn.adultiptv.net/bigass.m3u8
-大鸟 720,http://cdn.adultiptv.net/bigdick.m3u8
-爆乳 720,http://cdn.adultiptv.net/bigtits.m3u8
-金发 720,http://cdn.adultiptv.net/blonde.m3u8
-口交 720,http://cdn.adultiptv.net/blowjob.m3u8
-褐发 720,http://cdn.adultiptv.net/brunette.m3u8
-合集 720,http://cdn.adultiptv.net/compilation.m3u8
-绿帽 720,http://cdn.adultiptv.net/cuckold.m3u8
-恋物 720,http://cdn.adultiptv.net/fetish.m3u8
-群交 720,http://cdn.adultiptv.net/gangbang.m3u8
-男同 720,http://cdn.adultiptv.net/gay.m3u8
-硬核 720,http://cdn.adultiptv.net/hardcore.m3u8
-异种 720,http://cdn.adultiptv.net/interracial.m3u8
-拉丁 720,http://cdn.adultiptv.net/latina.m3u8
-女同 720,http://cdn.adultiptv.net/lesbian.m3u8
-少妇 720,http://cdn.adultiptv.net/milf.m3u8
-色星 720,http://cdn.adultiptv.net/pornstar.m3u8
-第一视角 720,http://cdn.adultiptv.net/pov.m3u8
-粗暴 720,http://cdn.adultiptv.net/rough.m3u8
-俄罗斯 720,http://cdn.adultiptv.net/russian.m3u8
-少女 720,http://cdn.adultiptv.net/teen.m3u8
-三人 720,http://cdn.adultiptv.net/threesome.m3u8	    
+
+	    
 
 
 
