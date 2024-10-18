@@ -1480,25 +1480,8 @@ NewTV欢乐剧场,http://111.31.22.5/cache.ott.fifalive.itv.cmvideo.cn/000000001
 直播中国精编直播,https://gcalic.v.myalicdn.com/gc/wgw05_1/index.m3u8
 
 
-CHENGREN123,http://88.212.7.11/live/test_desire_hd_hevc/playlist.m3u8 
 
-CHENGREN2,http://88.212.7.11/live/test_brazzers_hd_hevc/playlist.m3u8 
 
-CHENGREN3,http://88.212.7.11/live/test_dorcel_hd_hevc/playlist.m3u8 
-
-CHENGREN4,http://88.212.7.11/live/test_eroxxx_hd_hevc/playlist.m3u8
-
-CHENGREN5,http://88.212.7.11/live/test_extasy_hd_hevc/playlist.m3u8
-
-CHENGREN6,http://88.212.7.11/live/test_erox_hd_hevc/playlist.m3u8
-
-CHENGREN7,http://31.131.136.4:8000/play/a003
-
-CHENGREN8,http://31.131.136.4:8000/play/a00g
-
-CHENGREN9,http://31.131.136.4:8000/play/a004
-
-CHENGREN10,http://190.11.225.124:5000/live/playboy_hd/playlist.m3u8
 
 
 	    
@@ -1941,7 +1924,18 @@ Fox新闻台,https://fox-foxnewsnow-samsungus.amagi.tv/playlist720p.m3u8
 
 
 
+十大频道直播_54278,#genre#
+Desire312,http://88.212.7.11/live/test_desire_hd_hevc/playlist.m3u8 
 
+Brazzers54,http://88.212.7.11/live/test_brazzers_hd_hevc/playlist.m3u8 
+
+Dorcel62,http://88.212.7.11/live/test_dorcel_hd_hevc/playlist.m3u8 
+
+Eroxxx667,http://88.212.7.11/live/test_eroxxx_hd_hevc/playlist.m3u8
+
+Extasy22,http://88.212.7.11/live/test_extasy_hd_hevc/playlist.m3u8
+
+Erox34,http://88.212.7.11/live/test_erox_hd_hevc/playlist.m3u8
 
 
 彩虹直播_54278,#genre#
