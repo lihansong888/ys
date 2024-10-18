@@ -1437,41 +1437,6 @@ NewTV欢乐剧场,http://111.31.22.5/cache.ott.fifalive.itv.cmvideo.cn/000000001
 	    
 
 
-SiTV频道,#genre# 
-SiTV动漫秀场,https://vip.taoiptv.cn/source/itv.php?id=SiTV动漫秀场.m3u8&sign=aqk34i
-SiTV都市剧场,https://vip.taoiptv.cn/source/itv.php?id=SiTV都市剧场.m3u8&sign=aqk34i 
-SiTV法治天地,https://vip.taoiptv.cn/source/itv.php?id=SiTV法治天地.m3u8&sign=aqk34i 
-SiTV欢笑剧场,https://vip.taoiptv.cn/source/itv.php?id=SiTV欢笑剧场.m3u8&sign=aqk34i 
-SiTV欢笑剧场,https://vip.taoiptv.cn/source/itv.php?id=SiTV欢笑剧场-4K.m3u8&sign=aqk34i 
-SiTV金色学堂,https://vip.taoiptv.cn/source/itv.php?id=SiTV金色学堂.m3u8&sign=aqk34i 
-SiTV劲爆体育,https://vip.taoiptv.cn/source/itv.php?id=SiTV劲爆体育.m3u8&sign=aqk34i 
-SiTV乐游,https://vip.taoiptv.cn/source/itv.php?id=SiTV乐游.m3u8&sign=aqk34i 
-SiTV魅力足球,https://vip.taoiptv.cn/source/itv.php?id=SiTV魅力足球.m3u8&sign=aqk34i 
-SiTV七彩戏剧,https://vip.taoiptv.cn/source/itv.php?id=SiTV七彩戏剧.m3u8&sign=aqk34i 
-SiTV生活时尚,https://vip.taoiptv.cn/source/itv.php?id=SiTV生活时尚.m3u8&sign=aqk34i 
-SiTV游戏风云,https://vip.taoiptv.cn/source/itv.php?id=SiTV游戏风云.m3u8&sign=aqk34i 
-	    
-iHOT频道,#genre# 
-iHOT爱电竞,https://vip.taoiptv.cn/source/itv.php?id=iHOT爱电竞.m3u8&sign=aqk34i 
-iHOT爱谍战,https://vip.taoiptv.cn/source/itv.php?id=iHOT爱谍战.m3u8&sign=aqk34i 
-iHOT爱动漫,https://vip.taoiptv.cn/source/itv.php?id=iHOT爱动漫.m3u8&sign=aqk34i 
-iHOT爱都市,https://vip.taoiptv.cn/source/itv.php?id=iHOT爱都市.m3u8&sign=aqk34i 
-iHOT爱怀旧,https://vip.taoiptv.cn/source/itv.php?id=iHOT爱怀旧.m3u8&sign=aqk34i 
-iHOT爱经典,https://vip.taoiptv.cn/source/itv.php?id=iHOT爱经典.m3u8&sign=aqk34i 
-iHOT爱科幻,https://vip.taoiptv.cn/source/itv.php?id=iHOT爱科幻.m3u8&sign=aqk34i 
-iHOT爱科学,https://vip.taoiptv.cn/source/itv.php?id=iHOT爱科学.m3u8&sign=aqk34i 
-iHOT爱浪漫,https://vip.taoiptv.cn/source/itv.php?id=iHOT爱浪漫.m3u8&sign=aqk34i 
-iHOT爱历史,https://vip.taoiptv.cn/source/itv.php?id=iHOT爱历史.m3u8&sign=aqk34i 
-iHOT爱旅行,https://vip.taoiptv.cn/source/itv.php?id=iHOT爱旅行.m3u8&sign=aqk34i 
-iHOT爱奇谈,https://vip.taoiptv.cn/source/itv.php?id=iHOT爱奇谈.m3u8&sign=aqk34i 
-iHOT爱青春,https://vip.taoiptv.cn/source/itv.php?id=iHOT爱青春.m3u8&sign=aqk34i 
-iHOT爱赛车,https://vip.taoiptv.cn/source/itv.php?id=iHOT爱赛车.m3u8&sign=aqk34i 
-iHOT爱体育,https://vip.taoiptv.cn/source/itv.php?id=iHOT爱体育.m3u8&sign=aqk34i 
-iHOT爱玩具,https://vip.taoiptv.cn/source/itv.php?id=iHOT爱玩具.m3u8&sign=aqk34i 
-iHOT爱喜剧,https://vip.taoiptv.cn/source/itv.php?id=iHOT爱喜剧.m3u8&sign=aqk34i 
-iHOT爱悬疑,https://vip.taoiptv.cn/source/itv.php?id=iHOT爱悬疑.m3u8&sign=aqk34i 
-iHOT爱幼教,https://vip.taoiptv.cn/source/itv.php?id=iHOT爱幼教.m3u8&sign=aqk34i 
-iHOT爱院线,https://vip.taoiptv.cn/source/itv.php?id=iHOT爱院线.m3u8&sign=aqk34i
 
 
 	    
