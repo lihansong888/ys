@@ -1781,7 +1781,9 @@ ASTV亚洲卫视,https://play-hsbj.vzan.com/slowlive/821481626725612417/live.m3u
 番薯111,http://61.216.67.119:1935/TWHG/E1/chunklist_w705811302.m3u
 人間衛視,http://61.216.67.119:1935/bltvhd/bltv1/chunklist_w1266569526.m3u
 
-
+凤凰中文,http://58.144.154.93/qctv.fengshows.cn/live/0701pcc72.m3u8
+凤凰资讯,http://58.144.154.93/qctv.fengshows.cn/live/0701pin72.m3u8
+凤凰香港,http://58.144.154.93/qctv.fengshows.cn/live/0701phk72.m3u8
 
 	    
 凤凰中文,http://58.144.154.93/qctv.fengshows.cn/live/0701pcc72.m3u8	    
