@@ -1,30 +1,23 @@
-{
- "lives": [ 
-           
 { 
-             "name": "直播一线", 
-             "type": 0, 
-             "url": "https://m3u.ibert.me/txt/fmml_ipv6.txt",
-             "playerType": 1, 
-             "epg": "https://epg.112114.eu.org/?ch={name}&date={date}", 
-             "logo": "https://live.fanmingming.com/tv/{name}.png"
-           }, 
+"lives": [
+{ "name": "直播源1",
+"type": 0,
+"url": "https://iptv.b2og.com/txt/fmml_ipv6.txt", 
+"playerType": 1,
+"epg": "http://epg.51zmt.top:8000/api/diyp/?ch={name}&date={date}",
+"logo": "https://live.fanmingming.com/tv/{name}.png"
+},
 {
-            "name": "直播二线",
-            "type": 0,
-            "url": "https://github.moeyy.xyz/https://raw.githubusercontent.com/lihansong888/ys/refs/heads/main/lib/ZB.php",
-            "playerType": 1
-        },
-
-           { 
-             "name": "直播三线",
-             "type": 0,
-             "url": "https://github.moeyy.xyz/https://raw.githubusercontent.com/lihansong888/ys/refs/heads/main/lib/ZB.php",
-             "playerType": 1, 
-             "epg": "https://epg.112114.eu.org/?ch={name}&date={date}", 
-             "logo": "https://live.fanmingming.com/tv/{name}.png"
-
-
-           } 
-            ]
-            }
+"name": "直播",
+"type": 0,
+"url": "https://m3u.ibert.me/txt/fmml_ipv6.txt",
+"playerType": 1
+},
+{
+"name": "影视轮播",
+"type": 0,
+"url": "https://m3u.ibert.me/txt/fmml_ipv6.txt",
+"playerType": 1
+} 
+] 
+}
