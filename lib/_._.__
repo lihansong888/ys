@@ -9,7 +9,7 @@
              "logo": "https://live.fanmingming.com/tv/{name}.png"
            }, 
 { 
-             "name": "直播一区", 
+             "name": "直播二区", 
              "type": 0, 
              "url": "https://m3u.ibert.me/txt/fmml_ipv6.txt",
              "playerType": 1, 
@@ -19,7 +19,7 @@
 
 
            { 
-             "name": "直播二区",
+             "name": "直播三区",
              "type": 0,
              "url": "https://github.moeyy.xyz/https://raw.githubusercontent.com/lihansong888/ys/refs/heads/main/lib/ZB.php",
              "playerType": 1, 
