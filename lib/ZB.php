@@ -1891,6 +1891,11 @@ Extasy22 HD,http://88.212.7.11/live/test_extasy_hd_hevc/playlist.m3u8
 
 Erox34 HD,http://88.212.7.11/live/test_erox_hd_hevc/playlist.m3u8
 
+Penthouse HD,http://31.131.136.4:8000/play/a003
+Hustler HD,http://31.131.136.4:8000/play/a00g
+Redlight HD,http://31.131.136.4:8000/play/a004
+Playboy HD,http://190.11.225.124:5000/live/playboy_hd/playlist.m3u8
+
 
 彩虹直播_54278,#genre#
 高清直播1,http://live.mycamtv.com/teen.m3u8
