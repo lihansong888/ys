@@ -1878,7 +1878,7 @@ Fox新闻台,https://fox-foxnewsnow-samsungus.amagi.tv/playlist720p.m3u8
 
 
 
-十大频道直播_54278,#genre#
+十大频道直播,#genre#
 Desire312 HD,http://88.212.7.11/live/test_desire_hd_hevc/playlist.m3u8 
 
 Brazzers54 HD,http://88.212.7.11/live/test_brazzers_hd_hevc/playlist.m3u8 
@@ -1897,7 +1897,7 @@ Redlight HD,http://31.131.136.4:8000/play/a004
 Playboy HD,http://190.11.225.124:5000/live/playboy_hd/playlist.m3u8
 
 
-彩虹直播_54278,#genre#
+彩虹直播,#genre#
 高清直播1,http://live.mycamtv.com/teen.m3u8
 高清直播2,http://live.mycamtv.com/milf.m3u8
 高清直播3,http://live.mycamtv.com/young.m3u8
