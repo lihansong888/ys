@@ -8,6 +8,14 @@
              "epg": "https://epg.112114.eu.org/?ch={name}&date={date}", 
              "logo": "https://live.fanmingming.com/tv/{name}.png"
            }, 
+{ 
+             "name": "直播一区", 
+             "type": 0, 
+             "url": "https://m3u.ibert.me/txt/fmml_ipv6.txt",
+             "playerType": 1, 
+             "epg": "https://epg.112114.eu.org/?ch={name}&date={date}", 
+             "logo": "https://live.fanmingming.com/tv/{name}.png"
+           }, 
 
 
            { 
