@@ -1,16 +1,4 @@
-#double:true,
-    #推荐:'.list-ul .list-li;.list-name&&Text;*;.module-slide-author&&Text;*',
-    #一级:'.book-ol&&li;h4&&Text;img&&data-original;.book-meta&&Text;a&&href',
-    #二级:{
-    	#title:'h2&&Text;.book-cell .book-rand-a:eq(2)&&Text',
-        #title:'h1&&Text;.book-cell .book-rand-a:eq(0)&&a&&Text',
-    	#img:'.book img&&src',
-    	#desc:';;;;.book-des p&&Text',
-        #desc:';;;.book-rand-a:eq(2)&&Text;.book-des p&&Text',
-    	#content:'.book-des--p&&Text',
-	    #tabs:'.playlist-top&&h2',
 
-#if (typeof Object.assign != 'function') {
     #Object.assign = function () {
 	#var target = arguments[0];
     #for (var i = 1; i < arguments.length; i++) {
