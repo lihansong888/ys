@@ -15,7 +15,7 @@
 {
 "name": "电视直播三线",
 "type": 0,
-"url": "https://m3u.ibert.me/txt/fmml_ipv6.txt",
+"url": "https://fanmingming.com/txt?url=https://live.fanmingming.com/tv/m3u/ipv6.m3u",
 "playerType": 1
 } 
 ] 
