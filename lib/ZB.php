@@ -1,5 +1,13 @@
-
-
+髙清户户通去码👉👉👉,#genre#
+纬来体育,https://cloud.yumixiu768.com:443/tmp/123.m3u8
+纬来体育,http://211.72.65.236:8585/.m3u8$1920x1080
+纬来体育,https://cdn.iptv8k.top/dl/jrys.php?id=291&time=20240926215313&ip=111.229.253.40$1920x1080
+纬来体育,https://cdn.iptv8k.top/dl/jrys.php?id=292&time=20240926215313&ip=111.229.253.40$1920x1080
+纬来体育,http://tianhewan.top/ZIPP.php?url=http://211.72.65.236:8585/.m3u8
+纬来体育,https://stream1.freetv.fun/wei-lai-ti-yu-9.ctv
+纬来体育,https://free.weidu.filegear-sg.me/a1c032a6/a1c032a6.php?id=b9de2ea719d0d5e6
+纬来体育,http://8.137.59.151:3000/laoshu.php?key=66&id=47
+纬来体育,https://cloud.yumixiu768.com/tmp/123.m3u8
 
 
 
