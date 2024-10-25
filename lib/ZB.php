@@ -1,13 +1,7 @@
-髙清户户通去码👉👉👉,#genre#
-纬来体育,https://cloud.yumixiu768.com:443/tmp/123.m3u8
-纬来体育,http://211.72.65.236:8585/.m3u8$1920x1080
-纬来体育,https://cdn.iptv8k.top/dl/jrys.php?id=291&time=20240926215313&ip=111.229.253.40$1920x1080
-纬来体育,https://cdn.iptv8k.top/dl/jrys.php?id=292&time=20240926215313&ip=111.229.253.40$1920x1080
-纬来体育,http://tianhewan.top/ZIPP.php?url=http://211.72.65.236:8585/.m3u8
-纬来体育,https://stream1.freetv.fun/wei-lai-ti-yu-9.ctv
-纬来体育,https://free.weidu.filegear-sg.me/a1c032a6/a1c032a6.php?id=b9de2ea719d0d5e6
-纬来体育,http://8.137.59.151:3000/laoshu.php?key=66&id=47
-纬来体育,https://cloud.yumixiu768.com/tmp/123.m3u8
+
+
+
+
 
 
 
@@ -2447,6 +2441,21 @@ TVBS新闻,http://61.221.215.25:8800/hls/9/index.m3u8
 耀才财经,http://202.69.67.66:443/webcast/bshdlive-pc/playlist.m3u8?wowzasessionid=64000
 ABC新闻,https://abc-iview-mediapackagestreams-2.akamaized.net/out/v1/6e1cc6d25ec0480ea099a5399d73bc4b/index_45.m3u8
 Fox新闻台,https://fox-foxnewsnow-samsungus.amagi.tv/playlist720p.m3u8
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
