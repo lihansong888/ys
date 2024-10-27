@@ -1,22 +1,30 @@
 { 
 "lives": [
-{ 
+{
 "name": "电视直播一线",
 "type": 0,
-"url": "https://iptv.b2og.com/txt/fmml_ipv6.txt", 
+"url": "https://fanmingming.com/txt?url=https://live.fanmingming.com/tv/m3u/ipv6.m3u",
 "playerType": 1
 },
-{
+{ 
 "name": "电视直播二线",
 "type": 0,
-"url": "https://github.moeyy.xyz/https://raw.githubusercontent.com/lihansong888/ys/refs/heads/main/lib/ZB.php",
+"url": "https://m3u.ibert.me/txt/fmml_ipv6.txt", 
 "playerType": 1
 },
 {
 "name": "电视直播三线",
 "type": 0,
-"url": "https://fanmingming.com/txt?url=https://live.fanmingming.com/tv/m3u/ipv6.m3u",
+"url": "https://github.moeyy.xyz/https://raw.githubusercontent.com/lihansong888/ys/refs/heads/main/lib/ZB.php",
 "playerType": 1
-} 
+},
+{ 
+"name": "电视直播四线",
+"type": 0,
+"url": "https://iptv.b2og.com/txt/fmml_ipv6.txt", 
+"playerType": 1
+}
+
+ 
 ] 
 }
