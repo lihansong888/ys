@@ -1,3 +1,39 @@
+Music,#genre#
+CMC TV (1080p),https://stream.cmctv.hr:49998/cmc/live.m3u8
+Klape i Tambure TV (1080p),https://stream.cmctv.hr:49998/kit/live.m3u8
+
+Legislative,#genre#
+EbS Live (Europe by Satellite) (1080p),https://eucom-live.freecaster.com/eucom/96098bf4-5a2a-466b-8d7f-e35300fa4f28/96098bf4-5a2a-466b-8d7f-e35300fa4f28.isml/master.m3u8
+EbS+ Live (Europe by Satellite) (1080p),https://eucom-live.freecaster.com/eucom/96098c0b-0743-4afc-9562-db1673053f9d/96098c0b-0743-4afc-9562-db1673053f9d.isml/master.m3u8
+
+General,#genre#
+HRT 1 (720p),#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36
+HRT 2 (720p),#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36
+Libertas TV (1080p),https://stream.luci.xyz/hls/LTV.m3u8
+RTV Herceg-Bosne (576p) [Not 24/7],https://prd-hometv-live-open.spectar.tv/ERO_1_083/playlist.m3u8
+SBTV (1080p) [Not 24/7],https://live.leveex.hr/hls/live.m3u8
+STV (720p),http://89.201.163.244:8080/hls/hdmi.m3u8
+Trend TV (480p),http://185.62.75.22:1935/trend/myStream/playlist.m3u8
+TV Zapad (1080p) [Not 24/7],http://webtv.zapad.tv:8080/memfs/1ad23803-84c3-41c7-aa91-fce4c7eac52e.m3u8
+
+Culture;Documentary,#genre#
+HRT 3 (720p),#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36
+
+Movies,#genre#
+Klasik TV (576p) [Not 24/7],https://178.253.194.105/klasiktv/playlist.m3u8
+
+Undefined,#genre#
+Laudato TV (1080p) [Not 24/7],https://ythls.armelin.one/channel/UCMNltXN6fWur0K8Z1oubFPA.m3u8
+Radio Televizija Banovina (1080p) [Not 24/7],https://pool.alter-media.hr:1936/live/myStream/playlist.m3u8?DVR=
+RTL Kockica (1080p),https://d1rzyyum8t0q1e.cloudfront.net/rtl-kockica/playlist.m3u8
+
+News,#genre#
+OTV (720p) [Not 24/7],https://stream.agatin.hr:3559/live/otvlive.m3u8
+TV Jadran (720p) [Not 24/7],https://tvjadran.stream.agatin.hr:3412/live/tvjadranlive.m3u8
+
+Entertainment,#genre#
+TV Nova (720p),https://stream.agatin.hr:3727/live/tvnovalive.m3u8
+
 
 
 
