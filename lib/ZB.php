@@ -2716,23 +2716,46 @@ Fox新闻台,https://fox-foxnewsnow-samsungus.amagi.tv/playlist720p.m3u8
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 十大频道直播,#genre#
-Desire312 HD,http://88.212.7.11/live/test_desire_hd_hevc/playlist.m3u8 
 
-Brazzers54 HD,http://88.212.7.11/live/test_brazzers_hd_hevc/playlist.m3u8 
-
-Dorcel62 HD,http://88.212.7.11/live/test_dorcel_hd_hevc/playlist.m3u8 
-
-Eroxxx667 HD,http://88.212.7.11/live/test_eroxxx_hd_hevc/playlist.m3u8
-
-Extasy22 HD,http://88.212.7.11/live/test_extasy_hd_hevc/playlist.m3u8
-
-Erox34 HD,http://88.212.7.11/live/test_erox_hd_hevc/playlist.m3u8
-
+Desire,http://88.212.7.11/live/test_desire_hd_hevc/playlist.m3u8
+Brazzers,http://88.212.7.11/live/test_brazzers_hd_hevc/playlist.m3u8
+Dorcel,http://88.212.7.11/live/test_dorcel_hd_hevc/playlist.m3u8
+Eroxxx,http://88.212.7.11/live/test_eroxxx_hd_hevc/playlist.m3u8
+Extasy,http://88.212.7.11/live/test_extasy_hd_hevc/playlist.m3u8
+Erox HD,http://88.212.7.11/live/test_erox_hd_hevc/playlist.m3u8
 Penthouse HD,http://31.131.136.4:8000/play/a003
 Hustler HD,http://31.131.136.4:8000/play/a00g
 Redlight HD,http://31.131.136.4:8000/play/a004
 Playboy HD,http://190.11.225.124:5000/live/playboy_hd/playlist.m3u8
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 彩虹直播,#genre#
