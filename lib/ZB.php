@@ -1790,6 +1790,29 @@ newtv精品萌宠,http://[2409:8087:1a01:df::7005]:80/ottrrs.hl.chinamobile.com/
 newtv超级综艺,http://[2409:8087:1a01:df::7005]:80/ottrrs.hl.chinamobile.com/TVOD/88888888/224/3221225714/index.m3u8
 newtv金牌综艺,http://[2409:8087:1a01:df::7005]:80/ottrrs.hl.chinamobile.com/TVOD/88888888/224/3221225666/index.m3u8
 
+
+
+
+
+
+CIBN数字,#genre#
+
+
+CIBN情感影院,http://zby.xjqxz.top/zh09/live.m3u8
+CIBN动作影院,http://zby.xjqxz.top/zh04/live.m3u8
+CIBN古装剧场,http://zby.xjqxz.top/gzwxj/live.m3u8
+CIBN经典剧场,http://zby.xjqxz.top/gzdsj2/live.m3u8
+CIBN精品影院,http://zby.xjqxz.top/zh13/live.m3u8
+CIBN流金岁月,http://zby.xjqxz.top/hkdy1/live.m3u8
+CIBN院线大片,http://zby.xjqxz.top/zh06/live.m3u8
+
+
+
+
+
+
+
+
 地方频道,#genre#
 
 
