@@ -4,7 +4,6 @@
 
 最近更新,#genre#
 直播熊猫,https://gcwbndali.v.myalicdn.com/gcwbnd/ipanda1000_2/index.m3u8
-林正英,http://204bae1.123nat.com:35455/yy/1351505899
 林正英,http://204bae1.123nat.com:35455/yy/1353685311
 林正英,http://diyp.zxxoo.work/douyu/7356023
 林正英,http://204bae1.123nat.com:35455/yy/30668277
