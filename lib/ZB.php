@@ -2,10 +2,97 @@
 
 
 
+最近更新,#genre#
+直播熊猫,https://gcwbndali.v.myalicdn.com/gcwbnd/ipanda1000_2/index.m3u8
+林正英,http://204bae1.123nat.com:35455/yy/1351505899
+林正英,http://204bae1.123nat.com:35455/yy/1353685311
+林正英,http://diyp.zxxoo.work/douyu/7356023
+林正英,http://204bae1.123nat.com:35455/yy/30668277
+杰森斯坦森,http://cfss.cc/cdn/hy/21059588.m3u8
+杰森斯坦森,http://diyp.zxxoo.work/huya/21059588
+电影英叔,http://diyp.zxxoo.work/huya/11342421
+电影黄渤,http://diyp.zxxoo.work/huya/11352876
+电影周星星,http://diyp.zxxoo.work/huya/11336587
+电影周星星,http://cfss.cc/cdn/hy/11336587.flv
+电影成龙,http://diyp.zxxoo.work/huya/11342386
+电影成龙,http://cfss.cc/cdn/hy/11342386.flv
+电影洪金宝,http://cfss.cc/cdn/hy/11279251.flv
+电影洪金宝,http://diyp.zxxoo.work/huya/11279251
+电影星爷,http://diyp.zxxoo.work/huya/11342412
+电影强森,http://diyp.zxxoo.work/huya/21059581
+电影沈腾,http://diyp.zxxoo.work/huya/11601968
+电影李连杰,http://diyp.zxxoo.work/huya/11342390
+电影梁家辉,http://cfss.cc/cdn/hy/11342429.flv
+电影梁家辉,http://diyp.zxxoo.work/huya/11342429
+电影刘德华,http://cfss.cc/cdn/hy/11342424.flv
+电影刘德华,http://diyp.zxxoo.work/huya/11342424
+电影怪兽,http://cfss.cc/cdn/hy/21059577.flv
+电影怪兽,http://diyp.zxxoo.work/huya/21059577
+电影喜乐影院,http://cfss.cc/cdn/hy/21059580.flv
+电影喜乐影院,http://diyp.zxxoo.work/huya/21059580
+电影喜剧专场,http://cfss.cc/cdn/hy/11602044.flv
+电影喜剧专场,http://diyp.zxxoo.work/huya/11602044
+电影救援,http://cfss.cc/cdn/hy/21059594.flv
+电影救援,http://diyp.zxxoo.work/huya/21059594
+电影玄幻,http://cfss.cc/cdn/hy/11342414.flv
+电影玄幻,http://diyp.zxxoo.work/huya/11342414
+电影古墓系列,http://cfss.cc/cdn/hy/11352913.flv
+电影古墓系列,http://diyp.zxxoo.work/huya/11352913
+电影功夫片,http://diyp.zxxoo.work/huya/11352941
+电影高能反转,http://cfss.cc/cdn/hy/11352887.flv
+电影高能反转,http://diyp.zxxoo.work/huya/11352887
+电影罪犯,http://cfss.cc/cdn/hy/11352962.flv
+电影罪犯,http://diyp.zxxoo.work/huya/11352962
+电影盗墓,http://cfss.cc/cdn/hy/21059552.flv
+电影盗墓,http://diyp.zxxoo.work/huya/21059552
+电影犯罪片,http://cfss.cc/cdn/hy/11352974.flv
+电影犯罪片,http://diyp.zxxoo.work/huya/11352974
+电影不挤影院,http://cfss.cc/cdn/hy/11352897.flv
+电影不挤影院,http://diyp.zxxoo.work/huya/11352897
+电影武侠,http://cfss.cc/cdn/hy/11342427.flv
+电影武侠,http://diyp.zxxoo.work/huya/11342427
+电影黑帮片,http://cfss.cc/cdn/hy/11336719.flv
+电影黑帮片,http://diyp.zxxoo.work/huya/11336719
+电影丧尸片,http://cfss.cc/cdn/hy/21059578.flv
+电影丧尸片,http://diyp.zxxoo.work/huya/21059578
+电影动作电影,http://cfss.cc/cdn/hy/11602077.flv
+电影动作电影,http://diyp.zxxoo.work/huya/11602077
+电影战争片,http://cfss.cc/cdn/hy/21059574.flv
+电影战争片,http://diyp.zxxoo.work/huya/21059574
+电影搞笑喜剧,http://cfss.cc/cdn/hy/11342423.flv
+电影搞笑喜剧,http://diyp.zxxoo.work/huya/11342423
+电影搞笑恐怖,http://cfss.cc/cdn/hy/11601960.flv
+电影搞笑恐怖,http://diyp.zxxoo.work/huya/11601960
+电影枪战,http://cfss.cc/cdn/hy/21059579.flv
+电影枪战,http://diyp.zxxoo.work/huya/21059579
+电影热血,http://cfss.cc/cdn/hy/11352934.flv
+电影热血,http://diyp.zxxoo.work/huya/11352934
+电影经典女神,http://cfss.cc/cdn/hy/11352909.flv
+电影经典女神,http://diyp.zxxoo.work/huya/11352909
+电影许氏三杰,http://cfss.cc/cdn/hy/11602033.flv
+电影许氏三杰,http://diyp.zxxoo.work/huya/11602033
+电影谍战,http://cfss.cc/cdn/hy/21059585.flv
+电影谍战,http://diyp.zxxoo.work/huya/21059585
+电影谍战片,http://cfss.cc/cdn/hy/21059587.flv
+电影谍战片,http://diyp.zxxoo.work/huya/21059587
+电影贺岁,http://cfss.cc/cdn/hy/11601971.flv
+电影贺岁,http://diyp.zxxoo.work/huya/11601971
+电影贺岁片,http://diyp.zxxoo.work/huya/11601986
+海绵宝宝,http://diyp.zxxoo.work/huya/11352919
 
 
 
 
+
+
+
+凌儿影院原,http://159.75.85.63:35455/douyu/1377142
+变种人片原,http://159.75.85.63:35455/douyu/9651304
+女神电影原,http://159.75.85.63:35455/douyu/747764
+花卷陪看原,http://159.75.85.63:35455/douyu/52787
+
+鉴证实录,http://cfss.cc/cdn/hy/23903183.flv
+雪豹,http://cfss.cc/cdn/hy/29580970.flv
 
 
 
