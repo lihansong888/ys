@@ -4,7 +4,7 @@ title: Home
 permalink: /
 ---
 
-Auto Update DNSProxy(0.73.2) in 2024-10-31 00:19:12 CST
+
 
 <h1 align="center">✯ 这是一个国内可直连的直播电视源分享项目 ✯</h1>
 
