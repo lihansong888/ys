@@ -92,7 +92,15 @@
 
 
 
-
+超高清频道,#genre#
+4K UHD,http://[2409:8087:5e00:24::1e]:6060/200000001898/460000089800010006/1.m3u8
+4K 影视,http://[2409:8087:5e08:24::12]:6610/000000001000/2000000004000000014/index.m3u8?stbId=3&livemode=1&HlsProfileId=&channel-id=hnbblive&Contentid=2000000004000000014&IASHttpSessionId=OTT19019320240419154124000281&yang-1989
+苏州4K,http://liveshowbak2.kan0512.com/ksz-norecord/csztv4k_4k.m3u8
+苏州4K,http://liveshowbak2.kan0512.com/norecord/csztv4k_4k.m3u8
+Loupe 4K,https://d2dw21aq0j0l5c.cloudfront.net/playlist_3840x2160.m3u8
+Fashion 4K,https://fash2043.cloudycdn.services/slive/ftv_ftv_4k_hevc_73d_42080_default_466_hls.smil/playlist.m3u8
+Love Nature 4K,https://d18dyiwu97wm6q.cloudfront.net/playlist2160p.m3u8
+4K超高清电影,http://58.215.231.60/live2.rxip.sc96655.com/live/emdy4k_8000.m3u8
 
 
 
