@@ -8,8 +8,7 @@
 杰森斯坦森,http://diyp.zxxoo.work/huya/21059588
 电影英叔,http://diyp.zxxoo.work/huya/11342421
 电影黄渤,http://diyp.zxxoo.work/huya/11352876
-电影周星星,http://diyp.zxxoo.work/huya/11336587
-电影周星星,http://cfss.cc/cdn/hy/11336587.flv
+
 电影成龙,http://diyp.zxxoo.work/huya/11342386
 电影成龙,http://cfss.cc/cdn/hy/11342386.flv
 电影洪金宝,http://cfss.cc/cdn/hy/11279251.flv
