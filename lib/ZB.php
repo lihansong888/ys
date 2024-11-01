@@ -2275,11 +2275,10 @@ iHOT爱电竞,
 	    
 	    
 咪咕直播,#genre#
-咪咕运动「IPV6」,http://[2409:8087:1a01:df::7005]/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226508/index.m3u8
-咪咕直播_𝟙「IPV6」,http://[2409:8087:1a01:df::404d]/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226124/index.m3u8
-咪咕直播_𝟚「IPV6」,http://[2409:8087:1a01:df::403b]/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226147/index.m3u8
-咪咕直播_𝟛「IPV6」,http://[2409:8087:1a01:df::4033]/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226398/index.m3u8
-咪咕直播_𝟜「IPV6」,http://[2409:8087:1a01:df::4046]/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226472/index.m3u8
+晴彩青少「IPV6」,http://[2409:8087:1a01:df::7005]/ottrrs.hl.chinamobile.com/TVOD/88888888/224/3221226508/index.m3u8
+晴彩竞技「IPV6」,http://[2409:8087:1a01:df::404d]/ottrrs.hl.chinamobile.com/TVOD/88888888/224/3221226124/index.m3u8
+晴彩篮球「IPV6」,http://[2409:8087:1a01:df::403b]/ottrrs.hl.chinamobile.com/TVOD/88888888/224/3221226147/index.m3u8
+晴彩广场舞「IPV6」,http://[2409:8087:1a01:df::4046]/ottrrs.hl.chinamobile.com/TVOD/88888888/224/3221226472/index.m3u8  
 
 
 
