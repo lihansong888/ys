@@ -81,217 +81,22 @@
 
 
 
-凌儿影院原,http://159.75.85.63:35455/douyu/1377142
-变种人片原,http://159.75.85.63:35455/douyu/9651304
-女神电影原,http://159.75.85.63:35455/douyu/747764
-花卷陪看原,http://159.75.85.63:35455/douyu/52787
 
-鉴证实录,http://cfss.cc/cdn/hy/23903183.flv
-雪豹,http://cfss.cc/cdn/hy/29580970.flv
+
 
 
 
 
 超高清频道,#genre#
 4K UHD,http://[2409:8087:5e00:24::1e]:6060/200000001898/460000089800010006/1.m3u8
-4K 影视,http://[2409:8087:5e08:24::12]:6610/000000001000/2000000004000000014/index.m3u8?stbId=3&livemode=1&HlsProfileId=&channel-id=hnbblive&Contentid=2000000004000000014&IASHttpSessionId=OTT19019320240419154124000281&yang-1989
-苏州4K,http://liveshowbak2.kan0512.com/ksz-norecord/csztv4k_4k.m3u8
-苏州4K,http://liveshowbak2.kan0512.com/norecord/csztv4k_4k.m3u8
-Loupe 4K,https://d2dw21aq0j0l5c.cloudfront.net/playlist_3840x2160.m3u8
-Fashion 4K,https://fash2043.cloudycdn.services/slive/ftv_ftv_4k_hevc_73d_42080_default_466_hls.smil/playlist.m3u8
-Love Nature 4K,https://d18dyiwu97wm6q.cloudfront.net/playlist2160p.m3u8
-4K超高清电影,http://58.215.231.60/live2.rxip.sc96655.com/live/emdy4k_8000.m3u8
 
 
 
 
 
 
-臺灣 Taiwan,#genre#
-AXN,http://fm1077.serv00.net/Smart.php?id=axn_twn
-CINEMAX,http://fm1077.serv00.net/Smart.php?id=cinemax_twn
-EYE戲劇,http://fm1077.serv00.net/Smart.php?id=eyetvxiju_twn
-EYE旅遊,http://fm1077.serv00.net/Smart.php?id=eyetvtravel_twn
-HBO,http://fm1077.serv00.net/Smart.php?id=hbohd_twn
-HBO Family,http://fm1077.serv00.net/Smart.php?id=fyi_twn
-好萊塢電影台,http://fm1077.serv00.net/Smart.php?id=hollywoodmovies_twn
-MTV Live,http://fm1077.serv00.net/Smart.php?id=mtvhd_twn
-TLC旅遊生活,http://fm1077.serv00.net/Smart.php?id=tlc_twn
-東森新聞,http://fm1077.serv00.net/Smart.php?id=ettvnews
-TVBS HD,http://fm1077.serv00.net/Smart.php?id=tvbs
-TVBS新聞台,http://fm1077.serv00.net/Smart.php?id=tvbs_n
-TVBS歡樂台,http://fm1077.serv00.net/Smart.php?id=tvbshuanle_twn
-三立台灣台,http://fm1077.serv00.net/Smart.php?id=sanlitaiwan
-三立戲劇台,http://fm1077.serv00.net/Smart.php?id=sanlixiju_twn
-三立綜合台,http://fm1077.serv00.net/Smart.php?id=sanlizhonghe
-中天亞洲台,http://fm1077.serv00.net/Smart.php?id=ctiasia_twn
-中天娱樂,http://fm1077.serv00.net/Smart.php?id=ctient
-中天新聞HD,http://fm1077.serv00.net/Smart.php?id=ctinews
-中天綜合,http://fm1077.serv00.net/Smart.php?id=ctizhonghe
-亞洲旅遊台,http://fm1077.serv00.net/Smart.php?id=asiatravel_twn
-亞洲美食,http://fm1077.serv00.net/Smart.php?id=afc_twn
-八大戲劇,http://fm1077.serv00.net/Smart.php?id=badadrama
-八大第一,http://fm1077.serv00.net/Smart.php?id=badafirst
-八大綜合,http://fm1077.serv00.net/Smart.php?id=badazhonghe
-公視,http://fm1077.serv00.net/Smart.php?id=ctv_taiwan
-民視,http://fm1077.serv00.net/Smart.php?id=ftvhd_taiwan
-民視第一台,http://fm1077.serv00.net/Smart.php?id=lunghuajingdian_twn
-民視台灣台,http://fm1077.serv00.net/Smart.php?id=ftvtaiwan_twn
-民視新聞台,http://fm1077.serv00.net/Smart.php?id=ftvnew_taiwan
-台視,http://fm1077.serv00.net/Smart.php?id=ttv_taiwan
-台視新聞台,http://fm1077.serv00.net/Smart.php?id=ttvnews_twn
-中視,http://fm1077.serv00.net/Smart.php?id=zhongshihd_twn
-中視新聞台,http://fm1077.serv00.net/Smart.php?id=zhongshinews_twn
-中視經典,http://fm1077.serv00.net/Smart.php?id=zhongshi_twn
-華視,http://fm1077.serv00.net/Smart.php?id=ctshd_twn
-華藝綜合,http://fm1077.serv00.net/Smart.php?id=weishichinese_twn
-大愛一台,http://fm1077.serv00.net/Smart.php?id=daai_twn
-寰宇新聞台,http://fm1077.serv00.net/Smart.php?id=huanyuxinwen_twn
-寰宇財經台,http://fm1077.serv00.net/Smart.php?id=huanyutaiwan_twn
-年代新聞台,http://fm1077.serv00.net/Smart.php?id=niandainews_twn
-愛爾達影劇,http://fm1077.serv00.net/Smart.php?id=eltayingju_twn
-愛爾達體育 1,http://fm1077.serv00.net/Smart.php?id=eltasport_twn
-愛爾達體育 2,http://fm1077.serv00.net/Smart.php?id=eltasport2_twn
-愛爾達體育 3,http://fm1077.serv00.net/Smart.php?id=eltasport3_twn
-ELEVEN 1,http://fm1077.serv00.net/Smart.php?id=golfchannel_twn
-博斯網球,http://fm1077.serv00.net/Smart.php?id=bositennis_twn
-博斯運動1,http://fm1077.serv00.net/Smart.php?id=bosisport1_twn
-博斯運動2,http://fm1077.serv00.net/Smart.php?id=bosisport2_twn
-博斯高球1,http://fm1077.serv00.net/Smart.php?id=bosigolf1_twn
-博斯高球2,http://fm1077.serv00.net/Smart.php?id=bosigolf2_twn
-探索亞洲,http://fm1077.serv00.net/Smart.php?id=discoverytwn_twn
-探索動力,http://fm1077.serv00.net/Smart.php?id=discoveryturbo_twn
-國家地理,http://fm1077.serv00.net/Smart.php?id=natgeohd_twn
-野生動物,http://fm1077.serv00.net/Smart.php?id=natgeowild_twn
-動物星球,http://fm1077.serv00.net/Smart.php?id=animalplanet_twn
-時尚,http://fm1077.serv00.net/Smart.php?id=fashiontv_twn
-Discovery Asia,http://fm1077.serv00.net/Smart.php?id=discoverytwn_twn
-Discovery HD,http://fm1077.serv00.net/Smart.php?id=discoveryhd_twn
-東森戲劇,http://fm1077.serv00.net/Smart.php?id=ettvdrama
-東森洋片,http://fm1077.serv00.net/Smart.php?id=ettvwestern
-東森綜合,http://fm1077.serv00.net/Smart.php?id=ettvzhonghe
-東森財經新聞,http://fm1077.serv00.net/Smart.php?id=ettvcaijing_twn
-東森電影,http://fm1077.serv00.net/Smart.php?id=ettvmovie
-緯來日本台,http://fm1077.serv00.net/Smart.php?id=videolandjapan
-緯來體育台,http://fm1077.serv00.net/Smart.php?id=videolandsport
-美亞電影,http://fm1077.serv00.net/Smart.php?id=meiyamovie_twn
-BBC World News,http://fm1077.serv00.net/Smart.php?id=bbcnews_twn
-Bloomberg News,http://fm1077.serv00.net/Smart.php?id=bloomberg_twn
-Fox News,http://fm1077.serv00.net/Smart.php?id=foxnews_twn
-阿里郎,http://fm1077.serv00.net/Smart.php?id=arirang_twn
-CN卡通,http://fm1077.serv00.net/Smart.php?id=momo1_twn
-靖天卡通台,http://fm1077.serv00.net/Smart.php?id=jingtiancartoon_twn
-靖天國際台,http://fm1077.serv00.net/Smart.php?id=jingtianintl_twn
-非凡新聞台,http://fm1077.serv00.net/Smart.php?id=feifannews_twn
-龍祥時代,http://fm1077.serv00.net/Smart.php?id=lungxiangtime_twn
-龍華偶像,http://fm1077.serv00.net/Smart.php?id=lunghuaidol_twn
-龍華戲劇,http://fm1077.serv00.net/Smart.php?id=lunghuaxiju_twn
-龍華洋片,http://fm1077.serv00.net/Smart.php?id=lunghuawestern_twn
-龍華經典,http://fm1077.serv00.net/Smart.php?id=lunghuajingdian_twn
-龍華電影,http://fm1077.serv00.net/Smart.php?id=xingwei_movie
 
 
-
-
-
-
-香港 Hongkong,#genre#
-J2(備用),http://fm1077.serv00.net/Smart.php?id=j2_hkdavid
-J2,http://fm1077.serv00.net/Smart.php?id=j2_twn
-RHK 31,http://fm1077.serv00.net/Smart.php?id=rhk31_twn
-RHK 32,http://fm1077.serv00.net/Smart.php?id=rhk32_twn
-TVB 星河,http://fm1077.serv00.net/Smart.php?id=tvbxinhe_twn
-VIUTV1,http://fm1077.serv00.net/Smart.php?id=viu1_twn
-Viu TV 69,http://fm1077.serv00.net/Smart.php?id=viutv69_hkdavid
-Viu6,http://fm1077.serv00.net/Smart.php?id=viusix_twn
-iNews 新聞台,http://fm1077.serv00.net/Smart.php?id=inews_twn
-無線財經資訊台,http://fm1077.serv00.net/Smart.php?id=tvbcaijing_twn
-珍珠台(備用),http://fm1077.serv00.net/Smart.php?id=pearl_hkdavid
-珍珠台,http://fm1077.serv00.net/Smart.php?id=pearl_twn
-翡翠台(備用),http://fm1077.serv00.net/Smart.php?id=jade_mike
-翡翠台,http://fm1077.serv00.net/Smart.php?id=jade_twn
-鳳凰衛視,http://fm1077.serv00.net/Smart.php?id=phoenixtv_hd
-鳳凰資訊,http://fm1077.serv00.net/Smart.php?id=phoenixinfo_hd
-鳳凰香港,http://fm1077.serv00.net/Smart.php?id=hkphoenix_twn
-
-
-
-
-
-
-ewTV频道,#genre#
-NewTV 哒啵电竞,http://[2409:8087:5e08:24::17]:6610/000000001000/2000000003000000066/index.m3u8?stbId=3&livemode=1&HlsProfileId=&channel-id=hnbblive&Contentid=2000000003000000066&IASHttpSessionId=OTT19019320240419154124000281&yang-1989
-NewTV 哒啵赛事,http://[2409:8087:1a01:df::7005]/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225675/index.m3u8
-NewTV 黑莓动画,http://[2409:8087:1a01:df::7005]/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225662/index.m3u8
-NewTV 黑莓电影,http://[2409:8087:1a01:df::7005]/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225743/index.m3u8
-NewTV 超级电影,http://[2409:8087:1a01:df::7005]/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225717/index.m3u8
-NewTV 超级电视剧,http://[2409:8087:1a01:df::7005]/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225716/index.m3u8
-NewTV 超级体育,http://[2409:8087:1a01:df::7005]/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225715/index.m3u8
-NewTV 超级综艺,http://[2409:8087:1a01:df::7005]/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225714/index.m3u8
-NewTV 魅力潇湘,http://[2409:8087:5e08:24::17]:6610/000000001000/2000000003000000041/index.m3u8?stbId=3&livemode=1&HlsProfileId=&channel-id=hnbblive&Contentid=2000000003000000041&IASHttpSessionId=OTT19019320240419154124000281&yang-1989
-NewTV 金牌综艺,http://[2409:8087:1a01:df::7005]/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225666/index.m3u8
-NewTV 东北热剧,http://[2409:8087:1a01:df::7005]/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225741/index.m3u8
-NewTV 古装剧场,http://[2409:8087:1a01:df::7005]/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225663/index.m3u8
-NewTV 欢乐剧场,http://[2409:8087:1a01:df::7005]/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225742/index.m3u8
-NewTV 怡伴健康,http://[2409:8087:1a01:df::7005]/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225673/index.m3u8
-NewTV 潮妈辣婆,http://[2409:8087:1a01:df::7005]/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225685/index.m3u8
-NewTV 军旅剧场,http://[2409:8087:1a01:df::7005]/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225676/index.m3u8
-NewTV 军事评论,http://[2409:8087:1a01:df::7005]/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225668/index.m3u8
-NewTV 中国功夫,http://[2409:8087:1a01:df::7005]/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225681/index.m3u8
-NewTV 农业致富,http://[2409:8087:1a01:df::7005]/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225683/index.m3u8
-NewTV 动作电影,http://[2409:8087:1a01:df::7005]/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225661/index.m3u8
-NewTV 家庭剧场,http://[2409:8087:1a01:df::7005]/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225677/index.m3u8
-NewTV 惊悚悬疑,http://[2409:8087:1a01:df::7005]/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225665/index.m3u8
-NewTV 武博世界,http://[2409:8087:1a01:df::7005]/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225680/index.m3u8
-NewTV 炫舞未来,http://[2409:8087:1a01:df::7005]/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225719/index.m3u8
-NewTV 爱情喜剧,http://[2409:8087:1a01:df::7005]/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225669/index.m3u8
-NewTV 精品萌宠,http://[2409:8087:1a01:df::7005]/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226505/index.m3u8
-NewTV 精品体育,http://[2409:8087:1a01:df::7005]/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225674/index.m3u8
-NewTV 精品大剧,http://[2409:8087:1a01:df::7005]/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225670/index.m3u8
-NewTV 精品纪录,http://[2409:8087:1a01:df::7005]/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225672/index.m3u8
-NewTV 超级体育,http://[2409:8087:1a01:df::7005]:80/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225715/index.m3u8
-NewTV 超级电影,http://[2409:8087:1a01:df::7005]:80/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225717/index.m3u8
-NewTV 超级电视剧,http://[2409:8087:1a01:df::7005]:80/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225716/index.m3u8
-NewTV 东北热剧,http://[2409:8087:1a01:df::7005]:80/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225741/index.m3u8
-NewTV 欢乐剧场,http://[2409:8087:1a01:df::7005]:80/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225742/index.m3u8
-NewTV 海外剧场,http://[2409:8087:1a0b:df::4005]:80/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225671/index.m3u8
-NewTV 中国功夫,http://[2409:8087:1a0b:df::4001]:80/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225681/index.m3u8
-NewTV 军旅剧场,http://[2409:8087:1a0b:df::4018]:80/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225676/index.m3u8
-NewTV 惊悚悬疑,http://[2409:8087:1a0b:df::4002]:80/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225665/index.m3u8
-NewTV 潮妈辣婆,http://[2409:8087:1a0b:df::4007]:80/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225685/index.m3u8
-NewTV 精品体育,http://[2409:8087:1a0b:df::4004]:80/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225674/index.m3u8
-NewTV 精品纪录,http://[2409:8087:1a0b:df::4007]:80/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225672/index.m3u8
-NewTV 家庭剧场,http://[2409:8087:1a0b:df::4007]:80/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225677/index.m3u8
-NewTV 精品大剧,http://[2409:8087:1a0b:df::4001]:80/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225670/index.m3u8
-NewTV 军事评论,http://[2409:8087:1a0b:df::4005]:80/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225668/index.m3u8
-NewTV 明星大片,http://[2409:8087:1a0b:df::4005]:80/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225664/index.m3u8
-NewTV 精品萌宠,http://[2409:8087:1a01:df::7005]:80/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226505/index.m3u8
-NewTV 超级综艺,http://[2409:8087:1a01:df::7005]:80/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225714/index.m3u8
-NewTV 金牌综艺,http://[2409:8087:1a01:df::7005]:80/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225666/index.m3u8
-NewTV 东北热剧,http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225741/index.m3u8
-NewTV 中国功夫,http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225681/index.m3u8
-NewTV 军事评论,http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225668/index.m3u8
-NewTV 军旅剧场,http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225676/index.m3u8
-NewTV 农业致富,http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225683/index.m3u8
-NewTV 动作电影,http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225661/index.m3u8
-NewTV 家庭剧场,http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225677/index.m3u8
-NewTV 怡伴健康,http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225673/index.m3u8
-NewTV 惊悚悬疑,http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225665/index.m3u8
-NewTV 明星大片,http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225664/index.m3u8
-NewTV 欢乐剧场,http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225742/index.m3u8
-NewTV 武搏世界,http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225680/index.m3u8
-NewTV 海外剧场,http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225671/index.m3u8
-NewTV 潮妈辣婆,http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225685/index.m3u8
-NewTV 爱情喜剧,http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225669/index.m3u8
-NewTV 精品大剧,http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225670/index.m3u8
-NewTV 精品纪录,http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225672/index.m3u8
-NewTV 精品体育,http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225674/index.m3u8
-NewTV 超级体育,http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225715/index.m3u8
-NewTV 超级电影,http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225717/index.m3u8
-NewTV 超级电视剧,http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225716/index.m3u8
-NewTV 超级综艺,http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225714/index.m3u8
-NewTV 金牌综艺,http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225666/index.m3u8
-NewTV 精品萌宠,http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226505/index.m3u8
 
 
 
