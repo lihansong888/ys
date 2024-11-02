@@ -81,10 +81,10 @@
 松視1臺,http://ali.hlspull.yximgs.com/live/cc479a19fa43506af0b73026fe2beb1e.flv
 松視2臺,http://ali.hlspull.yximgs.com/live/e964b80431e7bd8e91470b1571c89e6d.flv
 松視3臺,http://ali.hlspull.yximgs.com/live/2aab539feabb59ebfb15ef0763029218.flv
-彩虹电源,http://ali.hlspull.yximgs.com/live/28a9cc012c89df5c23d8869dd58a80c3.flv
-潘多拉紫臺,http://ali.hlspull.yximgs.com/live/8b10dfa57aa55e9b4b39d507d5f99a11.flv
-奧世驚艷臺,http://ali.hlspull.yximgs.com/live/063139d6a0ebbd1d4287cda18aef30f6.flv
-奧世香蕉臺,http://ali.hlspull.yximgs.com/live/b6ad6c5ed8ae7673a9bb654083694e95.flv
+彩虹电源,http://ali.hlspull.yximgs.com/live/cb1fe45c0b1fff0dc2b70071e4167e84.flv
+潘多拉紫臺,http://ali.hlspull.yximgs.com/live/2078e082f2d52347907fec843818d67d.flv
+奧世驚艷臺,http://ali.hlspull.yximgs.com/live/d06e3befec6a8a1017873876ec38f06f.flv
+奧世香蕉臺,http://ali.hlspull.yximgs.com/live/128ee567e02dbd070820157aadd9227a.flv
 
 
 
