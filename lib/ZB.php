@@ -85,10 +85,7 @@
 潘多拉紫臺,http://ali.hlspull.yximgs.com/live/8b10dfa57aa55e9b4b39d507d5f99a11.flv
 奧世驚艷臺,http://ali.hlspull.yximgs.com/live/063139d6a0ebbd1d4287cda18aef30f6.flv
 奧世香蕉臺,http://ali.hlspull.yximgs.com/live/b6ad6c5ed8ae7673a9bb654083694e95.flv
-星期六,http://ali.hlspull.yximgs.com/live/2bf20a7c8f01a7a62f87b960a0674f72.flv
-星期天,http://ali.hlspull.yximgs.com/live/2bf20a7c8f01a7a62f87b960a0674f72.flv
-免费公开,http://ali.hlspull.yximgs.com/live/2bf20a7c8f01a7a62f87b960a0674f72.flv
-内部开通,http://ali.hlspull.yximgs.com/live/2bf20a7c8f01a7a62f87b960a0674f72.flv
+
 
 
 
