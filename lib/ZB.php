@@ -77,8 +77,18 @@
 
 
 
-
-
+松-视蓝光,#genre#
+松視1臺,http://ali.hlspull.yximgs.com/live/cc479a19fa43506af0b73026fe2beb1e.flv
+松視2臺,http://ali.hlspull.yximgs.com/live/e964b80431e7bd8e91470b1571c89e6d.flv
+松視3臺,http://ali.hlspull.yximgs.com/live/2aab539feabb59ebfb15ef0763029218.flv
+彩虹电源,http://ali.hlspull.yximgs.com/live/28a9cc012c89df5c23d8869dd58a80c3.flv
+潘多拉紫臺,http://ali.hlspull.yximgs.com/live/8b10dfa57aa55e9b4b39d507d5f99a11.flv
+奧世驚艷臺,http://ali.hlspull.yximgs.com/live/063139d6a0ebbd1d4287cda18aef30f6.flv
+奧世香蕉臺,http://ali.hlspull.yximgs.com/live/b6ad6c5ed8ae7673a9bb654083694e95.flv
+星期六,http://ali.hlspull.yximgs.com/live/2bf20a7c8f01a7a62f87b960a0674f72.flv
+星期天,http://ali.hlspull.yximgs.com/live/2bf20a7c8f01a7a62f87b960a0674f72.flv
+免费公开,http://ali.hlspull.yximgs.com/live/2bf20a7c8f01a7a62f87b960a0674f72.flv
+内部开通,http://ali.hlspull.yximgs.com/live/2bf20a7c8f01a7a62f87b960a0674f72.flv
 
 
 
