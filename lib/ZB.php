@@ -78,9 +78,9 @@
 
 
 松-视蓝光,#genre#
-松視1臺,http://ali.hlspull.yximgs.com/live/cc479a19fa43506af0b73026fe2beb1e.flv
-松視2臺,http://ali.hlspull.yximgs.com/live/e964b80431e7bd8e91470b1571c89e6d.flv
-松視3臺,http://ali.hlspull.yximgs.com/live/2aab539feabb59ebfb15ef0763029218.flv
+松视1,http://ali.hlspull.yximgs.com/live/f09aa2b92141dcd37a8cdc45264fc271.flv
+松视2,http://ali.hlspull.yximgs.com/live/a59e2a86239d010bc8649b7026904e72.flv
+松视3,http://ali.hlspull.yximgs.com/live/9f3acf4d24fa75375f9540ac6178df24.flv
 彩虹电源,http://ali.hlspull.yximgs.com/live/cb1fe45c0b1fff0dc2b70071e4167e84.flv
 潘多拉紫臺,http://ali.hlspull.yximgs.com/live/2078e082f2d52347907fec843818d67d.flv
 奧世驚艷臺,http://ali.hlspull.yximgs.com/live/d06e3befec6a8a1017873876ec38f06f.flv
