@@ -88,7 +88,11 @@
 奧世驚艷臺,http://ali.hlspull.yximgs.com/live/7889e8d9ea43f1a5d12fae5786318889.flv
 奧世香蕉臺,http://ali.hlspull.yximgs.com/live/71966c8d061471b227041cd8bda0e782.flv
 
-
+新麻豆傳媒92部,https://video2.51daao.com/btt1/2021/03/20210315/va5KjBCF/index.m3u8
+麻豆傳媒312部,https://video2.51daao.com/btt1/2021/01/20210120/Mi91NxkJ/index.m3u8
+東熱720P32部,https://videocdnbaidu.rhsj520.com/2/rnmy2/20181123/6/n0436/index.m3u8
+一本道720P50部,https://videocdnbaidu.rhsj520.com/2/rnmy2/20181123/5/101315_170-1pon/index.m3u8
+HEYZO720P50部,https://video1.rhsj520.com/nyrm3/wuma/heyzo_hd_1942_full/1500kb/hls/index.m3u8
 
 
 
