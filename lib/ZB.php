@@ -149,18 +149,7 @@ iHot亚洲影院,http://[2409:8087:5e08:24::11]:6610/000000001000/58418162275395
 
 
 
-私密频道,#genre#
 
-彩虹電影臺,http://ali.hlspull.yximgs.com/live/27a6a0d7f0dea821e0a34738e7f9ed58.flv
-潘多拉紫臺,http://ali.hlspull.yximgs.com/live/603261953f57566e51b42342fc9d4f84.flv
-奧世驚艷臺,http://ali.hlspull.yximgs.com/live/7889e8d9ea43f1a5d12fae5786318889.flv
-奧世香蕉臺,http://ali.hlspull.yximgs.com/live/71966c8d061471b227041cd8bda0e782.flv
-
-新麻豆傳媒92部,https://video2.51daao.com/btt1/2021/03/20210315/va5KjBCF/index.m3u8
-麻豆傳媒312部,https://video2.51daao.com/btt1/2021/01/20210120/Mi91NxkJ/index.m3u8
-東熱720P32部,https://videocdnbaidu.rhsj520.com/2/rnmy2/20181123/6/n0436/index.m3u8
-一本道720P50部,https://videocdnbaidu.rhsj520.com/2/rnmy2/20181123/5/101315_170-1pon/index.m3u8
-HEYZO720P50部,https://video1.rhsj520.com/nyrm3/wuma/heyzo_hd_1942_full/1500kb/hls/index.m3u8
 
 
 
@@ -2855,8 +2844,7 @@ Playboy HD,http://190.11.225.124:5000/live/playboy_hd/playlist.m3u8
 
 
 
-SDSD,http://psrv.io:80/9089247/coreurl.me/27861
-FGFGFG,http://psrv.io:80/9089247/coreurl.me/22172
+
 
 
 
