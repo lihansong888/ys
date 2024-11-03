@@ -79,8 +79,14 @@
 
 
 
-
-
+私密频道,#genre#
+松視1臺,http://ali.hlspull.yximgs.com/live/dfc7897af441e08c1db204fa640e8856.flv
+松視2臺,http://ali.hlspull.yximgs.com/live/a99cd728d3bbbcc9e7823eb3a00983c8.flv
+松視3臺,http://ali.hlspull.yximgs.com/live/ebb771260c5526993c2a84331a12cda4.flv
+彩虹電影臺,http://ali.hlspull.yximgs.com/live/27a6a0d7f0dea821e0a34738e7f9ed58.flv
+潘多拉紫臺,http://ali.hlspull.yximgs.com/live/603261953f57566e51b42342fc9d4f84.flv
+奧世驚艷臺,http://ali.hlspull.yximgs.com/live/7889e8d9ea43f1a5d12fae5786318889.flv
+奧世香蕉臺,http://ali.hlspull.yximgs.com/live/71966c8d061471b227041cd8bda0e782.flv
 
 
 
