@@ -77,10 +77,7 @@
 
 
 
-松-视蓝光,#genre#
-松视1,http://ali.hlspull.yximgs.com/live/f09aa2b92141dcd37a8cdc45264fc271.flv
-松视2,http://ali.hlspull.yximgs.com/live/a59e2a86239d010bc8649b7026904e72.flv
-松视3,http://ali.hlspull.yximgs.com/live/9f3acf4d24fa75375f9540ac6178df24.flv
+
 
 
 
