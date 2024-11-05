@@ -186,7 +186,7 @@ Asian,http://cdn.adultiptv.net/asian.m3u8
 超高清频道,#genre#
 4K UHD,http://[2409:8087:5e00:24::1e]:6060/200000001898/460000089800010006/1.m3u8
 央视8K,http://49.232.131.30:99/8k.php?id=8k
-
+未来频道,http://l.cztvcloud.com/channels/lantian/SXyuhang3/720p.m3u8
 
 
 音乐乐享,#genre#
