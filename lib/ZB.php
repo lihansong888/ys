@@ -186,8 +186,17 @@ Asian,http://cdn.adultiptv.net/asian.m3u8
 超高清频道,#genre#
 4K UHD,http://[2409:8087:5e00:24::1e]:6060/200000001898/460000089800010006/1.m3u8
 央视8K,http://49.232.131.30:99/8k.php?id=8k
-未来频道,http://l.cztvcloud.com/channels/lantian/SXyuhang3/720p.m3u8
 
+CCTV4K,http://60.255.240.247:8090/live/ys4Kcq_2000.m3u8
+4K超高清,http://60.255.240.247:8090/live/emdy4k_8000.m3u8
+
+
+
+
+自由超频,#genre#
+未来频道,http://l.cztvcloud.com/channels/lantian/SXyuhang3/720p.m3u8
+石油频道,http://60.255.240.247:8090/live/sypd_4000.m3u8
+重温经典,http://60.255.240.247:8090/live/CWJD_4000.m3u8
 
 音乐乐享,#genre#
 MV轮播,http://zblu.exvugx.cn/bilibili/1773507853id
