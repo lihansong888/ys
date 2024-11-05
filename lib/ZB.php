@@ -189,6 +189,8 @@ Asian,http://cdn.adultiptv.net/asian.m3u8
 
 CCTV4K,http://60.255.240.247:8090/live/ys4Kcq_2000.m3u8
 4K超高清,http://60.255.240.247:8090/live/emdy4k_8000.m3u8
+北京纪实8K,http://49.7.69.235/downflv.brtvcloud.com/8klive/8kliveok.m3u8
+北京纪实8K,http://111.31.106.140/downflv.brtvcloud.com/8klive/8kliveok.m3u8
 
 
 
