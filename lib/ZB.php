@@ -4,7 +4,6 @@
 
 最近更新,#genre#
 
-普宁,https://tcdn.itouchtv.cn/tv/pnt.m3u8?t_token=75fd4adffbf4a100ae668fdfb337e4f9-liT3ZRu9Vr1ArfZ7VCIuEsFpjxd8D%2FcoOVZj2AnlQBSTDDEgt25phPROyzary3r5aA0KA9JpHuUYsK1LGss5mlvtLITyctvj4zKIjvSMe8WaTQ6GYML3E0Vy3XO07%2FIMNCqaI641rHHlNkbnz2RBx%2BjihBIP8OKXbekpQsVKAWM5nYamMFzN68TdKTl4eENoPjSAfP7%2Fa%2BJrwxOSIvXbwhk%2FZTw3JNPdpPRgyRkLciB4Ah8tlKZRkQtEVS5levQpJUK70SD%2BTyClkYcdncwr8yPnGk1acD405F%2FOfx4xXXsH8uSGPldB9sTLMX94NmJUfNTwBGeMn9W7z%2B4cSwsyfRCsmzhIdl%2FE42HpeJO%2FXvcNahyMTLdtWuCm0MNp2g3EE99QG2oTvwFw8Wmtr1KJzMdXQ1WkAuqs354%2FtSqaqJROLjVbYMSc9wzll%2F9Ex5HS
 
 杰森斯坦森,http://cfss.cc/cdn/hy/21059588.m3u8
 杰森斯坦森,http://diyp.zxxoo.work/huya/21059588
@@ -149,6 +148,33 @@ iHot亚洲影院,http://[2409:8087:5e08:24::11]:6610/000000001000/20000000040000
 iHot亚洲影院,http://[2409:8087:5e08:24::11]:6610/000000001000/5841816227539527643/1.m3u8?channel-id=wasusyt&Contentid=5841816227539527643&livemode=1&stbId=3
 
 
+
+CRE频道,#genre#
+Live Cams,http://cdn.adultiptv.net/livecams.m3u8
+MILF,http://cdn.adultiptv.net/milf.m3u8
+Big Dick,http://cdn.adultiptv.net/bigdick.m3u8
+Big Tits,http://cdn.adultiptv.net/bigtits.m3u8
+Fetish,http://cdn.adultiptv.net/fetish.m3u8
+Pornstar,http://cdn.adultiptv.net/pornstar.m3u8
+Big Ass,http://cdn.adultiptv.net/bigass.m3u8
+Interracial,http://cdn.adultiptv.net/interracial.m3u8
+Latina,http://cdn.adultiptv.net/latina.m3u8
+POV,http://cdn.adultiptv.net/pov.m3u8
+Blowjob,http://cdn.adultiptv.net/blowjob.m3u8
+Teen,http://cdn.adultiptv.net/teen.m3u8
+Hardcore,http://cdn.adultiptv.net/hardcore.m3u8
+Cuckold,http://cdn.adultiptv.net/cuckold.m3u8
+Threesome,http://cdn.adultiptv.net/threesome.m3u8
+Russian,http://cdn.adultiptv.net/russian.m3u8
+Lesbian,http://cdn.adultiptv.net/lesbian.m3u8
+Rough,http://cdn.adultiptv.net/rough.m3u8
+Gangbang,http://cdn.adultiptv.net/gangbang.m3u8
+Anal,http://cdn.adultiptv.net/anal.m3u8
+Compilation,http://cdn.adultiptv.net/compilation.m3u8
+Brunette,http://cdn.adultiptv.net/brunette.m3u8
+Blonde,http://cdn.adultiptv.net/blonde.m3u8
+Gay,http://cdn.adultiptv.net/gay.m3u8
+Asian,http://cdn.adultiptv.net/asian.m3u8
 
 
 
