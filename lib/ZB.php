@@ -2693,7 +2693,7 @@ iHOT爱院线,http://[2409:8087:5e08:24::11]:6610/000000001000/20000000040000000
 
 
 港澳台直播,#genre#
-金马影院,http://pull.kktv8.com/livekktv/128600025.flv
+香港佛陀台,http://js1.amtb.cn/liveedge/_definst_/livetv/chunklist.m3u8
 香港卫视,http://zhibo.hkstv.tv/livestream/mutfysrq/playlist.m3u8	    
 点掌财经,https://wsvideo.aniu.tv/live/aniu/playlist.m3u8
 ASTV亚洲卫视,https://play-hsbj.vzan.com/slowlive/821481626725612417/live.m3u8?zbid=2046370057&tpid=330913109&type=0
