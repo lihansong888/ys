@@ -4,6 +4,8 @@
 
 最近更新,#genre#
 
+普宁,https://tcdn.itouchtv.cn/tv/pnt.m3u8?t_token=75fd4adffbf4a100ae668fdfb337e4f9-liT3ZRu9Vr1ArfZ7VCIuEsFpjxd8D%2FcoOVZj2AnlQBSTDDEgt25phPROyzary3r5aA0KA9JpHuUYsK1LGss5mlvtLITyctvj4zKIjvSMe8WaTQ6GYML3E0Vy3XO07%2FIMNCqaI641rHHlNkbnz2RBx%2BjihBIP8OKXbekpQsVKAWM5nYamMFzN68TdKTl4eENoPjSAfP7%2Fa%2BJrwxOSIvXbwhk%2FZTw3JNPdpPRgyRkLciB4Ah8tlKZRkQtEVS5levQpJUK70SD%2BTyClkYcdncwr8yPnGk1acD405F%2FOfx4xXXsH8uSGPldB9sTLMX94NmJUfNTwBGeMn9W7z%2B4cSwsyfRCsmzhIdl%2FE42HpeJO%2FXvcNahyMTLdtWuCm0MNp2g3EE99QG2oTvwFw8Wmtr1KJzMdXQ1WkAuqs354%2FtSqaqJROLjVbYMSc9wzll%2F9Ex5HS
+
 杰森斯坦森,http://cfss.cc/cdn/hy/21059588.m3u8
 杰森斯坦森,http://diyp.zxxoo.work/huya/21059588
 电影英叔,http://diyp.zxxoo.work/huya/11342421
