@@ -195,6 +195,20 @@ CCTV4K,http://60.255.240.247:8090/live/ys4Kcq_2000.m3u8
 
 
 
+华数4K,http://[2409:8087:5e08:24::11]:6610/000000001000/6000000003000004748/1.m3u8?channel-id=wasusyt&Contentid=6000000003000004748&livemode=1&stbId=3
+纯享4K,http://[2409:8087:5e08:24::11]:6610/000000001000/1000000004000011651/1.m3u8?channel-id=ystenlive&Contentid=1000000004000011651&livemode=1&stbId=3
+咪咕4K1,http://[2409:8087:5e08:24::11]:6610/000000001000/3000000010000005180/1.m3u8?channel-id=FifastbLive&Contentid=3000000010000005180&livemode=1&stbId=3
+咪咕4K2,http://[2409:8087:5e08:24::11]:6610/000000001000/3000000010000015686/1.m3u8?channel-id=FifastbLive&Contentid=3000000010000015686&livemode=1&stbId=3
+咪咕4K3,http://[2409:8087:5e08:24::11]:6610/000000001000/3000000001000005308/1.m3u8?channel-id=FifastbLive&Contentid=3000000001000005308&livemode=1&stbId=3
+咪咕4K3,http://[2409:8087:5e08:24::11]:6610/000000001000/3000000001000005969/1.m3u8?channel-id=FifastbLive&Contentid=3000000001000005969&livemode=1&stbId=3
+
+
+
+
+
+
+
+
 自由超频,#genre#
 未来频道,http://l.cztvcloud.com/channels/lantian/SXyuhang3/720p.m3u8
 石油频道,http://60.255.240.247:8090/live/sypd_4000.m3u8
