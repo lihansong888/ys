@@ -503,6 +503,7 @@ CCTV4K,http://60.255.240.247:8090/live/ys4Kcq_2000.m3u8
 
 28 AI 智慧賽馬,http://aktv.top/AKTV/live/aktv/28ai/AKTV.m3u8	
 
+
 Channel 5 HD,http://aktv.top/AKTV/live/aktv/channel5hd/AKTV.m3u8	
 
 Channel 8 HD,http://aktv.top/AKTV/live/aktv/channel8hd/AKTV.m3u8	
@@ -510,15 +511,18 @@ Channel 8 HD,http://aktv.top/AKTV/live/aktv/channel8hd/AKTV.m3u8
 
 Channel U HD,http://aktv.top/AKTV/live/aktv/channeluhd/AKTV.m3u8	
 
+
 Hoy 78,http://aktv.top/AKTV/live/aktv/hoy78/AKTV.m3u8	
 
-myTV SUPER 18,http://aktv.top/AKTV/live/aktv/mytvsuper18/AKTV.m3u8	
+
+myTV SUPER 18台,http://aktv.top/AKTV/live/aktv/mytvsuper18/AKTV.m3u8	
 
 
 PopC,http://aktv.top/AKTV/live/aktv/popc/AKTV.m3u8	
 
 
 ROCK Action,http://aktv.top/AKTV/live/aktv/rockaction/AKTV.m3u8	
+
 
 TVB Plus,http://aktv.top/AKTV/live/aktv/tvbplus/AKTV.m3u8	
 
@@ -552,11 +556,10 @@ tvN,http://aktv.top/AKTV/live/aktv/tvn/AKTV.m3u8
 
 日本全天新聞,http://aktv.top/AKTV/live/aktv/null-13/AKTV.m3u8	
 
+
 明珠剧集台(北美),http://aktv.top/AKTV/live/aktv/null-19/AKTV.m3u8	
 
-
 明珠台,http://aktv.top/AKTV/live/aktv/null-2/AKTV.m3u8	
-
 
 無線新聞台,http://aktv.top/AKTV/live/aktv/null-1/AKTV.m3u8	
 
@@ -566,7 +569,6 @@ tvN,http://aktv.top/AKTV/live/aktv/tvn/AKTV.m3u8
 
 翡翠剧集台(北美),http://aktv.top/AKTV/live/aktv/null-18/AKTV.m3u8	
 
-
 翡翠台,http://aktv.top/AKTV/live/aktv/null/AKTV.m3u8	
 
 
@@ -574,7 +576,6 @@ tvN,http://aktv.top/AKTV/live/aktv/tvn/AKTV.m3u8
 
 
 華視,http://aktv.top/AKTV/live/aktv/null-11/AKTV.m3u8	
-
 
 靖天電影台,http://aktv.top/AKTV/live/aktv/null-6/AKTV.m3u8	
 
@@ -605,11 +606,59 @@ Now星影台,http://aktv.top/AKTV/live/aktv2/now/AKTV.m3u8
 
 TVB 星河台,http://aktv.top/AKTV/live/aktv2/tvb/AKTV.m3u8	
 
+viutv 99,http://aktv.top/AKTV/live/aktv2/viutv99/AKTV.m3u8	
+
+viutv6 96,http://aktv.top/AKTV/live/aktv2/viutv696/AKTV.m3u8	
 
 无线新闻台(北美),http://aktv.top/AKTV/live/aktv2/null-1/AKTV.m3u8	
 
 
-爆谷台,http://aktv.top/AKTV/live/aktv2/null/AKTV.m3u8
+爆谷台,http://aktv.top/AKTV/live/aktv2/null/AKTV.m3u8	
+
+
+Animax-HK,http://aktv.top/AKTV/live/aktv3/animaxhk/AKTV.m3u8	
+
+
+C+台,http://aktv.top/AKTV/live/aktv3/c/AKTV.m3u8	
+
+
+DW,http://aktv.top/AKTV/live/aktv3/dw/AKTV.m3u8	
+
+
+France 24,http://aktv.top/AKTV/live/aktv3/france24/AKTV.m3u8	
+
+
+KIX,http://aktv.top/AKTV/live/aktv3/kix/AKTV.m3u8	
+
+
+Love Nature HD,http://aktv.top/AKTV/live/aktv3/lovenaturehd/AKTV.m3u8	
+
+NHK World-Japan,http://aktv.top/AKTV/live/aktv3/nhkworldjapan/AKTV.m3u8	
+
+
+Nick Jr,http://aktv.top/AKTV/live/aktv3/nickjr/AKTV.m3u8	
+
+
+Nickelodeon,http://aktv.top/AKTV/live/aktv3/nickelodeon/AKTV.m3u8	
+
+
+ROCK Action,http://aktv.top/AKTV/live/aktv3/rockaction/AKTV.m3u8	
+
+
+Thrill,http://aktv.top/AKTV/live/aktv3/thrill/AKTV.m3u8	
+
+
+ZooMoo,http://aktv.top/AKTV/live/aktv3/zoomoo/AKTV.m3u8	
+
+亞洲新聞台,http://aktv.top/AKTV/live/aktv3/null-3/AKTV.m3u8	
+
+
+東方衛視國際頻道,http://aktv.top/AKTV/live/aktv3/null/AKTV.m3u8	
+
+
+無線衛星新聞台,http://aktv.top/AKTV/live/aktv3/null-2/AKTV.m3u8	
+
+神州新聞台,http://aktv.top/AKTV/live/aktv3/null-1/AKTV.m3u8
 
 
 
