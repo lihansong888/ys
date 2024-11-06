@@ -224,35 +224,9 @@ CCTV4K,http://60.255.240.247:8090/live/ys4Kcq_2000.m3u8
 
 
 
-Tokyo,#genre#
-NHK G,http://vthanh.utako.moe/1/index.m3u8
-NHK E,http://vthanh.utako.moe/2/index.m3u8
-NTV,http://vthanh.utako.moe/3/index.m3u8
-TBS,http://vthanh.utako.moe/5/index.m3u8
-Fuji TV,http://vthanh.utako.moe/7/index.m3u8
-TV Asahi,http://vthanh.utako.moe/4/index.m3u8
-TV Tokyo,http://vthanh.utako.moe/6/index.m3u8
-TOKYO MX1,http://vthanh.utako.moe/10/index.m3u8
 
-BS,#genre#
-NHK BS,http://vthanh.utako.moe/8/index.m3u8
-Animax,http://vthanh.utako.moe/9/index.m3u8
-BS11,http://vthanh.utako.moe/12/index.m3u8
 
-CS,#genre#
-AT-X,http://vthanh.utako.moe/11/index.m3u8
-QVC,https://cdn-live1.qvc.jp/iPhone/1501/1501.m3u8
 
-Test/Terrestrial,#genre#
-NHK G-test,http://tv.utako.moe/nhkg_fucknihontv.apymx/index.m3u8
-TOKYO MX1-test,http://tv.utako.moe/mx1/index.m3u8
-TOKYO MX2-test,http://tv.utako.moe/mx2/index.m3u8
-
-Test/BS,#genre#
-BS11-test,http://tv.utako.moe/bs11/index.m3u8
-
-Test/CS,#genre#
-AT-X-test,http://tv.utako.moe/at-x/index.m3u8
 
 
 
