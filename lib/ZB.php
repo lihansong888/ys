@@ -483,7 +483,7 @@ CCTV4K,http://60.255.240.247:8090/live/ys4Kcq_2000.m3u8
 
 
 
-测试频道,#genre#
+港澳台测试频道,#genre#
 
 28 AI 智慧賽馬,http://aktv.top/AKTV/live/aktv/28ai/AKTV.m3u8	
 
