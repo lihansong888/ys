@@ -2809,7 +2809,7 @@ iHOT爱院线,http://[2409:8087:5e08:24::11]:6610/000000001000/20000000040000000
 
 港澳台直播,#genre#
 香港佛陀台,http://js1.amtb.cn/liveedge/_definst_/livetv/chunklist.m3u8
-香港卫视,http://zhibo.hkstv.tv/livestream/mutfysrq/playlist.m3u8	    
+	    
 点掌财经,https://wsvideo.aniu.tv/live/aniu/playlist.m3u8
 ASTV亚洲卫视,https://play-hsbj.vzan.com/slowlive/821481626725612417/live.m3u8?zbid=2046370057&tpid=330913109&type=0
 大爱1,https://pulltv1.wanfudaluye.com/live/tv1.m3u8
@@ -2817,7 +2817,7 @@ ASTV亚洲卫视,https://play-hsbj.vzan.com/slowlive/821481626725612417/live.m3u
 番薯111,http://61.216.67.119:1935/TWHG/E1/chunklist_w705811302.m3u
 人間衛視,http://61.216.67.119:1935/bltvhd/bltv1/chunklist_w1266569526.m3u
 
-香港卫视,http://zhibo.hkstv.tv/livestream/mutfysrq/playlist.m3u8
+
 
 	    
 凤凰中文,http://58.144.154.93/qctv.fengshows.cn/live/0701pcc72.m3u8	    
@@ -2853,6 +2853,13 @@ TVBS新闻,http://61.221.215.25:8800/hls/9/index.m3u8
 
 
 
+大立电视台,http://www.dalitv.com.tw:4568/live/dali/index.m3u8
+香港卫视,http://zhibo.hkstv.tv:80/livestream/mutfysrq.flv
+爆谷台,https://www.mytvsuper.xyz/1/baogutai/stream.m3u8
+星影台,https://www.mytvsuper.xyz/1/now/stream.m3u8
+星河台,https://www.mytvsuper.xyz/tvb/xinghe/stream.m3u8
+千禧经典台,https://www.mytvsuper.xyz/astro/qianxi/stream.m3u8
+TVB生活台,https://www.mytvsuper.xyz/tvb/shenghuo/stream.m3u8
 
 
 
