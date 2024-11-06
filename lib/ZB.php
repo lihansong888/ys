@@ -201,10 +201,8 @@ CCTV4K,http://60.255.240.247:8090/live/ys4Kcq_2000.m3u8
 重温经典,http://60.255.240.247:8090/live/CWJD_4000.m3u8
 
 音乐乐享,#genre#
-MV轮播,http://zblu.exvugx.cn/bilibili/1773507853id
-演唱会,http://zblu.exvugx.cn/douyu/11880223
-金典轮播,http://157.148.134.6/live-bvc/682702/live_1749710516_4875726_2500/index.m3u8
-宫崎骏,http://221.15.71.3/live-bvc/664465/live_8452447_9815264/index.m3u8
+
+宫崎骏音乐连播,http://221.15.71.3/live-bvc/664465/live_8452447_9815264/index.m3u8
 24小时轻音乐,http://61.240.206.3/live-bvc/276764/live_2565439_9900945/index.m3u8
 
 
