@@ -2826,7 +2826,7 @@ ASTV亚洲卫视,https://play-hsbj.vzan.com/slowlive/821481626725612417/live.m3u
 
 
 	    
-凤凰中文,http://58.144.154.93/qctv.fengshows.cn/live/0701pcc72.m3u8	    
+    
 HOLLYWOOD,https://bozztv.com/hwotta/playlist/HD3400/HD3400.m3u8
 翡翠台,http://223.244.26.190:8082/tvb%E7%BF%A1%E7%BF%A0.%E7%9B%97%E6%BA%90%E8%80%85%E6%AD%BB%E5%85%A8%E5%AE%B6/%E6%98%93%E7%99%BCTV//hls.m3u8
 BBC new,https://vs-hls-push-ww-live.akamaized.net/x=4/i=urn:bbc:pips:service:bbc_news_channel_hd/t=3840/v=pv14/b=5070016/main.m3u8
@@ -2851,7 +2851,7 @@ AMC电影台,http://61.221.215.25:8800/hls/43/index.m3u8
 49号,http://61.221.215.25:8800/hls/49/index.m3u8
 八大第一,http://61.221.215.25:8800/hls/55/index.m3u8
 动物星球,http://61.221.215.25:8800/hls/57/index.m3u8
-无线星河国,http://php.jdshipin.com:8880/smt.php?id=Xinhe
+
 香港面包台,https://video.bread-tv.com:8091/hls-live24/online/index.m3u8
 国际探索频道,http://61.221.215.25:8800/hls/1/index.m3u8
 TVBS新闻,http://61.221.215.25:8800/hls/9/index.m3u8
@@ -2860,13 +2860,30 @@ TVBS新闻,http://61.221.215.25:8800/hls/9/index.m3u8
 
 
 大立电视台,http://www.dalitv.com.tw:4568/live/dali/index.m3u8
-香港卫视,http://zhibo.hkstv.tv:80/livestream/mutfysrq.flv
+
 爆谷台,https://www.mytvsuper.xyz/1/baogutai/stream.m3u8
 星影台,https://www.mytvsuper.xyz/1/now/stream.m3u8
-星河台,https://www.mytvsuper.xyz/tvb/xinghe/stream.m3u8
-千禧经典台,https://www.mytvsuper.xyz/astro/qianxi/stream.m3u8
-TVB生活台,https://www.mytvsuper.xyz/tvb/shenghuo/stream.m3u8
 
+
+
+
+
+凤凰香港,http://203.205.220.174:80/qctv.fengshows.cn/live/0701phk72.m3u8
+凤凰中文,http://203.205.220.174:80/qctv.fengshows.cn/live/0701pcc72.m3u8
+凤凰资讯,http://203.205.220.174:80/qctv.fengshows.cn/live/0701pin72.m3u8
+凤凰中文,http://php.jdshipin.com:8880/TVOD/iptv.php?id=fhzw
+翡翠台,http://php.jdshipin.com:8880/TVOD/iptv.php?id=fct3
+VIUTV,http://php.jdshipin.com/TVOD/iptv.php?id=viutv
+TVBSNEWS,http://61.221.215.25:8800/hls/9/index.m3u8
+八大戏剧台,http://61.221.215.25:8800/hls/39/index.m3u8
+八大第1台,http://61.221.215.25:8800/hls/55/index.m3u8
+八大综合台,http://61.221.215.25:8800/hls/56/index.m3u8
+点掌财经,https://wsvideo.aniu.tv/live/aniu/playlist.m3u8
+非凡新闻,rtmp://f13h.mine.nu/sat/tv581
+三立戏剧台,http://61.221.215.25:8800/hls/41/index.m3u8
+台视新闻,http://38.64.72.148:80/hls/modn/list/4013/chunklist1.m3u8
+纬来精采,http://61.221.215.25:8800/hls/48/index.m3u8
+中天娱乐,http://61.221.215.25:8800/hls/47/index.m3u8
 
 
 
