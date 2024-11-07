@@ -232,8 +232,10 @@ CCTV4K,http://60.255.240.247:8090/live/ys4Kcq_2000.m3u8
 宫崎骏音乐连播,http://221.15.71.3/live-bvc/664465/live_8452447_9815264/index.m3u8
 24小时轻音乐,http://61.240.206.3/live-bvc/276764/live_2565439_9900945/index.m3u8
 
-
-
+CHC高清频道,#genre#
+CHC家庭影院,http://[2409:8087:3c02:21:0:1:0:1028]:6610/shandong_cabletv.live.zte.com////CHANNEL00002028/index.m3u8?IAS
+CHC高清电影,http://[2409:8087:3c02:21:0:1:0:1028]:6610/shandong_cabletv.live.zte.com////CHANNEL00002029/index.m3u8?IAS
+CHC动作电影,http://[2409:8087:3c02:21:0:1:0:1028]:6610/shandong_cabletv.live.zte.com////CHANNEL00002030/index.m3u8?IAS
 
 
 
