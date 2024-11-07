@@ -2814,6 +2814,35 @@ iHOT爱院线,http://[2409:8087:5e08:24::11]:6610/000000001000/20000000040000000
 
 
 港澳台直播,#genre#
+
+
+凤凰卫视,http://ali.hlspull.yximgs.com/live/l3w1tt2dkzvpukkliu64ah001-golive.flv
+凤凰资讯,http://ali.hlspull.yximgs.com/live/l3w1tt2dkzvpukkliu64ah002-golive.flv
+凤凰香港,http://ali.hlspull.yximgs.com/live/l3w1tt2dkzvpukkliu64ah003-golive.flv
+有线18跑马,http://ali.hlspull.yximgs.com/live/l3w1tt2dkzvpukkliu64ah00a17-golive.flv
+HOY76,http://ali.hlspull.yximgs.com/live/l3w1tt2dkzvpukkliu64ah00b47-golive.flv
+HOY77,http://ali.hlspull.yximgs.com/live/l3w1tt2dkzvpukkliu64ah00b48-golive.flv
+HOY78,http://ali.hlspull.yximgs.com/live/l3w1tt2dkzvpukkliu64ah00b49-golive.flv
+NOW新闻,http://ali.hlspull.yximgs.com/live/l3w1tt2dkzvpukkliu64ah00b44-golive.flv
+NOW财经,http://ali.hlspull.yximgs.com/live/l3w1tt2dkzvpukkliu64ah00b45-golive.flv
+ROCKACTION,http://ali.hlspull.yximgs.com/live/l3w1tt2dkzvpukkliu64ah00b34-golive.flv
+ROCKENTERTAINMENT综艺娱乐,http://ali.hlspull.yximgs.com/live/l3w1tt2dkzvpukkliu64ah00b33-golive.flv
+RTHK31,http://ali.hlspull.yximgs.com/live/l3w1tt2dkzvpukkliu64ah00a25-golive.flv
+RTHK32,http://ali.hlspull.yximgs.com/live/l3w1tt2dkzvpukkliu64ah00a26-golive.flv
+SUPERKIDSCHANNEL,http://ali.hlspull.yximgs.com/live/l3w1tt2dkzvpukkliu64ah00a19-golive.flv
+THRILL惊悚台,http://ali.hlspull.yximgs.com/live/l3w1tt2dkzvpukkliu64ah00b29-golive.flv
+TVN,http://ali.hlspull.yximgs.com/live/l3w1tt2dkzvpukkliu64ah00a28-golive.flv
+KIX,http://ali.hlspull.yximgs.com/live/l3w1tt2dkzvpukkliu64ah00b31-golive.flv
+LOVENATURE4K,http://ali.hlspull.yximgs.com/live/l3w1tt2dkzvpukkliu64ah00b35-golive.flv
+
+
+
+
+
+
+
+
+
 香港佛陀台,http://js1.amtb.cn/liveedge/_definst_/livetv/chunklist.m3u8
 	    
 点掌财经,https://wsvideo.aniu.tv/live/aniu/playlist.m3u8
