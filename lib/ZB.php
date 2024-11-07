@@ -2464,10 +2464,10 @@ iHOT爱院线,http://[2409:8087:5e08:24::11]:6610/000000001000/20000000040000000
 	    
 	    
 咪咕直播,#genre#
-晴彩青少「IPV6」,http://[2409:8087:1a01:df::7005]/ottrrs.hl.chinamobile.com/TVOD/88888888/224/3221226508/index.m3u8
-晴彩竞技「IPV6」,http://[2409:8087:1a01:df::404d]/ottrrs.hl.chinamobile.com/TVOD/88888888/224/3221226124/index.m3u8
-晴彩篮球「IPV6」,http://[2409:8087:1a01:df::403b]/ottrrs.hl.chinamobile.com/TVOD/88888888/224/3221226147/index.m3u8
-晴彩广场舞「IPV6」,http://[2409:8087:1a01:df::4046]/ottrrs.hl.chinamobile.com/TVOD/88888888/224/3221226472/index.m3u8  
+睛彩竞技,http://[2409:8087:74d9:21::6]:80/270000001128/9900000119/index.m3u8
+睛彩篮球,http://[2409:8087:74d9:21::6]:80/270000001128/9900000118/index.m3u8
+睛彩青少,http://[2409:8087:74d9:21::6]:80/270000001128/9900000120/index.m3u8
+睛彩广场舞,http://[2409:8087:1a01:df::7005]:80/ottrrs.hl.chinamobile.com/TVOD/88888888/224/3221226472/index.m3u8 
 
 
 
