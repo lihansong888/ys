@@ -2860,7 +2860,54 @@ Fox新闻台,https://fox-foxnewsnow-samsungus.amagi.tv/playlist720p.m3u8
 
 
 
+唯心电视,http://mobile.ccdntech.com/transcoder/_definst_/vod164_Live/live/playlist.m3u8 
 
+生命电视,http://61.216.67.119:1935/lifetv/lifetv.stream/manifest.m3u8 
+
+番薯,http://61.216.67.119:1935/TWHG/E1/chunklist_w7058102.m3u8 
+
+面包台,https://video.bread-tv.com:8091/hls-live24/online/index.m3u8 
+唯心电视,https://mobile.ccdntech.com/transcoder/_definst_/vod164_Live/live/chunklist_w1177047531.m3u8 
+
+澳门莲花台,http://61.244.22.5/ch3/ch3.live/chunklist.m3u8
+
+中天娱乐,http://61.221.215.25:8800/hls/47/index.m3u8
+
+TVBS NEWS,http://61.221.215.25:8800/hls/9/index.m3u8
+
+八大戏剧,http://61.221.215.25:8800/hls/39/index.m3u8
+
+三立戏剧,http://61.221.215.25:8800/hls/41/index.m3u8
+
+中华小当家,http://61.221.215.25:8800/hls/40/index.m3u8
+
+AMC电影,http://61.221.215.25:8800/hls/43/index.m3u8
+
+纬来精彩,http://61.221.215.25:8800/hls/48/index.m3u8
+
+探索亚洲,http://61.221.215.25:8800/hls/50/index.m3u8
+
+八大第一,http://61.221.215.25:8800/hls/55/index.m3u8
+
+动物星球,http://61.221.215.25:8800/hls/57/index.m3u8
+
+八大,http://61.221.215.25:8800/hls/56/index.m3u8
+
+八大戏剧,http://61.221.215.25:8800/hls/39/index.m3u8
+
+三立戏剧,http://61.221.215.25:8800/hls/41/index.m3u8
+
+中华小当家,http://61.221.215.25:8800/hls/40/index.m3u8
+
+AMC电影,http://61.221.215.25:8800/hls/43/index.m3u8
+
+纬来精彩,http://61.221.215.25:8800/hls/48/index.m3u8
+
+探索亚洲,http://61.221.215.25:8800/hls/50/index.m3u8
+
+八大第一,http://61.221.215.25:8800/hls/55/index.m3u8
+
+动物星球,http://61.221.215.25:8800/hls/57/index.m3u8
 
 
 
