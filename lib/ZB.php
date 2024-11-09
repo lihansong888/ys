@@ -1396,13 +1396,9 @@
 
 时娱频道,#genre#
 
-松視1臺,http://ali.hlspull.yximgs.com/live/f5aa7698d20bc8d9e78e6f1bb4cf0fef.flv
-松視2臺,http://ali.hlspull.yximgs.com/live/04e5572fd54f583d8591e9454f29579f.flv
-松視3臺,http://ali.hlspull.yximgs.com/live/c437b21c44b715dd8a64f17e9ca66d34.flv
-彩虹电影,http://ali.hlspull.yximgs.com/live/7c3bd0938257a37b5c8e4547dbd18036.flv
-潘多拉紫臺,http://ali.hlspull.yximgs.com/live/9dfe611efe0ae126d88b8fe341ea01e7.flv
-奧世驚艷臺,http://ali.hlspull.yximgs.com/live/030cae02f1345231085cdf8b73c72986.flv
-奧世香蕉臺,http://ali.hlspull.yximgs.com/live/669debb4c3c03e4744f73a28b9f9ca0d.flv
+正式松視1臺,http://ali.hlspull.yximgs.com/live/24af30cd9297afe20c212ecc90bc2dbf.flv
+正式松視2臺,http://ali.hlspull.yximgs.com/live/ed760a22c9801a303aa63dbd4cc43f29.flv
+正式松視3臺,http://ali.hlspull.yximgs.com/live/e70587367c048fea61d515525462ac74.flv
 
 
 
