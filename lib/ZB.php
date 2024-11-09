@@ -4017,6 +4017,31 @@ Fox新闻台,https://fox-foxnewsnow-samsungus.amagi.tv/playlist720p.m3u8
 
 十大频道直播,#genre#
 
+
+Dorcel TV HD,http://ip1.orgip.net/701/video.m3u8?token=A3b61a999e
+Redlight HD,http://ip1.orgip.net/702/video.m3u8?token=A3b61a999e
+Hustler HD Europe,http://ip1.orgip.net/714/video.m3u8?token=A3b61a999e
+Vivid Red,http://ip1.orgip.net/709/video.m3u8?token=A3b61a999e
+Private TV,http://ip1.orgip.net/704/video.m3u8?token=A3b61a999e
+Brazzers TV Europe,http://ip1.orgip.net/705/video.m3u8?token=A3b61a999e
+CineMan ExExEx,http://ip1.orgip.net/706/video.m3u8?token=A3b61a999e
+CineMan ExExEx TWO,http://ip1.orgip.net/716/video.m3u8?token=A3b61a999e
+XXL,http://ip1.orgip.net/710/video.m3u8?token=A3b61a999e
+Penthouse Quickies HD,http://ip1.orgip.net/713/video.m3u8?token=A3b61a999e
+Penthouse Gold HD,http://ip1.orgip.net/707/video.m3u8?token=A3b61a999e
+XXX 708,http://ip1.orgip.net/708/video.m3u8?token=A3b61a999e
+XXX 712,http://ip1.orgip.net/712/video.m3u8?token=A3b61a999e
+XXX 715,http://ip1.orgip.net/715/video.m3u8?token=A3b61a999e
+Barely legal,http://ip1.orgip.net/711/video.m3u8?token=A3b61a999e
+Blue Hustler,http://ip1.orgip.net/703/video.m3u8?token=A3b61a999e
+
+
+
+
+
+
+
+
 Desire,http://88.212.7.11/live/test_desire_hd_hevc/playlist.m3u8
 Brazzers,http://88.212.7.11/live/test_brazzers_hd_hevc/playlist.m3u8
 Dorcel,http://88.212.7.11/live/test_dorcel_hd_hevc/playlist.m3u8
