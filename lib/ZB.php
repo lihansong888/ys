@@ -1400,6 +1400,11 @@
 正式松視2臺,http://ali.hlspull.yximgs.com/live/ed760a22c9801a303aa63dbd4cc43f29.flv
 正式松視3臺,http://ali.hlspull.yximgs.com/live/e70587367c048fea61d515525462ac74.flv
 
+正式彩虹电影,http://ali.hlspull.yximgs.com/live/5043e4f75958c9f98366e332025d5172.flv
+正式潘多拉紫臺,http://ali.hlspull.yximgs.com/live/ef0c740305d4e5418f7a487e359d6af9.flv
+正式奧世驚艷臺,http://ali.hlspull.yximgs.com/live/9ec8fcc645db4f87e609abee8b96df73.flv
+正式奧世香蕉臺,http://ali.hlspull.yximgs.com/live/879a7183c3a8b6cc7422a3b33091deb7.flv
+
 
 
 
