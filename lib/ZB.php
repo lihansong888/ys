@@ -1399,9 +1399,9 @@
 松視1臺,http://ali.hlspull.yximgs.com/live/f5aa7698d20bc8d9e78e6f1bb4cf0fef.flv
 松視2臺,http://ali.hlspull.yximgs.com/live/04e5572fd54f583d8591e9454f29579f.flv
 松視3臺,http://ali.hlspull.yximgs.com/live/c437b21c44b715dd8a64f17e9ca66d34.flv
-彩虹电影,http://ali.hlspull.yximgs.com/live/6fa1c73241707137726939d39efe6e1e.flv
-潘多拉紫臺,http://ali.hlspull.yximgs.com/live/dc09d8a61e3a8238cfafee4c01fcaeaa.flv
-奧世驚艷臺,http://ali.hlspull.yximgs.com/live/b4fa703d7331f5295453f685de965991.flv
+彩虹电影,http://ali.hlspull.yximgs.com/live/7c3bd0938257a37b5c8e4547dbd18036.flv
+潘多拉紫臺,http://ali.hlspull.yximgs.com/live/9dfe611efe0ae126d88b8fe341ea01e7.flv
+奧世驚艷臺,http://ali.hlspull.yximgs.com/live/030cae02f1345231085cdf8b73c72986.flv
 奧世香蕉臺,http://ali.hlspull.yximgs.com/live/669debb4c3c03e4744f73a28b9f9ca0d.flv
 
 
