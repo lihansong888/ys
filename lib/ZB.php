@@ -1117,8 +1117,10 @@
 影视轮播频道,#genre#
 
 
-歌曲串烧联唱,https://upos-sz-estghw.bilivideo.com/upgcxcode/96/08/26391150896/26391150896-1-16.mp4?e=ig8euxZM2rNcNbRVhwdVhwdlhWdVhwdVhoNvNC8BqJIzNbfq9rVEuxTEnE8L5F6VnEsSTx0vkX8fqJeYTj_lta53NCM=&uipk=5&nbs=1&deadline=1731606034&gen=playurlv2&os=upos&oi=0&trid=8908b15a3bbc4d1697466776591ee4ebh&mid=0&platform=html5&og=08&upsig=3c983ea41823d7718847c1d1ebab676b&uparams=e,uipk,nbs,deadline,gen,os,oi,trid,mid,platform,og&bvc=vod&nettype=0&f=h_0_0&bw=37719&logo=80000000
-
+HBO,http://iptv12k.com:35461/live/test167/12345/1266.m3u8
+HBO家庭,http://iptv12k.com:35461/live/test167/12345/1265.m3u8
+HBO强档,http://iptv12k.com:35461/live/test167/12345/1264.m3u8
+HBO原创,http://iptv12k.com:35461/live/test167/12345/1263.m3u8
 
 1905电影(国际),http://xxw.me0.cn/1905dy.php?id=1905b 
 1905电影(亚洲),http://xxw.me0.cn/1905dy.php?id=1905
