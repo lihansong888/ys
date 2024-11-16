@@ -1553,14 +1553,12 @@ iHot亚洲影院,http://[2409:8087:5e08:24::11]:6610/000000001000/58418162275395
 
 
 BesTV频道,#genre#
-BesTV 1,http://[2409:8087:5e08:24::17]:6610/000000001000/2000000002000000024/index.m3u8?stbId=3&livemode=1&HlsProfileId=&channel-id=hnbblive&Contentid=2000000002000000024&IASHttpSessionId=OTT19019320240419154124000281&yang-1989
-BesTV 2,http://[2409:8087:5e08:24::17]:6610/000000001000/2000000002000000025/index.m3u8?stbId=3&livemode=1&HlsProfileId=&channel-id=hnbblive&Contentid=2000000002000000025&IASHttpSessionId=OTT19019320240419154124000281&yang-1989
-BesTV 3,http://[2409:8087:5e08:24::17]:6610/000000001000/2000000002000000026/index.m3u8?stbId=3&livemode=1&HlsProfileId=&channel-id=hnbblive&Contentid=2000000002000000026&IASHttpSessionId=OTT19019320240419154124000281&yang-1989
-BesTV 4,http://[2409:8087:5e08:24::17]:6610/000000001000/2000000002000000027/index.m3u8?stbId=3&livemode=1&HlsProfileId=&channel-id=hnbblive&Contentid=2000000002000000027&IASHttpSessionId=OTT19019320240419154124000281&yang-1989
-BesTV 5,http://[2409:8087:5e08:24::17]:6610/000000001000/2000000002000000028/index.m3u8?stbId=3&livemode=1&HlsProfileId=&channel-id=hnbblive&Contentid=2000000002000000028&IASHttpSessionId=OTT19019320240419154124000281&yang-1989
-BesTV 6,http://[2409:8087:5e08:24::17]:6610/000000001000/2000000002000000029/index.m3u8?stbId=3&livemode=1&HlsProfileId=&channel-id=hnbblive&Contentid=2000000002000000029&IASHttpSessionId=OTT19019320240419154124000281&yang-1989
-BesTV 7,http://[2409:8087:5e08:24::17]:6610/000000001000/2000000002000000030/index.m3u8?stbId=3&livemode=1&HlsProfileId=&channel-id=hnbblive&Contentid=2000000002000000030&IASHttpSessionId=OTT19019320240419154124000281&yang-1989
-
+Bestv赛事1,http://iptvrr.sh.chinamobile.com:6060/cms001/ch00000090990000001151/index.m3u8
+Bestv赛事2,http://iptvrr.sh.chinamobile.com:6060/cms001/ch00000090990000001359/index.m3u8
+Bestv赛事3,http://iptvrr.sh.chinamobile.com:6060/cms001/ch00000090990000001388/index.m3u8
+Bestv赛事4,http://iptvrr.sh.chinamobile.com:6060/cms001/ch00000090990000001149/index.m3u8
+Bestv赛事5,http://iptvrr.sh.chinamobile.com:6060/cms001/ch00000090990000001153/index.m3u8
+Bestv赛事6,http://iptvrr.sh.chinamobile.com:6060/cms001/ch00000090990000001154/index.m3u8
 
 
 
