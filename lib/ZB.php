@@ -1137,8 +1137,9 @@
 
 
 
-杰森斯坦森,http://cfss.cc/cdn/hy/21059588.m3u8
+
 杰森斯坦森,http://diyp.zxxoo.work/huya/21059588
+
 电影英叔,http://diyp.zxxoo.work/huya/11342421
 电影黄渤,http://diyp.zxxoo.work/huya/11352876
 
@@ -1264,8 +1265,7 @@
 本山专场,http://159.75.85.63:35455/douyu/9817716
 李连杰电影,http://cfss.cc/cdn/hy/11342390.flv
 
-杰森斯坦森,http://cfss.cc/cdn/hy/21059588.m3u8
-杰森斯坦森,http://diyp.zxxoo.work/huya/21059588
+
 
 林正英电影,http://cfss.cc/cdn/hy/11342421.flv
 
