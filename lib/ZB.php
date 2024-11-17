@@ -3748,23 +3748,6 @@ CETV-4,http://[2409:8087:74d9:21::6]:80/270000001128/9900000072/index.m3u8
 	    
 
 
-电视剧直播频道,#genre#
-电视剧频道1,http://zby.xjqxz.top/dsdsj1/live.m3u8
-电视剧频道2,http://zby.xjqxz.top/dsdsj2/live.m3u8
-电视剧频道3,http://zby.xjqxz.top/dsdsj3/live.m3u8
-电视剧频道4,http://zby.xjqxz.top/gzwxj/live.m3u8
-
-电视剧频道5,http://zby.xjqxz.top/gzdsj1/live.m3u8
-电视剧频道6,http://zby.xjqxz.top/gzdsj2/live.m3u8
-电视剧频道7,http://zby.xjqxz.top/gzdsj3/live.m3u8
-电视剧频道8,http://zby.xjqxz.top/gzdsj4/live.m3u8
-
-
-电视剧频道9,http://zby.xjqxz.top/kzzypd/live.m3u8
-电视剧频道10,http://zby.xjqxz.top/dzzypd/live.m3u8
-电视剧频道11,http://zby.xjqxz.top/dzzypd2/live.m3u8
-电视剧频道12,http://zby.xjqxz.top/dzzypd3/live.m3u8
-
 
 
 
