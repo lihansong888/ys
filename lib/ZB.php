@@ -1833,6 +1833,27 @@ CCTV4K,http://60.255.240.247:8090/live/ys4Kcq_2000.m3u8
 24小时轻音乐,http://61.240.206.3/live-bvc/276764/live_2565439_9900945/index.m3u8
 
 CHC高清频道,#genre#
+
+CHC动作电影,http://218.76.32.193:9901/tsfile/live/1020_1.m3u8
+CHC家庭影院,http://218.76.32.193:9901/tsfile/live/1018_1.m3u8
+CHC影迷电影,http://218.76.32.193:9901/tsfile/live/1019_1.m3u8
+
+CHC动作电影,http://124.231.213.16:9999/tsfile/live/1109_1.m3u8
+CHC家庭影院,http://124.231.213.16:9999/tsfile/live/1108_1.m3u8
+CHC影迷电影,http://124.231.213.16:9999/tsfile/live/1110_1.m3u8
+
+CHC影迷电影,http://eastscreen.tv/ooooo.php?id=chchd
+CHC动作电影,http://eastscreen.tv/ooooo.php?id=chcdz
+CHC家庭影院,http://eastscreen.tv/ooooo.php?id=chcjt
+
+
+
+
+
+
+
+
+
 CHC动作电影,http://[2001:250:5800:1005::155]:80/liverespath/e0096742f0c5be4c5225cf3c7ab1077177bec05f/index.m3u8
 CHC家庭影院,http://[2001:250:5800:1005::155]:80/liverespath/449d51febadb152094085d373b9af94a6ac5f1dd/index.m3u8
 CHC影迷电影,http://[2001:250:5800:1005::155]:80/liverespath/bca6167afdef7fc773405c38e695b342c1d1eca0/index.m3u8
