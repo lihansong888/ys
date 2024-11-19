@@ -1138,31 +1138,20 @@
 
 
 
-李连杰,http://cfss.cc/cdn/hy/11342390.m3u8
-梁家辉,http://cfss.cc/cdn/hy/11342429.m3u8
-许冠英,http://diyp.zxxoo.work/huya/11601972
-刘德华,http://diyp.zxxoo.work/douyu/2516864
-星爷,http://111.67.193.2:35455/huya/11342412
-英叔,http://111.67.193.2:35455/huya/11342421
-发哥,http://111.67.193.2:35455/huya/11342387
-成龙,http://cfss.cc/cdn/hy/11342386.m3u8
+
+
 成龙,http://zby.xjqxz.top/cldy/live.m3u8
-成龙,https://p6-dy.byteimg.com/origin/pgc-image/bebfddceee5c40f495882785675174cf
-成龙,http://111.67.193.2:35455/huya/11342386
-王晶,http://cfss.cc/cdn/hy/11602058.m3u8
-王晶,http://111.67.193.2:35455/huya/11602058
-沈腾,http://cfss.cc/cdn/hy/11601968.m3u8
-沈腾,http://111.67.193.2:35455/huya/11601968
-黄渤,http://cfss.cc/cdn/hy/11352876.m3u8
-黄渤,http://111.67.193.2:35455/huya/11352876
-强森,http://111.67.193.2:35455/huya/21059581
 
-YOYOTV,https://ythls.armelin.one/channel/UCiWRSesvSYmY7YOyz0tv_zQ.m3u8
 
-刑事侦缉档案,http://diyp.zxxoo.work/huya/23734169
+
+
+
+
+
+
 
 功夫电影,http://diyp.zxxoo.work/huya/11352941
-华仔影视,http://159.75.85.63:35455/douyu/2516864
+
 华强影视,http://159.75.85.63:35455/douyu/9650792
 
 古天乐电影,http://diyp.zxxoo.work/huya/29982675
@@ -1170,14 +1159,14 @@ YOYOTV,https://ythls.armelin.one/channel/UCiWRSesvSYmY7YOyz0tv_zQ.m3u8
 
 周星驰电影,http://diyp.zxxoo.work/huya/11342412
 
-喜剧电影,http://159.75.85.63:35455/douyu/9292492
-喜剧电影原,http://diyp.zxxoo.work/douyu/9292492
+
+
 
 国语电影原,http://diyp.zxxoo.work/douyu/2436390
 
 女神电影原,http://diyp.zxxoo.work/douyu/747764
 
-家庭影院,http://59.51.113.18:18888/udp/239.76.252.241:9000
+
 
 小宇60帧原,http://diyp.zxxoo.work/douyu/323876
 小黛兮影,http://159.75.85.63:35455/douyu/11553944
@@ -1187,122 +1176,112 @@ YOYOTV,https://ythls.armelin.one/channel/UCiWRSesvSYmY7YOyz0tv_zQ.m3u8
 恐怖惊悚原,http://diyp.zxxoo.work/douyu/96577
 成龙电影,http://diyp.zxxoo.work/douyu/3379942
 
-数位电影,https://litv.zapi.us.kg/?id=4gtv-4gtv011
 
-星星影院原,http://diyp.zxxoo.work/douyu/315131
+
+
 李连杰电影,http://diyp.zxxoo.work/huya/11342390
 
-杰森斯坦森,http://cfss.cc/cdn/hy/21059588.m3u8
+
 杰森斯坦森,http://diyp.zxxoo.work/huya/21059588
-杰森斯坦森,http://159.75.85.63:35455/huya/21059588
+
 林正英,http://diyp.zxxoo.work/douyu/7356023
 
 欧美大片,http://diyp.zxxoo.work/douyu/2793084
-欧美影院,http://159.75.85.63:35455/douyu/508118
 
-淘电影,http://39.98.201.151:9090/udp/225.1.8.38:8002
+
+
 
 漫威电影,http://diyp.zxxoo.work/douyu/6140589
 
-特辑影院,http://159.75.85.63:35455/douyu/3637778
+
 
 王晶电影,http://diyp.zxxoo.work/huya/11602058
 
 甄子丹电影,http://diyp.zxxoo.work/huya/11352935
 
-电影不挤影院,http://cfss.cc/cdn/hy/11352897.flv
+
 电影不挤影院,http://diyp.zxxoo.work/huya/11352897
 电影丧尸片,http://diyp.zxxoo.work/huya/21059578
-电影丧尸片,http://cfss.cc/cdn/hy/21059578.flv
-电影刘德华,http://cfss.cc/cdn/hy/11342424.flv
-电影刘德华,http://diyp.zxxoo.work/huya/11342424
-电影剧场,http://159.75.85.63:35455/douyu/7575350
-电影剧场原,http://diyp.zxxoo.work/douyu/7575350
-电影功夫片,http://cfss.cc/cdn/hy/11352941.flv
+
+
+
+
+
 电影动作电影,http://diyp.zxxoo.work/huya/11602077
-电影动作电影,http://cfss.cc/cdn/hy/11602077.flv
-电影变形金刚,http://cfss.cc/cdn/hy/21059596.flv
+
+
 电影变形金刚,http://diyp.zxxoo.work/huya/21059596
-电影古墓系列,http://cfss.cc/cdn/hy/11352913.flv
+
 电影古墓系列,http://diyp.zxxoo.work/huya/11352913
 电影周星星,http://diyp.zxxoo.work/huya/11336587
-电影周星星,http://cfss.cc/cdn/hy/11336587.flv
+
 电影喜乐影院,http://diyp.zxxoo.work/huya/21059580
-电影喜乐影院,http://cfss.cc/cdn/hy/21059580.flv
+
 电影喜剧专场,http://diyp.zxxoo.work/huya/11602044
-电影喜剧专场,http://cfss.cc/cdn/hy/11602044.flv
-电影强森,http://cfss.cc/cdn/hy/21059581.flv
-电影怪兽,http://cfss.cc/cdn/hy/21059577.flv
+
+
+
 电影怪兽,http://diyp.zxxoo.work/huya/21059577
 电影成龙,http://diyp.zxxoo.work/huya/11342386
-电影成龙,http://cfss.cc/cdn/hy/11342386.flv
-电影战争片,http://cfss.cc/cdn/hy/21059574.flv
+
+
 电影战争片,http://diyp.zxxoo.work/huya/21059574
 电影推荐,http://diyp.zxxoo.work/huya/11602041
-电影推荐,http://cfss.cc/cdn/hy/11602041.flv
+
 电影搞笑喜剧,http://diyp.zxxoo.work/huya/11342423
-电影搞笑喜剧,http://cfss.cc/cdn/hy/11342423.flv
-电影搞笑恐怖,http://cfss.cc/cdn/hy/11601960.flv
+
+
 电影搞笑恐怖,http://diyp.zxxoo.work/huya/11601960
-电影救援,http://cfss.cc/cdn/hy/21059594.flv
+
 电影救援,http://diyp.zxxoo.work/huya/21059594
-电影星爷,http://cfss.cc/cdn/hy/11342412.flv
-电影李连杰,http://cfss.cc/cdn/hy/11342390.flv
+
+
 电影枪战,http://diyp.zxxoo.work/huya/21059579
-电影枪战,http://cfss.cc/cdn/hy/21059579.flv
-电影梁家辉,http://cfss.cc/cdn/hy/11342429.flv
+
+
 电影梁家辉,http://diyp.zxxoo.work/huya/11342429
 电影武侠,http://diyp.zxxoo.work/huya/11342427
-电影武侠,http://cfss.cc/cdn/hy/11342427.flv
-电影死神来了,http://cfss.cc/cdn/hy/11352903.flv
+
+
 电影死神来了,http://diyp.zxxoo.work/huya/11352903
-电影沈腾,http://cfss.cc/cdn/hy/11601968.flv
-电影沈腾,http://diyp.zxxoo.work/huya/11601968
+
 电影洪金宝,http://diyp.zxxoo.work/huya/11279251
-电影洪金宝,http://cfss.cc/cdn/hy/11279251.flv
-电影热血,http://cfss.cc/cdn/hy/11352934.flv
+
+
 电影热血,http://diyp.zxxoo.work/huya/11352934
-电影犯罪片,http://diyp.zxxoo.work/huya/11352974
-电影犯罪片,http://cfss.cc/cdn/hy/11352974.flv
-电影玄幻,http://cfss.cc/cdn/hy/11342414.flv
-电影玄幻,http://diyp.zxxoo.work/huya/11342414
+
+
 电影盗墓,http://diyp.zxxoo.work/huya/21059552
-电影盗墓,http://cfss.cc/cdn/hy/21059552.flv
-电影经典女神,http://cfss.cc/cdn/hy/11352909.flv
+
+
 电影经典女神,http://diyp.zxxoo.work/huya/11352909
-电影罪犯,http://cfss.cc/cdn/hy/11352962.flv
+
 电影罪犯,http://diyp.zxxoo.work/huya/11352962
-电影英叔,http://cfss.cc/cdn/hy/11342421.flv
-电影英叔,http://diyp.zxxoo.work/huya/11342421
-电影蜘蛛侠,http://diyp.zxxoo.work/huya/21059599
-电影蜘蛛侠,http://cfss.cc/cdn/hy/21059599.flv
+
+
 电影许氏三杰,http://diyp.zxxoo.work/huya/11602033
-电影许氏三杰,http://cfss.cc/cdn/hy/11602033.flv
+
 电影谍战,http://diyp.zxxoo.work/huya/21059585
-电影谍战,http://cfss.cc/cdn/hy/21059585.flv
-电影谍战片,http://cfss.cc/cdn/hy/21059587.flv
+
+
 电影谍战片,http://diyp.zxxoo.work/huya/21059587
 电影贺岁,http://diyp.zxxoo.work/huya/11601971
 电影贺岁,http://cfss.cc/cdn/hy/11601971.flv
-电影贺岁片,http://cfss.cc/cdn/hy/11601986.flv
-电影赛车,http://cfss.cc/cdn/hy/11279247.flv
+
+
 电影赛车,http://diyp.zxxoo.work/huya/11279247
-电影高能反转,http://diyp.zxxoo.work/huya/11352887
-电影高能反转,http://cfss.cc/cdn/hy/11352887.flv
-电影黄渤,http://cfss.cc/cdn/hy/11352876.flv
-电影黑帮片,http://cfss.cc/cdn/hy/11336719.flv
+
+
+
 电影黑帮片,http://diyp.zxxoo.work/huya/11336719
 
 神乐影院原,http://diyp.zxxoo.work/douyu/122402
 
-粤语星爷电影,http://159.75.85.63:35455/huya/11336587
 
-经典电影,http://115.48.60.182:9901/tsfile/live/1032_1.m3u8
-经典电影,http://litv.zapi.us.kg/?id=4gtv-live021
-经典电影,http://59.48.75.130:3052/tsfile/live/1001_1.m3u8?key=txiptv&playlive=1&authid=0
-经典电影,http://113.57.20.158:9901/tsfile/live/1012_1.m3u8?key=txiptv&playlive=1&authid=0
 
-菜园惊险原,http://diyp.zxxoo.work/douyu/1735337
+
+
+
 萌小鬼片原,http://diyp.zxxoo.work/douyu/3928
 
 
