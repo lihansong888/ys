@@ -1494,11 +1494,14 @@ iHot亚洲影院,http://[2409:8087:5e08:24::11]:6610/000000001000/58418162275395
 
 
 求索频道,#genre#
-求索动物,http://[2409:8087:5e08:24::11]:6610/000000001000/6000000002000010046/1.m3u8?channel-id=wasusyt&Contentid=6000000002000010046&livemode=1&stbId=3
-求索纪录,http://[2409:8087:5e08:24::11]:6610/000000001000/6000000002000032052/1.m3u8?channel-id=wasusyt&Contentid=6000000002000032052&livemode=1&stbId=3
-求索科学,http://[2409:8087:5e08:24::11]:6610/000000001000/6000000002000032344/1.m3u8?channel-id=wasusyt&Contentid=6000000002000032344&livemode=1&stbId=3
-求索生活,http://[2409:8087:5e08:24::11]:6610/000000001000/6000000002000003382/1.m3u8?channel-id=wasusyt&Contentid=6000000002000003382&livemode=1&stbId=3
-探索纪录,http://[2409:8087:5e08:24::11]:6610/000000001000/2000000004000000007/1.m3u8?channel-id=hnbblive&Contentid=2000000004000000007&livemode=1&stbId=3
+求索动物,http://[2409:8087:5e08:24::11]:6610/000000001000/2000000004000000009/index.m3u8?stbId=3&livemode=1&HlsProfileId=&channel-id=hnbblive&Contentid=2000000004000000009&IASHttpSessionId=OTT19019320240419154124000281&yang-1989
+求索动物,http://[2409:8087:5e01:24::16]:6610/000000001000/2000000004000000009/index.m3u8?stbId=3&livemode=1&HlsProfileId=&channel-id=hnbblive&Contentid=2000000004000000009&IAS
+求索纪录,http://[2409:8087:5e01:24::16]:6610/000000001000/2000000004000000010/index.m3u8?stbId=3&livemode=1&HlsProfileId=&channel-id=hnbblive&Contentid=2000000004000000010&IAS
+求索纪录,http://[2409:8087:5e08:24::11]:6610/000000001000/2000000004000000010/index.m3u8?stbId=3&livemode=1&HlsProfileId=&channel-id=hnbblive&Contentid=2000000004000000010&IASHttpSessionId=OTT19019320240419154124000281&yang-1989
+求索科学,http://[2409:8087:5e01:24::16]:6610/000000001000/2000000004000000011/index.m3u8?stbId=3&livemode=1&HlsProfileId=&channel-id=hnbblive&Contentid=2000000004000000011&IAS
+求索科学,http://[2409:8087:5e08:24::11]:6610/000000001000/2000000004000000011/index.m3u8?stbId=3&livemode=1&HlsProfileId=&channel-id=hnbblive&Contentid=2000000004000000011&IASHttpSessionId=OTT19019320240419154124000281&yang-1989
+求索生活,http://[2409:8087:5e08:24::11]:6610/000000001000/2000000004000000008/index.m3u8?stbId=3&livemode=1&HlsProfileId=&channel-id=hnbblive&Contentid=2000000004000000008&IASHttpSessionId=OTT19019320240419154124000281&yang-1989
+求索生活,http://[2409:8087:5e01:24::16]:6610/000000001000/2000000004000000008/index.m3u8?stbId=3&livemode=1&HlsProfileId=&channel-id=hnbblive&Contentid=2000000004000000008&IAS
 
 
 
@@ -1669,9 +1672,9 @@ CCTV4K,http://60.255.240.247:8090/live/ys4Kcq_2000.m3u8
 24小时轻音乐,http://61.240.206.3/live-bvc/276764/live_2565439_9900945/index.m3u8
 
 CHC高清频道,#genre#
-CHC家庭影院,http://[2409:8087:3c02:21:0:1:0:1028]:6610/shandong_cabletv.live.zte.com////CHANNEL00002028/index.m3u8?IAS
-CHC高清电影,http://[2409:8087:3c02:21:0:1:0:1028]:6610/shandong_cabletv.live.zte.com////CHANNEL00002029/index.m3u8?IAS
-CHC动作电影,http://[2409:8087:3c02:21:0:1:0:1028]:6610/shandong_cabletv.live.zte.com////CHANNEL00002030/index.m3u8?IAS
+CHC动作电影,http://[2001:250:5800:1005::155]:80/liverespath/e0096742f0c5be4c5225cf3c7ab1077177bec05f/index.m3u8
+CHC家庭影院,http://[2001:250:5800:1005::155]:80/liverespath/449d51febadb152094085d373b9af94a6ac5f1dd/index.m3u8
+CHC影迷电影,http://[2001:250:5800:1005::155]:80/liverespath/bca6167afdef7fc773405c38e695b342c1d1eca0/index.m3u8
 
 
 
