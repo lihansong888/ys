@@ -4068,26 +4068,7 @@ CETV-4,http://[2409:8087:74d9:21::6]:80/270000001128/9900000072/index.m3u8
 港澳台直播,#genre#
 
 
-凤凰卫视,http://ali.hlspull.yximgs.com/live/l3w1tt2dkzvpukkliu64ah001-golive.flv
-凤凰资讯,http://ali.hlspull.yximgs.com/live/l3w1tt2dkzvpukkliu64ah002-golive.flv#http://php.jdshipin.com/TVOD/iptv.php?id=fhzx#http://php.jdshipin.com/TVOD/iptv.php?id=fhzx2#http://203.205.220.174:80/qctv.fengshows.cn/live/0701pin72.m3u8
-凤凰香港,http://ali.hlspull.yximgs.com/live/l3w1tt2dkzvpukkliu64ah003-golive.flv#http://php.jdshipin.com/TVOD/iptv.php?id=fhhk#http://203.205.220.174:80/qctv.fengshows.cn/live/0701phk72.m3u8
-有线18跑马,http://ali.hlspull.yximgs.com/live/l3w1tt2dkzvpukkliu64ah00a17-golive.flv
-HOY76,http://ali.hlspull.yximgs.com/live/l3w1tt2dkzvpukkliu64ah00b47-golive.flv
-HOY77,http://ali.hlspull.yximgs.com/live/l3w1tt2dkzvpukkliu64ah00b48-golive.flv
-HOY78,http://ali.hlspull.yximgs.com/live/l3w1tt2dkzvpukkliu64ah00b49-golive.flv
-NOW新闻,http://ali.hlspull.yximgs.com/live/l3w1tt2dkzvpukkliu64ah00b44-golive.flv
-NOW财经,http://ali.hlspull.yximgs.com/live/l3w1tt2dkzvpukkliu64ah00b45-golive.flv
-ROCKACTION,http://ali.hlspull.yximgs.com/live/l3w1tt2dkzvpukkliu64ah00b34-golive.flv
-ROCKENTERTAINMENT综艺娱乐,http://ali.hlspull.yximgs.com/live/l3w1tt2dkzvpukkliu64ah00b33-golive.flv
-RTHK31,http://ali.hlspull.yximgs.com/live/l3w1tt2dkzvpukkliu64ah00a25-golive.flv
-RTHK32,http://ali.hlspull.yximgs.com/live/l3w1tt2dkzvpukkliu64ah00a26-golive.flv
-SUPERKIDSCHANNEL,http://ali.hlspull.yximgs.com/live/l3w1tt2dkzvpukkliu64ah00a19-golive.flv
-THRILL惊悚台,http://ali.hlspull.yximgs.com/live/l3w1tt2dkzvpukkliu64ah00b29-golive.flv
-TVN,http://ali.hlspull.yximgs.com/live/l3w1tt2dkzvpukkliu64ah00a28-golive.flv
-KIX,http://ali.hlspull.yximgs.com/live/l3w1tt2dkzvpukkliu64ah00b31-golive.flv
-LOVENATURE4K,http://ali.hlspull.yximgs.com/live/l3w1tt2dkzvpukkliu64ah00b35-golive.flv
-MYTVSUPER18台,http://ali.hlspull.yximgs.com/live/l3w1tt2dkzvpukkliu64ah00a16-golive.flv
-TVBDRAMA,http://ali.hlspull.yximgs.com/live/l3w1tt2dkzvpukkliu64ah00b42-golive.flv
+
 TVBPLUS,http://ali.hlspull.yximgs.com/live/l3w1tt2dkzvpukkliu64ah007-golive.flv
 TVBSUPERFREE,http://ali.hlspull.yximgs.com/live/l3w1tt2dkzvpukkliu64ah00a18-golive.flv
 
