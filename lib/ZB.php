@@ -1823,8 +1823,73 @@ iHot亚洲影院,http://[2409:8087:5e08:24::11]:6610/000000001000/58418162275395
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 直播中国,#genre#
 直播中国精编直播,https://gcalic.v.myalicdn.com/gc/wgw05_1/index.m3u8
+
+
+
+新疆天山(定海神针),http://gctxyc.liveplay.myqcloud.com/gc/xjtcdhsz_1/index.m3u8
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1917,6 +1982,12 @@ CCTV4K,http://60.255.240.247:8090/live/ys4Kcq_2000.m3u8
 
 CHC高清频道,#genre#
 
+
+
+
+
+
+
 CHC动作电影,http://218.76.32.193:9901/tsfile/live/1020_1.m3u8
 CHC家庭影院,http://218.76.32.193:9901/tsfile/live/1018_1.m3u8
 CHC影迷电影,http://218.76.32.193:9901/tsfile/live/1019_1.m3u8
@@ -1931,7 +2002,9 @@ CHC家庭影院,http://eastscreen.tv/ooooo.php?id=chcjt
 
 
 
-
+CHC影迷电影,http://115.153.254.81/PLTV/88888888/224/3221226990/86128784.smil/index.m3u8?fmt=ts2hls
+CHC家庭影院,http://115.153.254.81/PLTV/88888888/224/3221226959/86128800.smil/index.m3u8?fmt=ts2hls
+CHC动作电影,http://115.153.254.81/PLTV/88888888/224/3221226992/86128817.smil/index.m3u8?fmt=ts2hls
 
 
 
