@@ -1,79 +1,10 @@
-检测,#genre#
-凤凰香港,http://php.jdshipin.com/TVOD/iptv.php?id=fhhk
-翡翠台,http://php.jdshipin.com/TVOD/iptv.php?id=huali2
-VIUTV,http://php.jdshipin.com/TVOD/iptv.php?id=viutv
-J2,http://50.7.234.10:8278/j2_twn/playlist.m3u8?tid=MFCF3274854132748541&ct=19254&tsum=699466c18aac56202ad1d2843fd21032
-TVB星河,http://php.jdshipin.com/TVOD/iptv.php?id=tvbxh
-TVB亚洲武侠,http://php.jdshipin.com/TVOD/iptv.php?id=yzwx
-TVB生活台,http://php.jdshipin.com/TVOD/iptv.php?id=tvbsh
-明珠台,http://aktv.top/AKTV/live/aktv/null-19/AKTV.m3u8
-无线新闻,http://php.jdshipin.com/TVOD/iptv.php?id=tvbxw
-无线娱乐新闻,http://php.jdshipin.com/TVOD/iptv.php?id=tvbylxw
-美亚电影台,http://aktv.top/AKTV/live/aktv/hk-1/AKTV.m3u8
-TVBSNEWS,http://61.221.215.25:8800/hls/9/index.m3u8
-东森超视,rtmp://f13h.mine.nu/sat/tv331
-八大戏剧台,http://61.221.215.25:8800/hls/39/index.m3u8
-八大第1台,http://61.221.215.25:8800/hls/55/index.m3u8
-八大综合台,http://61.221.215.25:8800/hls/56/index.m3u8
-大立,http://www.dalitv.com.tw:4568/live/dali/index.m3u8
-点掌财经,https://wsvideo.aniu.tv/live/aniu/playlist.m3u8
-非凡新闻,rtmp://f13h.mine.nu/sat/tv581
-华视,rtmp://f13h.mine.nu/sat/tv111
-好消息,http://litv.zapi.us.kg/4gTV/?id=litv-ftv16
-好消息2,http://litv.zapi.us.kg/4gTV/?id=litv-ftv17
-寰宇新闻台,http://aktv.top/AKTV/live/aktv/null-9/AKTV.m3u8
-靖天电影台,https://aktv.top/AKTV/live/aktv/null6/AKTV.m3u8
-民视,rtmp://f13h.mine.nu/sat/tv051
-民视新闻台,http://38.64.72.148/hls/modn/list/4012/chunklist1.m3u8
-三立戏剧台,http://61.221.215.25:8800/hls/41/index.m3u8
-三立综合台,https://aktv.top/AKTV/live/aktv/null13/AKTV.m3u8
-台视,rtmp://f13h.mine.nu/sat/tv071
-台视新闻,http://38.64.72.148:80/hls/modn/list/4013/chunklist1.m3u8
-纬来精采,http://61.221.215.25:8800/hls/48/index.m3u8
-纬来日本,rtmp://f13h.mine.nu/sat/tv771
-纬来育乐,rtmp://f13h.mine.nu/sat/tv701
-纬来体育,rtmp://f13h.mine.nu/sat/tv721
-中视,rtmp://f13h.mine.nu/sat/tv091
-中天新闻,https://aktv.top/AKTV/live/aktv/null8/AKTV.m3u8
-中天娱乐,http://61.221.215.25:8800/hls/47/index.m3u8
-中天亚洲台,https://aktv.top/AKTV/live/aktv/null12/AKTV.m3u8
 
 
 
 
 
-CCTV-4K 超高清,http://27.222.3.214/liveali-tp4k.cctv.cn/live/4K10M.stream/playlist.m3u8
-CCTV-8K 超高清,https://tv.cry33.com/ys4k.php?id=8k
 
 
-
-CCTV4,http://27.222.3.214/liveali-tp4k.cctv.cn/live/4K10M.stream/playlist.m3u8
-CCTV8,https://tv.cry33.com/ys4k.php?id=8k
-
-
-
-
-
-BTV纪实科教-8KSDR源,http://159.75.85.63:6798
-CCTV8K-50FPS,http://159.75.85.63:8654/xx8k50fps.php
-CCTV4K-25P-HLG源,http://159.75.85.63:5679/cctv4k.php
-
-
-
-4K60PSDR-H264-AAC测试,http://159.75.85.63:5680/d/ad/h264/playad.m3u8
-4K60PHLG-HEVC-EAC3测试,http://159.75.85.63:5680/d/ad/playad.m3u8
-BTV纪实科教-8KSDR源,http://159.75.85.63:6798
-CCTV8K,http://159.75.85.63:8765/xxtv8k.php
-CCTV8K-50FPS,http://159.75.85.63:8654/xx8k50fps.php
-CCTV4K-25P-HLG源,http://159.75.85.63:5679/cctv4k.php
-CCTV16-4K-25PHLG源,http://113.62.253.22/live.aishang.ctlcdn.com/00000110240389_1/playlist.m3u8?CONTENTID=00000110240389_1&AUTHINFO=FABqh274XDn8fkurD5614t
-
-
-
-CCTV4,https://live.goodiptv.club/api/bestv.php?id=cctv4k/15000000
-欢笑剧场4k,https://live.goodiptv.club/api/bestv.php?id=hxjc4k/15000000
-4K60PSDR-H264-AAC测试,http://159.75.85.63:5680/d/ad/h264/playad.m3u8
-4K60PHLG-HEVC-EAC3测试,http://159.75.85.63:5680/d/ad/playad.m3u8
 
 
 
@@ -2903,7 +2834,43 @@ Ginx_TV台,https://litv.zapi.us.kg/?id=4gtv-4gtv053
 
 
 
-
+翡翠台,http://php.jdshipin.com/TVOD/iptv.php?id=huali2
+VIUTV,http://php.jdshipin.com/TVOD/iptv.php?id=viutv
+J2,http://50.7.234.10:8278/j2_twn/playlist.m3u8?tid=MFCF3274854132748541&ct=19254&tsum=699466c18aac56202ad1d2843fd21032
+TVB星河,http://php.jdshipin.com/TVOD/iptv.php?id=tvbxh
+TVB亚洲武侠,http://php.jdshipin.com/TVOD/iptv.php?id=yzwx
+TVB生活台,http://php.jdshipin.com/TVOD/iptv.php?id=tvbsh
+明珠台,http://aktv.top/AKTV/live/aktv/null-19/AKTV.m3u8
+无线新闻,http://php.jdshipin.com/TVOD/iptv.php?id=tvbxw
+无线娱乐新闻,http://php.jdshipin.com/TVOD/iptv.php?id=tvbylxw
+美亚电影台,http://aktv.top/AKTV/live/aktv/hk-1/AKTV.m3u8
+TVBSNEWS,http://61.221.215.25:8800/hls/9/index.m3u8
+东森超视,rtmp://f13h.mine.nu/sat/tv331
+八大戏剧台,http://61.221.215.25:8800/hls/39/index.m3u8
+八大第1台,http://61.221.215.25:8800/hls/55/index.m3u8
+八大综合台,http://61.221.215.25:8800/hls/56/index.m3u8
+大立,http://www.dalitv.com.tw:4568/live/dali/index.m3u8
+点掌财经,https://wsvideo.aniu.tv/live/aniu/playlist.m3u8
+非凡新闻,rtmp://f13h.mine.nu/sat/tv581
+华视,rtmp://f13h.mine.nu/sat/tv111
+好消息,http://litv.zapi.us.kg/4gTV/?id=litv-ftv16
+好消息2,http://litv.zapi.us.kg/4gTV/?id=litv-ftv17
+寰宇新闻台,http://aktv.top/AKTV/live/aktv/null-9/AKTV.m3u8
+靖天电影台,https://aktv.top/AKTV/live/aktv/null6/AKTV.m3u8
+民视,rtmp://f13h.mine.nu/sat/tv051
+民视新闻台,http://38.64.72.148/hls/modn/list/4012/chunklist1.m3u8
+三立戏剧台,http://61.221.215.25:8800/hls/41/index.m3u8
+三立综合台,https://aktv.top/AKTV/live/aktv/null13/AKTV.m3u8
+台视,rtmp://f13h.mine.nu/sat/tv071
+台视新闻,http://38.64.72.148:80/hls/modn/list/4013/chunklist1.m3u8
+纬来精采,http://61.221.215.25:8800/hls/48/index.m3u8
+纬来日本,rtmp://f13h.mine.nu/sat/tv771
+纬来育乐,rtmp://f13h.mine.nu/sat/tv701
+纬来体育,rtmp://f13h.mine.nu/sat/tv721
+中视,rtmp://f13h.mine.nu/sat/tv091
+中天新闻,https://aktv.top/AKTV/live/aktv/null8/AKTV.m3u8
+中天娱乐,http://61.221.215.25:8800/hls/47/index.m3u8
+中天亚洲台,https://aktv.top/AKTV/live/aktv/null12/AKTV.m3u8
 
 
 
