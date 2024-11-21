@@ -4299,6 +4299,50 @@ CETV-4,http://[2409:8087:3c02:21:0:1:0:100a]:6410/shandong_cabletv.live.zte.com/
 
 
 
+
+
+
+
+
+
+
+读心神探,https://lunbo.freetv.top/yy/1382736875
+封神榜,https://lunbo.freetv.top/yy/1353426319
+花千骨,https://lunbo.freetv.top/yy/1354943110
+红楼梦,https://lunbo.freetv.top/yy/1382745084
+回家的诱惑,https://lunbo.freetv.top/yy/1354658048
+好先生,http://maomao.kandiantv.cn/douyu1.php?id=9650792
+康熙微服私访记,https://lunbo.freetv.top/yy/1352811698
+狂飙,https://lunbo.freetv.top/yy/1355142167
+亮剑,http://diyp.zxxoo.work/huya/30080238
+鹿鼎记,https://lunbo.freetv.top/yy/28265277
+三国演义,https://lunbo.freetv.top/yy/1354930932
+少年包青天,https://lunbo.freetv.top/yy/38498680
+神雕侠侣,https://lunbo.freetv.top/yy/1351762426
+神医喜来乐,https://lunbo.freetv.top/yy/1382714119
+神探狄仁杰,http://maomao.kandiantv.cn/douyu1.php?id=3395113
+天龙八部,https://lunbo.freetv.top/yy/1351814644
+天道,https://lunbo.freetv.top/yy/1382735574
+太子妃升职记,https://lunbo.freetv.top/yy/1354932359
+小欢喜,https://lunbo.freetv.top/yy/1382737888
+仙剑奇侠传,https://lunbo.freetv.top/yy/1382749903
+笑傲江湖,https://lunbo.freetv.top/yy/1354930909
+新白娘子传奇,https://lunbo.freetv.top/yy/1354930969
+寻秦记,https://lunbo.freetv.top/yy/1382851591
+倚天屠龙记,http://159.75.85.63:35455/huya/23734246?cdn=txcdn
+宰相刘罗锅,https://lunbo.freetv.top/yy/1382745191
+知否知否应是绿肥红瘦,https://lunbo.freetv.top/yy/21881901
+
+
+
+
+
+
+
+
+
+
+
 港澳台直播,#genre#
 
 靖天资讯,http://litv.zapi.us.kg/?id=4gtv-4gtv065
