@@ -2002,17 +2002,7 @@ CHC家庭影院,http://eastscreen.tv/ooooo.php?id=chcjt
 
 
 
-CHC影迷电影,http://115.153.254.81/PLTV/88888888/224/3221226990/86128784.smil/index.m3u8?fmt=ts2hls
-CHC家庭影院,http://115.153.254.81/PLTV/88888888/224/3221226959/86128800.smil/index.m3u8?fmt=ts2hls
-CHC动作电影,http://115.153.254.81/PLTV/88888888/224/3221226992/86128817.smil/index.m3u8?fmt=ts2hls
 
-
-
-
-
-CHC动作电影,http://[2001:250:5800:1005::155]:80/liverespath/e0096742f0c5be4c5225cf3c7ab1077177bec05f/index.m3u8
-CHC家庭影院,http://[2001:250:5800:1005::155]:80/liverespath/449d51febadb152094085d373b9af94a6ac5f1dd/index.m3u8
-CHC影迷电影,http://[2001:250:5800:1005::155]:80/liverespath/bca6167afdef7fc773405c38e695b342c1d1eca0/index.m3u8
 
 
 
