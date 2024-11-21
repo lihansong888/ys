@@ -1822,6 +1822,23 @@ iHot亚洲影院,http://[2409:8087:5e08:24::11]:6610/000000001000/58418162275395
 
 
 
+芒果直播,#genre#
+芒果直播1,http://zby.xjqxz.top/dsdsj1/live.m3u8
+芒果直播2,http://zby.xjqxz.top/dsdsj2/live.m3u8
+芒果直播3,http://zby.xjqxz.top/dsdsj3/live.m3u8
+芒果直播4,http://zby.xjqxz.top/gzwxj/live.m3u8
+芒果直播5,http://zby.xjqxz.top/gzgdj/live.m3u8
+芒果直播6,http://zby.xjqxz.top/gzdsj1/live.m3u8
+芒果直播7,http://zby.xjqxz.top/gzdsj2/live.m3u8
+芒果直播8,http://zby.xjqxz.top/gzdsj3/live.m3u8
+芒果直播9,http://zby.xjqxz.top/gzdsj4/live.m3u8
+芒果直播10,http://zby.xjqxz.top/gzdsj5/live.m3u8
+芒果直播11,http://zby.xjqxz.top/kzzypd2/live.m3u8
+芒果直播12,http://zby.xjqxz.top/kzzypd/live.m3u8
+芒果直播13,http://zby.xjqxz.top/dzzypd/live.m3u8
+芒果直播14,http://zby.xjqxz.top/dzzypd2/live.m3u8
+芒果直播15,http://zby.xjqxz.top/dzzypd3/live.m3u8
+
 
 
 
