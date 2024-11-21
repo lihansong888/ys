@@ -1856,31 +1856,29 @@ iHot亚洲影院,http://[2409:8087:5e08:24::11]:6610/000000001000/58418162275395
 
 直播中国,#genre#
 直播中国精编直播,https://gcalic.v.myalicdn.com/gc/wgw05_1/index.m3u8
-
+直播中国精编直播,https://gcalic.v.myalicdn.com/gc/wgw05_1/index.m3u8?contentid=2820180516001
 
 
 新疆天山(定海神针),http://gctxyc.liveplay.myqcloud.com/gc/xjtcdhsz_1/index.m3u8
 
 
-黄花城水长城02,http://gctxyc.liveplay.myqcloud.com/gc/wgw02_1/index.m3u8
-直播中国,https://gcalic.v.myalicdn.com/gc/wgw05_1/index.m3u8?contentid=2820180516001
-湖南张家界水绕四门,https://gcalic.v.myalicdn.com/gc/zjjsrsm_1/index.m3u8 
-湖南张家界将军列队,https://gcalic.v.myalicdn.com/gc/zjjjjdl_1/index.m3u8 
-湖南张家界迷魂台,https://gcalic.v.myalicdn.com/gc/zjjmht_1/index.m3u8 
-湖南张家界宝峰湖,https://gcalic.v.myalicdn.com/gc/zjjbfh_1/index.m3u8 
-湖南张家界御笔峰,https://gcalic.v.myalicdn.com/gc/zjjybf_1/index.m3u8 
+安徽黄山卧云峰,http://gctxyc.liveplay.myqcloud.com/gc/wgw02_1/index.m3u8
+
+贵州遵义赤水大瀑布,https://gcalic.v.myalicdn.com/gc/zjjsrsm_1/index.m3u8 
+广东韶关车八岭自然保护区,https://gcalic.v.myalicdn.com/gc/zjjjjdl_1/index.m3u8 
+陕西渭南大荔县南湖景区,https://gcalic.v.myalicdn.com/gc/zjjmht_1/index.m3u8 
+安徽宣城溪桃大桥,https://gcalic.v.myalicdn.com/gc/zjjbfh_1/index.m3u8 
+西藏林芝工布江达县岷山错高民宿,https://gcalic.v.myalicdn.com/gc/zjjybf_1/index.m3u8 
 四川峨眉山云海日出,https://gcalic.v.myalicdn.com/gc/emsarm_1/index.m3u8 
-四川峨眉山远眺贡嘎山,https://gcalic.v.myalicdn.com/gc/emsyh_1/index.m3u8 
-四川峨眉山贤菩萨铜像,https://gcalic.v.myalicdn.com/gc/emspxps_1/index.m3u8 
-四川峨眉山远眺万佛顶,https://gcalic.v.myalicdn.com/gc/emswfs_1/index.m3u8 
-1新疆天山(定海神针),https://gcalic.v.myalicdn.com/gc/xjtcdhsz_1/index.m3u8 
-2新疆天山(定海神针),https://gcalic.v.myalicdn.com/gc/xjtcdhsz_1/index.m3u8 
-新疆天山(马牙山),https://gcalic.v.myalicdn.com/gc/xjtcmys_1/index.m3u8 
-新疆天山(灯杆山),https://gcalic.v.myalicdn.com/gc/xjtcdgs_1/index.m3u8 
-湖南张家界天门山西线玻璃栈道,https://gcalic.v.myalicdn.com/gc/tms05_1/index.m3u8 
-厦门鼓浪屿,https://gcalic.v.myalicdn.com/gc/gly01_1/index.m3u8 
-厦门鼓浪屿,https://gcalic.v.myalicdn.com/gc/gly01_1/index.m3u8 
-广西玉林大容山莲花山顶,https://gcalic.v.myalicdn.com/gc/drs01_1/index.m3u8 
+浙江舟山嵊泗中心渔港,https://gcalic.v.myalicdn.com/gc/emsyh_1/index.m3u8 
+
+
+河南平顶山鲁山画眉谷,https://gcalic.v.myalicdn.com/gc/xjtcmys_1/index.m3u8 
+河南信阳浉河港镇文新茶村,https://gcalic.v.myalicdn.com/gc/xjtcdgs_1/index.m3u8 
+云南普洱澜沧县景迈山,https://gcalic.v.myalicdn.com/gc/tms05_1/index.m3u8 
+陕西渭南韩城党家村景区,https://gcalic.v.myalicdn.com/gc/gly01_1/index.m3u8 
+新疆昌吉州天山天池海西平台,https://gcalic.v.myalicdn.com/gc/gly01_1/index.m3u8 
+云南普洱景东县无量山羊山瀑布,https://gcalic.v.myalicdn.com/gc/drs01_1/index.m3u8 
 八里沟风景区桃花湾瀑布,https://gcalic.v.myalicdn.com/gc/blg05_1/index.m3u8 
 八里沟风景区天界山玻璃栈道,https://gcalic.v.myalicdn.com/gc/blg03_1/index.m3u8 
 安徽池州九华山风景区九华山,https://gcalic.v.myalicdn.com/gc/jhs05_1/index.m3u8 
