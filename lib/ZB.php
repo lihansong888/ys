@@ -1947,7 +1947,7 @@ iHot亚洲影院,http://[2409:8087:5e08:24::11]:6610/000000001000/58418162275395
 
 
 
-BesTV频道,#genre#
+赛事直播,#genre#
 Bestv赛事1,http://iptvrr.sh.chinamobile.com:6060/cms001/ch00000090990000001151/index.m3u8
 Bestv赛事2,http://iptvrr.sh.chinamobile.com:6060/cms001/ch00000090990000001359/index.m3u8
 Bestv赛事3,http://iptvrr.sh.chinamobile.com:6060/cms001/ch00000090990000001388/index.m3u8
