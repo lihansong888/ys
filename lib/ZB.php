@@ -1635,7 +1635,14 @@
 
 
 
-
+正式松視1臺,http://ali.hlspull.yximgs.com/live/8508a1bd8f5dbce4be5897c67796631b.flv
+正式松視2臺,http://ali.hlspull.yximgs.com/live/b33911460327b1b34ad8bd4fd44a8e56.flv
+正式松視3臺,http://ali.hlspull.yximgs.com/live/d51105a319ee97a86a8557e86a80a0d4.flv
+正式彩虹E臺,http://ali.hlspull.yximgs.com/live/27f534376445e1e0c22a318b7f7429e0.flv
+正式彩虹電影臺,http://ali.hlspull.yximgs.com/live/71bbe335c767dd01f93d1fd9212a9aeb.flv
+正式潘多拉紫臺,http://ali.hlspull.yximgs.com/live/ca0bdb8d75e33d4279b8616652725455.flv
+正式奧世驚艷臺,http://ali.hlspull.yximgs.com/live/071ebf89e5fd3b8d2a872e1b2893f59e.flv
+正式奧世香蕉臺,http://ali.hlspull.yximgs.com/live/2e920946f1d6db7fbce2bf620fd44d97.flv
 
 
 
