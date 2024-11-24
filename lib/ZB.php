@@ -4359,7 +4359,7 @@ CETV-4,http://[2409:8087:3c02:21:0:1:0:100a]:6410/shandong_cabletv.live.zte.com/
 
 
 
-黑软港澳区,#genre
+黑软港澳频道,#genre#
 
 八大戏剧,http://61.221.215.25:8800/hls/39/index.m3u8
 八大戏剧,http://61.221.215.25:8800/hls/41/index.m3u8
