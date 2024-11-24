@@ -1,53 +1,4 @@
-湖南台33,#genre#
-湖南爱晚,http://phonews.qing.mgtv.com/nn_live/nn_x64/dWlwPTEwMy4zOS4yMjYuMTAwJnFpZD0mY2RuZXhfaWQ9d3NfcGhvbmUzJnM9YzRiNmEzYzliOWI4OTYwMzUxNWZiYjIyYmU5MjhkZmQmdWlkPSZ1dWlkPTMwMDUyMjE2ODc1ZGE3ZjZiYjFiYmY1NGJjZDkxZjM4LTY3MjdlMjY0JnY9MiZhcz0wJmVzPTE3MzI0NzA0Njg,/HNGGMPP360.m3u8
-湖南都市,http://phonews.qing.mgtv.com/nn_live/nn_x64/dWlwPTEwMy4zOS4yMjYuMTAwJnFpZD0mY2RuZXhfaWQ9d3NfcGhvbmUzJnM9ZTEyYTM1Yjg3OWMzYzg1YjMyMTQ0YjZkMTI3OTFkOTMmdWlkPSZ1dWlkPWNhMjZiMzgwMDUxYzY5NmMyNDgyZTVkNjQxYmRiNjQ3LTY3MjdlMjY0JnY9MiZhcz0wJmVzPTE3MzI0OTQxMDE,/HNDSMPP360.m3u8
-湖南经视,http://phonehw.qing.mgtv.com/nn_live/nn_x64/dWlwPTEwMy4zOS4yMjYuMTAwJnFpZD0mY2RuZXhfaWQ9aHdfcGhvbmUmcz0wMzAzYTQ5NjBlMTkxY2U3YzM2NzBlNWRiNWY4NDBlZSZ1aWQ9JnV1aWQ9NTJmZTNlOWVkMWM2M2ZmMGMzNTdjZDMzOGNjNTVmNmYtNjcyN2UyNjQmdj0yJmFzPTAmZXM9MTczMjQ5NTQzMg,,/HNJSMPP360.m3u8
-金鹰卡通,http://phonews.qing.mgtv.com/nn_live/nn_x64/dWlwPTEwMy4zOS4yMjYuMTAwJnFpZD0mY2RuZXhfaWQ9d3NfcGhvbmUzJnM9YWZjYjdhNmVlOTQ3N2I3N2EzMzM2NmVhNmJlM2I0NTAmdWlkPSZ1dWlkPTlmMzE2YjllYzUxMDljMzQ1MmZhY2EyM2JhZGExMTE5LTY3MjdlMjY0JnY9MiZhcz0wJmVzPTE3MzI0OTQ2NzY,/JYKTMPP360.m3u8
-湖南国际频道,http://phonews.qing.mgtv.com/nn_live/nn_x64/dWlwPTEwMy4zOS4yMjYuMTAwJnFpZD0mY2RuZXhfaWQ9d3NfcGhvbmUzJnM9NGE5ZWI5NTQwYTQ0YmQzMDdhN2RiODFhNjkwZjkyZjYmdWlkPSZ1dWlkPTFkODc1NjlkYTYxNzA2ZjIyOTFlZThlMzdiZjUwODBhLTY3MjdlMjY0JnY9MiZhcz0wJmVzPTE3MzI0NzQ2NTc,/HNGJMPP360.m3u8
-湖南电视剧,http://phonetx.qing.mgtv.com/nn_live/nn_x64/dWlwPTEwMy4zOS4yMjYuMTAwJnFpZD0mY2RuZXhfaWQ9dHhfcGhvbmVfbGl2ZSZzPTJlZDNlM2NiOGNlOTZkZGVhZTlkZjBhZTZkY2FhYjQ5JnVpZD0mdXVpZD0wNGMwYjMwNTc1YmUwZTg0ZmUzNTA4NjViNzMyM2NhMC02NzI3ZTI2NCZ2PTImYXM9MCZlcz0xNzMyNDg1Njc4/HNDSJMPP360.m3u8
-长沙新闻频道,http://phonews.qing.mgtv.com/nn_live/nn_x64/dWlwPTEwMy4zOS4yMjYuMTAwJnFpZD0mY2RuZXhfaWQ9d3NfcGhvbmUzJnM9NDA1ZjQyNjc5NjRmZDg2ZTNmMWE2ZTE1MWQ4NDQ2YTUmdWlkPSZ1dWlkPTRlMTk2MjQ4YTdjZTQyNGMwNTVjOTRmZDIyZWNkMzljLTY3MjdlMjY0JnY9MiZhcz0wJmVzPTE3MzI0NzEyMzQ,/CSXWMPP360.m3u8
-湖南卫视,http://120.196.232.43:8088/rrs03.hw.gmcc.net/PLTV/651/224/3221226698/1.m3u8
 
-港澳台,#genre#
-澳门卫视,http://61.244.22.4/ch1/ch1.live/playlist.m3u8
-Pet Club TV,https://cdn-apse1-prod.tsv2.amagi.tv/linear/amg01076-lightningintern-petclub-samsungnz/playlist.m3u8
-Bloomberg TV Asia,http://210.210.155.37/dr9445/h/h03/index.m3u8
-KIX,http://210.210.155.37/dr9445/h/h07/index.m3u8
-HKS,http://zhibo.hkstv.tv/livestream/mutfysrq/playlist.m3u8
-Celestial Movies,http://210.210.155.37/dr9445/h/h14/index.m3u8
-tvN Movies Asia,http://210.210.155.37/dr9445/h/h21/index.m3u8
-TVB News,http://r.jdshipin.com/CkuBd
-Good,https://live.streamingfast.net/osmflivech1.m3u8
-Good 2,https://live.streamingfast.net/osmflivech2.m3u8
-Beautiful Life TV,https://5ddce30eb4b55.streamlock.net/bltvhd/bltv1/playlist.m3u8
-Supreme Master TV,https://lbs-us1.suprememastertv.com/720p.m3u8
-TVBS-Asia,http://38.64.72.148/hls/modn/list/4005/playlist.m3u8
-Taiwan Plus TV,https://raw.githubusercontent.com/ChiSheng9/iptv/master/TV78.m3u8
-Genius Go Go Go,https://raw.githubusercontent.com/ChiSheng9/iptv/master/TV26.m3u8
-DaAi 1,https://pulltv1.wanfudaluye.com/live/tv1.m3u8
-DaAi 2,https://pulltv2.wanfudaluye.com/live/tv2.m3u8
-Dali TV,http://www.dalitv.com.tw:4568/live/dali/index.m3u8
-EBC YOYO,https://ythls.armelin.one/channel/UCiWRSesvSYmY7YOyz0tv_zQ.m3u8
-CTi News,https://raw.githubusercontent.com/ChiSheng9/iptv/master/TV28.m3u8
-FTV News,https://ythls.armelin.one/channel/UC2VmWn8dAqkzlQqvy02E1PA.m3u8
-Global News,https://raw.githubusercontent.com/ChiSheng9/iptv/master/TV02.m3u8
-SET iNews,https://ythls.armelin.one/channel/UCoNYj9OFHZn3ACmmeRCPwbA.m3u8
-TTV News,https://ythls.armelin.one/channel/UC8ROUUjHzEQm-ndb69CX8Ww.m3u8
-mnews,https://ythls.armelin.one/channel/UC4LjkybVKXCDlneVXlKAbmw.m3u8
-ET Mall 60,https://raw.githubusercontent.com/ChiSheng9/iptv/master/TV18.m3u8
-寰宇新闻台,https://raw.githubusercontent.com/ChiSheng9/iptv/master/TV02.m3u8
-东森财经新闻,https://raw.githubusercontent.com/ChiSheng9/iptv/master/TV03.m3u8
-Momo 1,https://raw.githubusercontent.com/ChiSheng9/iptv/master/TV04.m3u8
-Momo 2,https://raw.githubusercontent.com/ChiSheng9/iptv/master/TV05.m3u8
-信大,https://raw.githubusercontent.com/ChiSheng9/iptv/master/TV07.m3u8
-DW,https://raw.githubusercontent.com/ChiSheng9/iptv/master/TV08.m3u8
-中视新闻,https://raw.githubusercontent.com/ChiSheng9/iptv/master/TV09.m3u8
-NU,https://raw.githubusercontent.com/ChiSheng9/iptv/master/TV10.m3u8
-NU2,https://raw.githubusercontent.com/ChiSheng9/iptv/master/TV14.m3u8
-华视HD,https://raw.githubusercontent.com/ChiSheng9/iptv/master/TV12.m3u8
-JP1,https://raw.githubusercontent.com/ChiSheng9/iptv/master/TV15.m3u8
-KPop,https://raw.githubusercontent.com/ChiSheng9/iptv/master/TV16.m3u8
-民视新闻HD,https://raw.githubusercontent.com/ChiSheng9/iptv/master/TV17.m3u8
 
 
 
@@ -2381,7 +2332,7 @@ CHC影迷电影,http://[2409:8087:3c02:21:0:1:0:100a]:6410/shandong_cabletv.live
 
 
 
-港澳台测试频道,#genre#
+港澳台AKTV频道,#genre#
 
 
 
@@ -2403,7 +2354,6 @@ CHC影迷电影,http://[2409:8087:3c02:21:0:1:0:100a]:6410/shandong_cabletv.live
 Channel 5 HD,http://aktv.top/AKTV/live/aktv/channel5hd/AKTV.m3u8
 Channel 8 HD,http://aktv.top/AKTV/live/aktv/channel8hd/AKTV.m3u8
 Channel U HD,http://aktv.top/AKTV/live/aktv/channeluhd/AKTV.m3u8
-Hoy 78,http://aktv.top/AKTV/live/aktv/hoy78/AKTV.m3u8
 myTV SUPER 18台,http://aktv.top/AKTV/live/aktv/mytvsuper18/AKTV.m3u8
 PopC,http://aktv.top/AKTV/live/aktv/popc/AKTV.m3u8
 ROCK Action,http://aktv.top/AKTV/live/aktv/rockaction/AKTV.m3u8
@@ -2434,12 +2384,9 @@ tvN,http://aktv.top/AKTV/live/aktv/tvn/AKTV.m3u8
 龍華日韓台,http://aktv.top/AKTV/live/aktv/null-22/AKTV.m3u8
 龍華經典台,http://aktv.top/AKTV/live/aktv/null-7/AKTV.m3u8
 龍華電影台,http://aktv.top/AKTV/live/aktv/null-23/AKTV.m3u8
-Now星影台,http://aktv.top/AKTV/live/aktv2/now/AKTV.m3u8
-TVB 星河台,http://aktv.top/AKTV/live/aktv2/tvb/AKTV.m3u8
 viutv 99,http://aktv.top/AKTV/live/aktv2/viutv99/AKTV.m3u8
 viutv6 96,http://aktv.top/AKTV/live/aktv2/viutv696/AKTV.m3u8
 无线新闻台(北美),http://aktv.top/AKTV/live/aktv2/null-1/AKTV.m3u8
-爆谷台,http://aktv.top/AKTV/live/aktv2/null/AKTV.m3u8
 Animax-HK,http://aktv.top/AKTV/live/aktv3/animaxhk/AKTV.m3u8
 C+台,http://aktv.top/AKTV/live/aktv3/c/AKTV.m3u8
 DW,http://aktv.top/AKTV/live/aktv3/dw/AKTV.m3u8
@@ -2455,7 +2402,6 @@ ZooMoo,http://aktv.top/AKTV/live/aktv3/zoomoo/AKTV.m3u8
 亞洲新聞台,http://aktv.top/AKTV/live/aktv3/null-3/AKTV.m3u8
 東方衛視國際頻道,http://aktv.top/AKTV/live/aktv3/null/AKTV.m3u8
 無線衛星新聞台,http://aktv.top/AKTV/live/aktv3/null-2/AKTV.m3u8
-
 
 
 
