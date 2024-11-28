@@ -1,4 +1,17 @@
+选播频道,#genre#
 
+松视1台,http://ali.hlspull.yximgs.com/live/fb817ffa2d0679d2a36a2c79a8fd081d.flv
+​e彩虹,http://ali.hlspull.yximgs.com/live/4295d6606fdfa4b5ef0d22aeef424e3a.flv
+​惊艳台,http://ali.hlspull.yximgs.com/live/05305d0ba7288e1b1a186b1d0ff5c2e2.flv
+​麻豆台,http://ali.hlspull.yximgs.com/live/8bacfd6c23bae6b3498a06d6b96d86d4.flv
+松视1台,http://ali.hlspull.yximgs.com/live/db8123fd535ff7cfabcc39c6948bd1d5.flv
+松视2台,http://ali.hlspull.yximgs.com/live/cae9175f25975df5a5ab78a825e78c13.flv​e
+彩虹,http://ali.hlspull.yximgs.com/live/aff44992dd88f0ef94d8b4a445f75835.flv
+彩虹台,http://ali.hlspull.yximgs.com/live/9cf748916b679f95ec6dcfb9337edf1f.flv
+潘多拉,http://ali.hlspull.yximgs.com/live/fc1a04ea7f4c2f9d9589b12a5b3040f4.flv​
+惊艳台,http://ali.hlspull.yximgs.com/live/7c1b0f366ba9d5e67c7ceaeca58d2020.flv
+香蕉台,http://ali.hlspull.yximgs.com/live/af609c8eff0b847864ba1efd9e9396e5.flv​
+麻豆台,http://ali.hlspull.yximgs.com/live/8ec075dad30deeb0d826aef73c00cdcb.flv
 
 
 
