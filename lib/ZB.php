@@ -1948,149 +1948,149 @@ CHC影迷电影,http://[2409:8087:3c02:21:0:1:0:100a]:6410/shandong_cabletv.live
 
 港澳台4GTV频道,#genre#
 
-民視,http://209.141.54.128:5080/proxy?url=http%3A//209.141.54.128%3A55520/litv/4gtv-4gtv002
-民視第一台,http://209.141.54.128:5080/proxy?url=http%3A//209.141.54.128%3A55520/litv/4gtv-4gtv003
-民視新聞台,http://209.141.54.128:5080/proxy?url=http%3A//209.141.54.128%3A55520/litv/litv-ftv13
-民視台灣台,http://209.141.54.128:5080/proxy?url=http%3A//209.141.54.128%3A55520/litv/4gtv-4gtv001
-民視影劇台,http://209.141.54.128:5080/proxy?url=http%3A//209.141.54.128%3A55520/litv/litv-ftv09
-民視旅遊台,http://209.141.54.128:5080/proxy?url=http%3A//209.141.54.128%3A55520/litv/litv-ftv07
-民視綜藝台,http://209.141.54.128:5080/proxy?url=http%3A//209.141.54.128%3A55520/litv/4gtv-4gtv004
-中視,http://209.141.54.128:5080/proxy?url=http%3A//209.141.54.128%3A55520/litv/4gtv-4gtv040
-中視新聞台,http://209.141.54.128:5080/proxy?url=http%3A//209.141.54.128%3A55520/litv/4gtv-4gtv074
-中視經典台,http://209.141.54.128:5080/proxy?url=http%3A//209.141.54.128%3A55520/litv/4gtv-4gtv080
-中視菁采台,http://209.141.54.128:5080/proxy?url=http%3A//209.141.54.128%3A55520/litv/4gtv-4gtv064
-中天新聞台,http://209.141.54.128:5080/proxy?url=http%3A//209.141.54.128%3A55520/litv/4gtv-4gtv009
-中天亞洲台,http://209.141.54.128:5080/proxy?url=http%3A//209.141.54.128%3A55520/litv/4gtv-4gtv109
-華視,http://209.141.54.128:5080/proxy?url=http%3A//209.141.54.128%3A55520/litv/4gtv-4gtv041
-華視新聞,http://209.141.54.128:5080/proxy?url=http%3A//209.141.54.128%3A55520/litv/4gtv-4gtv052
-靖天綜合台,http://209.141.54.128:5080/proxy?url=http%3A//209.141.54.128%3A55520/litv/4gtv-4gtv046
-靖天國際台,http://209.141.54.128:5080/proxy?url=http%3A//209.141.54.128%3A55520/litv/4gtv-4gtv063
-靖天戲劇台,http://209.141.54.128:5080/proxy?url=http%3A//209.141.54.128%3A55520/litv/4gtv-4gtv058
-靖天日本台,http://209.141.54.128:5080/proxy?url=http%3A//209.141.54.128%3A55520/litv/4gtv-4gtv047
-靖天映畫台,http://209.141.54.128:5080/proxy?url=http%3A//209.141.54.128%3A55520/litv/4gtv-4gtv055
-靖天卡通台,http://209.141.54.128:5080/proxy?url=http%3A//209.141.54.128%3A55520/litv/4gtv-4gtv044
-靖天育樂台,http://209.141.54.128:5080/proxy?url=http%3A//209.141.54.128%3A55520/litv/4gtv-4gtv062
-靖天資訊台,http://209.141.54.128:5080/proxy?url=http%3A//209.141.54.128%3A55520/litv/4gtv-4gtv065
-靖天電影台,http://209.141.54.128:5080/proxy?url=http%3A//209.141.54.128%3A55520/litv/4gtv-4gtv061
-靖天歡樂台,http://209.141.54.128:5080/proxy?url=http%3A//209.141.54.128%3A55520/litv/4gtv-4gtv054
-龍華偶像台,http://209.141.54.128:5080/proxy?url=http%3A//209.141.54.128%3A55520/litv/litv-longturn12
-龍華卡通台,http://209.141.54.128:5080/proxy?url=http%3A//209.141.54.128%3A55520/litv/litv-longturn01
-龍華戲劇台,http://209.141.54.128:5080/proxy?url=http%3A//209.141.54.128%3A55520/litv/litv-longturn18
-龍華日韓台,http://209.141.54.128:5080/proxy?url=http%3A//209.141.54.128%3A55520/litv/litv-longturn11
-龍華經典台,http://209.141.54.128:5080/proxy?url=http%3A//209.141.54.128%3A55520/litv/litv-longturn21
-龍華電影台,http://209.141.54.128:5080/proxy?url=http%3A//209.141.54.128%3A55520/litv/litv-longturn03
-靖洋戲劇台,http://209.141.54.128:5080/proxy?url=http%3A//209.141.54.128%3A55520/litv/4gtv-4gtv045
-靖洋卡通 Nice Bingo,http://209.141.54.128:5080/proxy?url=http%3A//209.141.54.128%3A55520/litv/4gtv-4gtv057
-寰宇新聞台,http://209.141.54.128:5080/proxy?url=http%3A//209.141.54.128%3A55520/litv/litv-longturn14
-寰宇新聞台灣台,http://209.141.54.128:5080/proxy?url=http%3A//209.141.54.128%3A55520/litv/litv-longturn15
-寰宇財經台,http://209.141.54.128:5080/proxy?url=http%3A//209.141.54.128%3A55520/litv/litv-longturn23
-TVBS,http://209.141.54.128:5080/proxy?url=http%3A//209.141.54.128%3A55520/litv/4gtv-4gtv073
-TVBS 新聞台,http://209.141.54.128:5080/proxy?url=http%3A//209.141.54.128%3A55520/litv/4gtv-4gtv072
-TVBS 綜藝台,http://209.141.54.128:5080/proxy?url=http%3A//209.141.54.128%3A55520/4gtv/284
-TVBS 歡樂台,http://209.141.54.128:5080/proxy?url=http%3A//209.141.54.128%3A55520/litv/4gtv-4gtv068
-TVBS 精采台,http://209.141.54.128:5080/proxy?url=http%3A//209.141.54.128%3A55520/litv/4gtv-4gtv067
-TVBS 台劇台,http://209.141.54.128:5080/proxy?url=http%3A//209.141.54.128%3A55520/4gtv/285
-八大精彩台,http://209.141.54.128:5080/proxy?url=http%3A//209.141.54.128%3A55520/litv/4gtv-4gtv034
-八大綜藝台,http://209.141.54.128:5080/proxy?url=http%3A//209.141.54.128%3A55520/litv/4gtv-4gtv039
-三立綜合台,http://209.141.54.128:5080/proxy?url=http%3A//209.141.54.128%3A55520/4gtv/169
-三立 iNEWS,http://209.141.54.128:5080/proxy?url=http%3A//209.141.54.128%3A55520/4gtv/229
-台視,http://209.141.54.128:5080/proxy?url=http%3A//209.141.54.128%3A55520/litv/4gtv-4gtv066
-台視新聞台,http://209.141.54.128:5080/proxy?url=http%3A//209.141.54.128%3A55520/litv/4gtv-4gtv051
-台視財經台,http://209.141.54.128:5080/proxy?url=http%3A//209.141.54.128%3A55520/litv/4gtv-4gtv056
-博斯運動一台,http://209.141.54.128:5080/proxy?url=http%3A//209.141.54.128%3A55520/litv/litv-longturn07
-博斯運動二台,http://209.141.54.128:5080/proxy?url=http%3A//209.141.54.128%3A55520/litv/litv-longturn08
-博斯無限台,http://209.141.54.128:5080/proxy?url=http%3A//209.141.54.128%3A55520/litv/litv-longturn10
-博斯無限二台,http://209.141.54.128:5080/proxy?url=http%3A//209.141.54.128%3A55520/litv/litv-longturn13
-博斯網球台,http://209.141.54.128:5080/proxy?url=http%3A//209.141.54.128%3A55520/litv/litv-longturn09
-博斯高球台,http://209.141.54.128:5080/proxy?url=http%3A//209.141.54.128%3A55520/litv/litv-longturn05
-博斯高球二台,http://209.141.54.128:5080/proxy?url=http%3A//209.141.54.128%3A55520/litv/litv-longturn06
-博斯魅力台,http://209.141.54.128:5080/proxy?url=http%3A//209.141.54.128%3A55520/litv/litv-longturn04
-ELTA 娛樂台,http://209.141.54.128:5080/proxy?url=http%3A//209.141.54.128%3A55520/litv/4gtv-4gtv070
-ELTA 生活旅遊,http://209.141.54.128:5080/proxy?url=http%3A//209.141.54.128%3A55520/4gtv/237
-ELTV 生活英語,http://209.141.54.128:5080/proxy?url=http%3A//209.141.54.128%3A55520/litv/litv-longturn20
-東森新聞,http://209.141.54.128:5080/proxy?url=http%3A//209.141.54.128%3A55520/litv/4gtv-4gtv152
-東森財經新聞,http://209.141.54.128:5080/proxy?url=http%3A//209.141.54.128%3A55520/litv/4gtv-4gtv153
-非凡新聞台,http://209.141.54.128:5080/proxy?url=http%3A//209.141.54.128%3A55520/litv/4gtv-4gtv010
-非凡商業台,http://209.141.54.128:5080/proxy?url=http%3A//209.141.54.128%3A55520/litv/4gtv-4gtv048
-鏡電視新聞台,http://209.141.54.128:5080/proxy?url=http%3A//209.141.54.128%3A55520/litv/4gtv-4gtv075
-CNBC Asia 財經台,http://209.141.54.128:5080/proxy?url=http%3A//209.141.54.128%3A55520/4gtv/235
-亞洲旅遊台,http://209.141.54.128:5080/proxy?url=http%3A//209.141.54.128%3A55520/litv/litv-longturn17
-GINX Esports TV,http://209.141.54.128:5080/proxy?url=http%3A//209.141.54.128%3A55520/litv/4gtv-4gtv053
-TechStorm,http://209.141.54.128:5080/proxy?url=http%3A//209.141.54.128%3A55520/4gtv/181
-時尚運動X,http://209.141.54.128:5080/proxy?url=http%3A//209.141.54.128%3A55520/4gtv/277
-智林體育台,http://209.141.54.128:5080/proxy?url=http%3A//209.141.54.128%3A55520/litv/4gtv-4gtv101
-TraceSports,http://209.141.54.128:5080/proxy?url=http%3A//209.141.54.128%3A55520/litv/4gtv-4gtv077
-影迷數位紀實台,http://209.141.54.128:5080/proxy?url=http%3A//209.141.54.128%3A55520/4gtv/212
-影迷數位電影台,http://209.141.54.128:5080/proxy?url=http%3A//209.141.54.128%3A55520/litv/4gtv-4gtv011
-AMC 電影台,http://209.141.54.128:5080/proxy?url=http%3A//209.141.54.128%3A55520/litv/4gtv-4gtv017
-CatchPlay 電影台,http://209.141.54.128:5080/proxy?url=http%3A//209.141.54.128%3A55520/litv/4gtv-4gtv076
-My Cinema Europe HD 我的歐洲電影,http://209.141.54.128:5080/proxy?url=http%3A//209.141.54.128%3A55520/4gtv/176
-公視戲劇台,http://209.141.54.128:5080/proxy?url=http%3A//209.141.54.128%3A55520/litv/4gtv-4gtv042
-采昌影劇台,http://209.141.54.128:5080/proxy?url=http%3A//209.141.54.128%3A55520/litv/4gtv-4gtv049
-台灣戲劇台,http://209.141.54.128:5080/proxy?url=http%3A//209.141.54.128%3A55520/litv/litv-longturn22
-戲劇免費看 1台,http://209.141.54.128:5080/proxy?url=http%3A//209.141.54.128%3A55520/4gtv/270
-戲劇免費看 2台,http://209.141.54.128:5080/proxy?url=http%3A//209.141.54.128%3A55520/4gtv/244
-經典電影台,http://209.141.54.128:5080/proxy?url=http%3A//209.141.54.128%3A55520/4gtv/201
-電影免費看 2台,http://209.141.54.128:5080/proxy?url=http%3A//209.141.54.128%3A55520/4gtv/245
-電影原聲台 CMusic,http://209.141.54.128:5080/proxy?url=http%3A//209.141.54.128%3A55520/4gtv/218
-花系列 經典劇場,http://209.141.54.128:5080/proxy?url=http%3A//209.141.54.128%3A55520/4gtv/279
-CinemaWorld,http://209.141.54.128:5080/proxy?url=http%3A//209.141.54.128%3A55520/4gtv/225
-HITS 頻道,http://209.141.54.128:5080/proxy?url=http%3A//209.141.54.128%3A55520/4gtv/186
-Rock Action,http://209.141.54.128:5080/proxy?url=http%3A//209.141.54.128%3A55520/4gtv/180
-Rock Entertainment,http://209.141.54.128:5080/proxy?url=http%3A//209.141.54.128%3A55520/4gtv/275
-金光布袋戲,http://209.141.54.128:5080/proxy?url=http%3A//209.141.54.128%3A55520/4gtv/236
-霹靂布袋戲,http://209.141.54.128:5080/proxy?url=http%3A//209.141.54.128%3A55520/4gtv/301
-DreamWorks 夢工廠動畫,http://209.141.54.128:5080/proxy?url=http%3A//209.141.54.128%3A55520/4gtv/282
-Nickelodeon,http://209.141.54.128:5080/proxy?url=http%3A//209.141.54.128%3A55520/4gtv/185
-Nick Jr. 兒童頻道,http://209.141.54.128:5080/proxy?url=http%3A//209.141.54.128%3A55520/4gtv/219
-i-Fun 動漫台,http://209.141.54.128:5080/proxy?url=http%3A//209.141.54.128%3A55520/litv/litv-ftv15
-兒童卡通台,http://209.141.54.128:5080/proxy?url=http%3A//209.141.54.128%3A55520/4gtv/269
-精選動漫台,http://209.141.54.128:5080/proxy?url=http%3A//209.141.54.128%3A55520/4gtv/204
-經典卡通台,http://209.141.54.128:5080/proxy?url=http%3A//209.141.54.128%3A55520/4gtv/202
-達文西頻道,http://209.141.54.128:5080/proxy?url=http%3A//209.141.54.128%3A55520/litv/4gtv-4gtv018
-超人力霸王整套看,http://209.141.54.128:5080/proxy?url=http%3A//209.141.54.128%3A55520/4gtv/278
-MOMO 親子台,http://209.141.54.128:5080/proxy?url=http%3A//209.141.54.128%3A55520/4gtv/231
-LiveABC 互動英語台,http://209.141.54.128:5080/proxy?url=http%3A//209.141.54.128%3A55520/4gtv/188
-Classica 古典樂,http://209.141.54.128:5080/proxy?url=http%3A//209.141.54.128%3A55520/litv/4gtv-4gtv059
-Lifetime 娛樂頻道,http://209.141.54.128:5080/proxy?url=http%3A//209.141.54.128%3A55520/4gtv/217
-MTV Live HD 音樂頻道,http://209.141.54.128:5080/proxy?url=http%3A//209.141.54.128%3A55520/4gtv/213
-Mezzo Live,http://209.141.54.128:5080/proxy?url=http%3A//209.141.54.128%3A55520/litv/4gtv-4gtv083
-豬哥亮歌廳秀,http://209.141.54.128:5080/proxy?url=http%3A//209.141.54.128%3A55520/litv/4gtv-4gtv006
-Trace Urban,http://209.141.54.128:5080/proxy?url=http%3A//209.141.54.128%3A55520/litv/4gtv-4gtv082
-Global Trekker,http://209.141.54.128:5080/proxy?url=http%3A//209.141.54.128%3A55520/4gtv/252
-韓國娛樂台,http://209.141.54.128:5080/proxy?url=http%3A//209.141.54.128%3A55520/litv/4gtv-4gtv016
-LUXE TV,http://209.141.54.128:5080/proxy?url=http%3A//209.141.54.128%3A55520/4gtv/175
-Pet Club TV,http://209.141.54.128:5080/proxy?url=http%3A//209.141.54.128%3A55520/4gtv/182
-TV5MONDE Style,http://209.141.54.128:5080/proxy?url=http%3A//209.141.54.128%3A55520/4gtv/178
-車迷 TV,http://209.141.54.128:5080/proxy?url=http%3A//209.141.54.128%3A55520/4gtv/160
-Love Nature,http://209.141.54.128:5080/proxy?url=http%3A//209.141.54.128%3A55520/4gtv/139
-Fun 探索娛樂台,http://209.141.54.128:5080/proxy?url=http%3A//209.141.54.128%3A55520/4gtv/274
-幸福空間居家台,http://209.141.54.128:5080/proxy?url=http%3A//209.141.54.128%3A55520/4gtv/168
-Arirang TV,http://209.141.54.128:5080/proxy?url=http%3A//209.141.54.128%3A55520/litv/4gtv-4gtv079
-Bloomberg TV,http://209.141.54.128:5080/proxy?url=http%3A//209.141.54.128%3A55520/4gtv/283
-VOA 美國之音,http://209.141.54.128:5080/proxy?url=http%3A//209.141.54.128%3A55520/litv/litv-ftv03
-DW德國之聲,http://209.141.54.128:5080/proxy?url=http%3A//209.141.54.128%3A55520/4gtv/226
-SBN 全球財經台,http://209.141.54.128:5080/proxy?url=http%3A//209.141.54.128%3A55520/4gtv/224
-半島國際新聞台,http://209.141.54.128:5080/proxy?url=http%3A//209.141.54.128%3A55520/litv/litv-ftv10
-第1商業台,http://209.141.54.128:5080/proxy?url=http%3A//209.141.54.128%3A55520/litv/4gtv-4gtv104
-History 歷史頻道,http://209.141.54.128:5080/proxy?url=http%3A//209.141.54.128%3A55520/4gtv/214
-CI 罪案偵查頻道,http://209.141.54.128:5080/proxy?url=http%3A//209.141.54.128%3A55520/4gtv/215
-Smart 知識台,http://209.141.54.128:5080/proxy?url=http%3A//209.141.54.128%3A55520/litv/litv-longturn19
-視納華仁紀實頻道,http://209.141.54.128:5080/proxy?url=http%3A//209.141.54.128%3A55520/litv/4gtv-4gtv013
-原住民族電視台,http://209.141.54.128:5080/proxy?url=http%3A//209.141.54.128%3A55520/4gtv/273
-客家電視台,http://209.141.54.128:5080/proxy?url=http%3A//209.141.54.128%3A55520/litv/4gtv-4gtv043
-滾動力 Rollor,http://209.141.54.128:5080/proxy?url=http%3A//209.141.54.128%3A55520/4gtv/249
-好消息,http://209.141.54.128:5080/proxy?url=http%3A//209.141.54.128%3A55520/litv/litv-ftv16
-好消息2台,http://209.141.54.128:5080/proxy?url=http%3A//209.141.54.128%3A55520/litv/litv-ftv17
-大愛電視,http://209.141.54.128:5080/proxy?url=http%3A//209.141.54.128%3A55520/4gtv/209
-大愛電視2,http://209.141.54.128:5080/proxy?url=http%3A//209.141.54.128%3A55520/4gtv/230
-人間衛視,http://209.141.54.128:5080/proxy?url=http%3A//209.141.54.128%3A55520/4gtv/210
-國會頻道1,http://209.141.54.128:5080/proxy?url=http%3A//209.141.54.128%3A55520/litv/4gtv-4gtv084
-國會頻道2,http://209.141.54.128:5080/proxy?url=http%3A//209.141.54.128%3A55520/litv/4gtv-4gtv085
-東森購物一台,http://209.141.54.128:5080/proxy?url=http%3A//209.141.54.128%3A55520/4gtv/173
-東森購物二台,http://209.141.54.128:5080/proxy?url=http%3A//209.141.54.128%3A55520/4gtv/174
-東森購物三台,http://209.141.54.128:5080/proxy?url=http%3A//209.141.54.128%3A55520/4gtv/287
-東森購物四台,http://209.141.54.128:5080/proxy?url=http%3A//209.141.54.128%3A55520/4gtv/286
+民視,https://4gtv.mytvsuper.xyz/litv/4gtv-4gtv002
+民視第一台,https://4gtv.mytvsuper.xyz/litv/4gtv-4gtv003
+民視新聞台,https://4gtv.mytvsuper.xyz/litv/litv-ftv13
+民視台灣台,https://4gtv.mytvsuper.xyz/litv/4gtv-4gtv001
+民視影劇台,https://4gtv.mytvsuper.xyz/litv/litv-ftv09
+民視旅遊台,https://4gtv.mytvsuper.xyz/litv/litv-ftv07
+民視綜藝台,https://4gtv.mytvsuper.xyz/litv/4gtv-4gtv004
+中視,https://4gtv.mytvsuper.xyz/litv/4gtv-4gtv040
+中視新聞台,https://4gtv.mytvsuper.xyz/litv/4gtv-4gtv074
+中視經典台,https://4gtv.mytvsuper.xyz/litv/4gtv-4gtv080
+中視菁采台,https://4gtv.mytvsuper.xyz/litv/4gtv-4gtv064
+中天新聞台,https://4gtv.mytvsuper.xyz/litv/4gtv-4gtv009
+中天亞洲台,https://4gtv.mytvsuper.xyz/litv/4gtv-4gtv109
+華視,https://4gtv.mytvsuper.xyz/litv/4gtv-4gtv041
+華視新聞,https://4gtv.mytvsuper.xyz/litv/4gtv-4gtv052
+靖天綜合台,https://4gtv.mytvsuper.xyz/litv/4gtv-4gtv046
+靖天國際台,https://4gtv.mytvsuper.xyz/litv/4gtv-4gtv063
+靖天戲劇台,https://4gtv.mytvsuper.xyz/litv/4gtv-4gtv058
+靖天日本台,https://4gtv.mytvsuper.xyz/litv/4gtv-4gtv047
+靖天映畫台,https://4gtv.mytvsuper.xyz/litv/4gtv-4gtv055
+靖天卡通台,https://4gtv.mytvsuper.xyz/litv/4gtv-4gtv044
+靖天育樂台,https://4gtv.mytvsuper.xyz/litv/4gtv-4gtv062
+靖天資訊台,https://4gtv.mytvsuper.xyz/litv/4gtv-4gtv065
+靖天電影台,https://4gtv.mytvsuper.xyz/litv/4gtv-4gtv061
+靖天歡樂台,https://4gtv.mytvsuper.xyz/litv/4gtv-4gtv054
+龍華偶像台,https://4gtv.mytvsuper.xyz/litv/litv-longturn12
+龍華卡通台,https://4gtv.mytvsuper.xyz/litv/litv-longturn01
+龍華戲劇台,https://4gtv.mytvsuper.xyz/litv/litv-longturn18
+龍華日韓台,https://4gtv.mytvsuper.xyz/litv/litv-longturn11
+龍華經典台,https://4gtv.mytvsuper.xyz/litv/litv-longturn21
+龍華電影台,https://4gtv.mytvsuper.xyz/litv/litv-longturn03
+靖洋戲劇台,https://4gtv.mytvsuper.xyz/litv/4gtv-4gtv045
+靖洋卡通 Nice Bingo,https://4gtv.mytvsuper.xyz/litv/4gtv-4gtv057
+寰宇新聞台,https://4gtv.mytvsuper.xyz/litv/litv-longturn14
+寰宇新聞台灣台,https://4gtv.mytvsuper.xyz/litv/litv-longturn15
+寰宇財經台,https://4gtv.mytvsuper.xyz/litv/litv-longturn23
+TVBS,https://4gtv.mytvsuper.xyz/litv/4gtv-4gtv073
+TVBS 新聞台,https://4gtv.mytvsuper.xyz/litv/4gtv-4gtv072
+TVBS 綜藝台,https://4gtv.mytvsuper.xyz/4gtv/284
+TVBS 歡樂台,https://4gtv.mytvsuper.xyz/litv/4gtv-4gtv068
+TVBS 精采台,https://4gtv.mytvsuper.xyz/litv/4gtv-4gtv067
+TVBS 台劇台,https://4gtv.mytvsuper.xyz/4gtv/285
+八大精彩台,https://4gtv.mytvsuper.xyz/litv/4gtv-4gtv034
+八大綜藝台,https://4gtv.mytvsuper.xyz/litv/4gtv-4gtv039
+三立綜合台,https://4gtv.mytvsuper.xyz/4gtv/169
+三立 iNEWS,https://4gtv.mytvsuper.xyz/4gtv/229
+台視,https://4gtv.mytvsuper.xyz/litv/4gtv-4gtv066
+台視新聞台,https://4gtv.mytvsuper.xyz/litv/4gtv-4gtv051
+台視財經台,https://4gtv.mytvsuper.xyz/litv/4gtv-4gtv056
+博斯運動一台,https://4gtv.mytvsuper.xyz/litv/litv-longturn07
+博斯運動二台,https://4gtv.mytvsuper.xyz/litv/litv-longturn08
+博斯無限台,https://4gtv.mytvsuper.xyz/litv/litv-longturn10
+博斯無限二台,https://4gtv.mytvsuper.xyz/litv/litv-longturn13
+博斯網球台,https://4gtv.mytvsuper.xyz/litv/litv-longturn09
+博斯高球台,https://4gtv.mytvsuper.xyz/litv/litv-longturn05
+博斯高球二台,https://4gtv.mytvsuper.xyz/litv/litv-longturn06
+博斯魅力台,https://4gtv.mytvsuper.xyz/litv/litv-longturn04
+ELTA 娛樂台,https://4gtv.mytvsuper.xyz/litv/4gtv-4gtv070
+ELTA 生活旅遊,https://4gtv.mytvsuper.xyz/4gtv/237
+ELTV 生活英語,https://4gtv.mytvsuper.xyz/litv/litv-longturn20
+東森新聞,https://4gtv.mytvsuper.xyz/litv/4gtv-4gtv152
+東森財經新聞,https://4gtv.mytvsuper.xyz/litv/4gtv-4gtv153
+非凡新聞台,https://4gtv.mytvsuper.xyz/litv/4gtv-4gtv010
+非凡商業台,https://4gtv.mytvsuper.xyz/litv/4gtv-4gtv048
+鏡電視新聞台,https://4gtv.mytvsuper.xyz/litv/4gtv-4gtv075
+CNBC Asia 財經台,https://4gtv.mytvsuper.xyz/4gtv/235
+亞洲旅遊台,https://4gtv.mytvsuper.xyz/litv/litv-longturn17
+GINX Esports TV,https://4gtv.mytvsuper.xyz/litv/4gtv-4gtv053
+TechStorm,https://4gtv.mytvsuper.xyz/4gtv/181
+時尚運動X,https://4gtv.mytvsuper.xyz/4gtv/277
+智林體育台,https://4gtv.mytvsuper.xyz/litv/4gtv-4gtv101
+TraceSports,https://4gtv.mytvsuper.xyz/litv/4gtv-4gtv077
+影迷數位紀實台,https://4gtv.mytvsuper.xyz/4gtv/212
+影迷數位電影台,https://4gtv.mytvsuper.xyz/litv/4gtv-4gtv011
+AMC 電影台,https://4gtv.mytvsuper.xyz/litv/4gtv-4gtv017
+CatchPlay 電影台,https://4gtv.mytvsuper.xyz/litv/4gtv-4gtv076
+My Cinema Europe HD 我的歐洲電影,https://4gtv.mytvsuper.xyz/4gtv/176
+公視戲劇台,https://4gtv.mytvsuper.xyz/litv/4gtv-4gtv042
+采昌影劇台,https://4gtv.mytvsuper.xyz/litv/4gtv-4gtv049
+台灣戲劇台,https://4gtv.mytvsuper.xyz/litv/litv-longturn22
+戲劇免費看 1台,https://4gtv.mytvsuper.xyz/4gtv/270
+戲劇免費看 2台,https://4gtv.mytvsuper.xyz/4gtv/244
+經典電影台,https://4gtv.mytvsuper.xyz/4gtv/201
+電影免費看 2台,https://4gtv.mytvsuper.xyz/4gtv/245
+電影原聲台 CMusic,https://4gtv.mytvsuper.xyz/4gtv/218
+花系列 經典劇場,https://4gtv.mytvsuper.xyz/4gtv/279
+CinemaWorld,https://4gtv.mytvsuper.xyz/4gtv/225
+HITS 頻道,https://4gtv.mytvsuper.xyz/4gtv/186
+Rock Action,https://4gtv.mytvsuper.xyz/4gtv/180
+Rock Entertainment,https://4gtv.mytvsuper.xyz/4gtv/275
+金光布袋戲,https://4gtv.mytvsuper.xyz/4gtv/236
+霹靂布袋戲,https://4gtv.mytvsuper.xyz/4gtv/301
+DreamWorks 夢工廠動畫,https://4gtv.mytvsuper.xyz/4gtv/282
+Nickelodeon,https://4gtv.mytvsuper.xyz/4gtv/185
+Nick Jr. 兒童頻道,https://4gtv.mytvsuper.xyz/4gtv/219
+i-Fun 動漫台,https://4gtv.mytvsuper.xyz/litv/litv-ftv15
+兒童卡通台,https://4gtv.mytvsuper.xyz/4gtv/269
+精選動漫台,https://4gtv.mytvsuper.xyz/4gtv/204
+經典卡通台,https://4gtv.mytvsuper.xyz/4gtv/202
+達文西頻道,https://4gtv.mytvsuper.xyz/litv/4gtv-4gtv018
+超人力霸王整套看,https://4gtv.mytvsuper.xyz/4gtv/278
+MOMO 親子台,https://4gtv.mytvsuper.xyz/4gtv/231
+LiveABC 互動英語台,https://4gtv.mytvsuper.xyz/4gtv/188
+Classica 古典樂,https://4gtv.mytvsuper.xyz/litv/4gtv-4gtv059
+Lifetime 娛樂頻道,https://4gtv.mytvsuper.xyz/4gtv/217
+MTV Live HD 音樂頻道,https://4gtv.mytvsuper.xyz/4gtv/213
+Mezzo Live,https://4gtv.mytvsuper.xyz/litv/4gtv-4gtv083
+豬哥亮歌廳秀,https://4gtv.mytvsuper.xyz/litv/4gtv-4gtv006
+Trace Urban,https://4gtv.mytvsuper.xyz/litv/4gtv-4gtv082
+Global Trekker,https://4gtv.mytvsuper.xyz/4gtv/252
+韓國娛樂台,https://4gtv.mytvsuper.xyz/litv/4gtv-4gtv016
+LUXE TV,https://4gtv.mytvsuper.xyz/4gtv/175
+Pet Club TV,https://4gtv.mytvsuper.xyz/4gtv/182
+TV5MONDE Style,https://4gtv.mytvsuper.xyz/4gtv/178
+車迷 TV,https://4gtv.mytvsuper.xyz/4gtv/160
+Love Nature,https://4gtv.mytvsuper.xyz/4gtv/139
+Fun 探索娛樂台,https://4gtv.mytvsuper.xyz/4gtv/274
+幸福空間居家台,https://4gtv.mytvsuper.xyz/4gtv/168
+Arirang TV,https://4gtv.mytvsuper.xyz/litv/4gtv-4gtv079
+Bloomberg TV,https://4gtv.mytvsuper.xyz/4gtv/283
+VOA 美國之音,https://4gtv.mytvsuper.xyz/litv/litv-ftv03
+DW德國之聲,https://4gtv.mytvsuper.xyz/4gtv/226
+SBN 全球財經台,https://4gtv.mytvsuper.xyz/4gtv/224
+半島國際新聞台,https://4gtv.mytvsuper.xyz/litv/litv-ftv10
+第1商業台,https://4gtv.mytvsuper.xyz/litv/4gtv-4gtv104
+History 歷史頻道,https://4gtv.mytvsuper.xyz/4gtv/214
+CI 罪案偵查頻道,https://4gtv.mytvsuper.xyz/4gtv/215
+Smart 知識台,https://4gtv.mytvsuper.xyz/litv/litv-longturn19
+視納華仁紀實頻道,https://4gtv.mytvsuper.xyz/litv/4gtv-4gtv013
+原住民族電視台,https://4gtv.mytvsuper.xyz/4gtv/273
+客家電視台,https://4gtv.mytvsuper.xyz/litv/4gtv-4gtv043
+滾動力 Rollor,https://4gtv.mytvsuper.xyz/4gtv/249
+好消息,https://4gtv.mytvsuper.xyz/litv/litv-ftv16
+好消息2台,https://4gtv.mytvsuper.xyz/litv/litv-ftv17
+大愛電視,https://4gtv.mytvsuper.xyz/4gtv/209
+大愛電視2,https://4gtv.mytvsuper.xyz/4gtv/230
+人間衛視,https://4gtv.mytvsuper.xyz/4gtv/210
+國會頻道1,https://4gtv.mytvsuper.xyz/litv/4gtv-4gtv084
+國會頻道2,https://4gtv.mytvsuper.xyz/litv/4gtv-4gtv085
+東森購物一台,https://4gtv.mytvsuper.xyz/4gtv/173
+東森購物二台,https://4gtv.mytvsuper.xyz/4gtv/174
+東森購物三台,https://4gtv.mytvsuper.xyz/4gtv/287
+東森購物四台,https://4gtv.mytvsuper.xyz/4gtv/286
 
 
 
