@@ -4965,14 +4965,7 @@ SMArt知识台,http://litv.zapi.us.kg/?id=litv-longturn19
 
 
 
-正式松視1臺,http://ali.hlspull.yximgs.com/live/dc8e02258d180c6bbc862bc99e0e8ad5.flv
-正式松視2臺,http://ali.hlspull.yximgs.com/live/0d50e24b0231188910f13924d38a30fc.flv
-正式松視3臺,http://ali.hlspull.yximgs.com/live/5a02d8755935d935f6b41f5152b88782.flv
-正式彩虹E臺,http://ali.hlspull.yximgs.com/live/4156a79d1903a1d81a5402cdbb83c92d.flv
-正式彩虹電影臺,http://ali.hlspull.yximgs.com/live/c2ee9fdfc30bae2d8b16747ef1f2fc46.flv
-正式潘多拉紫臺,http://ali.hlspull.yximgs.com/live/0a18e4daca7f5cc10c4c953663c59a0c.flv
-正式奧世驚艷臺,http://ali.hlspull.yximgs.com/live/bcf4fb1f33b79ac293dfb197d248382b.flv
-正式奧世香蕉臺,http://ali.hlspull.yximgs.com/live/a90907e3c51113319281a085ee8778ab.flv
+
 
 
 
@@ -5596,7 +5589,519 @@ HOLLYWOOD,https://bozztv.com/hwotta/playlist/HD3400/HD3400.m3u8
 
 
 
-
+🌊港·澳·台自建,#genre#
+靖天资讯,http://litv.zapi.us.kg/?id=4gtv-4gtv065$订阅源|1920x1080
+靖天资讯,https://litv.zapi.us.kg/?id=4gtv-4gtv065$订阅源|1920x1080
+东森电影,http://cookies.elementfx.com/chaojidianshi/chaojidianshi.php?id=ettvmovie$订阅源
+东森电影,http://50.7.234.10:8278/ettvmovie/playlist.m3u8?tid=MDED1943740419437404&ct=19225&tsum=120834a4218c4b5c3bb19efb8116f859$订阅源
+东森电影,http://fm1077.serv00.net/Smart.php?id=ettvmovie$订阅源
+东森电影,http://50.7.234.10:8278/ettvmovie/playlist.m3u8?tid=MBDB9268852192688521&ct=19254&tsum=7514b50ebc2e4b06f2e402578d0ac996$订阅源
+东森电影,http://198.16.100.90:8278/ettvmovie/playlist.m3u8?$订阅源
+东森电影,https://bsex.serv00.net/Smart.php?id=ettvmovie$订阅源
+东森超视,https://cdn.iptv8k.top/dl/jrys.php?id=216&time=20240926215313&ip=111.229.253.40$订阅源
+东森超视,https://cdn.iptv8k.top/dl/jrys.php?id=217&time=20240926215313&ip=111.229.253.40$订阅源
+纬来育乐,https://cdn.iptv8k.top/dl/jrys.php?id=289&time=20240926215313&ip=111.229.253.40$订阅源
+纬来体育,http://fm1077.serv00.net/Smart.php?id=videolandsport$订阅源
+纬来体育,http://ku9.fr.to/smt.php?id=videolandsport$订阅源|1920x1080
+纬来体育,https://cloud.yumixiu768.com/tmp/123.m3u8$订阅源
+纬来体育,https://cdn.iptv8k.top/dl/jrys.php?id=291&time=20240926215313&ip=111.229.253.40$订阅源
+纬来体育,https://cdn.iptv8k.top/dl/jrys.php?id=292&time=20240926215313&ip=111.229.253.40$订阅源
+纬来体育,https://cloud.yumixiu768.com:443/tmp/123.m3u8$订阅源
+三立新闻,http://aktv.top/AKTV/live/aktv/null-14/AKTV.m3u8$订阅源
+三立新闻,https://raw.githubusercontent.com/ChiSheng9/iptv/master/TV32.m3u8$订阅源
+三立新闻,http://wo.xiang.lai.ge.bi.jiao.chang.de.yu.ming.wan.wan.jie.xi.bu.zhi.dao.ke.bu.ke.xing.hk3.345888.xyz.cdn.cloudflare.net/gt/aktv.php?variable=null-14$订阅源
+三立新闻,http://litv.zapi.us.kg/?id=4gtv-live089$订阅源|1920x1080
+无线新闻,http://aktv.top/AKTV/live/aktv/null-1/AKTV.m3u8$订阅源
+无线新闻,http://aktv.top/AKTV/live/aktv/null-20/AKTV.m3u8$订阅源
+无线新闻,http://r.jdshipin.com/CkuBd$订阅源
+无线新闻,http://aktv.top/AKTV/live/aktv2/null-1/AKTV.m3u8$订阅源
+无线新闻,http://cdn.iptv8k.top/dl/jspd.php?id=2$订阅源|1920x1080
+无线新闻,https://cdn.iptv8k.top/dl/jspd.php?id=2&time=20240926215313&ip=111.229.253.40$订阅源
+三立台湾,http://fm1077.serv00.net/Smart.php?id=sanlitaiwan$订阅源
+明珠台,http://r.jdshipin.com/GeWKr?id=mzt720$订阅源
+明珠台,http://aktv.top/AKTV/live/aktv/null-2/AKTV.m3u8$订阅源
+明珠台,https://4gtv.mytvsuper.xyz/mytvsuper/P$订阅源
+明珠台,http://aktv.top/AKTV/live/aktv/null-2/master.m3u8$订阅源
+明珠台,http://zw9999.cnstream.top:80/play/ubI0Nrlni6TwusjXuSxNxEzv3SLBhKEUmYG73triGDY/ts$订阅源|1920x1080
+明珠台,https://aktv.top/AKTV/live/aktv/null-2/AKTV.m3u8$订阅源
+明珠台,http://aktv.top/AKTV/live/aktv/null-19/AKTV.m3u8$订阅源
+翡翠台,http://fm1077.serv00.net/Smart.php?id=jade_twn$订阅源
+翡翠台,http://tvdrs.wsrtv.com.cn:8100/channellive/ch1.flv$订阅源|1920x1080
+翡翠台,http://r.jdshipin.com/GeWKr?id=fct720$订阅源
+翡翠台,https://cdn.iptv8k.top/dl/jrys.php?id=3&time=20240926215313&ip=111.229.253.40$订阅源
+翡翠台,http://r.jdshipin.com/GeWKr?id=fct406$订阅源
+翡翠台,http://fm1077.serv00.net/Smart.php?id=jade_mike$订阅源
+翡翠台,https://aktv.top/AKTV/live/aktv/null-16/AKTV.m3u8$订阅源
+翡翠台,http://aktv.top/AKTV/live/aktv/null/AKTV.m3u8$订阅源
+翡翠台,http://cdn9.1689.us.kg/smt1.1.php?id=jade_twn$订阅源
+翡翠台,http://r.jdshipin.com/qrfbg$订阅源
+Viutv,https://live.hkdvb.com/hls/live/99.m3u8?token=631170156112507&edge=live.tvfree.sbs$订阅源
+Viutv,https://live.hkdvb.com/hls/live/99.m3u8?token=631170156121436&edge=live.tvfree.sbs$订阅源
+Viutv,http://aktv.top/AKTV/live/aktv2/viutv99/AKTV.m3u8$订阅源
+Viutv,http://r.jdshipin.com/vSJvl$订阅源
+Viutv,https://live.hkdvb.com/hls/live/99.m3u8?token=631170156109257$订阅源
+J2,http://fm1077.serv00.net/Smart.php?id=j2_hkdavid$订阅源
+J2,http://r.jdshipin.com/ndGgS$订阅源
+J2,http://r.jdshipin.com/Nr5jq$订阅源
+J2,http://fm1077.serv00.net/Smart.php?id=j2_twn$订阅源
+TVBS新闻,https://litv.zapi.us.kg/?id=4gtv-4gtv072$订阅源|1920x1080
+TVBS新闻,http://aktv.top/AKTV/live/aktv/tvbs-1/AKTV.m3u8$订阅源
+TVBS新闻,http://61.221.215.25:8800/hls/9/index.m3u8$订阅源
+TVBS新闻,http://125.227.210.55:8186/VideoInput/play.ts$订阅源|1920x1080
+TVBS新闻,http://aktv.top/AKTV/live/aktv3/null-2/AKTV.m3u8$订阅源
+TVBS新闻,http://litv.zapi.us.kg/?id=4gtv-4gtv072$订阅源|1920x1080
+TVBS新闻,http://fm1077.serv00.net/Smart.php?id=tvbs_n$订阅源
+TVBS亚洲,http://38.64.72.148/hls/modn/list/4005/playlist.m3u8$订阅源|1920x1080
+TVBS亚洲,http://38.64.72.148/hls/modn/list/4005/chunklist1.m3u8?$订阅源|1920x1080
+TVBS亚洲,http://38.64.72.148/hls/modn/list/4005/chunklist1.m3u8$订阅源|1920x1080
+TVBS亚洲,http://38.64.72.148/hls/modn/list/4005/chunklist0.m3u8$订阅源|1920x1080
+TVBS亚洲,http://d2e1asnsl7br7b.cloudfront.net/7782e205e72f43aeb4a48ec97f66ebbe/index_5.m3u8?zshijd$订阅源|1920x1080
+TVBS欢乐,http://litv.zapi.us.kg/?id=4gtv-4gtv068$订阅源|1920x1080
+TVBS欢乐,https://litv.zapi.us.kg/?id=4gtv-4gtv068$订阅源|1920x1080
+TVBS欢乐,http://fm1077.serv00.net/Smart.php?id=tvbshuanle_twn$订阅源
+TVBS欢乐,http://125.227.210.55:8187/VideoInput/play.ts$订阅源|1920x1080
+TVBS欢乐,http://198.16.100.90:8278/tvbshuanle_twn/playlist.m3u8?tid=MA9A4111409641114096&ct=19225&tsum=600f3056bba6413dec3155efd19e2d20$订阅源
+TVBS欢乐,http://litv.zapi.us.kg/?id=4gtv-4gtv068TVBS欢乐,http://tianhewan.top/ZIPP.php?url=http://211.72.65.236:8532/.m3u8$订阅源|1920x1080
+香港卫视,http://cctvtxyh5c.liveplay.myqcloud.com/cstv/xianggangweishi_2/index.m3u8$订阅源
+香港卫视,http://anren.live/HK/BSJDUFpB.m3u8$订阅源
+凤凰卫视,http://fm1077.serv00.net/Smart.php?id=phoenixtv_hd$订阅源
+凤凰卫视,http://cookies.elementfx.com/chaojidianshi/chaojidianshi.php?id=phoenixtv_hd$订阅源
+凤凰卫视,http://58.215.231.60/live2.rxip.sc96655.com/live/test1_4000.m3u8$订阅源
+凤凰香港,https://aktv.top/AKTV/live/aktv/null-5/AKTV.m3u8$订阅源
+凤凰香港,http://wo.xiang.lai.ge.bi.jiao.chang.de.yu.ming.wan.wan.jie.xi.bu.zhi.dao.ke.bu.ke.xing.hk3.345888.xyz.cdn.cloudflare.net/gt/aktv.php?variable=null-5$订阅源
+凤凰香港,http://50.7.234.10:8278/hkphoenix_twn/playlist.m3u8?tid=MACA2858291128582911&ct=19225&tsum=0f01288bbaa6c0403d07e96b0a5db4ed$订阅源
+凤凰香港,https://live.hkdvb.com/hls/live/85.m3u8?token=631170156121436&edge=live.tvfree.sbs$订阅源
+凤凰香港,http://r.jdshipin.com/yDoTN$订阅源
+凤凰香港,http://fm1077.serv00.net/Smart.php?id=hkphoenix_twn$订阅源
+凤凰香港,http://php.17186.eu.org/phtv/fhhk.m3u8$订阅源
+凤凰香港,http://r.jdshipin.com/NfC0f$订阅源
+凤凰香港,http://aktv.top/AKTV/live/aktv/null-5/AKTV.m3u8$订阅源
+凤凰香港,http://60.164.128.167:8029/rtp/239.255.30.123:8231$组播源|1920x1080
+凤凰香港,http://www.lebaobei.top:6868/rtp/239.255.30.123:8231$组播源
+凤凰资讯,http://wo.xiang.lai.ge.bi.jiao.chang.de.yu.ming.wan.wan.jie.xi.bu.zhi.dao.ke.bu.ke.xing.hk3.345888.xyz.cdn.cloudflare.net/gt/aktv.php?variable=null-4$订阅源
+凤凰资讯,http://61.221.215.25:8800/hls/47/index.m3u8$订阅源
+凤凰资讯,http://playtv-live.ifeng.com/live/06OLEEWQKN4.m3u8$订阅源
+凤凰资讯,http://cdn5.1678520.xyz:80/live/live2.1.php?id=fhzx$订阅源|1920x1080
+凤凰资讯,https://playtv-live.ifeng.com/live/06OLEEWQKN4.m3u8$订阅源
+凤凰资讯,http://www.terrykang.cn:5678/sxg.php?id=test2_4000$订阅源
+凤凰资讯,http://udnhls.skilldns.com:80/fhzx-cn.m3u8$订阅源
+凤凰资讯,http://aktv.top/AKTV/live/aktv/null-4/AKTV.m3u8$订阅源
+凤凰资讯,http://117.27.190.42:9998/tsfile/live/23279_1.m3u8?key=txiptv$订阅源
+凤凰资讯,http://fm1077.serv00.net/Smart.php?id=phoenixinfo_hd$订阅源
+凤凰资讯,http://60.164.128.167:8029/rtp/239.255.30.70:8231$组播源|1920x1080
+凤凰资讯,http://120.55.49.231:1314/rtp/233.50.200.192:5140$组播源
+凤凰资讯,http://120.55.49.231:4418/rtp/233.50.200.192:5140$组播源
+凤凰资讯,http://120.55.49.231:1341/rtp/233.50.200.192:5140$浙江电信组播源
+凤凰资讯,http://120.55.49.231:6519/rtp/233.50.200.192:5140$组播源
+凤凰中文,http://playtv-live.ifeng.com:80/live/06OLEGEGM4G.m3u8$订阅源
+凤凰中文,http://50.7.234.10:8278/phoenixtv_hd/playlist.m3u8?tid=MFBF2713938527139385&ct=19225&tsum=1c8ca0899277714ab83db57245220068$订阅源
+凤凰中文,http://aktv.top/AKTV/live/aktv/null-3/AKTV.m3u8$订阅源
+凤凰中文,http://playtv-live.ifeng.com/live/06OLEGEGM4G.m3u8$订阅源
+凤凰中文,http://cdn5.1678520.xyz:80/live/live2.1.php?id=fhzw$订阅源|1920x1080
+凤凰中文,http://117.27.190.42:9998/tsfile/live/23280_1.m3u8$订阅源
+凤凰中文,http://www.terrykang.cn:5678/sxg.php?id=test1_4000$订阅源
+凤凰中文,http://117.27.190.42:9998/tsfile/live/23280_1.m3u8?$订阅源
+凤凰中文,http://wo.xiang.lai.ge.bi.jiao.chang.de.yu.ming.wan.wan.jie.xi.bu.zhi.dao.ke.bu.ke.xing.hk3.345888.xyz.cdn.cloudflare.net/gt/aktv.php?variable=null-3$订阅源
+凤凰中文,http://117.27.190.42:9998/tsfile/live/23280_1.m3u8?key=txiptv&playlive=1&authid=0$订阅源
+凤凰中文,http://120.55.49.231:1314/rtp/233.50.200.191:5140$组播源
+凤凰中文,http://120.55.49.231:2732/rtp/233.50.200.191:5140$组播源
+凤凰中文,http://www.lebaobei.top:6868/rtp/239.255.30.50:8231$组播源
+凤凰中文,http://60.164.128.167:8029/rtp/239.255.30.50:8231$组播源|1920x1080
+凤凰中文,http://120.55.49.231:1341/rtp/233.50.200.191:5140$浙江电信组播源
+凤凰中文,http://120.55.49.231:9568/rtp/233.50.200.191:5140$组播源
+28 AI 智慧賽馬,http://aktv.top/AKTV/live/aktv/28ai/AKTV.m3u8$订阅源
+PopC,https://live.hkdvb.com/hls/live/801.m3u8?token=631170156121436&edge=live.tvfree.sbs$订阅源
+PopC,http://aktv.top/AKTV/live/aktv/popc/AKTV.m3u8$订阅源
+PopC,https://live.hkdvb.com/hls/live/206.m3u8?token=631170156121436$订阅源
+PopC,https://live.hkdvb.com/hls/live/801.m3u8?token=631170156112507&edge=live.tvfree.sbs$订阅源
+PopC,https://live.hkdvb.com/hls/live/801.m3u8?token=631170156109257$订阅源
+ROCK Action,http://aktv.top/AKTV/live/aktv3/rockaction/AKTV.m3u8$订阅源
+ROCK Action,http://aktv.top/AKTV/live/aktv/rockaction/AKTV.m3u8$订阅源
+TVB Plus,http://aktv.top/AKTV/live/aktv/tvbplus/AKTV.m3u8$订阅源
+TVB 星河台,http://fm1077.serv00.net/Smart.php?id=Xinhe$订阅源
+TVB 星河台,http://cdn9.1689.us.kg/smt1.1.php?id=Xinhe$订阅源
+TVB 星河台,http://aktv.top/AKTV/live/aktv/tvb/AKTV.m3u8$订阅源
+TVB 星河台,http://fm1077.serv00.net/Smart.php?id=tvbxinhe_twn$订阅源
+TVB 星河台,http://aktv.top/AKTV/live/aktv2/tvb/AKTV.m3u8$订阅源
+TVBS,http://litv.zapi.us.kg/?id=4gtv-4gtv073$订阅源|1920x1080
+TVBS,http://fm1077.serv00.net/Smart.php?id=tvbs$订阅源
+TVBS,http://aktv.top/AKTV/live/aktv/tvbs/AKTV.m3u8$订阅源
+TVBS,https://litv.zapi.us.kg/?id=4gtv-4gtv073$订阅源|1920x1080
+TVBS,http://125.227.210.55:8188/VideoInput/play.ts$订阅源|1920x1080
+TVBS-新聞台,https://litv.zapi.us.kg/?id=4gtv-4gtv072$订阅源|1920x1080
+TVBS-新聞台,http://aktv.top/AKTV/live/aktv/tvbs-1/AKTV.m3u8$订阅源
+TVBS-新聞台,http://61.221.215.25:8800/hls/9/index.m3u8$订阅源
+TVBS-新聞台,http://125.227.210.55:8186/VideoInput/play.ts$订阅源|1920x1080
+TVBS-新聞台,http://aktv.top/AKTV/live/aktv3/null-2/AKTV.m3u8$订阅源
+TVBS-新聞台,http://litv.zapi.us.kg/?id=4gtv-4gtv072$订阅源|1920x1080
+TVBS-新聞台,http://fm1077.serv00.net/Smart.php?id=tvbs_n$订阅源
+tvN,http://aktv.top/AKTV/live/aktv/tvn/AKTV.m3u8$订阅源
+tvN,http://fm1077.serv00.net/Smart.php?id=TVN$订阅源
+三立綜合台,http://aktv.top/AKTV/live/aktv/null-13/AKTV.m3u8$订阅源
+三立綜合台,http://fm1077.serv00.net/Smart.php?id=sanlizhonghe$订阅源
+三立綜合台,https://aktv.top/AKTV/live/aktv/null13/AKTV.m3u8$订阅源
+三立綜合台,http://50.7.238.114:8278/sanlizhonghe/playlist.m3u8?tid=MF4F9472920894729208&ct=19249&tsum=874aaa2015440b417746e5c11fa40220$订阅源
+三立綜合台,http://198.16.100.90:8278/sanlizhonghe/playlist.m3u8?tid=m3362167a08a014596868&ct=17874&tsum=4472a7c943b67bf52fe5e836ca9f3b6b$订阅源
+三立綜合台,http://litv.zapi.us.kg/?id=4gtv-live207$订阅源|1920x1080
+三立財經新聞,http://aktv.top/AKTV/live/aktv/null-14/AKTV.m3u8$订阅源
+中天亞洲台,http://fm1077.serv00.net/Smart.php?id=ctiasia_twn$订阅源
+中天亞洲台,http://aktv.top/AKTV/live/aktv/null-12/AKTV.m3u8$订阅源
+中天亞洲台,https://aktv.top/AKTV/live/aktv/null12/AKTV.m3u8$订阅源
+中天亞洲台,http://ku9.fr.to/smt.php?id=ctiasia_twn$订阅源|1920x1080
+中天亞洲台,http://wo.xiang.lai.ge.bi.jiao.chang.de.yu.ming.wan.wan.jie.xi.bu.zhi.dao.ke.bu.ke.xing.hk3.345888.xyz.cdn.cloudflare.net/gt/aktv.php?variable=null-12$订阅源
+中天新聞台,http://litv.zapi.us.kg/?id=4gtv-4gtv009$订阅源|1920x1080
+中天新聞台,https://4gtv.mytvsuper.xyz/4gtv.php?id=4gtv-4gtv009$订阅源
+中天新聞台,https://litv.zapi.us.kg/?id=4gtv-4gtv009$订阅源|1920x1080
+中天新聞台,https://raw.githubusercontent.com/ChiSheng9/iptv/master/TV28.m3u8$订阅源
+中天新聞台,http://fm1077.serv00.net/Smart.php?id=ctinews$订阅源
+中天新聞台,https://aktv.top/AKTV/live/aktv/null8/AKTV.m3u8$订阅源
+中天新聞台,http://cdn.iptv8k.top/dl/jspd.php?id=1$订阅源|1920x1080
+中天新聞台,http://aktv.top/AKTV/live/aktv/null-8/AKTV.m3u8$订阅源
+中視,https://litv.zapi.us.kg/?id=4gtv-4gtv040$订阅源|1920x1080
+中視,http://fm1077.serv00.net/Smart.php?id=zhongshihd_twn$订阅源
+中視,http://aktv.top/AKTV/live/aktv/null-10/AKTV.m3u8$订阅源
+中視,http://litv.zapi.us.kg/?id=4gtv-4gtv040$订阅源|1920x1080
+千禧經典台,http://cdn9.1689.us.kg/smt1.1.php?id=Tvbclassic$订阅源
+千禧經典台,http://aktv.top/AKTV/live/aktv/null-15/AKTV.m3u8$订阅源
+娛樂新聞台(HK),http://aktv.top/AKTV/live/aktv/hk/AKTV.m3u8$订阅源
+寰宇新聞台,https://ghp.ci/https://raw.githubusercontent.com/ChiSheng9/iptv/master/TV02.m3u8$订阅源
+寰宇新聞台,http://ku9.fr.to/smt.php?id=huanyuxinwen_twn$订阅源|1920x1080
+寰宇新聞台,http://litv.zapi.us.kg/?id=litv-longturn14$订阅源|1920x1080
+寰宇新聞台,http://aktv.top/AKTV/live/aktv/null-9/AKTV.m3u8$订阅源
+寰宇新聞台,http://fm1077.serv00.net/Smart.php?id=huanyuxinwen_twn$订阅源
+寰宇新聞台,https://litv.zapi.us.kg/?id=litv-longturn14$订阅源|1920x1080
+寰宇新聞台,https://yang-1989.eu.org/youtube/globalnewstw$订阅源
+无线新闻台(北美),http://aktv.top/AKTV/live/aktv/null-1/AKTV.m3u8$订阅源
+无线新闻台(北美),http://aktv.top/AKTV/live/aktv/null-20/AKTV.m3u8$订阅源
+无线新闻台(北美),http://r.jdshipin.com/CkuBd$订阅源
+无线新闻台(北美),http://aktv.top/AKTV/live/aktv2/null-1/AKTV.m3u8$订阅源
+无线新闻台(北美),http://cdn.iptv8k.top/dl/jspd.php?id=2$订阅源|1920x1080
+无线新闻台(北美),https://cdn.iptv8k.top/dl/jspd.php?id=2&time=20240926215313&ip=111.229.253.40$订阅源
+明珠剧集台(北美),http://aktv.top/AKTV/live/aktv/null-19/AKTV.m3u8$订阅源
+翡翠台(泰国),http://fm1077.serv00.net/Smart.php?id=jade_twn$订阅源
+翡翠台(泰国),http://tvdrs.wsrtv.com.cn:8100/channellive/ch1.flv$订阅源|1920x1080
+翡翠台(泰国),http://r.jdshipin.com/GeWKr?id=fct720$订阅源
+翡翠台(泰国),https://cdn.iptv8k.top/dl/jrys.php?id=3&time=20240926215313&ip=111.229.253.40$订阅源
+翡翠台(泰国),http://r.jdshipin.com/GeWKr?id=fct406$订阅源
+翡翠台(泰国),http://fm1077.serv00.net/Smart.php?id=jade_mike$订阅源
+翡翠台(泰国),https://aktv.top/AKTV/live/aktv/null-16/AKTV.m3u8$订阅源
+翡翠台(泰国),http://aktv.top/AKTV/live/aktv/null/AKTV.m3u8$订阅源
+翡翠台(泰国),http://cdn9.1689.us.kg/smt1.1.php?id=jade_twn$订阅源
+翡翠台(泰国),http://r.jdshipin.com/qrfbg$订阅源
+翡翠综合台(北美),http://aktv.top/AKTV/live/aktv/null-17/AKTV.m3u8$订阅源
+華視,http://litv.zapi.us.kg/?id=4gtv-4gtv041$订阅源|1920x1080
+華視,https://litv.zapi.us.kg/?id=4gtv-4gtv041$订阅源|1920x1080
+華視,http://aktv.top/AKTV/live/aktv/null-11/AKTV.m3u8$订阅源
+華視,http://fm1077.serv00.net/Smart.php?id=ctshd_twn$订阅源
+靖天電影台,https://aktv.top/AKTV/live/aktv/null6/AKTV.m3u8$订阅源
+靖天電影台,https://4gtv.mytvsuper.xyz/4gtv.php?id=4gtv-4gtv061$订阅源
+靖天電影台,http://aktv.top/AKTV/live/aktv/null-6/AKTV.m3u8$订阅源
+靖天電影台,http://litv.zapi.us.kg/?id=4gtv-4gtv061$订阅源|1920x1080
+靖天電影台,https://litv.zapi.us.kg/?id=4gtv-4gtv061$订阅源|1920x1080
+黃金翡翠台,http://aktv.top/AKTV/live/aktv/null-21/AKTV.m3u8$订阅源
+龍華日韓台,http://aktv.top/AKTV/live/aktv/null-22/AKTV.m3u8$订阅源
+龍華日韓台,http://litv.zapi.us.kg/?id=litv-longturn11$订阅源|1920x1080
+龍華日韓台,https://litv.zapi.us.kg/?id=litv-longturn11$订阅源|1920x1080
+龍華經典台,http://fm1077.serv00.net/Smart.php?id=lunghuajingdian_twn$订阅源
+龍華經典台,http://litv.zapi.us.kg/?id=litv-longturn21$订阅源|1920x1080
+龍華經典台,http://aktv.top/AKTV/live/aktv/null-7/AKTV.m3u8$订阅源
+龍華經典台,https://litv.zapi.us.kg/?id=litv-longturn21$订阅源|1920x1080
+龍華電影台,http://litv.zapi.us.kg/?id=litv-longturn03$订阅源|1920x1080
+龍華電影台,https://litv.zapi.us.kg/?id=litv-longturn03$订阅源|1920x1080
+龍華電影台,http://fm1077.serv00.net/Smart.php?id=xingwei_movie$订阅源
+龍華電影台,http://aktv.top/AKTV/live/aktv/null-23/AKTV.m3u8$订阅源
+龍華電影台,http://wo.xiang.lai.ge.bi.jiao.chang.de.yu.ming.wan.wan.jie.xi.bu.zhi.dao.ke.bu.ke.xing.hk3.345888.xyz.cdn.cloudflare.net/gt/aktv.php?variable=null-23$订阅源
+东森综合,https://cdn.iptv8k.top/dl/jrys.php?id=221&time=20240926215313&ip=111.229.253.40$订阅源
+东森综合,https://cdn.iptv8k.top/dl/jrys.php?id=220&time=20240926215313&ip=111.229.253.40$订阅源
+东森综合,http://fm1077.serv00.net/Smart.php?id=ettvzhonghe$订阅源
+东森综合,http://50.7.234.10:8278/ettvzhonghe/playlist.m3u8?tid=MC4C1214674912146749&ct=19254&tsum=9b96a50ba99dca1a02a27b05a6fb4b0d$订阅源
+星空卫视,http://122.224.58.42:85/tsfile/live/1024_1.m3u8?key=txiptv&playlive=1&authid=0$订阅源
+星空卫视,http://222.210.153.89:8888/udp/239.93.0.156:2193$订阅源|1920x1080
+星空卫视,http://13457610200.8866.org:2018/live/%E6%98%9F%E7%A9%BA%E5%8D%AB%E8%A7%86/index.m3u8$订阅源
+无线星河,http://aktv.top/AKTV/live/aktv2/tvb/AKTV.m3u8$订阅源
+龙祥电影,http://cookies.elementfx.com/chaojidianshi/chaojidianshi.php?id=lungxiangtime_twn$订阅源
+东森洋片,http://fm1077.serv00.net/Smart.php?id=ettvwestern$订阅源
+靖天映画,https://litv.zapi.us.kg/?ts=https://litvpc-hichannel.cdn.hinet.net/live/pool/4gtv-4gtv055/litv-pc/4gtv-4gtv055-avc1_6000000=1-mp4a_134000_zho=8-begin=3128564040000000-dur=40000000-seq=78214101.ts$订阅源|1920x1080
+靖天映画,http://litv.zapi.us.kg/?ts=https://litvpc-hichannel.cdn.hinet.net/live/pool/4gtv-4gtv055/litv-pc/4gtv-4gtv055-avc1_6000000=1-mp4a_134000_zho=8-begin=3128564000000000-dur=40000000-seq=78214100.ts$订阅源|1920x1080
+靖天映画,http://litv.zapi.us.kg/?id=4gtv-4gtv055$订阅源|1920x1080
+靖天映画,https://litv.zapi.us.kg/?id=4gtv-4gtv055$订阅源|1920x1080
+靖天戏剧,https://litv.zapi.us.kg/?id=4gtv-4gtv058$订阅源|1920x1080
+靖天戏剧,http://litv.zapi.us.kg/?ts=https://litvpc-hichannel.cdn.hinet.net/live/pool/4gtv-4gtv058/litv-pc/4gtv-4gtv058-avc1_6000000=1-mp4a_134000_zho=8-begin=3128564000000000-dur=40000000-seq=78214100.ts$订阅源|1920x1080
+靖天戏剧,http://litv.zapi.us.kg/?id=4gtv-4gtv058$订阅源|1920x1080
+靖天戏剧,https://litv.zapi.us.kg/?ts=https://litvpc-hichannel.cdn.hinet.net/live/pool/4gtv-4gtv058/litv-pc/4gtv-4gtv058-avc1_6000000=1-mp4a_134000_zho=8-begin=3128563960000000-dur=40000000-seq=78214099.ts$订阅源|1920x1080
+靖天戏剧,http://serv00.bkpcp.top/litv3.php?id=4gtv-4gtv058$订阅源|1920x1080
+经典电影,http://11.xmyxc.cn/api/php/yy.php?id=1450556636$订阅源|1920x1080
+经典电影,http://59.48.75.130:3052/tsfile/live/1001_1.m3u8?key=txiptv&playlive=1&authid=0$订阅源
+经典电影,http://113.57.20.158:9901/tsfile/live/1012_1.m3u8$订阅源
+经典电影,http://219.159.194.122:8181/tsfile/live/1008_1.m3u8$订阅源
+经典电影,http://111.196.129.152:20000/udp/239.3.1.195:9024$订阅源|1920x1080
+经典电影,http://222.218.158.228:8181/tsfile/live/1008_1.m3u8$订阅源
+经典电影,http://tc-tct.douyucdn2.cn/dyliveflv1a/85894rmovieChow_2000p.m3u8$订阅源|1920x1080
+经典电影,http://222.218.158.198:8181/tsfile/live/1008_1.m3u8$订阅源|1920x1080
+经典电影,http://115.48.61.87:9901/tsfile/live/1032_1.m3u8$订阅源
+经典电影,http://222.218.158.219:8181/tsfile/live/1008_1.m3u8$订阅源
+IPTV经典电影,http://123.56.129.203:7004/rtp/225.1.8.203:9024$组播源
+私人影院,http://13457610200.8866.org:2018/live/影视频道HD/index.m3u8$订阅源
+香港34台,https://rthktv34-live.akamaized.net/hls/live/2101642/RTHKTV34/stream05/streamPlaylist.m3u8$订阅源|1920x1080
+香港34台,https://rthktv34-live.akamaized.net/hls/live/2101642/RTHKTV34/stream02/streamPlaylist.m3u8$订阅源|1920x1080
+香港34台,https://news.cgtn.com/resource/live/document/cgtn-doc.m3u8$订阅源
+香港35台,https://rthktv35-live.akamaized.net/hls/live/2101643/RTHKTV35/stream05/streamPlaylist.m3u8$订阅源|1920x1080
+三立戏剧,http://fm1077.serv00.net/Smart.php?id=sanlixiju_twn$订阅源
+三立戏剧,http://61.221.215.25:8800/hls/41/index.m3u8$订阅源
+三立戏剧,http://ku9.fr.to/smt.php?id=sanlixiju_twn$订阅源|1920x1080
+三立戏剧,http://198.16.100.90:8278/sanlixiju_twn/playlist.m3u8?tid=MCFC5174201151742011&ct=19193&tsum=27477ddeec029345da276c2c903f09c2$订阅源
+三立戏剧,http://198.16.100.90:8278/sanlixiju_twn/playlist.m3u8?ct=19226&tid=MBDB8405357084053570&tsum=78944c0951d21a699e46fff4318a3799$订阅源
+AMC电影台,http://litv.zapi.us.kg/?id=4gtv-4gtv017$订阅源|1920x1080
+AMC电影台,https://litv.zapi.us.kg/?id=4gtv-4gtv017$订阅源|1920x1080
+AMC电影台,http://61.221.215.25:8800/hls/43/index.m3u8$订阅源
+AMC电影台,https://4gtv.mytvsuper.xyz/4gtv.php?id=4gtv-4gtv017$订阅源
+中天娱乐,http://fm1077.serv00.net/Smart.php?id=ctient$订阅源
+中天娱乐,http://61.221.215.25:8800/hls/47/index.m3u8$订阅源
+中天娱乐,http://50.7.238.114:8278/ctient/playlist.m3u8$订阅源
+纬来精彩,http://61.221.215.25:8800/hls/48/index.m3u8$订阅源
+探索亚洲,http://fm1077.serv00.net/Smart.php?id=discoverytwn_twn$订阅源
+探索亚洲,http://61.221.215.25:8800/hls/50/index.m3u8$订阅源
+NHK WORLD,http://fm1077.serv00.net/Smart.php?id=nhkworld_japan$订阅源
+八大第一,http://50.7.234.10:8278/badafirst/playlist.m3u8?tid=MD2D8073200480732004&ct=19254&tsum=5cb051b366ad3740cebcc06a987d749e$订阅源
+八大第一,http://50.7.234.10:8278/badafirst/playlist.m3u8?tid=MBDB5904995459049954&ct=19193&tsum=ab627e00a84b423b5747a65289eec076$订阅源
+八大第一,http://61.221.215.25:8800/hls/55/index.m3u8$订阅源
+八大第一,http://fm1077.serv00.net/Smart.php?id=badafirst$订阅源
+八大第一,http://198.16.100.90:8278/badafirst/playlist.m3u8?tid=MBDB5904995459049954&ct=19193&tsum=ab627e00a84b423b5747a65289eec076$订阅源
+八大第一,http://198.16.100.90:8278/badafirst/playlist.m3u8?tid=mb8efded78b4e12042621&ct=17874&tsum=028ad819cd9a0f949a043d652fa3e164$订阅源
+八大综合,http://fm1077.serv00.net/Smart.php?id=badazhonghe$订阅源
+八大综合,http://61.221.215.25:8800/hls/56/index.m3u8$订阅源
+八大综合,http://50.7.238.114:8278/badazhonghe/playlist.m3u8?tid=mfb8d64b6276514171054&ct=17874&tsum=a87466c997089ea7dce98cd17301667d$订阅源
+八大综合,http://50.7.238.114:8278/badazhonghe/playlist.m3u8?tid=MCFC9951205299512052&ct=19249&tsum=dc4ca0de5e57c9f4caee0bb4e80c098a$订阅源
+动物星球,http://61.221.215.25:8800/hls/57/index.m3u8$订阅源
+动物星球,https://d18dyiwu97wm6q.cloudfront.net/playlist2160p.m3u8$订阅源|3840x2160
+动物星球,http://fm1077.serv00.net/Smart.php?id=animalplanet_twn$订阅源
+动物星球,http://50.7.238.114:8278/animalplanet_twn/playlist.m3u8?tid=MF4F9191603991916039&ct=19254&tsum=8eeac3e9b8c5f58ad74a17b9b4813ed1$订阅源
+动物星球,http://198.16.100.90:8278/animalplanet_twn/playlist.m3u8?tid=MF4F9191603991916039&ct=19254&tsum=8eeac3e9b8c5f58ad74a17b9b4813ed1$订阅源
+中天新闻台,http://litv.zapi.us.kg/?id=4gtv-4gtv009$订阅源|1920x1080
+中天新闻台,https://4gtv.mytvsuper.xyz/4gtv.php?id=4gtv-4gtv009$订阅源
+中天新闻台,https://litv.zapi.us.kg/?id=4gtv-4gtv009$订阅源|1920x1080
+中天新闻台,https://raw.githubusercontent.com/ChiSheng9/iptv/master/TV28.m3u8$订阅源
+中天新闻台,http://fm1077.serv00.net/Smart.php?id=ctinews$订阅源
+中天新闻台,https://aktv.top/AKTV/live/aktv/null8/AKTV.m3u8$订阅源
+中天新闻台,http://cdn.iptv8k.top/dl/jspd.php?id=1$订阅源|1920x1080
+中天新闻台,http://aktv.top/AKTV/live/aktv/null-8/AKTV.m3u8$订阅源
+东森新闻台,http://litv.zapi.us.kg/?id=4gtv-4gtv152$订阅源|1920x1080
+东森新闻台,https://litv.zapi.us.kg/?id=4gtv-4gtv152$订阅源|1920x1080
+东森新闻台,http://fm1077.serv00.net/Smart.php?id=ettvnews$订阅源
+tvbs新闻台,https://litv.zapi.us.kg/?id=4gtv-4gtv072$订阅源|1920x1080
+tvbs新闻台,http://aktv.top/AKTV/live/aktv/tvbs-1/AKTV.m3u8$订阅源
+tvbs新闻台,http://61.221.215.25:8800/hls/9/index.m3u8$订阅源
+tvbs新闻台,http://125.227.210.55:8186/VideoInput/play.ts$订阅源|1920x1080
+tvbs新闻台,http://aktv.top/AKTV/live/aktv3/null-2/AKTV.m3u8$订阅源
+tvbs新闻台,http://litv.zapi.us.kg/?id=4gtv-4gtv072$订阅源|1920x1080
+tvbs新闻台,http://fm1077.serv00.net/Smart.php?id=tvbs_n$订阅源
+寰宇新闻,https://ghp.ci/https://raw.githubusercontent.com/ChiSheng9/iptv/master/TV02.m3u8$订阅源
+寰宇新闻,http://ku9.fr.to/smt.php?id=huanyuxinwen_twn$订阅源|1920x1080
+寰宇新闻,http://litv.zapi.us.kg/?id=litv-longturn14$订阅源|1920x1080
+寰宇新闻,http://aktv.top/AKTV/live/aktv/null-9/AKTV.m3u8$订阅源
+寰宇新闻,http://fm1077.serv00.net/Smart.php?id=huanyuxinwen_twn$订阅源
+寰宇新闻,https://litv.zapi.us.kg/?id=litv-longturn14$订阅源|1920x1080
+寰宇新闻,https://yang-1989.eu.org/youtube/globalnewstw$订阅源
+非凡新闻台,http://litv.zapi.us.kg/?id=4gtv-4gtv010$订阅源|1920x1080
+非凡新闻台,http://ku9.fr.to/smt.php?id=feifannews_twn$订阅源|1920x1080
+非凡新闻台,https://4gtv.mytvsuper.xyz/4gtv.php?id=4gtv-4gtv010$订阅源
+非凡新闻台,https://litv.zapi.us.kg/?id=4gtv-4gtv010$订阅源|1920x1080
+非凡新闻台,http://fm1077.serv00.net/Smart.php?id=feifannews_twn$订阅源
+闽镜新闻台,https://litv.zapi.us.kg/?id=4gtv-4gtv075$订阅源|1920x1080
+民视新闻台,http://litv.zapi.us.kg/?id=litv-ftv13$订阅源|1920x1080
+民视新闻台,http://38.64.72.148/hls/modn/list/4012/playlist.m3u8$订阅源|1920x1080
+民视新闻台,http://fm1077.serv00.net/Smart.php?id=ftvnew_taiwan$订阅源
+民视新闻台,http://38.64.72.148/hls/modn/list/4012/chunklist0.m3u8$订阅源|1920x1080
+民视新闻台,http://38.64.72.148/hls/modn/list/4012/chunklist1.m3u8$订阅源|1920x1080
+民视新闻台,https://litv.zapi.us.kg/?id=litv-ftv13$订阅源|1920x1080
+中视新闻台,http://litv.zapi.us.kg/?id=4gtv-4gtv074$订阅源|1920x1080
+中视新闻台,http://38.64.72.148/hls/modn/list/4010/playlist.m3u8$订阅源|1920x1080
+中视新闻台,http://ku9.fr.to/smt.php?id=zhongshinews_twn$订阅源|1920x1080
+中视新闻台,http://fm1077.serv00.net/Smart.php?id=zhongshinews_twn$订阅源
+中视新闻台,https://litv.zapi.us.kg/?id=4gtv-4gtv074$订阅源|1920x1080
+华视新闻台,https://litv.zapi.us.kg/?id=4gtv-4gtv052$订阅源|1920x1080
+华视新闻台,http://litv.zapi.us.kg/?id=4gtv-4gtv052$订阅源|1920x1080
+华视新闻台,http://aktv.top/AKTV/live/aktv/null-11/AKTV.m3u8$订阅源
+台视新闻台,http://38.64.72.148/hls/modn/list/4013/chunklist0.m3u8$订阅源|1920x1080
+台视新闻台,https://live.wcetv.com/hls/m3u8/ttvnews.m3u8$订阅源|1920x1080
+台视新闻台,https://live.wcetv.com/hls/master-ttvnews.m3u8$订阅源|1920x1080
+台视新闻台,http://38.64.72.148/hls/modn/list/4013/playlist.m3u8$订阅源|1920x1080
+台视新闻台,https://litv.zapi.us.kg/?id=4gtv-4gtv051$订阅源|1920x1080
+台视新闻台,http://38.64.72.148/hls/modn/list/4012/chunklist0.m3u8$订阅源|1920x1080
+台视新闻台,http://litv.zapi.us.kg/?id=4gtv-4gtv051$订阅源|1920x1080
+台视新闻台,http://fm1077.serv00.net/Smart.php?id=ttvnews_twn$订阅源
+台视新闻台,http://38.64.72.148/hls/modn/list/4013/chunklist1.m3u8$订阅源|1920x1080
+台视新闻台,http://ku9.fr.to/smt.php?id=ttvnews_twn$订阅源|1920x1080
+民视闽南台,https://litv.zapi.us.kg/?id=4gtv-4gtv002$订阅源|1920x1080
+民视闽南台,https://litv.zapi.us.kg/?id=4gtv-4gtv155$订阅源|1920x1080
+中视闽南台,https://litv.zapi.us.kg/?id=4gtv-4gtv040$订阅源|1920x1080
+华视闽南台,https://litv.zapi.us.kg/?id=4gtv-4gtv041$订阅源|1920x1080
+台视闽南台,https://litv.zapi.us.kg/?id=4gtv-4gtv066$订阅源|1920x1080
+寰宇闽南台,https://litv.zapi.us.kg/?id=litv-longturn15$订阅源|1920x1080
+tvbs闽南台,http://61.221.215.25:8800/hls/9/index.m3u8$订阅源
+tvbs闽南台,https://litv.zapi.us.kg/?id=4gtv-4gtv073$订阅源|1920x1080
+民视台湾台,http://litv.zapi.us.kg/?id=4gtv-4gtv001$订阅源|1920x1080
+民视台湾台,http://litv.zapi.us.kg/?id=4gtv-4gtv156$订阅源|1920x1080
+民视台湾台,http://ku9.fr.to/smt.php?id=ftvtaiwan_twn$订阅源|1920x1080
+民视台湾台,https://litv.zapi.us.kg/?id=4gtv-4gtv156$订阅源|1920x1080
+民视台湾台,https://litv.zapi.us.kg/?id=4gtv-4gtv001$订阅源|1920x1080
+民视台湾台,http://fm1077.serv00.net/Smart.php?id=ftvtaiwan_twn$订阅源
+民视第一台,https://litv.zapi.us.kg/?id=4gtv-4gtv003$订阅源|1920x1080
+民视第一台,http://litv.zapi.us.kg/?id=4gtv-4gtv003$订阅源|1920x1080
+民视第一台,http://fm1077.serv00.net/Smart.php?id=lunghuajingdian_twn$订阅源
+民视第一台,http://198.16.100.90:8278/lunghuajingdian_twn/playlist.m3u8$订阅源
+民视旅游台,https://litv.zapi.us.kg/?id=litv-ftv07$订阅源|1920x1080
+民视旅游台,http://litv.zapi.us.kg/?id=litv-ftv07$订阅源|1920x1080
+民视影剧台,http://litv.zapi.us.kg/?id=litv-ftv09$订阅源|1920x1080
+民视影剧台,https://litv.zapi.us.kg/?id=litv-ftv09$订阅源|1920x1080
+民视综艺台,http://litv.zapi.us.kg/?id=4gtv-4gtv004$订阅源|1920x1080
+民视综艺台,https://litv.zapi.us.kg/?id=4gtv-4gtv004$订阅源|1920x1080
+中视菁采台,https://litv.zapi.us.kg/?id=4gtv-4gtv064$订阅源|1920x1080
+中视菁采台,http://litv.zapi.us.kg/?id=4gtv-4gtv064$订阅源|1920x1080
+中视经典台,http://litv.zapi.us.kg/?id=4gtv-4gtv080$订阅源|1920x1080
+中视经典台,https://litv.zapi.us.kg/?id=4gtv-4gtv080$订阅源|1920x1080
+中视经典台,http://fm1077.serv00.net/Smart.php?id=zhongshi_twn$订阅源
+台视财经台,https://litv.zapi.us.kg/?id=4gtv-4gtv056$订阅源|1920x1080
+台视财经台,http://litv.zapi.us.kg/?id=4gtv-4gtv056$订阅源|1920x1080
+公视戏剧台,https://litv.zapi.us.kg/?id=4gtv-4gtv042$订阅源|1920x1080
+公视戏剧台,http://litv.zapi.us.kg/?id=4gtv-4gtv042$订阅源|1920x1080
+闽南戏剧台,https://litv.zapi.us.kg/?id=litv-longturn22$订阅源|1920x1080
+国际财经台,http://litv.zapi.us.kg/?id=4gtv-4gtv104$订阅源|1920x1080
+国际财经台,https://litv.zapi.us.kg/?id=4gtv-4gtv104$订阅源|1920x1080
+东森财经台,https://ghp.ci/https://raw.githubusercontent.com/ChiSheng9/iptv/refs/heads/master/TV03.m3u8$订阅源
+东森财经台,https://litv.zapi.us.kg/?id=4gtv-4gtv153$订阅源|1920x1080
+东森财经台,https://raw.githubusercontent.com/ChiSheng9/iptv/refs/heads/master/TV03.m3u8$订阅源
+东森财经台,http://litv.zapi.us.kg/?id=4gtv-4gtv153$订阅源|1920x1080
+tvbs精采台,https://litv.zapi.us.kg/?id=4gtv-4gtv067$订阅源|1920x1080
+tvbs精采台,http://litv.zapi.us.kg/?id=4gtv-4gtv067$订阅源|1920x1080
+tvbs欢乐台,http://litv.zapi.us.kg/?id=4gtv-4gtv068$订阅源|1920x1080
+tvbs欢乐台,https://litv.zapi.us.kg/?id=4gtv-4gtv068$订阅源|1920x1080
+tvbs欢乐台,http://fm1077.serv00.net/Smart.php?id=tvbshuanle_twn$订阅源
+tvbs欢乐台,http://125.227.210.55:8187/VideoInput/play.ts$订阅源|1920x1080
+tvbs欢乐台,http://198.16.100.90:8278/tvbshuanle_twn/playlist.m3u8?tid=MA9A4111409641114096&ct=19225&tsum=600f3056bba6413dec3155efd19e2d20$订阅源
+tvbs欢乐台,http://litv.zapi.us.kg/?id=4gtv-4gtv068TVBS欢乐,http://tianhewan.top/ZIPP.php?url=http://211.72.65.236:8532/.m3u8$订阅源|1920x1080
+八大精彩台,https://4gtv.pendy.us.kg/4gtv.php?id=4gtv-4gtv034$订阅源
+八大精彩台,http://litv.zapi.us.kg/?id=4gtv-4gtv034$订阅源|1920x1080
+八大精彩台,https://litv.zapi.us.kg/?id=4gtv-4gtv034$订阅源|1920x1080
+八大综艺台,https://litv.zapi.us.kg/?id=4gtv-4gtv039$订阅源|1920x1080
+八大综艺台,http://litv.zapi.us.kg/?id=4gtv-4gtv039$订阅源|1920x1080
+八大综艺台,https://4gtv.pendy.us.kg/4gtv.php?id=4gtv-4gtv039$订阅源
+爱尔达娱乐台,http://litv.zapi.us.kg/?id=4gtv-4gtv070$订阅源|1920x1080
+爱尔达娱乐台,https://litv.zapi.us.kg/?id=4gtv-4gtv070$订阅源|1920x1080
+靖洋戏剧台,https://litv.zapi.us.kg/?id=4gtv-4gtv045$订阅源|1920x1080
+靖洋戏剧台,http://litv.zapi.us.kg/?id=4gtv-4gtv045$订阅源|1920x1080
+靖洋卡通台,https://4gtv.mytvsuper.xyz/4gtv.php?id=4gtv-4gtv057$订阅源
+靖洋卡通台,http://litv.zapi.us.kg/?id=4gtv-4gtv057$订阅源|1920x1080
+靖洋卡通台,https://litv.zapi.us.kg/?id=4gtv-4gtv057$订阅源|1920x1080
+靖天卡通台,https://litv.zapi.us.kg/?id=4gtv-4gtv044$订阅源|1920x1080
+靖天卡通台,http://litv.zapi.us.kg/?id=4gtv-4gtv044$订阅源|1920x1080
+靖天卡通台,http://fm1077.serv00.net/Smart.php?id=jingtiancartoon_twn$订阅源
+靖天综合台,http://litv.zapi.us.kg/?id=4gtv-4gtv046$订阅源|1920x1080
+靖天综合台,https://litv.zapi.us.kg/?id=4gtv-4gtv046$订阅源|1920x1080
+靖天日本台,http://litv.zapi.us.kg/?id=4gtv-4gtv047$订阅源|1920x1080
+靖天日本台,https://litv.zapi.us.kg/?id=4gtv-4gtv047$订阅源|1920x1080
+靖天欢乐台,http://litv.zapi.us.kg/?id=4gtv-4gtv054$订阅源|1920x1080
+靖天欢乐台,https://litv.zapi.us.kg/?id=4gtv-4gtv054$订阅源|1920x1080
+靖天映画台,https://litv.zapi.us.kg/?ts=https://litvpc-hichannel.cdn.hinet.net/live/pool/4gtv-4gtv055/litv-pc/4gtv-4gtv055-avc1_6000000=1-mp4a_134000_zho=8-begin=3128564040000000-dur=40000000-seq=78214101.ts$订阅源|1920x1080
+靖天映画台,http://litv.zapi.us.kg/?ts=https://litvpc-hichannel.cdn.hinet.net/live/pool/4gtv-4gtv055/litv-pc/4gtv-4gtv055-avc1_6000000=1-mp4a_134000_zho=8-begin=3128564000000000-dur=40000000-seq=78214100.ts$订阅源|1920x1080
+靖天映画台,http://litv.zapi.us.kg/?id=4gtv-4gtv055$订阅源|1920x1080
+靖天映画台,https://litv.zapi.us.kg/?id=4gtv-4gtv055$订阅源|1920x1080
+靖天戏剧台,https://litv.zapi.us.kg/?id=4gtv-4gtv058$订阅源|1920x1080
+靖天戏剧台,http://litv.zapi.us.kg/?ts=https://litvpc-hichannel.cdn.hinet.net/live/pool/4gtv-4gtv058/litv-pc/4gtv-4gtv058-avc1_6000000=1-mp4a_134000_zho=8-begin=3128564000000000-dur=40000000-seq=78214100.ts$订阅源|1920x1080
+靖天戏剧台,http://litv.zapi.us.kg/?id=4gtv-4gtv058$订阅源|1920x1080
+靖天戏剧台,https://litv.zapi.us.kg/?ts=https://litvpc-hichannel.cdn.hinet.net/live/pool/4gtv-4gtv058/litv-pc/4gtv-4gtv058-avc1_6000000=1-mp4a_134000_zho=8-begin=3128563960000000-dur=40000000-seq=78214099.ts$订阅源|1920x1080
+靖天戏剧台,http://serv00.bkpcp.top/litv3.php?id=4gtv-4gtv058$订阅源|1920x1080
+靖天电影,https://aktv.top/AKTV/live/aktv/null6/AKTV.m3u8$订阅源
+靖天电影,https://4gtv.mytvsuper.xyz/4gtv.php?id=4gtv-4gtv061$订阅源
+靖天电影,http://aktv.top/AKTV/live/aktv/null-6/AKTV.m3u8$订阅源
+靖天电影,http://litv.zapi.us.kg/?id=4gtv-4gtv061$订阅源|1920x1080
+靖天电影,https://litv.zapi.us.kg/?id=4gtv-4gtv061$订阅源|1920x1080
+靖天育乐台,https://litv.zapi.us.kg/?id=4gtv-4gtv062$订阅源|1920x1080
+靖天育乐台,http://litv.zapi.us.kg/?id=4gtv-4gtv062$订阅源|1920x1080
+靖天国际台,https://litv.zapi.us.kg/?id=4gtv-4gtv063$订阅源|1920x1080
+靖天国际台,http://litv.zapi.us.kg/?id=4gtv-4gtv063$订阅源|1920x1080
+靖天国际台,http://fm1077.serv00.net/Smart.php?id=jingtianintl_twn$订阅源
+靖天资讯台,http://litv.zapi.us.kg/?id=4gtv-4gtv065$订阅源|1920x1080
+靖天资讯台,https://litv.zapi.us.kg/?id=4gtv-4gtv065$订阅源|1920x1080
+龙华卡通台,https://litv.zapi.us.kg/?id=litv-longturn01$订阅源|1920x1080
+龙华卡通台,http://litv.zapi.us.kg/?id=litv-longturn01$订阅源|1920x1080
+龙华日韩台,http://aktv.top/AKTV/live/aktv/null-22/AKTV.m3u8$订阅源
+龙华日韩台,http://litv.zapi.us.kg/?id=litv-longturn11$订阅源|1920x1080
+龙华日韩台,https://litv.zapi.us.kg/?id=litv-longturn11$订阅源|1920x1080
+龙华偶像台,http://fm1077.serv00.net/Smart.php?id=lunghuaidol_twn$订阅源
+龙华偶像台,https://litv.zapi.us.kg/?id=litv-longturn12$订阅源|1920x1080
+龙华偶像台,http://litv.zapi.us.kg/?id=litv-longturn12$订阅源|1920x1080
+龙华电影台,http://litv.zapi.us.kg/?id=litv-longturn03$订阅源|1920x1080
+龙华电影台,https://litv.zapi.us.kg/?id=litv-longturn03$订阅源|1920x1080
+龙华电影台,http://fm1077.serv00.net/Smart.php?id=xingwei_movie$订阅源
+龙华电影台,http://aktv.top/AKTV/live/aktv/null-23/AKTV.m3u8$订阅源
+龙华电影台,http://wo.xiang.lai.ge.bi.jiao.chang.de.yu.ming.wan.wan.jie.xi.bu.zhi.dao.ke.bu.ke.xing.hk3.345888.xyz.cdn.cloudflare.net/gt/aktv.php?variable=null-23$订阅源
+龙华戏剧台,http://ku9.fr.to/smt.php?id=lunghuaxiju_twn$订阅源|1920x1080
+龙华戏剧台,http://litv.zapi.us.kg/?id=litv-longturn18$订阅源|1920x1080
+龙华戏剧台,http://fm1077.serv00.net/Smart.php?id=lunghuaxiju_twn$订阅源
+龙华戏剧台,https://litv.zapi.us.kg/?id=litv-longturn18$订阅源|1920x1080
+龙华戏剧台,http://198.16.100.90:8278/lunghuaxiju_twn/playlist.m3u8?tid=MBAB4709384347093843&ct=19226&tsum=a2a7258f8565588e10b8da2f26ba8039$订阅源
+龙华戏剧台,http://50.7.238.114:8278/lunghuaxiju_twn/playlist.m3u8?tid=MBAB4709384347093843&ct=19226&tsum=a2a7258f8565588e10b8da2f26ba8039$订阅源
+龙华经典台,http://fm1077.serv00.net/Smart.php?id=lunghuajingdian_twn$订阅源
+龙华经典台,http://litv.zapi.us.kg/?id=litv-longturn21$订阅源|1920x1080
+龙华经典台,http://aktv.top/AKTV/live/aktv/null-7/AKTV.m3u8$订阅源
+龙华经典台,https://litv.zapi.us.kg/?id=litv-longturn21$订阅源|1920x1080
+国会频道壹台,https://litv.zapi.us.kg/?id=4gtv-4gtv084$订阅源|1920x1080
+国会频道贰台,https://litv.zapi.us.kg/?id=4gtv-4gtv085$订阅源|1920x1080
+好消息壹台,https://litv.zapi.us.kg/?id=litv-ftv16$订阅源|1920x1080
+好消息贰台,https://litv.zapi.us.kg/?id=litv-ftv17$订阅源|1920x1080
+智林体育台,https://litv.zapi.us.kg/?id=4gtv-4gtv101$订阅源|1920x1080
+智林体育台,http://litv.zapi.us.kg/?id=4gtv-4gtv101$订阅源|1920x1080
+博斯魅力台,https://litv.zapi.us.kg/?id=litv-longturn04$订阅源|1920x1080
+博斯魅力台,http://litv.zapi.us.kg/?id=litv-longturn04$订阅源|1920x1080
+博斯网球台,http://litv.zapi.us.kg/?id=litv-longturn09$订阅源|1920x1080
+博斯网球台,https://litv.zapi.us.kg/?id=litv-longturn09$订阅源|1920x1080
+博斯网球台,http://fm1077.serv00.net/Smart.php?id=bositennis_twn$订阅源
+阿里郎频道台,https://litv.zapi.us.kg/?id=4gtv-4gtv079$订阅源|1920x1080
+阿里郎频道台,http://litv.zapi.us.kg/?id=4gtv-4gtv079$订阅源|1920x1080
+阿里郎频道台,http://fm1077.serv00.net/Smart.php?id=arirang_twn$订阅源
+达文西频道台,https://litv.zapi.us.kg/?id=4gtv-4gtv018$订阅源|1920x1080
+达文西频道台,http://litv.zapi.us.kg/?id=4gtv-4gtv018$订阅源|1920x1080
+猪哥亮歌厅台,https://litv.zapi.us.kg/?id=4gtv-4gtv006$订阅源|1920x1080
+亚洲旅游台,http://fm1077.serv00.net/Smart.php?id=asiatravel_twn$订阅源
+亚洲旅游台,http://litv.zapi.us.kg/?id=litv-longturn17$订阅源|1920x1080
+亚洲旅游台,https://litv.zapi.us.kg/?id=litv-longturn17$订阅源|1920x1080
+美国之音台,http://litv.zapi.us.kg/?id=litv-ftv03$订阅源|1920x1080
+美国之音台,https://litv.zapi.us.kg/?id=litv-ftv03$订阅源|1920x1080
+半岛新闻台,https://litv.zapi.us.kg/?id=litv-ftv10$订阅源|1920x1080
+半岛新闻台,http://litv.zapi.us.kg/?id=litv-ftv10$订阅源|1920x1080
+半岛新闻台,http://live-hls-web-aje.getaj.net/AJE/01.m3u8$订阅源|1920x1080
+非凡商业台,http://litv.zapi.us.kg/?id=4gtv-4gtv048$订阅源|1920x1080
+非凡商业台,https://litv.zapi.us.kg/?id=4gtv-4gtv048$订阅源|1920x1080
+第壹商业台,https://litv.zapi.us.kg/?id=4gtv-4gtv109$订阅源|1920x1080
+爱放动漫台,https://litv.zapi.us.kg/?id=litv-ftv15$订阅源|1920x1080
+爱放动漫台,http://litv.zapi.us.kg/?id=litv-ftv15$订阅源|1920x1080
+古典音乐台,http://litv.zapi.us.kg/?id=4gtv-4gtv059$订阅源|1920x1080
+古典音乐台,https://litv.zapi.us.kg/?id=4gtv-4gtv059$订阅源|1920x1080
+客家电视台,https://litv.zapi.us.kg/?id=4gtv-4gtv043$订阅源|1920x1080
+客家电视台,http://litv.zapi.us.kg/?id=4gtv-4gtv043$订阅源|1920x1080
+华仁纪实台,https://litv.zapi.us.kg/?id=4gtv-4gtv013$订阅源|1920x1080
+时尚运动台,https://litv.zapi.us.kg/?id=4gtv-4gtv014$订阅源|1920x1080
+生活英语台,https://litv.zapi.us.kg/?id=litv-longturn20$订阅源|1920x1080
+生活英语台,http://litv.zapi.us.kg/?id=litv-longturn20$订阅源|1920x1080
+采昌影剧台,https://litv.zapi.us.kg/?id=4gtv-4gtv049$订阅源|1920x1080
+采昌影剧台,http://litv.zapi.us.kg/?id=4gtv-4gtv049$订阅源|1920x1080
+数位电影台,https://litv.zapi.us.kg/?id=4gtv-4gtv011$订阅源|1920x1080
+Amc电影台,http://litv.zapi.us.kg/?id=4gtv-4gtv017$订阅源|1920x1080
+Amc电影台,https://litv.zapi.us.kg/?id=4gtv-4gtv017$订阅源|1920x1080
+Amc电影台,http://61.221.215.25:8800/hls/43/index.m3u8$订阅源
+Amc电影台,https://4gtv.mytvsuper.xyz/4gtv.php?id=4gtv-4gtv017$订阅源
+CAT电影台,http://litv.zapi.us.kg/?id=4gtv-4gtv076$订阅源|1920x1080
+CAT电影台,https://litv.zapi.us.kg/?id=4gtv-4gtv076$订阅源|1920x1080
+TRA体育台,http://litv.zapi.us.kg/?id=4gtv-4gtv077$订阅源|1920x1080
+TRA体育台,https://litv.zapi.us.kg/?id=4gtv-4gtv077$订阅源|1920x1080
+SMArt知识台,https://litv.zapi.us.kg/?id=litv-longturn19$订阅源|1920x1080
+SMArt知识台,http://litv.zapi.us.kg/?id=litv-longturn19$订阅源|1920x1080
+GLO-Bet台,https://litv.zapi.us.kg/?id=4gtv-4gtv016$订阅源|1920x1080
+TRACEU台,https://litv.zapi.us.kg/?id=4gtv-4gtv082$订阅源|1920x1080
+MEZZOl台,https://litv.zapi.us.kg/?id=4gtv-4gtv083$订阅源|1920x1080
+Ginx_TV台,http://litv.zapi.us.kg/?id=4gtv-4gtv053$订阅源|1920x1080
+Ginx_TV台,https://litv.zapi.us.kg/?id=4gtv-4gtv053$订阅源|1920x1080
 
 
 
