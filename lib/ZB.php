@@ -1493,8 +1493,12 @@ iHot亚洲影院,http://[2409:8087:5e08:24::11]:6610/000000001000/58418162275395
 芒果直播15,http://zby.xjqxz.top/dzzypd3/live.m3u8
 
 
-
-
+百事通直播,#genre#
+百事通体育1_(1080p)_[Not_24/7],http://112.25.48.68/live/program/live/hdnba1/4000000/mnf.m3u8
+百事通体育2_(1080p)_[Not_24/7],http://112.25.48.68/live/program/live/hdnba2/4000000/mnf.m3u8
+百事通体育3_(1080p)_[Not_24/7],http://112.25.48.68/live/program/live/hdnba3/4000000/mnf.m3u8
+百事通体育5_(1080p),http://112.25.48.68/live/program/live/hdnba5/4000000/mnf.m3u8
+百事通体育7_(1080p)_[Not_24/7],http://112.25.48.68/live/program/live/hdnba7/4000000/mnf.m3u8
 
 
 
