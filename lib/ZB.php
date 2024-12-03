@@ -1194,25 +1194,9 @@
 
 
 
-欢乐频道,#genre#
-驚豔成人電影台,http://18.svi-studio.com:8880/live/908957700097/132663288386/1.m3u8
-潘朵啦高畫質玩美台,http://18.svi-studio.com:8880/live/624372101145/418430465490/3.m3u8
-香蕉台,http://18.svi-studio.com:8880/live/624372101145/418430465490/4.m3u8
-松視1台,http://18.svi-studio.com:8880/live/584830114073/800309151021/5.m3u8
-松視2台,http://18.svi-studio.com:8880/live/917952932058/953281067271/6.m3u8
-松視3台,http://18.svi-studio.com:8880/live/271871095922/006886711863/20205.m3u8
 
 
-松视1台,http://ali.hlspull.yximgs.com/live/ce0de02c1ee21678ad63eb9055cd2568.flv
-​松视2台,http://ali.hlspull.yximgs.com/live/c331f5c82a7ee1f951d0608b2fa4109a.flv
-松视3台,http://ali.hlspull.yximgs.com/live/d1c4f7c82df8825f5a1376525f1c847f.flv
-​e彩虹,http://ali.hlspull.yximgs.com/live/7cb6de0342e48ef03a3d90c10d561d76.flv
-​彩虹台,http://ali.hlspull.yximgs.com/live/eb8c562796da0465d550f85372bea8b1.flv
-​潘多拉,http://ali.hlspull.yximgs.com/live/d11de49759b95dc4767b81dd073cf1ee.flv
-​香蕉台,http://ali.hlspull.yximgs.com/live/f50249b076d0d9be2af62412e98afd57.flv
-松视2台,http://ali.hlspull.yximgs.com/live/f7001a0bff83feae25b3a1b9245b2012.flv
 
-松视3台,https://45.152.67.168/sstv-1122
 
 
 影视轮播频道,#genre#
@@ -1388,7 +1372,7 @@ iHot亚洲影院,http://[2409:8087:5e08:24::11]:6610/000000001000/20000000040000
 iHot亚洲影院,http://[2409:8087:5e08:24::11]:6610/000000001000/5841816227539527643/1.m3u8?channel-id=wasusyt&Contentid=5841816227539527643&livemode=1&stbId=3
 
 
-
+松视3台,https://45.152.67.168/sstv-1122
 
 
 求索频道,#genre#
