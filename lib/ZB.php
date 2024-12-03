@@ -1,6 +1,6 @@
 
 
-松视3,https://45.152.67.168/sstv-1122
+
 
 
 
@@ -1197,9 +1197,7 @@
 欢乐频道,#genre#
 
 
-ahaha,http://31.148.48.15/O-la-la/index.m3u8AdultIPTV.net
-miami tv,https://59ec5453559f0.streamlock.net/mexicotv/smil:miamitvmexico/播放列表.m3u8
-
+松视3,https://45.152.67.168/sstv-1122
 
 
 影视轮播频道,#genre#
