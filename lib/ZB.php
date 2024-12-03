@@ -1195,6 +1195,13 @@
 
 
 欢乐频道,#genre#
+驚豔成人電影台,http://18.svi-studio.com:8880/live/908957700097/132663288386/1.m3u8
+潘朵啦高畫質玩美台,http://18.svi-studio.com:8880/live/624372101145/418430465490/3.m3u8
+香蕉台,http://18.svi-studio.com:8880/live/624372101145/418430465490/4.m3u8
+松視1台,http://18.svi-studio.com:8880/live/584830114073/800309151021/5.m3u8
+松視2台,http://18.svi-studio.com:8880/live/917952932058/953281067271/6.m3u8
+松視3台,http://18.svi-studio.com:8880/live/271871095922/006886711863/20205.m3u8
+
 
 松视1台,http://ali.hlspull.yximgs.com/live/ce0de02c1ee21678ad63eb9055cd2568.flv
 ​松视2台,http://ali.hlspull.yximgs.com/live/c331f5c82a7ee1f951d0608b2fa4109a.flv
