@@ -1195,9 +1195,9 @@
 
 
 欢乐频道,#genre#
+松视2台,http://ali.hlspull.yximgs.com/live/f7001a0bff83feae25b3a1b9245b2012.flv
 
-
-松视3,https://45.152.67.168/sstv-1122
+松视3台,https://45.152.67.168/sstv-1122
 
 
 影视轮播频道,#genre#
