@@ -1372,10 +1372,24 @@ iHot亚洲影院,http://[2409:8087:5e08:24::11]:6610/000000001000/20000000040000
 iHot亚洲影院,http://[2409:8087:5e08:24::11]:6610/000000001000/5841816227539527643/1.m3u8?channel-id=wasusyt&Contentid=5841816227539527643&livemode=1&stbId=3
 
 
-松视3台,https://45.152.67.168/sstv-1122
-
-
-松视2台,http://ali.hlspull.yximgs.com/live/f7001a0bff83feae25b3a1b9245b2012.flv
+Desire,http://88.212.7.11/live/test_desire_hd_hevc/playlist.m3u8
+BRAZZERS,http://23.237.100.82:8000/BRAZZERS/index.m3u8
+Hustler,http://23.237.100.82:8000/HUSTLER/index.m3u8
+Pent House,http://23.237.100.82:8000/PENTHOUSE/index.m3u8
+Pent House Gold,http://51.159.102.100/PenthouseGold/index.m3u8
+Play Boy,http://23.237.100.82:8000/PLAYBOY/index.m3u8
+Pure Taboo,http://78.47.224.234/puretaboo/index.m3u8
+Redlight HD,http://51.159.102.100/RedlightHD/index.m3u8
+Porn Star,http://live.adultiptv.net/pornstar.m3u8
+风花雪,https://j9.avstatic.com/contents/videos/30000/30135/index.m3u8
+Miami TV,https://59ec5453559f0.streamlock.net/miamitv/smil:WEB/chunklist_w131582150_b1896000.m3u8
+MILF,http://live.redtraffic.xyz/milf.m3u8
+Big Dick,http://live.redtraffic.xyz/bigdick.m3u8
+Big Tits,http://live.redtraffic.xyz/bigtits.m3u8
+Fetish,http://live.redtraffic.xyz/fetish.m3u8
+Pornstar,http://live.redtraffic.xyz/pornstar.m3u8
+Big Ass,http://live.redtraffic.xyz/bigass.m3u8
+Interracial,http://live.redtraffic.xyz/interracial.m3u8
 
 
 
