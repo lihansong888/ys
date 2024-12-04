@@ -1396,6 +1396,70 @@ Interracial,http://live.redtraffic.xyz/interracial.m3u8
 
 
 
+VIVID RED HD,http://a1.hdflix.live:8880/LZLM5786/Akk60pCne2/33093
+ERO-X,http://a1.hdflix.live:8880/LZLM5786/Akk60pCne2/33092
+Secret Circle TV,http://a1.hdflix.live:8880/LZLM5786/Akk60pCne2/33091
+Candy TV,http://a1.hdflix.live:8880/LZLM5786/Akk60pCne2/33090
+Penthouse Quickies,http://a1.hdflix.live:8880/LZLM5786/Akk60pCne2/33089
+PRIVATE,http://a1.hdflix.live:8880/LZLM5786/Akk60pCne2/33088
+X-MO GAY,http://a1.hdflix.live:8880/LZLM5786/Akk60pCne2/33087
+Beate Uhse.TV,http://a1.hdflix.live:8880/LZLM5786/Akk60pCne2/33085
+XY max,http://a1.hdflix.live:8880/LZLM5786/Akk60pCne2/33084
+Candyman Gay Men,http://a1.hdflix.live:8880/LZLM5786/Akk60pCne2/33083
+Fast Boyz Gay Men,http://a1.hdflix.live:8880/LZLM5786/Akk60pCne2/33082
+France a Poil4,http://a1.hdflix.live:8880/LZLM5786/Akk60pCne2/33081
+Jasmin TV,http://a1.hdflix.live:8880/LZLM5786/Akk60pCne2/33080
+Secret Circle,http://a1.hdflix.live:8880/LZLM5786/Akk60pCne2/33079
+SEXTO & SENSO,http://a1.hdflix.live:8880/LZLM5786/Akk60pCne2/33078
+XXX Stars FHD,http://a1.hdflix.live:8880/LZLM5786/Akk60pCne2/33077
+JASMIN.TV HD,http://a1.hdflix.live:8880/LZLM5786/Akk60pCne2/33076
+VIVID RED FHD,http://a1.hdflix.live:8880/LZLM5786/Akk60pCne2/33075
+VIVID TV,http://a1.hdflix.live:8880/LZLM5786/Akk60pCne2/33074
+X-MO,http://a1.hdflix.live:8880/LZLM5786/Akk60pCne2/33073
+Satisfaction_,http://a1.hdflix.live:8880/LZLM5786/Akk60pCne2/60659
+Evil_Angel,http://a1.hdflix.live:8880/LZLM5786/Akk60pCne2/60660
+XYPlus TV,http://a1.hdflix.live:8880/LZLM5786/Akk60pCne2/60661
+Gay Channel,http://a1.hdflix.live:8880/LZLM5786/Akk60pCne2/60662
+NUART,http://a1.hdflix.live:8880/LZLM5786/Akk60pCne2/60663
+Penthouse Gold,http://a1.hdflix.live:8880/LZLM5786/Akk60pCne2/60664
+Penthouse 2,http://a1.hdflix.live:8880/LZLM5786/Akk60pCne2/60665
+Penthouse 1,http://a1.hdflix.live:8880/LZLM5786/Akk60pCne2/60666
+Max 1,http://a1.hdflix.live:8880/LZLM5786/Akk60pCne2/60667
+HotClub 9,http://a1.hdflix.live:8880/LZLM5786/Akk60pCne2/60668
+HotClub 8,http://a1.hdflix.live:8880/LZLM5786/Akk60pCne2/60669
+HotClub 7,http://a1.hdflix.live:8880/LZLM5786/Akk60pCne2/60670
+HotClub 6,http://a1.hdflix.live:8880/LZLM5786/Akk60pCne2/60671
+HotClub 5,http://a1.hdflix.live:8880/LZLM5786/Akk60pCne2/60672
+HotClub 4,http://a1.hdflix.live:8880/LZLM5786/Akk60pCne2/60673
+HotClub 3,http://a1.hdflix.live:8880/LZLM5786/Akk60pCne2/60674
+HotClub 2,http://a1.hdflix.live:8880/LZLM5786/Akk60pCne2/60675
+HotClub 1,http://a1.hdflix.live:8880/LZLM5786/Akk60pCne2/60676
+BLACKED,http://a1.hdflix.live:8880/LZLM5786/Akk60pCne2/60677
+BANGBROS,http://a1.hdflix.live:8880/LZLM5786/Akk60pCne2/60678
+BANGBROS 2,http://a1.hdflix.live:8880/LZLM5786/Akk60pCne2/60679
+BLACKED 2,http://a1.hdflix.live:8880/LZLM5786/Akk60pCne2/60680
+CREAMPIE,http://a1.hdflix.live:8880/LZLM5786/Akk60pCne2/60681
+CREAMPIE 2,http://a1.hdflix.live:8880/LZLM5786/Akk60pCne2/60682
+GIRLS GONE WILD,http://a1.hdflix.live:8880/LZLM5786/Akk60pCne2/60683
+GIRLS GONE WILD 2,http://a1.hdflix.live:8880/LZLM5786/Akk60pCne2/60684
+MOFOS,http://a1.hdflix.live:8880/LZLM5786/Akk60pCne2/60685
+MOFOS 2,http://a1.hdflix.live:8880/LZLM5786/Akk60pCne2/60686
+ULTIMATE SURRENDER,http://a1.hdflix.live:8880/LZLM5786/Akk60pCne2/60687
+DOUBLE DIP,http://a1.hdflix.live:8880/LZLM5786/Akk60pCne2/60688
+DOUBLE DIP 2,http://a1.hdflix.live:8880/LZLM5786/Akk60pCne2/60689
+FAMILY STROKES,http://a1.hdflix.live:8880/LZLM5786/Akk60pCne2/60690
+XTRASMALL,http://a1.hdflix.live:8880/LZLM5786/Akk60pCne2/60691
+NETWORK 2,http://a1.hdflix.live:8880/LZLM5786/Akk60pCne2/60692
+NETWORK 1,http://a1.hdflix.live:8880/LZLM5786/Akk60pCne2/60693
+NETWORK 3,http://a1.hdflix.live:8880/LZLM5786/Akk60pCne2/60694
+CZECH STREETS F,http://a1.hdflix.live:8880/LZLM5786/Akk60pCne2/60695
+ALBA 6,http://a1.hdflix.live:8880/LZLM5786/Akk60pCne2/60696
+ALBA 5,http://a1.hdflix.live:8880/LZLM5786/Akk60pCne2/60697
+ALBA 4,http://a1.hdflix.live:8880/LZLM5786/Akk60pCne2/60698
+ALBA 3,http://a1.hdflix.live:8880/LZLM5786/Akk60pCne2/60699
+ALBA 2,http://a1.hdflix.live:8880/LZLM5786/Akk60pCne2/60700
+ALBA 1,http://a1.hdflix.live:8880/LZLM5786/Akk60pCne2/60701
+SEXT6SENSO,http://a1.hdflix.live:8880/LZLM5786/Akk60pCne2/60702
 
 
 
