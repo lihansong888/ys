@@ -1673,6 +1673,11 @@ CCTV4K,http://60.255.240.247:8090/live/ys4Kcq_2000.m3u8
 宫崎骏音乐连播,http://221.15.71.3/live-bvc/664465/live_8452447_9815264/index.m3u8
 24小时轻音乐,http://61.240.206.3/live-bvc/276764/live_2565439_9900945/index.m3u8
 
+
+治愈•放松「音乐」,https://live.iill.top/huya/21241811
+阅读•学习「音乐」,https://live.iill.top/huya/21241813
+音乐石榴「音乐」,https://live.iill.top/huya/17091681
+
 CHC高清频道,#genre#
 
 
