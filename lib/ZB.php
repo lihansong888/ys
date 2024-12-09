@@ -2107,7 +2107,7 @@ CHC影迷电影,http://[2409:8087:3c02:21:0:1:0:100a]:6410/shandong_cabletv.live
 东森新闻,http://litv.zapi.us.kg/?id=4gtv-4gtv152
 tvbs新闻,http://litv.zapi.us.kg/?id=4gtv-4gtv072
 
-寰宇新闻,http://litv.zapi.us.kg/?id=litv-longturn14
+
 非凡新闻,http://litv.zapi.us.kg/?id=4gtv-4gtv010
 闽镜新闻,http://litv.zapi.us.kg/?id=4gtv-4gtv075
 民视新闻,http://litv.zapi.us.kg/?id=litv-ftv13
@@ -2195,23 +2195,7 @@ TRACEU,http://litv.zapi.us.kg/?id=4gtv-4gtv082
 MEZZOl,http://litv.zapi.us.kg/?id=4gtv-4gtv083
 Ginx_TV,http://litv.zapi.us.kg/?id=4gtv-4gtv053
 
-中天新闻,http://103.193.151.158:8500/live.m3u8?c=1
-中天新闻,http://103.193.151.158:8500/live.m3u8?c=3
-中天新闻频加,http://103.193.151.158:8500/live.m3u8?c=2
-三立新闻,http://103.193.151.158:8500/live.m3u8?c=16
-三立新闻,http://103.193.151.158:8500/live.m3u8?c=31
-三立新闻频加,http://103.193.151.158:8500/live.m3u8?c=17
-三立新闻频加,http://103.193.151.158:8500/live.m3u8?c=32
-tvbs新闻,http://103.193.151.158:8500/live.m3u8?c=5
-闽镜新闻,http://103.193.151.158:8500/live.m3u8?c=12
-民视新闻,http://103.193.151.158:8500/live.m3u8?c=4
-中视新闻,http://103.193.151.158:8500/live.m3u8?c=10
-华视新闻,http://103.193.151.158:8500/live.m3u8?c=7
-台视新闻,http://103.193.151.158:8500/live.m3u8?c=8
-台视新闻,http://103.193.151.158:8500/live.m3u8?c=9
-公视新闻,http://103.193.151.158:8500/live.m3u8?c=11
-公视新闻,http://103.193.151.158:8500/live.m3u8?c=19
-东森财经,http://103.193.151.158:8500/live.m3u8?c=6
+
 环球电视频道,http://zb.xzxwhcb.com:9999/hls/world.m3u8
 Astv亚洲卫视,https://play-hsbj.vzan.com/slowlive/821481626725612417/live.m3u8
 GBN新闻频英,http://103.193.151.158:8500/live.m3u8?c=18
