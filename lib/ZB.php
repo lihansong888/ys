@@ -1845,6 +1845,15 @@ CCTV4K,http://60.255.240.247:8090/live/ys4Kcq_2000.m3u8
 
 
 
+
+
+
+
+石榴.音乐,http://dns.yiandrive.com:16813/huya/17091681
+治愈.音乐,http://dns.yiandrive.com:16813/huya/21241811
+静听.音乐,http://dns.yiandrive.com:16813/huya/21241813
+
+
 CHC高清频道,#genre#
 
 
