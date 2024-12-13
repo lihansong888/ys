@@ -1731,7 +1731,7 @@ Asian,http://cdn.adultiptv.net/asian.m3u8
 
 
 超高清频道,#genre#
-爱上4K,http://115.153.254.81/PLTV/88888888/224/3221227025/86502164.smil/index.m3u8?fmt=ts2hls
+
 华数4K,http://[2409:8087:5e08:24::11]:6610/000000001000/6000000003000004748/1.m3u8?channel-id=wasusyt&Contentid=6000000003000004748&livemode=1&stbId=3
 纯享4K,http://[2409:8087:5e08:24::11]:6610/000000001000/1000000004000011651/1.m3u8?channel-id=ystenlive&Contentid=1000000004000011651&livemode=1&stbId=3
 咪咕4K1,http://[2409:8087:5e08:24::11]:6610/000000001000/3000000010000005180/1.m3u8?channel-id=FifastbLive&Contentid=3000000010000005180&livemode=1&stbId=3
@@ -1745,14 +1745,15 @@ Asian,http://cdn.adultiptv.net/asian.m3u8
 
 
 4K UHD,http://[2409:8087:5e00:24::1e]:6060/200000001898/460000089800010006/1.m3u8
-央视8K,http://49.232.131.30:99/8k.php?id=8k
 
-CCTV4K,http://60.255.240.247:8090/live/ys4Kcq_2000.m3u8
+
+
 4K超高清,http://60.255.240.247:8090/live/emdy4k_8000.m3u8
 北京纪实8K,http://49.7.69.235/downflv.brtvcloud.com/8klive/8kliveok.m3u8
 北京纪实8K,http://111.31.106.140/downflv.brtvcloud.com/8klive/8kliveok.m3u8
 
-
+CCTV-4K 超高清,http://27.222.3.214/liveali-tp4k.cctv.cn/live/4K10M.stream/playlist.m3u8
+CCTV-8K 超高清,https://tv.cry33.com/ys4k.php?id=8k
 
 
 
