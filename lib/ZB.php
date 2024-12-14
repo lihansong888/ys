@@ -1797,28 +1797,9 @@ CHC高清频道,#genre#
 
 
 
-CHC动作电影,http://[2409:8087:74d9:21::6]:80/270000001128/9900000106/index.m3u8
-
-CHC动作电影,http://[2001:250:5800:1005::155]:80/liverespath/e0096742f0c5be4c5225cf3c7ab1077177bec05f/index.m3u8
-CHC家庭影院,http://[2001:250:5800:1005::155]:80/liverespath/449d51febadb152094085d373b9af94a6ac5f1dd/index.m3u8
-CHC影迷电影,http://[2001:250:5800:1005::155]:80/liverespath/bca6167afdef7fc773405c38e695b342c1d1eca0/index.m3u8
-
-
-CHC动作电影,http://218.76.32.193:9901/tsfile/live/1020_1.m3u8
-CHC家庭影院,http://218.76.32.193:9901/tsfile/live/1018_1.m3u8
-CHC影迷电影,http://218.76.32.193:9901/tsfile/live/1019_1.m3u8
-
-CHC影迷电影,http://cqshushu.us.kg:2086/ln.php?id=chcmd-1
-CHC家庭影院,http://cqshushu.us.kg:2086/ln.php?id=chcjt-1
-CHC动作电影,http://cqshushu.us.kg:2086/ln.php?id=chcdzd-1
-
-CHC动作电影,http://124.231.213.16:9999/tsfile/live/1109_1.m3u8
-CHC家庭影院,http://124.231.213.16:9999/tsfile/live/1108_1.m3u8
-CHC影迷电影,http://124.231.213.16:9999/tsfile/live/1110_1.m3u8
-
-CHC影迷电影,http://eastscreen.tv/ooooo.php?id=chchd
-CHC动作电影,http://eastscreen.tv/ooooo.php?id=chcdz
-CHC家庭影院,http://eastscreen.tv/ooooo.php?id=chcjt
+CHC影迷电影,http://[2409:8087:3c02:0021:0000:0001:0000:100a]:6410/shandong_cabletv.live.zte.com////CHANNEL00002029/index.m3u8?IASHttpSessionId=
+CHC家庭影院,http://[2409:8087:3c02:0021:0000:0001:0000:100a]:6410/shandong_cabletv.live.zte.com////CHANNEL00002028/index.m3u8?IASHttpSessionId=
+CHC动作电影,http://[2409:8087:3c02:0021:0000:0001:0000:100a]:6410/shandong_cabletv.live.zte.com////CHANNEL00002030/index.m3u8?IASHttpSessionId=
 
 
 
