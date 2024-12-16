@@ -1211,7 +1211,7 @@
 
 1905电影(国际),http://xxw.me0.cn/1905dy.php?id=1905b 
 1905电影(亚洲),http://xxw.me0.cn/1905dy.php?id=1905a
-
+峨眉电影,http://wouu.net:9977/udp/239.93.0.252:5140
 
 
 
@@ -1738,7 +1738,7 @@ Asian,http://cdn.adultiptv.net/asian.m3u8
 咪咕4K2,http://[2409:8087:5e08:24::11]:6610/000000001000/3000000010000015686/1.m3u8?channel-id=FifastbLive&Contentid=3000000010000015686&livemode=1&stbId=3
 咪咕4K3,http://[2409:8087:5e08:24::11]:6610/000000001000/3000000001000005308/1.m3u8?channel-id=FifastbLive&Contentid=3000000001000005308&livemode=1&stbId=3
 咪咕4K3,http://[2409:8087:5e08:24::11]:6610/000000001000/3000000001000005969/1.m3u8?channel-id=FifastbLive&Contentid=3000000001000005969&livemode=1&stbId=3
-
+欢笑剧场·4K,http://[2409:8087:5e08:24::11]:6610/000000001000/5000000007000010001/index.m3u8?channel-id=bestzb&Contentid=5000000007000010001&livemode=1&stbId=3
 
 
 
