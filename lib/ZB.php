@@ -1211,16 +1211,7 @@
 
 1905电影(国际),http://xxw.me0.cn/1905dy.php?id=1905b 
 1905电影(亚洲),http://xxw.me0.cn/1905dy.php?id=1905a
-峨眉电影,http://wouu.net:9977/udp/239.93.0.252:5140
 
-
-
-
-
-HBO,http://iptv12k.com:35461/live/test167/12345/1266.m3u8
-HBO家庭,http://iptv12k.com:35461/live/test167/12345/1265.m3u8
-HBO强档,http://iptv12k.com:35461/live/test167/12345/1264.m3u8
-HBO原创,http://iptv12k.com:35461/live/test167/12345/1263.m3u8
 
 
 
