@@ -1,39 +1,4 @@
-测试频道,#genre#
-爱奇艺,https://ali.hlspull.yximgs.com/live/8a5bc1c6520cc3d1566cbde756b584ee.flvHBO HD,https://ali.hlspull.yximgs.com/live/ac7e7d76f2a778611583de7d216440ec.flvHBO Hits,https://ali.hlspull.yximgs.com/live/a1cbf37df8bcbe921862f4a169403626.flvHBO Signature,https://ali.hlspull.yximgs.com/live/af8f3aadacfc4edaa7d7ee4bb7c3b9d3.flvHBO Famliy,https://ali.hlspull.yximgs.com/live/e8658cae387619e7fc0d57c24782a426.flvViu TV,https://ali.hlspull.yximgs.com/live/4bf53599364d6dbd19728d4bc4d6daad.flvHub 都会,https://ali.hlspull.yximgs.com/live/e3788b873fea235b017cff78a4cc5c91.flvHub 娱家,https://ali.hlspull.yximgs.com/live/0482f899b021162cadfd64267ab34ca1.flv小尼克频道,https://ali.hlspull.yximgs.com/live/fa3cb87e7af3e8de480bed61e50ff67e.flvAnimax 卡通,https://ali.hlspull.yximgs.com/live/61e4f4c796466bce83548ae04088ede5.flv尼克儿童频道,https://ali.hlspull.yximgs.com/live/799c0b2396f06e72cb01436649087f6a.flv
-翡翠台,https://ali.hlspull.yximgs.com/live/226ac3c29b6ec71357c33184777e64f9.flv
-TVB Plus,https://ali.hlspull.yximgs.com/live/1d9fbd2761fe63c1443e9eea6cb39973.flv
-無綫新聞台,http://prd-vcache.edge-global.akamai.tvb.com/__cl/slocalr2625/__c/ott_C_h264/__op/bks/__f/3/v2500000/index.m3u8
-無綫新聞台,http://prd-vcache.edge-global.akamai.tvb.com/__cl/slocalr2625/__c/ott_C_h264/__op/bks/__f/index.m3u8?hdnea=ip=0.0.0.0~st=1732882465~exp=1732968865~acl=/__cl/slocalr2625/__c/ott_C_h264/__op/bks/__f/*~hmac=a6532100f982a808d88490a703206d91475489d6b2bdce0769b3e78d2a418e51&p=3202
-明珠台,https://ali.hlspull.yximgs.com/live/36732b7a97d7f0a30aae29804ce15c09.flv
-無綫新聞台(國際版),http://prd-vcache.edge-global.akamai.tvb.com/__cl/slocalr2625/__c/ott_I-NEWS_h264/__op/bks/__f/2/v1500000/index.m3u8
-無綫新聞台(國際版),http://prd-vcache.edge-global.akamai.tvb.com/__cl/slocalr2625/__c/ott_I-NEWS_h264/__op/bks/__f/index.m3u8?hdnea=ip=0.0.0.0~st=1732882585~exp=1732968985~acl=/__cl/slocalr2625/__c/ott_I-NEWS_h264/__op/bks/__f/*~hmac=8a4d8b2ff4d3a3480aa44d68d6566d4664d27bc235b60130808fc57625010017&p=3218
-無綫娱樂新聞台,https://ali.hlspull.yximgs.com/live/NlI5r70WnOXBBvdbct6mYBYSOY3eWXKn.flv
-黄金翡翠台,https://ali.hlspull.yximgs.com/live/cgYcyCP6wVk17bCDMhAwR6DqUvdg8kRy.flv
-Now新聞台,https://ali.hlspull.yximgs.com/live/7c65b20d202c828b53c8e962b503c738.flv
-Viu TV,https://ali.hlspull.yximgs.com/live/5e8de70b71b38f5ecb9e6b4427e50312.flv
-Viu TV6,https://ali.hlspull.yximgs.com/live/5539f2637e185587469a4e178252031b.flv
-港台電視31,https://ali.hlspull.yximgs.com/live/8307c15c5533c0b11ee8df694ec57113.flv
-港台電視32,https://ali.hlspull.yximgs.com/live/ffbc7c28c04506285994f006a9f12aa5.flv
-香港開電視,https://ali.hlspull.yximgs.com/live/98ce4cac6158ae2346a551f77eba6fc8.flv
-HOY資讯台,https://ali.hlspull.yximgs.com/live/958bd43b99d02eeb9ee5e3112f199acb.flv
-香港國際財經台,https://ali.hlspull.yximgs.com/live/4b24cf964e0ab6fb0099ca787832643d.flv
-鳯凰資訊台,http://qctv.fengshows.cn/live/0701pin72.flv?txSecret=94bbfa53b6a82f6f3269f2be415c352b&txTime=6749b318
-鳯凰資訊台,http://dispatch.fengshows.cn:8484/live/0701pin72.flv?txSecret=94bbfa53b6a82f6f3269f2be415c352b&txTime=6749b318
-鳳凰中文台,http://qctv.fengshows.cn/live/0701pcc72.flv?txSecret=b0efa140daa3cfd46fb6f42adf0b82cf&txTime=6749b353
-鳳凰中文台,http://dispatch.fengshows.cn:8484/live/0701pcc72.flv?txSecret=b0efa140daa3cfd46fb6f42adf0b82cf&txTime=6749b353
-鳳凰香港台,http://qctv.fengshows.cn/live/0701phk72.flv?txSecret=19a6224ff2b39715c212c60b14c8f508&txTime=6749b374
-鳳凰香港台,http://dispatch.fengshows.cn:8484/live/0701phk72.flv?txSecret=19a6224ff2b39715c212c60b14c8f508&txTime=6749b374
-C18跑馬台,https://ali.hlspull.yximgs.com/live/1b1c673ca9500ee5b5b16d92c4c4d461.flv
-88跑馬台,https://ali.hlspull.yximgs.com/live/8ad61fadf34106eddc732c3f0fc3f563.flv
-Now爆谷台,https://ali.hlspull.yximgs.com/live/7504bcdd86dbf40117d022d06d4d9d98.flv
-Now爆谷星影台,https://ali.hlspull.yximgs.com/live/95fed5ddd63ea8c98db90f2c7b19f614.flv
-Now英超1台,https://ali.hlspull.yximgs.com/live/18a430e7540e90a0ba1d45b828c706f7.flv
-Now英超2台,https://ali.hlspull.yximgs.com/live/4c643ee2c059c61da20c4e62476b2422.flv
-Now英超3台,https://ali.hlspull.yximgs.com/live/fbf2b4d6999c8599d03f3718e7cbaafc.flv
-香港衛視,http://zhibo.hkstv.tv/livestream/mutfysrq/playlist.m3u8
-耀才財經台,https://v3.mediacast.hk/webcast/bshdlive-pc/chunklist_w1736216878.m3u8
-耀才財經台,https://v3.mediacast.hk/webcast/bshdlive-pc/playlist.m3u8
-澳門蓮花衛視,http://live-hls.macaulotustv.com/lotustv/macaulotustv.m3u8
+
 
 
 
