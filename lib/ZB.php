@@ -1812,32 +1812,28 @@ CHC高清频道,#genre#
 
 CHC动作电影,http://[2409:8087:5e00:24::1e]:6060/000000001000/1000000004000018653/1.m3u8
 CHC动作电影,http://[2409:8087:74d9:21::6]:80/270000001128/9900000106/index.m3u8
-CHC动作电影,http://[2001:250:5800:1005::155]:80/liverespath/e0096742f0c5be4c5225cf3c7ab1077177bec05f/index.m3u8
-CHC家庭影院,http://[2001:250:5800:1005::155]:80/liverespath/449d51febadb152094085d373b9af94a6ac5f1dd/index.m3u8
-CHC影迷电影,http://[2001:250:5800:1005::155]:80/liverespath/bca6167afdef7fc773405c38e695b342c1d1eca0/index.m3u8
+
+
+
 
 
 CHC动作电影,http://[2409:8087:5e00:24::1e]:6060/000000001000/1000000004000018653/1.m3u8$LR•IPV6『线路1』
 
-CHC家庭影院,http://cqshushu.us.kg:2086/ln.php?id=chcjt-1$LR•IPV4『线路45』
+
 
 
 
 CHC动作电影,http://123.189.39.129:9901/tsfile/live/1101_1.m3u8
 CHC动作电影,http://113.236.31.149:9901/tsfile/live/1101_1.m3u8
-CHC动作电影,http://59.173.243.210:9901/tsfile/live/1012_1.m3u8
-CHC动作电影,http://113.236.28.117:9901/tsfile/live/1101_1.m3u8
-CHC动作电影,http://112.102.217.173:9003//hls/75/index.m3u8
-CHC家庭影院,http://110.53.52.63:8888/newlive/live/hls/51/live.m3u8
-CHC家庭影院,http://59.173.243.210:9901/tsfile/live/1031_1.m3u8
+
+
 CHC家庭影院,http://119.125.134.228:9902/tsfile/live/1027_1.m3u8
 CHC家庭影院,http://117.190.144.101:1111/tsfile/live/1018_1.m3u8
 CHC家庭影院,http://114.105.184.92:9901/tsfile/live/1072_1.m3u8
-CHC影迷电影,http://59.173.243.210:9901/tsfile/live/0119_1.m3u8
-CHC影迷电影,http://220.249.114.102:9901/tsfile/live/1015_1.m3u8
-CHC影迷电影,http://117.190.144.101:1111/tsfile/live/1019_1.m3u8
 CHC影迷电影,http://119.125.134.228:9902/tsfile/live/1023_1.m3u8
 CHC影迷电影,http://163.177.123.161:9901/tsfile/live/1046_1.m3u8
+CHC影迷电影,http://117.190.144.101:1111/tsfile/live/1019_1.m3u8
+
 
 
 
