@@ -1588,8 +1588,10 @@ iHot风尚音乐,http://[2409:8087:5e08:24::11]:6610/000000001000/55297290987038
 
 睛彩竞技,http://cqshushu.us.kg:2086/ln.php?id=jcjj-1
 睛彩篮球,http://cqshushu.us.kg:2086/ln.php?id=qclq-1
-睛彩青少,http://cqshushu.us.kg:2086/ln.php?id=qcqsh-1
-睛彩广场舞,http://cqshushu.us.kg:2086/ln.php?id=jcgch-1
+睛彩广场舞,http://[2409:8087:1a0a:df::402e]/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226472/index.m3u8
+睛彩篮球,http://[2409:8087:74d9:21::6]:80/270000001128/9900000118/index.m3u8?channel-id=newtv&livemode=4&Contentid=9900000405
+睛彩竞技,http://[2409:8087:74d9:21::6]:80/270000001128/9900000119/index.m3u8?channel-id=newtv&livemode=4&Contentid=9900000074
+睛彩青少,http://[2409:8087:74d9:21::6]:80/270000001128/9900000120/index.m3u8?channelid=newtv&livemode=4&Contentid=9900000264
 
 
 
