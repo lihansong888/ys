@@ -1828,11 +1828,10 @@ CHC动作电影,http://123.189.39.129:9901/tsfile/live/1101_1.m3u8
 CHC动作电影,http://113.236.31.149:9901/tsfile/live/1101_1.m3u8
 
 
-CHC家庭影院,http://119.125.134.228:9902/tsfile/live/1027_1.m3u8
+
 CHC家庭影院,http://117.190.144.101:1111/tsfile/live/1018_1.m3u8
-CHC家庭影院,http://114.105.184.92:9901/tsfile/live/1072_1.m3u8
-CHC影迷电影,http://119.125.134.228:9902/tsfile/live/1023_1.m3u8
-CHC影迷电影,http://163.177.123.161:9901/tsfile/live/1046_1.m3u8
+
+
 CHC影迷电影,http://117.190.144.101:1111/tsfile/live/1019_1.m3u8
 
 
