@@ -1207,13 +1207,14 @@
 
 
 
+1905国内电影,http://php.jdshipin.com:8880/1905.php?id=1905dy
+1905国外电影,http://php.jdshipin.com:8880/1905.php?id=1905dy2
 
 
-1905电影(亚洲),http://php.jdshipin.com:8880/1905.php?id=1905dy
 
 
 
-1905电影(国际),http://xxw.me0.cn/1905dy.php?id=1905b 
+
 
 
 
