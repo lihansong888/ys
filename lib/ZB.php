@@ -4315,7 +4315,23 @@ CETV-4,http://[2409:8087:5e08:24::11]:6610/000000001000/5000000011000031126/inde
 
 
 
-
+新疆频道,#genre#
+奎屯哈萨克语,http://218.84.12.186:8002/hls/main/playlist.m3u8?zxinjd
+新疆｜兵团八师石河子教育,http://124.88.144.73:1935/live/jiaoyu/playlist.m3u8?zxinjd
+新疆｜兵团八师石河子新闻综合,http://124.88.144.73:1935/live/xwzh/playlist.m3u8?zxinjd
+新疆｜兵团八师石河子经济生活,http://124.88.144.73:1935/live/dywt/playlist.m3u8?zxinjd
+新疆｜奎屯哈萨克语,http://218.84.12.186:8002/hls/main/playlist.m3u8
+新疆｜奎屯汉语综合,http://218.84.12.186:8001/hls/main/playlist.m3u8
+新疆｜奎屯汉语综合,http://218.84.12.186:8001/hls/main/playlist.m3u8?zxinjd
+新疆｜巴音郭楞州,http://file.loulannews.cn/nmip-media/channellive/channel101476/playlist.m3u8
+新疆｜巴音郭楞州,http://file.loulannews.cn/nmip-media/channellive/channel102433/playlist.m3u8
+新疆｜巴音郭楞州,http://file.loulannews.cn/nmip-media/channellive/channel103824/playlist.m3u8
+新疆｜巴音郭楞州,http://file.loulannews.cn/nmip-media/channellive/channel104199/playlist.m3u8
+新疆｜玛纳斯综合,http://218.84.127.245:1026/hls/main1/playlist.m3u8?zxinjd
+新疆｜石河子影视文体,http://124.88.144.73:1935/live/jjsh/playlist.m3u8
+新疆｜石河子教育,http://124.88.144.73:1935/live/jiaoyu/playlist.m3u8
+新疆｜石河子新闻综合,http://124.88.144.73:1935/live/xwzh/playlist.m3u8
+新疆｜石河子经济生活,http://124.88.144.73:1935/live/dywt/playlist.m3u8
 
 
 
