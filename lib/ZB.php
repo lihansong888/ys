@@ -1651,7 +1651,13 @@ RM 刘在石李光洙跑男,http://182.40.120.191/test-txdwk.flv.huya.com/src/12
 
 
 
+CIBN影院,#genre#
+CIBN情感影院,http://zby.xjqxz.top/zh09/live.m3u8
+CIBN动作影院,http://zby.xjqxz.top/zh04/live.m3u8
 
+CIBN精品影院,http://zby.xjqxz.top/zh13/live.m3u8
+CIBN流金岁月,http://zby.xjqxz.top/hkdy1/live.m3u8
+CIBN院线大片,http://zby.xjqxz.top/zh06/live.m3u8
 
 
 
