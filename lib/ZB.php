@@ -1741,6 +1741,7 @@ SiTV都市剧场,http://[2409:8087:5e08:24::11]:6610/000000001000/50000000110000
 SiTV金色学堂,http://[2409:8087:5e08:24::11]:6610/000000001000/5000000010000026105/1.m3u8?channel-id=bestzb&Contentid=5000000010000026105&livemode=1&stbId=3
 SiTV魅力足球,http://[2409:8087:5e08:24::11]:6610/000000001000/5000000011000031207/1.m3u8?channel-id=bestzb&Contentid=5000000011000031207&livemode=1&stbId=3
 
+
 iHOT频道,#genre#
 iHOT爱体育,http://[2409:8087:5e08:24::11]:6610/000000001000/6000000006000290630/1.m3u8?channel-id=wasusyt&Contentid=6000000006000290630&livemode=1&stbId=3
 iHOT爱动漫,http://[2409:8087:5e08:24::11]:6610/000000001000/6000000006000280630/1.m3u8?channel-id=wasusyt&Contentid=6000000006000280630&livemode=1&stbId=3
@@ -1792,9 +1793,24 @@ iHot风尚音乐,http://[2409:8087:5e08:24::11]:6610/000000001000/55297290987038
 
 探索纪录,http://[2409:8087:5e08:24::11]:6610/000000001000/2000000004000000007/1.m3u8?channel-id=hnbblive&Contentid=2000000004000000007&livemode=1&stbId=3
 探索纪录,http://[2409:8087:5e08:24::11]:6610/000000001000/5359008697329269813/1.m3u8?channel-id=wasusyt&Contentid=5359008697329269813&livemode=1&stbId=3
+求索科学,http://[2409:8087:5e08:24::11]:6610/000000001000/2000000004000000011/index.m3u8?stbId=3&livemode=1&HlsProfileId=&channel-id=hnbblive&Contentid=2000000004000000011&IASHttpSessionId=OTT19019320240419154124000281
+求索动物,http://[2409:8087:5e08:24::11]:6610/000000001000/2000000004000000009/index.m3u8?stbId=3&livemode=1&HlsProfileId=&channel-id=hnbblive&Contentid=2000000004000000009&IASHttpSessionId=OTT19019320240419154124000281
+求索生活,http://[2409:8087:5e08:24::11]:6610/000000001000/2000000004000000008/index.m3u8?stbId=3&livemode=1&HlsProfileId=&channel-id=hnbblive&Contentid=2000000004000000008&IASHttpSessionId=OTT19019320240419154124000281
+求索纪录,http://[2409:8087:5e08:24::11]:6610/000000001000/2000000004000000010/index.m3u8?stbId=3&livemode=1&HlsProfileId=&channel-id=hnbblive&Contentid=2000000004000000010&IASHttpSessionId=OTT19019320240419154124000281
+求索动物,http://kxrj.site:35455/itv/6000000002000010046.m3u8?cdn=wasusyt
+求索纪录,http://kxrj.site:35455/itv/6000000002000032052.m3u8?cdn=wasusyt
+求索科学,http://kxrj.site:35455/itv/6000000002000032344.m3u8?cdn=wasusyt
+求索生活,http://kxrj.site:35455/itv/6000000002000003382.m3u8?cdn=wasusyt
 
 
-
+求索动物,http://[2409:8087:5e01:24::16]:6610/000000001000/2000000004000000009/index.m3u8?stbId=3&livemode=1&HlsProfileId=&channel-id=hnbblive&Contentid=2000000004000000009&IAS
+求索动物,http://[2409:8087:5e08:24::11]:6610/000000001000/2000000004000000009/index.m3u8?stbId=3&livemode=1&HlsProfileId=&channel-id=hnbblive&Contentid=2000000004000000009&IASHttpSessionId=OTT19019320240419154124000281&yang-1989
+求索纪录,http://[2409:8087:5e01:24::16]:6610/000000001000/2000000004000000010/index.m3u8?stbId=3&livemode=1&HlsProfileId=&channel-id=hnbblive&Contentid=2000000004000000010&IAS
+求索纪录,http://[2409:8087:5e08:24::11]:6610/000000001000/2000000004000000010/index.m3u8?stbId=3&livemode=1&HlsProfileId=&channel-id=hnbblive&Contentid=2000000004000000010&IASHttpSessionId=OTT19019320240419154124000281&yang-1989
+求索科学,http://[2409:8087:5e01:24::16]:6610/000000001000/2000000004000000011/index.m3u8?stbId=3&livemode=1&HlsProfileId=&channel-id=hnbblive&Contentid=2000000004000000011&IAS
+求索科学,http://[2409:8087:5e08:24::11]:6610/000000001000/2000000004000000011/index.m3u8?stbId=3&livemode=1&HlsProfileId=&channel-id=hnbblive&Contentid=2000000004000000011&IASHttpSessionId=OTT19019320240419154124000281&yang-1989
+求索生活,http://[2409:8087:5e01:24::16]:6610/000000001000/2000000004000000008/index.m3u8?stbId=3&livemode=1&HlsProfileId=&channel-id=hnbblive&Contentid=2000000004000000008&IAS
+求索生活,http://[2409:8087:5e08:24::11]:6610/000000001000/2000000004000000008/index.m3u8?stbId=3&livemode=1&HlsProfileId=&channel-id=hnbblive&Contentid=2000000004000000008&IASHttpSessionId=OTT19019320240419154124000281&yang-1989
 
 
 
@@ -2118,11 +2134,39 @@ CHC家庭影院,http://117.190.144.101:1111/tsfile/live/1018_1.m3u8
 CHC影迷电影,http://117.190.144.101:1111/tsfile/live/1019_1.m3u8
 
 
+CHC动作电影,http://218.76.32.193:9901/tsfile/live/1020_1.m3u8
+CHC家庭影院,http://218.76.32.193:9901/tsfile/live/1018_1.m3u8
+CHC影迷电影,http://218.76.32.193:9901/tsfile/live/1019_1.m3u8
+
+CHC影迷电影,http://cqshushu.us.kg:2086/ln.php?id=chcmd-1
+CHC家庭影院,http://cqshushu.us.kg:2086/ln.php?id=chcjt-1
+CHC动作电影,http://cqshushu.us.kg:2086/ln.php?id=chcdzd-1
+
+CHC动作电影,http://124.231.213.16:9999/tsfile/live/1109_1.m3u8
+CHC家庭影院,http://124.231.213.16:9999/tsfile/live/1108_1.m3u8
+CHC影迷电影,http://124.231.213.16:9999/tsfile/live/1110_1.m3u8
+
+CHC影迷电影,http://eastscreen.tv/ooooo.php?id=chchd
+CHC动作电影,http://eastscreen.tv/ooooo.php?id=chcdz
+CHC家庭影院,http://eastscreen.tv/ooooo.php?id=chcjt
 
 
 
-
-
+CHC动作电影,http://123.189.39.129:9901/tsfile/live/1101_1.m3u8
+CHC动作电影,http://113.236.31.149:9901/tsfile/live/1101_1.m3u8
+CHC动作电影,http://59.173.243.210:9901/tsfile/live/1012_1.m3u8
+CHC动作电影,http://113.236.28.117:9901/tsfile/live/1101_1.m3u8
+CHC动作电影,http://112.102.217.173:9003//hls/75/index.m3u8
+CHC家庭影院,http://110.53.52.63:8888/newlive/live/hls/51/live.m3u8
+CHC家庭影院,http://59.173.243.210:9901/tsfile/live/1031_1.m3u8
+CHC家庭影院,http://119.125.134.228:9902/tsfile/live/1027_1.m3u8
+CHC家庭影院,http://117.190.144.101:1111/tsfile/live/1018_1.m3u8
+CHC家庭影院,http://114.105.184.92:9901/tsfile/live/1072_1.m3u8
+CHC影迷电影,http://59.173.243.210:9901/tsfile/live/0119_1.m3u8
+CHC影迷电影,http://220.249.114.102:9901/tsfile/live/1015_1.m3u8
+CHC影迷电影,http://117.190.144.101:1111/tsfile/live/1019_1.m3u8
+CHC影迷电影,http://119.125.134.228:9902/tsfile/live/1023_1.m3u8
+CHC影迷电影,http://163.177.123.161:9901/tsfile/live/1046_1.m3u8
 
 
 
