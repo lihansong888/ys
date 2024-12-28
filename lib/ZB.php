@@ -1601,6 +1601,66 @@ RM 刘在石李光洙跑男,http://182.40.120.191/test-txdwk.flv.huya.com/src/12
 
 
 
+
+
+
+
+
+
+Babes TV HD,http://ott.watch/stream/A2Q8BAKW82/55.m3u8
+Exxxotica HD,http://ott.watch/stream/A2Q8BAKW82/57.m3u8
+Frenchlover,http://ott.watch/stream/A2Q8BAKW82/54.m3u8
+Erox HD,http://ott.watch/stream/A2Q8BAKW82/58.m3u8
+Redlight HD,http://ott.watch/stream/A2Q8BAKW82/51.m3u8
+Hustler HD Europe,http://ott.watch/stream/A2Q8BAKW82/52.m3u8
+Brazzers TV Europe HD,http://ott.watch/stream/A2Q8BAKW82/53.m3u8
+Blue Hustler,http://ott.watch/stream/A2Q8BAKW82/280.m3u8
+Private TV HD,http://ott.watch/stream/A2Q8BAKW82/282.m3u8
+Vivid Red HD,http://ott.watch/stream/A2Q8BAKW82/284.m3u8
+Barely Legal TV,http://ott.watch/stream/A2Q8BAKW82/289.m3u8
+Playboy TV,http://ott.watch/stream/A2Q8BAKW82/290.m3u8
+ Blue Hustler,http://vipxdgdur.xyz:8080/VIP0149170610561350/b0f1f9d497da/25685 
+HA,http://185.182.193.203:25461/yuichi520201/KxiTfr55ql/73744
+japanh,http://7e401b76.rossteleccom.net/iptv/BPZAZHWVQK3DBLBDSRGFZZ6K/6225/index.m3u8
+jp,http://5o6lqyah.dienalt.org/iptv/8F5P4TB738P2CW/6225/index.m3u8
+jp,http://u2tp5zor.megatv.fun/iptv/GND3B9YB2KUEYX/6225/index.m3u8
+Шокирующее,http://rhsbjv7k.tvclub.xyz/iptv/56E8HVDHBARKLQ/6229/index.m3u8
+центральное,http://d029dcec.kazmazpaz.ru/iptv/5FRTASC825NL7B/20090/manifest.m3u8
+japan,http://88b9da48.kazmazpaz.ru/iptv/2EA55L4SUE4RH4/6225/manifest.m3u8
+1311http://gustvplay.com:8080/CwcspkjCgzeZ/m5mknNRdkmc9/1311
+japanhdv,http://v5yxxgnc.ottclub.xyz/iptv/SKRMAACV4QDM4F/6225/index.m3u8
+japanhdv,http://d029dcec.kazmazpaz.ru/iptv/BG3TE5HEQRXENC/6200/manifest.m3u8
+japanhdv,http://demoniaus.cbilant.com/iptv/GCETXETVEM37A6/6225/index.m3u8
+playboy,http://v5yxxgnc.ottclub.xyz/iptv/SKRMAACV4QDM4F/527/index.m3u8
+playboy,http://4os6vafy.ottclub.xyz/iptv/GW6RW5TY9TAR8L/527/index.m3u8
+Playboy Plus,http://v5yxxgnc.ottclub.xyz/iptv/SKRMAACV4QDM4F/6242/index.m3u8
+BCU Charm,http://v5yxxgnc.ottclub.xyz/iptv/SKRMAACV4QDM4F/18053/index.m3u8
+Playboy Plus,http://demoniaus.cbilant.com/iptv/GCETXETVEM37A6/6242/index.m3u8
+Кино +18,http://demoniaus.cbilant.com/iptv/GCETXETVEM37A6/18075/index.m3u8
+Кино +18,http://cdn.klimedia.space/lb/kino1plus18/index.m3u8?token=klimedia.space:YWxka2ZqYWZqOmFsZGtmamFmag==
+BABES,http://cord-cutter.net:8080/7MArer2/382185/159959
+BRAZZERS,http://cord-cutter.net:8080/7MArer2/382185/159966
+supertv,http://streamsy.online:2999/carlosbermudez/oZLRHZHL0z/276
+ Red Erotic 1,http://supersonictv.live:8080/kevinmarcia/444666445/86437
+ passion,https://5f22d76e220e1.streamlock.net/canale9/canale9/playlist.m3u8
+VISIT-X,http://stream.visit-x.tv:1935/vxtv/live_720p/playlist.m3u8
+Rough,http://cdn.adultiptv.net/rough.m3u8
+playboy,http://190.11.225.124:5000/live/playboy_hd/playlist.m3u8
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 Alba XXX HD1,http://iptvtree.net:8080/resplice/wdLIS4d9758INyuX/8311
 Alba XXX HD1 +1 ,http://iptvtree.net:8080/resplice/wdLIS4d9758INyuX/296945 Alba XXX HD2,http://iptvtree.net:8080/resplice/wdLIS4d9758INyuX/8310 
  BOX OF PORN,http://206.212.244.71:8080/4wVQA7/625159/159964
