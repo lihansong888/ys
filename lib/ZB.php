@@ -2664,96 +2664,52 @@ CHC影迷电影,https://ali.hlspull.yximgs.com/live/diyp_chcyingmi.flv
 
 港澳台4GTV频道,#genre#
 
-东森新闻,http://litv.zapi.us.kg/?id=4gtv-4gtv152
-tvbs新闻,http://litv.zapi.us.kg/?id=4gtv-4gtv072
 
-
-非凡新闻,http://litv.zapi.us.kg/?id=4gtv-4gtv010
-闽镜新闻,http://litv.zapi.us.kg/?id=4gtv-4gtv075
-民视新闻,http://litv.zapi.us.kg/?id=litv-ftv13
-中视新闻,http://litv.zapi.us.kg/?id=4gtv-4gtv074
-华视新闻,http://litv.zapi.us.kg/?id=4gtv-4gtv052
-台视新闻,http://litv.zapi.us.kg/?id=4gtv-4gtv051
-民视闽南,http://litv.zapi.us.kg/?id=4gtv-4gtv002
-民视闽南,http://litv.zapi.us.kg/?id=4gtv-4gtv155
-中视闽南,http://litv.zapi.us.kg/?id=4gtv-4gtv040
-华视闽南,http://litv.zapi.us.kg/?id=4gtv-4gtv041
-台视闽南,http://litv.zapi.us.kg/?id=4gtv-4gtv066
-寰宇闽南,http://litv.zapi.us.kg/?id=litv-longturn15
-tvbs闽南,http://litv.zapi.us.kg/?id=4gtv-4gtv073
-民视台湾,http://litv.zapi.us.kg/?id=4gtv-4gtv001
-民视台湾,http://litv.zapi.us.kg/?id=4gtv-4gtv156
-民视第一,http://litv.zapi.us.kg/?id=4gtv-4gtv003
-民视旅游,http://litv.zapi.us.kg/?id=litv-ftv07
-民视影剧,http://litv.zapi.us.kg/?id=litv-ftv09
-民视综艺,http://litv.zapi.us.kg/?id=4gtv-4gtv004
-中视菁采,http://litv.zapi.us.kg/?id=4gtv-4gtv064
-中视经典,http://litv.zapi.us.kg/?id=4gtv-4gtv080
-台视财经,http://litv.zapi.us.kg/?id=4gtv-4gtv056
-公视戏剧,http://litv.zapi.us.kg/?id=4gtv-4gtv042
-闽南戏剧,http://litv.zapi.us.kg/?id=litv-longturn22
-国际财经,http://litv.zapi.us.kg/?id=4gtv-4gtv104
-东森财经,http://litv.zapi.us.kg/?id=4gtv-4gtv153
-tvbs精采,http://litv.zapi.us.kg/?id=4gtv-4gtv067
-tvbs欢乐,http://litv.zapi.us.kg/?id=4gtv-4gtv068
-八大精彩,http://litv.zapi.us.kg/?id=4gtv-4gtv034
-八大综艺,http://litv.zapi.us.kg/?id=4gtv-4gtv039
-爱尔达娱乐台,http://litv.zapi.us.kg/?id=4gtv-4gtv070
-靖洋戏剧,http://litv.zapi.us.kg/?id=4gtv-4gtv045
-靖洋卡通,http://litv.zapi.us.kg/?id=4gtv-4gtv057
-靖天卡通,http://litv.zapi.us.kg/?id=4gtv-4gtv044
-靖天综合,http://litv.zapi.us.kg/?id=4gtv-4gtv046
-靖天日本,http://litv.zapi.us.kg/?id=4gtv-4gtv047
-靖天欢乐,http://litv.zapi.us.kg/?id=4gtv-4gtv054
-靖天映画,http://litv.zapi.us.kg/?id=4gtv-4gtv055
-靖天戏剧,http://litv.zapi.us.kg/?id=4gtv-4gtv058
-靖天电影,http://litv.zapi.us.kg/?id=4gtv-4gtv061
-靖天育乐,http://litv.zapi.us.kg/?id=4gtv-4gtv062
-靖天国际,http://litv.zapi.us.kg/?id=4gtv-4gtv063
-靖天资讯,http://litv.zapi.us.kg/?id=4gtv-4gtv065
-龙华卡通,http://litv.zapi.us.kg/?id=litv-longturn01
-龙华日韩,http://litv.zapi.us.kg/?id=litv-longturn11
-龙华偶像,http://litv.zapi.us.kg/?id=litv-longturn12
-龙华电影,http://litv.zapi.us.kg/?id=litv-longturn03
-龙华戏剧,http://litv.zapi.us.kg/?id=litv-longturn18
-龙华经典,http://litv.zapi.us.kg/?id=litv-longturn21
-国会壹台,http://litv.zapi.us.kg/?id=4gtv-4gtv084
-国会贰台,http://litv.zapi.us.kg/?id=4gtv-4gtv085
-好消息壹,http://litv.zapi.us.kg/?id=litv-ftv16
-好消息贰,http://litv.zapi.us.kg/?id=litv-ftv17
-智林体育,http://litv.zapi.us.kg/?id=4gtv-4gtv101
-博斯魅力,http://litv.zapi.us.kg/?id=litv-longturn04
-博斯网球,http://litv.zapi.us.kg/?id=litv-longturn09
-博斯高球壹台,http://litv.zapi.us.kg/?id=litv-longturn05
-博斯高球贰台,http://litv.zapi.us.kg/?id=litv-longturn06
-博斯运动壹台,http://litv.zapi.us.kg/?id=litv-longturn07
-博斯运动贰台,http://litv.zapi.us.kg/?id=litv-longturn08
-博斯无限壹台,http://litv.zapi.us.kg/?id=litv-longturn10
-博斯无限贰台,http://litv.zapi.us.kg/?id=litv-longturn13
-阿里郎台,http://litv.zapi.us.kg/?id=4gtv-4gtv079
-达文西台,http://litv.zapi.us.kg/?id=4gtv-4gtv018
-猪哥亮歌厅台,http://litv.zapi.us.kg/?id=4gtv-4gtv006
-亚洲旅游,http://litv.zapi.us.kg/?id=litv-longturn17
-美国之音,http://litv.zapi.us.kg/?id=litv-ftv03
-半岛新闻,http://litv.zapi.us.kg/?id=litv-ftv10
-非凡商业,http://litv.zapi.us.kg/?id=4gtv-4gtv048
-第壹商业,http://litv.zapi.us.kg/?id=4gtv-4gtv109
-爱放动漫,http://litv.zapi.us.kg/?id=litv-ftv15
-古典音乐,http://litv.zapi.us.kg/?id=4gtv-4gtv059
-客家电视,http://litv.zapi.us.kg/?id=4gtv-4gtv043
-华仁纪实,http://litv.zapi.us.kg/?id=4gtv-4gtv013
-时尚运动,http://litv.zapi.us.kg/?id=4gtv-4gtv014
-生活英语,http://litv.zapi.us.kg/?id=litv-longturn20
-采昌影剧,http://litv.zapi.us.kg/?id=4gtv-4gtv049
-数位电影,http://litv.zapi.us.kg/?id=4gtv-4gtv011
-Amc电影,http://litv.zapi.us.kg/?id=4gtv-4gtv017
-CAT电影,http://litv.zapi.us.kg/?id=4gtv-4gtv076
-TRA体育,http://litv.zapi.us.kg/?id=4gtv-4gtv077
-SMArt知识台,http://litv.zapi.us.kg/?id=litv-longturn19
-GLO-Bet,http://litv.zapi.us.kg/?id=4gtv-4gtv016
-TRACEU,http://litv.zapi.us.kg/?id=4gtv-4gtv082
-MEZZOl,http://litv.zapi.us.kg/?id=4gtv-4gtv083
-Ginx_TV,http://litv.zapi.us.kg/?id=4gtv-4gtv053
+凤凰资讯,http://ali.hlspull.yximgs.com/live/8d92016e9a791ff8f0d9f1a48e75a7c8.flv
+凤凰中文,http://ali.hlspull.yximgs.com/live/e85ae002c9ae52e93c3c7f85e143b5cb.flv
+凤凰香港,http://ali.hlspull.yximgs.com/live/820c9a3c59d8784e65008c4b35312ffa.flv
+星空,http://ali.hlspull.yximgs.com/live/facf94ac3441dc4e5f8e48d1eeb18045.flv
+TVB 无线新闻台,http://ali.hlspull.yximgs.com/live/d2331250dd26e1f49447324dcd5b7c68.flv
+TVB 亚洲剧台,http://ali.hlspull.yximgs.com/live/f9ceddf2f6a10e46941498e22ac32d0c.flv
+TVB 娱乐新闻台,http://ali.hlspull.yximgs.com/live/6425965d63a08c85ca806bfcc8c75cf4.flv
+J2,http://ali.hlspull.yximgs.com/live/20200da7059a0e48422514d60f64211a.flv
+TVB 明珠台,http://ali.hlspull.yximgs.com/live/74479feaf11475ffda3b4e4bea3823ad.flv
+TVB 华语剧台,http://ali.hlspull.yximgs.com/live/216a2d2deadf454ec6253cb550157f15.flv
+天映经典,http://ali.hlspull.yximgs.com/live/5b82da188c0217a6eded085cbed369c9.flv
+香港卫视,http://ali.hlspull.yximgs.com/live/92ebd2b6ea20fab0e4b56fbb4ab8b5cb.flv
+C18跑马,http://ali.hlspull.yximgs.com/live/5c1d9d7f5818a41adc44a46f57d2f17b.flv
+美亚电影粤,http://ali.hlspull.yximgs.com/live/a5b1cad2ce82d2ce99ca6662785446d1.flv
+龍祥电影,http://ali.hlspull.yximgs.com/live/62cde5be2b387b5d597a671c341e31a5.flv
+AXN,http://ali.hlspull.yximgs.com/live/10f38a772f10cd602f203c2704c5301e.flv
+霹雳台湾,http://ali.hlspull.yximgs.com/live/8e6de079ff3f8402c2396fe848c62a02.flv
+壹新闻 HD,http://ali.hlspull.yximgs.com/live/7c69a997402ff8b33fa5b7b9b9bd072a.flv
+年代新闻,http://ali.hlspull.yximgs.com/live/23efa1a517301ec1030b8e43d7f73724.flv
+年代,http://ali.hlspull.yximgs.com/live/0a84d414be3b4653bdb55a4ddb30c21d.flv
+三立台湾台,http://ali.hlspull.yximgs.com/live/6c54ea45c1df30a5073de2d9825e1fa9.flv
+纬来戏剧,http://ali.hlspull.yximgs.com/live/f8863f9299f02ba05b5e21063d04115c.flv
+纬来日本,http://ali.hlspull.yximgs.com/live/bfb4914cbc7424fcc00b9d2fb14f1fa8.flv
+动物星球,http://ali.hlspull.yximgs.com/live/kqO9ne37zu3u70JZR2tEExA4GN9n6WHF.flv
+东森幼幼,http://ali.hlspull.yximgs.com/live/e5465dcf10ee934925ba7ac335682d24.flv
+东森电影,http://ali.hlspull.yximgs.com/live/4df7ad1ab9d3a3cf9053d3134f190ff6.flv
+东森洋片,http://ali.hlspull.yximgs.com/live/2d010027189a2bb351babe3520b47514.flv
+东森戏剧,http://ali.hlspull.yximgs.com/live/25874afe944f1b6315549db1cbc0f5e6.flv
+美亚电影频粤,http://php.jdshipin.com:8880/TVOD/iptv.php?id=meiya
+美亚电影台,https://iptv.vip-tptv.xyz/tv.php?id=1
+台视,http://wanjiatv.net/tv/4g66.php?p=3
+翡翠台4K,http://cdn.132.us.kg/live/fct4k/stream.m3u8
+TVB翡翠,http://cdn9.1689.us.kg/smt1.1.php?id=jade_twn
+TVB星河,http://cdn9.1689.us.kg/smt1.1.php?id=Xinhe
+TVB J1,http://cdn3.132.us.kg/live/j1/stream.m3u8
+TVB PLUS,http://cdn.132.us.kg/live/tvbp/stream.m3u8
+无线新闻,http://cdn9.1689.us.kg/smt1.1.php?id=inews_twn
+无线翡翠,http://cdn9.1689.us.kg/smt1.1.php?id=jade_twn
+无线翡翠,http://cdn2.1689.us.kg/live/?id=gdfct
+无线华丽,http://cdn9.1689.us.kg/smt1.1.php?id=Tvbjade
+凤凰资讯,http://cdn3.132.us.kg/live/fhzx/stream.m3u8
+凤凰中文,http://cdn.132.us.kg/live/fhzw/stream.m3u8
+HOY TV,http://cdn.132.us.kg/live/hoy/stream.m3u8
+澳视澳门,http://cdn.132.us.kg/live/asam/stream.m3u8
+澳视卫星,http://cdn.132.us.kg/live/as/stream.m3u8
 
 
 环球电视频道,http://zb.xzxwhcb.com:9999/hls/world.m3u8
