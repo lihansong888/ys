@@ -2687,10 +2687,10 @@
 
 
 
-https://git.acwing.com/Mix2025/0/-/raw/0/Mix1.txt
 
 
-"url": "https://git.acwing.com/Mix2025/0/-/raw/0/Mix1.txt",
+
+"url": "https://cyuan.netlify.app/tvbox/lives/18+/18%F0%9F%88%B2%EF%B8%8F.txt",
 "epg": "http://epg.112114.xyz/?ch={name}&date={date}"}],
 
 
@@ -3365,14 +3365,7 @@ https://git.acwing.com/Mix2025/0/-/raw/0/Mix1.txt
 
 
 "sites":[
-{  
-      "key": "黑软松视开通17QQ群157665600",
-      "name": "💎黑软4花🔞VIP💎",
-      "type": 0,
-      "api": "https://www.gdlsp.com/api/xml.php",
-      "searchable": 0,
-      "quickSearch": 0
-       }]
+{"key":"LBZY","name":"高清4K影视CR版","type":1,"api":"http://fhapi9.com/api.php/provide/vod/","searchable":0,"quickSearch":0}]
 
 
 
