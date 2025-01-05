@@ -1968,7 +1968,14 @@ Alba XXX HD1 +1 ,http://iptvtree.net:8080/resplice/wdLIS4d9758INyuX/296945 Alba 
 
 
 
-
+正式松視1臺,http://ali.hlspull.yximgs.com/live/49a5e726a66605bbf1359298ee9d7dec.flv
+正式松視2臺,http://ali.hlspull.yximgs.com/live/19bc4436f5db8134c365224f65332d36.flv
+正式松視3臺,http://ali.hlspull.yximgs.com/live/1ba0f4182dcc7800de029157b184ead3.flv
+正式彩虹電影臺,http://ali.hlspull.yximgs.com/live/22538f9a80c7b6edd200376418a360c8.flv
+正式潘多拉紫臺,http://ali.hlspull.yximgs.com/live/8fcf82a453e3a34bdd926d4c540656eb.flv
+正式奧世驚艷臺,http://ali.hlspull.yximgs.com/live/55b2968c15ed334cdad6efdf2fdc53f1.flv
+正式奧世香蕉臺,http://ali.hlspull.yximgs.com/live/b85ee2a8f8aa4f5e16fc9e1e4630b5c4.flv
+正式奧世写真臺,http://ali.hlspull.yximgs.com/live/e9b998ae56a593f3a66637157c404f46.flv
 
 
 
