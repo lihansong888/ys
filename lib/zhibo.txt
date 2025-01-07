@@ -179,7 +179,7 @@ ZooMoo,http://aktv.top/AKTV/live/aktv3/zoomoo/AKTV.m3u8
 
 
 
-CHC电影频道,#genre#
+
 
 
 
@@ -919,7 +919,31 @@ A计划续集,https://vip.ffzy-play7.com/20221115/4412_bf4bdaf6/index.m3u8
 食叔干锅牛蛙,https://vd4.bdstatic.com/mda-neu9v10u2tk22kwt/480p/h264/1653808467692279237/mda-neu9v10u2tk22kwt.mp4?v_from_s=hkapp-haokan-hnb&auth_key=1655033139-0-0-6ffe17fd9a49c1b38bd9efbed61a05e8&bcevod_channel=searchbox_feed&pd=1&cd=0&pt=3&logid=3339243039&vid=14953153288685054828&abtest=all
 食叔酱焖牛棒骨,https://vd2.bdstatic.com/mda-nerafr1ft7affzwk/480p/h264/1653552110960778877/mda-nerafr1ft7affzwk.mp4?auth_key=1655033260-0-0-e4c291de85acb14f57b8728592bce8d0&bcevod_channel=searchbox_feed&pd=1&cd=0&pt=3&logid=3460184673&vid=12330119679350378689&abtest=all
 
-
+家庭医疗急救基础知识,#genre# 
+人工呼吸法,https://vod.youlai.cn/72de8cf0d9914731ac2fd288728b5e4a/a1a38082a6b948f2b0613cd995721d20-c65de217ed281ce147a07baae3d58939-sd.mp4 
+婴儿心脏急救法,https://vod.youlai.cn/a2be1cd81e0649478ee37e5d1ff2b9be/b92fe561abf14181959899867bae97c0-99e7a88b8037e53c68b969453e84537a-sd.mp4 
+儿童心脏骤停法,https://vod.youlai.cn/54ffd34a01e04bf5b646aee765bc0aba/d99caa428ec542479c912699859cf1c4-d0d3fd20a6f674cfe9c9582810ac86e3-sd.mp4 
+成年人心脏骤停急救法,https://vod.youlai.cn/e9f758ed68794b2ab9cdc7dbb6b7cc45/2e477278fa004167a4e5bc595bd60a62-987d9ce98cbb9609e5ac4c09e440a68a-sd.mp4 
+止血,https://vod.youlai.cn/39bef4b5e26647a0a69ed00c3a8932c5/8caa1d77d1ac45a8915f78adaea91f25-8c989b9c4fc704e73641ec75a3a7c33e-sd.mp4 
+异物窒息自救法,https://vod.youlai.cn/a9840cc3e7a844f28816462c5e861442/4d0137e859b143d9a5ae70cd4be5f8ef-54fed1bc4ea787acb0383f010b746b9f-sd.mp4 
+成年人异物卡喉急救法,https://vod.youlai.cn/e112f582bc7f48f7ac2061ad9ff77d05/089337f78dbe4376a0edc1ff1e4dc905-5bd95119a07d9e9911ddc7747b8c2b73-sd.mp4 
+孕妇或肥胖者窒息急救法,https://vod.youlai.cn/e9945800adf4483aa8b99f2ed02f7db9/e82ea3137ed644f4b45515f080acb166-92d583ece133244f04cd62c480c5b8f9-sd.mp4 
+异物卡喉自救法,https://vod.youlai.cn/7f9c1f2f3e9e4188b512dd4a678575a8/6ab269f753544196946c8db53ac7074a-e4c128779db52824e23331e967838a8b-sd.mp4 
+儿童异物窒息法,https://vod.youlai.cn/87a1b54899b84ce4b35e0229d7d11ff4/e5d9d41b5a284265b7b32cf30cf5d382-4dd371f26bde71ec0f361811f2d9a823-sd.mp4 
+肿胀处理方法,https://vod.youlai.cn/8fda9119c9534a4794db6c7a31150735/a401033c210d47e998e5439633b6113b-f2f99832467f424a877a63ca0e59ce44-sd.mp4 
+仓鼠咬伤处理方法,https://vod.youlai.cn/eeb33864357241ef87c17a56175111d4/4de857208e91439d9d572f063cd0a035-710763a01f7a7cfa8394785e5babf4b8-sd.mp4 
+岔气处理方法,https://vod.youlai.cn/bdee6ea815b947ceb141b90318f9e340/872f35e1094744aaadd94661d68d8670-6481a06ca8bcb467576a42c975bccb47-sd.mp4 
+肌肉拉伤处理方法,https://vod.youlai.cn/24f7d92424164ed79f3a5f8fc07b795e/091cc42307174a1e9471afaad7d9ea1c-d9a54d9123e2bc06fec46f276a03d188-sd.mp4 
+打耳洞红肿处理方法,https://vod.youlai.cn/5e871e5d0a5a40b2afa3fcf43189bf21/ac3f2b3b45dd4431b283b8dd33250527-53e12391161e6916f8f60c718f3ed600-sd.mp4 
+鞭炮炸伤处理方法,https://vod.youlai.cn/7cbe2aa602e647cfa9854469c98e0253/0ca8b2f345e8451c9b752be5955ee630-f73ce0dfba3961d563d3f83095cb1eb4-sd.mp4 
+脸部过敏处理方法,https://vod.youlai.cn/f41db2075a4b46868ddf0e6c3f573afe/6f0b72a7c94f43a0b673b7b9a2ba951e-41e07231176e6bad866301574ef39418-sd.mp4 
+脚扎伤处理方法,https://vod.youlai.cn/076315781c5440b89670e5853d29e4wd8/5698d77ef8844c408a25271da0283b02-ab94c988d8a8edc4922c2fe15aabde0e-sd.mp4 
+老人跌倒急救法,https://vod.youlai.cn/10e2f18bea574626ba869635ba8a70a1/c10ba0b524024cc38ef5c1f1ed3c14bb-58a4856dfb14c04e833e0f04c768327c-sd.mp4 
+擦伤处理方法,https://vod.youlai.cn/781932e07d384aa8b1561585b4ff4886/833b9b8c55304805ae060a3a35228cda-a39a84bfbf493ec6b959247c867f836b-sd.mp4 
+断指急救法,https://vod.youlai.cn/e5444074ddac4b42993e4c53128516cb/d2a91e76830348f0abad2c92e05ffeef-d3194db679534a6111a589c40e34bd02-sd.mp4 
+腿抽筋处理方法,https://vod.youlai.cn/7f2828acc5f9432881f3833f3c13c7c5/01d1195f0ae04895852098bbf4f00886-18da40cf01b9dbc6b9b5d04d3cca74b9-sd.mp4 
+脚扭伤处理方法,https://vod.youlai.cn/9ad15caadeba46f39630339787ac3bb6/b912d1569e1643ae92a0bd300942503f-5672574782b93ec8561c4b417d0e676d-sd.mp4 
+异物插入眼急救法,https://vod.youlai.cn/f5cfb00203964752aaed8ebca1d5cf32/ad515860d7034de28e6b24625fa5564d-ab7a86b8c4699758b4af49ddd309f562-sd.mp4
 
 
 💃广场舞,#genre#
