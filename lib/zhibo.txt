@@ -183,50 +183,6 @@ ZooMoo,http://aktv.top/AKTV/live/aktv3/zoomoo/AKTV.m3u8
 
 
 
-台视,hhttp://61.163.58.154:1321/kdsmua/cs.php?id=17
-民视,http://61.163.58.154:1321/kdsmua/cs.php?id=18
-中视,http://61.163.58.154:1321/kdsmua/cs.php?id=19
-华视,http://61.163.58.154:1321/kdsmua/cs.php?id=20
-TVBS,http://61.163.58.154:1321/kdsmua/cs.php?id=21
-TVBS Pius,http://61.163.58.154:1321/kdsmua/cs.php?id=22
-TVBS新闻,http://61.163.58.154:1321/kdsmua/cs.php?id=23
-中天亚洲,http://61.163.58.154:1321/kdsmua/cs.php?id=25
-三立INEW,http://61.163.58.154:1321/kdsmua/cs.php?id=27
-寰宇新闻,http://61.163.58.154:1321/kdsmua/cs.php?id=28
-寰宇台湾,http://61.163.58.154:1321/kdsmua/cs.php?id=29
-寰宇财经,http://61.163.58.154:1321/kdsmua/cs.php?id=30
-台视新闻,http://61.163.58.154:1321/kdsmua/cs.php?id=31
-台视财经,http://61.163.58.154:1321/kdsmua/cs.php?id=32
-中视新闻,http://61.163.58.154:1321/kdsmua/cs.php?id=33
-镜新闻,http://61.163.58.154:1321/kdsmua/cs.php?id=34
-东森新闻,http://61.163.58.154:1321/kdsmua/cs.php?id=35
-东森财经,http://61.163.58.154:1321/kdsmua/cs.php?id=36
-半岛新闻,http://61.163.58.154:1321/kdsmua/cs.php?id=37
-民视新闻,http://61.163.58.154:1321/kdsmua/cs.php?id=38
-民视台湾,http://61.163.58.154:1321/kdsmua/cs.php?id=39
-八大精彩,http://61.163.58.154:1321/kdsmua/cs.php?id=40
-东森电影,http://61.163.58.154:1321/kdsmua/cs.php?id=41
-美亚电影,http://61.163.58.154:1321/kdsmua/cs.php?id=42
-东森洋片,http://61.163.58.154:1321/kdsmua/cs.php?id=43
-东森戏剧台,http://61.163.58.154:1321/kdsmua/cs.php?id=44
-东森电影台,http://61.163.58.154:1321/kdsmua/cs.php?id=45
-东森洋片台,http://61.163.58.154:1321/kdsmua/cs.php?id=46
-龙祥电影台,http://61.163.58.154:1321/kdsmua/cs.php?id=47
-龙华戏剧台,http://61.163.58.154:1321/kdsmua/cs.php?id=48
-龙华洋片台,http://61.163.58.154:1321/kdsmua/cs.php?id=49
-靖天电影,http://61.163.58.154:1321/kdsmua/cs.php?id=50
-龙华电影,http://61.163.58.154:1321/kdsmua/cs.php?id=51
-龙华经典,http://61.163.58.154:1321/kdsmua/cs.php?id=52
-ELTA影剧台,http://61.163.58.154:1321/kdsmua/cs.php?id=53
-影迷电影,http://61.163.58.154:1321/kdsmua/cs.php?id=54
-AMC电影,http://61.163.58.154:1321/kdsmua/cs.php?id=55
-中视经典,http://61.163.58.154:1321/kdsmua/cs.php?id=56
-台湾戏剧,http://61.163.58.154:1321/kdsmua/cs.php?id=57
-纬来体育,http://61.163.58.154:1321/kdsmua/cs.php?id=58
-HBO,http://61.163.58.154:1321/kdsmua/cs.php?id=59
-HBO,http://61.163.58.154:1321/kdsmua/cs.php?id=60
-HBODH,http://61.163.58.154:1321/kdsmua/cs.php?id=61
-AXN,http://61.163.58.154:1321/kdsmua/cs.php?id=62
 
 
 
