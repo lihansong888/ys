@@ -175,7 +175,7 @@ ZooMoo,http://aktv.top/AKTV/live/aktv3/zoomoo/AKTV.m3u8
 
 无线星河频粤,http://v2h.jdshipin.com/xinghe_1/xinghe_1.stream/chunklist_w106.m3u8
 Now爆谷频道,http://205.185.123.236:8899/1/baogutai/baogu.m3u8
-美亚电影频粤,http://php.jdshipin.com:8880/TVOD/iptv.php?id=meiya
+
 天映频道马国,http://205.185.123.236:8899/astro/tianying/tianying.m3u8
 RTHK-31频陆,p3p://108.181.32.169:14521/64101f330006ab429853d45f7940453b
 
@@ -185,15 +185,7 @@ RTHK-33频道,https://rthktv33-live.akamaized.net/hls/live/2101641/RTHKTV33/stre
 
 RTHK-34频道,https://rthktv34-live.akamaized.net/hls/live/2101642/RTHKTV34/stream04/streamPlaylist.m3u8
 香港_C+_频道,http://ottproxy2.ist.ooo/livehls/MOB-U1-NO/03.m3u8
-澳门莲花频道,http://php.jdshipin.com:8880/amlh.php
 
-澳视澳门频道,http://grandprix2023.asuscomm.com:8891/bysid/91.m3u8
-
-澳视葡语频道,http://grandprix2023.asuscomm.com:8891/bysid/92.m3u8
-
-澳门资讯频道,http://grandprix2023.asuscomm.com:8891/bysid/94.m3u8
-
-澳门mac频道,http://grandprix2023.asuscomm.com:8891/bysid/96.m3u8
 
 重温经典频道,http://ali.hlspull.yximgs.com/live/awei_cwjd.flv
 
