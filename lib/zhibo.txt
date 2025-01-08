@@ -165,10 +165,7 @@ ZooMoo,http://aktv.top/AKTV/live/aktv3/zoomoo/AKTV.m3u8
 港澳台4gtv,#genre#
 
 
-凤凰中文AKtv,http://aktv.top/AKTV/live/aktv/null-3/AKTV.m3u8
 
-凤凰资讯AKtv,http://aktv.top/AKTV/live/aktv/null-4/AKTV.m3u
-鳳凰資訊,http://aktv.top/AKTV/live/aktv/null-4/AKTV.m3u8
 星空卫视频道,http://122.224.58.42:85/tsfile/live/1024_1.m3u8?key=txiptv&playlive=1&authid=0
 无线华丽频粤,http://v2h.jdshipin.com/jade2/jade.stream/chunklist_w100.m3u8
 无线直播频道,http://v2h.jdshipin.com/liveshow/liveshow.stream/chunklist_w10.m3u8
