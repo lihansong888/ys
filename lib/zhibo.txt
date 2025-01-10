@@ -524,6 +524,13 @@ FOCUS,http://38.64.72.148:80/hls/modn/list/4005/playlist.m3u8
 
 
 
+
+
+
+
+
+
+
 周末狂欢夜,#genre#
 
 
@@ -531,7 +538,6 @@ Hustler,http://193.111.244.35:7474/hustlerhd/manifest.m3u8
 
 
 
-チャンネルNECO,https://stream01.willfonk.com/live_playlist.m3u8?cid=CS223&r=FHD&ccode=JP&m=d0:20:20:04:35:cc&t=0d6938cb3dcf4b79848bc1753a59d#https://stream01.willfonk.com/live_playlist.m3u8?cid=CS223&r=FHD&ccode=JP&m=d0:20:20:04:35:cc&t=0d6938cb3dcf4b79848bc1753a59daf1
 
 
 
