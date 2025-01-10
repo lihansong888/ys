@@ -549,6 +549,154 @@ CHC动作电影,http://[2409:8087:7008:20::2]/dbiptv.sn.chinamobile.com/PLTV/888
 
 
 
+iHOT频道,#genre#
+iHOT 爱院线,http://[2409:8087:5e00:24::029]:6610/000000001000/2000000004000000034/index.m3u8?stbId=3&livemode=1&HlsProfileId=&channel-id=hnbblive&Contentid=2000000004000000034&IASHttpSessionId=OTT19019320240419154124000281
+iHOT 爱科幻,http://[2409:8087:5e00:24::029]:6610/000000001000/2000000004000000033/index.m3u8?stbId=3&livemode=1&HlsProfileId=&channel-id=hnbblive&Contentid=2000000004000000033&IASHttpSessionId=OTT19019320240419154124000281
+iHOT 爱浪漫,http://[2409:8087:5e00:24::029]:6610/000000001000/2000000004000000035/index.m3u8?stbId=3&livemode=1&HlsProfileId=&channel-id=hnbblive&Contentid=2000000004000000035&IASHttpSessionId=OTT19019320240419154124000281
+iHOT 爱喜剧,http://[2409:8087:5e00:24::029]:6610/000000001000/2000000004000000032/index.m3u8?stbId=3&livemode=1&HlsProfileId=&channel-id=hnbblive&Contentid=2000000004000000032&IASHttpSessionId=OTT19019320240419154124000281
+iHOT 爱悬疑,http://[2409:8087:5e00:24::029]:6610/000000001000/2000000004000000036/index.m3u8?stbId=3&livemode=1&HlsProfileId=&channel-id=hnbblive&Contentid=2000000004000000036&IASHttpSessionId=OTT19019320240419154124000281
+iHOT 爱赛车,http://[2409:8087:5e00:24::029]:6610/000000001000/2000000004000000055/index.m3u8?stbId=3&livemode=1&HlsProfileId=&channel-id=hnbblive&Contentid=2000000004000000055&IASHttpSessionId=OTT19019320240419154124000281
+iHOT 爱体育,http://[2409:8087:5e00:24::029]:6610/000000001000/2000000004000000060/index.m3u8?stbId=3&livemode=1&HlsProfileId=&channel-id=hnbblive&Contentid=2000000004000000060&IASHttpSessionId=OTT19019320240419154124000281
+iHOT 爱奇谈,http://[2409:8087:5e00:24::029]:6610/000000001000/2000000004000000058/index.m3u8?stbId=3&livemode=1&HlsProfileId=&channel-id=hnbblive&Contentid=2000000004000000058&IASHttpSessionId=OTT19019320240419154124000281
+iHOT 爱玩具,http://[2409:8087:5e00:24::029]:6610/000000001000/2000000004000000053/index.m3u8?stbId=3&livemode=1&HlsProfileId=&channel-id=hnbblive&Contentid=2000000004000000053&IASHttpSessionId=OTT19019320240419154124000281
+iHOT 爱旅行,http://[2409:8087:5e00:24::029]:6610/000000001000/2000000004000000056/index.m3u8?stbId=3&livemode=1&HlsProfileId=&channel-id=hnbblive&Contentid=2000000004000000056&IASHttpSessionId=OTT19019320240419154124000281
+iHOT 爱幼教,http://[2409:8087:5e00:24::029]:6610/000000001000/2000000004000000049/index.m3u8?stbId=3&livemode=1&HlsProfileId=&channel-id=hnbblive&Contentid=2000000004000000049&IASHttpSessionId=OTT19019320240419154124000281
+iHOT 爱谍战,http://[2409:8087:5e00:24::029]:6610/000000001000/2000000004000000038/index.m3u8?stbId=3&livemode=1&HlsProfileId=&channel-id=hnbblive&Contentid=2000000004000000038&IASHttpSessionId=OTT19019320240419154124000281
+iHOT 爱历史,http://[2409:8087:5e00:24::029]:6610/000000001000/2000000004000000046/index.m3u8?stbId=3&livemode=1&HlsProfileId=&channel-id=hnbblive&Contentid=2000000004000000046&IASHttpSessionId=OTT19019320240419154124000281
+iHOT 爱科学,http://[2409:8087:5e00:24::029]:6610/000000001000/2000000004000000047/index.m3u8?stbId=3&livemode=1&HlsProfileId=&channel-id=hnbblive&Contentid=2000000004000000047&IASHttpSessionId=OTT19019320240419154124000281
+iHOT 爱动漫,http://[2409:8087:5e00:24::029]:6610/000000001000/2000000004000000059/index.m3u8?stbId=3&livemode=1&HlsProfileId=&channel-id=hnbblive&Contentid=2000000004000000059&IASHttpSessionId=OTT19019320240419154124000281
+iHOT 爱动漫,http://[2409:8087:5e00:24::029]:6610/000000001000/2000000004000000059/index.m3u8?stbId=3&livemode=1&HlsProfileId=&channel-id=hnbblive&Contentid=2000000004000000059&IASHttpSessionId=OTT19019320240419154124000281
+
+
+
+
+NewTV频道,#genre#
+
+NewTV 古装剧场,http://[2409:8087:1a01:df::7005]/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225663/index.m3u8
+NewTV 动作电影,http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225661/index.m3u8
+NewTV 农业致富,http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225683/index.m3u8
+NewTV 超级体育,http://[2409:8087:5e08:24::d]:6610/000000001000/1000000001000009601/index.m3u8?channel-id=ystenlive&Contentid=1000000001000009601&livemode=1&stbId=YanG-1989
+NewTV 超级电影,http://[2409:8087:1a01:df::7005]:80/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225717/index.m3u8
+NewTV 超级电视剧,http://[2409:8087:1a01:df::7005]:80/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225716/index.m3u8
+NewTV 东北热剧,http://[2409:8087:1a01:df::7005]:80/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225741/index.m3u8
+NewTV 海外剧场,http://[2409:8087:1a01:df::7005]:80/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225671/index.m3u8
+NewTV 中国功夫,http://[2409:8087:1a01:df::7005]:80/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225681/index.m3u8
+NewTV 军旅剧场,http://[2409:8087:1a01:df::7005]:80/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225676/index.m3u8
+NewTV 惊悚悬疑,http://[2409:8087:1a01:df::7005]:80/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225665/index.m3u8
+NewTV 爱情喜剧,http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225669/index.m3u8
+NewTV 潮妈辣婆,http://[2409:8087:1a01:df::7005]:80/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225685/index.m3u8
+NewTV 精品体育,http://[2409:8087:1a01:df::7005]:80/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225674/index.m3u8
+NewTV 精品纪录,http://[2409:8087:1a01:df::7005]:80/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225672/index.m3u8
+NewTV 家庭剧场,http://[2409:8087:5e00:24::1e]:6060/200000001898/460000089800010074/1.m3u8
+NewTV 精品大剧,http://[2409:8087:1a01:df::7005]:80/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225670/index.m3u8
+NewTV 军事评论,http://[2409:8087:1a01:df::7005]:80/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225668/index.m3u8
+NewTV 明星大片,http://[2409:8087:1a01:df::7005]:80/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225664/index.m3u8
+NewTV 欢乐剧场,http://[2409:8087:1a01:df::7005]:80/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225742/index.m3u8
+NewTV 精品萌宠,http://[2409:8087:1a01:df::7005]:80/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226505/index.m3u8
+NewTV 超级综艺,http://[2409:8087:1a01:df::7005]:80/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225714/index.m3u8
+NewTV 金牌综艺,http://[2409:8087:1a01:df::7005]:80/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225666/index.m3u8
+NewTV 魅力潇湘,http://[2409:8087:5e00:24::029]:6610/000000001000/2000000003000000041/index.m3u8?stbId=3&livemode=1&HlsProfileId=&channel-id=hnbblive&Contentid=2000000003000000041&IASHttpSessionId=OTT19019320240419154124000281
+NewTV 炫舞未来,http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225719/index.m3u8
+NewTV 武搏世界,http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225680/index.m3u8
+NewTV 怡伴健康,http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225673/index.m3u8
+
+
+埋堆堆,#genre#
+埋堆堆1,http://1.94.31.214:35455/huya/29465854
+埋堆堆2,http://1.94.31.214:35455/huya/29465849
+埋堆堆3,http://1.94.31.214:35455/huya/23728660
+埋堆堆4,http://1.94.31.214:35455/huya/29465859
+埋堆堆5,http://1.94.31.214:35455/huya/23903123
+埋堆堆6,http://jiaojirentv.top/2020/yy.php?id=28265277
+埋堆堆7,https://lunbo.freetv.top/yy/28265277
+埋堆堆8,http://1.94.31.214:35455/huya/29465848
+埋堆堆9,https://lunbo.freetv.top/yy/1382851591
+埋堆堆10,http://1.94.31.214:35455/huya/23728674
+埋堆堆11,http://1.94.31.214:35455/huya/23865171
+埋堆堆12,http://1.94.31.214:35455/huya/23824164
+埋堆堆13,http://1.94.31.214:35455/huya/23734246
+埋堆堆14,http://1.94.31.214:35455/huya/23865142
+埋堆堆15,http://1.94.31.214:35455/huya/29465856
+埋堆堆16,http://1.94.31.214:35455/huya/23863804
+埋堆堆17,http://1.94.31.214:35455/huya/29465851
+埋堆堆18,http://1.94.31.214:35455/huya/29465857
+埋堆堆19,http://1.94.31.214:35455/huya/23734256
+埋堆堆20,http://1.94.31.214:35455/huya/23903183
+埋堆堆21,http://1.94.31.214:35455/huya/23865036
+埋堆堆22,http://1.94.31.214:35455/huya/29465855
+埋堆堆23,http://1.94.31.214:35455/huya/29465852
+埋堆堆24,http://1.94.31.214:35455/huya/29465853
+埋堆堆25,http://1.94.31.214:35455/huya/23865161
+埋堆堆26,http://1.94.31.214:35455/huya/23863796
+埋堆堆27,http://1.94.31.214:35455/huya/29465858
+
+
+
+电视剧轮播,#genre#
+延禧攻略,http://223.85.105.11/test-txdwk.flv.huya.com/src/1099531840940-1099531840940-86814878328684544-2199063805336-10057-A-0-1.m3u8
+延禧攻略,#http://www.52sw.top:678/play/huya.php?id=26355864
+琅琊榜,http://zby.xjqxz.top/lyb/live.m3u8
+新三国,http://223.85.105.11/test-txdwk.flv.huya.com/src/1423787831-1423787831-6115122170587774976-2847699118-10057-A-0-1.m3u8
+新三国,#http://huanqiuzhibo.cn/manifest/huya.php?id=11352944
+新水浒传,http://223.85.105.11/test-txdwk.flv.huya.com/src/1394565188-1394565188-5989611874600091648-2789253832-10057-A-0-1.m3u8
+新水浒传,#http://huanqiuzhibo.cn/manifest/huya.php?id=11342384
+少年包青天第一部,http://jiaojirentv.top/2020/yy.php?id=38498680
+少年包青天第一部,#http://jiaojirentv.top/2020/yy.php?id=1356043677
+少年包青天第三部,http://jiaojirentv.top/2020/yy.php?id=1382736814
+神探狄仁杰第一部,http://223.85.105.11/test-txdwk.flv.huya.com/src/1423787855-1423787855-6115122273666990080-2847699166-10057-A-0-1.m3u8
+神探狄仁杰第一部,#http://huanqiuzhibo.cn/manifest/huya.php?id=11352958
+神探狄仁杰第二部,http://jiaojirentv.top/2020/yy.php?id=1382851146
+神探狄仁杰第三部,http://223.85.105.11/test-txdwk.flv.huya.com/src/1394575548-1394575548-5989656370461278208-2789274552-10057-A-0-1.m3u8
+神探狄仁杰第三部,#http://huanqiuzhibo.cn/manifest/huya.php?id=11342425
+爱情公寓,http://223.85.105.11/test-txdwk.flv.huya.com/src/1388474069-1388474069-5963450717699047424-2777071594-10057-A-0-1.m3u8
+爱情公寓,#http://huanqiuzhibo.cn/manifest/huya.php?id=11336726
+欢乐颂,http://zzy789.xyz/douyu1.php?id=3756989
+亮剑,http://182.40.120.191/test-txdwk.flv.huya.com/src/1239543153972-1239543153972-11135015062081634304-2479086431400-10057-A-0-1.m3u8
+亮剑,#http://huanqiuzhibo.cn/manifest/huya.php?id=30080238
+雪豹,http://1.94.31.214:35455/huya/29580970
+特种兵之火凤凰,http://223.85.105.11/test-txdwk.flv.huya.com/src/1239543150714-1239543150714-11135001069078183936-2479086424884-10057-A-0-1.m3u8
+特种兵之火凤凰,#http://huanqiuzhibo.cn/manifest/huya.php?id=29982636
+士兵突击,http://1.94.31.214:35455/huya/11342430
+笑傲江湖,http://1.94.31.214:35455/huya/26355790
+神雕侠侣,http://1.94.31.214:35455/huya/11352964
+天龙八部,http://223.85.105.11/test-txdwk.flv.huya.com/src/1099531752675-1099531752675-86435783040303104-2199063628806-10057-A-0-1.m3u8
+倚天屠龙记,http://1.94.31.214:35455/huya/11342403
+铁齿铜牙纪晓岚,http://1.94.31.214:35455/huya/11342396
+康熙王朝,http://1.94.31.214:35455/huya/11352940
+陈情令,http://182.40.120.195/test-txdwk.flv.huya.com/src/1239543150218-1239543150218-11134998938774405120-2479086423892-10057-A-0-1.m3u8
+陈情令,#http://www.52sw.top:678/play/huya.php?id=29465862
+庆余年,http://1.94.31.214:35455/huya/11352960
+庆余年,#http://live.iill.top/huya.php?id=11352960
+庆余年,#http://cdn.jdshipin.com:8880/huya.php?id=11352960
+庆余年,#http://live.metshop.top/huya/11352960
+鬼吹灯之精绝古城,http://1.94.31.214:35455/huya/11352871
+鬼吹灯之怒晴湘西,http://1.94.31.214:35455/huya/11602075
+鬼吹灯之龙岭迷窟,http://1.94.31.214:35455/huya/29465863
+鬼吹灯之云南虫谷,http://1.94.31.214:35455/huya/11352898
+伪装者,http://jiaojirentv.top/2020/yy.php?id=1354936244
+西游记后传,http://jiaojirentv.top/2020/yy.php?id=1353392400
+隋唐英雄传,http://jiaojirentv.top/2020/yy.php?id=1352475619
+仙剑奇侠传,http://jiaojirentv.top/2020/yy.php?id=1382749903
+西游记续集,http://zzy789.xyz/douyu1.php?id=3113309
+我是特种兵之利刃出鞘,http://jiaojirentv.top/2020/yy.php?id=37999586
+狂飙,http://jiaojirentv.top/2020/yy.php?id=1355142167
+三国演义,http://jiaojirentv.top/2020/yy.php?id=1354930932
+三国演义,#https://lunbo.freetv.top/yy/1354930932
+三国演义,#http://live.metshop.top/huya/11602081
+新白娘子传奇,http://jiaojirentv.top/2020/yy.php?id=1354490667
+西游记,http://1.94.31.214:35455/huya/26355861
+乌龙闯情关,http://1.94.31.214:35455/huya/26355767
+家有儿女,http://1.94.31.214:35455/huya/30335591
+永夜星河,http://1.94.31.214:35455/huya/23734169
+柳舟计,http://1.94.31.214:35455/huya/23860039
+玫瑰的故事,http://1.94.31.214:35455/huya/23865142
+梦中的那片海,http://1.94.31.214:35455/huya/26355765
+大秦赋,http://1.94.31.214:35455/huya/23903130
+唐诡之西行,http://1.94.31.214:35455/huya/26355763
+
+
+
+
 星影轮播,#genre#
 【周星星】星爷经典不间断,http://182.40.120.171/test-txdwk.flv.huya.com/src/1394575534-1394575534-5989656310331736064-2789274524-10057-A-0-1.m3u8
 英叔护体 | 林正英搞笑僵尸系列,http://182.40.120.171/test-txdwk.flv.huya.com/src/1394575543-1394575543-5989656348986441728-2789274542-10057-A-0-1.m3u8
