@@ -523,6 +523,31 @@ FOCUS,http://38.64.72.148:80/hls/modn/list/4005/playlist.m3u8
 
 
 
+周末狂欢夜,#genre#
+香蕉,http://s.mrw.so/94E7W
+惊艳,http://suo.im/8odLv
+潘多拉,http://suo.im/6TuSG
+彩虹电影,http://suo.im/9sOLD
+松视1,http://suo.im/c4FP2
+松视2,http://b.mtw.so/6pAjsB
+松视3,http://suo.im/9wiS2
+pigoo,http://s.mrw.so/7DlB
+
+香蕉,http://s.mrw.so/94E7W
+惊艳,http://suo.im/8odLv
+潘多拉,http://suo.im/6TuSG
+彩虹电影,http://suo.im/9sOLD
+松视1,http://suo.im/c4FP2
+松视2,http://b.mtw.so/6pAjsB
+松视3,http://suo.im/9wiS2
+pigoo,http://s.mrw.so/7DlBI
+
+
+
+
+
+
+
 
 
 
