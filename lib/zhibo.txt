@@ -538,7 +538,9 @@ FOCUS,http://38.64.72.148:80/hls/modn/list/4005/playlist.m3u8
 
 
 
-
+Eroxxx,http://88.212.7.11/live/test_eroxxx_hd_hevc/playlist.m3u8
+Extasy,http://88.212.7.11/live/test_extasy_hd_hevc/playlist.m3u8
+Erox HD,http://88.212.7.11/live/test_erox_hd_hevc/playlist.m3u8
 
 
 
