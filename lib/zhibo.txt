@@ -526,7 +526,64 @@ FOCUS,http://38.64.72.148:80/hls/modn/list/4005/playlist.m3u8
 
 
 
-
+数字「IPV6」,#genre#
+中国天气「IPV6」,http://[2409:8087:5e00:24::20]:6610/000000001000/1/5000000005000031974/index.m3u8?channel-id=bestzb&Contentid=5000000005000031974&livemode=1&stbId=YanG-1989
+CHC_家庭影院「IPV6」,http://[2409:8087:7008:20::8]/dbiptv.sn.chinamobile.com/PLTV/88888888/224/3221226462/1.m3u8
+CHC_动作电影「IPV6」,http://[2409:8087:7008:20::2]/dbiptv.sn.chinamobile.com/PLTV/88888888/224/3221226465/1.m3u8
+CHC_影迷电影「IPV6」,http://[2409:8087:7008:20::8]/dbiptv.sn.chinamobile.com/PLTV/88888888/224/3221226463/1.m3u8
+求索纪录「IPV6」,http://[2409:8087:5e00:24::20]:6610/000000001000/1/6000000002000032052/index.m3u8?channel-id=wasusyt&Contentid=6000000002000032052&livemode=1&stbId=YanG-1989
+求索生活「IPV6」,http://[2409:8087:5e00:24::20]:6610/000000001000/1/6000000002000003382/index.m3u8?channel-id=wasusyt&Contentid=6000000002000003382&livemode=1&stbId=YanG-1989
+求索动物「IPV6」,http://[2409:8087:5e00:24::20]:6610/000000001000/1/6000000002000010046/index.m3u8?channel-id=wasusyt&Contentid=6000000002000010046&livemode=1&stbId=YanG-1989
+求索科学「IPV6」,http://[2409:8087:5e00:24::20]:6610/000000001000/1/6000000002000032344/index.m3u8?channel-id=wasusyt&Contentid=6000000002000032344&livemode=1&stbId=YanG-1989
+SiTV_五星体育「IPV6」,http://[2409:8087:5e00:24::20]:6610/000000001000/1/5000000010000017540/index.m3u8?channel-id=bestzb&Contentid=5000000010000017540&livemode=1&stbId=YanG-1989
+SiTV_劲爆体育「IPV6」,http://[2409:8087:5e00:24::20]:6610/000000001000/1/5000000002000029972/index.m3u8?channel-id=bestzb&Contentid=5000000002000029972&livemode=1&stbId=YanG-1989
+SiTV_魅力足球「IPV6」,http://[2409:8087:5e00:24::20]:6610/000000001000/1/5000000011000031207/index.m3u8?channel-id=bestzb&Contentid=5000000011000031207&livemode=1&stbId=YanG-1989
+SiTV_欢笑剧场「IPV6」,http://[2409:8087:5e00:24::20]:6610/000000001000/1/5000000002000009455/index.m3u8?channel-id=bestzb&Contentid=5000000002000009455&livemode=1&stbId=YanG-1989
+SiTV_法治天地「IPV6」,http://[2409:8087:5e00:24::20]:6610/000000001000/1/9001547084732463424/index.m3u8?channel-id=bestzb&Contentid=9001547084732463424&livemode=1&stbId=YanG-1989
+SiTV_乐游「IPV6」,http://[2409:8087:5e00:24::20]:6610/000000001000/1/5000000011000031112/index.m3u8?channel-id=bestzb&Contentid=5000000011000031112&livemode=1&stbId=YanG-1989
+SiTV_动漫秀场「IPV6」,http://[2409:8087:5e00:24::20]:6610/000000001000/1/5000000011000031113/index.m3u8?channel-id=bestzb&Contentid=5000000011000031113&livemode=1&stbId=YanG-1989
+SiTV_游戏风云「IPV6」,http://[2409:8087:5e00:24::20]:6610/000000001000/1/5000000011000031114/index.m3u8?channel-id=bestzb&Contentid=5000000011000031114&livemode=1&stbId=YanG-1989
+SiTV_生活时尚「IPV6」,http://[2409:8087:5e00:24::20]:6610/000000001000/1/5000000002000019634/index.m3u8?channel-id=bestzb&Contentid=5000000002000019634&livemode=1&stbId=YanG-1989
+SiTV_都市剧场「IPV6」,http://[2409:8087:5e00:24::20]:6610/000000001000/1/5000000011000031111/index.m3u8?channel-id=bestzb&Contentid=5000000011000031111&livemode=1&stbId=YanG-1989
+SiTV_金色学堂「IPV6」,http://[2409:8087:5e00:24::20]:6610/000000001000/1/5000000010000026105/index.m3u8?channel-id=bestzb&Contentid=5000000010000026105&livemode=1&stbId=YanG-1989
+SiTV_第一财经「IPV6」,http://[2409:8087:5e00:24::20]:6610/000000001000/1/5000000010000027146/index.m3u8?channel-id=bestzb&Contentid=5000000010000027146&livemode=1&stbId=YanG-1989
+SiTV_东方财经「IPV6」,http://[2409:8087:5e00:24::20]:6610/000000001000/1/5000000007000010003/index.m3u8?channel-id=bestzb&Contentid=5000000007000010003&livemode=1&stbId=YanG-1989
+SiTV_东方影视「IPV6」,http://[2409:8087:5e00:24::20]:6610/000000001000/1/5000000010000032212/index.m3u8?channel-id=bestzb&Contentid=5000000010000032212&livemode=1&stbId=YanG-1989
+SiTV_上海都市「IPV6」,http://[2409:8087:5e00:24::20]:6610/000000001000/1/5000000010000018926/index.m3u8?channel-id=bestzb&Contentid=5000000010000018926&livemode=1&stbId=YanG-1989
+SiTV_上海新闻「IPV6」,http://[2409:8087:5e00:24::20]:6610/000000001000/1/5000000011000031110/index.m3u8?channel-id=bestzb&Contentid=5000000011000031110&livemode=1&stbId=YanG-1989
+纪实科教「IPV6」,http://[2409:8087:5e00:24::20]:6610/000000001000/1/1000000001000001910/index.m3u8?channel-id=ystenlive&Contentid=1000000001000001910&livemode=1&stbId=YanG-1989
+广东珠江「IPV6」,http://[2409:8087:5e00:24::20]:6610/000000001000/1/2000000003000000033/index.m3u8?channel-id=hnbblive&Contentid=2000000003000000033&livemode=1&stbId=YanG-1989
+精彩影视「IPV6」,http://[2409:8087:5e00:24::20]:6610/000000001000/1/6000000006000320630/index.m3u8?channel-id=wasusyt&Contentid=6000000006000320630&livemode=1&stbId=YanG-1989
+卡酷少儿「IPV6」,http://[2409:8087:5e00:24::20]:6610/000000001000/1/5000000011000265008/index.m3u8?channel-id=bestzb&Contentid=5000000011000265008&livemode=1&stbId=YanG-1989
+哈哈炫动「IPV6」,http://[2409:8087:5e00:24::20]:6610/000000001000/1/5000000011000031123/index.m3u8?channel-id=bestzb&Contentid=5000000011000031123&livemode=1&stbId=YanG-1989
+金鹰卡通「IPV6」,http://[2409:8087:5e00:24::20]:6610/000000001000/1/5000000006000040024/index.m3u8?channel-id=bestzb&Contentid=5000000006000040024&livemode=1&stbId=YanG-1989
+金鹰纪实「IPV6」,http://[2409:8087:5e00:24::20]:6610/000000001000/1/5000000011000031203/index.m3u8?channel-id=bestzb&Contentid=5000000011000031203&livemode=1&stbId=YanG-1989
+茶频道「IPV6」,http://[2409:8087:5e00:24::20]:6610/000000001000/1/5000000011000031209/index.m3u8?channel-id=bestzb&Contentid=5000000011000031209&livemode=1&stbId=YanG-1989
+快乐垂钓「IPV6」,http://[2409:8087:5e00:24::20]:6610/000000001000/1/5000000011000031206/index.m3u8?channel-id=bestzb&Contentid=5000000011000031206&livemode=1&stbId=YanG-1989
+健康养生「IPV6」,http://[2409:8087:5e00:24::20]:6610/000000001000/1/5000000011000288006/index.m3u8?channel-id=bestzb&Contentid=5000000011000288006&livemode=1&stbId=YanG-1989
+星光影院「IPV6」,http://[2409:8087:5e00:24::20]:6610/000000001000/1/5000000011000288013/index.m3u8?channel-id=bestzb&Contentid=5000000011000288013&livemode=1&stbId=YanG-1989
+谍战剧场「IPV6」,http://[2409:8087:5e00:24::20]:6610/000000001000/1/5000000011000288004/index.m3u8?channel-id=bestzb&Contentid=5000000011000288004&livemode=1&stbId=YanG-1989
+华语影院「IPV6」,http://[2409:8087:5e00:24::20]:6610/000000001000/1/5000000011000288005/index.m3u8?channel-id=bestzb&Contentid=5000000011000288005&livemode=1&stbId=YanG-1989
+全球大片「IPV6」,http://[2409:8087:5e00:24::20]:6610/000000001000/1/5000000011000288009/index.m3u8?channel-id=bestzb&Contentid=5000000011000288009&livemode=1&stbId=YanG-1989
+热门剧场「IPV6」,http://[2409:8087:5e00:24::20]:6610/000000001000/1/5000000011000288010/index.m3u8?channel-id=bestzb&Contentid=5000000011000288010&livemode=1&stbId=YanG-1989
+宝宝动画「IPV6」,http://[2409:8087:5e00:24::20]:6610/000000001000/1/5000000011000288002/index.m3u8?channel-id=bestzb&Contentid=5000000011000288002&livemode=1&stbId=YanG-1989
+精品综合「IPV6」,http://[2409:8087:5e00:24::20]:6610/000000001000/1/5595720619887440144/index.m3u8?channel-id=ystenlive&Contentid=5595720619887440144&livemode=1&stbId=YanG-1989
+电竞天堂「IPV6」,http://[2409:8087:5e00:24::20]:6610/000000001000/1/5000000011000288003/index.m3u8?channel-id=bestzb&Contentid=5000000011000288003&livemode=1&stbId=YanG-1989
+热门综艺「IPV6」,http://[2409:8087:5e00:24::20]:6610/000000001000/1/5000000011000288011/index.m3u8?channel-id=bestzb&Contentid=5000000011000288011&livemode=1&stbId=YanG-1989
+戏曲精选「IPV6」,http://[2409:8087:5e00:24::20]:6610/000000001000/1/5000000011000288012/index.m3u8?channel-id=bestzb&Contentid=5000000011000288012&livemode=1&stbId=YanG-1989
+热播精选「IPV6」,http://[2409:8087:5e00:24::20]:6610/000000001000/1/7681593242002292003/index.m3u8?channel-id=ystenlive&Contentid=7681593242002292003&livemode=1&stbId=YanG-1989
+看天下精选「IPV6」,http://[2409:8087:5e00:24::20]:6610/000000001000/1/5000000011000288007/index.m3u8?channel-id=bestzb&Contentid=5000000011000288007&livemode=1&stbId=YanG-1989
+亚洲影院「IPV6」,http://[2409:8087:5e00:24::20]:6610/000000001000/1/5841816227539527643/index.m3u8?channel-id=wasusyt&Contentid=5841816227539527643&livemode=1&stbId=YanG-1989
+欧美影院「IPV6」,http://[2409:8087:5e00:24::20]:6610/000000001000/1/7185203501769528108/index.m3u8?channel-id=wasusyt&Contentid=7185203501769528108&livemode=1&stbId=YanG-1989
+探索纪录「IPV6」,http://[2409:8087:5e00:24::20]:6610/000000001000/1/5359008697329269813/index.m3u8?channel-id=wasusyt&Contentid=5359008697329269813&livemode=1&stbId=YanG-1989
+少儿动漫「IPV6」,http://[2409:8087:5e00:24::20]:6610/000000001000/1/8145334647720731271/index.m3u8?channel-id=wasusyt&Contentid=8145334647720731271&livemode=1&stbId=YanG-1989
+青春动漫「IPV6」,http://[2409:8087:5e00:24::20]:6610/000000001000/1/5000000011000288008/index.m3u8?channel-id=bestzb&Contentid=5000000011000288008&livemode=1&stbId=YanG-1989
+百变课堂「IPV6」,http://[2409:8087:5e00:24::20]:6610/000000001000/1/5000000011000288001/index.m3u8?channel-id=bestzb&Contentid=5000000011000288001&livemode=1&stbId=YanG-1989
+电子竞技「IPV6」,http://[2409:8087:5e00:24::20]:6610/000000001000/1/6000000003000011654/index.m3u8?channel-id=wasusyt&Contentid=6000000003000011654&livemode=1&stbId=YanG-1989
+风尚音乐「IPV6」,http://[2409:8087:5e00:24::20]:6610/000000001000/1/5529729098703832176/index.m3u8?channel-id=wasusyt&Contentid=5529729098703832176&livemode=1&stbId=YanG-1989
+高清娱乐「IPV6」,http://[2409:8087:5e00:24::20]:6610/000000001000/1/6000000003000001569/index.m3u8?channel-id=wasusyt&Contentid=6000000003000001569&livemode=1&stbId=YanG-1989
+漫游世界「IPV6」,http://[2409:8087:5e00:24::20]:6610/000000001000/1/6000000003000028434/index.m3u8?channel-id=wasusyt&Contentid=6000000003000028434&livemode=1&stbId=YanG-1989
+英雄联盟音乐节「IPV6」,http://[2409:8087:5e00:24::20]:6610/000000001000/1/8978605063318475207/index.m3u8?channel-id=ystenlive&Contentid=8978605063318475207&livemode=1&stbId=YanG-1989
 
 
 
@@ -546,6 +603,13 @@ CHC动作电影,http://[2409:8087:7008:20::2]/dbiptv.sn.chinamobile.com/PLTV/888
 求索科学,http://[2409:8087:5e00:24::029]:6610/000000001000/2000000004000000011/index.m3u8?stbId=3&livemode=1&HlsProfileId=&channel-id=hnbblive&Contentid=2000000004000000011&IASHttpSessionId=OTT19019320240419154124000281
 求索生活,http://[2409:8087:5e00:24::029]:6610/000000001000/2000000004000000008/index.m3u8?stbId=3&livemode=1&HlsProfileId=&channel-id=hnbblive&Contentid=2000000004000000008&IASHttpSessionId=OTT19019320240419154124000281
 求索动物,http://[2409:8087:5e00:24::029]:6610/000000001000/2000000004000000009/index.m3u8?stbId=3&livemode=1&HlsProfileId=&channel-id=hnbblive&Contentid=2000000004000000009&IASHttpSessionId=OTT19019320240419154124000281
+
+
+睛彩频道,#genre#
+晴彩广场舞「IPV6」,http://[2409:8087:5e00:24::20]:6610/000000001000/1/3000000020000011523/index.m3u8?channel-id=FifastbLive&Contentid=3000000020000011523&livemode=1&stbId=YanG-1989
+晴彩少年「IPV6」,http://[2409:8087:5e00:24::20]:6610/000000001000/1/3000000020000011525/index.m3u8?channel-id=FifastbLive&Contentid=3000000020000011525&livemode=1&stbId=YanG-1989
+晴彩竞技「IPV6」,http://[2409:8087:5e00:24::20]:6610/000000001000/1/3000000020000011528/index.m3u8?channel-id=FifastbLive&Contentid=3000000020000011528&livemode=1&stbId=YanG-1989
+晴彩篮球「IPV6」,http://[2409:8087:5e00:24::20]:6610/000000001000/1/3000000020000011529/index.m3u8?channel-id=FifastbLive&Contentid=3000000020000011529&livemode=1&stbId=YanG-1989
 
 
 
