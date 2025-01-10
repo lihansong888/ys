@@ -1202,10 +1202,40 @@ A计划续集,https://vip.ffzy-play7.com/20221115/4412_bf4bdaf6/index.m3u8
 醉拳2,https://vip.ffzy-play6.com/20221129/9308_1fceb255/index.m3u8
 醉拳3,https://vip.ffzy-play7.com/20221112/3468_38ba3d24/index.m3u8
 
+
+
+
+
+
+
+
+
+
 国际频道,#genre#
 NTV News 24 日本,https://n24-cdn-live.ntv.co.jp/ch01/index.m3u8
 HBO PLUS,http://170.254.18.106/HBO_PLUS/index.m3u8
 HBO2,http://170.254.18.106/HBO2/index.m3u8
+
+
+HBO Signature,http://170.254.18.106/HBO_SIG/index.m3u8
+HBO MUNDI,http://170.254.18.106:80/HBO_MUNDI/mono.m3u8
+HBO family,http://170.254.18.106:80/HBO_FAMILY/index.m3u8
+HBO EXTREME,http://170.254.18.106/HBO_XTREME/index.m3u8
+HBO+,http://170.254.18.106/HBO_PLUS/index.m3u8
+
+asiancrush 亚洲电影,https://amg01201-cinedigmenterta-asiancrush-cineverse-x701o.amagi.tv/playlist/amg01201-cinedigmenterta-asiancrush-cineverse/playlist.m3u8
+
+
+
+
+
+
+
+
+
+
+
+
 
 🍜乡村食谱,#genre#
 地锅鸡,https://vd4.bdstatic.com/mda-nee3w9hvysz2htkk/480p/h264/1652583640234131248/mda-nee3w9hvysz2htkk.mp4?v_from_s=hkapp-haokan-hbe&auth_key=1655033701-0-0-448270cbc0e8dd01b1d3e3e79c645ede&bcevod_channel=searchbox_feed&pd=1&cd=0&pt=3&logid=0300946132&vid=11820591972211290892&abtest=all
