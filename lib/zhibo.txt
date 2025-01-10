@@ -531,8 +531,7 @@ FOCUS,http://38.64.72.148:80/hls/modn/list/4005/playlist.m3u8
 潘多拉盒子,http://suo.im/6TuSG
 彩虹电影,http://suo.im/9sOLD
 松视1台,http://suo.im/c4FP2
-松视2台,http://b.mtw.so/6pAjsB
-松视3台,http://suo.im/9wiS2
+
 pigoo直播,http://s.mrw.so/7DlBI
 
 
