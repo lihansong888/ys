@@ -1603,6 +1603,34 @@ RM 刘在石李光洙跑男,http://182.40.120.191/test-txdwk.flv.huya.com/src/12
 
 
 
+
+
+
+
+
+
+香蕉台,http://s.mrw.so/94E7W
+惊艳台,http://suo.im/8odLv
+潘多拉盒子,http://suo.im/6TuSG
+彩虹电影,http://suo.im/9sOLD
+松视1台,http://suo.im/c4FP2
+松视2台,http://b.mtw.so/6pAjsB
+松视3台,http://suo.im/9wiS2
+pigoo直播,http://s.mrw.so/7DlBI
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 Zoom tv,http://185.236.229.62:9981/play/a02a
 日本映画専門チャンネル,https://stream01.willfonk.com/live_playlist.m3u8?cid=BS255&r=FHD&ccode=JP&m=d0:20:20:04:35:cc&t=0d6938cb3dcf4b79848bc1753a59daf1
 東映チャンネル,https://stream01.willfonk.com/live_playlist.m3u8?cid=CS218&r=FHD&ccode=JP&m=d0:20:20:04:35:cc&t=0d6938cb3dcf4b79848bc1753a59d
