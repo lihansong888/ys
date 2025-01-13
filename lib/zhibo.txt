@@ -613,9 +613,9 @@ SiTV_上海新闻「IPV6」,http://[2409:8087:5e00:24::2d]:6610/000000001000/1/5
 
 
 CHC电影频道,#genre#
-CHC_家庭影院「IPV6」,http://[2409:8087:7008:20::8]/dbiptv.sn.chinamobile.com/PLTV/88888888/224/3221226462/1.m3u8
-CHC_动作电影「IPV6」,http://[2409:8087:7008:20::2]/dbiptv.sn.chinamobile.com/PLTV/88888888/224/3221226465/1.m3u8
-CHC_影迷电影「IPV6」,http://[2409:8087:7008:20::8]/dbiptv.sn.chinamobile.com/PLTV/88888888/224/3221226463/1.m3u8
+CHC动作电影,https://ali.hlspull.yximgs.com/live/diyp_chcdongzuo.flv
+CHC家庭影院,https://ali.hlspull.yximgs.com/live/diyp_chcjiating.flv
+CHC影迷电影,https://ali.hlspull.yximgs.com/live/diyp_chcyingmi.flv
 
 
 
@@ -1131,7 +1131,7 @@ X战警电影,http://zzy789.xyz/douyu1.php?id=9651304
 
 
 1905电影网,http://php.jdshipin.com:8880/1905.php?id=1905dy
-1905电影网,#https://stream1.freetv.fun/c90deb63a57dd1f999a2c662d45ca501c5f271dcc46bf2b3d1384f7a3c498c35.ctv
+1905电影网,https://stream1.freetv.fun/c90deb63a57dd1f999a2c662d45ca501c5f271dcc46bf2b3d1384f7a3c498c35.ctv
 
 
 
