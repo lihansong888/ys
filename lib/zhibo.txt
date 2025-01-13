@@ -530,7 +530,8 @@ FOCUS,http://38.64.72.148:80/hls/modn/list/4005/playlist.m3u8
 
 
 
-庆余年,https://m.douyu.com/5062195?dyshid=0-7f719793d5ffa28ba5a230ec000717p1&dyshci=208
+
+凤凰电影,p3p://167.114.175.6:55331/65ac2b5d00016c25b9badc664c7548fd
 
 
 
