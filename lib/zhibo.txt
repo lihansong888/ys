@@ -519,75 +519,6 @@ FOCUS,http://38.64.72.148:80/hls/modn/list/4005/playlist.m3u8
 
 
 
-凤凰中文,http://ali.hlspull.yximgs.com/live/diyp_fh2.flv
-凤凰中文,#http://wouu.net:9977/rtp/239.93.0.162:2192?Cf=cfss.cc
-凤凰资讯,http://ali.hlspull.yximgs.com/live/diyp_fh1.flv
-凤凰资讯,#http://wouu.net:9977/rtp/239.93.0.118:2191?Cf=cfss.cc
-凤凰香港,http://ali.hlspull.yximgs.com/live/diyp_fh3.flv
-凤凰电影,http://home.js001.com:7777/stream/channelid/884059847?profile=pass
-香港卫视,http://zhibo.hkstv.tv/livestream/mutfysrq/playlist.m3u8
-澳视澳门,http://cdn.132.us.kg/live/asam/stream.m3u8
-澳视澳门,#http://183.237.246.14:9931/tsfile/live/1039_1.m3u8
-澳亚卫视,http://cdn.132.us.kg/live/as/stream.m3u8
-莲花卫视,http://php.jdshipin.com:8880/amlh.php
-TVB无线新闻,http://ali.hlspull.yximgs.com/live/d2331250dd26e1f49447324dcd5b7c68.flv
-TVB无线星河,http://php.jdshipin.com:8880/smt.php?id=Xinhe
-TVB娱乐新闻,http://ali.hlspull.yximgs.com/live/6425965d63a08c85ca806bfcc8c75cf4.flv
-TVB翡翠台,http://php.jdshipin.com:8880/smt.php?id=jade_twn
-TVB翡翠台,#http://php.jdshipin.com:8880/TVOD/iptv.php?id=fct
-TVB翡翠台 4K,http://cdn.132.us.kg/live/fct4k/stream.m3u8
-TVB翡翠台（备用）,http://php.jdshipin.com/TVOD/iptv.php?id=huali2
-TVB明珠台,http://mzitv.cn:32/tsfile/live/1017_1.m3u8
-TVB J1,http://cdn3.132.us.kg/live/j1/stream.m3u8
-TVB J2,http://cdn.132.us.kg/live/tvbp/stream.m3u8
-星空卫视,http://wouu.net:9977/udp/239.93.0.156:2193
-星光影视,http://ali.hlspull.yximgs.com/live/zxcvbnm9852.flv
-环球电视,http://zb.xzxwhcb.com:9999/hls/world.m3u8
-耀才财经,http://202.69.67.66:443/webcast/bshdlive-pc/playlist.m3u8
-中视,rtmp://f13h.mine.nu/sat/tv091
-中视,#http://37.27.111.214:8080/live/7/hls.m3u8
-台视,rtmp://f13h.mine.nu/sat/tv071
-民视,rtmp://f13h.mine.nu/sat/tv051
-华视,rtmp://f13h.mine.nu/sat/tv111
-台视新闻,http://litv.zapi.us.kg/?id=4gtv-4gtv051
-中天新闻,http://litv.zapi.us.kg/?id=4gtv-4gtv009
-华视新闻,http://litv.zapi.us.kg/?id=4gtv-4gtv052
-中视新闻,http://litv.zapi.us.kg/?id=4gtv-4gtv074
-三立新闻,https://epg.pw/stream/6b49e3faa38adda85abab446f032dc1e686baa0760a9cfa66e2df8fd6fe3b445.m3u8
-非凡新闻,http://litv.zapi.us.kg/?id=4gtv-4gtv010
-东森新闻,http://litv.zapi.us.kg/?id=4gtv-4gtv152
-东森超视,rtmp://f13h.mine.nu/sat/tv331
-东森财经,http://litv.zapi.us.kg/?id=4gtv-4gtv153
-民视新闻台,http://litv.zapi.us.kg/?id=litv-ftv13
-民视台湾台,http://litv.zapi.us.kg/?id=4gtv-4gtv001
-民视第一台,http://litv.zapi.us.kg/?id=4gtv-4gtv003
-民视综艺台,http://litv.zapi.us.kg/?id=4gtv-4gtv004
-民视影剧台,http://litv.zapi.us.kg/?id=litv-ftv09
-中天亚洲台,http://livetv.skycf.eu.org/live.m3u8?c=3
-中视菁采,http://litv.zapi.us.kg/?id=4gtv-4gtv064
-美亚C+,http://ottproxy2.ist.ooo/livehls/MOB-U1-NO/03.m3u8
-MOMOTV,rtmp://f13h.mine.nu/sat/tv761
-纬来日本,rtmp://f13h.mine.nu/sat/tv771
-纬来体育,rtmp://f13h.mine.nu/sat/tv721
-纬来育乐,rtmp://f13h.mine.nu/sat/tv701
-纬来精采,http://61.221.215.25:8800/hls/48/index.m3u8
-大爱1台,https://pulltv1.wanfudaluye.com/live/tv1.m3u8
-大爱2台,https://pulltv2.wanfudaluye.com/live/tv2.m3u8
-大立电视台,http://www.dalitv.com.tw:4568/live/dali/index.m3u8
-TVBS新闻台,http://61.221.215.25:8800/hls/9/index.m3u8
-TVBS欢乐台,http://litv.zapi.us.kg/?id=4gtv-4gtv068
-番薯台,http://61.216.67.119:1935/TWHG/E1/chunklist_w705811302.m3u8
-人间卫视,https://stream1.freetv.fun/05b9099bef592e55129817a0f82b4cc60378970bc856b993ae9e330e85f4351f.m3u8
-八大戏剧台,http://61.221.215.25:8800/hls/39/index.m3u8
-AMC电影台,http://61.221.215.25:8800/hls/43/index.m3u8
-CAT电影,http://litv.zapi.us.kg/?id=4gtv-4gtv076
-数位电影,http://litv.zapi.us.kg/?id=4gtv-4gtv011
-龙华电影,http://37.27.111.214:8080/live/19/hls.m3u8
-靖天电影,http://litv.zapi.us.kg/?id=4gtv-4gtv061
-美亚电影台,http://php.jdshipin.com:8880/TVOD/iptv.php?id=meiya
-HOY TV,http://cdn.132.us.kg/live/hoy/stream.m3u8
-凤凰中文,http://cdn.132.us.kg/live/fhzw/stream.m3u8
-凤凰资讯,http://cdn3.132.us.kg/live/fhzx/stream.m3u8
 
 
 
@@ -668,44 +599,6 @@ SiTV_上海新闻「IPV6」,http://[2409:8087:5e00:24::2d]:6610/000000001000/1/5
 
 
 
-重温经典,http://ali.hlspull.yximgs.com/live/awei_cwjd.flv
-
-漫威电影,http://zzy789.xyz/douyu1.php?id=6140589
-漫威电影,#http://jiaojirentv.top/2020/dy.php?id=6140589
-豆瓣电影,http://zzy789.xyz/douyu1.php?id=8770422
-淘电影,http://otttv.bj.chinamobile.com/PLTV/88888888/224/3221226552/1.m3u8?accountinfo=%7E%7EV2.0%7EXOsrWMA-UCdUl1hQSR9EKw%7EtP4-l0lmSfjwLWEfK_el1vH_mv-s1zo4AQJwdedaVwG9xkuFTDg8J26cwOrNJzn20BErrHdLhuZ9EzLUCD3PMW-OMx4MGteHV2vLeW6BqoY%2CEND&GuardEncType=2
-淘电影,#http://39.134.135.80/otttv.bj.chinamobile.com/PLTV/88888888/224/3221226552/1.m3u8?GuardEncType=2&accountinfo=%7E%7EV2.0%7EXOsrWMA-UCdUl1hQSR9EKw%7EtP4-l0lmSfjwLWEfK_el1vH_mv-s1zo4AQJwdedaVwG9xkuFTDg8J26cwOrNJzn20BErrHdLhuZ9EzLUCD3PMW-OMx4MGteHV2vLeW6BqoY%2CEND
-淘剧场,http://otttv.bj.chinamobile.com/PLTV/88888888/224/3221226553/1.m3u8?&accountinfo=%7E%7EV2.0%7EQaJ92NID2SpQlY6_VJVogg%7EQ8NsqL2Ii48SUgC4QMl6hh6MtnXuZ2CwNhT-dTFoMLL2G3Q2BYmATYXRv1nKmDi5C1jJAt50zoNF4cIM-01_7rCa0ZemjVk37nsYr4Zr0bk%7EExtInfo9bj61dxzlMXrsixrqcFYPg%2CEND&GuardEncType=2
-精彩影视,http://[2409:8087:5e00:24::029]:6610/000000001000/2000000004000000063/index.m3u8?stbId=3&livemode=1&HlsProfileId=&channel-id=hnbblive&Contentid=2000000004000000063&IASHttpSessionId=OTT19019320240419154124000281
-新视觉HD,http://120.76.248.139/live/bfgd/4200000249.m3u8
-纪实科教,http://[2409:8087:5e08:24::d]:6610/000000001000/1000000001000001910/index.m3u8?channel-id=ystenlive&Contentid=1000000001000001910&livemode=1&stbId=YanG-1989
-纪实科教,#http://[2409:8087:1a01:df::7005]:80/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225729/index.m3u8
-金鹰纪实,http://[2409:8087:5e08:24::d]:6610/000000001000/5000000011000031203/index.m3u8?channel-id=bestzb&Contentid=5000000011000031203&livemode=1&stbId=YanG-1989
-茶友频道,http://[2409:8087:5e08:24::d]:6610/000000001000/5000000011000031209/index.m3u8?channel-id=bestzb&Contentid=5000000011000031209&livemode=1&stbId=YanG-1989
-快乐垂钓,http://[2409:8087:5e08:24::d]:6610/000000001000/5000000011000031206/index.m3u8?channel-id=bestzb&Contentid=5000000011000031206&livemode=1&stbId=YanG-1989
-武术世界,http://[2409:8087:3c02:0021:0000:0001:0000:100a]:6410/shandong_cabletv.live.zte.com////CHANNEL00000657/index.m3u8?IASHttpSessionId=
-文物宝库,http://[2409:8087:3c02:0021:0000:0001:0000:100a]:6410/shandong_cabletv.live.zte.com////CHANNEL00000658/index.m3u8?IASHttpSessionId=
-梨园频道,http://[2409:8087:3c02:0021:0000:0001:0000:100a]:6410/shandong_cabletv.live.zte.com////CHANNEL00000656/index.m3u8?IASHttpSessionId=
-劲爆体育,http://[2409:8087:5e00:24::029]:6610/000000001000/2000000002000000008/index.m3u8?stbId=3&livemode=1&HlsProfileId=&channel-id=hnbblive&Contentid=2000000002000000008&IASHttpSessionId=OTT19019320240419154124000281
-五星体育,http://[2409:8087:5e00:24::029]:6610/000000001000/2000000002000000007/index.m3u8?stbId=3&livemode=1&HlsProfileId=&channel-id=hnbblive&Contentid=2000000002000000007&IASHttpSessionId=OTT19019320240419154124000281
-第一财经,http://[2409:8087:5e00:24::029]:6610/000000001000/2000000002000000004/index.m3u8?stbId=3&livemode=1&HlsProfileId=&channel-id=hnbblive&Contentid=2000000002000000004&IASHttpSessionId=OTT19019320240419154124000281
-纪实人文,http://[2409:8087:5e08:24::2]:6610/000000001000/5000000004000010282/index.m3u8?channel-id=bestzb&Contentid=5000000004000010282&livemode=1&stbId=3
-哒啵赛事,http://[2409:8087:5e00:24::1e]:6060/200000001898/460000089800010120/1.m3u8
-哒啵电竞,http://[2409:8087:5e00:24::029]:6610/000000001000/2000000003000000066/index.m3u8?stbId=3&livemode=1&HlsProfileId=&channel-id=hnbblive&Contentid=2000000003000000066&IASHttpSessionId=OTT19019320240419154124000281
-黑莓电影,http://[2409:8087:5e08:24::2]:6610/000000001000/1000000004000019624/index.m3u8?channel-id=ystenlive&Contentid=1000000004000019624&livemode=1&stbId=3
-黑莓动画,http://[2409:8087:5e08:24::2]:6610/000000001000/1000000004000021734/index.m3u8?channel-id=ystenlive&Contentid=1000000004000021734&livemode=1&stbId=3
-魅力足球,http://[2409:8087:5e00:24::029]:6610/000000001000/2000000002000000068/index.m3u8?stbId=3&livemode=1&HlsProfileId=&channel-id=hnbblive&Contentid=2000000002000000068&IASHttpSessionId=OTT19019320240419154124000281
-乐游频道,http://[2409:8087:5e00:24::029]:6610/000000001000/2000000002000000092/index.m3u8?stbId=3&livemode=1&HlsProfileId=&channel-id=hnbblive&Contentid=2000000002000000092&IASHttpSessionId=OTT19019320240419154124000281
-欢笑剧场,http://[2409:8087:5e00:24::029]:6610/000000001000/2000000002000000016/index.m3u8?stbId=3&livemode=1&HlsProfileId=&channel-id=hnbblive&Contentid=2000000002000000016&IASHttpSessionId=OTT19019320240419154124000281
-法治天地,http://[2409:8087:5e00:24::029]:6610/000000001000/2000000002000000014/index.m3u8?stbId=3&livemode=1&HlsProfileId=&channel-id=hnbblive&Contentid=2000000002000000014&IASHttpSessionId=OTT19019320240419154124000281
-七彩戏剧,http://[2409:8087:5e00:24::029]:6610/000000001000/2000000002000000010/index.m3u8?stbId=3&livemode=1&HlsProfileId=&channel-id=hnbblive&Contentid=2000000002000000010&IASHttpSessionId=OTT19019320240419154124000281
-动漫秀场,http://[2409:8087:5e00:24::029]:6610/000000001000/2000000002000000009/index.m3u8?stbId=3&livemode=1&HlsProfileId=&channel-id=hnbblive&Contentid=2000000002000000009&IASHttpSessionId=OTT19019320240419154124000281
-游戏风云,http://[2409:8087:5e00:24::029]:6610/000000001000/2000000002000000011/index.m3u8?stbId=3&livemode=1&HlsProfileId=&channel-id=hnbblive&Contentid=2000000002000000011&IASHttpSessionId=OTT19019320240419154124000281
-生活时尚,http://[2409:8087:5e00:24::029]:6610/000000001000/2000000002000000006/index.m3u8?stbId=3&livemode=1&HlsProfileId=&channel-id=hnbblive&Contentid=2000000002000000006&IASHttpSessionId=OTT19019320240419154124000281
-都市剧场,http://[2409:8087:5e00:24::029]:6610/000000001000/2000000002000000015/index.m3u8?stbId=3&livemode=1&HlsProfileId=&channel-id=hnbblive&Contentid=2000000002000000015&IASHttpSessionId=OTT19019320240419154124000281
-金色学堂,http://[2409:8087:5e00:24::029]:6610/000000001000/2000000002000000061/index.m3u8?stbId=3&livemode=1&HlsProfileId=&channel-id=hnbblive&Contentid=2000000002000000061&IASHttpSessionId=OTT19019320240419154124000281
-南国都市,https://tencentplay.gztv.com/live/nanguodushi.m3u8?txSecret=550af55c0ea34ce492748481415b6dfa&txTime=1903e7b17de
-足球频道,http://nmglive.imfc.cn/5n1r1c/182396.m3u8
 
 
 
