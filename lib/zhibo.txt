@@ -614,26 +614,7 @@ SiTV_上海新闻「IPV6」,http://[2409:8087:5e00:24::2d]:6610/000000001000/1/5
 
 
 CHC电影频道,#genre#
-CHC动作电影,https://ali.hlspull.yximgs.com/live/diyp_chcdongzuo.flv
-CHC家庭影院,https://ali.hlspull.yximgs.com/live/diyp_chcjiating.flv
-CHC影迷电影,https://ali.hlspull.yximgs.com/live/diyp_chcyingmi.flv
-
-
-
-
-CHC家庭影院,http://hms184nc1972679574.live.aikan.miguvideo.com/wh7f454c46tw1587902162_1768667353/wd_r3/cnr/chcjtyy/3000/01.m3u8?msisdn=guest&Channel_ID=0119_04102000-99000_400300000040002&client_ip=139.198.127.250&timestamp=20230816073737&ContentId=265667645&timezone=UTC&mtv_session=1e2626f9fa52e9ed0b3e629dab7d7ad3&HlsSubType=1&HlsProfileId=1&nphaid=0&encrypt=950d3a482d21f43d77d58540bfd2cbad
-CHC动作电影,http://218.76.32.193:9901/tsfile/live/1020_1.m3u8
-CHC家庭影院,http://218.76.32.193:9901/tsfile/live/1018_1.m3u8
-CHC影迷电影,http://218.76.32.193:9901/tsfile/live/1019_1.m3u8
-CHC影迷电影,http://cqshushu.us.kg:2086/ln.php?id=chcmd-1
-CHC家庭影院,http://cqshushu.us.kg:2086/ln.php?id=chcjt-1
-CHC动作电影,http://cqshushu.us.kg:2086/ln.php?id=chcdzd-1
-CHC动作电影,http://124.231.213.16:9999/tsfile/live/1109_1.m3u8
-CHC家庭影院,http://124.231.213.16:9999/tsfile/live/1108_1.m3u8
-CHC影迷电影,http://124.231.213.16:9999/tsfile/live/1110_1.m3u8
-CHC影迷电影,http://eastscreen.tv/ooooo.php?id=chchd
-CHC动作电影,http://eastscreen.tv/ooooo.php?id=chcdz
-CHC家庭影院,http://eastscreen.tv/ooooo.php?id=chcjt
+家庭影院咪咕,http://z.b.bkpcp.top/m.php?id=jtyy
 
 
 
