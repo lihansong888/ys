@@ -31,6 +31,39 @@ CCTV17,http://150.158.112.123/%E5%85%AC%E4%BC%97%E5%8F%B7~%E7%8E%89%E7%8E%89%E8%
 北京卫视,http://cc-ynbit-wszhibo.ifengli.com:2000/live/bjws-hd/1.m3u8?innersid=18360129623627541611
 
 湖北卫视,http://183.66.15.146:60901/tsfile/live/0132_1.m3u8
+黑龙江卫视,http://cc-ynbit-wszhibo.ifengli.com:2000/live/hljws-hd/2500.m3u8?innersid=3559146512286674480
+安徽卫视,http://223.241.247.214:85//tsfile/live/0019_1.m3u8?key=txiptv&playlive=1&authid=0
+重庆卫视,http://58.221.214.82:9901/tsfile/live/0142_1.m3u8
+东方卫视,http://cc-ynbit-wszhibo.ifengli.com:2000/live/shdfws-hd/2500.m3u8?innersid=6998114529464369318
+东南卫视,http://cc-ynbit-wszhibo.ifengli.com:2000/live/fjws-hd/2500.m3u8?innersid=10943554111088989087
+甘肃卫视,http://183.66.15.146:60901/tsfile/live/0141_1.m3u8
+广西卫视,http://58.221.214.82:9901/tsfile/live/0113_1.m3u8
+贵州卫视,http://58.221.214.82:9901/tsfile/live/0120_1.m3u8
+海南卫视,http://58.221.214.82:9901/tsfile/live/0016_2.m3u8
+河北卫视,http://183.66.15.146:60901/tsfile/live/0117_1.m3u8
+河南卫视,http://58.221.214.82:9901/tsfile/live/0139_1.m3u8
+吉林卫视,http://58.221.214.82:9901/tsfile/live/0116_1.m3u8
+江苏卫视,http://cc-ynbit-wszhibo.ifengli.com:2000/live/jsws-hd/2500.m3u8?innersid=14912719076157451667
+江西卫视,http://z.b.bkpcp.top/m.php?id=jxws
+辽宁卫视,http://cc-ynbit-wszhibo.ifengli.com:2000/live/lnws-hd/2500.m3u8?innersid=6324592032119595697
+内蒙古卫视,http://58.220.219.14:9901/tsfile/live/0114_1.m3u8
+宁夏卫视,http://cc-ynbit-wszhibo.ifengli.com:2000/live/nxws-sd/1500.m3u8?innersid=2025
+青海卫视,http://58.221.214.82:9901/tsfile/live/0018_1.m3u8
+山东卫视,http://cc-ynbit-wszhibo.ifengli.com:2000/live/sdws-hd/2500.m3u8?innersid=3721212644869031100
+山西卫视,http://cc-ynbit-wszhibo.ifengli.com:2000/live/shanxiws-sd/1500.m3u8?innersid=2025
+陕西卫视,http://cc-ynbit-wszhibo.ifengli.com:2000/live/sxws-sd/1500.m3u8?innersid=2025
+四川卫视,http://cc-ynbit-wszhibo.ifengli.com:2000/live/scws-hd/2500.m3u8?innersid=17534924581903335933
+深圳卫视,http://cc-ynbit-wszhibo.ifengli.com:2000/live/szws-hd/2500.m3u8?innersid=15000776628606995758
+三沙卫视,http://61.138.128.226:19901/tsfile/live/1020_1.m3u8
+天津卫视,http://58.221.214.82:9901/tsfile/live/0135_1.m3u8
+西藏卫视,http://cc-ynbit-wszhibo.ifengli.com:2000/live/xzws-sd/1500.m3u8?innersid=2025
+新疆卫视,http://cc-ynbit-wszhibo.ifengli.com:2000/live/xjws-sd/1500.m3u8?innersid=2025
+云南卫视,http://cc-ynbit-wszhibo.ifengli.com:2000/live/ynws-hd/2500.m3u8?innersid=8984720984732853831
+
+
+
+
+
 
 
 
