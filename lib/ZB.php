@@ -1,4 +1,12 @@
 秋_7778,#genre#
+brazzers,https://ortepe.xyz:29177/tv/brazzers/playlist.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9MS8yMi8yMDI1IDc6MzI6MzMgQU0maGFzaF92YWx1ZT02NVNCTlF3WFBycys1NlBWaFBoT013PT0mdmFsaWRtaW51dGVzPTYw
+
+hustlerhustler,https://ortepe.xyz:29177/tv/hustlerhd/playlist.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9MS8yMi8yMDI1IDc6MzQ6MzcgQU0maGFzaF92YWx1ZT0raC9PeC93QWdjS0IvSU5DRFBzeTdnPT0mdmFsaWRtaW51dGVzPTYw
+Penthouse TV,https://ortepe.xyz:29177/tv/penthouse/playlist.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9MS8yMi8yMDI1IDc6Mzc6MDggQU0maGFzaF92YWx1ZT02QkZ0K1UvK0F3dlFXYmtUQVMwRzJBPT0mdmFsaWRtaW51dGVzPTYw
+
+
+
+
 BBC Lifestyle,P2p://starvod.xyz:19806/27347d1bc804406482a87d2bab2669c9
 民视,P2p://starvod.xyz:19806/ce8fdea4216b40b09befe57f0d6e8d6c
 台视,P2p://starvod.xyz:19806/0939ed2b76974b0ebca299802f6a3b42
