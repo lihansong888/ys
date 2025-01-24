@@ -566,7 +566,14 @@ CHC动作电影,http://58.19.38.162:9901/tsfile/live/1005_1.m3u8?key=txiptv&play
 
 
 
-
+香蕉台,http://s.mrw.so/94E7W
+惊艳台,http://suo.im/8odLv
+潘多拉盒子,http://suo.im/6TuSG
+彩虹电影,http://suo.im/9sOLD
+松视1台,http://suo.im/c4FP2
+松视2台,http://b.mtw.so/6pAjsB
+松视3台,http://suo.im/9wiS2
+pigoo直播,http://s.mrw.so/7DlBI
 
 
 
