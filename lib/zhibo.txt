@@ -861,12 +861,9 @@ FOCUS,http://38.64.72.148:80/hls/modn/list/4005/playlist.m3u8
 
 
 
-凤凰卫视,http://php.jdshipin.com/TVOD/iptv.php?id=fhzw
-凤凰资讯,http://php.jdshipin.com/TVOD/iptv.php?id=fhzx
-凤凰香港,http://php.jdshipin.com/TVOD/iptv.php?id=fhhk
+
 美亚电影,http://co-sg3.jdiptv.cc/live/xgmydygy.m3u8
-中国电影,http://co-sg3.jdiptv.cc/live/zgdy.m3u8
-Thrill,http://co-sg3.jdiptv.cc/live/thrill.m3u8
+
 香港卫视,http://co-sg3.jdiptv.cc/live/zgdy.m3u8
 凤凰中文,http://61.163.58.154:1321/ms/IPTV.php?id=123
 凤凰资讯,http://61.163.58.154:1321/ms/IPTV.php?id=124
@@ -928,6 +925,9 @@ CHC家庭影院,http://58.19.38.162:9901/tsfile/live/1006_1.m3u8?key=txiptv&play
 
 
 CHC动作电影,http://58.19.38.162:9901/tsfile/live/1005_1.m3u8?key=txiptv&playlive=1&authid=0
+
+中国电影,http://co-sg3.jdiptv.cc/live/zgdy.m3u8
+Thrill,http://co-sg3.jdiptv.cc/live/thrill.m3u8
 
 淘电影,http://otttv.bj.chinamobile.com/PLTV/88888888/224/3221226552/1.m3u8?accountinfo=%7E%7EV2.0%7EXOsrWMA-UCdUl1hQSR9EKw%7EtP4-l0lmSfjwLWEfK_el1vH_mv-s1zo4AQJwdedaVwG9xkuFTDg8J26cwOrNJzn20BErrHdLhuZ9EzLUCD3PMW-OMx4MGteHV2vLeW6BqoY%2CEND&GuardEncType=2
 
