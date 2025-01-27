@@ -880,9 +880,17 @@ Thrill,http://co-sg3.jdiptv.cc/live/thrill.m3u8
 潘多拉盒子,http://suo.im/6TuSG
 彩虹电影,http://suo.im/9sOLD
 松视1台,http://suo.im/c4FP2
+正式松視1臺,http://ali.hlspull.yximgs.com/live/ee5b8985e420613e6ac6054c79e8a9b9.flv
+正式松視2臺,http://ali.hlspull.yximgs.com/live/8a6a1d1a62d39536d05d8565f757d198.flv
 松视2台,http://b.mtw.so/6pAjsB
 松视3台,http://suo.im/9wiS2
+正式松視3臺,http://ali.hlspull.yximgs.com/live/cc5c3221f83352bced00135e20c81c9e.flv
+正式松視E臺,http://ali.hlspull.yximgs.com/live/70aea0b84785e755591c8b72a5c7b487.flv
+正式松視K臺,http://ali.hlspull.yximgs.com/live/f44de880fcdde606836f8942e9b33909.flv
 pigoo直播,http://s.mrw.so/7DlBI
+
+
+
 
 
 japanhdv,http://88b9da48.kazmazpaz.ru/iptv/WSMQQSF4M7PGWH/6225/manifest.m3u8
