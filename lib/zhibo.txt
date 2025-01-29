@@ -815,17 +815,23 @@ Thrill,http://co-sg3.jdiptv.cc/live/thrill.m3u8
 潘多拉盒子,http://suo.im/6TuSG
 彩虹电影,http://suo.im/9sOLD
 松视1台,http://suo.im/c4FP2
-正式松視1臺,http://ali.hlspull.yximgs.com/live/ee5b8985e420613e6ac6054c79e8a9b9.flv
-正式松視2臺,http://ali.hlspull.yximgs.com/live/8a6a1d1a62d39536d05d8565f757d198.flv
+
 松视2台,http://b.mtw.so/6pAjsB
 松视3台,http://suo.im/9wiS2
-正式松視3臺,http://ali.hlspull.yximgs.com/live/cc5c3221f83352bced00135e20c81c9e.flv
-正式松視E臺,http://ali.hlspull.yximgs.com/live/70aea0b84785e755591c8b72a5c7b487.flv
-正式松視K臺,http://ali.hlspull.yximgs.com/live/f44de880fcdde606836f8942e9b33909.flv
+
 pigoo直播,http://s.mrw.so/7DlBI
 
 
-
+正式松視1臺,http://ali.hlspull.yximgs.com/live/ce415c741027a2b44b3e739f82d46820.flv
+正式松視2臺,http://ali.hlspull.yximgs.com/live/2dd055b27a18255b7e238cac3e59ca79.flv
+正式松視3臺,http://ali.hlspull.yximgs.com/live/dfda5bb986aa859662ddc139a4e4da9c.flv
+正式松視E臺,http://ali.hlspull.yximgs.com/live/2147a1c7e793f7162cf9af2e2e584b40.flv
+正式松視K臺,http://ali.hlspull.yximgs.com/live/248811ce4c72f8d3b5fcb7320dc83f73.flv
+正式松視电影臺,http://ali.hlspull.yximgs.com/live/78ab7eb869064bb653f77c6c4dd1ac1c.flv
+正式松視潘多臺,http://ali.hlspull.yximgs.com/live/a293b71d766627ca9df8a9b3e7a97e27.flv
+正式奧世驚艷臺,http://ali.hlspull.yximgs.com/live/0062aa2bfc443ba28b1da4250c7d6930.flv
+正式奧世香蕉臺,http://ali.hlspull.yximgs.com/live/675f13a639b41887ed5d86fb431d3be9.flv
+正式松視极限臺,http://ali.hlspull.yximgs.com/live/dc3f3d1949e888d3fe0046215fba9161.flv
 
 
 japanhdv,http://88b9da48.kazmazpaz.ru/iptv/WSMQQSF4M7PGWH/6225/manifest.m3u8
