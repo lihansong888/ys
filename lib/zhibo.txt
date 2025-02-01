@@ -284,6 +284,22 @@ CETV4,https://www.freetv.top/migu/923287339.m3u8?migutoken=23d6701a858ceafb4eb54
 
 
 
+陕西频道,#genre#
+
+
+陕西新闻资讯,http://gxlive.snrtv.com/sx1-SD.m3u8
+陕西都市青春,http://gxlive.snrtv.com/sx2-SD.m3u8
+陕西银铃,http://gxlive.snrtv.com/sx3-SD.m3u8
+陕西秦腔,http://gxlive.snrtv.com/sx5-SD.m3u8
+陕西体育休闲,http://gxlive.snrtv.com/sx7-SD.m3u8
+陕西西部电影,http://gxlive.snrtv.com/sx8-SD.m3u8
+
+
+
+
+
+
+
 
 
 港澳台AKTV频道,#genre#
