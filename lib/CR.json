@@ -6,10 +6,10 @@
 "sites":[
 {
             "key": "JAVSB",
-            "name": "🔞JAVSB",
+            "name": "寒松高清CR影视",
             "type": 3,
             "api": "csp_XBPQ",
-           "jar": "https://gitee.com/lwlxh/tvhome/raw/master/o.jar",
+           "jar": "https://gitee.com/lihansong86220952/ys/raw/master/jar/JAVSB.jar",
             "ext": {
                 "主页url": "https://jav.sb/",
                 "直接播放": "1",
