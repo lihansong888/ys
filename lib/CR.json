@@ -4,6 +4,30 @@
 "url": "https://cyuan.netlify.app/tvbox/lives/18+/18+千部独家传媒无水印来袭tvlist.txt",
 "epg": "http://epg.112114.xyz/?ch={name}&date={date}"}],
 "sites":[
+
+{
+            "key": "贝贝影院",
+            "name": "小呗┃影视",
+            "type": 3,
+            "api": "csp_XBPQ",
+            "jar": "https://gitee.com/lihansong86220952/ys/raw/master/jar/JAVSB.jar",
+            "ext": {
+                "线路二次截取": "<ul class=\"nav nav-tabs ff-playurl-tab&&</ul>",
+                "线路数组": "<li&&</li>",
+                "线路标题": ">&&</a>",
+                "播放数组": "<ul class=\"list-unstyled row text-center tab-pane ff-playurl active fade in ff-playurl-tab-1\"&&</ul>",
+                "播放标题": ">&&</a>",
+                "分类url": "http://www.nanxiaoba.com/type/{cateId}-{class}-{area}-{year}---addtime-{catePg}.html",
+                "分类": "最新电影$1#连续剧$2#综艺$4#动漫$3#短剧$5$#午夜电影$6",
+                "地区": "大陆$大陆#香港$香港#台湾$台湾#美国$美国#法国$法国#英国$英国#日本$日本#韩国$韩国#德国$德国#泰国$泰国#印度$印度#意大利$意大利#西班牙$西班牙#加拿大$加拿大"
+            }
+        },
+
+
+
+
+
+            
 {
             "key": "JAVSB",
             "name": "寒松高清CR影视",
