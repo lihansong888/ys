@@ -24,7 +24,14 @@
         },
 
 
-
+{
+      "key": "XMVideo",
+      "name": "寒松高清CR影视",
+      "type": 3,
+      "api": "csp_XMVideo",
+      "searchable": 1,
+      "filterable": 1,"jar": "./jar/熊猫.jar"
+    },
 
 
             
