@@ -22,7 +22,7 @@
                 "地区": "大陆$大陆#香港$香港#台湾$台湾#美国$美国#法国$法国#英国$英国#日本$日本#韩国$韩国#德国$德国#泰国$泰国#印度$印度#意大利$意大利#西班牙$西班牙#加拿大$加拿大"
             }
         },
-
+{ "key": "醒吧", "name": "杏吧", "type": 0, "api": "https://sex8zy7.com/api.php/provide/vod/at/xml", "searchable": 1, "changeable": 1, "playurl": "json:https://xbww888.com/?url=" },
 
 {
       "key": "XMVideo",
