@@ -3,351 +3,198 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- 只改了这里的标题 -->
   <title>基金实时估值-寒松个人网页版</title>
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-    }
-    body {
-      background-color: #f5f7fa;
-      padding: 20px;
-    }
-    .container {
-      max-width: 480px;
-      margin: 0 auto;
-    }
-    .page-title {
-      font-size: 28px;
-      font-weight: 600;
-      text-align: center;
-      margin-bottom: 24px;
-      color: #333;
-    }
-    .summary {
-      background-color: #fff;
-      border-radius: 12px;
-      padding: 16px;
-      margin-bottom: 20px;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
-    }
-    .summary-item {
-      display: flex;
-      justify-content: space-between;
-      margin-bottom: 8px;
-      font-size: 16px;
-    }
-    .summary-label {
-      color: #666;
-    }
-    .summary-value {
-      font-weight: 600;
-      color: #333;
-    }
-    .input-row {
-      display: flex;
-      gap: 12px;
-      margin-bottom: 16px;
-    }
-    .input-field {
-      flex: 1;
-      padding: 12px 16px;
-      border: 1px solid #e0e0e0;
-      border-radius: 8px;
-      font-size: 16px;
-      background-color: #fff;
-    }
-    .add-btn {
-      padding: 12px 20px;
-      background-color: #007aff;
-      color: #fff;
-      border: none;
-      border-radius: 8px;
-      font-size: 16px;
-      font-weight: 500;
-      cursor: pointer;
-    }
-    .fund-item {
-      background-color: #fff;
-      border-radius: 12px;
-      padding: 16px;
-      margin-bottom: 12px;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-    .item-info {
-      line-height: 1.6;
-    }
-    .fund-name {
-      font-size: 16px;
-      font-weight: 600;
-      color: #333;
-      margin-bottom: 4px;
-    }
-    .fund-code {
-      font-size: 14px;
-      color: #999;
-      margin-bottom: 4px;
-    }
-    .fund-amount {
-      font-size: 15px;
-      color: #666;
-    }
-    .item-buttons {
-      display: flex;
-      gap: 8px;
-    }
-    .edit-btn {
-      background-color: #34c759;
-      color: #fff;
-      border: none;
-      width: 56px;
-      height: 56px;
-      border-radius: 8px;
-      font-size: 16px;
-      font-weight: 500;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      cursor: pointer;
-    }
-    .delete-btn {
-      background-color: #ff3b30;
-      color: #fff;
-      border: none;
-      width: 56px;
-      height: 56px;
-      border-radius: 8px;
-      font-size: 16px;
-      font-weight: 500;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      cursor: pointer;
-    }
-    /* 自定义弹窗样式 */
-    .modal-overlay {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: rgba(0, 0, 0, 0.5);
-      display: none;
-      align-items: center;
-      justify-content: center;
-      z-index: 9999;
-    }
-    .modal {
-      background-color: #fff;
-      border-radius: 12px;
-      width: 90%;
-      max-width: 400px;
-      padding: 24px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-    }
-    .modal-title {
-      font-size: 18px;
-      font-weight: 600;
-      margin-bottom: 16px;
-      text-align: center;
-    }
-    .modal-input {
-      width: 100%;
-      padding: 12px;
-      border: 1px solid #e0e0e0;
-      border-radius: 8px;
-      font-size: 16px;
-      margin-bottom: 20px;
-    }
-    .modal-buttons {
-      display: flex;
-      gap: 12px;
-    }
-    .modal-btn {
-      flex: 1;
-      padding: 12px;
-      border: none;
-      border-radius: 8px;
-      font-size: 16px;
-      font-weight: 500;
-      cursor: pointer;
-    }
-    .modal-btn-cancel {
-      background-color: #f2f2f7;
-      color: #000;
-    }
-    .modal-btn-confirm {
-      background-color: #007aff;
-      color: #fff;
-    }
-    .modal-btn-confirm-delete {
-      background-color: #ff3b30;
-      color: #fff;
-    }
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+    body { background-color: #f5f7fa; padding: 20px; }
+    .container { max-width: 480px; margin: 0 auto; }
+    .page-title { font-size: 24px; font-weight: 600; text-align: center; margin-bottom: 20px; color: #333; }
+    
+    /* 顶部汇总卡片 */
+    .summary { background: linear-gradient(135deg, #007aff, #005bb5); border-radius: 12px; padding: 20px; margin-bottom: 20px; box-shadow: 0 4px 12px rgba(0, 122, 255, 0.2); color: #fff; }
+    .summary-item { display: flex; justify-content: space-between; margin-bottom: 10px; font-size: 16px; opacity: 0.9; }
+    .summary-value { font-size: 20px; font-weight: 700; opacity: 1; }
+    
+    /* 输入区域 */
+    .input-row { display: flex; gap: 8px; margin-bottom: 16px; }
+    .input-field { flex: 1; padding: 12px; border: 1px solid #e0e0e0; border-radius: 8px; font-size: 14px; outline: none; }
+    .add-btn { padding: 12px 16px; background-color: #007aff; color: #fff; border: none; border-radius: 8px; font-weight: 500; cursor: pointer; }
+
+    /* 列表条目 */
+    .fund-item { background-color: #fff; border-radius: 12px; padding: 16px; margin-bottom: 12px; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04); display: flex; justify-content: space-between; align-items: center; }
+    .item-info { flex: 1; }
+    .fund-name { font-size: 16px; font-weight: 600; color: #333; margin-bottom: 2px; }
+    .fund-meta { font-size: 13px; color: #999; margin-bottom: 6px; }
+    .fund-data { font-size: 14px; color: #666; }
+    .profit-tag { font-weight: 600; }
+    .up { color: #ff3b30; } /* 涨-红 */
+    .down { color: #34c759; } /* 跌-绿 */
+
+    .item-buttons { display: flex; gap: 8px; margin-left: 10px;}
+    .action-btn { border: none; width: 44px; height: 44px; border-radius: 8px; font-size: 13px; cursor: pointer; color: white; }
+    .edit-btn { background-color: #f2f2f7; color: #007aff; }
+    .delete-btn { background-color: #fff1f0; color: #ff4d4f; }
+
+    /* 弹窗省略...(保持你原有的 CSS 即可) */
+    .modal-overlay { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5); display: none; align-items: center; justify-content: center; z-index: 9999; }
+    .modal { background-color: #fff; border-radius: 12px; width: 90%; max-width: 350px; padding: 20px; }
+    .modal-title { font-size: 17px; font-weight: 600; margin-bottom: 15px; text-align: center; }
+    .modal-input { width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 6px; margin-bottom: 15px; }
+    .modal-buttons { display: flex; gap: 10px; }
+    .modal-btn { flex: 1; padding: 10px; border-radius: 6px; border: none; cursor: pointer; }
   </style>
 </head>
 <body>
   <div class="container">
     <h1 class="page-title">基金实时估值</h1>
+    
     <div class="summary">
       <div class="summary-item">
-        <span class="summary-label">总持有：</span>
-        <span class="summary-value" id="total-hold">0 元</span>
+        <span>持仓总额 (元)</span>
+        <span id="total-hold">0.00</span>
       </div>
       <div class="summary-item">
-        <span class="summary-label">总盈亏：</span>
-        <span class="summary-value" id="total-profit">0 元</span>
+        <span>估算盈亏 (今日)</span>
+        <span class="summary-value" id="total-profit">+0.00</span>
       </div>
     </div>
+
     <div class="input-row">
-      <input type="text" id="fund-code" class="input-field" placeholder="基金代码">
-      <input type="text" id="fund-amount" class="input-field" placeholder="持有金额">
+      <input type="text" id="fund-code" class="input-field" placeholder="代码:如000001">
+      <input type="number" id="fund-amount" class="input-field" placeholder="持有金额">
       <button class="add-btn" onclick="addFund()">添加</button>
     </div>
+
     <div id="fund-list"></div>
   </div>
 
-  <!-- 编辑弹窗 -->
   <div class="modal-overlay" id="edit-modal">
     <div class="modal">
-      <div class="modal-title">编辑持有金额</div>
-      <input type="text" id="edit-input" class="modal-input" placeholder="请输入新的金额">
+      <div class="modal-title">修改持有金额</div>
+      <input type="number" id="edit-input" class="modal-input">
       <div class="modal-buttons">
-        <button class="modal-btn modal-btn-cancel" onclick="closeEditModal()">取消</button>
-        <button class="modal-btn modal-btn-confirm" onclick="confirmEdit()">确认</button>
-      </div>
-    </div>
-  </div>
-
-  <!-- 删除确认弹窗 -->
-  <div class="modal-overlay" id="delete-modal">
-    <div class="modal">
-      <div class="modal-title">确认删除</div>
-      <div style="text-align: center; margin-bottom: 20px; color: #666;">确定要删除这只基金吗？</div>
-      <div class="modal-buttons">
-        <button class="modal-btn modal-btn-cancel" onclick="closeDeleteModal()">取消</button>
-        <button class="modal-btn modal-btn-confirm-delete" onclick="confirmDelete()">确认删除</button>
+        <button class="modal-btn" onclick="closeEditModal()">取消</button>
+        <button class="modal-btn" style="background:#007aff;color:#fff" onclick="confirmEdit()">确定</button>
       </div>
     </div>
   </div>
 
   <script>
-    // 从本地存储初始化基金列表
     let fundList = JSON.parse(localStorage.getItem('fundList')) || [];
     let currentEditIndex = -1;
-    let currentDeleteIndex = -1;
 
-    // 保存到本地存储
-    function saveToLocal() {
-      localStorage.setItem('fundList', JSON.stringify(fundList));
-      updateSummary();
+    // 核心：从天天基金获取实时数据
+    function fetchFundData(code) {
+      return new Promise((resolve) => {
+        const script = document.createElement('script');
+        const callbackName = `jsonp_${code}_${Date.now()}`;
+        window[callbackName] = (data) => {
+          resolve(data);
+          delete window[callbackName];
+          document.body.removeChild(script);
+        };
+        // 天天基金 API
+        script.src = `https://fundgz.1234567.com.cn/js/${code}.js?rt=${Date.now()}&callback=${callbackName}`;
+        script.onerror = () => resolve(null);
+        document.body.appendChild(script);
+      });
     }
 
-    // 更新总持有和总盈亏显示
-    function updateSummary() {
-      const totalHold = fundList.reduce((sum, fund) => sum + Number(fund.amount), 0);
-      document.getElementById('total-hold').textContent = totalHold.toFixed(2) + ' 元';
-      // 这里可以根据实际估值计算总盈亏，目前先显示0
-      document.getElementById('total-profit').textContent = '0 元';
-    }
-
-    // 渲染基金列表
-    function renderFundList() {
+    async function renderFundList() {
       const listEl = document.getElementById('fund-list');
-      listEl.innerHTML = '';
-      fundList.forEach((fund, index) => {
-        const item = document.createElement('div');
-        item.className = 'fund-item';
-        item.innerHTML = `
-          <div class="item-info">
-            <div class="fund-name">${fund.name || '基金 ' + fund.code}</div>
-            <div class="fund-code">${fund.code}</div>
-            <div class="fund-amount">持有金额：${fund.amount} 元</div>
-          </div>
-          <div class="item-buttons">
-            <button class="edit-btn" onclick="openEditModal(${index})">编辑</button>
-            <button class="delete-btn" onclick="openDeleteModal(${index})">删除</button>
+      listEl.innerHTML = '<p style="text-align:center;color:#999;">数据加载中...</p>';
+      
+      let totalHold = 0;
+      let totalProfit = 0;
+      let html = '';
+
+      for (let i = 0; i < fundList.length; i++) {
+        const fund = fundList[i];
+        const apiData = await fetchFundData(fund.code);
+        
+        let gsz = 0; // 估值涨幅
+        let name = fund.name || '未知基金';
+        
+        if (apiData) {
+          gsz = parseFloat(apiData.gszzl);
+          name = apiData.name;
+          fundList[i].name = name; // 更新名称缓存
+        }
+
+        const profit = (fund.amount * (gsz / 100));
+        totalHold += Number(fund.amount);
+        totalProfit += profit;
+
+        const colorClass = gsz >= 0 ? 'up' : 'down';
+        const sign = gsz >= 0 ? '+' : '';
+
+        html += `
+          <div class="fund-item">
+            <div class="item-info">
+              <div class="fund-name">${name}</div>
+              <div class="fund-meta">${fund.code} | 持有: ${fund.amount}元</div>
+              <div class="fund-data">
+                估算涨幅: <span class="${colorClass}">${sign}${gsz}%</span> 
+                盈亏: <span class="profit-tag ${colorClass}">${sign}${profit.toFixed(2)}</span>
+              </div>
+            </div>
+            <div class="item-buttons">
+              <button class="action-btn edit-btn" onclick="openEditModal(${i})">改</button>
+              <button class="action-btn delete-btn" onclick="deleteFund(${i})">删</button>
+            </div>
           </div>
         `;
-        listEl.appendChild(item);
-      });
-      updateSummary();
+      }
+
+      listEl.innerHTML = html || '<p style="text-align:center;color:#999;margin-top:20px;">暂无持仓，请添加</p>';
+      
+      // 更新顶部数据
+      document.getElementById('total-hold').textContent = totalHold.toFixed(2);
+      const totalProfitEl = document.getElementById('total-profit');
+      totalProfitEl.textContent = (totalProfit >= 0 ? '+' : '') + totalProfit.toFixed(2);
+      totalProfitEl.className = 'summary-value ' + (totalProfit >= 0 ? 'up' : 'down');
     }
 
-    // 添加基金
     function addFund() {
       const code = document.getElementById('fund-code').value.trim();
       const amount = document.getElementById('fund-amount').value.trim();
-      if (!code || !amount || isNaN(Number(amount))) {
-        alert('请输入有效的基金代码和金额');
-        return;
-      }
-      fundList.push({
-        code: code,
-        amount: Number(amount),
-        name: '基金 ' + code
-      });
-      saveToLocal();
-      renderFundList();
-      // 清空输入框
+      if (code.length < 6 || !amount) return alert('请输入完整信息');
+      
+      fundList.push({ code, amount: parseFloat(amount) });
+      saveAndRefresh();
       document.getElementById('fund-code').value = '';
       document.getElementById('fund-amount').value = '';
     }
 
-    // 打开编辑弹窗
+    function deleteFund(index) {
+      if(confirm('确定删除吗？')) {
+        fundList.splice(index, 1);
+        saveAndRefresh();
+      }
+    }
+
     function openEditModal(index) {
       currentEditIndex = index;
-      const fund = fundList[index];
-      document.getElementById('edit-input').value = fund.amount;
+      document.getElementById('edit-input').value = fundList[index].amount;
       document.getElementById('edit-modal').style.display = 'flex';
     }
 
-    // 关闭编辑弹窗
-    function closeEditModal() {
-      document.getElementById('edit-modal').style.display = 'none';
-      currentEditIndex = -1;
-    }
+    function closeEditModal() { document.getElementById('edit-modal').style.display = 'none'; }
 
-    // 确认编辑
     function confirmEdit() {
-      const newAmount = document.getElementById('edit-input').value.trim();
-      if (newAmount === '' || isNaN(Number(newAmount))) {
-        alert('请输入有效的金额');
-        return;
+      const val = document.getElementById('edit-input').value;
+      if(val) {
+        fundList[currentEditIndex].amount = parseFloat(val);
+        saveAndRefresh();
+        closeEditModal();
       }
-      fundList[currentEditIndex].amount = Number(newAmount);
-      saveToLocal();
+    }
+
+    function saveAndRefresh() {
+      localStorage.setItem('fundList', JSON.stringify(fundList));
       renderFundList();
-      closeEditModal();
     }
 
-    // 打开删除确认弹窗
-    function openDeleteModal(index) {
-      currentDeleteIndex = index;
-      document.getElementById('delete-modal').style.display = 'flex';
-    }
-
-    // 关闭删除确认弹窗
-    function closeDeleteModal() {
-      document.getElementById('delete-modal').style.display = 'none';
-      currentDeleteIndex = -1;
-    }
-
-    // 确认删除
-    function confirmDelete() {
-      fundList.splice(currentDeleteIndex, 1);
-      saveToLocal();
-      renderFundList();
-      closeDeleteModal();
-    }
-
-    // 页面加载时渲染列表
     window.onload = renderFundList;
   </script>
 </body>
