@@ -16,14 +16,22 @@
         .sum-label { font-size: 11px; opacity: 0.7; margin-bottom: 4px; }
         .sum-val { font-size: 18px; font-weight: bold; font-family: "Helvetica Neue", Arial; }
         
-        /* 操作面板 */
+        /* 操作面板 - 已优化对齐 */
         .control-panel { background: #fff; border-radius: 12px; padding: 12px; margin-bottom: 16px; border: 1px solid var(--border); }
-        .input-group { font-size: 0; display: flex; width: 100%; }
-        .input-group input, .input-group select, .input-group button { height: 38px; border: 1px solid var(--border); background: #fff; font-size: 13px; outline: none; }
-        .code-in { width: 22%; border-radius: 4px 0 0 4px; padding: 0 8px; }
-        .money-in { width: 38%; border-left: none; border-right: none; padding: 0 8px; }
-        .type-sel { width: 20%; border-right: none; text-align-last: center; -webkit-appearance: none; }
-        .add-btn { width: 20%; background-color: var(--blue); color: #fff; border: none; border-radius: 0 4px 4px 0; font-weight: bold; line-height: 38px; text-align: center; }
+        .input-group { display: flex; width: 100%; gap: 0; } /* 使用flex确保撑满全宽 */
+        .input-group input, .input-group select, .input-group button { 
+            height: 38px; 
+            border: 1px solid var(--border); 
+            background: #fff; 
+            font-size: 13px; 
+            outline: none; 
+        }
+        
+        /* 调整各框比例，确保总宽度 100% 对齐 */
+        .code-in { flex: 2; border-radius: 4px 0 0 4px; padding: 0 8px; min-width: 0; }
+        .money-in { flex: 3; border-left: none; border-right: none; padding: 0 8px; min-width: 0; }
+        .type-sel { flex: 1.5; border-right: none; text-align-last: center; -webkit-appearance: none; min-width: 0; }
+        .add-btn { flex: 1.5; background-color: var(--blue); color: #fff; border: none; border-radius: 0 4px 4px 0; font-weight: bold; cursor: pointer; }
         
         /* 列表样式 */
         .asset-list { background: #fff; border-radius: 12px; overflow: hidden; border: 1px solid var(--border); margin-bottom: 15px; }
@@ -110,7 +118,6 @@ new Vue({
         totalDayProfit() { return this.fundList.reduce((s, i) => s + (i.dayProfit || 0), 0); }
     },
     mounted() {
-        // 页面加载后立即初始化数据并开启定时刷新
         this.refreshAll();
         setInterval(this.refreshAll, 60000);
     },
