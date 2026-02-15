@@ -16,17 +16,17 @@
         .sum-label { font-size: 11px; opacity: 0.7; margin-bottom: 4px; }
         .sum-val { font-size: 18px; font-weight: bold; font-family: "Helvetica Neue", Arial; }
         
-        /* 操作面板 - 按钮文字优化 */
+        /* 操作面板 */
         .control-panel { background: #fff; border-radius: 12px; padding: 12px; margin-bottom: 16px; border: 1px solid var(--border); }
-        .input-group { display: flex; width: 100%; gap: 0; }
-        .input-group input, .input-group select, .input-group button { height: 38px; border: 1px solid var(--border); background: #fff; font-size: 13px; outline: none; }
+        .input-group { display: flex; width: 100%; gap: 0; align-items: stretch; }
+        .input-group input, .input-group select, .input-group button { height: 40px; border: 1px solid var(--border); background: #fff; font-size: 13px; outline: none; }
         
-        /* 重新分配比例：代码25%，金额35%，类型20%，添加20% */
+        /* 重点优化：分配足够的比例给“添加”按钮 */
         .code-in { flex: 2.5; border-radius: 4px 0 0 4px; padding: 0 8px; min-width: 0; }
         .money-in { flex: 3.5; border-left: none; border-right: none; padding: 0 8px; min-width: 0; }
-        .type-sel { flex: 2; border-right: none; text-align-last: center; -webkit-appearance: none; min-width: 0; }
+        .type-sel { flex: 2.2; border-right: none; text-align-last: center; -webkit-appearance: none; min-width: 0; }
         .add-btn { 
-            flex: 2; 
+            flex: 2.5; 
             background-color: var(--blue); 
             color: #fff; 
             border: none; 
@@ -34,7 +34,9 @@
             font-weight: bold; 
             cursor: pointer;
             white-space: nowrap; /* 强制文字不换行 */
-            padding: 0 4px;      /* 增加一点内部间距 */
+            display: flex;       /* 居中文字 */
+            align-items: center;
+            justify-content: center;
         }
         
         /* 列表卡片样式 */
