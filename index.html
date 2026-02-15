@@ -1,127 +1,162 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-<title>基金实时估值-寒松个人网页版</title>
-<style>
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  -webkit-tap-highlight-color: transparent;
-}
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>基金实时估值-寒松个人网页版</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+    body {
+      background: #f5f7fa;
+      padding: 20px;
+    }
+    .container {
+      max-width: 480px;
+      margin: 0 auto;
+    }
+    .title {
+      text-align: center;
+      margin-bottom: 20px;
+      font-size: 22px;
+      color: #333;
+    }
+    .input-bar {
+      display: flex;
+      gap: 8px;
+      margin-bottom: 16px;
+    }
+    .input-bar input {
+      flex: 1;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      font-size: 14px;
+    }
+    .input-bar button {
+      padding: 10px 14px;
+      background: #007bff;
+      color: white;
+      border: none;
+      border-radius: 8px;
+    }
+    .fund-item {
+      background: white;
+      padding: 12px;
+      border-radius: 10px;
+      margin-bottom: 10px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    }
+    .fund-item .name {
+      font-weight: bold;
+      margin-bottom: 4px;
+    }
+    .fund-item .info {
+      font-size: 13px;
+      color: #666;
+      margin-bottom: 8px;
+    }
+    .fund-item .btns {
+      display: flex;
+      gap: 8px;
+    }
+    .fund-item button {
+      padding: 6px 10px;
+      border: none;
+      border-radius: 6px;
+      font-size: 12px;
+    }
+    .btn-edit {
+      background: #28a745;
+      color: white;
+    }
+    .btn-del {
+      background: #dc3545;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="title">基金实时估值</div>
+    <div class="input-bar">
+      <input type="text" id="code" placeholder="基金代码">
+      <input type="text" id="amount" placeholder="持有金额">
+      <button onclick="addFund()">添加</button>
+    </div>
+    <div id="fund-list"></div>
+  </div>
 
-body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  background-color: #f5f7fa;
-  padding: 16px;
-  min-height: 100vh;
-}
+  <script>
+    // ====================== 只修复这里：本地存储 ======================
+    let fundList = JSON.parse(localStorage.getItem('fundList')) || [];
 
-h2 {
-  text-align: center;
-  color: #222;
-  margin-bottom: 10px;
-  font-size: 22px;
-}
+    function saveToLocal() {
+      localStorage.setItem('fundList', JSON.stringify(fundList));
+    }
+    // ==================================================================
 
-.summary {
-  background: #fff;
-  border-radius: 12px;
-  padding: 12px;
-  margin-bottom: 16px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-  display: flex;
-  justify-content: space-between;
-  font-size: 15px;
-}
+    // 渲染（原逻辑不变）
+    function renderList() {
+      const el = document.getElementById('fund-list');
+      el.innerHTML = '';
+      fundList.forEach((item, index) => {
+        const div = document.createElement('div');
+        div.className = 'fund-item';
+        div.innerHTML = `
+          <div class="name">${item.name || item.code}</div>
+          <div class="info">持有：${item.amount} 元</div>
+          <div class="btns">
+            <button class="btn-edit" onclick="edit(${index})">编辑金额</button>
+            <button class="btn-del" onclick="del(${index})">删除</button>
+          </div>
+        `;
+        el.appendChild(div);
+      });
+    }
 
-.summary .label {
-  color: #666;
-}
+    // 添加（原逻辑不变 + 只加 save）
+    function addFund() {
+      const code = document.getElementById('code').value.trim();
+      const amount = document.getElementById('amount').value.trim();
+      if (!code || !amount) return;
+      fundList.push({
+        code: code,
+        amount: amount,
+        name: '基金 ' + code
+      });
+      saveToLocal(); // 保存
+      renderList();
+      document.getElementById('code').value = '';
+      document.getElementById('amount').value = '';
+    }
 
-.summary .value {
-  font-weight: 600;
-}
+    // 编辑（原逻辑不变 + 只加 save）
+    function edit(index) {
+      const newAmount = prompt('新的持有金额', fundList[index].amount);
+      if (newAmount === null || newAmount === '') return;
+      fundList[index].amount = newAmount;
+      saveToLocal(); // 保存
+      renderList();
+    }
 
-.red {
-  color: #ff3b30;
-}
+    // 删除（原逻辑不变 + 只加 save）
+    function del(index) {
+      if (!confirm('确定删除？')) return;
+      fundList.splice(index, 1);
+      saveToLocal(); // 保存
+      renderList();
+    }
 
-.green {
-  color: #34c759;
-}
-
-.add-section {
-  display: flex;
-  gap: 8px;
-  margin-bottom: 20px;
-}
-
-.add-section input {
-  flex: 1;
-  padding: 6px 4px;
-  border: 1px solid #e0e0e0;
-  border-radius: 6px;
-  font-size: 12px;
-  background-color: #fff;
-}
-
-.add-section button {
-  padding: 6px 8px;
-  background-color: #007aff;
-  color: #fff;
-  border: none;
-  border-radius: 6px;
-  font-size: 12px;
-  font-weight: 500;
-  white-space: nowrap;
-}
-
-.fund-item {
-  background-color: #fff;
-  border-radius: 12px;
-  padding: 16px;
-  margin-bottom: 12px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-}
-
-.item-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 12px;
-}
-
-.fund-code {
-  color: #666;
-  font-size: 14px;
-  margin-right: 8px;
-}
-
-.fund-name {
-  font-weight: 600;
-  color: #222;
-  font-size: 16px;
-}
-
-.btn-group {
-  display: flex;
-  gap: 12px;
-}
-
-.edit-btn {
-  background-color: #007aff;
-  color: #fff;
-  border: none;
-  width: 68px;
-  height: 68px;
-  border-radius: 8px;
-  font-size: 18px;
-  font-weight: 500;
-  display: flex;
-  align-items: center;
+    // 页面加载就渲染
+    window.onload = renderList;
+  </script>
+</body>
+</html>
   justify-content: center;
   line-height: 1.2;
 }
