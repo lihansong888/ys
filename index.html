@@ -16,14 +16,26 @@
         .sum-label { font-size: 11px; opacity: 0.7; margin-bottom: 4px; }
         .sum-val { font-size: 18px; font-weight: bold; font-family: "Helvetica Neue", Arial; }
         
-        /* 操作面板 */
+        /* 操作面板 - 按钮文字优化 */
         .control-panel { background: #fff; border-radius: 12px; padding: 12px; margin-bottom: 16px; border: 1px solid var(--border); }
         .input-group { display: flex; width: 100%; gap: 0; }
         .input-group input, .input-group select, .input-group button { height: 38px; border: 1px solid var(--border); background: #fff; font-size: 13px; outline: none; }
-        .code-in { flex: 2; border-radius: 4px 0 0 4px; padding: 0 8px; min-width: 0; }
-        .money-in { flex: 3; border-left: none; border-right: none; padding: 0 8px; min-width: 0; }
-        .type-sel { flex: 1.5; border-right: none; text-align-last: center; -webkit-appearance: none; min-width: 0; }
-        .add-btn { flex: 1.5; background-color: var(--blue); color: #fff; border: none; border-radius: 0 4px 4px 0; font-weight: bold; cursor: pointer; }
+        
+        /* 重新分配比例：代码25%，金额35%，类型20%，添加20% */
+        .code-in { flex: 2.5; border-radius: 4px 0 0 4px; padding: 0 8px; min-width: 0; }
+        .money-in { flex: 3.5; border-left: none; border-right: none; padding: 0 8px; min-width: 0; }
+        .type-sel { flex: 2; border-right: none; text-align-last: center; -webkit-appearance: none; min-width: 0; }
+        .add-btn { 
+            flex: 2; 
+            background-color: var(--blue); 
+            color: #fff; 
+            border: none; 
+            border-radius: 0 4px 4px 0; 
+            font-weight: bold; 
+            cursor: pointer;
+            white-space: nowrap; /* 强制文字不换行 */
+            padding: 0 4px;      /* 增加一点内部间距 */
+        }
         
         /* 列表卡片样式 */
         .asset-group-title { font-size: 13px; font-weight: bold; color: #666; margin-bottom: 8px; padding-left: 4px; }
@@ -34,8 +46,9 @@
         .item-name { color: #333; font-size: 15px; font-weight: 500; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
         .card-btns { display: flex; gap: 8px; flex-shrink: 0; }
         .btn-mini { padding: 4px 12px; border-radius: 6px; font-size: 12px; color: #fff; border: none; cursor: pointer; }
-        .btn-refresh { background-color: #52c41a; }
+        .btn-edit { background-color: var(--blue); }
         .btn-del { background-color: #ff4d4f; }
+        
         .card-body-row { display: flex; margin-bottom: 8px; font-size: 14px; align-items: baseline; }
         .card-body-row:last-child { margin-bottom: 0; }
         .row-label { color: #333; margin-right: 10px; }
@@ -45,7 +58,7 @@
         .up { color: var(--up); }
         .down { color: var(--down); }
         
-        /* 自定义对话框样式 (修改与删除共用基础结构) */
+        /* 弹窗样式 */
         .mask { position: fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.6); display:flex; align-items:center; justify-content:center; z-index:9998; }
         .dialog-box { background:#fff; width:85%; border-radius:16px; padding:20px; text-align: center; }
         .dialog-title { margin-bottom:15px; font-weight:bold; font-size: 16px; }
@@ -84,7 +97,7 @@
                     <span class="item-name">{{ item.name }}</span>
                 </div>
                 <div class="card-btns">
-                    <button class="btn-mini btn-refresh" @click="refreshAll">刷新</button>
+                    <button class="btn-mini btn-edit" @click="openEdit(item)">编辑</button>
                     <button class="btn-mini btn-del" @click="confirmDelete(item)">删除</button>
                 </div>
             </div>
@@ -126,7 +139,6 @@
 
 <script>
 const _0xkey = ['\x38\x38\x38\x38\x38\x38', '\x61\x73\x73\x65\x74\x73\x5f\x66\x69\x6e\x61\x6c\x5f\x76\x32']; 
-
 new Vue({
     el: '#app',
     data: {
@@ -134,7 +146,7 @@ new Vue({
         assets: JSON.parse(localStorage.getItem(_0xkey[1]) || '{}'),
         fundList: [],
         editData: { show: false, code: '', name: '', tempValue: 0 },
-        delConfirm: { show: false, code: '', name: '' }, // 删除确认状态
+        delConfirm: { show: false, code: '', name: '' },
         toast: { show: false, msg: '' }
     },
     computed: {
@@ -199,7 +211,6 @@ new Vue({
                 this.editData.show = false; this.showToast("修改成功");
             }
         },
-        // 自定义删除流程
         confirmDelete(item) { this.delConfirm.code = item.code; this.delConfirm.name = item.name; this.delConfirm.show = true; },
         executeDelete() {
             Vue.delete(this.assets, this.delConfirm.code);
