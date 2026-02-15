@@ -5,67 +5,62 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
   <title>基金实时估值-寒松个人网页版</title>
   <style>
+    /* 全局重置，适配各种屏幕 */
     * { margin: 0; padding: 0; box-sizing: border-box; font-family: -apple-system, system-ui, sans-serif; }
-    body { background-color: #f8f9fa; padding: 16px; color: #333; line-height: 1.5; }
-    .container { max-width: 500px; margin: 0 auto; }
+    body { background-color: #f8f9fa; padding: 12px; color: #333; -webkit-font-smoothing: antialiased; }
+    .container { width: 100%; max-width: 500px; margin: 0 auto; }
     
-    .page-title { font-size: 24px; font-weight: 700; margin: 10px 0 24px 2px; color: #1a1a1a; }
-    
-    /* 汇总卡片：严格左右对齐 */
+    .page-title { font-size: 1.4rem; font-weight: 700; margin: 10px 0 15px 5px; }
+
+    /* 汇总卡片：自动撑满宽度，内容两端对齐 */
     .summary { 
-      background: #fff; border-radius: 12px; padding: 20px; margin-bottom: 20px; 
-      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+      background: #fff; border-radius: 12px; padding: 16px; margin-bottom: 15px; 
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05); width: 100%;
     }
     .summary-item { 
-      display: flex; justify-content: space-between; align-items: center; height: 32px;
+      display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;
     }
-    .summary-label { color: #666; font-size: 15px; }
-    .summary-value { font-size: 20px; font-weight: 700; font-family: "Helvetica Neue", Arial; }
-    
-    /* 输入区域：高度强制统一 */
-    .input-row { display: flex; gap: 8px; margin-bottom: 20px; }
+    .summary-item:last-child { margin-bottom: 0; }
+    .summary-label { color: #666; font-size: 0.95rem; }
+    .summary-value { font-size: 1.2rem; font-weight: 700; }
+
+    /* 输入区域：全自动比例伸缩 */
+    .input-row { 
+      display: flex; width: 100%; gap: 8px; margin-bottom: 15px; 
+    }
     .input-field { 
-      height: 48px; /* 固定高度 */
-      padding: 0 12px; border: 1px solid #ddd; border-radius: 8px; 
+      height: 46px; border: 1px solid #ddd; border-radius: 8px; 
       font-size: 15px; outline: none; background: #fff;
-      -webkit-appearance: none; /* 消除iOS默认样式 */
+      padding: 0 10px;
+      -webkit-appearance: none;
     }
-    #fund-code { flex: 1.2; } 
-    #fund-amount { flex: 2; }
-    .input-field:focus { border-color: #007aff; }
-
+    /* 重点：按比例自动适应宽度 */
+    #fund-code { flex: 2; min-width: 0; }   /* 占2份 */
+    #fund-amount { flex: 3; min-width: 0; } /* 占3份 */
+    
     .add-btn { 
-      height: 48px; /* 与输入框严格等高 */
-      padding: 0 20px; background-color: #007aff; color: #fff; border: none; 
-      border-radius: 8px; font-weight: 600; cursor: pointer; white-space: nowrap;
+      height: 46px; padding: 0 15px; background-color: #007aff; color: #fff; 
+      border: none; border-radius: 8px; font-weight: 600; cursor: pointer;
+      white-space: nowrap; flex-shrink: 0; /* 按钮不缩减 */
     }
 
-    /* 列表条目 */
+    /* 列表条目：宽度自适应 */
     .fund-item { 
-      background-color: #fff; border-radius: 12px; padding: 16px; margin-bottom: 12px; 
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.02); display: flex; align-items: center;
+      background-color: #fff; border-radius: 10px; padding: 15px; margin-bottom: 10px; 
+      display: flex; justify-content: space-between; align-items: center;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.02); width: 100%;
     }
-    .item-info { flex: 1; min-width: 0; padding-right: 10px; }
-    .fund-name { font-size: 16px; font-weight: 600; color: #222; margin-bottom: 4px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
-    .fund-meta { font-size: 13px; color: #999; margin-bottom: 6px; }
-    .fund-data { font-size: 14px; display: flex; gap: 12px; }
+    .item-info { flex: 1; min-width: 0; margin-right: 8px; }
+    .fund-name { font-size: 1rem; font-weight: 600; margin-bottom: 4px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+    .fund-meta { font-size: 0.8rem; color: #999; margin-bottom: 5px; }
+    .fund-data { font-size: 0.9rem; display: flex; flex-wrap: wrap; gap: 10px; }
     
     .up { color: #e63946 !important; }
     .down { color: #2a9d8f !important; }
 
-    .item-buttons { display: flex; gap: 8px; }
-    .action-btn { 
-      border: none; width: 44px; height: 44px; border-radius: 8px; 
-      font-size: 13px; cursor: pointer; font-weight: 500;
-    }
-    .edit-btn { background-color: #f0f7ff; color: #007aff; }
-    .delete-btn { background-color: #fff1f0; color: #ff4d4f; }
-
-    /* 弹窗样式 */
-    .modal-overlay { position: fixed; inset: 0; background: rgba(0,0,0,0.5); display: none; align-items: center; justify-content: center; z-index: 1000; }
-    .modal { background: #fff; border-radius: 16px; width: 80%; max-width: 300px; padding: 20px; }
-    .modal-buttons { display: flex; gap: 10px; margin-top: 20px; }
-    .modal-btn { flex: 1; height: 44px; border-radius: 8px; border: none; font-weight: 600; }
+    .action-btn { width: 38px; height: 38px; border-radius: 6px; border: none; font-size: 13px; margin-left: 5px; }
+    .edit-btn { background: #f0f7ff; color: #007aff; }
+    .delete-btn { background: #fff1f0; color: #ff4d4f; }
   </style>
 </head>
 <body>
@@ -73,7 +68,7 @@
     <h1 class="page-title">基金实时估值</h1>
     
     <div class="summary">
-      <div class="summary-item" style="margin-bottom: 12px;">
+      <div class="summary-item">
         <span class="summary-label">持仓总额 (元)</span>
         <span id="total-hold" class="summary-value">0.00</span>
       </div>
@@ -92,22 +87,10 @@
     <div id="fund-list"></div>
   </div>
 
-  <div class="modal-overlay" id="edit-modal">
-    <div class="modal">
-      <h3 style="text-align:center;margin-bottom:15px">修改金额</h3>
-      <input type="number" id="edit-input" class="input-field" style="width:100%">
-      <div class="modal-buttons">
-        <button class="modal-btn" onclick="closeEditModal()">取消</button>
-        <button class="modal-btn" style="background:#007aff;color:#fff" onclick="confirmEdit()">确定</button>
-      </div>
-    </div>
-  </div>
-
   <script>
+    // 逻辑部分保持高效获取
     let fundList = JSON.parse(localStorage.getItem('fundList')) || [];
-    let currentEditIndex = -1;
 
-    // 获取天天基金数据
     function fetchFundData(code) {
       return new Promise((resolve) => {
         const script = document.createElement('script');
@@ -125,93 +108,59 @@
 
     async function renderFundList() {
       const listEl = document.getElementById('fund-list');
-      let totalHold = 0;
-      let totalProfit = 0;
-      
+      let totalHold = 0, totalProfit = 0;
       const itemsHtml = [];
+
       for (let i = 0; i < fundList.length; i++) {
         const fund = fundList[i];
         const apiData = await fetchFundData(fund.code);
         let gsz = 0, name = fund.name || '基金 ' + fund.code;
-        
-        if (apiData) {
-          gsz = parseFloat(apiData.gszzl);
-          name = apiData.name;
-          fundList[i].name = name;
-        }
+        if (apiData) { gsz = parseFloat(apiData.gszzl); name = apiData.name; }
 
         const profit = (fund.amount * (gsz / 100));
         totalHold += Number(fund.amount);
         totalProfit += profit;
 
-        const colorClass = gsz >= 0 ? 'up' : 'down';
-        const sign = gsz >= 0 ? '+' : '';
-
+        const color = gsz >= 0 ? 'up' : 'down';
         itemsHtml.push(`
           <div class="fund-item">
             <div class="item-info">
               <div class="fund-name">${name}</div>
               <div class="fund-meta">${fund.code} · 持仓 ${fund.amount}</div>
               <div class="fund-data">
-                <span style="color:#888">估算 <span class="${colorClass}">${sign}${gsz}%</span></span>
-                <span style="color:#888">盈亏 <span class="${colorClass}">${sign}${profit.toFixed(2)}</span></span>
+                <span>估算 <span class="${color}">${gsz >= 0 ? '+' : ''}${gsz}%</span></span>
+                <span>盈亏 <span class="${color}">${profit >= 0 ? '+' : ''}${profit.toFixed(2)}</span></span>
               </div>
             </div>
-            <div class="item-buttons">
-              <button class="action-btn edit-btn" onclick="openEditModal(${i})">改</button>
+            <div style="display:flex">
+              <button class="action-btn edit-btn" onclick="editAmount(${i})">改</button>
               <button class="action-btn delete-btn" onclick="deleteFund(${i})">删</button>
             </div>
           </div>
         `);
       }
-
-      listEl.innerHTML = itemsHtml.join('') || '<div style="text-align:center;color:#ccc;margin-top:40px;">空空如也</div>';
-      
+      listEl.innerHTML = itemsHtml.join('') || '<div style="text-align:center;color:#ccc;margin-top:30px;">暂无记录</div>';
       document.getElementById('total-hold').textContent = totalHold.toFixed(2);
-      const tpEl = document.getElementById('total-profit');
-      tpEl.textContent = (totalProfit >= 0 ? '+' : '') + totalProfit.toFixed(2);
-      tpEl.className = 'summary-value ' + (totalProfit >= 0 ? 'up' : 'down');
+      const tp = document.getElementById('total-profit');
+      tp.textContent = (totalProfit >= 0 ? '+' : '') + totalProfit.toFixed(2);
+      tp.className = 'summary-value ' + (totalProfit >= 0 ? 'up' : 'down');
     }
 
     function addFund() {
-      const code = document.getElementById('fund-code').value.trim();
-      const amount = document.getElementById('fund-amount').value.trim();
-      if (code.length < 6 || !amount) return;
-      fundList.push({ code, amount: parseFloat(amount) });
-      saveAndRefresh();
-      document.getElementById('fund-code').value = '';
-      document.getElementById('fund-amount').value = '';
+      const c = document.getElementById('fund-code').value.trim();
+      const a = document.getElementById('fund-amount').value.trim();
+      if (c.length < 6 || !a) return;
+      fundList.push({ code: c, amount: parseFloat(a) });
+      update();
+      document.getElementById('fund-code').value = ''; document.getElementById('fund-amount').value = '';
     }
 
-    function deleteFund(i) {
-      if(confirm('确定删除？')) {
-        fundList.splice(i, 1);
-        saveAndRefresh();
-      }
+    function deleteFund(i) { if(confirm('删除？')) { fundList.splice(i, 1); update(); } }
+    function editAmount(i) {
+      const newVal = prompt('输入新金额', fundList[i].amount);
+      if(newVal) { fundList[i].amount = parseFloat(newVal); update(); }
     }
-
-    function openEditModal(i) {
-      currentEditIndex = i;
-      document.getElementById('edit-input').value = fundList[i].amount;
-      document.getElementById('edit-modal').style.display = 'flex';
-    }
-
-    function closeEditModal() { document.getElementById('edit-modal').style.display = 'none'; }
-
-    function confirmEdit() {
-      const val = document.getElementById('edit-input').value;
-      if(val) {
-        fundList[currentEditIndex].amount = parseFloat(val);
-        saveAndRefresh();
-        closeEditModal();
-      }
-    }
-
-    function saveAndRefresh() {
-      localStorage.setItem('fundList', JSON.stringify(fundList));
-      renderFundList();
-    }
-
+    function update() { localStorage.setItem('fundList', JSON.stringify(fundList)); renderFundList(); }
     window.onload = renderFundList;
   </script>
 </body>
