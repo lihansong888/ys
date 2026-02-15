@@ -6,64 +6,66 @@
     <title>基金实时估值-寒松个人网页版</title>
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
     <style>
-        :root { --up: #ff4d4f; --down: #52c41a; --blue: #1890ff; --dark-blue: #0052d9; --border: #e8e8e8; }
+        :root { --up: #ff4d4f; --down: #52c41a; --blue: #1890ff; --border: #e8e8e8; }
         * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
-        body { font-family: -apple-system, sans-serif; background: #f0f2f5; padding: 12px; margin: 0; color: #333; }
+        body { font-family: -apple-system, sans-serif; background: #f0f2f5; padding: 12px; margin: 0; }
         
-        /* 顶部汇总 */
-        .summary-card { background: linear-gradient(135deg, var(--blue), var(--dark-blue)); color: #fff; padding: 18px 10px; border-radius: 16px; margin-bottom: 16px; display: grid; grid-template-columns: 1fr 1fr; gap: 12px; box-shadow: 0 4px 15px rgba(24, 144, 255, 0.3); }
+        /* 顶部看板 */
+        .summary-card { background: linear-gradient(135deg, #2f54eb, #1890ff); color: #fff; padding: 20px 15px; border-radius: 16px; margin-bottom: 16px; display: grid; grid-template-columns: 1fr 1fr; gap: 15px; }
         .sum-box { text-align: center; }
         .sum-label { font-size: 11px; opacity: 0.8; margin-bottom: 4px; }
-        .sum-val { font-size: 20px; font-weight: bold; font-family: Arial; }
+        .sum-val { font-size: 19px; font-weight: bold; }
         
-        /* 操作面板 - 重点修复区 */
-        .control-panel { background: #fff; border-radius: 12px; padding: 12px; margin-bottom: 16px; border: 1px solid var(--border); }
-        .input-group { display: flex; width: 100%; height: 44px; border: 1px solid var(--border); border-radius: 8px; overflow: hidden; background: #fff; }
-        .input-group input, .input-group select { height: 100%; border: none; font-size: 13px; outline: none; padding: 0 8px; background: transparent; }
+        /* 操作面板 - 彻底重构 */
+        .control-panel { background: #fff; border-radius: 12px; padding: 10px; margin-bottom: 16px; border: 1px solid var(--border); }
+        .input-row { display: flex; align-items: center; width: 100%; height: 44px; }
         
-        .code-in { flex: 1.2; min-width: 0; border-right: 1px solid var(--border) !important; }
-        .money-in { flex: 1.8; min-width: 0; border-right: 1px solid var(--border) !important; }
-        .type-sel { width: 65px; text-align-last: center; -webkit-appearance: none; border-right: 1px solid var(--border) !important; color: #1890ff; font-weight: 500; }
+        /* 给前面的输入框固定 80% 的空间 */
+        .inputs-part { flex: 1; display: flex; border: 1px solid var(--border); border-radius: 8px 0 0 8px; overflow: hidden; height: 100%; }
+        .inputs-part input, .inputs-part select { flex: 1; width: 30%; border: none; border-right: 1px solid var(--border); outline: none; font-size: 13px; padding: 0 5px; text-align: center; }
         
-        /* 最终加固的添加按钮 */
-        .add-btn { 
-            width: 58px !important; 
-            flex-shrink: 0 !important; /* 严禁被挤压 */
-            background-color: var(--blue) !important; 
-            color: #ffffff !important; 
-            border: none !important; 
-            cursor: pointer;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 28px !important; /* 巨大的 + 号 */
-            font-weight: bold;
-            line-height: 1;
-            transition: all 0.1s;
+        /* 给最后的按钮强行锁定 20% 的空间，且最小不低于 60px */
+        .btn-part { 
+            width: 65px !important; 
+            height: 100%; 
+            background: var(--blue) !important; 
+            border-radius: 0 8px 8px 0;
+            display: flex !important;
+            align-items: center !important;
+            justify-content: center !important;
+            flex-shrink: 0 !important; /* 核心：禁止被左边挤压 */
         }
-        .add-btn:active { transform: scale(0.9); background-color: var(--dark-blue) !important; }
+        
+        .add-btn-final {
+            color: #ffffff !important;
+            font-size: 15px !important;
+            font-weight: bold !important;
+            background: transparent !important;
+            border: none !important;
+            width: 100% !important;
+            height: 100% !important;
+            display: block !important;
+            padding: 0 !important;
+            margin: 0 !important;
+            text-align: center !important;
+            line-height: 44px !important; /* 强制垂直居中 */
+        }
 
-        /* 列表卡片 */
-        .asset-group-title { font-size: 13px; font-weight: bold; color: #666; margin-bottom: 8px; padding-left: 4px; }
-        .item-card { background: #fff; border-radius: 16px; padding: 16px; margin-bottom: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); border: 1px solid var(--border); position: relative; }
-        .card-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 10px; }
-        .item-code { color: #888; font-size: 13px; font-family: Arial; margin-right: 6px; }
-        .item-name { color: #333; font-size: 15px; font-weight: bold; }
-        .card-btns { display: flex; gap: 8px; }
-        .btn-mini { padding: 5px 12px; border-radius: 6px; font-size: 12px; color: #fff; border: none; }
-        .btn-edit { background: var(--blue); }
-        .btn-del { background: #ff4d4f; }
-        
-        .card-row { display: flex; justify-content: space-between; margin-top: 6px; font-size: 14px; }
-        .up { color: var(--up); font-weight: bold; }
-        .down { color: var(--down); font-weight: bold; }
-        
-        /* 弹窗样式 */
-        .mask { position: fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.7); display:flex; align-items:center; justify-content:center; z-index:999; }
-        .dialog { background:#fff; width:85%; border-radius:16px; padding:24px; text-align: center; }
-        .dialog-input { width:100%; height:46px; border:2px solid var(--blue); border-radius:8px; font-size:20px; text-align:center; margin:15px 0; outline:none; }
-        .btn-block { width:100%; height:44px; border-radius:8px; border:none; color:#fff; font-weight:bold; margin-top:10px; }
-        .toast { position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); background: rgba(0,0,0,0.8); color: #fff; padding: 12px 24px; border-radius: 8px; z-index: 1000; }
+        /* 列表展示 */
+        .asset-title { font-size: 13px; color: #666; margin: 10px 0 8px 5px; font-weight: bold; }
+        .item-card { background: #fff; border-radius: 12px; padding: 15px; margin-bottom: 12px; border: 1px solid var(--border); }
+        .item-head { display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; }
+        .item-name { font-weight: bold; font-size: 15px; }
+        .card-row { display: flex; justify-content: space-between; font-size: 14px; margin-top: 5px; }
+        .up { color: var(--up); }
+        .down { color: var(--down); }
+        .btn-s { padding: 4px 10px; border-radius: 4px; border: none; font-size: 12px; color: #fff; margin-left: 5px; }
+
+        /* 弹窗 */
+        .mask { position: fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.6); display:flex; align-items:center; justify-content:center; z-index:99; }
+        .dialog { background:#fff; width:80%; border-radius:12px; padding:20px; text-align:center; }
+        .dialog input { width:100%; height:40px; margin:15px 0; text-align:center; border:1px solid var(--blue); border-radius:4px; }
+        .btn-act { width:100%; height:40px; background:var(--blue); color:#fff; border:none; border-radius:4px; font-weight:bold; }
     </style>
 </head>
 <body>
@@ -71,64 +73,65 @@
 <div id="app">
     <div class="summary-card">
         <div class="sum-box"><div class="sum-label">估算总市值</div><div class="sum-val">{{ totalAmount.toFixed(2) }}</div></div>
-        <div class="sum-box"><div class="sum-label">原始总投入</div><div class="sum-val">{{ totalCost.toFixed(2) }}</div></div>
-        <div class="sum-box"><div class="sum-label">累计总盈亏</div><div class="sum-val" :class="totalProfit >= 0 ? 'up' : 'down'">{{ totalProfit >= 0 ? '+' : '' }}{{ totalProfit.toFixed(2) }}</div></div>
-        <div class="sum-box"><div class="sum-label">今日预估</div><div class="sum-val" :class="totalDayProfit >= 0 ? 'up' : 'down'">{{ totalDayProfit >= 0 ? '+' : '' }}{{ totalDayProfit.toFixed(2) }}</div></div>
+        <div class="sum-box"><div class="sum-label">累计总投入</div><div class="sum-val">{{ totalCost.toFixed(2) }}</div></div>
+        <div class="sum-box"><div class="sum-label">持仓盈亏</div><div class="sum-val" :class="totalProfit>=0?'up':'down'">{{ totalProfit>=0?'+':'' }}{{ totalProfit.toFixed(2) }}</div></div>
+        <div class="sum-box"><div class="sum-label">今日盈亏</div><div class="sum-val" :class="totalDayProfit>=0?'up':'down'">{{ totalDayProfit>=0?'+':'' }}{{ totalDayProfit.toFixed(2) }}</div></div>
     </div>
 
     <div class="control-panel">
-        <div class="input-group">
-            <input v-model="form.code" class="code-in" placeholder="输入代码">
-            <input v-model.number="form.money" class="money-in" type="number" placeholder="金额(点右侧+)">
-            <select v-model="form.type" class="type-sel">
-                <option value="基金">基金</option>
-                <option value="股票">股票</option>
-            </select>
-            <button class="add-btn" @click="addItem">+</button>
+        <div class="input-row">
+            <div class="inputs-part">
+                <input v-model="form.code" placeholder="代码">
+                <input v-model.number="form.money" type="number" placeholder="金额">
+                <select v-model="form.type">
+                    <option value="基金">基金</option>
+                    <option value="股票">股票</option>
+                </select>
+            </div>
+            <div class="btn-part">
+                <button class="add-btn-final" @click="addItem" style="color:#ffffff !important; display:block !important;">添加</button>
+            </div>
         </div>
     </div>
 
-    <div v-for="cat in ['基金', '股票']" :key="cat" v-if="getGroup(cat).length">
-        <div class="asset-group-title">{{cat}}资产明细</div>
+    <div v-for="cat in ['基金','股票']" :key="cat" v-if="getGroup(cat).length">
+        <div class="asset-title">{{cat}}资产明细</div>
         <div v-for="item in getGroup(cat)" :key="item.code" class="item-card">
-            <div class="card-header">
-                <div><span class="item-code">{{ item.code }}</span><span class="item-name">{{ item.name }}</span></div>
-                <div class="card-btns">
-                    <button class="btn-mini btn-edit" @click="openEdit(item)">编辑</button>
-                    <button class="btn-mini btn-del" @click="confirmDelete(item)">删除</button>
+            <div class="item-head">
+                <div class="item-name">{{item.name}}</div>
+                <div>
+                    <button class="btn-s" style="background:var(--blue)" @click="openEdit(item)">编辑</button>
+                    <button class="btn-s" style="background:#ff4d4f" @click="confirmDelete(item)">删除</button>
                 </div>
             </div>
             <div class="card-row">
-                <span>实时涨跌：<span :class="item.changeRate >= 0 ? 'up' : 'down'">{{ item.changeRate >= 0 ? '+' : '' }}{{ item.changeRate }}%</span></span>
-                <span>预估盈亏：<span :class="getItemProfit(item) >= 0 ? 'up' : 'down'">{{ getItemProfit(item) >= 0 ? '+' : '' }}{{ getItemProfit(item).toFixed(2) }}</span></span>
+                <span>涨跌：<span :class="item.changeRate>=0?'up':'down'">{{item.changeRate>=0?'+':''}}{{item.changeRate}}%</span></span>
+                <span>盈亏：<span :class="getItemProfit(item)>=0?'up':'down'">{{getItemProfit(item)>=0?'+':''}}{{getItemProfit(item).toFixed(2)}}</span></span>
             </div>
-            <div class="card-row">
-                <span style="color:#666">当前估值：{{ (item.price * item.myShare).toFixed(2) }} 元</span>
-                <span style="color:#666">本金：{{ item.cost }} 元</span>
+            <div class="card-row" style="color:#888; font-size:12px;">
+                <span>代码：{{item.code}}</span>
+                <span>本金：{{item.cost}}</span>
             </div>
         </div>
     </div>
 
     <div class="mask" v-if="editData.show">
         <div class="dialog">
-            <div style="font-weight:bold">{{ editData.name }}</div>
-            <div style="font-size:12px; color:#999; margin-top:4px;">修改原始本金金额</div>
-            <input type="number" class="dialog-input" v-model.number="editData.tempValue">
-            <button class="btn-block" style="background:var(--blue)" @click="saveEdit">保存修改</button>
-            <button class="btn-block" style="background:#ccc; color:#666" @click="editData.show=false">取消</button>
+            <div style="font-weight:bold">{{editData.name}}</div>
+            <input type="number" v-model.number="editData.tempValue">
+            <button class="btn-act" @click="saveEdit">确定修改</button>
+            <button class="btn-act" style="background:#eee; color:#666; margin-top:10px;" @click="editData.show=false">取消</button>
         </div>
     </div>
 
     <div class="mask" v-if="delConfirm.show">
         <div class="dialog">
-            <div style="font-weight:bold; color:#ff4d4f">确认删除？</div>
-            <div style="margin: 15px 0;">{{ delConfirm.name }}</div>
-            <button class="btn-block" style="background:#ff4d4f" @click="executeDelete">确定删除</button>
-            <button class="btn-block" style="background:#ccc; color:#666" @click="delConfirm.show=false">取消</button>
+            <div style="font-weight:bold; color:red">确认删除此资产？</div>
+            <p>{{delConfirm.name}}</p>
+            <button class="btn-act" style="background:red" @click="executeDelete">确定删除</button>
+            <button class="btn-act" style="background:#eee; color:#666; margin-top:10px;" @click="delConfirm.show=false">取消</button>
         </div>
     </div>
-
-    <div class="toast" v-if="toast.show">{{ toast.msg }}</div>
 </div>
 
 <script>
@@ -186,10 +189,10 @@ new Vue({
             this.fundList = list;
         },
         addItem() {
-            if(!this.form.code || !this.form.money) { this.showToast("请填写完整"); return; }
+            if(!this.form.code || !this.form.money) return;
             Vue.set(this.assets, this.form.code, { code: this.form.code, money: parseFloat(this.form.money), type: this.form.type });
             localStorage.setItem(_0xkey[0], JSON.stringify(this.assets));
-            this.refreshAll(); this.form.code = ''; this.form.money = ''; this.showToast("已成功添加");
+            this.refreshAll(); this.form.code = ''; this.form.money = '';
         },
         openEdit(item) { this.editData.code = item.code; this.editData.name = item.name; this.editData.tempValue = item.cost; this.editData.show = true; },
         saveEdit() {
@@ -197,16 +200,15 @@ new Vue({
             if (!isNaN(nv)) {
                 this.assets[this.editData.code].money = nv;
                 localStorage.setItem(_0xkey[0], JSON.stringify(this.assets));
-                this.refreshAll(); this.editData.show = false; this.showToast("修改已保存");
+                this.refreshAll(); this.editData.show = false;
             }
         },
         confirmDelete(item) { this.delConfirm.code = item.code; this.delConfirm.name = item.name; this.delConfirm.show = true; },
         executeDelete() {
             Vue.delete(this.assets, this.delConfirm.code);
             localStorage.setItem(_0xkey[0], JSON.stringify(this.assets));
-            this.delConfirm.show = false; this.refreshAll(); this.showToast("已移除");
-        },
-        showToast(msg) { this.toast.msg = msg; this.toast.show = true; setTimeout(() => { this.toast.show = false; }, 1500); }
+            this.delConfirm.show = false; this.refreshAll();
+        }
     }
 });
 </script>
