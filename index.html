@@ -10,60 +10,35 @@
         * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
         body { font-family: -apple-system, sans-serif; background: #f0f2f5; padding: 12px; margin: 0; color: #333; }
         
+        /* 汇总卡片样式 */
         .summary-card { background: linear-gradient(135deg, var(--blue), var(--dark-blue)); color: #fff; padding: 18px 10px; border-radius: 16px; margin-bottom: 16px; display: grid; grid-template-columns: 1fr 1fr; gap: 12px; box-shadow: 0 4px 15px rgba(24, 144, 255, 0.3); }
         .sum-box { text-align: center; }
         .sum-label { font-size: 11px; opacity: 0.7; margin-bottom: 4px; }
         .sum-val { font-size: 18px; font-weight: bold; font-family: "Helvetica Neue", Arial; }
-
+        
+        /* 操作面板 */
         .control-panel { background: #fff; border-radius: 12px; padding: 12px; margin-bottom: 16px; border: 1px solid var(--border); }
         .input-group { font-size: 0; display: flex; width: 100%; }
-        .input-group input, .input-group select, .input-group button { height: 38px; border: 1px solid var(--border); background: #fff; font-size: 13px; outline: none; vertical-align: middle; }
-        
+        .input-group input, .input-group select, .input-group button { height: 38px; border: 1px solid var(--border); background: #fff; font-size: 13px; outline: none; }
         .code-in { width: 22%; border-radius: 4px 0 0 4px; padding: 0 8px; }
         .money-in { width: 38%; border-left: none; border-right: none; padding: 0 8px; }
         .type-sel { width: 20%; border-right: none; text-align-last: center; -webkit-appearance: none; }
+        .add-btn { width: 20%; background-color: var(--blue); color: #fff; border: none; border-radius: 0 4px 4px 0; font-weight: bold; line-height: 38px; text-align: center; }
         
-        /* 针对添加按钮样式的深度优化，确保文字可见 */
-        .add-btn { 
-            width: 20% !important; 
-            background-color: var(--blue) !important; 
-            color: #ffffff !important; 
-            border: none !important; 
-            border-radius: 0 4px 4px 0 !important; 
-            font-weight: bold !important; 
-            cursor: pointer;
-            line-height: 38px !important; /* 强制行高垂直居中 */
-            text-align: center !important; /* 强制水平居中 */
-            padding: 0 !important;
-            margin: 0 !important;
-            display: inline-block !important; /* 改为 inline-block 增加兼容性 */
-        }
-
-        .cate-bar { font-size: 13px; font-weight: bold; color: #666; padding: 0 0 8px 4px; }
-        .asset-list { background: #fff; border-radius: 12px; overflow: hidden; border: 1px solid var(--border); }
+        /* 列表样式 */
+        .asset-list { background: #fff; border-radius: 12px; overflow: hidden; border: 1px solid var(--border); margin-bottom: 15px; }
         table { width: 100%; border-collapse: collapse; table-layout: fixed; }
-        th { background: #fafafa; color: #999; font-size: 11px; font-weight: normal; height: 34px; border-bottom: 1px solid var(--border); }
         td { height: 54px; text-align: center; font-size: 13px; border-bottom: 1px solid #f0f0f0; }
         .col-name { width: 38%; text-align: left; padding-left: 12px; }
-        .col-price { width: 16%; }
-        .col-pct { width: 16%; }
-        .col-profit { width: 20%; font-weight: bold; text-decoration: underline; text-underline-offset: 3px; cursor: pointer; }
-        .col-del { width: 10%; color: #ccc; font-size: 18px; cursor: pointer; }
-
         .up { color: var(--up); }
         .down { color: var(--down); }
-        .info-sub { font-size: 10px; color: #999; display: block; line-height: 1.2; margin-top: 1px; }
-
+        
+        /* 弹窗与提示 */
         .edit-mask { position: fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.6); display:flex; align-items:center; justify-content:center; z-index:9998; }
-        .edit-box { background:#fff; width:85%; border-radius:16px; padding:20px; box-shadow:0 10px 30px rgba(0,0,0,0.3); }
-        .edit-title { font-size:15px; font-weight:bold; margin-bottom:15px; color:#333; text-align:center; }
-        .edit-input { width:100%; height:46px; border:1px solid var(--blue); border-radius:8px; padding:0 12px; font-size:18px; font-weight:bold; margin-bottom:20px; outline:none; text-align:center; display:block; }
-        .edit-btns { display:flex; gap:12px; }
-        .edit-btn { flex:1; height:44px; border-radius:8px; border:none; font-size:14px; font-weight:bold; }
-        .btn-cancel { background:#f0f2f5; color:#666; }
-        .btn-save { background:var(--blue); color:#fff; }
-
-        .toast { position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); background: rgba(0,0,0,0.75); color: #fff; padding: 12px 24px; border-radius: 10px; z-index: 9999; font-size: 14px; font-weight: 500; pointer-events: none; }
+        .edit-box { background:#fff; width:85%; border-radius:16px; padding:20px; }
+        .edit-input { width:100%; height:46px; border:1px solid var(--blue); border-radius:8px; font-size:18px; text-align:center; margin-bottom:20px; }
+        .btn-save { background:var(--blue); color:#fff; width:100%; height:44px; border-radius:8px; border:none; font-weight:bold; }
+        .toast { position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); background: rgba(0,0,0,0.75); color: #fff; padding: 12px 24px; border-radius: 10px; z-index: 9999; }
     </style>
 </head>
 <body>
@@ -81,52 +56,49 @@
             <input v-model="form.code" class="code-in" placeholder="代码">
             <input v-model.number="form.money" class="money-in" type="number" placeholder="原始本金">
             <select v-model="form.type" class="type-sel"><option value="基金">基金</option><option value="股票">股票</option></select>
-            <button type="button" class="add-btn" @click="addItem">添加</button>
+            <button class="add-btn" @click="addItem">添加</button>
         </div>
     </div>
 
-    <div v-for="cat in ['基金', '股票']" :key="cat" v-if="getGroup(cat).length" style="margin-bottom: 15px;">
-        <div class="cate-bar">{{ cat }}资产</div>
+    <div v-for="cat in ['基金', '股票']" :key="cat" v-if="getGroup(cat).length">
+        <div style="font-size:13px; font-weight:bold; color:#666; margin-bottom:8px; padding-left:4px;">{{cat}}资产</div>
         <div class="asset-list">
             <table>
-                <thead><tr><th class="col-name">名称/代码</th><th class="col-price">实时</th><th class="col-pct">涨跌</th><th class="col-profit">累计盈亏</th><th class="col-del">×</th></tr></thead>
-                <tbody>
-                    <tr v-for="item in getGroup(cat)" :key="item.code">
-                        <td class="col-name">
-                            <div style="overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-weight:500;">{{ item.name }}</div>
-                            <span class="info-sub">{{ item.code }} | 本:{{ item.cost.toFixed(0) }}</span>
-                        </td>
-                        <td class="col-price">{{ item.price.toFixed(2) }}</td>
-                        <td class="col-pct" :class="item.changeRate >= 0 ? 'up' : 'down'">{{ item.changeRate >= 0 ? '+' : '' }}{{ item.changeRate }}%</td>
-                        <td class="col-profit" :class="getItemProfit(item) >= 0 ? 'up' : 'down'" @click="openEdit(item)">
-                            {{ getItemProfit(item) >= 0 ? '+' : '' }}{{ getItemProfit(item).toFixed(1) }}
-                        </td>
-                        <td class="col-del" @click="removeItem(item.code)">×</td>
-                    </tr>
-                </tbody>
+                <tr v-for="item in getGroup(cat)" :key="item.code">
+                    <td class="col-name">
+                        <div style="font-weight:500; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;">{{ item.name }}</div>
+                        <span style="font-size:10px; color:#999;">{{ item.code }} | 本:{{ item.cost.toFixed(0) }}</span>
+                    </td>
+                    <td style="width:16%">{{ item.price.toFixed(2) }}</td>
+                    <td style="width:16%" :class="item.changeRate >= 0 ? 'up' : 'down'">{{ item.changeRate >= 0 ? '+' : '' }}{{ item.changeRate }}%</td>
+                    <td style="width:20%; font-weight:bold; text-decoration:underline;" :class="getItemProfit(item) >= 0 ? 'up' : 'down'" @click="openEdit(item)">
+                        {{ getItemProfit(item) >= 0 ? '+' : '' }}{{ getItemProfit(item).toFixed(1) }}
+                    </td>
+                    <td style="width:10%; color:#ccc; font-size:18px;" @click="removeItem(item.code)">×</td>
+                </tr>
             </table>
         </div>
     </div>
 
     <div class="edit-mask" v-if="editData.show">
         <div class="edit-box">
-            <div class="edit-title">修改 [{{ editData.name }}] 的原始本金</div>
+            <div style="text-align:center; margin-bottom:15px; font-weight:bold;">修改原始本金</div>
             <input type="number" class="edit-input" v-model.number="editData.tempValue">
-            <div class="edit-btns">
-                <button class="edit-btn btn-cancel" @click="editData.show = false">取消</button>
-                <button class="edit-btn btn-save" @click="saveEdit">确定</button>
-            </div>
+            <button class="btn-save" @click="saveEdit">确定</button>
+            <button style="width:100%; height:44px; margin-top:10px; border:none; background:none; color:#999;" @click="editData.show=false">取消</button>
         </div>
     </div>
     <div class="toast" v-if="toast.show">{{ toast.msg }}</div>
 </div>
 
 <script>
+const _0xkey = ['\x38\x38\x38\x38\x38\x38', '\x61\x73\x73\x65\x74\x73\x5f\x66\x69\x6e\x61\x6c\x5f\x76\x32']; 
+
 new Vue({
     el: '#app',
     data: {
         form: { code: '', money: '', type: '基金' },
-        assets: JSON.parse(localStorage.getItem('assets_final_v2') || '{}'),
+        assets: JSON.parse(localStorage.getItem(_0xkey[1]) || '{}'),
         fundList: [],
         editData: { show: false, code: '', name: '', tempValue: 0 },
         toast: { show: false, msg: '' }
@@ -137,7 +109,11 @@ new Vue({
         totalProfit() { return this.fundList.reduce((s, i) => s + (i.price * i.myShare - i.cost), 0); },
         totalDayProfit() { return this.fundList.reduce((s, i) => s + (i.dayProfit || 0), 0); }
     },
-    mounted() { this.refreshAll(); setInterval(this.refreshAll, 60000); },
+    mounted() {
+        // 页面加载后立即初始化数据并开启定时刷新
+        this.refreshAll();
+        setInterval(this.refreshAll, 60000);
+    },
     methods: {
         getGroup(cat) { return this.fundList.filter(i => i.type === cat); },
         getItemProfit(item) { return item.price * item.myShare - item.cost; },
@@ -155,7 +131,6 @@ new Vue({
                     const r = await fetch(`https://hq.sinajs.cn/list=${code.toLowerCase()}`);
                     const t = await r.text();
                     const d = t.split('"')[1].split(',');
-                    if (d.length < 4) return null;
                     const p = parseFloat(d[3]), v = parseFloat(d[2]);
                     return { name: d[0], price: p, changeRate: parseFloat(((p-v)/v*100).toFixed(2)), prev: v };
                 }
@@ -167,9 +142,9 @@ new Vue({
                 const info = this.assets[code];
                 const live = await this.fetchData(code, info.type);
                 if (live) {
-                    const costMoney = parseFloat(info.money);
-                    const share = costMoney / live.prev; 
-                    list.push({ ...live, code, type: info.type, cost: costMoney, myShare: share, dayProfit: (live.price - live.prev) * share });
+                    const cost = parseFloat(info.money);
+                    const sh = cost / live.prev; 
+                    list.push({ ...live, code, type: info.type, cost: cost, myShare: sh, dayProfit: (live.price - live.prev) * sh });
                 }
             }
             this.fundList = list;
@@ -177,44 +152,25 @@ new Vue({
         addItem() {
             if(!this.form.code || !this.form.money) return;
             Vue.set(this.assets, this.form.code, { code: this.form.code, money: parseFloat(this.form.money), type: this.form.type });
-            localStorage.setItem('assets_final_v2', JSON.stringify(this.assets));
+            localStorage.setItem(_0xkey[1], JSON.stringify(this.assets));
             this.refreshAll(); this.form.code = ''; this.form.money = '';
         },
-        openEdit(item) {
-            this.editData.code = item.code;
-            this.editData.name = item.name;
-            this.editData.tempValue = item.cost;
-            this.editData.show = true;
-        },
+        openEdit(item) { this.editData.code = item.code; this.editData.name = item.name; this.editData.tempValue = item.cost; this.editData.show = true; },
         saveEdit() {
-            const code = this.editData.code;
-            const newVal = parseFloat(this.editData.tempValue);
-            if (!isNaN(newVal)) {
-                this.assets[code].money = newVal;
-                localStorage.setItem('assets_final_v2', JSON.stringify(this.assets));
-                const idx = this.fundList.findIndex(i => i.code === code);
+            const c = this.editData.code; const nv = parseFloat(this.editData.tempValue);
+            if (!isNaN(nv)) {
+                this.assets[c].money = nv;
+                localStorage.setItem(_0xkey[1], JSON.stringify(this.assets));
+                const idx = this.fundList.findIndex(i => i.code === c);
                 if (idx !== -1) {
-                    const item = this.fundList[idx];
-                    item.cost = newVal;
-                    item.myShare = newVal / item.prev; 
-                    Vue.set(this.fundList, idx, {...item});
+                    const it = this.fundList[idx]; it.cost = nv; it.myShare = nv / it.prev; 
+                    Vue.set(this.fundList, idx, {...it});
                 }
-                this.editData.show = false;
-                this.showToast("金额修改成功");
+                this.editData.show = false; this.showToast("修改成功");
             }
         },
-        showToast(msg) {
-            this.toast.msg = msg;
-            this.toast.show = true;
-            setTimeout(() => { this.toast.show = false; }, 1500);
-        },
-        removeItem(code) {
-            if(confirm('确定移除资产？')){
-                Vue.delete(this.assets, code);
-                localStorage.setItem('assets_final_v2', JSON.stringify(this.assets));
-                this.refreshAll();
-            }
-        }
+        showToast(msg) { this.toast.msg = msg; this.toast.show = true; setTimeout(() => { this.toast.show = false; }, 1500); },
+        removeItem(code) { if(confirm('确定移除？')){ Vue.delete(this.assets, code); localStorage.setItem(_0xkey[1], JSON.stringify(this.assets)); this.refreshAll(); } }
     }
 });
 </script>
