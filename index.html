@@ -2,46 +2,69 @@
 <html lang="zh-CN">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
   <title>基金实时估值-寒松个人网页版</title>
   <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
-    body { background-color: #f5f7fa; padding: 20px; }
-    .container { max-width: 480px; margin: 0 auto; }
-    .page-title { font-size: 24px; font-weight: 600; text-align: center; margin-bottom: 20px; color: #333; }
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: -apple-system, system-ui, sans-serif; }
+    body { background-color: #f8f9fa; padding: 16px; color: #333; }
+    .container { max-width: 500px; margin: 0 auto; }
     
-    /* 顶部汇总卡片 */
-    .summary { background: linear-gradient(135deg, #007aff, #005bb5); border-radius: 12px; padding: 20px; margin-bottom: 20px; box-shadow: 0 4px 12px rgba(0, 122, 255, 0.2); color: #fff; }
-    .summary-item { display: flex; justify-content: space-between; margin-bottom: 10px; font-size: 16px; opacity: 0.9; }
-    .summary-value { font-size: 20px; font-weight: 700; opacity: 1; }
+    .page-title { font-size: 22px; font-weight: 700; margin: 10px 0 20px 4px; color: #1a1a1a; }
     
-    /* 输入区域 */
-    .input-row { display: flex; gap: 8px; margin-bottom: 16px; }
-    .input-field { flex: 1; padding: 12px; border: 1px solid #e0e0e0; border-radius: 8px; font-size: 14px; outline: none; }
-    .add-btn { padding: 12px 16px; background-color: #007aff; color: #fff; border: none; border-radius: 8px; font-weight: 500; cursor: pointer; }
+    /* 汇总卡片：左右对齐优化 */
+    .summary { 
+      background: #fff; border-radius: 16px; padding: 20px; margin-bottom: 20px; 
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05); border: 1px solid rgba(0,0,0,0.03);
+    }
+    .summary-item { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 12px; }
+    .summary-item:last-child { margin-bottom: 0; }
+    .summary-label { color: #888; font-size: 14px; }
+    .summary-value { font-size: 22px; font-weight: 700; font-variant-numeric: tabular-nums; }
+    
+    /* 输入区域：比例与对齐 */
+    .input-row { display: flex; gap: 10px; margin-bottom: 20px; align-items: stretch; }
+    #fund-code { flex: 2; } /* 代码框略窄 */
+    #fund-amount { flex: 3; } /* 金额框略宽 */
+    .input-field { 
+      padding: 14px; border: 1.5px solid #eee; border-radius: 10px; 
+      font-size: 15px; outline: none; transition: border-color 0.2s;
+    }
+    .input-field:focus { border-color: #007aff; background: #fff; }
+    .add-btn { 
+      padding: 0 18px; background-color: #007aff; color: #fff; border: none; 
+      border-radius: 10px; font-weight: 600; cursor: pointer; font-size: 15px;
+    }
 
-    /* 列表条目 */
-    .fund-item { background-color: #fff; border-radius: 12px; padding: 16px; margin-bottom: 12px; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04); display: flex; justify-content: space-between; align-items: center; }
-    .item-info { flex: 1; }
-    .fund-name { font-size: 16px; font-weight: 600; color: #333; margin-bottom: 2px; }
-    .fund-meta { font-size: 13px; color: #999; margin-bottom: 6px; }
-    .fund-data { font-size: 14px; color: #666; }
-    .profit-tag { font-weight: 600; }
-    .up { color: #ff3b30; } /* 涨-红 */
-    .down { color: #34c759; } /* 跌-绿 */
+    /* 列表条目：紧凑且对齐 */
+    .fund-item { 
+      background-color: #fff; border-radius: 14px; padding: 16px; margin-bottom: 12px; 
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.03); display: flex; align-items: center;
+    }
+    .item-info { flex: 1; min-width: 0; }
+    .fund-name { font-size: 16px; font-weight: 600; color: #222; margin-bottom: 4px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+    .fund-meta { font-size: 13px; color: #999; margin-bottom: 8px; }
+    .fund-data { font-size: 14px; display: flex; gap: 15px; }
+    
+    .up { color: #eb3b3b; }
+    .down { color: #20bf6b; }
 
-    .item-buttons { display: flex; gap: 8px; margin-left: 10px;}
-    .action-btn { border: none; width: 44px; height: 44px; border-radius: 8px; font-size: 13px; cursor: pointer; color: white; }
-    .edit-btn { background-color: #f2f2f7; color: #007aff; }
-    .delete-btn { background-color: #fff1f0; color: #ff4d4f; }
+    .item-buttons { display: flex; gap: 8px; }
+    .action-btn { 
+      border: none; width: 42px; height: 42px; border-radius: 8px; 
+      font-size: 13px; font-weight: 500; cursor: pointer;
+    }
+    .edit-btn { background-color: #f0f7ff; color: #007aff; }
+    .delete-btn { background-color: #fff2f2; color: #ff3b30; }
 
-    /* 弹窗省略...(保持你原有的 CSS 即可) */
-    .modal-overlay { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5); display: none; align-items: center; justify-content: center; z-index: 9999; }
-    .modal { background-color: #fff; border-radius: 12px; width: 90%; max-width: 350px; padding: 20px; }
-    .modal-title { font-size: 17px; font-weight: 600; margin-bottom: 15px; text-align: center; }
-    .modal-input { width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 6px; margin-bottom: 15px; }
-    .modal-buttons { display: flex; gap: 10px; }
-    .modal-btn { flex: 1; padding: 10px; border-radius: 6px; border: none; cursor: pointer; }
+    /* 弹窗样式补全 */
+    .modal-overlay { position: fixed; inset: 0; background: rgba(0,0,0,0.4); display: none; align-items: center; justify-content: center; z-index: 100; backdrop-filter: blur(2px); }
+    .modal { background: #fff; border-radius: 20px; width: 85%; max-width: 320px; padding: 24px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); }
+    .modal-title { font-size: 18px; font-weight: 600; margin-bottom: 15px; text-align: center; }
+    .modal-input { width: 100%; padding: 12px; border: 1.5px solid #eee; border-radius: 8px; margin-bottom: 20px; font-size: 16px; outline: none; }
+    .modal-buttons { display: flex; gap: 12px; }
+    .modal-btn { flex: 1; padding: 12px; border-radius: 10px; border: none; font-weight: 600; cursor: pointer; }
+    .c-cancel { background: #f5f5f7; color: #666; }
+    .c-confirm { background: #007aff; color: #fff; }
   </style>
 </head>
 <body>
@@ -50,17 +73,17 @@
     
     <div class="summary">
       <div class="summary-item">
-        <span>持仓总额 (元)</span>
-        <span id="total-hold">0.00</span>
+        <span class="summary-label">持仓总额 (元)</span>
+        <span id="total-hold" class="summary-value" style="color:#333">0.00</span>
       </div>
       <div class="summary-item">
-        <span>估算盈亏 (今日)</span>
-        <span class="summary-value" id="total-profit">+0.00</span>
+        <span class="summary-label">今日估算盈亏</span>
+        <span id="total-profit" class="summary-value">+0.00</span>
       </div>
     </div>
 
     <div class="input-row">
-      <input type="text" id="fund-code" class="input-field" placeholder="代码:如000001">
+      <input type="text" id="fund-code" class="input-field" placeholder="代码" maxlength="6">
       <input type="number" id="fund-amount" class="input-field" placeholder="持有金额">
       <button class="add-btn" onclick="addFund()">添加</button>
     </div>
@@ -73,8 +96,8 @@
       <div class="modal-title">修改持有金额</div>
       <input type="number" id="edit-input" class="modal-input">
       <div class="modal-buttons">
-        <button class="modal-btn" onclick="closeEditModal()">取消</button>
-        <button class="modal-btn" style="background:#007aff;color:#fff" onclick="confirmEdit()">确定</button>
+        <button class="modal-btn c-cancel" onclick="closeEditModal()">取消</button>
+        <button class="modal-btn c-confirm" onclick="confirmEdit()">确定</button>
       </div>
     </div>
   </div>
@@ -83,7 +106,6 @@
     let fundList = JSON.parse(localStorage.getItem('fundList')) || [];
     let currentEditIndex = -1;
 
-    // 核心：从天天基金获取实时数据
     function fetchFundData(code) {
       return new Promise((resolve) => {
         const script = document.createElement('script');
@@ -93,7 +115,6 @@
           delete window[callbackName];
           document.body.removeChild(script);
         };
-        // 天天基金 API
         script.src = `https://fundgz.1234567.com.cn/js/${code}.js?rt=${Date.now()}&callback=${callbackName}`;
         script.onerror = () => resolve(null);
         document.body.appendChild(script);
@@ -102,23 +123,19 @@
 
     async function renderFundList() {
       const listEl = document.getElementById('fund-list');
-      listEl.innerHTML = '<p style="text-align:center;color:#999;">数据加载中...</p>';
-      
       let totalHold = 0;
       let totalProfit = 0;
-      let html = '';
-
+      
+      const itemsHtml = [];
       for (let i = 0; i < fundList.length; i++) {
         const fund = fundList[i];
         const apiData = await fetchFundData(fund.code);
-        
-        let gsz = 0; // 估值涨幅
-        let name = fund.name || '未知基金';
+        let gsz = 0, name = fund.name || '基金 ' + fund.code;
         
         if (apiData) {
           gsz = parseFloat(apiData.gszzl);
           name = apiData.name;
-          fundList[i].name = name; // 更新名称缓存
+          fundList[i].name = name;
         }
 
         const profit = (fund.amount * (gsz / 100));
@@ -128,14 +145,14 @@
         const colorClass = gsz >= 0 ? 'up' : 'down';
         const sign = gsz >= 0 ? '+' : '';
 
-        html += `
+        itemsHtml.push(`
           <div class="fund-item">
             <div class="item-info">
               <div class="fund-name">${name}</div>
-              <div class="fund-meta">${fund.code} | 持有: ${fund.amount}元</div>
+              <div class="fund-meta">${fund.code} · 持仓 ${fund.amount}</div>
               <div class="fund-data">
-                估算涨幅: <span class="${colorClass}">${sign}${gsz}%</span> 
-                盈亏: <span class="profit-tag ${colorClass}">${sign}${profit.toFixed(2)}</span>
+                <span style="color:#888">估算 <span class="${colorClass}">${sign}${gsz}%</span></span>
+                <span style="color:#888">盈亏 <span class="${colorClass}">${sign}${profit.toFixed(2)}</span></span>
               </div>
             </div>
             <div class="item-buttons">
@@ -143,39 +160,37 @@
               <button class="action-btn delete-btn" onclick="deleteFund(${i})">删</button>
             </div>
           </div>
-        `;
+        `);
       }
 
-      listEl.innerHTML = html || '<p style="text-align:center;color:#999;margin-top:20px;">暂无持仓，请添加</p>';
+      listEl.innerHTML = itemsHtml.join('') || '<div style="text-align:center;color:#ccc;margin-top:40px;">空空如也</div>';
       
-      // 更新顶部数据
       document.getElementById('total-hold').textContent = totalHold.toFixed(2);
-      const totalProfitEl = document.getElementById('total-profit');
-      totalProfitEl.textContent = (totalProfit >= 0 ? '+' : '') + totalProfit.toFixed(2);
-      totalProfitEl.className = 'summary-value ' + (totalProfit >= 0 ? 'up' : 'down');
+      const tpEl = document.getElementById('total-profit');
+      tpEl.textContent = (totalProfit >= 0 ? '+' : '') + totalProfit.toFixed(2);
+      tpEl.className = 'summary-value ' + (totalProfit >= 0 ? 'up' : 'down');
     }
 
     function addFund() {
       const code = document.getElementById('fund-code').value.trim();
       const amount = document.getElementById('fund-amount').value.trim();
-      if (code.length < 6 || !amount) return alert('请输入完整信息');
-      
+      if (code.length < 6 || !amount) return;
       fundList.push({ code, amount: parseFloat(amount) });
       saveAndRefresh();
       document.getElementById('fund-code').value = '';
       document.getElementById('fund-amount').value = '';
     }
 
-    function deleteFund(index) {
-      if(confirm('确定删除吗？')) {
-        fundList.splice(index, 1);
+    function deleteFund(i) {
+      if(confirm('删除此基金记录？')) {
+        fundList.splice(i, 1);
         saveAndRefresh();
       }
     }
 
-    function openEditModal(index) {
-      currentEditIndex = index;
-      document.getElementById('edit-input').value = fundList[index].amount;
+    function openEditModal(i) {
+      currentEditIndex = i;
+      document.getElementById('edit-input').value = fundList[i].amount;
       document.getElementById('edit-modal').style.display = 'flex';
     }
 
