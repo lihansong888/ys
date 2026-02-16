@@ -3,127 +3,149 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>基金实时估值-寒松最终版</title>
+    <title>基金实时估值-寒松纯净版</title>
     <style>
         :root { --up: #ff4d4f; --down: #52c41a; --blue: #1890ff; --border: #e8e8e8; }
         * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
         body { font-family: -apple-system, sans-serif; background: #f0f2f5; padding: 12px; margin: 0; }
-        .summary-card { background: linear-gradient(135deg, #2f54eb, #1890ff); color: #fff; padding: 20px 15px; border-radius: 16px; margin-bottom: 16px; display: grid; grid-template-columns: 1fr 1fr; gap: 15px; box-shadow: 0 4px 12px rgba(24,144,255,0.3); }
+        .summary-card { background: linear-gradient(135deg, #2f54eb, #1890ff); color: #fff; padding: 20px 15px; border-radius: 16px; margin-bottom: 16px; display: grid; grid-template-columns: 1fr 1fr; gap: 15px; }
         .sum-box { text-align: center; }
         .sum-label { font-size: 11px; opacity: 0.8; margin-bottom: 4px; }
-        .sum-val { font-size: 19px; font-weight: bold; }
+        .sum-val { font-size: 18px; font-weight: bold; }
         .control-panel { background: #fff; border-radius: 12px; padding: 10px; margin-bottom: 16px; border: 1px solid var(--border); }
-        .input-row { display: flex; align-items: center; width: 100%; height: 44px; }
+        .input-row { display: flex; align-items: center; height: 44px; }
         .inputs-part { flex: 1; display: flex; border: 1px solid var(--border); border-radius: 8px 0 0 8px; overflow: hidden; height: 100%; }
-        .inputs-part input, .inputs-part select { flex: 1; width: 30%; border: none; border-right: 1px solid var(--border); outline: none; font-size: 13px; padding: 0 5px; text-align: center; }
-        .btn-part { width: 65px; height: 100%; background: var(--blue); border-radius: 0 8px 8px 0; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
-        .add-btn { color: #fff; font-size: 15px; font-weight: bold; background: none; border: none; width: 100%; height: 100%; }
+        .inputs-part input, .inputs-part select { flex: 1; border: none; border-right: 1px solid var(--border); outline: none; font-size: 13px; text-align: center; width: 30%; }
+        .btn-part { width: 65px; height: 100%; background: var(--blue); border-radius: 0 8px 8px 0; display: flex; align-items: center; justify-content: center; }
+        .add-btn { color: #fff; font-size: 14px; font-weight: bold; background: none; border: none; width: 100%; height: 100%; }
         .item-card { background: #fff; border-radius: 12px; padding: 15px; margin-bottom: 12px; border: 1px solid var(--border); }
-        .item-name { font-weight: bold; font-size: 15px; }
-        .card-row { display: flex; justify-content: space-between; font-size: 14px; margin-top: 5px; }
+        .card-row { display: flex; justify-content: space-between; font-size: 14px; margin-top: 8px; }
         .up { color: var(--up); font-weight: bold; }
         .down { color: var(--down); font-weight: bold; }
-        .btn-s { padding: 4px 10px; border-radius: 4px; border: none; font-size: 12px; color: #fff; margin-left: 5px; }
     </style>
 </head>
 <body>
-<div id="app">
+
     <div class="summary-card">
-        <div class="sum-box"><div class="sum-label">估算总市值</div><div class="sum-val">{{ totalAmount.toFixed(2) }}</div></div>
-        <div class="sum-box"><div class="sum-label">累计总投入</div><div class="sum-val">{{ totalCost.toFixed(2) }}</div></div>
-        <div class="sum-box"><div class="sum-label">持仓盈亏</div><div class="sum-val" :class="totalProfit>=0?'up':'down'">{{ totalProfit>=0?'+':'' }}{{ totalProfit.toFixed(2) }}</div></div>
-        <div class="sum-box"><div class="sum-label">今日盈亏</div><div class="sum-val" :class="totalDayProfit>=0?'up':'down'">{{ totalDayProfit>=0?'+':'' }}{{ totalDayProfit.toFixed(2) }}</div></div>
+        <div class="sum-box"><div class="sum-label">估算总市值</div><div id="totalAmount" class="sum-val">0.00</div></div>
+        <div class="sum-box"><div class="sum-label">累计总投入</div><div id="totalCost" class="sum-val">0.00</div></div>
+        <div class="sum-box"><div class="sum-label">持仓盈亏</div><div id="totalProfit" class="sum-val">0.00</div></div>
+        <div class="sum-box"><div class="sum-label">今日盈亏</div><div id="totalDayProfit" class="sum-val">0.00</div></div>
     </div>
+
     <div class="control-panel">
         <div class="input-row">
             <div class="inputs-part">
-                <input v-model="form.code" placeholder="代码">
-                <input v-model.number="form.money" type="number" placeholder="金额">
-                <select v-model="form.type"><option value="基金">基金</option><option value="股票">股票</option></select>
+                <input id="inCode" placeholder="代码">
+                <input id="inMoney" type="number" placeholder="金额">
+                <select id="inType"><option value="基金">基金</option><option value="股票">股票</option></select>
             </div>
-            <div class="btn-part"><button class="add-btn" @click="addItem">添加</button></div>
+            <div class="btn-part"><button class="add-btn" onclick="addItem()">添加</button></div>
         </div>
     </div>
-    <div v-for="item in fundList" :key="item.code" class="item-card">
-        <div style="display:flex; justify-content:space-between; align-items:center">
-            <div class="item-name">{{item.name}}</div>
-            <button class="btn-s" style="background:#ff4d4f" @click="deleteItem(item.code)">删除</button>
-        </div>
-        <div class="card-row">
-            <span>涨跌：<span :class="item.changeRate>=0?'up':'down'">{{item.changeRate>=0?'+':''}}{{item.changeRate}}%</span></span>
-            <span>盈亏：<span :class="(item.price*item.myShare-item.cost)>=0?'up':'down'">{{(item.price*item.myShare-item.cost).toFixed(2)}}</span></span>
-        </div>
-    </div>
-</div>
+
+    <div id="listContainer"></div>
 
 <script>
-/** 此处省略 2 万字，实际代码中我会确保 Vue 被正确初始化 **/
-!function(e,t){"object"==typeof exports&&"undefined"!=typeof module?module.exports=t():"function"==typeof define&&define.amd?define(t):(e=e||self).Vue=t()}(this,function(){"use strict"; /* Vue 核心库代码... */ 
-// 为节省篇幅，如果 GitHub 上能访问，请尽量保留原来的 <script src="...">，
-// 如果依然白屏，请将 Vue.min.js 的内容全部复制贴到这里。
-return function(e){ /* ...框架初始化内容... */ }
-});
+    // 使用原生 JS，彻底抛弃 Vue 框架依赖
+    let assets = JSON.parse(localStorage.getItem('assets_v3') || '{}');
+    let fundList = [];
 
-// 核心逻辑补丁
-new Vue({
-    el: '#app',
-    data: {
-        form: { code: '', money: '', type: '基金' },
-        assets: JSON.parse(localStorage.getItem('assets_v2') || '{}'),
-        fundList: []
-    },
-    computed: {
-        totalAmount() { return this.fundList.reduce((s, i) => s + (i.price * i.myShare), 0); },
-        totalCost() { return this.fundList.reduce((s, i) => s + i.cost, 0); },
-        totalProfit() { return this.totalAmount - this.totalCost; },
-        totalDayProfit() { return this.fundList.reduce((s, i) => s + (i.dayProfit || 0), 0); }
-    },
-    mounted() { this.refreshAll(); setInterval(this.refreshAll, 10000); },
-    methods: {
-        async refreshAll() {
-            const list = [];
-            for (const code in this.assets) {
-                const info = this.assets[code];
-                const live = await this.fetchData(code, info.type);
-                if (live) {
-                    const sh = info.money / live.prev;
-                    list.push({ ...live, code, cost: info.money, myShare: sh, dayProfit: (live.price - live.prev) * sh });
-                }
+    async function refreshAll() {
+        fundList = [];
+        let tAmount = 0, tCost = 0, tDayProfit = 0;
+
+        for (const code in assets) {
+            const info = assets[code];
+            const live = await fetchData(code, info.type);
+            if (live) {
+                const sh = info.money / live.prev;
+                const currentVal = live.price * sh;
+                const profit = currentVal - info.money;
+                const dayProfit = (live.price - live.prev) * sh;
+                
+                tAmount += currentVal;
+                tCost += info.money;
+                tDayProfit += dayProfit;
+
+                fundList.push({ ...live, code, profit, currentVal, cost: info.money });
             }
-            this.fundList = list;
-        },
-        async fetchData(code, type) {
-            try {
-                if (type === '基金') {
-                    return new Promise(res => {
-                        const s = document.createElement('script');
-                        const cb = 'jsonp_' + Math.random().toString(36).substr(2);
-                        window[cb] = (d) => { res({name:d.name,price:parseFloat(d.gsz),changeRate:parseFloat(d.gszzl),prev:parseFloat(d.dwjz)}); s.remove(); };
-                        s.src = `https://fundgz.1234567.com.cn/js/${code}.js?callback=${cb}`;
-                        document.head.appendChild(s);
-                        setTimeout(() => res(null), 5000);
-                    });
-                } else {
-                    const r = await fetch(`https://hq.sinajs.cn/list=${code.toLowerCase()}`);
-                    const t = await r.text();
-                    const d = t.split('"')[1].split(',');
-                    return {name:d[0],price:parseFloat(d[3]),changeRate:parseFloat(((d[3]-d[2])/d[2]*100).toFixed(2)),prev:parseFloat(d[2])};
-                }
-            } catch(e) { return null; }
-        },
-        addItem() {
-            if(!this.form.code || !this.form.money) return;
-            this.$set(this.assets, this.form.code, { money: parseFloat(this.form.money), type: this.form.type });
-            localStorage.setItem('assets_v2', JSON.stringify(this.assets));
-            this.refreshAll();
-        },
-        deleteItem(code) {
-            this.$delete(this.assets, code);
-            localStorage.setItem('assets_v2', JSON.stringify(this.assets));
-            this.refreshAll();
         }
+
+        render(tAmount, tCost, tDayProfit);
     }
-});
+
+    async function fetchData(code, type) {
+        try {
+            if (type === '基金') {
+                return new Promise(res => {
+                    const cb = 'cb' + Date.now();
+                    window[cb] = (d) => { res({name:d.name, price:parseFloat(d.gsz), prev:parseFloat(d.dwjz), changeRate:d.gszzl}); };
+                    const s = document.createElement('script');
+                    s.src = `https://fundgz.1234567.com.cn/js/${code}.js?callback=${cb}`;
+                    document.head.appendChild(s);
+                    setTimeout(() => { s.remove(); res(null); }, 5000);
+                });
+            } else {
+                const r = await fetch(`https://hq.sinajs.cn/list=${code.toLowerCase()}`);
+                const t = await r.text();
+                const d = t.split('"')[1].split(',');
+                const p = parseFloat(d[3]), v = parseFloat(d[2]);
+                return { name:d[0], price:p, prev:v, changeRate:((p-v)/v*100).toFixed(2) };
+            }
+        } catch(e) { return null; }
+    }
+
+    function render(tAmount, tCost, tDayProfit) {
+        document.getElementById('totalAmount').innerText = tAmount.toFixed(2);
+        document.getElementById('totalCost').innerText = tCost.toFixed(2);
+        
+        const tp = document.getElementById('totalProfit');
+        const profit = tAmount - tCost;
+        tp.innerText = (profit >= 0 ? '+' : '') + profit.toFixed(2);
+        tp.className = 'sum-val ' + (profit >= 0 ? 'up' : 'down');
+
+        const tdp = document.getElementById('totalDayProfit');
+        tdp.innerText = (tDayProfit >= 0 ? '+' : '') + tDayProfit.toFixed(2);
+        tdp.className = 'sum-val ' + (tDayProfit >= 0 ? 'up' : 'down');
+
+        let html = '';
+        fundList.forEach(item => {
+            html += `
+                <div class="item-card">
+                    <div style="display:flex; justify-content:space-between">
+                        <b>${item.name}</b>
+                        <button onclick="deleteItem('${item.code}')" style="border:none; background:#ff4d4f; color:#fff; border-radius:4px; padding:2px 8px">删除</button>
+                    </div>
+                    <div class="card-row">
+                        <span>涨跌：<span class="${item.changeRate>=0?'up':'down'}">${item.changeRate >= 0 ? '+' : ''}${item.changeRate}%</span></span>
+                        <span>盈亏：<span class="${item.profit>=0?'up':'down'}">${item.profit >= 0 ? '+' : ''}${item.profit.toFixed(2)}</span></span>
+                    </div>
+                </div>`;
+        });
+        document.getElementById('listContainer').innerHTML = html;
+    }
+
+    function addItem() {
+        const code = document.getElementById('inCode').value;
+        const money = document.getElementById('inMoney').value;
+        const type = document.getElementById('inType').value;
+        if(!code || !money) return;
+        assets[code] = { money: parseFloat(money), type: type };
+        localStorage.setItem('assets_v3', JSON.stringify(assets));
+        refreshAll();
+        document.getElementById('inCode').value = '';
+        document.getElementById('inMoney').value = '';
+    }
+
+    function deleteItem(code) {
+        delete assets[code];
+        localStorage.setItem('assets_v3', JSON.stringify(assets));
+        refreshAll();
+    }
+
+    refreshAll();
+    setInterval(refreshAll, 10000);
 </script>
 </body>
 </html>
