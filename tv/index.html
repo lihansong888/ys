@@ -3,22 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>西瓜私享直播 - 极速版</title>
+    <title>西瓜私享直播 - 免密版</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/dplayer/dist/DPlayer.min.css">
     <script src="https://cdn.jsdelivr.net/npm/hls.js/dist/hls.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/dplayer/dist/DPlayer.min.js"></script>
     <style>
-        body { background: #1a1a1a; color: #fff; font-family: sans-serif; margin: 0; padding: 10px; display: none; }
+        body { background: #1a1a1a; color: #fff; font-family: sans-serif; margin: 0; padding: 10px; }
         .container { max-width: 1000px; margin: 0 auto; }
         #player { width: 100%; aspect-ratio: 16/9; background: #000; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.5); }
         .nav-tabs { display: flex; overflow-x: auto; gap: 10px; margin: 15px 0; padding-bottom: 5px; scrollbar-width: none; }
         .nav-tabs::-webkit-scrollbar { display: none; }
-        .tab-btn { background: #333; border: none; color: #ccc; padding: 8px 18px; border-radius: 20px; cursor: pointer; white-space: nowrap; transition: 0.3s; }
+        .tab-btn { background: #333; border: none; color: #ccc; padding: 8px 18px; border-radius: 20px; cursor: pointer; white-space: nowrap; }
         .tab-btn.active { background: #ff5c38; color: #fff; font-weight: bold; }
         .list-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(110px, 1fr)); gap: 10px; margin-top: 10px; }
-        .list-item { background: #262626; padding: 12px 5px; text-align: center; border-radius: 6px; cursor: pointer; font-size: 14px; border: 1px solid #333; transition: 0.2s; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+        .list-item { background: #262626; padding: 12px 5px; text-align: center; border-radius: 6px; cursor: pointer; font-size: 14px; border: 1px solid #333; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
         .list-item:hover { background: #444; border-color: #ff5c38; }
-        .loading-text { text-align: center; padding: 50px; color: #ff5c38; font-size: 14px; }
+        .loading-text { text-align: center; padding: 50px; color: #ff5c38; }
     </style>
 </head>
 <body>
@@ -32,30 +32,12 @@
 </div>
 
 <script>
-/**
- * 严格遵守用户定义的“西瓜影视”范本逻辑
- * 变量名：ACCESS_PASSWORD (访问密码)
- * 截取符号与分类格式：严格读取 JSON 对象键值
- */
-const ACCESS_PASSWORD = "123"; 
-const JSON_URL = "tv.json"; // 确保此文件与 index.html 在同一目录
+const JSON_URL = "tv.json"; 
 
 let TV_DATA = {};
 let dp;
 
-// 访问权限验证
-function checkAuth() {
-    const pass = prompt("请输入访问授权码：");
-    if (pass === ACCESS_PASSWORD) {
-        document.body.style.display = "block";
-        loadRemoteData();
-    } else {
-        alert("密码错误，访问被拒绝！");
-        window.location.href = "about:blank";
-    }
-}
-
-// 异步加载远程频道数据
+// 移除 checkAuth 验证逻辑，直接启动加载程序
 async function loadRemoteData() {
     try {
         const response = await fetch(JSON_URL + "?v=" + Date.now());
@@ -64,7 +46,7 @@ async function loadRemoteData() {
         initPlayer();
         renderCategories();
     } catch (err) {
-        document.getElementById('list').innerHTML = `<div class="loading-text">频道更新失败，请检查同目录下是否存在 tv.json 文件。</div>`;
+        document.getElementById('list').innerHTML = `<div class="loading-text">频道更新失败，请检查 tv.json 文件。</div>`;
     }
 }
 
@@ -115,8 +97,8 @@ function renderList(cat) {
     });
 }
 
-// 启动程序
-checkAuth();
+// 页面加载后直接执行
+loadRemoteData();
 </script>
 </body>
 </html>
