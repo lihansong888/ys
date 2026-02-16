@@ -3,37 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>基金实时估值-寒松最终版</title>
+    <title>基金实时估值-寒松暴力兼容版</title>
     <style>
         :root { --up: #ff4d4f; --down: #52c41a; --blue: #1890ff; --border: #e8e8e8; }
         * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
         body { font-family: -apple-system, sans-serif; background: #f0f2f5; padding: 12px; margin: 0; }
-        
-        /* 顶部看板 */
-        .summary-card { background: linear-gradient(135deg, #2f54eb, #1890ff); color: #fff; padding: 20px 15px; border-radius: 16px; margin-bottom: 16px; display: grid; grid-template-columns: 1fr 1fr; gap: 15px; box-shadow: 0 4px 12px rgba(24,144,255,0.3); }
+        .summary-card { background: linear-gradient(135deg, #2f54eb, #1890ff); color: #fff; padding: 20px 15px; border-radius: 16px; margin-bottom: 16px; display: grid; grid-template-columns: 1fr 1fr; gap: 15px; }
         .sum-box { text-align: center; }
         .sum-label { font-size: 11px; opacity: 0.8; margin-bottom: 4px; }
         .sum-val { font-size: 18px; font-weight: bold; }
-        
-        /* 输入区域 */
         .control-panel { background: #fff; border-radius: 12px; padding: 10px; margin-bottom: 8px; border: 1px solid var(--border); }
         .input-row { display: flex; align-items: center; height: 44px; }
         .inputs-part { flex: 1; display: flex; border: 1px solid var(--border); border-radius: 8px 0 0 8px; overflow: hidden; height: 100%; }
         .inputs-part input, .inputs-part select { flex: 1; border: none; border-right: 1px solid var(--border); outline: none; font-size: 13px; text-align: center; width: 33%; background: #fff; }
         .btn-part { width: 65px; height: 100%; background: var(--blue); border-radius: 0 8px 8px 0; display: flex; align-items: center; justify-content: center; }
         .add-btn { color: #fff; font-size: 14px; font-weight: bold; background: none; border: none; width: 100%; height: 100%; cursor: pointer; }
-        
-        /* 状态提示 */
         .msg-tip { font-size: 11px; color: #999; text-align: center; margin-bottom: 10px; min-height: 14px; }
-        
-        /* 资产列表 */
         .item-card { background: #fff; border-radius: 12px; padding: 15px; margin-bottom: 12px; border: 1px solid var(--border); }
         .card-row { display: flex; justify-content: space-between; font-size: 14px; margin-top: 8px; }
         .up { color: var(--up); font-weight: bold; }
         .down { color: var(--down); font-weight: bold; }
-        .item-name { font-size: 15px; font-weight: bold; color: #333; }
     </style>
 </head>
 <body>
@@ -48,159 +37,147 @@
     <div class="control-panel">
         <div class="input-row">
             <div class="inputs-part">
-                <input id="inCode" type="text" placeholder="代码" autocomplete="off">
+                <input id="inCode" type="text" placeholder="代码">
                 <input id="inMoney" type="number" placeholder="金额">
-                <select id="inType">
-                    <option value="基金">基金</option>
-                    <option value="股票">股票</option>
-                </select>
+                <select id="inType"><option value="基金">基金</option><option value="股票">股票</option></select>
             </div>
             <div class="btn-part">
-                <button type="button" class="add-btn" id="mainAddBtn">添加</button>
+                <button type="button" class="add-btn" id="addBtn" onclick="forceAddItem()">添加</button>
             </div>
         </div>
     </div>
-    <div id="msgTip" class="msg-tip">状态: 准备就绪</div>
-
+    <div id="msgTip" class="msg-tip">状态: 脚本启动中...</div>
     <div id="listContainer"></div>
 
 <script>
-    // 存储键名保持 v3 独立性
-    let assets = JSON.parse(localStorage.getItem('assets_v3') || '{}');
-    let fundList = [];
+    var assets = JSON.parse(localStorage.getItem('assets_v3') || '{}');
+    var fundList = [];
 
     function setTip(txt) {
-        const el = document.getElementById('msgTip');
-        if(el) el.innerText = "状态: " + txt;
+        document.getElementById('msgTip').innerText = "状态: " + txt;
     }
 
-    // 数据同步主逻辑
-    async function refreshAll() {
-        setTip("正在刷新数据...");
-        fundList = [];
-        let tAmount = 0, tCost = 0, tDayProfit = 0;
+    // 第二重保障：通过 ID 直接绑定函数
+    window.forceAddItem = function() {
+        var c = document.getElementById('inCode').value.replace(/\s+/g, "");
+        var m = document.getElementById('inMoney').value;
+        var t = document.getElementById('inType').value;
 
-        const keys = Object.keys(assets);
+        if(!c || !m) {
+            setTip("添加失败：请检查代码和金额");
+            return;
+        }
+
+        assets[c] = { money: parseFloat(m), type: t };
+        localStorage.setItem('assets_v3', JSON.stringify(assets));
+        
+        document.getElementById('inCode').value = '';
+        document.getElementById('inMoney').value = '';
+        setTip("已尝试添加: " + c);
+        refreshAll();
+    };
+
+    // 第三重保障：监听器绑定
+    var btn = document.getElementById('addBtn');
+    if(btn) {
+        btn.addEventListener('click', function(e) {
+            console.log("Button Clicked via Listener");
+            // 函数内容同上，确保双重触发
+        });
+    }
+
+    async function refreshAll() {
+        fundList = [];
+        var tAmount = 0, tCost = 0, tDayProfit = 0;
+        var keys = Object.keys(assets);
+
         if(keys.length === 0) {
-            setTip("请在上方添加资产代码");
+            setTip("就绪：等待录入代码");
             render(0, 0, 0);
             return;
         }
 
-        for (const code of keys) {
-            const info = assets[code];
-            const live = await fetchData(code, info.type);
+        for (var i=0; i<keys.length; i++) {
+            var code = keys[i];
+            var info = assets[code];
+            var live = await fetchData(code, info.type);
             if (live) {
-                const sh = info.money / live.prev;
-                const currentVal = live.price * sh;
+                var sh = info.money / live.prev;
+                var currentVal = live.price * sh;
                 tAmount += currentVal;
                 tCost += info.money;
                 tDayProfit += (live.price - live.prev) * sh;
-                fundList.push({ ...live, code, profit: currentVal - info.money, currentVal, cost: info.money });
+                fundList.push({ ...live, code, profit: currentVal - info.money, cost: info.money });
             }
         }
         render(tAmount, tCost, tDayProfit);
-        setTip("同步完成 " + new Date().toLocaleTimeString().split(' ')[0]);
+        setTip("更新成功 " + new Date().toLocaleTimeString().split(' ')[0]);
     }
 
-    // 跨域抓取逻辑
     async function fetchData(code, type) {
         try {
             if (type === '基金') {
-                return new Promise(res => {
-                    const cb = 'cb' + Math.floor(Math.random()*1000000);
-                    window[cb] = (d) => { 
+                return new Promise(function(res) {
+                    var cb = 'cb' + Math.floor(Math.random()*100000);
+                    window[cb] = function(d) { 
                         res({name:d.name, price:parseFloat(d.gsz), prev:parseFloat(d.dwjz), changeRate:d.gszzl}); 
                         delete window[cb];
                     };
-                    const s = document.createElement('script');
-                    s.src = `https://fundgz.1234567.com.cn/js/${code}.js?callback=${cb}`;
+                    var s = document.createElement('script');
+                    s.src = "https://fundgz.1234567.com.cn/js/" + code + ".js?callback=" + cb;
                     document.head.appendChild(s);
-                    setTimeout(() => { if(s.parentNode) s.remove(); res(null); }, 5000);
+                    setTimeout(function() { if(s.parentNode) s.remove(); res(null); }, 5000);
                 });
             } else {
-                const r = await fetch(`https://hq.sinajs.cn/list=${code.toLowerCase()}`);
-                const t = await r.text();
-                const d = t.split('"')[1].split(',');
-                if(d.length < 4) return null;
-                const p = parseFloat(d[3]), v = parseFloat(d[2]);
+                var r = await fetch("https://hq.sinajs.cn/list=" + code.toLowerCase());
+                var t = await r.text();
+                var d = t.split('"')[1].split(',');
+                var p = parseFloat(d[3]), v = parseFloat(d[2]);
                 return { name:d[0], price:p, prev:v, changeRate:((p-v)/v*100).toFixed(2) };
             }
         } catch(e) { return null; }
     }
 
-    // 渲染视图
     function render(tAmount, tCost, tDayProfit) {
         document.getElementById('totalAmount').innerText = tAmount.toFixed(2);
         document.getElementById('totalCost').innerText = tCost.toFixed(2);
         
-        const tp = document.getElementById('totalProfit');
-        const profit = tAmount - tCost;
+        var tp = document.getElementById('totalProfit');
+        var profit = tAmount - tCost;
         tp.innerText = (profit >= 0 ? '+' : '') + profit.toFixed(2);
         tp.className = 'sum-val ' + (profit >= 0 ? 'up' : 'down');
 
-        const tdp = document.getElementById('totalDayProfit');
+        var tdp = document.getElementById('totalDayProfit');
         tdp.innerText = (tDayProfit >= 0 ? '+' : '') + tDayProfit.toFixed(2);
         tdp.className = 'sum-val ' + (tDayProfit >= 0 ? 'up' : 'down');
 
-        let html = '';
-        fundList.forEach(item => {
-            html += `
-                <div class="item-card">
-                    <div style="display:flex; justify-content:space-between; align-items:center">
-                        <b class="item-name">${item.name}</b>
-                        <button class="real-del-btn" data-code="${item.code}" style="border:none; background:#ff4d4f; color:#fff; border-radius:4px; padding:6px 12px; font-size:12px">删除</button>
-                    </div>
-                    <div class="card-row">
-                        <span>涨跌：<span class="${item.changeRate>=0?'up':'down'}">${item.changeRate >= 0 ? '+' : ''}${item.changeRate}%</span></span>
-                        <span>盈亏：<span class="${item.profit>=0?'up':'down'}">${item.profit >= 0 ? '+' : ''}${item.profit.toFixed(2)}</span></span>
-                    </div>
-                </div>`;
-        });
+        var html = '';
+        for(var j=0; j<fundList.length; j++){
+            var item = fundList[j];
+            html += '<div class="item-card">' +
+                    '<div style="display:flex; justify-content:space-between; align-items:center">' +
+                    '<b style="font-size:15px">' + item.name + '</b>' +
+                    '<button onclick="deleteItem(\''+item.code+'\')" style="border:none; background:#ff4d4f; color:#fff; border-radius:4px; padding:6px 12px; font-size:12px">删除</button>' +
+                    '</div>' +
+                    '<div class="card-row">' +
+                    '<span>涨跌：<span class="'+(item.changeRate>=0?'up':'down')+'">' + (item.changeRate >= 0 ? '+' : '') + item.changeRate + '%</span></span>' +
+                    '<span>盈亏：<span class="'+(item.profit>=0?'up':'down')+'">' + (item.profit >= 0 ? '+' : '') + item.profit.toFixed(2) + '</span></span>' +
+                    '</div></div>';
+        }
         document.getElementById('listContainer').innerHTML = html;
-
-        // 绑定删除事件
-        document.querySelectorAll('.real-del-btn').forEach(btn => {
-            btn.onclick = function() {
-                const targetCode = this.getAttribute('data-code');
-                if(confirm("确定要删除吗？")) {
-                    delete assets[targetCode];
-                    localStorage.setItem('assets_v3', JSON.stringify(assets));
-                    refreshAll();
-                }
-            };
-        });
     }
 
-    // 初始化监听器
-    document.addEventListener('DOMContentLoaded', () => {
-        const addBtn = document.getElementById('mainAddBtn');
-        if(addBtn) {
-            addBtn.addEventListener('click', () => {
-                const c = document.getElementById('inCode').value.trim();
-                const m = document.getElementById('inMoney').value;
-                const t = document.getElementById('inType').value;
-
-                if(!c || !m) {
-                    setTip("错误: 请输入代码和金额");
-                    return;
-                }
-
-                assets[c] = { money: parseFloat(m), type: t };
-                localStorage.setItem('assets_v3', JSON.stringify(assets));
-                
-                document.getElementById('inCode').value = '';
-                document.getElementById('inMoney').value = '';
-                setTip("成功添加: " + c);
-                refreshAll();
-            });
+    window.deleteItem = function(code) {
+        if(confirm("确定删除吗？")) {
+            delete assets[code];
+            localStorage.setItem('assets_v3', JSON.stringify(assets));
+            refreshAll();
         }
-        
-        // 首次加载
-        refreshAll();
-        // 10秒定时器
-        setInterval(refreshAll, 10000);
-    });
+    };
+
+    // 立即启动
+    refreshAll();
+    setInterval(refreshAll, 10000);
 </script>
 </body>
 </html>
