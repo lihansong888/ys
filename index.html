@@ -1,57 +1,11 @@
-<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>基金实时估值-寒松纯净版</title>
-    <style>
-        :root { --up: #ff4d4f; --down: #52c41a; --blue: #1890ff; --border: #e8e8e8; }
-        * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
-        body { font-family: -apple-system, sans-serif; background: #f0f2f5; padding: 12px; margin: 0; }
-        .summary-card { background: linear-gradient(135deg, #2f54eb, #1890ff); color: #fff; padding: 20px 15px; border-radius: 16px; margin-bottom: 16px; display: grid; grid-template-columns: 1fr 1fr; gap: 15px; }
-        .sum-box { text-align: center; }
-        .sum-label { font-size: 11px; opacity: 0.8; margin-bottom: 4px; }
-        .sum-val { font-size: 18px; font-weight: bold; }
-        .control-panel { background: #fff; border-radius: 12px; padding: 10px; margin-bottom: 16px; border: 1px solid var(--border); }
-        .input-row { display: flex; align-items: center; height: 44px; }
-        .inputs-part { flex: 1; display: flex; border: 1px solid var(--border); border-radius: 8px 0 0 8px; overflow: hidden; height: 100%; }
-        .inputs-part input, .inputs-part select { flex: 1; border: none; border-right: 1px solid var(--border); outline: none; font-size: 13px; text-align: center; width: 30%; }
-        .btn-part { width: 65px; height: 100%; background: var(--blue); border-radius: 0 8px 8px 0; display: flex; align-items: center; justify-content: center; }
-        .add-btn { color: #fff; font-size: 14px; font-weight: bold; background: none; border: none; width: 100%; height: 100%; }
-        .item-card { background: #fff; border-radius: 12px; padding: 15px; margin-bottom: 12px; border: 1px solid var(--border); }
-        .card-row { display: flex; justify-content: space-between; font-size: 14px; margin-top: 8px; }
-        .up { color: var(--up); font-weight: bold; }
-        .down { color: var(--down); font-weight: bold; }
-    </style>
-</head>
-<body>
-
-    <div class="summary-card">
-        <div class="sum-box"><div class="sum-label">估算总市值</div><div id="totalAmount" class="sum-val">0.00</div></div>
-        <div class="sum-box"><div class="sum-label">累计总投入</div><div id="totalCost" class="sum-val">0.00</div></div>
-        <div class="sum-box"><div class="sum-label">持仓盈亏</div><div id="totalProfit" class="sum-val">0.00</div></div>
-        <div class="sum-box"><div class="sum-label">今日盈亏</div><div id="totalDayProfit" class="sum-val">0.00</div></div>
-    </div>
-
-    <div class="control-panel">
-        <div class="input-row">
-            <div class="inputs-part">
-                <input id="inCode" placeholder="代码">
-                <input id="inMoney" type="number" placeholder="金额">
-                <select id="inType"><option value="基金">基金</option><option value="股票">股票</option></select>
-            </div>
-            <div class="btn-part"><button class="add-btn" onclick="addItem()">添加</button></div>
-        </div>
-    </div>
-
-    <div id="listContainer"></div>
-
 <script>
-    // 使用原生 JS，彻底抛弃 Vue 框架依赖
+    // 1. 初始化数据，确保从本地存储读取
     let assets = JSON.parse(localStorage.getItem('assets_v3') || '{}');
     let fundList = [];
 
+    // 2. 核心刷新逻辑
     async function refreshAll() {
+        console.log("正在刷新数据...");
         fundList = [];
         let tAmount = 0, tCost = 0, tDayProfit = 0;
 
@@ -71,16 +25,19 @@
                 fundList.push({ ...live, code, profit, currentVal, cost: info.money });
             }
         }
-
         render(tAmount, tCost, tDayProfit);
     }
 
+    // 3. 数据抓取逻辑
     async function fetchData(code, type) {
         try {
             if (type === '基金') {
                 return new Promise(res => {
-                    const cb = 'cb' + Date.now();
-                    window[cb] = (d) => { res({name:d.name, price:parseFloat(d.gsz), prev:parseFloat(d.dwjz), changeRate:d.gszzl}); };
+                    const cb = 'cb' + Math.random().toString(36).substr(2);
+                    window[cb] = (d) => { 
+                        res({name:d.name, price:parseFloat(d.gsz), prev:parseFloat(d.dwjz), changeRate:d.gszzl}); 
+                        delete window[cb];
+                    };
                     const s = document.createElement('script');
                     s.src = `https://fundgz.1234567.com.cn/js/${code}.js?callback=${cb}`;
                     document.head.appendChild(s);
@@ -90,12 +47,14 @@
                 const r = await fetch(`https://hq.sinajs.cn/list=${code.toLowerCase()}`);
                 const t = await r.text();
                 const d = t.split('"')[1].split(',');
+                if(d.length < 4) return null;
                 const p = parseFloat(d[3]), v = parseFloat(d[2]);
                 return { name:d[0], price:p, prev:v, changeRate:((p-v)/v*100).toFixed(2) };
             }
         } catch(e) { return null; }
     }
 
+    // 4. 渲染页面
     function render(tAmount, tCost, tDayProfit) {
         document.getElementById('totalAmount').innerText = tAmount.toFixed(2);
         document.getElementById('totalCost').innerText = tCost.toFixed(2);
@@ -114,8 +73,8 @@
             html += `
                 <div class="item-card">
                     <div style="display:flex; justify-content:space-between">
-                        <b>${item.name}</b>
-                        <button onclick="deleteItem('${item.code}')" style="border:none; background:#ff4d4f; color:#fff; border-radius:4px; padding:2px 8px">删除</button>
+                        <b class="item-name">${item.name}</b>
+                        <button onclick="deleteItem('${item.code}')" style="border:none; background:#ff4d4f; color:#fff; border-radius:4px; padding:4px 10px">删除</button>
                     </div>
                     <div class="card-row">
                         <span>涨跌：<span class="${item.changeRate>=0?'up':'down'}">${item.changeRate >= 0 ? '+' : ''}${item.changeRate}%</span></span>
@@ -126,26 +85,43 @@
         document.getElementById('listContainer').innerHTML = html;
     }
 
+    // 5. 【修正重点】添加资产逻辑
     function addItem() {
-        const code = document.getElementById('inCode').value;
-        const money = document.getElementById('inMoney').value;
-        const type = document.getElementById('inType').value;
-        if(!code || !money) return;
-        assets[code] = { money: parseFloat(money), type: type };
+        const codeInput = document.getElementById('inCode');
+        const moneyInput = document.getElementById('inMoney');
+        const typeInput = document.getElementById('inType');
+
+        const code = codeInput.value.trim();
+        const money = parseFloat(moneyInput.value);
+        const type = typeInput.value;
+
+        if(!code || isNaN(money)) {
+            alert("请输入正确的代码和金额");
+            return;
+        }
+
+        // 保存到内存和本地存储
+        assets[code] = { money: money, type: type };
         localStorage.setItem('assets_v3', JSON.stringify(assets));
+        
+        // 立即清空并刷新
+        codeInput.value = '';
+        moneyInput.value = '';
         refreshAll();
-        document.getElementById('inCode').value = '';
-        document.getElementById('inMoney').value = '';
     }
 
+    // 6. 删除逻辑
     function deleteItem(code) {
-        delete assets[code];
-        localStorage.setItem('assets_v3', JSON.stringify(assets));
-        refreshAll();
+        if(confirm("确定删除吗？")) {
+            delete assets[code];
+            localStorage.setItem('assets_v3', JSON.stringify(assets));
+            refreshAll();
+        }
     }
 
-    refreshAll();
-    setInterval(refreshAll, 10000);
+    // 7. 初始化执行
+    window.onload = () => {
+        refreshAll();
+        setInterval(refreshAll, 10000);
+    };
 </script>
-</body>
-</html>
