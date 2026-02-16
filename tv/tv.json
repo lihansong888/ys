@@ -11,7 +11,6 @@
   "私密频道": [
     { "name": "Brazzers TV", "url": "http://88.212.7.11/live/test_brazzers_tv_europe_hd/playlist.m3u8" },
     { "name": "Reality Kings", "url": "http://88.212.7.11/live/test_reality_kings_hd/playlist.m3u8" },
-    { "name": "Private TV", "url": "http://88.212.7.11/live/test_private_tv_hd/playlist.m3u8" },
-    { "name": "Hustler TV", "url": "http://88.212.7.11/live/test_hustler_tv_hd/playlist.m3u8" }
+    { "name": "Private TV", "url": "http://88.212.7.11/live/test_private_tv_hd/playlist.m3u8" }
   ]
 }
