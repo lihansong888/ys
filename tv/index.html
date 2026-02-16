@@ -2,29 +2,26 @@
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>西瓜直播 - 兼容增强版</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>西瓜直播 - 小米优化版</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/dplayer/1.27.0/DPlayer.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/hls.js/1.4.12/hls.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/dplayer/1.27.0/DPlayer.min.js"></script>
     <style>
-        body { background: #1a1a1a; color: #fff; font-family: sans-serif; margin: 0; padding: 10px; }
-        .container { max-width: 1000px; margin: 0 auto; }
-        #player { width: 100%; aspect-ratio: 16/9; background: #000; border-radius: 8px; }
-        .nav-tabs { display: flex; overflow-x: auto; gap: 10px; margin: 15px 0; padding-bottom: 5px; }
-        .tab-btn { background: #333; border: none; color: #ccc; padding: 8px 18px; border-radius: 20px; white-space: nowrap; }
+        body { background: #000; color: #fff; font-family: sans-serif; margin: 0; padding: 10px; }
+        #player { width: 100%; aspect-ratio: 16/9; background: #000; border-radius: 4px; }
+        .nav-tabs { display: flex; overflow-x: auto; gap: 8px; margin: 15px 0; padding-bottom: 5px; }
+        .tab-btn { background: #333; border: none; color: #eee; padding: 6px 15px; border-radius: 15px; white-space: nowrap; font-size: 13px; }
         .tab-btn.active { background: #ff5c38; color: #fff; }
-        .list-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(110px, 1fr)); gap: 10px; }
-        .list-item { background: #262626; padding: 12px 5px; text-align: center; border-radius: 6px; font-size: 14px; border: 1px solid #333; }
-        .list-item:active { background: #ff5c38; }
+        .list-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; }
+        .list-item { background: #1c1c1c; padding: 10px 5px; text-align: center; border-radius: 4px; font-size: 13px; border: 1px solid #333; }
     </style>
 </head>
 <body>
-<div class="container">
-    <div id="player"></div>
-    <div class="nav-tabs" id="categoryBox"></div>
-    <div class="list-grid" id="list"></div>
-</div>
+<div id="player"></div>
+<div class="nav-tabs" id="categoryBox"></div>
+<div class="list-grid" id="list"></div>
+
 <script>
 const JSON_URL = "tv.json";
 let TV_DATA = {};
@@ -35,27 +32,18 @@ async function init() {
         const res = await fetch(JSON_URL + "?t=" + Date.now());
         TV_DATA = await res.json();
         const firstCat = Object.keys(TV_DATA)[0];
-        const firstVideo = TV_DATA[firstCat][0].url;
+        const firstUrl = TV_DATA[firstCat][0].url;
         
-        // 初始化播放器并强制开启 HLS 模式
         dp = new DPlayer({
             container: document.getElementById('player'),
-            autoplay: true,
+            autoplay: false, // 手机端建议非自动播放，由用户点击触发
             video: {
-                url: firstVideo,
-                type: 'customHls',
-                customType: {
-                    customHls: function (video) {
-                        const hls = new Hls();
-                        hls.loadSource(video.src);
-                        hls.attachMedia(video);
-                    }
-                }
+                url: firstUrl,
+                type: 'hls'
             }
         });
-        
         renderCategories();
-    } catch (e) { alert("配置加载失败，请检查 tv.json"); }
+    } catch (e) { console.error("加载失败"); }
 }
 
 function renderCategories() {
@@ -82,10 +70,7 @@ function renderList(cat) {
         div.className = 'list-item';
         div.innerText = item.name;
         div.onclick = () => {
-            // 切换视频时也使用增强解码模式
-            const hls = new Hls();
-            hls.loadSource(item.url);
-            hls.attachMedia(dp.video);
+            dp.switchVideo({ url: item.url, type: 'hls' });
             dp.play();
         };
         box.appendChild(div);
