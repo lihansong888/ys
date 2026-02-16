@@ -2,85 +2,87 @@
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>西瓜直播 - 终极兼容版</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/dplayer/dist/DPlayer.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/hls.js/dist/hls.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/dplayer/dist/DPlayer.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>西瓜直播 - 最终修复版</title>
     <style>
-        body { background: #000; color: #fff; margin: 0; padding: 5px; font-family: sans-serif; }
-        #player { width: 100%; aspect-ratio: 16/9; background: #000; }
-        .nav-tabs { display: flex; overflow-x: auto; gap: 10px; padding: 10px 0; }
-        .tab-btn { background: #222; border: 1px solid #444; color: #ccc; padding: 5px 15px; border-radius: 20px; white-space: nowrap; }
-        .tab-btn.active { background: #ff5c38; color: #fff; border-color: #ff5c38; }
-        .list-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
-        .list-item { background: #111; border: 1px solid #333; padding: 12px 5px; text-align: center; font-size: 13px; border-radius: 5px; }
+        body { background: #000; color: #fff; margin: 0; font-family: sans-serif; }
+        .video-container { width: 100%; position: sticky; top: 0; background: #000; z-index: 100; }
+        video { width: 100%; aspect-ratio: 16/9; display: block; }
+        .nav-tabs { display: flex; overflow-x: auto; gap: 10px; padding: 15px 10px; background: #111; }
+        .tab-btn { background: #333; border: none; color: #ccc; padding: 8px 18px; border-radius: 20px; white-space: nowrap; }
+        .tab-btn.active { background: #ff5c38; color: #fff; }
+        .list-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; padding: 10px; }
+        .list-item { background: #222; padding: 15px 5px; text-align: center; border-radius: 8px; font-size: 13px; border: 1px solid #333; }
         .list-item:active { background: #ff5c38; }
     </style>
 </head>
 <body>
-    <div id="player"></div>
-    <div class="nav-tabs" id="categoryBox"></div>
-    <div class="list-grid" id="list"></div>
 
+<div class="video-container">
+    <video id="main-video" controls autoplay playsinline poster="https://via.placeholder.com/800x450/000000/FFFFFF?text=Loading..."></video>
+</div>
+<div class="nav-tabs" id="categoryBox"></div>
+<div class="list-grid" id="list"></div>
+
+<script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
 <script>
-const JSON_URL = "tv.json";
-let dp;
+    const JSON_URL = "tv.json";
+    const video = document.getElementById('main-video');
+    let hls = new Hls();
 
-async function loadApp() {
-    try {
-        const res = await fetch(JSON_URL + "?v=" + Date.now());
-        const data = await res.json();
-        const firstCat = Object.keys(data)[0];
-        
-        // 初始播放器
-        dp = new DPlayer({
-            container: document.getElementById('player'),
-            autoplay: false,
-            video: {
-                url: data[firstCat][0].url,
-                type: 'hls'
-            }
-        });
-
-        // 渲染分类
-        const catBox = document.getElementById('categoryBox');
-        Object.keys(data).forEach((cat, i) => {
-            const btn = document.createElement('button');
-            btn.className = `tab-btn ${i===0?'active':''}`;
-            btn.innerText = cat;
-            btn.onclick = () => {
-                document.querySelectorAll('.tab-btn').forEach(b=>b.classList.remove('active'));
-                btn.classList.add('active');
-                renderList(data[cat]);
-            };
-            catBox.appendChild(btn);
-        });
-
-        const renderList = (list) => {
-            const listGrid = document.getElementById('list');
-            listGrid.innerHTML = '';
-            list.forEach(item => {
-                const div = document.createElement('div');
-                div.className = 'list-item';
-                div.innerText = item.name;
-                div.onclick = () => {
-                    // 核心修复：强制重新实例化 HLS 解码
-                    if (Hls.isSupported()) {
-                        dp.switchVideo({ url: item.url, type: 'hls' });
-                    } else if (document.getElementById('player').querySelector('video').canPlayType('application/vnd.apple.mpegurl')) {
-                        dp.switchVideo({ url: item.url, type: 'normal' });
-                    }
-                    dp.play();
+    async function init() {
+        try {
+            const res = await fetch(JSON_URL + "?v=" + Date.now());
+            const data = await res.json();
+            const categories = Object.keys(data);
+            
+            // 渲染分类
+            const catBox = document.getElementById('categoryBox');
+            categories.forEach((cat, i) => {
+                const btn = document.createElement('button');
+                btn.className = `tab-btn ${i===0?'active':''}`;
+                btn.innerText = cat;
+                btn.onclick = () => {
+                    document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+                    btn.classList.add('active');
+                    renderList(data[cat]);
                 };
-                listGrid.appendChild(div);
+                catBox.appendChild(btn);
             });
-        };
-        renderList(data[firstCat]);
 
-    } catch (e) { alert("数据同步失败，请检查 tv.json 内容格式"); }
-}
-loadApp();
+            // 播放视频函数
+            window.playSource = (url) => {
+                if (Hls.isSupported()) {
+                    hls.destroy();
+                    hls = new Hls();
+                    hls.loadSource(url);
+                    hls.attachMedia(video);
+                    hls.on(Hls.Events.MANIFEST_PARSED, () => video.play());
+                } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
+                    video.src = url;
+                    video.play();
+                }
+            };
+
+            const renderList = (list) => {
+                const grid = document.getElementById('list');
+                grid.innerHTML = '';
+                list.forEach(item => {
+                    const div = document.createElement('div');
+                    div.className = 'list-item';
+                    div.innerText = item.name;
+                    div.onclick = () => playSource(item.url);
+                    grid.appendChild(div);
+                });
+            };
+
+            // 默认播放第一个
+            renderList(data[categories[0]]);
+            playSource(data[categories[0]][0].url);
+
+        } catch (e) { console.error("Initialization failed"); }
+    }
+    init();
 </script>
 </body>
 </html>
