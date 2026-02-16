@@ -1,20 +1,17 @@
 {
-  "精选私密": [
-    { "name": "Brazzers TV", "url": "http://88.212.7.11/live/test_brazzers_tv_europe_hd/playlist.m3u8" },
-    { "name": "Reality Kings", "url": "http://88.212.7.11/live/test_reality_kings_hd/playlist.m3u8" },
-    { "name": "Private TV", "url": "http://88.212.7.11/live/test_private_tv_hd/playlist.m3u8" },
-    { "name": "Hustler TV", "url": "http://88.212.7.11/live/test_hustler_tv_hd/playlist.m3u8" },
-    { "name": "Babes TV", "url": "http://88.212.7.11/live/test_babes_tv_hd/playlist.m3u8" },
-    { "name": "Passion XXX", "url": "http://88.212.7.11/live/test_passion_xxx_hd/playlist.m3u8" }
+  "必看推荐": [
+    { "name": "Apple 演示源(秒开)", "url": "https://devstreaming-cdn.apple.com/videos/streaming/examples/adv_dv_atmos/master.m3u8" },
+    { "name": "演示源(必开)", "url": "https://test-streams.mux.dev/x36xhzz/playlist.m3u8" }
   ],
   "高清直播": [
     { "name": "CCTV-1 综合", "url": "https://live-play.cctvnews.cctv.com/cctv/cctv1.m3u8" },
     { "name": "CCTV-13 新闻", "url": "https://live-play.cctvnews.cctv.com/cctv/cctv13.m3u8" },
-    { "name": "广东卫视", "url": "https://gdws.vrtv.com.cn/live/gdws/index.m3u8" },
-    { "name": "深圳卫视", "url": "https://szws.sztv.com.cn/live/szws/index.m3u8" }
+    { "name": "广东卫视", "url": "https://gdws.vrtv.com.cn/live/gdws/index.m3u8" }
   ],
-  "极速测试": [
-    { "name": "Apple 官方测试", "url": "https://devstreaming-cdn.apple.com/videos/streaming/examples/adv_dv_atmos/master.m3u8" },
-    { "name": "演示源(必开)", "url": "https://test-streams.mux.dev/x36xhzz/playlist.m3u8" }
+  "私密频道": [
+    { "name": "Brazzers TV", "url": "http://88.212.7.11/live/test_brazzers_tv_europe_hd/playlist.m3u8" },
+    { "name": "Reality Kings", "url": "http://88.212.7.11/live/test_reality_kings_hd/playlist.m3u8" },
+    { "name": "Private TV", "url": "http://88.212.7.11/live/test_private_tv_hd/playlist.m3u8" },
+    { "name": "Hustler TV", "url": "http://88.212.7.11/live/test_hustler_tv_hd/playlist.m3u8" }
   ]
 }
