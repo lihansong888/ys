@@ -23,6 +23,7 @@
         .inputs-part { flex: 1; display: flex; border: 1px solid var(--border); border-radius: 8px 0 0 8px; overflow: hidden; height: 100%; }
         .inputs-part input, .inputs-part select { flex: 1; width: 30%; border: none; border-right: 1px solid var(--border); outline: none; font-size: 13px; padding: 0 5px; text-align: center; }
         
+        /* 修复点击响应的核心样式 */
         .btn-part { 
             width: 65px !important; 
             height: 100%; 
@@ -31,7 +32,9 @@
             display: flex !important;
             align-items: center !important;
             justify-content: center !important;
-            flex-shrink: 0 !important; 
+            flex-shrink: 0 !important;
+            position: relative;
+            z-index: 10; /* 提高层级 */
         }
         
         .add-btn-final {
@@ -42,18 +45,18 @@
             border: none !important;
             width: 100% !important;
             height: 100% !important;
-            display: block !important;
+            display: flex !important; /* 改为 flex */
+            align-items: center;
+            justify-content: center;
             padding: 0 !important;
             margin: 0 !important;
-            text-align: center !important;
-            line-height: 44px !important; 
+            cursor: pointer;
+            pointer-events: auto !important; /* 确保捕获点击 */
         }
 
         /* 列表展示 */
         .asset-title { font-size: 13px; color: #666; margin: 10px 0 8px 5px; font-weight: bold; }
         .item-card { background: #fff; border-radius: 12px; padding: 15px; margin-bottom: 12px; border: 1px solid var(--border); }
-        
-        /* 修正点：增加 flex-shrink 防止按钮组换行 */
         .item-head { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 8px; gap: 10px; }
         .item-name { font-weight: bold; font-size: 15px; flex: 1; line-height: 1.4; }
         .item-btns { display: flex; flex-shrink: 0; }
@@ -83,7 +86,7 @@
     <div class="control-panel">
         <div class="input-row">
             <div class="inputs-part">
-                <input v-model="form.code" placeholder="代码">
+                <input v-model="form.code" placeholder="代码" type="text">
                 <input v-model.number="form.money" type="number" placeholder="金额">
                 <select v-model="form.type">
                     <option value="基金">基金</option>
@@ -157,13 +160,20 @@ new Vue({
     methods: {
         getGroup(cat) { return this.fundList.filter(i => i.type === cat); },
         getItemProfit(item) { return item.price * item.myShare - item.cost; },
+        
         getAdvice(rate) {
-            if (rate <= -2.5) return { text: "🟢 低吸加仓", color: "#52c41a" };
-            if (rate <= -1.5) return { text: "🔵 准备补仓", color: "#1890ff" };
-            if (rate >= 3.5) return { text: "🔴 分批止盈", color: "#ff4d4f" };
-            if (rate >= 2.0) return { text: "🟡 不宜追高", color: "#faad14" };
-            return { text: "⚪ 持有待机", color: "#888" };
+            if (rate <= -5.0) return { text: "💎 黄金坑(重仓)", color: "#092b00" }; 
+            if (rate <= -3.2) return { text: "🥦 回撤抄底(入)", color: "#1d823e" };
+            if (rate <= -1.8) return { text: "🟢 波段买点(加)", color: "#52c41a" };
+            if (rate <= -0.8) return { text: "🔵 策略建仓(轻)", color: "#1890ff" };
+            if (rate < 1.5 && rate > -0.8) return { text: "⚪ 信号等待(持)", color: "#888" };
+            if (rate >= 1.5 && rate < 2.8) return { text: "🟡 趋势预警(观)", color: "#faad14" };
+            if (rate >= 2.8 && rate < 4.2) return { text: "🚩 波段高抛(减)", color: "#ff7a45" };
+            if (rate >= 4.2 && rate < 5.5) return { text: "⚡ 神奇反转(抛)", color: "#ff4d4f" };
+            if (rate >= 5.5) return { text: "🔥 见顶信号(离)", color: "#820014" };
+            return { text: "⚪ 信号等待(持)", color: "#888" };
         },
+
         async fetchData(code, type) {
             try {
                 if (type === '基金') {
@@ -197,10 +207,16 @@ new Vue({
             this.fundList = list;
         },
         addItem() {
-            if(!this.form.code || !this.form.money) return;
-            Vue.set(this.assets, this.form.code, { code: this.form.code, money: parseFloat(this.form.money), type: this.form.type });
+            // 增加空值判断确保有效性
+            if(!this.form.code || this.form.money === "" || this.form.money === null) {
+                alert("请输入代码和金额");
+                return;
+            }
+            const code = this.form.code.trim();
+            Vue.set(this.assets, code, { code: code, money: parseFloat(this.form.money), type: this.form.type });
             localStorage.setItem(_0xkey[0], JSON.stringify(this.assets));
-            this.refreshAll(); this.form.code = ''; this.form.money = '';
+            this.refreshAll();
+            this.form.code = ''; this.form.money = '';
         },
         openEdit(item) { this.editData.code = item.code; this.editData.name = item.name; this.editData.tempValue = item.cost; this.editData.show = true; },
         saveEdit() {
