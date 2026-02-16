@@ -1,69 +1,13 @@
-<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>基金实时估值-寒松纯净版</title>
-    <style>
-        :root { --up: #ff4d4f; --down: #52c41a; --blue: #1890ff; --border: #e8e8e8; }
-        * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
-        body { font-family: -apple-system, sans-serif; background: #f0f2f5; padding: 12px; margin: 0; }
-        .summary-card { background: linear-gradient(135deg, #2f54eb, #1890ff); color: #fff; padding: 20px 15px; border-radius: 16px; margin-bottom: 16px; display: grid; grid-template-columns: 1fr 1fr; gap: 15px; }
-        .sum-box { text-align: center; }
-        .sum-label { font-size: 11px; opacity: 0.8; margin-bottom: 4px; }
-        .sum-val { font-size: 18px; font-weight: bold; }
-        .control-panel { background: #fff; border-radius: 12px; padding: 10px; margin-bottom: 8px; border: 1px solid var(--border); }
-        .input-row { display: flex; align-items: center; height: 44px; }
-        .inputs-part { flex: 1; display: flex; border: 1px solid var(--border); border-radius: 8px 0 0 8px; overflow: hidden; height: 100%; }
-        .inputs-part input, .inputs-part select { flex: 1; border: none; border-right: 1px solid var(--border); outline: none; font-size: 13px; text-align: center; width: 33%; background: #fff; }
-        .btn-part { width: 65px; height: 100%; background: var(--blue); border-radius: 0 8px 8px 0; display: flex; align-items: center; justify-content: center; }
-        .add-btn { color: #fff; font-size: 14px; font-weight: bold; background: none; border: none; width: 100%; height: 100%; cursor: pointer; }
-        .msg-tip { font-size: 12px; color: #999; text-align: center; margin-bottom: 10px; min-height: 14px; }
-        .item-card { background: #fff; border-radius: 12px; padding: 15px; margin-bottom: 12px; border: 1px solid var(--border); }
-        .card-row { display: flex; justify-content: space-between; font-size: 14px; margin-top: 8px; }
-        .up { color: var(--up); font-weight: bold; }
-        .down { color: var(--down); font-weight: bold; }
-    </style>
-</head>
-<body>
-
-    <div class="summary-card">
-        <div class="sum-box"><div class="sum-label">估算总市值</div><div id="totalAmount" class="sum-val">0.00</div></div>
-        <div class="sum-box"><div class="sum-label">累计总投入</div><div id="totalCost" class="sum-val">0.00</div></div>
-        <div class="sum-box"><div class="sum-label">持仓盈亏</div><div id="totalProfit" class="sum-val">0.00</div></div>
-        <div class="sum-box"><div class="sum-label">今日盈亏</div><div id="totalDayProfit" class="sum-val">0.00</div></div>
-    </div>
-
-    <div class="control-panel">
-        <div class="input-row">
-            <div class="inputs-part">
-                <input id="inCode" type="text" placeholder="代码" autocomplete="off">
-                <input id="inMoney" type="number" placeholder="金额">
-                <select id="inType"><option value="基金">基金</option><option value="股票">股票</option></select>
-            </div>
-            <div class="btn-part">
-                <button class="add-btn" onclick="handleAddItem()">添加</button>
-            </div>
-        </div>
-    </div>
-    <div id="msgTip" class="msg-tip">状态: 准备就绪</div>
-
-    <div id="listContainer"></div>
-
 <script>
-    // 强制使用 v3 存储键名，避免和之前的冲突
     let assets = JSON.parse(localStorage.getItem('assets_v3') || '{}');
     let fundList = [];
 
     function setTip(txt) {
-        document.getElementById('msgTip').innerText = "状态: " + txt;
+        const el = document.getElementById('msgTip');
+        if(el) el.innerText = "状态: " + txt;
     }
 
     async function refreshAll() {
-        setTip("正在同步数据...");
-        fundList = [];
-        let tAmount = 0, tCost = 0, tDayProfit = 0;
-
         const keys = Object.keys(assets);
         if(keys.length === 0) {
             setTip("暂无数据，请添加代码");
@@ -71,7 +15,12 @@
             return;
         }
 
-        for (const code of keys) {
+        setTip("同步数据中...");
+        fundList = [];
+        let tAmount = 0, tCost = 0, tDayProfit = 0;
+
+        // 核心改动：并发抓取，防止一个卡住全部卡死
+        const promises = keys.map(async (code) => {
             const info = assets[code];
             const live = await fetchData(code, info.type);
             if (live) {
@@ -80,46 +29,51 @@
                 tAmount += currentVal;
                 tCost += info.money;
                 tDayProfit += (live.price - live.prev) * sh;
-                fundList.push({ ...live, code, profit: currentVal - info.money, currentVal, cost: info.money });
+                fundList.push({ ...live, code, profit: currentVal - info.money, cost: info.money });
             }
-        }
+        });
+
+        await Promise.all(promises);
         render(tAmount, tCost, tDayProfit);
-        setTip("同步完成 (" + new Date().toLocaleTimeString() + ")");
+        setTip("更新成功 " + new Date().toLocaleTimeString());
     }
 
     async function fetchData(code, type) {
-        try {
-            if (type === '基金') {
-                return new Promise(res => {
+        return new Promise(res => {
+            const timeout = setTimeout(() => res(null), 4000); // 4秒超时
+            try {
+                if (type === '基金') {
                     const cb = 'cb' + Math.floor(Math.random()*100000);
                     window[cb] = (d) => { 
+                        clearTimeout(timeout);
                         res({name:d.name, price:parseFloat(d.gsz), prev:parseFloat(d.dwjz), changeRate:d.gszzl}); 
                         delete window[cb];
                     };
                     const s = document.createElement('script');
-                    s.src = `https://fundgz.1234567.com.cn/js/${code}.js?callback=${cb}`;
+                    // 关键：去掉协议头，让它跟随系统环境
+                    s.src = `//fundgz.1234567.com.cn/js/${code}.js?callback=${cb}&rt=${Date.now()}`;
                     document.head.appendChild(s);
-                    setTimeout(() => { s.remove(); res(null); }, 5000);
-                });
-            } else {
-                const r = await fetch(`https://hq.sinajs.cn/list=${code.toLowerCase()}`);
-                const t = await r.text();
-                const d = t.split('"')[1].split(',');
-                const p = parseFloat(d[3]), v = parseFloat(d[2]);
-                return { name:d[0], price:p, prev:v, changeRate:((p-v)/v*100).toFixed(2) };
-            }
-        } catch(e) { return null; }
+                } else {
+                    fetch(`//hq.sinajs.cn/list=${code.toLowerCase()}`)
+                        .then(r => r.text())
+                        .then(t => {
+                            clearTimeout(timeout);
+                            const d = t.split('"')[1].split(',');
+                            const p = parseFloat(d[3]), v = parseFloat(d[2]);
+                            res({ name:d[0], price:p, prev:v, changeRate:((p-v)/v*100).toFixed(2) });
+                        }).catch(() => res(null));
+                }
+            } catch(e) { res(null); }
+        });
     }
 
     function render(tAmount, tCost, tDayProfit) {
         document.getElementById('totalAmount').innerText = tAmount.toFixed(2);
         document.getElementById('totalCost').innerText = tCost.toFixed(2);
-        
         const tp = document.getElementById('totalProfit');
         const profit = tAmount - tCost;
         tp.innerText = (profit >= 0 ? '+' : '') + profit.toFixed(2);
         tp.className = 'sum-val ' + (profit >= 0 ? 'up' : 'down');
-
         const tdp = document.getElementById('totalDayProfit');
         tdp.innerText = (tDayProfit >= 0 ? '+' : '') + tDayProfit.toFixed(2);
         tdp.className = 'sum-val ' + (tDayProfit >= 0 ? 'up' : 'down');
@@ -129,12 +83,12 @@
             html += `
                 <div class="item-card">
                     <div style="display:flex; justify-content:space-between; align-items:center">
-                        <b style="font-size:15px">${item.name}</b>
+                        <b>${item.name}</b>
                         <button onclick="deleteItem('${item.code}')" style="border:none; background:#ff4d4f; color:#fff; border-radius:4px; padding:4px 10px; font-size:12px">删除</button>
                     </div>
                     <div class="card-row">
-                        <span>涨跌：<span class="${item.changeRate>=0?'up':'down'}">${item.changeRate >= 0 ? '+' : ''}${item.changeRate}%</span></span>
-                        <span>盈亏：<span class="${item.profit>=0?'up':'down'}">${item.profit >= 0 ? '+' : ''}${item.profit.toFixed(2)}</span></span>
+                        <span>涨跌：<span class="${parseFloat(item.changeRate)>=0?'up':'down'}">${parseFloat(item.changeRate)>=0?'+':''}${item.changeRate}%</span></span>
+                        <span>盈亏：<span class="${item.profit>=0?'up':'down'}">${item.profit>=0?'+':''}${item.profit.toFixed(2)}</span></span>
                     </div>
                 </div>`;
         });
@@ -142,35 +96,18 @@
     }
 
     function handleAddItem() {
-        const c = document.getElementById('inCode').value.trim();
-        const m = document.getElementById('inMoney').value;
-        const t = document.getElementById('inType').value;
+        // 使用更稳妥的方式获取输入值
+        const c = document.querySelector('#inCode').value.replace(/\s+/g,"");
+        const m = document.querySelector('#inMoney').value;
+        const t = document.querySelector('#inType').value;
 
         if(!c || !m) {
-            setTip("失败: 代码和金额不能为空");
+            setTip("请填入代码和金额");
             return;
         }
 
+        setTip("正在添加并联网查询...");
         assets[c] = { money: parseFloat(m), type: t };
         localStorage.setItem('assets_v3', JSON.stringify(assets));
         
-        document.getElementById('inCode').value = '';
-        document.getElementById('inMoney').value = '';
-        setTip("已添加: " + c);
-        refreshAll();
-    }
-
-    function deleteItem(code) {
-        if(confirm("删除后不可恢复，确定吗？")) {
-            delete assets[code];
-            localStorage.setItem('assets_v3', JSON.stringify(assets));
-            refreshAll();
-        }
-    }
-
-    // 初始化
-    refreshAll();
-    setInterval(refreshAll, 10000);
-</script>
-</body>
-</html>
+        document.querySelector('#inCode').value =
