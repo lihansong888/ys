@@ -1,12 +1,8 @@
 {
+  "兼容性测试": [
+    { "name": "官方测试流", "url": "https://demo.unified-streaming.com/k8s/features/stable/video/tears-of-steel/tears-of-steel.ism/.m3u8" }
+  ],
   "央视频道": [
-    { "name": "CCTV-1 综合", "url": "https://live-play.cctvnews.cctv.com/cctv/cctv1.m3u8" },
-    { "name": "CCTV-13 新闻", "url": "https://live-play.cctvnews.cctv.com/cctv/cctv13.m3u8" }
-  ],
-  "省市卫视": [
-    { "name": "广东卫视", "url": "https://gdws.vrtv.com.cn/live/gdws/index.m3u8" }
-  ],
-  "测试频道": [
-    { "name": "演示源(必开)", "url": "https://test-streams.mux.dev/x36xhzz/playlist.m3u8" }
+    { "name": "CCTV-1", "url": "https://live-play.cctvnews.cctv.com/cctv/cctv1.m3u8" }
   ]
 }
