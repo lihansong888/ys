@@ -1,0 +1,16 @@
+{
+  "央视频道": [
+    { "name": "CCTV-1 综合", "url": "http://39.134.115.163:8080/PLTV/88888910/224/3221225618/index.m3u8" },
+    { "name": "CCTV-13 新闻", "url": "http://39.134.115.163:8080/PLTV/88888910/224/3221225631/index.m3u8" }
+  ],
+  "省市卫视": [
+    { "name": "湖南卫视", "url": "http://ottrrs.hljtv.com/live/hnws/index.m3u8" },
+    { "name": "浙江卫视", "url": "http://ottrrs.hljtv.com/live/zjws/index.m3u8" }
+  ],
+  "台湾频道": [
+    { "name": "TVBS 新闻", "url": "https://edges.mixlr.com/channel/tvbs_news/index.m3u8" }
+  ],
+  "私密频道": [
+    { "name": "测试源1", "url": "这里放你的地址" }
+  ]
+}
