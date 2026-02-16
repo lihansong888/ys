@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>西瓜极速直播 - GitHub版</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/dplayer/dist/DPlayer.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/hls.js/dist/hls.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dplayer/dist/DPlayer.min.js"></script>
+    <style>
+        body { background: #1a1a1a; color: #fff; font-family: sans-serif; margin: 0; padding: 10px; }
+        .container { max-width: 1000px; margin: 0 auto; }
+        #player { width: 100%; aspect-ratio: 16/9; background: #000; border-radius: 8px; }
+        .nav-tabs { display: flex; overflow-x: auto; gap: 10px; margin: 15px 0; padding-bottom: 5px; }
+        .tab-btn { background: #333; border: none; color: #ccc; padding: 8px 15px; border-radius: 4px; cursor: pointer; white-space: nowrap; }
+        .tab-btn.active { background: #ff5c38; color: #fff; }
+        .list-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); gap: 10px; }
+        .list-item { background: #262626; padding: 10px; text-align: center; border-radius: 4px; cursor: pointer; font-size: 14px; transition: 0.3s; }
+        .list-item:hover { background: #444; }
+        .warning { color: #888; font-size: 12px; margin-top: 20px; text-align: center; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div id="player"></div>
+    
+    <div class="nav-tabs" id="categoryBox">
+        </div>
+
+    <div class="list-grid" id="list">
+        </div>
+
+    <div class="warning">
+        提示：部分海外或成人频道可能需要特殊网络环境。本页面仅供测试。
+    </div>
+</div>
+
+<script>
+// 严格遵守“西瓜影视”范本逻辑的数据结构
+const TV_DATA = {
+    "央视频道": [
+        { name: "CCTV-1 综合", url: "http://39.134.115.163:8080/PLTV/88888910/224/3221225618/index.m3u8" },
+        { name: "CCTV-5 体育", url: "http://39.134.115.163:8080/PLTV/88888910/224/3221225658/index.m3u8" },
+        { name: "CCTV-13 新闻", url: "http://39.134.115.163:8080/PLTV/88888910/224/3221225631/index.m3u8" }
+    ],
+    "省市卫视": [
+        { name: "湖南卫视", url: "http://ottrrs.hljtv.com/live/hnws/index.m3u8" },
+        { name: "浙江卫视", url: "http://ottrrs.hljtv.com/live/zjws/index.m3u8" },
+        { name: "东方卫视", url: "http://ottrrs.hljtv.com/live/dfws/index.m3u8" }
+    ],
+    "台湾频道": [
+        { name: "TVBS 新闻", url: "https://edges.mixlr.com/channel/tvbs_news/index.m3u8" },
+        { name: "中天新闻", url: "https://ctitv-ctinews-hls.akamaized.net/hls/live/2034963/ctinews/playlist.m3u8" }
+    ],
+    "成人频道": [
+        { name: "测试频道1(密)", url: "替换为你自己的私密直播源URL" },
+        { name: "测试频道2(密)", url: "替换为你自己的私密直播源URL" }
+    ]
+};
+
+let dp = new DPlayer({
+    container: document.getElementById('player'),
+    live: true,
+    autoplay: true,
+    video: { url: TV_DATA["央视频道"][0].url, type: 'hls' }
+});
+
+function init() {
+    const categoryBox = document.getElementById('categoryBox');
+    Object.keys(TV_DATA).forEach((cat, index) => {
+        const btn = document.createElement('button');
+        btn.className = `tab-btn ${index === 0 ? 'active' : ''}`;
+        btn.innerText = cat;
+        btn.onclick = () => {
+            document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+            renderList(cat);
+        };
+        categoryBox.appendChild(btn);
+    });
+    renderList("央视频道");
+}
+
+function renderList(cat) {
+    const listBox = document.getElementById('list');
+    listBox.innerHTML = '';
+    TV_DATA[cat].forEach(item => {
+        const div = document.createElement('div');
+        div.className = 'list-item';
+        div.innerText = item.name;
+        div.onclick = () => {
+            dp.switchVideo({ url: item.url, type: 'hls' });
+            dp.play();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        };
+        listBox.appendChild(div);
+    });
+}
+
+init();
+</script>
+</body>
+</html>
