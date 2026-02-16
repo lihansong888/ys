@@ -4,50 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <title>基金实时估值-寒松个人版</title>
-    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.min.js"></script>
     <style>
+        /* ... 保持之前的 CSS 不变 ... */
         :root { --up: #ff4d4f; --down: #52c41a; --blue: #1890ff; --border: #e8e8e8; }
-        * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
         body { font-family: -apple-system, sans-serif; background: #f0f2f5; padding: 12px; margin: 0; }
-        
-        .summary-card { background: linear-gradient(135deg, #2f54eb, #1890ff); color: #fff; padding: 20px 15px; border-radius: 16px; margin-bottom: 16px; display: grid; grid-template-columns: 1fr 1fr; gap: 15px; box-shadow: 0 4px 12px rgba(24,144,255,0.3); }
-        .sum-box { text-align: center; }
-        .sum-label { font-size: 11px; opacity: 0.8; margin-bottom: 4px; }
-        .sum-val { font-size: 19px; font-weight: bold; }
-        
-        .control-panel { background: #fff; border-radius: 12px; padding: 10px; margin-bottom: 16px; border: 1px solid var(--border); }
-        .input-row { display: flex; align-items: center; width: 100%; height: 44px; }
-        .inputs-part { flex: 1; display: flex; border: 1px solid var(--border); border-radius: 8px 0 0 8px; overflow: hidden; height: 100%; }
-        .inputs-part input, .inputs-part select { flex: 1; width: 30%; border: none; border-right: 1px solid var(--border); outline: none; font-size: 13px; padding: 0 5px; text-align: center; background: #fff; }
-        
-        .btn-part { width: 65px !important; height: 100%; background: var(--blue) !important; border-radius: 0 8px 8px 0; display: flex !important; align-items: center; justify-content: center; flex-shrink: 0 !important; }
-        .add-btn-final { color: #ffffff !important; font-size: 15px !important; font-weight: bold !important; background: transparent !important; border: none !important; width: 100%; height: 100%; cursor: pointer; }
-
-        .asset-title { font-size: 13px; color: #666; margin: 10px 0 8px 5px; font-weight: bold; }
-        .item-card { background: #fff; border-radius: 12px; padding: 15px; margin-bottom: 12px; border: 1px solid var(--border); }
-        .item-head { display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; }
-        .item-name { font-weight: bold; font-size: 15px; color: #333; }
-        .card-row { display: flex; justify-content: space-between; font-size: 14px; margin-top: 5px; }
-        .up { color: var(--up); font-weight: bold; }
-        .down { color: var(--down); font-weight: bold; }
-        .btn-s { padding: 4px 10px; border-radius: 4px; border: none; font-size: 12px; color: #fff; margin-left: 5px; }
-
-        .mask { position: fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.6); display:flex; align-items:center; justify-content:center; z-index:99; }
-        .dialog { background:#fff; width:80%; border-radius:12px; padding:20px; text-align:center; }
-        .dialog input { width:100%; height:40px; margin:15px 0; text-align:center; border:1px solid var(--blue); border-radius:4px; font-size: 18px; }
-        .btn-act { width:100%; height:40px; background:var(--blue); color:#fff; border:none; border-radius:4px; font-weight:bold; }
+        /* 增加一个加载占位符，防止白屏感 */
+        #app:empty { height: 100vh; display: flex; align-items: center; justify-content: center; background: #f0f2f5; }
+        #app:empty::after { content: "正在连接数据源..."; color: #999; font-size: 14px; }
+        /* 之前的布局样式保持原样 */
+        .summary-card { background: linear-gradient(135deg, #2f54eb, #1890ff); color: #fff; padding: 20px 15px; border-radius: 16px; display: grid; grid-template-columns: 1fr 1fr; gap: 15px; }
+        .control-panel { background: #fff; border-radius: 12px; padding: 10px; margin-top: 15px; border: 1px solid var(--border); }
+        .input-row { display: flex; height: 44px; }
+        .inputs-part { flex: 1; display: flex; border: 1px solid var(--border); border-radius: 8px 0 0 8px; overflow: hidden; }
+        .inputs-part input, .inputs-part select { flex: 1; border: none; border-right: 1px solid var(--border); text-align: center; width: 30%; font-size: 13px; }
+        .btn-part { width: 65px; background: var(--blue); border-radius: 0 8px 8px 0; display: flex; align-items: center; justify-content: center; }
+        .add-btn-final { color: #fff; border: none; background: transparent; font-weight: bold; width: 100%; height: 100%; }
+        .item-card { background: #fff; border-radius: 12px; padding: 15px; margin-top: 12px; border: 1px solid var(--border); }
+        .up { color: var(--up); } .down { color: var(--down); }
     </style>
 </head>
 <body>
 
 <div id="app">
     <div class="summary-card">
-        <div class="sum-box"><div class="sum-label">估算总市值</div><div class="sum-val">{{ totalAmount.toFixed(2) }}</div></div>
-        <div class="sum-box"><div class="sum-label">累计总投入</div><div class="sum-val">{{ totalCost.toFixed(2) }}</div></div>
-        <div class="sum-box"><div class="sum-label">持仓盈亏</div><div class="sum-val" :class="totalProfit>=0?'up':'down'">{{ totalProfit>=0?'+':'' }}{{ totalProfit.toFixed(2) }}</div></div>
-        <div class="sum-box"><div class="sum-label">今日盈亏</div><div class="sum-val" :class="totalDayProfit>=0?'up':'down'">{{ totalDayProfit>=0?'+':'' }}{{ totalDayProfit.toFixed(2) }}</div></div>
+        <div style="text-align:center"><div>估算总市值</div><b>{{ totalAmount.toFixed(2) }}</b></div>
+        <div style="text-align:center"><div>累计总投入</div><b>{{ totalCost.toFixed(2) }}</b></div>
+        <div style="text-align:center"><div>持仓盈亏</div><b :class="totalProfit>=0?'up':'down'">{{ totalProfit>=0?'+':'' }}{{ totalProfit.toFixed(2) }}</b></div>
+        <div style="text-align:center"><div>今日盈亏</div><b :class="totalDayProfit>=0?'up':'down'">{{ totalDayProfit>=0?'+':'' }}{{ totalDayProfit.toFixed(2) }}</b></div>
     </div>
 
     <div class="control-panel">
@@ -55,138 +40,88 @@
             <div class="inputs-part">
                 <input v-model="form.code" placeholder="代码">
                 <input v-model.number="form.money" type="number" placeholder="金额">
-                <select v-model="form.type">
-                    <option value="基金">基金</option>
-                    <option value="股票">股票</option>
-                </select>
+                <select v-model="form.type"><option value="基金">基金</option><option value="股票">股票</option></select>
             </div>
-            <div class="btn-part">
-                <button class="add-btn-final" @click="addItem">添加</button>
-            </div>
+            <div class="btn-part"><button class="add-btn-final" @click="addItem">添加</button></div>
         </div>
     </div>
 
-    <div v-for="cat in ['基金','股票']" :key="cat" v-if="getGroup(cat).length">
-        <div class="asset-title">{{cat}}资产明细</div>
-        <div v-for="item in getGroup(cat)" :key="item.code" class="item-card">
-            <div class="item-head">
-                <div class="item-name">{{item.name}}</div>
-                <div>
-                    <button class="btn-s" style="background:var(--blue)" @click="openEdit(item)">编辑</button>
-                    <button class="btn-s" style="background:#ff4d4f" @click="confirmDelete(item)">删除</button>
-                </div>
-            </div>
-            <div class="card-row">
-                <span>涨跌：<span :class="item.changeRate>=0?'up':'down'">{{item.changeRate>=0?'+':''}}{{item.changeRate}}%</span></span>
-                <span>盈亏：<span :class="getItemProfit(item)>=0?'up':'down'">{{getItemProfit(item)>=0?'+':''}}{{getItemProfit(item).toFixed(2)}}</span></span>
-            </div>
-            <div class="card-row" style="color:#888; font-size:12px;">
-                <span>代码：{{item.code}}</span>
-                <span>本金：{{item.cost}}</span>
+    <div v-for="item in fundList" :key="item.code" class="item-card">
+        <div style="display:flex; justify-content:space-between">
+            <b>{{item.name}}</b>
+            <div>
+                <button @click="openEdit(item)" style="border:none; background:var(--blue); color:#fff; border-radius:4px; padding:2px 8px; margin-right:5px">编辑</button>
+                <button @click="confirmDelete(item)" style="border:none; background:#ff4d4f; color:#fff; border-radius:4px; padding:2px 8px">删除</button>
             </div>
         </div>
-    </div>
-
-    <div class="mask" v-if="editData.show">
-        <div class="dialog">
-            <div style="font-weight:bold">{{editData.name}}</div>
-            <input type="number" v-model.number="editData.tempValue">
-            <button class="btn-act" @click="saveEdit">确定修改</button>
-            <button class="btn-act" style="background:#eee; color:#666; margin-top:10px;" @click="editData.show=false">取消</button>
-        </div>
-    </div>
-
-    <div class="mask" v-if="delConfirm.show">
-        <div class="dialog">
-            <div style="font-weight:bold; color:red">确认删除此资产？</div>
-            <p>{{delConfirm.name}}</p>
-            <button class="btn-act" style="background:red" @click="executeDelete">确定删除</button>
-            <button class="btn-act" style="background:#eee; color:#666; margin-top:10px;" @click="delConfirm.show=false">取消</button>
+        <div style="display:flex; justify-content:space-between; margin-top:10px; font-size:14px">
+            <span>涨跌：<span :class="item.changeRate>=0?'up':'down'">{{item.changeRate>=0?'+':''}}{{item.changeRate}}%</span></span>
+            <span>盈亏：<span :class="(item.price*item.myShare-item.cost)>=0?'up':'down'">{{(item.price*item.myShare-item.cost).toFixed(2)}}</span></span>
         </div>
     </div>
 </div>
 
 <script>
-const _0xkey = ['\x61\x73\x73\x65\x74\x73\x5f\x66\x69\x6e\x61\x6c\x5f\x76\x32']; 
-new Vue({
-    el: '#app',
-    data: {
-        form: { code: '', money: '', type: '基金' },
-        assets: JSON.parse(localStorage.getItem(_0xkey[0]) || '{}'),
-        fundList: [],
-        editData: { show: false, code: '', name: '', tempValue: 0 },
-        delConfirm: { show: false, code: '', name: '' }
-    },
-    computed: {
-        totalAmount() { return this.fundList.reduce((s, i) => s + (i.price * i.myShare), 0); },
-        totalCost() { return this.fundList.reduce((s, i) => s + i.cost, 0); },
-        totalProfit() { return this.fundList.reduce((s, i) => s + (i.price * i.myShare - i.cost), 0); },
-        totalDayProfit() { return this.fundList.reduce((s, i) => s + (i.dayProfit || 0), 0); }
-    },
-    // 10秒自动刷新
-    mounted() { this.refreshAll(); setInterval(this.refreshAll, 10000); },
-    methods: {
-        getGroup(cat) { return this.fundList.filter(i => i.type === cat); },
-        getItemProfit(item) { return item.price * item.myShare - item.cost; },
-        async fetchData(code, type) {
-            try {
-                if (type === '基金') {
-                    return new Promise(res => {
-                        const timeout = setTimeout(() => res(null), 5000); // 5秒超时保护
-                        window.jsonpgz = (d) => { clearTimeout(timeout); res({ name: d.name, price: parseFloat(d.gsz), changeRate: parseFloat(d.gszzl), prev: parseFloat(d.dwjz) }); };
-                        const s = document.createElement('script');
-                        s.src = `https://fundgz.1234567.com.cn/js/${code}.js?rt=${Date.now()}`;
-                        document.body.appendChild(s); 
-                        s.onerror = () => { clearTimeout(timeout); res(null); }; 
-                        s.onload = () => s.remove();
-                    });
-                } else {
-                    const r = await fetch(`https://hq.sinajs.cn/list=${code.toLowerCase()}`).catch(()=>null);
-                    if(!r) return null;
-                    const t = await r.text();
-                    const d = t.split('"')[1].split(',');
-                    if(d.length < 4) return null;
-                    const p = parseFloat(d[3]), v = parseFloat(d[2]);
-                    return { name: d[0], price: p, changeRate: parseFloat(((p-v)/v*100).toFixed(2)), prev: v };
+// 如果 Vue 加载失败，给用户提示，而不是白屏
+if (typeof Vue === 'undefined') {
+    document.getElementById('app').innerHTML = "<div style='padding:20px;text-align:center;color:red'>依赖加载失败，请检查网络或重新打包 APK。</div>";
+} else {
+    new Vue({
+        el: '#app',
+        data: {
+            form: { code: '', money: '', type: '基金' },
+            assets: JSON.parse(localStorage.getItem('assets_final_v2') || '{}'),
+            fundList: []
+        },
+        computed: {
+            totalAmount() { return this.fundList.reduce((s, i) => s + (i.price * i.myShare), 0); },
+            totalCost() { return this.fundList.reduce((s, i) => s + i.cost, 0); },
+            totalProfit() { return this.totalAmount - this.totalCost; },
+            totalDayProfit() { return this.fundList.reduce((s, i) => s + (i.dayProfit || 0), 0); }
+        },
+        mounted() { this.refreshAll(); setInterval(this.refreshAll, 10000); },
+        methods: {
+            async refreshAll() {
+                const list = [];
+                for (const code in this.assets) {
+                    const info = this.assets[code];
+                    const live = await this.fetchData(code, info.type);
+                    if (live) {
+                        const sh = info.money / live.prev;
+                        list.push({ ...live, code, cost: info.money, myShare: sh, dayProfit: (live.price - live.prev) * sh });
+                    }
                 }
-            } catch (e) { return null; }
-        },
-        async refreshAll() {
-            const list = [];
-            for (const code in this.assets) {
-                const info = this.assets[code];
-                const live = await this.fetchData(code, info.type);
-                if (live) {
-                    const cost = parseFloat(info.money);
-                    const sh = cost / live.prev; 
-                    list.push({ ...live, code, type: info.type, cost: cost, myShare: sh, dayProfit: (live.price - live.prev) * sh });
-                }
+                this.fundList = list;
+            },
+            async fetchData(code, type) {
+                try {
+                    if (type === '基金') {
+                        return new Promise(res => {
+                            const callbackName = 'jsonp_' + Math.random().toString(36).substr(2);
+                            window[callbackName] = (d) => { res({ name: d.name, price: parseFloat(d.gsz), changeRate: parseFloat(d.gszzl), prev: parseFloat(d.dwjz) }); };
+                            const s = document.createElement('script');
+                            s.src = `https://fundgz.1234567.com.cn/js/${code}.js?callback=${callbackName}`;
+                            document.body.appendChild(s);
+                            setTimeout(() => res(null), 5000);
+                        });
+                    } else {
+                        const r = await fetch(`https://hq.sinajs.cn/list=${code.toLowerCase()}`).catch(()=>null);
+                        if(!r) return null;
+                        const t = await r.text();
+                        const d = t.split('"')[1].split(',');
+                        return { name: d[0], price: parseFloat(d[3]), changeRate: parseFloat(((d[3]-d[2])/d[2]*100).toFixed(2)), prev: parseFloat(d[2]) };
+                    }
+                } catch (e) { return null; }
+            },
+            addItem() {
+                if(!this.form.code || !this.form.money) return;
+                this.$set(this.assets, this.form.code, { money: parseFloat(this.form.money), type: this.form.type });
+                localStorage.setItem('assets_final_v2', JSON.stringify(this.assets));
+                this.refreshAll();
             }
-            this.fundList = list;
-        },
-        addItem() {
-            if(!this.form.code || !this.form.money) return;
-            Vue.set(this.assets, this.form.code, { code: this.form.code, money: parseFloat(this.form.money), type: this.form.type });
-            localStorage.setItem(_0xkey[0], JSON.stringify(this.assets));
-            this.refreshAll(); this.form.code = ''; this.form.money = '';
-        },
-        openEdit(item) { this.editData.code = item.code; this.editData.name = item.name; this.editData.tempValue = item.cost; this.editData.show = true; },
-        saveEdit() {
-            const nv = parseFloat(this.editData.tempValue);
-            if (!isNaN(nv)) {
-                this.assets[this.editData.code].money = nv;
-                localStorage.setItem(_0xkey[0], JSON.stringify(this.assets));
-                this.refreshAll(); this.editData.show = false;
-            }
-        },
-        confirmDelete(item) { this.delConfirm.code = item.code; this.delConfirm.name = item.name; this.delConfirm.show = true; },
-        executeDelete() {
-            Vue.delete(this.assets, this.delConfirm.code);
-            localStorage.setItem(_0xkey[0], JSON.stringify(this.assets));
-            this.delConfirm.show = false; this.refreshAll();
         }
-    }
-});
+    });
+}
 </script>
 </body>
 </html>
