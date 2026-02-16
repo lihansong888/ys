@@ -1,8 +1,13 @@
 {
-  "兼容性测试": [
-    { "name": "测试流", "url": "http://88.212.7.11/live/test_extasy_hd_hevc/playlist.m3u8" }
+  "私密频道": [
+    { "name": "Brazzers TV", "url": "http://88.212.7.11/live/test_brazzers_tv_europe_hd/playlist.m3u8" },
+    { "name": "Reality Kings", "url": "http://88.212.7.11/live/test_reality_kings_hd/playlist.m3u8" },
+    { "name": "Private TV", "url": "http://88.212.7.11/live/test_private_tv_hd/playlist.m3u8" },
+    { "name": "Hustler TV", "url": "http://88.212.7.11/live/test_hustler_tv_hd/playlist.m3u8" },
+    { "name": "Babes TV", "url": "http://88.212.7.11/live/test_babes_tv_hd/playlist.m3u8" },
+    { "name": "Passion TV", "url": "http://88.212.7.11/live/test_passion_xxx_hd/playlist.m3u8" }
   ],
-  "央视频道": [
-    { "name": "brazzers", "url": "http://88.212.7.11/live/test_brazzers_hd_hevc/playlist.m3u8" }
+  "测试频道": [
+    { "name": "演示源(HTTPS)", "url": "https://test-streams.mux.dev/x36xhzz/playlist.m3u8" }
   ]
 }
