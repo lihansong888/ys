@@ -3,181 +3,212 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>基金实时估值-寒松暴力兼容版</title>
+    <title>基金实时估值-寒松个人网页版</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
     <style>
         :root { --up: #ff4d4f; --down: #52c41a; --blue: #1890ff; --border: #e8e8e8; }
         * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
         body { font-family: -apple-system, sans-serif; background: #f0f2f5; padding: 12px; margin: 0; }
+        
+        /* 顶部看板 */
         .summary-card { background: linear-gradient(135deg, #2f54eb, #1890ff); color: #fff; padding: 20px 15px; border-radius: 16px; margin-bottom: 16px; display: grid; grid-template-columns: 1fr 1fr; gap: 15px; }
         .sum-box { text-align: center; }
         .sum-label { font-size: 11px; opacity: 0.8; margin-bottom: 4px; }
-        .sum-val { font-size: 18px; font-weight: bold; }
-        .control-panel { background: #fff; border-radius: 12px; padding: 10px; margin-bottom: 8px; border: 1px solid var(--border); }
-        .input-row { display: flex; align-items: center; height: 44px; }
+        .sum-val { font-size: 19px; font-weight: bold; }
+        
+        /* 操作面板 */
+        .control-panel { background: #fff; border-radius: 12px; padding: 10px; margin-bottom: 16px; border: 1px solid var(--border); }
+        .input-row { display: flex; align-items: center; width: 100%; height: 44px; }
+        
         .inputs-part { flex: 1; display: flex; border: 1px solid var(--border); border-radius: 8px 0 0 8px; overflow: hidden; height: 100%; }
-        .inputs-part input, .inputs-part select { flex: 1; border: none; border-right: 1px solid var(--border); outline: none; font-size: 13px; text-align: center; width: 33%; background: #fff; }
-        .btn-part { width: 65px; height: 100%; background: var(--blue); border-radius: 0 8px 8px 0; display: flex; align-items: center; justify-content: center; }
-        .add-btn { color: #fff; font-size: 14px; font-weight: bold; background: none; border: none; width: 100%; height: 100%; cursor: pointer; }
-        .msg-tip { font-size: 11px; color: #999; text-align: center; margin-bottom: 10px; min-height: 14px; }
+        .inputs-part input, .inputs-part select { flex: 1; width: 30%; border: none; border-right: 1px solid var(--border); outline: none; font-size: 13px; padding: 0 5px; text-align: center; }
+        
+        .btn-part { 
+            width: 65px !important; 
+            height: 100%; 
+            background: var(--blue) !important; 
+            border-radius: 0 8px 8px 0;
+            display: flex !important;
+            align-items: center !important;
+            justify-content: center !important;
+            flex-shrink: 0 !important; 
+        }
+        
+        .add-btn-final {
+            color: #ffffff !important;
+            font-size: 15px !important;
+            font-weight: bold !important;
+            background: transparent !important;
+            border: none !important;
+            width: 100% !important;
+            height: 100% !important;
+            display: block !important;
+            padding: 0 !important;
+            margin: 0 !important;
+            text-align: center !important;
+            line-height: 44px !important; 
+        }
+
+        /* 列表展示 */
+        .asset-title { font-size: 13px; color: #666; margin: 10px 0 8px 5px; font-weight: bold; }
         .item-card { background: #fff; border-radius: 12px; padding: 15px; margin-bottom: 12px; border: 1px solid var(--border); }
-        .card-row { display: flex; justify-content: space-between; font-size: 14px; margin-top: 8px; }
-        .up { color: var(--up); font-weight: bold; }
-        .down { color: var(--down); font-weight: bold; }
+        .item-head { display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; }
+        .item-name { font-weight: bold; font-size: 15px; }
+        .card-row { display: flex; justify-content: space-between; font-size: 14px; margin-top: 5px; }
+        .up { color: var(--up); }
+        .down { color: var(--down); }
+        .btn-s { padding: 4px 10px; border-radius: 4px; border: none; font-size: 12px; color: #fff; margin-left: 5px; }
+
+        /* 弹窗 */
+        .mask { position: fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.6); display:flex; align-items:center; justify-content:center; z-index:99; }
+        .dialog { background:#fff; width:80%; border-radius:12px; padding:20px; text-align:center; }
+        .dialog input { width:100%; height:40px; margin:15px 0; text-align:center; border:1px solid var(--blue); border-radius:4px; }
+        .btn-act { width:100%; height:40px; background:var(--blue); color:#fff; border:none; border-radius:4px; font-weight:bold; }
     </style>
 </head>
 <body>
 
+<div id="app">
     <div class="summary-card">
-        <div class="sum-box"><div class="sum-label">估算总市值</div><div id="totalAmount" class="sum-val">0.00</div></div>
-        <div class="sum-box"><div class="sum-label">累计总投入</div><div id="totalCost" class="sum-val">0.00</div></div>
-        <div class="sum-box"><div class="sum-label">持仓盈亏</div><div id="totalProfit" class="sum-val">0.00</div></div>
-        <div class="sum-box"><div class="sum-label">今日盈亏</div><div id="totalDayProfit" class="sum-val">0.00</div></div>
+        <div class="sum-box"><div class="sum-label">估算总市值</div><div class="sum-val">{{ totalAmount.toFixed(2) }}</div></div>
+        <div class="sum-box"><div class="sum-label">累计总投入</div><div class="sum-val">{{ totalCost.toFixed(2) }}</div></div>
+        <div class="sum-box"><div class="sum-label">持仓盈亏</div><div class="sum-val" :class="totalProfit>=0?'up':'down'">{{ totalProfit>=0?'+':'' }}{{ totalProfit.toFixed(2) }}</div></div>
+        <div class="sum-box"><div class="sum-label">今日盈亏</div><div class="sum-val" :class="totalDayProfit>=0?'up':'down'">{{ totalDayProfit>=0?'+':'' }}{{ totalDayProfit.toFixed(2) }}</div></div>
     </div>
 
     <div class="control-panel">
         <div class="input-row">
             <div class="inputs-part">
-                <input id="inCode" type="text" placeholder="代码">
-                <input id="inMoney" type="number" placeholder="金额">
-                <select id="inType"><option value="基金">基金</option><option value="股票">股票</option></select>
+                <input v-model="form.code" placeholder="代码">
+                <input v-model.number="form.money" type="number" placeholder="金额">
+                <select v-model="form.type">
+                    <option value="基金">基金</option>
+                    <option value="股票">股票</option>
+                </select>
             </div>
             <div class="btn-part">
-                <button type="button" class="add-btn" id="addBtn" onclick="forceAddItem()">添加</button>
+                <button class="add-btn-final" @click="addItem">添加</button>
             </div>
         </div>
     </div>
-    <div id="msgTip" class="msg-tip">状态: 脚本启动中...</div>
-    <div id="listContainer"></div>
+
+    <div v-for="cat in ['基金','股票']" :key="cat" v-if="getGroup(cat).length">
+        <div class="asset-title">{{cat}}资产明细</div>
+        <div v-for="item in getGroup(cat)" :key="item.code" class="item-card">
+            <div class="item-head">
+                <div class="item-name">{{item.name}}</div>
+                <div>
+                    <button class="btn-s" style="background:var(--blue)" @click="openEdit(item)">编辑</button>
+                    <button class="btn-s" style="background:#ff4d4f" @click="confirmDelete(item)">删除</button>
+                </div>
+            </div>
+            <div class="card-row">
+                <span>涨跌：<span :class="item.changeRate>=0?'up':'down'">{{item.changeRate>=0?'+':''}}{{item.changeRate}}%</span></span>
+                <span>盈亏：<span :class="getItemProfit(item)>=0?'up':'down'">{{getItemProfit(item)>=0?'+':''}}{{getItemProfit(item).toFixed(2)}}</span></span>
+            </div>
+            <div class="card-row" style="color:#888; font-size:12px;">
+                <span>代码：{{item.code}}</span>
+                <span>本金：{{item.cost}}</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="mask" v-if="editData.show">
+        <div class="dialog">
+            <div style="font-weight:bold">{{editData.name}}</div>
+            <input type="number" v-model.number="editData.tempValue">
+            <button class="btn-act" @click="saveEdit">确定修改</button>
+            <button class="btn-act" style="background:#eee; color:#666; margin-top:10px;" @click="editData.show=false">取消</button>
+        </div>
+    </div>
+
+    <div class="mask" v-if="delConfirm.show">
+        <div class="dialog">
+            <div style="font-weight:bold; color:red">确认删除此资产？</div>
+            <p>{{delConfirm.name}}</p>
+            <button class="btn-act" style="background:red" @click="executeDelete">确定删除</button>
+            <button class="btn-act" style="background:#eee; color:#666; margin-top:10px;" @click="delConfirm.show=false">取消</button>
+        </div>
+    </div>
+</div>
 
 <script>
-    var assets = JSON.parse(localStorage.getItem('assets_v3') || '{}');
-    var fundList = [];
-
-    function setTip(txt) {
-        document.getElementById('msgTip').innerText = "状态: " + txt;
-    }
-
-    // 第二重保障：通过 ID 直接绑定函数
-    window.forceAddItem = function() {
-        var c = document.getElementById('inCode').value.replace(/\s+/g, "");
-        var m = document.getElementById('inMoney').value;
-        var t = document.getElementById('inType').value;
-
-        if(!c || !m) {
-            setTip("添加失败：请检查代码和金额");
-            return;
-        }
-
-        assets[c] = { money: parseFloat(m), type: t };
-        localStorage.setItem('assets_v3', JSON.stringify(assets));
-        
-        document.getElementById('inCode').value = '';
-        document.getElementById('inMoney').value = '';
-        setTip("已尝试添加: " + c);
-        refreshAll();
-    };
-
-    // 第三重保障：监听器绑定
-    var btn = document.getElementById('addBtn');
-    if(btn) {
-        btn.addEventListener('click', function(e) {
-            console.log("Button Clicked via Listener");
-            // 函数内容同上，确保双重触发
-        });
-    }
-
-    async function refreshAll() {
-        fundList = [];
-        var tAmount = 0, tCost = 0, tDayProfit = 0;
-        var keys = Object.keys(assets);
-
-        if(keys.length === 0) {
-            setTip("就绪：等待录入代码");
-            render(0, 0, 0);
-            return;
-        }
-
-        for (var i=0; i<keys.length; i++) {
-            var code = keys[i];
-            var info = assets[code];
-            var live = await fetchData(code, info.type);
-            if (live) {
-                var sh = info.money / live.prev;
-                var currentVal = live.price * sh;
-                tAmount += currentVal;
-                tCost += info.money;
-                tDayProfit += (live.price - live.prev) * sh;
-                fundList.push({ ...live, code, profit: currentVal - info.money, cost: info.money });
+const _0xkey = ['\x61\x73\x73\x65\x74\x73\x5f\x66\x69\x6e\x61\x6c\x5f\x76\x32']; 
+new Vue({
+    el: '#app',
+    data: {
+        form: { code: '', money: '', type: '基金' },
+        assets: JSON.parse(localStorage.getItem(_0xkey[0]) || '{}'),
+        fundList: [],
+        editData: { show: false, code: '', name: '', tempValue: 0 },
+        delConfirm: { show: false, code: '', name: '' }
+    },
+    computed: {
+        totalAmount() { return this.fundList.reduce((s, i) => s + (i.price * i.myShare), 0); },
+        totalCost() { return this.fundList.reduce((s, i) => s + i.cost, 0); },
+        totalProfit() { return this.fundList.reduce((s, i) => s + (i.price * i.myShare - i.cost), 0); },
+        totalDayProfit() { return this.fundList.reduce((s, i) => s + (i.dayProfit || 0), 0); }
+    },
+    // 关键修改：此处已改为 10000 毫秒（10秒）
+    mounted() { this.refreshAll(); setInterval(this.refreshAll, 10000); },
+    methods: {
+        getGroup(cat) { return this.fundList.filter(i => i.type === cat); },
+        getItemProfit(item) { return item.price * item.myShare - item.cost; },
+        async fetchData(code, type) {
+            try {
+                if (type === '基金') {
+                    return new Promise(res => {
+                        window.jsonpgz = (d) => res({ name: d.name, price: parseFloat(d.gsz), changeRate: parseFloat(d.gszzl), prev: parseFloat(d.dwjz) });
+                        const s = document.createElement('script');
+                        s.src = `https://fundgz.1234567.com.cn/js/${code}.js?rt=${Date.now()}`;
+                        document.body.appendChild(s); 
+                        s.onerror = () => res(null); s.onload = () => s.remove();
+                    });
+                } else {
+                    const r = await fetch(`https://hq.sinajs.cn/list=${code.toLowerCase()}`);
+                    const t = await r.text();
+                    const d = t.split('"')[1].split(',');
+                    const p = parseFloat(d[3]), v = parseFloat(d[2]);
+                    return { name: d[0], price: p, changeRate: parseFloat(((p-v)/v*100).toFixed(2)), prev: v };
+                }
+            } catch (e) { return null; }
+        },
+        async refreshAll() {
+            const list = [];
+            for (const code in this.assets) {
+                const info = this.assets[code];
+                const live = await this.fetchData(code, info.type);
+                if (live) {
+                    const cost = parseFloat(info.money);
+                    const sh = cost / live.prev; 
+                    list.push({ ...live, code, type: info.type, cost: cost, myShare: sh, dayProfit: (live.price - live.prev) * sh });
+                }
             }
-        }
-        render(tAmount, tCost, tDayProfit);
-        setTip("更新成功 " + new Date().toLocaleTimeString().split(' ')[0]);
-    }
-
-    async function fetchData(code, type) {
-        try {
-            if (type === '基金') {
-                return new Promise(function(res) {
-                    var cb = 'cb' + Math.floor(Math.random()*100000);
-                    window[cb] = function(d) { 
-                        res({name:d.name, price:parseFloat(d.gsz), prev:parseFloat(d.dwjz), changeRate:d.gszzl}); 
-                        delete window[cb];
-                    };
-                    var s = document.createElement('script');
-                    s.src = "https://fundgz.1234567.com.cn/js/" + code + ".js?callback=" + cb;
-                    document.head.appendChild(s);
-                    setTimeout(function() { if(s.parentNode) s.remove(); res(null); }, 5000);
-                });
-            } else {
-                var r = await fetch("https://hq.sinajs.cn/list=" + code.toLowerCase());
-                var t = await r.text();
-                var d = t.split('"')[1].split(',');
-                var p = parseFloat(d[3]), v = parseFloat(d[2]);
-                return { name:d[0], price:p, prev:v, changeRate:((p-v)/v*100).toFixed(2) };
+            this.fundList = list;
+        },
+        addItem() {
+            if(!this.form.code || !this.form.money) return;
+            Vue.set(this.assets, this.form.code, { code: this.form.code, money: parseFloat(this.form.money), type: this.form.type });
+            localStorage.setItem(_0xkey[0], JSON.stringify(this.assets));
+            this.refreshAll(); this.form.code = ''; this.form.money = '';
+        },
+        openEdit(item) { this.editData.code = item.code; this.editData.name = item.name; this.editData.tempValue = item.cost; this.editData.show = true; },
+        saveEdit() {
+            const nv = parseFloat(this.editData.tempValue);
+            if (!isNaN(nv)) {
+                this.assets[this.editData.code].money = nv;
+                localStorage.setItem(_0xkey[0], JSON.stringify(this.assets));
+                this.refreshAll(); this.editData.show = false;
             }
-        } catch(e) { return null; }
-    }
-
-    function render(tAmount, tCost, tDayProfit) {
-        document.getElementById('totalAmount').innerText = tAmount.toFixed(2);
-        document.getElementById('totalCost').innerText = tCost.toFixed(2);
-        
-        var tp = document.getElementById('totalProfit');
-        var profit = tAmount - tCost;
-        tp.innerText = (profit >= 0 ? '+' : '') + profit.toFixed(2);
-        tp.className = 'sum-val ' + (profit >= 0 ? 'up' : 'down');
-
-        var tdp = document.getElementById('totalDayProfit');
-        tdp.innerText = (tDayProfit >= 0 ? '+' : '') + tDayProfit.toFixed(2);
-        tdp.className = 'sum-val ' + (tDayProfit >= 0 ? 'up' : 'down');
-
-        var html = '';
-        for(var j=0; j<fundList.length; j++){
-            var item = fundList[j];
-            html += '<div class="item-card">' +
-                    '<div style="display:flex; justify-content:space-between; align-items:center">' +
-                    '<b style="font-size:15px">' + item.name + '</b>' +
-                    '<button onclick="deleteItem(\''+item.code+'\')" style="border:none; background:#ff4d4f; color:#fff; border-radius:4px; padding:6px 12px; font-size:12px">删除</button>' +
-                    '</div>' +
-                    '<div class="card-row">' +
-                    '<span>涨跌：<span class="'+(item.changeRate>=0?'up':'down')+'">' + (item.changeRate >= 0 ? '+' : '') + item.changeRate + '%</span></span>' +
-                    '<span>盈亏：<span class="'+(item.profit>=0?'up':'down')+'">' + (item.profit >= 0 ? '+' : '') + item.profit.toFixed(2) + '</span></span>' +
-                    '</div></div>';
+        },
+        confirmDelete(item) { this.delConfirm.code = item.code; this.delConfirm.name = item.name; this.delConfirm.show = true; },
+        executeDelete() {
+            Vue.delete(this.assets, this.delConfirm.code);
+            localStorage.setItem(_0xkey[0], JSON.stringify(this.assets));
+            this.delConfirm.show = false; this.refreshAll();
         }
-        document.getElementById('listContainer').innerHTML = html;
     }
-
-    window.deleteItem = function(code) {
-        if(confirm("确定删除吗？")) {
-            delete assets[code];
-            localStorage.setItem('assets_v3', JSON.stringify(assets));
-            refreshAll();
-        }
-    };
-
-    // 立即启动
-    refreshAll();
-    setInterval(refreshAll, 10000);
+});
 </script>
 </body>
 </html>
