@@ -96,7 +96,7 @@
         <div class="asset-title">{{cat}}资产明细</div>
         <div v-for="item in getGroup(cat)" :key="item.code" class="item-card">
             <div class="item-head">
-                <div class="item-name">{{item.name}}</div>
+                <div class="item-name"><span style="color:#666; font-size:13px; font-weight:normal;">{{item.code}}</span> {{item.name}}</div>
                 <div>
                     <button class="btn-s" style="background:var(--blue)" @click="openEdit(item)">编辑</button>
                     <button class="btn-s" style="background:#ff4d4f" @click="confirmDelete(item)">删除</button>
@@ -107,8 +107,8 @@
                 <span>盈亏：<span :class="getItemProfit(item)>=0?'up':'down'">{{getItemProfit(item)>=0?'+':''}}{{getItemProfit(item).toFixed(2)}}</span></span>
             </div>
             <div class="card-row" style="color:#888; font-size:12px;">
-                <span>代码：{{item.code}}</span>
-                <span>本金：{{item.cost}}</span>
+                <span>持有：{{item.cost}}</span>
+                <span :style="{ color: getAdvice(item.changeRate).color, fontWeight: 'bold' }">指令：{{getAdvice(item.changeRate).text}}</span>
             </div>
         </div>
     </div>
@@ -149,11 +149,18 @@ new Vue({
         totalProfit() { return this.fundList.reduce((s, i) => s + (i.price * i.myShare - i.cost), 0); },
         totalDayProfit() { return this.fundList.reduce((s, i) => s + (i.dayProfit || 0), 0); }
     },
-    // 关键修改：此处已改为 10000 毫秒（10秒）
     mounted() { this.refreshAll(); setInterval(this.refreshAll, 10000); },
     methods: {
         getGroup(cat) { return this.fundList.filter(i => i.type === cat); },
         getItemProfit(item) { return item.price * item.myShare - item.cost; },
+        // 新增操作指令判断逻辑
+        getAdvice(rate) {
+            if (rate <= -2.5) return { text: "🟢 低吸加仓", color: "#52c41a" };
+            if (rate <= -1.5) return { text: "🔵 准备补仓", color: "#1890ff" };
+            if (rate >= 3.5) return { text: "🔴 分批止盈", color: "#ff4d4f" };
+            if (rate >= 2.0) return { text: "🟡 不宜追高", color: "#faad14" };
+            return { text: "⚪ 持有待机", color: "#888" };
+        },
         async fetchData(code, type) {
             try {
                 if (type === '基金') {
