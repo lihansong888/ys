@@ -1,12 +1,14 @@
 import requests
 
 def main():
+    # --- 1. 初始化 ---
     output = []
-    
-    # 1. 精品频道 (保留你实测有效的 adultiptv 源)
+    headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"}
+
+    # --- 2. 精品频道 (保留你实测秒开的源) ---
     output.append("精品频道,#genre#")
     try:
-        r = requests.get("http://adultiptv.net/chs.m3u", timeout=10)
+        r = requests.get("http://adultiptv.net/chs.m3u", headers=headers, timeout=10)
         if r.status_code == 200:
             name = ""
             for line in r.text.split('\n'):
@@ -16,37 +18,28 @@ def main():
                     name = ""
     except: pass
 
-    # 2. 咪咕官方 (基于你抓包发现的 mgsp-ali2 阿里云节点)
-    output.append("咪咕官方,#genre#")
-    
-    # 根据你提供的 CCTV-3 路径逻辑，批量生成核心频道
-    # 路径：/wd_r2/ocn/[频道标识]/3000/01.m3u8
-    base_ali = "http://mgsp-ali2.live.miguvideo.com:8088/wd_r2/ocn"
-    migu_list = [
-        ("CCTV-1 高清", f"{base_ali}/cctv1hd/3000/01.m3u8"),
-        ("CCTV-3 高清", f"{base_ali}/cctv3hd/3000/01.m3u8"),
-        ("CCTV-5 高清", f"{base_ali}/cctv5hd/3000/01.m3u8"),
-        ("CCTV-6 高清", f"{base_ali}/cctv6hd/3000/01.m3u8"),
-        ("CCTV-8 高清", f"{base_ali}/cctv8hd/3000/01.m3u8")
-    ]
-    
-    for name, url in migu_list:
-        output.append(f"{name},{url}")
-
-    # 3. 核心直播 (合并你之前认可的 yimi321 IPTV 源)
+    # --- 3. 核心直播 (直接从你提供的 Gitee IPTV 源提取) ---
     output.append("核心直播,#genre#")
+    # 这个源里藏着你截图显示的“中国IPTV”原生流
+    iptv_raw_url = "https://gitee.com/yimi321/tv/raw/master/tv.png"
     try:
-        res = requests.get("https://gitee.com/yimi321/tv/raw/master/tv.png", timeout=10)
+        res = requests.get(iptv_raw_url, headers=headers, timeout=15)
         if res.status_code == 200:
+            # 这种源通常是 txt 格式，我们直接过滤并整合
             for line in res.text.split('\n'):
+                line = line.strip()
+                # 只抓取真正带 http 的 IPTV 链接
                 if "," in line and "http" in line:
-                    output.append(line.strip())
-    except: pass
+                    # 优先提取 CCTV、卫视和咪咕，确保列表精简好用
+                    if any(x in line for x in ["CCTV", "卫视", "咪咕"]):
+                        output.append(line)
+    except Exception as e:
+        print(f"提取 IPTV 出错: {e}")
 
-    # 4. 写入 migu.txt
+    # --- 4. 生成最终 migu.txt ---
     with open("migu.txt", "w", encoding="utf-8") as f:
         f.write("\n".join(output))
-    print("已应用你抓包获取的阿里 CDN 节点")
+    print("IPTV 核心源已成功提取并整合")
 
 if __name__ == "__main__":
     main()
