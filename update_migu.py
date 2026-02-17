@@ -1,19 +1,34 @@
 import requests
-import json
-import base64
+import re
 
 def get_migu_url(cid):
-    # 直接请求咪咕官方移动端接口，获取原始播放地址
-    url = f"https://m.miguvideo.com/mgs/msite/prd/detail.html?cid={cid}"
-    headers = {
-        "User-Agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 14_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.3 Mobile/15E148 Safari/104.1",
-        "Referer": "https://m.miguvideo.com/"
-    }
-    # 这里直接使用目前最稳的大网直连地址格式，不需要第三方代理
+    # 保持你现在的原生抓取逻辑，这是最稳的
     return f"http://wwtv.miguvideo.com/migu/live/{cid}/playlist.m3u8"
 
+def get_extra_channels():
+    # 抓取你提供的外部有效直播源
+    url = "https://raw.githubusercontent.com/hujingguang/ChinaIPTV/main/cn.m3u8"
+    try:
+        response = requests.get(url, timeout=10)
+        if response.status_code == 200:
+            # 简单处理 m3u 格式，提取频道名和链接
+            content = response.text
+            extra_lines = []
+            current_name = ""
+            for line in content.split('\n'):
+                if "#EXTINF" in line:
+                    current_name = line.split(',')[-1].strip()
+                elif "http" in line and current_name:
+                    extra_lines.append(f"{current_name},{line.strip()}")
+                    current_name = ""
+            return extra_lines
+    except:
+        return []
+    return []
+
 def main():
-    channels = [
+    # 1. 咪咕原有的频道
+    migu_channels = [
         ("CCTV-1", "608807420"),
         ("CCTV-5", "608807428"),
         ("CCTV-5+", "608807435"),
@@ -23,13 +38,18 @@ def main():
     ]
     
     output = ["咪咕直播,#genre#"]
-    for name, cid in channels:
-        real_url = get_migu_url(cid)
-        output.append(f"{name},{real_url}")
-        print(f"抓取成功: {name}")
+    for name, cid in migu_channels:
+        output.append(f"{name},{get_migu_url(cid)}")
+    
+    # 2. 添加你提供的新直播源分类
+    extra = get_extra_channels()
+    if extra:
+        output.append("其他高清频道,#genre#")
+        output.extend(extra)
 
     with open("migu.txt", "w", encoding="utf-8") as f:
         f.write("\n".join(output))
+    print("全频道更新完成")
 
 if __name__ == "__main__":
     main()
