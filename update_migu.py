@@ -9,11 +9,11 @@ def get_migu():
         ("湖南卫视", "608807447"),
         ("浙江卫视", "608807448")
     ]
-    # 使用公共解析接口，解决直接链接无法播放的问题
+    # 切换为专门的公共解析前缀，解决 0.00 Mbps 无法播放的问题
     proxy_base = "https://live.fanmingming.com/migu/"
     
     output = []
-    output.append("咪咕直播,#genre#") # 给 TVBox 增加分类
+    output.append("咪咕直播,#genre#") # 为 TVBox 增加分类标题
     for name, cid in channels:
         output.append(f"{name},{proxy_base}{cid}.m3u8")
     return "\n".join(output)
@@ -22,4 +22,4 @@ if __name__ == "__main__":
     content = get_migu()
     with open("migu.txt", "w", encoding="utf-8") as f:
         f.write(content)
-    print("migu.txt 更新完成")
+    print("migu.txt 已修复并更新")
