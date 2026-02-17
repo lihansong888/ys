@@ -1,0 +1,32 @@
+name: Update Migu Live
+
+on:
+  schedule:
+    - cron: '0 22 * * *' # 每天北京时间早上6点自动执行
+  workflow_dispatch:      # 允许手动立即执行
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.9'
+
+      - name: Install dependencies
+        run: pip install requests
+
+      - name: Run script
+        run: python update_migu.py
+
+      - name: Commit and Push
+        run: |
+          git config --local user.email "actions@github.com"
+          git config --local user.name "GitHub Action"
+          git add migu.txt
+          git commit -m "Update migu.txt" || exit 0
+          git push
