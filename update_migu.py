@@ -9,10 +9,13 @@ def get_migu():
         ("湖南卫视", "608807447"),
         ("浙江卫视", "608807448")
     ]
-    api_base = "https://live.fanmingming.com/migu/"
+    # 使用公共解析接口，解决直接链接无法播放的问题
+    proxy_base = "https://live.fanmingming.com/migu/"
+    
     output = []
+    output.append("咪咕直播,#genre#") # 给 TVBox 增加分类
     for name, cid in channels:
-        output.append(f"{name},{api_base}{cid}.m3u8")
+        output.append(f"{name},{proxy_base}{cid}.m3u8")
     return "\n".join(output)
 
 if __name__ == "__main__":
