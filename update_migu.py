@@ -1,57 +1,47 @@
 import requests
 import re
 
-def main():
-    # --- 1. 初始化列表 ---
-    final_output = []
-    
-    # --- 2. 精品频道 (你测试过有效的源) ---
-    final_output.append("精品频道,#genre#")
+def get_content(url):
+    headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"}
     try:
-        r = requests.get("http://adultiptv.net/chs.m3u", timeout=10)
-        if r.status_code == 200:
-            name = ""
-            for line in r.text.split('\n'):
-                if "#EXTINF" in line: name = line.split(',')[-1].strip()
-                elif "http" in line and name:
-                    final_output.append(f"{name},{line.strip()}")
-                    name = ""
-    except: pass
+        r = requests.get(url, headers=headers, timeout=15)
+        r.encoding = 'utf-8'
+        return r.text if r.status_code == 200 else ""
+    except:
+        return ""
 
-    # --- 3. 国内高清 (放弃 fanmingming，改用更硬核的实时维护站) ---
-    # 这些源直接爬取目前活跃的单播/组播列表，更新频率以小时计
-    sources = [
-        "https://raw.githubusercontent.com/ssili126/tv/main/itvlist.txt", # 运营商直出源
-        "https://raw.githubusercontent.com/yrosxml/IPTV/main/IPTV.m3u"   # 每日筛选源
-    ]
-    
-    final_output.append("国内高清,#genre#")
-    for url in sources:
-        try:
-            res = requests.get(url, timeout=10)
-            if res.status_code == 200:
-                # 兼容 txt 和 m3u 两种格式的解析逻辑
-                content = res.text
-                if "#EXTINF" in content: # 处理 m3u
-                    temp_name = ""
-                    for line in content.split('\n'):
-                        line = line.strip()
-                        if "#EXTINF" in line: temp_name = line.split(',')[-1].strip()
-                        elif "http" in line and temp_name:
-                            if any(x in temp_name for x in ["CCTV", "卫视"]):
-                                final_output.append(f"{temp_name},{line}")
-                            temp_name = ""
-                else: # 处理 txt (频道名,链接)
-                    for line in content.split('\n'):
-                        if "," in line and "http" in line:
-                            final_output.append(line.strip())
-            if len(final_output) > 20: break # 抓够了就收工
-        except: continue
+def main():
+    final_output = []
 
-    # --- 4. 写入你的 migu.txt ---
+    # --- 1. 精品频道 (保留目前最稳的源) ---
+    final_output.append("精品频道,#genre#")
+    adult_content = get_content("http://adultiptv.net/chs.m3u")
+    if adult_content:
+        name = ""
+        for line in adult_content.split('\n'):
+            line = line.strip()
+            if "#EXTINF" in line: name = line.split(',')[-1].strip()
+            elif line.startswith("http") and name:
+                final_output.append(f"{name},{line}")
+                name = ""
+
+    # --- 2. 核心直播 (抓取你提供的最新有效源) ---
+    final_output.append("核心直播,#genre#")
+    # 这个源是你测试过可用的最新地址
+    migu_source = get_content("https://gitee.com/yimi321/tv/raw/master/tv.png")
+    if migu_source:
+        for line in migu_source.split('\n'):
+            line = line.strip()
+            # 过滤掉非频道行，只保留符合 TVBox 格式的内容
+            if "," in line and "http" in line:
+                # 只抓取 CCTV 和 卫视，防止列表太冗余
+                if any(x in line for x in ["CCTV", "卫视", "咪咕"]):
+                    final_output.append(line)
+
+    # 写入文件
     with open("migu.txt", "w", encoding="utf-8") as f:
         f.write("\n".join(final_output))
-    print("全手工硬核源更新完成")
+    print("有效源已同步完成")
 
 if __name__ == "__main__":
     main()
