@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>基金实时估值-寒松个人网页版</title>
-    <script src="https://lf26-cdn-tos.bytecdntp.com/cdn/expire-1-M/vue/2.6.14/vue.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
     <style>
         :root { --up: #ff4d4f; --down: #52c41a; --blue: #1890ff; --border: #e8e8e8; }
         * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
@@ -31,9 +31,7 @@
             display: flex !important;
             align-items: center !important;
             justify-content: center !important;
-            flex-shrink: 0 !important;
-            position: relative;
-            z-index: 10;
+            flex-shrink: 0 !important; 
         }
         
         .add-btn-final {
@@ -44,18 +42,18 @@
             border: none !important;
             width: 100% !important;
             height: 100% !important;
-            display: flex !important;
-            align-items: center;
-            justify-content: center;
+            display: block !important;
             padding: 0 !important;
             margin: 0 !important;
-            cursor: pointer;
-            pointer-events: auto !important;
+            text-align: center !important;
+            line-height: 44px !important; 
         }
 
         /* 列表展示 */
         .asset-title { font-size: 13px; color: #666; margin: 10px 0 8px 5px; font-weight: bold; }
         .item-card { background: #fff; border-radius: 12px; padding: 15px; margin-bottom: 12px; border: 1px solid var(--border); }
+        
+        /* 修正点：增加 flex-shrink 防止按钮组换行 */
         .item-head { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 8px; gap: 10px; }
         .item-name { font-weight: bold; font-size: 15px; flex: 1; line-height: 1.4; }
         .item-btns { display: flex; flex-shrink: 0; }
@@ -85,7 +83,7 @@
     <div class="control-panel">
         <div class="input-row">
             <div class="inputs-part">
-                <input v-model="form.code" placeholder="代码" type="text">
+                <input v-model="form.code" placeholder="代码">
                 <input v-model.number="form.money" type="number" placeholder="金额">
                 <select v-model="form.type">
                     <option value="基金">基金</option>
@@ -155,38 +153,26 @@ new Vue({
         totalProfit() { return this.fundList.reduce((s, i) => s + (i.price * i.myShare - i.cost), 0); },
         totalDayProfit() { return this.fundList.reduce((s, i) => s + (i.dayProfit || 0), 0); }
     },
-    mounted() { this.refreshAll(); setInterval(this.refreshAll, 15000); },
+    mounted() { this.refreshAll(); setInterval(this.refreshAll, 10000); },
     methods: {
         getGroup(cat) { return this.fundList.filter(i => i.type === cat); },
         getItemProfit(item) { return item.price * item.myShare - item.cost; },
-        
         getAdvice(rate) {
-            if (rate <= -5.0) return { text: "💎 黄金坑(重仓)", color: "#092b00" }; 
-            if (rate <= -3.2) return { text: "🥦 回撤抄底(入)", color: "#1d823e" };
-            if (rate <= -1.8) return { text: "🟢 波段买点(加)", color: "#52c41a" };
-            if (rate <= -0.8) return { text: "🔵 策略建仓(轻)", color: "#1890ff" };
-            if (rate < 1.5 && rate > -0.8) return { text: "⚪ 信号等待(持)", color: "#888" };
-            if (rate >= 1.5 && rate < 2.8) return { text: "🟡 趋势预警(观)", color: "#faad14" };
-            if (rate >= 2.8 && rate < 4.2) return { text: "🚩 波段高抛(减)", color: "#ff7a45" };
-            if (rate >= 4.2 && rate < 5.5) return { text: "⚡ 神奇反转(抛)", color: "#ff4d4f" };
-            if (rate >= 5.5) return { text: "🔥 见顶信号(离)", color: "#820014" };
-            return { text: "⚪ 信号等待(持)", color: "#888" };
+            if (rate <= -2.5) return { text: "🟢 低吸加仓", color: "#52c41a" };
+            if (rate <= -1.5) return { text: "🔵 准备补仓", color: "#1890ff" };
+            if (rate >= 3.5) return { text: "🔴 分批止盈", color: "#ff4d4f" };
+            if (rate >= 2.0) return { text: "🟡 不宜追高", color: "#faad14" };
+            return { text: "⚪ 持有待机", color: "#888" };
         },
-
         async fetchData(code, type) {
             try {
                 if (type === '基金') {
-                    return new Promise((res) => {
-                        const timeout = setTimeout(() => res(null), 5000); // 增加超时保护
-                        window.jsonpgz = (d) => {
-                            clearTimeout(timeout);
-                            res({ name: d.name, price: parseFloat(d.gsz), changeRate: parseFloat(d.gszzl), prev: parseFloat(d.dwjz) });
-                        };
+                    return new Promise(res => {
+                        window.jsonpgz = (d) => res({ name: d.name, price: parseFloat(d.gsz), changeRate: parseFloat(d.gszzl), prev: parseFloat(d.dwjz) });
                         const s = document.createElement('script');
                         s.src = `https://fundgz.1234567.com.cn/js/${code}.js?rt=${Date.now()}`;
                         document.body.appendChild(s); 
-                        s.onerror = () => { clearTimeout(timeout); res(null); }; 
-                        s.onload = () => s.remove();
+                        s.onerror = () => res(null); s.onload = () => s.remove();
                     });
                 } else {
                     const r = await fetch(`https://hq.sinajs.cn/list=${code.toLowerCase()}`);
@@ -204,19 +190,17 @@ new Vue({
                 const live = await this.fetchData(code, info.type);
                 if (live) {
                     const cost = parseFloat(info.money);
-                    const sh = cost / (live.prev || live.price); 
+                    const sh = cost / live.prev; 
                     list.push({ ...live, code, type: info.type, cost: cost, myShare: sh, dayProfit: (live.price - live.prev) * sh });
                 }
             }
             this.fundList = list;
         },
         addItem() {
-            if(!this.form.code || this.form.money === "" || this.form.money === null) return;
-            const code = this.form.code.trim();
-            Vue.set(this.assets, code, { code: code, money: parseFloat(this.form.money), type: this.form.type });
+            if(!this.form.code || !this.form.money) return;
+            Vue.set(this.assets, this.form.code, { code: this.form.code, money: parseFloat(this.form.money), type: this.form.type });
             localStorage.setItem(_0xkey[0], JSON.stringify(this.assets));
-            this.refreshAll();
-            this.form.code = ''; this.form.money = '';
+            this.refreshAll(); this.form.code = ''; this.form.money = '';
         },
         openEdit(item) { this.editData.code = item.code; this.editData.name = item.name; this.editData.tempValue = item.cost; this.editData.show = true; },
         saveEdit() {
