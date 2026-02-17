@@ -1,7 +1,7 @@
 咪咕直播,#genre#
-CCTV-1,http://gdovp.v.tongbu.com/migu/live/608807420/playlist.m3u8
-CCTV-5,http://gdovp.v.tongbu.com/migu/live/608807428/playlist.m3u8
-CCTV-5+,http://gdovp.v.tongbu.com/migu/live/608807435/playlist.m3u8
-江苏卫视,http://gdovp.v.tongbu.com/migu/live/608807446/playlist.m3u8
-湖南卫视,http://gdovp.v.tongbu.com/migu/live/608807447/playlist.m3u8
-浙江卫视,http://gdovp.v.tongbu.com/migu/live/608807448/playlist.m3u8
+CCTV-1,http://wwtv.miguvideo.com/migu/live/608807420/playlist.m3u8
+CCTV-5,http://wwtv.miguvideo.com/migu/live/608807428/playlist.m3u8
+CCTV-5+,http://wwtv.miguvideo.com/migu/live/608807435/playlist.m3u8
+江苏卫视,http://wwtv.miguvideo.com/migu/live/608807446/playlist.m3u8
+湖南卫视,http://wwtv.miguvideo.com/migu/live/608807447/playlist.m3u8
+浙江卫视,http://wwtv.miguvideo.com/migu/live/608807448/playlist.m3u8
