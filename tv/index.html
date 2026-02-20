@@ -98,41 +98,73 @@ function showToast(text) {
   window.toastTimer = setTimeout(() => { toast.style.display = 'none'; }, 2000);
 }
 
-// --- GitHub Gist 云端引擎 ---
+// 跨域代理，解决 GitHub API 访问问题
+const GIST_PROXY = 'https://api.allorigins.win/raw?url=';
+
 async function syncToCloud() {
   if (!config.token || !config.id) return;
   document.getElementById('cloudStatus').innerText = '正在备份...';
   try {
-    const res = await fetch(`https://api.github.com/gists/${config.id}`, {
+    const url = `https://api.github.com/gists/${config.id}`;
+    const body = { files: { "funds.json": { content: JSON.stringify(fundList) } } };
+    
+    const res = await fetch(url, {
       method: 'PATCH',
-      headers: { 'Authorization': `token ${config.token}`, 'Content-Type': 'application/json' },
-      body: JSON.stringify({ files: { "funds.json": { content: JSON.stringify(fundList) } } })
+      headers: { 
+        'Authorization': `token ${config.token}`, 
+        'Content-Type': 'application/json' 
+      },
+      body: JSON.stringify(body)
     });
-    if (res.ok) { document.getElementById('cloudStatus').innerText = '云端数据已同步'; }
-    else { document.getElementById('cloudStatus').innerText = '同步异常'; }
-  } catch (e) { document.getElementById('cloudStatus').innerText = '网络连接失败'; }
+    
+    if (res.ok) {
+      document.getElementById('cloudStatus').innerText = '云端数据已同步';
+      showToast('备份成功');
+    } else {
+      document.getElementById('cloudStatus').innerText = '同步失败';
+    }
+  } catch (e) {
+    document.getElementById('cloudStatus').innerText = '网络异常';
+  }
 }
 
 async function loadFromCloud() {
-  if (!config.token || !config.id) return;
-  document.getElementById('cloudStatus').innerText = '正在拉取云端...';
+  if (!config.token || !config.id) {
+    document.getElementById('cloudStatus').innerText = '未配置云端';
+    return;
+  }
+  
+  document.getElementById('cloudStatus').innerText = '正在拉取...';
+  
   try {
-    const res = await fetch(`https://api.github.com/gists/${config.id}`, {
-      headers: { 'Authorization': `token ${config.token}` }
-    });
-    if (!res.ok) throw new Error();
+    // 双线路：优先直连，失败走代理（APK专用）
+    let res;
+    try {
+      res = await fetch(`https://api.github.com/gists/${config.id}`, {
+        headers: { 'Authorization': `token ${config.token}` }
+      });
+    } catch(e) {
+      res = await fetch(GIST_PROXY + encodeURIComponent(`https://api.github.com/gists/${config.id}`), {
+        headers: { 'Authorization': `token ${config.token}` }
+      });
+    }
+
+    if (!res.ok) throw new Error('gist请求失败');
+    
     const data = await res.json();
     const cloudData = JSON.parse(data.files["funds.json"].content);
+    
     if (Array.isArray(cloudData)) {
       fundList = cloudData;
       localStorage.setItem('fundList_final', JSON.stringify(fundList));
       render();
       refreshAllFunds();
-      document.getElementById('cloudStatus').innerText = '同步成功，已是最新';
+      document.getElementById('cloudStatus').innerText = '同步成功';
+      showToast('云端数据已恢复');
     }
   } catch (e) { 
-    document.getElementById('cloudStatus').innerText = '拉取失败，请检查配置';
-    showToast('云端拉取失败');
+    document.getElementById('cloudStatus').innerText = '拉取失败';
+    showToast('拉取失败');
   }
 }
 
@@ -277,8 +309,14 @@ window.addEventListener('touchend', async () => {
   container.style.transform = 'translateY(0)'; startY = 0;
 });
 
-// 启动启动
-if (config.token && config.id) { loadFromCloud(); } else { render(); refreshAllFunds(); }
+// 启动
+if (config.token && config.id) { 
+  setTimeout(() => loadFromCloud(), 500);
+} else { 
+  render(); 
+  refreshAllFunds(); 
+}
+
 setInterval(refreshAllFunds, 60000);
 </script>
 </body>
