@@ -132,7 +132,7 @@ async function loadFromCloud() {
   }
 }
 
-// ===================== 只改了这里：精准行业分类 =====================
+// ===================== 精准行业分类 =====================
 function getAdvice(d, money) {
   const gszzl = parseFloat(d.gszzl || 0);
   const now = new Date();
@@ -148,6 +148,7 @@ function getAdvice(d, money) {
     "020398": "创新药",
     "018994": "CPO"
   };
+  let industry, extraTip;
   if (codeMap[code]) {
     industry = codeMap[code];
   } else if (name.includes("半导体") || name.includes("芯片")) {
@@ -181,9 +182,9 @@ function getAdvice(d, money) {
   }
 
   let advice = "", cls = "red";
-  let extraTip = "波段操作，严格止损";
+  extraTip = "波段操作，严格止损";
 
-  // 简单统一建议，不乱写
+  // 简单统一建议
   if (gszzl >= 3) {
     advice = isActionTime ? "减仓止盈" : "不追高";
     cls = "red";
@@ -206,7 +207,7 @@ function getAdvice(d, money) {
     extraTip
   };
 }
-// ====================================================================
+// ========================================================
 
 function render() {
   const listEl = document.getElementById('fundList'); listEl.innerHTML = '';
@@ -262,38 +263,17 @@ async function refreshAllFunds() {
   isRefreshing = false;
 }
 
-async function checkFundExist(code) {
-  return new Promise(resolve => {
-    const timeout = setTimeout(() => resolve(false), 3000);
-    window.jsonpCheck = function(d) {
-      clearTimeout(timeout);
-      const exist = !!(d && d.name);
-      delete window.jsonpCheck;
-      resolve(exist);
-    };
-    const s = document.createElement('script');
-    s.src = `https://fundgz.1234567.com.cn/js/${code}.js?rt=${Date.now()}`;
-    document.body.appendChild(s);
-  });
-}
-
-document.getElementById('holdAmount').addEventListener('input', function(e) {
-  let value = e.target.value;
-  value = value.replace(/[^\d.]/g, '');
-  const parts = value.split('.');
-  if (parts.length > 2) {
-    value = parts[0] + '.' + parts.slice(1).join('');
-  }
-  e.target.value = value;
-});
-
+// 跳过在线校验，直接添加
 async function addFund() {
   const cEl = document.getElementById('fundCode');
   const mEl = document.getElementById('holdAmount');
   const c = cEl.value.trim();
   const m = mEl.value.trim();
   
-  if (!c || !m) return;
+  if (!c || !m) {
+    showToast('请填写代码和金额');
+    return;
+  }
   
   if (fundList.some(item => item.code === c)) {
     showToast('基金已存在');
@@ -302,14 +282,7 @@ async function addFund() {
     return;
   }
 
-  const exist = await checkFundExist(c);
-  if (!exist) {
-    showToast('基金代码不存在');
-    cEl.value = '';
-    mEl.value = '';
-    return;
-  }
-
+  // 直接添加，不再在线校验
   fundList.push({ code: c, money: m });
   localStorage.setItem('fundList_final', JSON.stringify(fundList));
   render();
