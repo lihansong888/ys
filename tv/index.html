@@ -98,8 +98,33 @@ function showToast(text) {
   window.toastTimer = setTimeout(() => { toast.style.display = 'none'; }, 2000);
 }
 
-// 跨域代理，解决 GitHub API 访问问题
-const GIST_PROXY = 'https://api.allorigins.win/raw?url=';
+// --- 修复版 GitHub Gist 云端引擎 ---
+const PROXY_LIST = [
+  'https://api.allorigins.win/raw?url=',
+  'https://api.codetabs.com/v1/proxy?quest='
+];
+
+async function fetchWithProxy(url, options = {}, retries = 2) {
+  let lastError;
+  for (const proxy of PROXY_LIST) {
+    try {
+      const proxyUrl = proxy + encodeURIComponent(url);
+      const res = await fetch(proxyUrl, options);
+      if (res.ok) return res;
+    } catch (e) {
+      lastError = e;
+      continue;
+    }
+  }
+  // 代理都失败，尝试直连
+  try {
+    const res = await fetch(url, options);
+    if (res.ok) return res;
+  } catch (e) {
+    lastError = e;
+  }
+  throw lastError;
+}
 
 async function syncToCloud() {
   if (!config.token || !config.id) return;
@@ -108,7 +133,7 @@ async function syncToCloud() {
     const url = `https://api.github.com/gists/${config.id}`;
     const body = { files: { "funds.json": { content: JSON.stringify(fundList) } } };
     
-    const res = await fetch(url, {
+    const res = await fetchWithProxy(url, {
       method: 'PATCH',
       headers: { 
         'Authorization': `token ${config.token}`, 
@@ -125,6 +150,7 @@ async function syncToCloud() {
     }
   } catch (e) {
     document.getElementById('cloudStatus').innerText = '网络异常';
+    console.error('Sync error:', e);
   }
 }
 
@@ -137,17 +163,10 @@ async function loadFromCloud() {
   document.getElementById('cloudStatus').innerText = '正在拉取...';
   
   try {
-    // 双线路：优先直连，失败走代理（APK专用）
-    let res;
-    try {
-      res = await fetch(`https://api.github.com/gists/${config.id}`, {
-        headers: { 'Authorization': `token ${config.token}` }
-      });
-    } catch(e) {
-      res = await fetch(GIST_PROXY + encodeURIComponent(`https://api.github.com/gists/${config.id}`), {
-        headers: { 'Authorization': `token ${config.token}` }
-      });
-    }
+    const url = `https://api.github.com/gists/${config.id}`;
+    const res = await fetchWithProxy(url, {
+      headers: { 'Authorization': `token ${config.token}` }
+    });
 
     if (!res.ok) throw new Error('gist请求失败');
     
@@ -165,6 +184,7 @@ async function loadFromCloud() {
   } catch (e) { 
     document.getElementById('cloudStatus').innerText = '拉取失败';
     showToast('拉取失败');
+    console.error('Load error:', e);
   }
 }
 
