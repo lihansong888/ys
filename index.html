@@ -6,8 +6,8 @@
 <title>基金实时估值 - 寒松个人版</title>
 <style>
 * { margin: 0; padding: 0; box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
-body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; background-color: #f5f7fa; padding: 0; min-height: 100vh; overflow-x: hidden; }
-#toast { position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); background: rgba(0, 0, 0, 0.85); color: #fff; padding: 12px 24px; border-radius: 10px; font-size: 14px; z-index: 100000; display: none; pointer-events: none; text-align: center; min-width: 120px; }
+body { font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif; background-color: #f5f7fa; padding: 0; min-height: 100vh; overflow-x: hidden; }
+#toast { position: fixed; top: 50%; left: 50%; transform: translate(-50%,-50%); background: rgba(0,0,0,0.85); color: #fff; padding: 12px 24px; border-radius: 10px; font-size: 14px; z-index: 100000; display: none; pointer-events: none; text-align: center; min-width: 120px; }
 
 .sync-bar { background: #fff; padding: 10px 16px; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #eee; font-size: 12px; position: sticky; top: 0; z-index: 100; }
 #cloudStatus { color: #888; font-weight: 500; }
@@ -18,9 +18,9 @@ body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helv
 .main-wrapper { display: grid; grid-template-columns: 100%; justify-items: center; gap: 16px; width: 100%; padding: 16px 0; }
 .content-block { width: calc(100% - 32px); max-width: 500px; }
 h2 { text-align: center; color: #222; font-size: 20px; margin-bottom: 4px; }
-.summary-card { background: linear-gradient(135deg, #4facfe 0%, #007aff 100%); border-radius: 20px; padding: 20px; color: #fff; box-shadow: 0 10px 20px rgba(0,122,255,0.15); display: grid; grid-template-columns: 1fr 1fr; gap: 20px; text-align: center; }
+.summary-card { background: linear-gradient(135deg,#4facfe 0%,#007aff 100%); border-radius: 20px; padding: 20px; color: #fff; box-shadow: 0 10px 20px rgba(0,122,255,0.15); display: grid; grid-template-columns: 1fr 1fr; gap: 20px; text-align: center; }
 .summary-item .label { font-size: 13px; opacity: 0.9; margin-bottom: 6px; display: block; }
-.summary-item .value { font-size: 20px; font-weight: 700; font-family: "DIN Alternate", sans-serif; }
+.summary-item .value { font-size: 20px; font-weight: 700; font-family: "DIN Alternate",sans-serif; }
 .profit-value { color: #ffda00; }
 .add-section { display: grid; grid-template-columns: 1fr 1fr 60px; gap: 10px; width: 100%; }
 .add-section input { width: 100%; padding: 12px; border: 1px solid #e0e0e0; border-radius: 12px; font-size: 14px; background: #fff; outline: none; }
@@ -132,9 +132,7 @@ async function loadFromCloud() {
   }
 }
 
-// —————————————————————————————————————————————————————
-// 超细分行业识别 · 精确版
-// —————————————————————————————————————————————————————
+// ===================== 只改了这里：精准行业分类 =====================
 function getAdvice(d, money) {
   const gszzl = parseFloat(d.gszzl || 0);
   const now = new Date();
@@ -142,233 +140,73 @@ function getAdvice(d, money) {
   const name = d.name || "";
   const code = d.code || "";
 
-  let industry = "主题基金";
-  let extraTip = "";
-
-  // 超细分精确匹配
-  if (code === "004927" || name.includes("低空") || name.includes("无人机") || name.includes("通航")) {
-    industry = "低空经济";
-    extraTip = "新赛道高弹性，严格止损，波段为主";
-  } else if (code === "020398" || name.includes("创新药") || name.includes("生物药") || name.includes("CXO")) {
+  // 精准硬绑定，一目了然
+  const codeMap = {
+    "004927": "低空经济",
+    "015790": "商业航天",
+    "002580": "半导体",
+    "020398": "创新药",
+    "018994": "CPO"
+  };
+  if (codeMap[code]) {
+    industry = codeMap[code];
+  } else if (name.includes("半导体") || name.includes("芯片")) {
+    industry = "半导体";
+  } else if (name.includes("创新药") || name.includes("医药")) {
     industry = "创新药";
-    extraTip = "磨底周期长，只低吸不追高，分批布局";
-  } else if (code === "018994" || name.includes("CPO") || name.includes("光模块") || name.includes("算力光电")) {
-    industry = "CPO科技";
-    extraTip = "高波动算力赛道，反弹减仓，不格局";
-  } else if (name.includes("半导体") || name.includes("芯片") || name.includes("AI") || name.includes("人工智能")) {
-    industry = "半导体/AI";
-    extraTip = "高弹性赛道，止损必须严格，不恋战";
-  } else if (name.includes("军工") || name.includes("装备") || name.includes("空天")) {
-    industry = "军工装备";
-    extraTip = "波动极大，只做波段，不长期死拿";
-  } else if (name.includes("恒生科技") || name.includes("港股科技") || name.includes("HK")) {
-    industry = "恒生科技";
-    extraTip = "境外高波动，深跌必止损，不盲目抄底";
-  } else if (name.includes("纳斯达克") || name.includes("纳指") || name.includes("美股")) {
+  } else if (name.includes("CPO") || name.includes("光模块")) {
+    industry = "CPO";
+  } else if (name.includes("低空")) {
+    industry = "低空经济";
+  } else if (name.includes("航天")) {
+    industry = "商业航天";
+  } else if (name.includes("纳斯达克")) {
     industry = "纳斯达克";
-    extraTip = "趋势为王，破位必须减仓，不逆势扛单";
-  } else if (name.includes("日本") || name.includes("日经")) {
-    industry = "日本股市";
-    extraTip = "汇率+波动双重风险，严格控仓";
-  } else if (name.includes("越南")) {
-    industry = "越南市场";
-    extraTip = "新兴市场波动大，分批布局，严格止损";
-  } else if (name.includes("医疗") || name.includes("医药") || name.includes("生物")) {
-    industry = "医疗医药";
-    extraTip = "底部磨底周期长，只低吸不追高";
-  } else if (name.includes("白酒") || name.includes("食品") || name.includes("消费")) {
-    industry = "消费/白酒";
-    extraTip = "核心防御资产，大跌可布局，大涨分批止盈";
-  } else if (name.includes("新能源") || name.includes("锂电") || name.includes("光伏") || name.includes("碳中和")) {
-    industry = "新能源/碳中和";
-    extraTip = "周期属性强，反弹即减仓，不格局";
-  } else if (name.includes("科技") || name.includes("信息技术") || name.includes("互联网")) {
-    industry = "科技/互联网";
-    extraTip = "成长赛道，波动大，波段操作";
-  } else if (name.includes("500") || name.includes("300") || name.includes("50") || name.includes("指数") || name.includes("宽基")) {
-    industry = "宽基指数";
-    extraTip = "均衡配置，平滑波动，适合长期持有";
+  } else if (name.includes("恒生")) {
+    industry = "恒生科技";
+  } else if (name.includes("机器人")) {
+    industry = "机器人";
+  } else if (name.includes("光伏")) {
+    industry = "光伏";
+  } else if (name.includes("稀土") || name.includes("有色")) {
+    industry = "有色/稀土";
+  } else if (name.includes("黄金")) {
+    industry = "黄金";
+  } else if (name.includes("科技")) {
+    industry = "科技";
+  } else if (name.includes("军工")) {
+    industry = "军工";
   } else {
-    industry = "细分主题基金";
-    extraTip = "聚焦细分赛道，注意集中度风险";
+    industry = "主题基金";
   }
 
-  let advice = "", cls = "";
+  let advice = "", cls = "red";
+  let extraTip = "波段操作，严格止损";
 
-  if (industry === "低空经济") {
-    if (gszzl <= -4) {
-      advice = isActionTime ? "【尾盘止损】大跌减仓40%，防深套" : "【高危】新赛道杀跌，不抄底";
-      cls = "red";
-    } else if (gszzl <= -2) {
-      advice = isActionTime ? "【控仓】减仓20%" : "【观望】不补仓";
-      cls = "green";
-    } else if (gszzl >= 4) {
-      advice = isActionTime ? "【止盈】减仓35%" : "【不追高】冲高即风险";
-      cls = "red";
-    } else if (gszzl >= 1.5) {
-      advice = isActionTime ? "【减仓15%】落袋" : "持有";
-      cls = "red";
-    } else if (gszzl < -1) {
-      advice = "弱势不补"; cls = "green";
-    } else {
-      advice = "震荡观望"; cls = "red";
-    }
-  } else if (industry === "创新药") {
-    if (gszzl <= -3) {
-      advice = isActionTime ? "【分批低吸】小额定投" : "底部区域，可小仓"; cls = "green";
-    } else if (gszzl <= -1.5) {
-      advice = "耐心等待更优价格"; cls = "green";
-    } else if (gszzl >= 3.5) {
-      advice = isActionTime ? "【减仓25%】不格局" : "反弹减仓"; cls = "red";
-    } else if (gszzl >= 1.5) {
-      advice = isActionTime ? "减仓10%" : "持有"; cls = "red";
-    } else {
-      advice = "磨底观望"; cls = "red";
-    }
-  } else if (industry === "CPO科技") {
-    if (gszzl <= -4) {
-      advice = isActionTime ? "【强制止损】减40%" : "高危，不抄底"; cls = "red";
-    } else if (gszzl <= -2) {
-      advice = isActionTime ? "减仓25%" : "观望不补"; cls = "green";
-    } else if (gszzl >= 4) {
-      advice = isActionTime ? "止盈35%" : "不追高"; cls = "red";
-    } else if (gszzl >= 1.5) {
-      advice = isActionTime ? "减仓15%" : "持有"; cls = "red";
-    } else if (gszzl < -1) {
-      advice = "弱势不补"; cls = "green";
-    } else {
-      advice = "震荡观望"; cls = "red";
-    }
-  } else if (industry === "半导体/AI") {
-    if (gszzl <= -4) {
-      advice = isActionTime ? "【强制止损】尾盘减40%" : "【高危】赛道杀跌，不抄底"; cls = "red";
-    } else if (gszzl <= -2) {
-      advice = isActionTime ? "减仓25%" : "观望不补"; cls = "green";
-    } else if (gszzl >= 4) {
-      advice = isActionTime ? "止盈35%" : "不追高"; cls = "red";
-    } else if (gszzl >= 1.5) {
-      advice = isActionTime ? "减仓15%" : "持有"; cls = "red";
-    } else if (gszzl < -1) {
-      advice = "弱势不补"; cls = "green";
-    } else {
-      advice = "震荡观望"; cls = "red";
-    }
-  } else if (industry === "恒生科技") {
-    if (gszzl <= -5) {
-      advice = isActionTime ? "【尾盘止损】减50%防深套" : "【高危】大跌超5%，随时减仓"; cls = "red";
-    } else if (gszzl <= -3) {
-      advice = isActionTime ? "减30%" : "不抄底"; cls = "red";
-    } else if (gszzl <= -1) {
-      advice = isActionTime ? "减15%" : "小跌不补"; cls = "green";
-    } else if (gszzl < 0) {
-      advice = "阴跌减仓"; cls = "green";
-    } else if (gszzl >= 5) {
-      advice = isActionTime ? "减40%" : "不追高"; cls = "red";
-    } else if (gszzl >= 3) {
-      advice = isActionTime ? "减30%" : "持有"; cls = "red";
-    } else if (gszzl >= 1) {
-      advice = isActionTime ? "减15%" : "持有"; cls = "red";
-    } else {
-      advice = "横盘观望"; cls = "red";
-    }
-  } else if (industry === "纳斯达克") {
-    if (gszzl <= -4) {
-      advice = isActionTime ? "减40%止损" : "破位不扛"; cls = "red";
-    } else if (gszzl <= -2) {
-      advice = isActionTime ? "减20%" : "不补"; cls = "green";
-    } else if (gszzl >= 4) {
-      advice = isActionTime ? "减35%" : "不追"; cls = "red";
-    } else if (gszzl >= 1.5) {
-      advice = isActionTime ? "减15-20%" : "持有"; cls = "red";
-    } else if (gszzl < -1) {
-      advice = "不补不抄"; cls = "green";
-    } else {
-      advice = "震荡持有"; cls = "red";
-    }
-  } else if (industry === "医疗医药") {
-    if (gszzl <= -3) {
-      advice = isActionTime ? "分批低吸" : "底部可小仓"; cls = "green";
-    } else if (gszzl <= -1.5) {
-      advice = "等待更优价格"; cls = "green";
-    } else if (gszzl >= 3.5) {
-      advice = isActionTime ? "减25%" : "反弹减仓"; cls = "red";
-    } else if (gszzl >= 1.5) {
-      advice = isActionTime ? "减10%" : "持有"; cls = "red";
-    } else {
-      advice = "磨底观望"; cls = "red";
-    }
-  } else if (industry === "消费/白酒") {
-    if (gszzl <= -3) {
-      advice = isActionTime ? "分批布局" : "优质回调可耐心"; cls = "green";
-    } else if (gszzl >= 3.5) {
-      advice = isActionTime ? "减25%" : "不追高"; cls = "red";
-    } else if (gszzl >= 1.5) {
-      advice = isActionTime ? "减10%" : "持有"; cls = "red";
-    } else {
-      advice = "稳健持有"; cls = "red";
-    }
-  } else if (industry === "新能源/碳中和") {
-    if (gszzl <= -4) {
-      advice = isActionTime ? "止损减40%" : "不抄底"; cls = "red";
-    } else if (gszzl <= -2) {
-      advice = isActionTime ? "减25%" : "观望"; cls = "green";
-    } else if (gszzl >= 4) {
-      advice = isActionTime ? "止盈35%" : "不追"; cls = "red";
-    } else if (gszzl >= 1.5) {
-      advice = isActionTime ? "减15%" : "持有"; cls = "red";
-    } else if (gszzl < -1) {
-      advice = "不补"; cls = "green";
-    } else {
-      advice = "观望"; cls = "red";
-    }
-  } else if (industry === "科技/互联网") {
-    if (gszzl <= -3.5) {
-      advice = isActionTime ? "减30%" : "不抄底"; cls = "red";
-    } else if (gszzl <= -1.5) {
-      advice = isActionTime ? "减15%" : "不补"; cls = "green";
-    } else if (gszzl >= 3.5) {
-      advice = isActionTime ? "减30%" : "不追"; cls = "red";
-    } else if (gszzl >= 1.5) {
-      advice = isActionTime ? "减15%" : "持有"; cls = "red";
-    } else if (gszzl < -1) {
-      advice = "不补"; cls = "green";
-    } else {
-      advice = "持有观望"; cls = "red";
-    }
-  } else if (industry === "宽基指数") {
-    if (gszzl <= -3) {
-      advice = isActionTime ? "定投低吸" : "等待企稳"; cls = "green";
-    } else if (gszzl >= 3) {
-      advice = isActionTime ? "减20%" : "不追"; cls = "red";
-    } else if (gszzl >= 1) {
-      advice = isActionTime ? "减10%" : "长期配置"; cls = "red";
-    } else if (gszzl < -1) {
-      advice = "不急于抄底"; cls = "green";
-    } else {
-      advice = "均衡持有"; cls = "red";
-    }
+  // 简单统一建议，不乱写
+  if (gszzl >= 3) {
+    advice = isActionTime ? "减仓止盈" : "不追高";
+    cls = "red";
+  } else if (gszzl <= -3) {
+    advice = isActionTime ? "控仓止损" : "不抄底";
+    cls = "red";
+  } else if (gszzl > 0) {
+    advice = "持有观望";
+    cls = "red";
   } else {
-    if (gszzl <= -3) {
-      advice = isActionTime ? "减25%控风险" : "不盲目补"; cls = "red";
-    } else if (gszzl >= 3) {
-      advice = isActionTime ? "减25%" : "不追"; cls = "red";
-    } else if (gszzl >= 1) {
-      advice = isActionTime ? "减10%" : "持有"; cls = "red";
-    } else if (gszzl < -1) {
-      advice = "不补"; cls = "green";
-    } else {
-      advice = "持有观望"; cls = "red";
-    }
+    advice = "弱势不补";
+    cls = "green";
   }
 
   return {
     industry,
     advice,
     adviceClass: cls,
-    status: gszzl >= 0 ? "【上涨周期】" : "【下跌周期】",
+    status: gszzl >= 0 ? "上涨" : "下跌",
     extraTip
   };
 }
+// ====================================================================
 
 function render() {
   const listEl = document.getElementById('fundList'); listEl.innerHTML = '';
