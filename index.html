@@ -75,7 +75,7 @@ h2 { text-align: center; color: #222; font-size: 20px; margin-bottom: 4px; }
     <div class="content-block">
       <div class="add-section">
         <input id="fundCode" type="text" inputmode="numeric" placeholder="代码">
-        <input id="holdAmount" type="text" inputmode="numeric" placeholder="金额">
+        <input id="holdAmount" type="text" inputmode="decimal" placeholder="金额">
         <button onclick="addFund()">添加</button>
       </div>
     </div>
@@ -263,6 +263,23 @@ async function refreshAllFunds() {
   isRefreshing = false;
 }
 
+// 金额输入框校验：限制小数点和小数位数
+document.getElementById('holdAmount').addEventListener('input', function(e) {
+  let value = e.target.value;
+  // 只允许数字和一个小数点
+  value = value.replace(/[^\d.]/g, '');
+  // 确保只有一个小数点
+  const parts = value.split('.');
+  if (parts.length > 2) {
+    value = parts[0] + '.' + parts.slice(1).join('');
+  }
+  // 限制小数点后最多2位
+  if (parts.length === 2 && parts[1].length > 2) {
+    value = parts[0] + '.' + parts[1].slice(0, 2);
+  }
+  e.target.value = value;
+});
+
 // 跳过在线校验，直接添加
 async function addFund() {
   const cEl = document.getElementById('fundCode');
@@ -272,6 +289,11 @@ async function addFund() {
   
   if (!c || !m) {
     showToast('请填写代码和金额');
+    return;
+  }
+  
+  if (isNaN(parseFloat(m))) {
+    showToast('金额格式不正确');
     return;
   }
   
