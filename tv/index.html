@@ -1,4 +1,104 @@
-// --- 替换你原来的 syncToCloud 和 loadFromCloud 函数 ---
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>基金实时估值 - 寒松个人版</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; background-color: #f5f7fa; padding: 0; min-height: 100vh; overflow-x: hidden; }
+#toast { position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); background: rgba(0, 0, 0, 0.85); color: #fff; padding: 12px 24px; border-radius: 10px; font-size: 14px; z-index: 100000; display: none; pointer-events: none; text-align: center; min-width: 120px; }
+
+/* 云同步状态条 */
+.sync-bar { background: #fff; padding: 10px 16px; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #eee; font-size: 12px; position: sticky; top: 0; z-index: 100; }
+#cloudStatus { color: #888; font-weight: 500; }
+.config-btn { color: #007aff; border: none; background: none; font-size: 13px; font-weight: 600; cursor: pointer; padding: 4px 8px; }
+
+#pull-container { position: relative; transition: transform 0.3s ease; }
+#pull-loader { position: absolute; top: -50px; left: 0; width: 100%; height: 50px; display: flex; align-items: center; justify-content: center; color: #666; font-size: 14px; font-weight: 500; }
+.main-wrapper { display: grid; grid-template-columns: 100%; justify-items: center; gap: 16px; width: 100%; padding: 16px 0; }
+.content-block { width: calc(100% - 32px); max-width: 500px; }
+h2 { text-align: center; color: #222; font-size: 20px; margin-bottom: 4px; }
+.summary-card { background: linear-gradient(135deg, #4facfe 0%, #007aff 100%); border-radius: 20px; padding: 20px; color: #fff; box-shadow: 0 10px 20px rgba(0,122,255,0.15); display: grid; grid-template-columns: 1fr 1fr; gap: 20px; text-align: center; }
+.summary-item .label { font-size: 13px; opacity: 0.9; margin-bottom: 6px; display: block; }
+.summary-item .value { font-size: 20px; font-weight: 700; font-family: "DIN Alternate", sans-serif; }
+.profit-value { color: #ffda00; }
+.add-section { display: grid; grid-template-columns: 1fr 1fr 60px; gap: 10px; width: 100%; }
+.add-section input { width: 100%; padding: 12px; border: 1px solid #e0e0e0; border-radius: 12px; font-size: 14px; background: #fff; outline: none; }
+.add-section button { background-color: #3b82f6; color: #fff; border: none; border-radius: 12px; font-size: 13px; font-weight: 500; }
+.fund-item { background-color: #fff; border-radius: 16px; padding: 16px; margin-bottom: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); }
+.item-header { display: grid; grid-template-columns: 1fr auto; align-items: center; margin-bottom: 12px; }
+.fund-name { font-weight: 600; color: #222; font-size: 15px; line-height: 1.4; display: block; }
+.fund-code { color: #999; font-size: 12px; }
+.btn-group { display: flex; gap: 8px; }
+.action-btn { width: 42px; height: 42px; border: none; border-radius: 8px; color: #fff; font-size: 12px; font-weight: 500; }
+.edit-btn { background-color: #5d9cec; }
+.delete-btn { background-color: #fb6e52; }
+.item-info { line-height: 1.8; font-size: 13px; border-top: 1px solid #f8f8f8; padding-top: 10px; color: #444; }
+.data-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 6px; }
+.data-label { color: #888; font-size: 12px; }
+.analysis-tag { display: inline-block; padding: 8px 10px; border-radius: 8px; font-size: 12px; margin: 8px 0; font-weight: bold; width: 100%; line-height: 1.6; }
+.time-label { font-size: 11px; color: #666; text-align: right; margin-top: 4px; font-weight: 500; }
+.red { color: #ff3b30; }
+.green { color: #34c759; }
+
+/* 弹窗样式 */
+.modal-overlay { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.6); display: flex; align-items: center; justify-content: center; z-index: 9999; }
+.modal { background: #fff; border-radius: 16px; width: 85%; max-width: 320px; padding: 24px; box-shadow: 0 20px 40px rgba(0,0,0,0.2); }
+.modal-title { font-size: 17px; font-weight: 700; margin-bottom: 18px; text-align: center; color: #222; }
+.modal-input { width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 10px; margin-bottom: 15px; font-size: 14px; outline: none; }
+.modal-buttons { display: flex; gap: 12px; }
+.modal-btn { flex: 1; padding: 12px; border-radius: 10px; border: none; font-size: 14px; font-weight: 600; }
+.modal-btn-cancel { background: #f0f0f0; color: #666; }
+.modal-btn-confirm { background: #007aff; color: #fff; }
+</style>
+</head>
+<body>
+
+<div id="toast"></div>
+
+<div class="sync-bar">
+    <span id="cloudStatus">未连接 GitHub 云端</span>
+    <button class="config-btn" onclick="openConfig()">云端配置</button>
+</div>
+
+<div id="pull-container">
+  <div id="pull-loader">下拉刷新...</div>
+  <div class="main-wrapper">
+    <div class="content-block"><h2>基金实时估值-寒松个人版</h2></div>
+    <div class="content-block">
+      <div class="summary-card">
+        <div class="summary-item"><span class="label">估算总市值</span><span class="value" id="totalMarketValue">0.00</span></div>
+        <div class="summary-item"><span class="label">累计总投入</span><span class="value" id="totalMoney">0.00</span></div>
+        <div class="summary-item"><span class="label">持仓盈亏</span><span class="value profit-value" id="totalHoldingProfit">+0.00</span></div>
+        <div class="summary-item"><span class="label">今日盈亏</span><span class="value profit-value" id="totalTodayProfit">+0.00</span></div>
+      </div>
+    </div>
+    <div class="content-block">
+      <div class="add-section">
+        <input id="fundCode" type="text" inputmode="numeric" placeholder="代码">
+        <input id="holdAmount" type="text" inputmode="numeric" placeholder="金额">
+        <button onclick="addFund()">添加</button>
+      </div>
+    </div>
+    <div class="content-block"><div id="fundList"></div></div>
+  </div>
+</div>
+
+<script>
+// --- 核心数据初始化 ---
+let fundList = JSON.parse(localStorage.getItem('fundList_final') || '[]');
+let config = JSON.parse(localStorage.getItem('gist_config_hansong') || '{"token":"","id":""}');
+let isRefreshing = false;
+
+function showToast(text) {
+  const toast = document.getElementById('toast');
+  toast.innerText = text; toast.style.display = 'block';
+  if (window.toastTimer) clearTimeout(window.toastTimer);
+  window.toastTimer = setTimeout(() => { toast.style.display = 'none'; }, 2000);
+}
+
+// --- 手机APK专用云端同步函数 ---
 const GIST_PROXY = 'https://api.codetabs.com/v1/proxy?quest=';
 
 async function syncToCloud() {
@@ -8,7 +108,6 @@ async function syncToCloud() {
     const url = `https://api.github.com/gists/${config.id}`;
     const body = { files: { "funds.json": { content: JSON.stringify(fundList) } } };
     
-    // 优先直连，失败走代理
     let res;
     try {
       res = await fetch(url, {
@@ -82,3 +181,157 @@ async function loadFromCloud() {
     console.error('Load error:', e);
   }
 }
+
+// --- 行业识别与策略逻辑 ---
+function getAdvice(d, money) {
+    const gszzl = parseFloat(d.gszzl || 0);
+    const now = new Date();
+    const isActionTime = (now.getHours() === 14 && now.getMinutes() >= 30);
+    const name = d.name || "";
+    
+    let industry = "综合板块";
+    let extraTip = "";
+    if (name.includes("人工智能") || name.includes("芯片") || name.includes("半导体")) { industry = "半导体材料设备"; extraTip = "弹性极大，关注国产替代。"; }
+    else if (name.includes("领航") || name.includes("制造") || name.includes("机器人")) { industry = "机器人与先进制造"; extraTip = "新质生产力核心。"; }
+    else if (name.includes("装备") || name.includes("军工") || name.includes("空天")) { industry = "国防装备与军工"; extraTip = "关注订单，波段操作。"; }
+    else if (name.includes("越南") || name.includes("全球") || name.includes("海外")) { industry = "海外QDII"; extraTip = "防范汇率剧震。"; }
+    else if (name.includes("医疗") || name.includes("CXO")) { industry = "创新药与医疗"; extraTip = "底部磨砺。"; }
+    else if (name.includes("白酒") || name.includes("食品")) { industry = "白酒消费"; extraTip = "核心资产，分档止盈。"; }
+
+    let advice = ""; let adviceClass = "";
+    if (gszzl <= -2.5) { advice = isActionTime ? `深度洗盘。14:30加仓2-3份，执行自救。` : `超跌。待尾盘确认跌幅。`; adviceClass = "green"; }
+    else if (gszzl <= -1.0) { advice = isActionTime ? `回调达标。执行1份常规加仓。` : `常规回调。分批挂单。`; adviceClass = "green"; }
+    else if (gszzl < 0) { advice = `阴跌。持币观望，切忌频繁补仓。`; adviceClass = "green"; }
+    else if (gszzl >= 2.0) { advice = isActionTime ? `暴力反弹。14:30减仓1/3锁定浮盈。` : `冲高。严禁追涨。`; adviceClass = "red"; }
+    else if (gszzl >= 0.5) { advice = `趋势修复。目前建议持有享受上涨。`; adviceClass = "red"; }
+    else { advice = `横盘磨人。多空平衡，执行不动如山。`; adviceClass = "red"; }
+
+    return { industry, advice, adviceClass, status: gszzl >= 0 ? "【行业利好】" : "【行业利空】", extraTip };
+}
+
+// --- UI 渲染逻辑 ---
+function render() {
+  const listEl = document.getElementById('fundList'); listEl.innerHTML = '';
+  let totalMoney = 0; let totalTodayProfit = 0;
+  fundList.forEach((item, index) => {
+    totalMoney += parseFloat(item.money) || 0;
+    const itemEl = document.createElement('div'); itemEl.className = 'fund-item';
+    itemEl.innerHTML = `<div class="item-header"><div><span class="fund-name">${item.name || '加载中...'}</span><span class="fund-code">${item.code}</span></div><div class="btn-group"><button class="action-btn edit-btn" onclick="editFund(${index})">编辑</button><button class="action-btn delete-btn" onclick="deleteFund(${index})">删除</button></div></div><div class="item-info">${item.info || '采集数据中...'}</div>`;
+    listEl.appendChild(itemEl);
+    if (item.info) {
+      const profitMatch = item.info.match(/今日盈亏：<span class="[^"]+">([\d.-]+) 元/);
+      if (profitMatch) totalTodayProfit += parseFloat(profitMatch[1]) || 0;
+    }
+  });
+  document.getElementById('totalMoney').textContent = totalMoney.toFixed(2);
+  document.getElementById('totalTodayProfit').textContent = (totalTodayProfit >= 0 ? '+' : '') + totalTodayProfit.toFixed(2);
+  document.getElementById('totalMarketValue').textContent = (totalMoney + totalTodayProfit).toFixed(2);
+  document.getElementById('totalHoldingProfit').textContent = (totalTodayProfit >= 0 ? '+' : '') + totalTodayProfit.toFixed(2);
+  document.querySelectorAll('.profit-value').forEach(el => {
+    const val = parseFloat(el.textContent); el.style.color = val >= 0 ? '#ffda00' : '#28ff7b'; 
+  });
+}
+
+function fetchFundData(code, money, index) {
+  return new Promise(resolve => {
+    window.jsonpgz = function(d) {
+      try {
+        const gszzl = parseFloat(d.gszzl || 0); const dwjz = d.dwjz || '0'; const gsz = d.gsz || '0';
+        const profit = (money * gszzl / 100).toFixed(2); const colorClass = gszzl >= 0 ? 'red' : 'green';
+        const diff = (parseFloat(gsz) - parseFloat(dwjz)).toFixed(4);
+        const { industry, advice, adviceClass, status, extraTip } = getAdvice(d, money);
+
+        const info = `<div class="data-grid"><div><span class="data-label">昨收净值:</span> ${dwjz}</div><div><span class="data-label">估算净值:</span> <span class="${colorClass}">${gsz}</span></div><div><span class="data-label">净值偏差:</span> <span class="${colorClass}">${diff}</span></div><div><span class="data-label">实时涨跌:</span> <span class="${colorClass}">${gszzl.toFixed(2)}%</span></div></div><div style="margin-top:4px">持有金额：<b>${money} 元</b> | 今日盈亏：<span class="${colorClass}" style="font-weight:bold;">${profit} 元</span></div><div class="analysis-tag" style="background:${adviceClass === 'red' ? '#fff0f0' : '#f0fff4'}; color:${adviceClass === 'red' ? '#ff3b30' : '#34c759'}">建议：【${industry}】${status}${advice}${extraTip}</div><div class="time-label">时间：${d.gztime}</div>`;
+        fundList[index].name = d.name; fundList[index].info = info;
+        localStorage.setItem('fundList_final', JSON.stringify(fundList)); render();
+      } catch (e) {} finally { delete window.jsonpgz; resolve(); }
+    }
+    const script = document.createElement('script'); script.src = `https://fundgz.1234567.com.cn/js/${code}.js?rt=${Date.now()}`; document.body.appendChild(script);
+  });
+}
+
+async function refreshAllFunds() {
+  if (isRefreshing) return; isRefreshing = true;
+  for (let i = 0; i < fundList.length; i++) { await fetchFundData(fundList[i].code, fundList[i].money, i); await new Promise(r => setTimeout(r, 200)); }
+  isRefreshing = false;
+}
+
+// --- 基础操作 ---
+function addFund() {
+  const cEl = document.getElementById('fundCode'); const mEl = document.getElementById('holdAmount');
+  const c = cEl.value.trim(); const m = mEl.value.trim(); if(!c || !m) return;
+  if (fundList.some(item => item.code === c)) { showToast('基金已存在'); return; }
+  fundList.push({code:c, money:m}); localStorage.setItem('fundList_final', JSON.stringify(fundList));
+  render(); refreshAllFunds(); syncToCloud(); showToast('添加成功'); cEl.value = ''; mEl.value = '';
+}
+
+function editFund(index) {
+  const m = fundList[index].money; const overlay = document.createElement('div'); overlay.className = 'modal-overlay';
+  overlay.innerHTML = `<div class="modal"><div class="modal-title">修改持有金额</div><input type="number" class="modal-input" id="editInput" value="${m}"><div class="modal-buttons"><button class="modal-btn modal-btn-cancel" onclick="this.closest('.modal-overlay').remove()">取消</button><button class="modal-btn modal-btn-confirm" onclick="confirmEdit(${index})">确定</button></div></div>`;
+  document.body.appendChild(overlay);
+}
+
+function confirmEdit(index) {
+  const m = document.getElementById('editInput').value;
+  if(m) { fundList[index].money = m; localStorage.setItem('fundList_final', JSON.stringify(fundList)); document.querySelector('.modal-overlay').remove(); render(); refreshAllFunds(); syncToCloud(); showToast('修改成功'); }
+}
+
+function deleteFund(index) {
+  const fundName = fundList[index].name || '该基金'; 
+  const overlay = document.createElement('div'); overlay.className = 'modal-overlay';
+  overlay.innerHTML = `<div class="modal"><div class="modal-title">确定删除 ${fundName} 吗？</div><div class="modal-buttons"><button class="modal-btn modal-btn-cancel" onclick="this.closest('.modal-overlay').remove()">取消</button><button class="modal-btn modal-btn-confirm" onclick="confirmDelete(${index})">确定</button></div></div>`;
+  document.body.appendChild(overlay);
+}
+
+function confirmDelete(index) {
+  fundList.splice(index, 1); localStorage.setItem('fundList_final', JSON.stringify(fundList));
+  document.querySelector('.modal-overlay').remove(); render(); syncToCloud(); showToast('删除成功');
+}
+
+// --- 配置弹窗 ---
+function openConfig() {
+  const overlay = document.createElement('div'); overlay.className = 'modal-overlay';
+  overlay.innerHTML = `<div class="modal"><div class="modal-title">GitHub 云端同步配置</div><input id="tInp" class="modal-input" placeholder="GitHub Token" value="${config.token}"><input id="gInp" class="modal-input" placeholder="Gist ID" value="${config.id}"><div class="modal-buttons"><button class="modal-btn modal-btn-cancel" onclick="this.closest('.modal-overlay').remove()">取消</button><button class="modal-btn modal-btn-confirm" onclick="saveConfig()">保存并下载</button></div></div>`;
+  document.body.appendChild(overlay);
+}
+
+function saveConfig() {
+  config.token = document.getElementById('tInp').value.trim();
+  config.id = document.getElementById('gInp').value.trim();
+  if(!config.token || !config.id) { alert('请填写完整配置'); return; }
+  localStorage.setItem('gist_config_hansong', JSON.stringify(config));
+  document.querySelector('.modal-overlay').remove();
+  loadFromCloud();
+}
+
+// 下拉刷新
+let startY = 0;
+const container = document.getElementById('pull-container');
+const loader = document.getElementById('pull-loader');
+window.addEventListener('touchstart', e => { if (window.scrollY === 0) startY = e.touches[0].pageY; });
+window.addEventListener('touchmove', e => {
+  const moveY = e.touches[0].pageY; const diff = moveY - startY;
+  if (diff > 0 && window.scrollY === 0) {
+    e.preventDefault(); const translateY = Math.min(diff / 2, 60);
+    container.style.transform = `translateY(${translateY}px)`;
+    loader.innerText = translateY >= 50 ? '松开立即刷新' : '下拉刷新...';
+  }
+}, { passive: false });
+window.addEventListener('touchend', async () => {
+  const currentY = parseFloat(container.style.transform.replace('translateY(', '').replace('px)', '')) || 0;
+  if (currentY >= 50) { loader.innerText = '正在更新...'; await refreshAllFunds(); showToast('更新完成'); }
+  container.style.transform = 'translateY(0)'; startY = 0;
+});
+
+// 启动
+if (config.token && config.id) { 
+  setTimeout(() => loadFromCloud(), 500);
+} else { 
+  render(); 
+  refreshAllFunds(); 
+}
+
+setInterval(refreshAllFunds, 60000);
+</script>
+</body>
+</html>
