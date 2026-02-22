@@ -9,6 +9,13 @@
 body { font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif; background-color: #f5f7fa; padding: 0; min-height: 100vh; overflow-x: hidden; }
 #toast { position: fixed; top: 50%; left: 50%; transform: translate(-50%,-50%); background: rgba(0,0,0,0.85); color: #fff; padding: 12px 24px; border-radius: 10px; font-size: 14px; z-index: 100000; display: none; pointer-events: none; text-align: center; min-width: 120px; }
 
+/* 密码锁专属样式 */
+#lock-screen { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: #f5f7fa; z-index: 999999; display: flex; align-items: center; justify-content: center; }
+.lock-box { background: #fff; padding: 30px; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); width: 85%; max-width: 300px; text-align: center; }
+.lock-title { font-size: 18px; font-weight: bold; margin-bottom: 20px; color: #333; }
+.lock-input { width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 10px; margin-bottom: 15px; font-size: 16px; text-align: center; outline: none; }
+.lock-btn { width: 100%; padding: 12px; background: #007aff; color: #fff; border: none; border-radius: 10px; font-size: 15px; font-weight: 600; }
+
 .sync-bar { background: #fff; padding: 10px 16px; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #eee; font-size: 12px; position: sticky; top: 0; z-index: 100; }
 #cloudStatus { color: #888; font-weight: 500; }
 .config-btn { color: #007aff; border: none; background: none; font-size: 13px; font-weight: 600; cursor: pointer; padding: 4px 8px; }
@@ -53,6 +60,14 @@ h2 { text-align: center; color: #222; font-size: 20px; margin-bottom: 4px; }
 </head>
 <body>
 
+<div id="lock-screen">
+    <div class="lock-box">
+        <div class="lock-title">身份验证</div>
+        <input type="password" id="lockInput" class="lock-input" placeholder="请输入密码">
+        <button class="lock-btn" onclick="checkLock()">确认进入</button>
+    </div>
+</div>
+
 <div id="toast"></div>
 
 <div class="sync-bar">
@@ -84,9 +99,34 @@ h2 { text-align: center; color: #222; font-size: 20px; margin-bottom: 4px; }
 </div>
 
 <script>
+// ===================== 密码配置区 =====================
+const PAGE_PASSWORD = '542788'; // 在这里修改你的固定密码
+// ====================================================
+
 let fundList = JSON.parse(localStorage.getItem('fundList_final') || '[]');
 let config = JSON.parse(localStorage.getItem('gist_config_hansong') || '{"token":"","id":""}');
 let isRefreshing = false;
+
+function checkLock() {
+  const input = document.getElementById('lockInput').value;
+  if (input === PAGE_PASSWORD) {
+    document.getElementById('lock-screen').style.display = 'none';
+    initApp();
+  } else {
+    showToast('密码错误');
+    document.getElementById('lockInput').value = '';
+  }
+}
+
+// 监听回车键
+document.getElementById('lockInput').addEventListener('keypress', function(e) {
+    if (e.key === 'Enter') checkLock();
+});
+
+function initApp() {
+  if (config.token && config.id) { loadFromCloud(); } else { render(); refreshAllFunds(); }
+  setInterval(refreshAllFunds, 60000);
+}
 
 function showToast(text) {
   const toast = document.getElementById('toast');
@@ -132,7 +172,6 @@ async function loadFromCloud() {
   }
 }
 
-// ===================== 精准行业分类 =====================
 function getAdvice(d, money) {
   const gszzl = parseFloat(d.gszzl || 0);
   const now = new Date();
@@ -140,74 +179,36 @@ function getAdvice(d, money) {
   const name = d.name || "";
   const code = d.code || "";
 
-  // 精准硬绑定，一目了然
   const codeMap = {
-    "004927": "低空经济",
-    "015790": "商业航天",
-    "002580": "半导体",
-    "020398": "创新药",
-    "018994": "CPO"
+    "004927": "低空经济", "015790": "商业航天", "002580": "半导体", "020398": "创新药", "018994": "CPO"
   };
   let industry, extraTip;
-  if (codeMap[code]) {
-    industry = codeMap[code];
-  } else if (name.includes("半导体") || name.includes("芯片")) {
-    industry = "半导体";
-  } else if (name.includes("创新药") || name.includes("医药")) {
-    industry = "创新药";
-  } else if (name.includes("CPO") || name.includes("光模块")) {
-    industry = "CPO";
-  } else if (name.includes("低空")) {
-    industry = "低空经济";
-  } else if (name.includes("航天")) {
-    industry = "商业航天";
-  } else if (name.includes("纳斯达克")) {
-    industry = "纳斯达克";
-  } else if (name.includes("恒生")) {
-    industry = "恒生科技";
-  } else if (name.includes("机器人")) {
-    industry = "机器人";
-  } else if (name.includes("光伏")) {
-    industry = "光伏";
-  } else if (name.includes("稀土") || name.includes("有色")) {
-    industry = "有色/稀土";
-  } else if (name.includes("黄金")) {
-    industry = "黄金";
-  } else if (name.includes("科技")) {
-    industry = "科技";
-  } else if (name.includes("军工")) {
-    industry = "军工";
-  } else {
-    industry = "主题基金";
-  }
+  if (codeMap[code]) { industry = codeMap[code]; } 
+  else if (name.includes("半导体") || name.includes("芯片")) { industry = "半导体"; } 
+  else if (name.includes("创新药") || name.includes("医药")) { industry = "创新药"; } 
+  else if (name.includes("CPO") || name.includes("光模块")) { industry = "CPO"; } 
+  else if (name.includes("低空")) { industry = "低空经济"; } 
+  else if (name.includes("航天")) { industry = "商业航天"; } 
+  else if (name.includes("纳斯达克")) { industry = "纳斯达克"; } 
+  else if (name.includes("恒生")) { industry = "恒生科技"; } 
+  else if (name.includes("机器人")) { industry = "机器人"; } 
+  else if (name.includes("光伏")) { industry = "光伏"; } 
+  else if (name.includes("稀土") || name.includes("有色")) { industry = "有色/稀土"; } 
+  else if (name.includes("黄金")) { industry = "黄金"; } 
+  else if (name.includes("科技")) { industry = "科技"; } 
+  else if (name.includes("军工")) { industry = "军工"; } 
+  else { industry = "主题基金"; }
 
   let advice = "", cls = "red";
   extraTip = "波段操作，严格止损";
 
-  // 简单统一建议
-  if (gszzl >= 3) {
-    advice = isActionTime ? "减仓止盈" : "不追高";
-    cls = "red";
-  } else if (gszzl <= -3) {
-    advice = isActionTime ? "控仓止损" : "不抄底";
-    cls = "red";
-  } else if (gszzl > 0) {
-    advice = "持有观望";
-    cls = "red";
-  } else {
-    advice = "弱势不补";
-    cls = "green";
-  }
+  if (gszzl >= 3) { advice = isActionTime ? "减仓止盈" : "不追高"; cls = "red"; } 
+  else if (gszzl <= -3) { advice = isActionTime ? "控仓止损" : "不抄底"; cls = "red"; } 
+  else if (gszzl > 0) { advice = "持有观望"; cls = "red"; } 
+  else { advice = "弱势不补"; cls = "green"; }
 
-  return {
-    industry,
-    advice,
-    adviceClass: cls,
-    status: gszzl >= 0 ? "上涨" : "下跌",
-    extraTip
-  };
+  return { industry, advice, adviceClass: cls, status: gszzl >= 0 ? "上涨" : "下跌", extraTip };
 }
-// ========================================================
 
 function render() {
   const listEl = document.getElementById('fundList'); listEl.innerHTML = '';
@@ -242,12 +243,10 @@ function fetchFundData(code, money, index) {
           render();
           return;
         }
-
         const gszzl = parseFloat(d.gszzl || 0); const dwjz = d.dwjz || '0'; const gsz = d.gsz || '0';
         const profit = (money * gszzl / 100).toFixed(2); const colorClass = gszzl >= 0 ? 'red' : 'green';
         const diff = (parseFloat(gsz) - parseFloat(dwjz)).toFixed(4);
         const { industry, advice, adviceClass, status, extraTip } = getAdvice(d, money);
-
         const info = `<div class="data-grid"><div><span class="data-label">昨收净值:</span> ${dwjz}</div><div><span class="data-label">估算净值:</span> <span class="${colorClass}">${gsz}</span></div><div><span class="data-label">净值偏差:</span> <span class="${colorClass}">${diff}</span></div><div><span class="data-label">实时涨跌:</span> <span class="${colorClass}">${gszzl.toFixed(2)}%</span></div></div><div style="margin-top:4px">持有金额：<b>${money} 元</b> | 今日盈亏：<span class="${colorClass}" style="font-weight:bold;">${profit} 元</span></div><div class="analysis-tag" style="background:${adviceClass === 'red' ? '#fff0f0' : '#f0fff4'}; color:${adviceClass === 'red' ? '#ff3b30' : '#34c759'}">建议：【${industry}】${status}${advice}。${extraTip}</div><div class="time-label">时间：${d.gztime}</div>`;
         fundList[index].name = d.name; fundList[index].info = info;
         localStorage.setItem('fundList_final', JSON.stringify(fundList)); render();
@@ -263,56 +262,23 @@ async function refreshAllFunds() {
   isRefreshing = false;
 }
 
-// 金额输入框校验：限制小数点和小数位数
 document.getElementById('holdAmount').addEventListener('input', function(e) {
   let value = e.target.value;
-  // 只允许数字和一个小数点
   value = value.replace(/[^\d.]/g, '');
-  // 确保只有一个小数点
   const parts = value.split('.');
-  if (parts.length > 2) {
-    value = parts[0] + '.' + parts.slice(1).join('');
-  }
-  // 限制小数点后最多2位
-  if (parts.length === 2 && parts[1].length > 2) {
-    value = parts[0] + '.' + parts[1].slice(0, 2);
-  }
+  if (parts.length > 2) { value = parts[0] + '.' + parts.slice(1).join(''); }
+  if (parts.length === 2 && parts[1].length > 2) { value = parts[0] + '.' + parts[1].slice(0, 2); }
   e.target.value = value;
 });
 
-// 跳过在线校验，直接添加
 async function addFund() {
-  const cEl = document.getElementById('fundCode');
-  const mEl = document.getElementById('holdAmount');
-  const c = cEl.value.trim();
-  const m = mEl.value.trim();
-  
-  if (!c || !m) {
-    showToast('请填写代码和金额');
-    return;
-  }
-  
-  if (isNaN(parseFloat(m))) {
-    showToast('金额格式不正确');
-    return;
-  }
-  
-  if (fundList.some(item => item.code === c)) {
-    showToast('基金已存在');
-    cEl.value = '';
-    mEl.value = '';
-    return;
-  }
-
-  // 直接添加，不再在线校验
-  fundList.push({ code: c, money: m });
-  localStorage.setItem('fundList_final', JSON.stringify(fundList));
-  render();
-  refreshAllFunds();
-  syncToCloud();
-  showToast('添加成功');
-  cEl.value = '';
-  mEl.value = '';
+  const cEl = document.getElementById('fundCode'); const mEl = document.getElementById('holdAmount');
+  const c = cEl.value.trim(); const m = mEl.value.trim();
+  if (!c || !m) { showToast('请填写代码和金额'); return; }
+  if (isNaN(parseFloat(m))) { showToast('金额格式不正确'); return; }
+  if (fundList.some(item => item.code === c)) { showToast('基金已存在'); cEl.value = ''; mEl.value = ''; return; }
+  fundList.push({ code: c, money: m }); localStorage.setItem('fundList_final', JSON.stringify(fundList));
+  render(); refreshAllFunds(); syncToCloud(); showToast('添加成功'); cEl.value = ''; mEl.value = '';
 }
 
 function editFund(index) {
@@ -327,8 +293,7 @@ function confirmEdit(index) {
 }
 
 function deleteFund(index) {
-  const fundName = fundList[index].name || '该基金'; 
-  const overlay = document.createElement('div'); overlay.className = 'modal-overlay';
+  const fundName = fundList[index].name || '该基金'; const overlay = document.createElement('div'); overlay.className = 'modal-overlay';
   overlay.innerHTML = `<div class="modal"><div class="modal-title">确定删除 ${fundName} 吗？</div><div class="modal-buttons"><button class="modal-btn modal-btn-cancel" onclick="this.closest('.modal-overlay').remove()">取消</button><button class="modal-btn modal-btn-confirm" onclick="confirmDelete(${index})">确定</button></div></div>`;
   document.body.appendChild(overlay);
 }
@@ -349,8 +314,7 @@ function saveConfig() {
   config.id = document.getElementById('gInp').value.trim();
   if(!config.token || !config.id) { alert('请填写完整配置'); return; }
   localStorage.setItem('gist_config_hansong', JSON.stringify(config));
-  document.querySelector('.modal-overlay').remove();
-  loadFromCloud();
+  document.querySelector('.modal-overlay').remove(); loadFromCloud();
 }
 
 let startY = 0;
@@ -370,9 +334,6 @@ window.addEventListener('touchend', async () => {
   if (currentY >= 50) { loader.innerText = '正在更新...'; await refreshAllFunds(); showToast('更新完成'); }
   container.style.transform = 'translateY(0)'; startY = 0;
 });
-
-if (config.token && config.id) { loadFromCloud(); } else { render(); refreshAllFunds(); }
-setInterval(refreshAllFunds, 60000);
 </script>
 </body>
 </html>
