@@ -60,7 +60,7 @@ h2 { text-align: center; color: #222; font-size: 20px; margin-bottom: 4px; }
 </head>
 <body>
 
-<div id="lock-screen" style="display:none;">
+<div id="lock-screen">
     <div class="lock-box">
         <div class="lock-title">身份验证</div>
         <input type="password" id="lockInput" class="lock-input" placeholder="请输入密码">
@@ -100,21 +100,20 @@ h2 { text-align: center; color: #222; font-size: 20px; margin-bottom: 4px; }
 
 <script>
 // ===================== 密码配置区 =====================
-const PAGE_PASSWORD = 'LYH888'; // 在这里修改你的固定密码
+const PAGE_PASSWORD = '888'; // 修改这里，页面会自动识别并要求重新登录
 // ====================================================
 
 let fundList = JSON.parse(localStorage.getItem('fundList_final') || '[]');
 let config = JSON.parse(localStorage.getItem('gist_config_hansong') || '{"token":"","id":""}');
 let isRefreshing = false;
 
-// 初始化检测密码
+// 精准校验：必须本地存的密码和源码 PAGE_PASSWORD 完全一致
 function checkInitialAuth() {
-  const localAuth = localStorage.getItem('hansong_auth_pwd');
-  if (localAuth === PAGE_PASSWORD) {
-    // 密码一致，直接进入
+  const lastVerifiedPwd = localStorage.getItem('hansong_auth_pwd');
+  if (lastVerifiedPwd === PAGE_PASSWORD) {
+    document.getElementById('lock-screen').style.display = 'none';
     initApp();
   } else {
-    // 密码不一致（可能是你改了源码密码），弹出输入框
     document.getElementById('lock-screen').style.display = 'flex';
   }
 }
@@ -123,7 +122,7 @@ function checkLock() {
   const input = document.getElementById('lockInput').value;
   if (input === PAGE_PASSWORD) {
     showToast('登录成功');
-    localStorage.setItem('hansong_auth_pwd', PAGE_PASSWORD); // 记录验证成功的密码
+    localStorage.setItem('hansong_auth_pwd', PAGE_PASSWORD); 
     setTimeout(() => {
         document.getElementById('lock-screen').style.display = 'none';
         initApp();
@@ -134,7 +133,6 @@ function checkLock() {
   }
 }
 
-// 监听回车键
 document.getElementById('lockInput').addEventListener('keypress', function(e) {
     if (e.key === 'Enter') checkLock();
 });
@@ -144,7 +142,7 @@ function initApp() {
   setInterval(refreshAllFunds, 60000);
 }
 
-// 立即启动自检
+// 启动执行
 checkInitialAuth();
 
 function showToast(text) {
