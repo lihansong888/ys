@@ -100,7 +100,7 @@ h2 { text-align: center; color: #222; font-size: 20px; margin-bottom: 4px; }
 
 <script>
 // ===================== 密码配置区 =====================
-const PAGE_PASSWORD = '542788'; // 在这里修改你的固定密码
+const PAGE_PASSWORD = 'lhs542788'; // 在这里修改你的固定密码
 // ====================================================
 
 let fundList = JSON.parse(localStorage.getItem('fundList_final') || '[]');
@@ -110,10 +110,13 @@ let isRefreshing = false;
 function checkLock() {
   const input = document.getElementById('lockInput').value;
   if (input === PAGE_PASSWORD) {
-    document.getElementById('lock-screen').style.display = 'none';
-    initApp();
+    showToast('登录成功'); // 添加登录成功弹窗
+    setTimeout(() => {
+        document.getElementById('lock-screen').style.display = 'none';
+        initApp();
+    }, 500);
   } else {
-    showToast('密码错误');
+    showToast('密码错误'); // 添加密码错误弹窗
     document.getElementById('lockInput').value = '';
   }
 }
