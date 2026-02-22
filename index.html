@@ -60,7 +60,7 @@ h2 { text-align: center; color: #222; font-size: 20px; margin-bottom: 4px; }
 </head>
 <body>
 
-<div id="lock-screen">
+<div id="lock-screen" style="display:none;">
     <div class="lock-box">
         <div class="lock-title">身份验证</div>
         <input type="password" id="lockInput" class="lock-input" placeholder="请输入密码">
@@ -100,23 +100,36 @@ h2 { text-align: center; color: #222; font-size: 20px; margin-bottom: 4px; }
 
 <script>
 // ===================== 密码配置区 =====================
-const PAGE_PASSWORD = '888'; // 在这里修改你的固定密码
+const PAGE_PASSWORD = 'lhs888'; // 在这里修改你的固定密码
 // ====================================================
 
 let fundList = JSON.parse(localStorage.getItem('fundList_final') || '[]');
 let config = JSON.parse(localStorage.getItem('gist_config_hansong') || '{"token":"","id":""}');
 let isRefreshing = false;
 
+// 初始化检测密码
+function checkInitialAuth() {
+  const localAuth = localStorage.getItem('hansong_auth_pwd');
+  if (localAuth === PAGE_PASSWORD) {
+    // 密码一致，直接进入
+    initApp();
+  } else {
+    // 密码不一致（可能是你改了源码密码），弹出输入框
+    document.getElementById('lock-screen').style.display = 'flex';
+  }
+}
+
 function checkLock() {
   const input = document.getElementById('lockInput').value;
   if (input === PAGE_PASSWORD) {
-    showToast('登录成功'); // 添加登录成功弹窗
+    showToast('登录成功');
+    localStorage.setItem('hansong_auth_pwd', PAGE_PASSWORD); // 记录验证成功的密码
     setTimeout(() => {
         document.getElementById('lock-screen').style.display = 'none';
         initApp();
     }, 500);
   } else {
-    showToast('密码错误'); // 添加密码错误弹窗
+    showToast('密码错误');
     document.getElementById('lockInput').value = '';
   }
 }
@@ -130,6 +143,9 @@ function initApp() {
   if (config.token && config.id) { loadFromCloud(); } else { render(); refreshAllFunds(); }
   setInterval(refreshAllFunds, 60000);
 }
+
+// 立即启动自检
+checkInitialAuth();
 
 function showToast(text) {
   const toast = document.getElementById('toast');
