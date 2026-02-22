@@ -9,20 +9,21 @@
 body { font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif; background-color: #f5f7fa; padding: 0; min-height: 100vh; overflow-x: hidden; }
 #toast { position: fixed; top: 50%; left: 50%; transform: translate(-50%,-50%); background: rgba(0,0,0,0.85); color: #fff; padding: 12px 24px; border-radius: 10px; font-size: 14px; z-index: 100000; display: none; pointer-events: none; text-align: center; min-width: 120px; }
 
-/* 密码锁专属样式 */
-#lock-screen { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: #f5f7fa; z-index: 999999; display: none; align-items: center; justify-content: center; }
+/* 密码锁遮罩层 - 默认显示 */
+#lock-screen { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: #f5f7fa; z-index: 999999; display: flex; align-items: center; justify-content: center; }
 .lock-box { background: #fff; padding: 30px; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); width: 85%; max-width: 300px; text-align: center; }
 .lock-title { font-size: 18px; font-weight: bold; margin-bottom: 20px; color: #333; }
 .lock-input { width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 10px; margin-bottom: 15px; font-size: 16px; text-align: center; outline: none; }
 .lock-btn { width: 100%; padding: 12px; background: #007aff; color: #fff; border: none; border-radius: 10px; font-size: 15px; font-weight: 600; }
 
+/* 业务样式 */
 .sync-bar { background: #fff; padding: 10px 16px; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #eee; font-size: 12px; position: sticky; top: 0; z-index: 100; }
 #cloudStatus { color: #888; font-weight: 500; }
 .config-btn { color: #007aff; border: none; background: none; font-size: 13px; font-weight: 600; cursor: pointer; padding: 4px 8px; }
 
 #pull-container { position: relative; transition: transform 0.3s ease; }
 #pull-loader { position: absolute; top: -50px; left: 0; width: 100%; height: 50px; display: flex; align-items: center; justify-content: center; color: #666; font-size: 14px; font-weight: 500; }
-.main-wrapper { display: grid; grid-template-columns: 100%; justify-items: center; gap: 16px; width: 100%; padding: 16px 0; }
+.main-wrapper { display: grid; grid-template-columns: 100%; justify-items: center; gap: 16px; width: 100%; padding: 16px 0; visibility: hidden; } /* 默认隐藏主界面 */
 .content-block { width: calc(100% - 32px); max-width: 500px; }
 h2 { text-align: center; color: #222; font-size: 20px; margin-bottom: 4px; }
 .summary-card { background: linear-gradient(135deg,#4facfe 0%,#007aff 100%); border-radius: 20px; padding: 20px; color: #fff; box-shadow: 0 10px 20px rgba(0,122,255,0.15); display: grid; grid-template-columns: 1fr 1fr; gap: 20px; text-align: center; }
@@ -77,7 +78,7 @@ h2 { text-align: center; color: #222; font-size: 20px; margin-bottom: 4px; }
 
 <div id="pull-container">
   <div id="pull-loader">下拉刷新...</div>
-  <div class="main-wrapper">
+  <div class="main-wrapper" id="mainWrapper">
     <div class="content-block"><h2>基金实时估值-寒松个人版</h2></div>
     <div class="content-block">
       <div class="summary-card">
@@ -99,28 +100,30 @@ h2 { text-align: center; color: #222; font-size: 20px; margin-bottom: 4px; }
 </div>
 
 <script>
-// ===================== 密码配置区 =====================
-const PAGE_PASSWORD = '888'; // 修改此处提交后，所有旧登录将立即失效
-// ====================================================
+// ===================== 密码配置 & 版本管理 =====================
+const PAGE_PASSWORD = 'lhs888'; // 修改密码
+const AUTH_VERSION = '20260223_v3.5'; // <--- 重要：改密码时必须顺便改一下版本号
+// ============================================================
 
 let fundList = JSON.parse(localStorage.getItem('fundList_final') || '[]');
 let config = JSON.parse(localStorage.getItem('gist_config_hansong') || '{"token":"","id":""}');
 let isRefreshing = false;
 
-// 1. 强制锁检查函数
-function applyLock() {
-  const lastVerifiedPwd = localStorage.getItem('hansong_auth_pwd');
-  const lockEl = document.getElementById('lock-screen');
-  
-  if (lastVerifiedPwd !== PAGE_PASSWORD) {
-    // 如果本地密码与源码密码不一致，清空错误数据并强制显示锁屏
-    localStorage.removeItem('hansong_auth_pwd');
-    lockEl.style.display = 'flex';
-    return false; // 拦截
+// 强校验函数
+function applyStrongLock() {
+  const lastPwd = localStorage.getItem('hs_auth_pwd');
+  const lastVer = localStorage.getItem('hs_auth_ver');
+
+  // 只要密码不对，或者版本号不对（检测到云端更新），强制弹窗并清空失效数据
+  if (lastPwd !== PAGE_PASSWORD || lastVer !== AUTH_VERSION) {
+    localStorage.removeItem('hs_auth_pwd');
+    localStorage.removeItem('hs_auth_ver');
+    document.getElementById('lock-screen').style.display = 'flex';
+    document.getElementById('mainWrapper').style.visibility = 'hidden';
   } else {
-    lockEl.style.display = 'none';
-    initApp(); // 只有匹配才初始化
-    return true;
+    document.getElementById('lock-screen').style.display = 'none';
+    document.getElementById('mainWrapper').style.visibility = 'visible';
+    initApp();
   }
 }
 
@@ -128,9 +131,11 @@ function checkLock() {
   const input = document.getElementById('lockInput').value;
   if (input === PAGE_PASSWORD) {
     showToast('登录成功');
-    localStorage.setItem('hansong_auth_pwd', PAGE_PASSWORD); 
+    localStorage.setItem('hs_auth_pwd', PAGE_PASSWORD);
+    localStorage.setItem('hs_auth_ver', AUTH_VERSION); // 记录当前验证通过的版本
     setTimeout(() => {
         document.getElementById('lock-screen').style.display = 'none';
+        document.getElementById('mainWrapper').style.visibility = 'visible';
         initApp();
     }, 500);
   } else {
@@ -139,19 +144,16 @@ function checkLock() {
   }
 }
 
-document.getElementById('lockInput').addEventListener('keypress', function(e) {
-    if (e.key === 'Enter') checkLock();
-});
+document.getElementById('lockInput').addEventListener('keypress', (e) => { if (e.key === 'Enter') checkLock(); });
 
 function initApp() {
-  // 确保已经渲染一次初始列表
   render();
   if (config.token && config.id) { loadFromCloud(); } else { refreshAllFunds(); }
   setInterval(refreshAllFunds, 60000);
 }
 
-// 2. 页面加载立即执行强锁逻辑
-applyLock();
+// 立即启动自检
+applyStrongLock();
 
 function showToast(text) {
   const toast = document.getElementById('toast');
