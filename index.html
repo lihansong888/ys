@@ -60,7 +60,6 @@ h2 { text-align: center; color: #222; font-size: 20px; margin-bottom: 4px; }
 </head>
 <body>
 
-<!-- 锁屏界面：仅在密码变更时显示 -->
 <div id="lock-screen" style="display: none;">
     <div class="lock-box">
         <div class="lock-title">身份验证</div>
@@ -110,29 +109,24 @@ let isRefreshing = false;
 
 // 【修复核心】智能验证：只有密码变更时才弹出锁屏
 function checkInitialAuth() {
-  // 读取本地存储的密码哈希（用于判断密码是否被修改过）
   const storedHash = localStorage.getItem('password_hash_hansong');
   const currentHash = simpleHash(PAGE_PASSWORD);
   
-  // 如果本地没有存储哈希（首次运行）或者哈希与当前密码不一致（说明密码被修改了），则显示锁屏
   if (!storedHash || storedHash !== currentHash) {
-    // 显示锁屏，等待输入新密码
     document.getElementById('lock-screen').style.display = 'flex';
-    document.getElementById('lockInput').value = ''; // 清空输入框
+    document.getElementById('lockInput').value = ''; 
   } else {
-    // 密码未变，直接进入
     document.getElementById('lock-screen').style.display = 'none';
     initApp();
   }
 }
 
-// 简单哈希函数（用于对比密码是否变更，不求加密，只求一致性）
 function simpleHash(str) {
   let hash = 0;
   for (let i = 0; i < str.length; i++) {
     const char = str.charCodeAt(i);
     hash = ((hash << 5) - hash) + char;
-    hash |= 0; // 转为32位整数
+    hash |= 0; 
   }
   return hash.toString();
 }
@@ -140,14 +134,14 @@ function simpleHash(str) {
 function checkLock() {
   const input = document.getElementById('lockInput').value;
   if (input === PAGE_PASSWORD) {
-    showToast('登录成功');
-    // 密码正确，更新存储的哈希值（表示此密码已验证通过）
+    // 密码正确：弹出对话框
+    alert('登录成功');
     localStorage.setItem('password_hash_hansong', simpleHash(PAGE_PASSWORD));
-    // 隐藏锁屏并初始化
     document.getElementById('lock-screen').style.display = 'none';
     initApp();
   } else {
-    showToast('密码错误');
+    // 密码错误：弹出对话框
+    alert('密码错误');
     document.getElementById('lockInput').value = '';
   }
 }
@@ -157,12 +151,10 @@ document.getElementById('lockInput').addEventListener('keypress', function(e) {
 });
 
 function initApp() {
-  // 正常启动应用逻辑
   if (config.token && config.id) { loadFromCloud(); } else { render(); refreshAllFunds(); }
   setInterval(refreshAllFunds, 60000);
 }
 
-// 启动执行：先执行智能验证
 checkInitialAuth();
 
 function showToast(text) {
@@ -215,10 +207,7 @@ function getAdvice(d, money) {
   const isActionTime = now.getHours() === 14 && now.getMinutes() >= 30;
   const name = d.name || "";
   const code = d.code || "";
-
-  const codeMap = {
-    "004927": "低空经济", "015790": "商业航天", "002580": "半导体", "020398": "创新药", "018994": "CPO"
-  };
+  const codeMap = { "004927": "低空经济", "015790": "商业航天", "002580": "半导体", "020398": "创新药", "018994": "CPO" };
   let industry, extraTip;
   if (codeMap[code]) { industry = codeMap[code]; } 
   else if (name.includes("半导体") || name.includes("芯片")) { industry = "半导体"; } 
@@ -235,15 +224,12 @@ function getAdvice(d, money) {
   else if (name.includes("科技")) { industry = "科技"; } 
   else if (name.includes("军工")) { industry = "军工"; } 
   else { industry = "主题基金"; }
-
   let advice = "", cls = "red";
   extraTip = "波段操作，严格止损";
-
   if (gszzl >= 3) { advice = isActionTime ? "减仓止盈" : "不追高"; cls = "red"; } 
   else if (gszzl <= -3) { advice = isActionTime ? "控仓止损" : "不抄底"; cls = "red"; } 
   else if (gszzl > 0) { advice = "持有观望"; cls = "red"; } 
   else { advice = "弱势不补"; cls = "green"; }
-
   return { industry, advice, adviceClass: cls, status: gszzl >= 0 ? "上涨" : "下跌", extraTip };
 }
 
