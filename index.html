@@ -43,7 +43,13 @@ h2 { text-align: center; color: #222; font-size: 20px; margin-bottom: 4px; }
 .item-info { line-height: 1.8; font-size: 13px; border-top: 1px solid #f8f8f8; padding-top: 10px; color: #444; }
 .data-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 6px; }
 .data-label { color: #888; font-size: 12px; }
-.analysis-tag { display: inline-block; padding: 8px 10px; border-radius: 8px; font-size: 12px; margin: 8px 0; font-weight: bold; width: 100%; line-height: 1.6; }
+
+/* 增强分析框样式 */
+.analysis-tag { display: block; padding: 12px; border-radius: 12px; font-size: 12px; margin: 12px 0; line-height: 1.6; border: 1px solid rgba(0,0,0,0.08); }
+.analysis-title { font-weight: 800; border-bottom: 1px solid rgba(0,0,0,0.1); margin-bottom: 6px; padding-bottom: 4px; display: block; }
+.analysis-item { margin-bottom: 6px; }
+.analysis-label { font-weight: bold; margin-right: 4px; }
+
 .time-label { font-size: 11px; color: #666; text-align: right; margin-top: 4px; font-weight: 500; }
 .red { color: #ff3b30; }
 .green { color: #34c759; }
@@ -107,6 +113,7 @@ let fundList = JSON.parse(localStorage.getItem('fundList_final') || '[]');
 let config = JSON.parse(localStorage.getItem('gist_config_hansong') || '{"token":"","id":""}');
 let isRefreshing = false;
 
+// --- 密码锁逻辑 ---
 function checkInitialAuth() {
   const storedHash = localStorage.getItem('password_hash_hansong');
   const currentHash = simpleHash(PAGE_PASSWORD);
@@ -117,7 +124,6 @@ function checkInitialAuth() {
     initApp();
   }
 }
-
 function simpleHash(str) {
   let hash = 0;
   for (let i = 0; i < str.length; i++) {
@@ -127,22 +133,20 @@ function simpleHash(str) {
   }
   return hash.toString();
 }
-
 function checkLock() {
   const input = document.getElementById('lockInput').value;
   if (input === PAGE_PASSWORD) {
-    showToast('登录成功'); // 小气泡提示
+    showToast('登录成功');
     localStorage.setItem('password_hash_hansong', simpleHash(PAGE_PASSWORD));
     setTimeout(() => {
       document.getElementById('lock-screen').style.display = 'none';
       initApp();
     }, 500); 
   } else {
-    showToast('密码错误'); // 小气泡提示
+    showToast('密码错误');
     document.getElementById('lockInput').value = '';
   }
 }
-
 document.getElementById('lockInput').addEventListener('keypress', function(e) {
     if (e.key === 'Enter') checkLock();
 });
@@ -151,8 +155,54 @@ function initApp() {
   if (config.token && config.id) { loadFromCloud(); } else { render(); refreshAllFunds(); }
   setInterval(refreshAllFunds, 60000);
 }
-
 checkInitialAuth();
+
+// --- 核心升级：详细建议逻辑 ---
+function getDetailedAdvice(d) {
+  const gszzl = parseFloat(d.gszzl || 0);
+  const name = d.name || "";
+  const code = d.code || "";
+  
+  // 行业识别
+  let industry = "主题基金";
+  if (name.includes("恒生科技") || code === "015283") industry = "恒生科技";
+  else if (name.includes("纳斯达克") || code === "017437") industry = "纳斯达克";
+  else if (name.includes("半导体") || name.includes("芯片")) industry = "半导体";
+  else if (name.includes("医药") || name.includes("创新药")) industry = "医疗健康";
+
+  let shortTerm = "", midTerm = "", longTerm = "", cls = "green";
+
+  // 1. 长期趋势建议 (2-3个月)
+  if (industry === "恒生科技") {
+    longTerm = "大趋势仍处于超跌后的磨底期。未来2-3个月需关注宏观流动性修复，当前位置虽低，但不建议重仓死磕，宜作为底仓长线持有。";
+  } else if (industry === "纳斯达克") {
+    longTerm = "长期处于历史估值高位。未来2-3个月面临货币政策转向的不确定性，建议逐步收缩战线，不宜在此位置长期梭哈。";
+  } else {
+    longTerm = "基本面处于震荡修复进程中。2-3个月预期随大盘重心缓慢上移，建议保持耐性，忽略中期无序波动。";
+  }
+
+  // 2. 中期波段策略 (30天短线核心)
+  if (gszzl < -1.5) {
+    midTerm = "30天周期内出现较好的回踩买点。若持仓未满，可考虑小比例分批吸纳，博弈未来两周的技术性反弹修复。";
+  } else if (gszzl > 1.5) {
+    midTerm = "30天短线利润已在快速兑现。建议针对波段仓位进行止盈减压，避免反弹受阻回落导致的利润缩水。";
+    cls = "red";
+  } else {
+    midTerm = "中期处于箱体震荡。30天内无明显方向性趋势，建议维持现有仓位，等待市场量能放大后再做进一步抉择。";
+  }
+
+  // 3. 短期日内指引 (1-7天)
+  if (gszzl <= -2.5) {
+    shortTerm = "【强烈低吸】日内跌幅较大，触及短线超卖区。收盘前可适度加码，利用恐慌盘博弈明日的低开高走。";
+  } else if (gszzl >= 2.5) {
+    shortTerm = "【高位止盈】日内涨幅过猛，短线消耗过多动能。建议逢高减掉日内增量仓位，防止次日冲高回落风险。";
+    cls = "red";
+  } else {
+    shortTerm = "【持有观望】日内走势平稳。无极端进场或撤退信号，建议随波逐流，不盲目操作，多看少动。";
+  }
+
+  return { industry, shortTerm, midTerm, longTerm, adviceClass: cls };
+}
 
 function showToast(text) {
   const toast = document.getElementById('toast');
@@ -161,6 +211,7 @@ function showToast(text) {
   window.toastTimer = setTimeout(() => { toast.style.display = 'none'; }, 2000);
 }
 
+// --- 云端同步 ---
 async function syncToCloud() {
   if (!config.token || !config.id) return;
   document.getElementById('cloudStatus').innerText = '正在备份...';
@@ -195,37 +246,6 @@ async function loadFromCloud() {
     document.getElementById('cloudStatus').innerText = '拉取失败，请检查配置';
     showToast('云端拉取失败');
   }
-}
-
-function getAdvice(d, money) {
-  const gszzl = parseFloat(d.gszzl || 0);
-  const now = new Date();
-  const isActionTime = now.getHours() === 14 && now.getMinutes() >= 30;
-  const name = d.name || "";
-  const code = d.code || "";
-  const codeMap = { "004927": "低空经济", "015790": "商业航天", "002580": "半导体", "020398": "创新药", "018994": "CPO" };
-  let industry, extraTip = "波段操作，严格止损";
-  if (codeMap[code]) industry = codeMap[code];
-  else if (name.includes("半导体") || name.includes("芯片")) industry = "半导体";
-  else if (name.includes("创新药") || name.includes("医药")) industry = "创新药";
-  else if (name.includes("CPO") || name.includes("光模块")) industry = "CPO";
-  else if (name.includes("低空")) industry = "低空经济";
-  else if (name.includes("航天")) industry = "商业航天";
-  else if (name.includes("纳斯达克")) industry = "纳斯达克";
-  else if (name.includes("恒生")) industry = "恒生科技";
-  else if (name.includes("机器人")) industry = "机器人";
-  else if (name.includes("光伏")) industry = "光伏";
-  else if (name.includes("稀土") || name.includes("有色")) industry = "有色/稀土";
-  else if (name.includes("黄金")) industry = "黄金";
-  else if (name.includes("科技")) industry = "科技";
-  else if (name.includes("军工")) industry = "军工";
-  else industry = "主题基金";
-  let advice = "", cls = "red";
-  if (gszzl >= 3) { advice = isActionTime ? "减仓止盈" : "不追高"; cls = "red"; }
-  else if (gszzl <= -3) { advice = isActionTime ? "控仓止损" : "不抄底"; cls = "red"; }
-  else if (gszzl > 0) { advice = "持有观望"; cls = "red"; }
-  else { advice = "弱势不补"; cls = "green"; }
-  return { industry, advice, adviceClass: cls, status: gszzl >= 0 ? "上涨" : "下跌", extraTip };
 }
 
 function render() {
@@ -263,8 +283,18 @@ function fetchFundData(code, money, index) {
         const gszzl = parseFloat(d.gszzl || 0); const dwjz = d.dwjz || '0'; const gsz = d.gsz || '0';
         const profit = (money * gszzl / 100).toFixed(2); const colorClass = gszzl >= 0 ? 'red' : 'green';
         const diff = (parseFloat(gsz) - parseFloat(dwjz)).toFixed(4);
-        const { industry, advice, adviceClass, status, extraTip } = getAdvice(d, money);
-        const info = `<div class="data-grid"><div><span class="data-label">昨收净值:</span> ${dwjz}</div><div><span class="data-label">估算净值:</span> <span class="${colorClass}">${gsz}</span></div><div><span class="data-label">净值偏差:</span> <span class="${colorClass}">${diff}</span></div><div><span class="data-label">实时涨跌:</span> <span class="${colorClass}">${gszzl.toFixed(2)}%</span></div></div><div style="margin-top:4px">持有金额：<b>${money} 元</b> | 今日盈亏：<span class="${colorClass}" style="font-weight:bold;">${profit} 元</span></div><div class="analysis-tag" style="background:${adviceClass === 'red' ? '#fff0f0' : '#f0fff4'}; color:${adviceClass === 'red' ? '#ff3b30' : '#34c759'}">建议：【${industry}】${status}${advice}。${extraTip}</div><div class="time-label">时间：${d.gztime}</div>`;
+        
+        const res = getDetailedAdvice(d);
+
+        const info = `<div class="data-grid"><div><span class="data-label">昨收净值:</span> ${dwjz}</div><div><span class="data-label">估算净值:</span> <span class="${colorClass}">${gsz}</span></div><div><span class="data-label">净值偏差:</span> <span class="${colorClass}">${diff}</span></div><div><span class="data-label">实时涨跌:</span> <span class="${colorClass}">${gszzl.toFixed(2)}%</span></div></div><div style="margin-top:4px">持有金额：<b>${money} 元</b> | 今日盈亏：<span class="${colorClass}" style="font-weight:bold;">${profit} 元</span></div>
+        <div class="analysis-tag" style="background:${res.adviceClass === 'red' ? '#fff0f0' : '#f0fff4'}; color:${res.adviceClass === 'red' ? '#ff3b30' : '#34c759'}">
+          <span class="analysis-title">【${res.industry}】综合建议</span>
+          <div class="analysis-item"><span class="analysis-label">短期 (1-7天):</span>${res.shortTerm}</div>
+          <div class="analysis-item"><span class="analysis-label">中期 (30天):</span>${res.midTerm}</div>
+          <div class="analysis-item"><span class="analysis-label">长期 (2-3月):</span>${res.longTerm}</div>
+        </div>
+        <div class="time-label">时间：${d.gztime}</div>`;
+        
         fundList[index].name = d.name; fundList[index].info = info;
         localStorage.setItem('fundList_final', JSON.stringify(fundList)); render();
       } catch (e) {} finally { delete window.jsonpgz; resolve(); }
