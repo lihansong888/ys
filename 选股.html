@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>全自动股票行情</title>
+<title>全自动股票行情（立刻出结果）</title>
 <style>
   body{background:#f5f5f5;font-family:Arial;padding:10px;margin:0}
   .title{text-align:center;font-size:20px;margin:10px 0;color:#333}
@@ -19,8 +19,8 @@
 <div id="list"></div>
 
 <script>
-// 直接内置你要的股票代码，打开就自动加载
-const MY_STOCKS = ["000001", "600036"];
+// 直接扫你关心的代码，立刻出结果
+const MY_STOCKS = ["000001", "600036", "000858", "600519"];
 const API = "https://stock-api-wheat.vercel.app/api/stock?code=";
 const list = document.getElementById("list");
 
