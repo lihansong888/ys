@@ -25,9 +25,17 @@
 <div id="list"></div>
 
 <script>
-// 扫描范围（上证主板块）
-const start = 600000;
-const end   = 601999;
+// 真正全市场 A 股代码段
+const ranges = [
+  { start: 600000, end: 605999 }, // 上证主板
+  { start: 688000, end: 688999 }, // 科创板
+  { start:  1000, end:  9999 }, // 深证主板 (000xxx)
+  { start: 10000, end: 19999 }, // 深证主板 (001xxx)
+  { start: 20000, end: 29999 }, // 中小板 (002xxx)
+  { start: 300000, end: 300999 }, // 创业板 (300xxx)
+  { start: 301000, end: 301999 }, // 创业板 (301xxx)
+  { start: 800000, end: 899999 }  // 北交所
+];
 const delay = 50; // 最快速度
 
 const API = "https://stock-api-wheat.vercel.app/api/stock?code=";
@@ -35,35 +43,49 @@ const list = document.getElementById("list");
 const tip = document.getElementById("tip");
 
 async function scan() {
-  for (let code = start; code <= end; code++) {
-    try {
-      const res = await fetch(API + code);
-      const data = await res.json();
-      if (!data.price || !data.change) continue;
+  let total = 0;
+  for (const r of ranges) {
+    total += r.end - r.start + 1;
+  }
+  tip.textContent = `正在扫描全网股票（共${total}只），请稍候...`;
 
-      // 筛选：只显示上涨股票
-      const isGood = data.change > 0;
-      if (!isGood) continue;
+  let scanned = 0;
+  for (const { start, end } of ranges) {
+    for (let code = start; code <= end; code++) {
+      const fullCode = code.toString().padStart(6, '0');
+      try {
+        const res = await fetch(API + fullCode);
+        const data = await res.json();
+        if (!data.price || !data.change) continue;
 
-      const up = data.change >= 0;
-      list.innerHTML += `
-      <div class="item">
-        <div>
-          <div class="name">${data.name}</div>
-          <div class="code">${data.code}</div>
-        </div>
-        <div style="text-align:right">
-          <div class="price">${data.price.toFixed(2)}</div>
-          <div class="${up ? 'red' : 'green'}">
-            ${up ? '+' : ''}${data.change.toFixed(2)}%
+        // 筛选：只显示上涨股票
+        const isGood = data.change > 0;
+        if (!isGood) continue;
+
+        const up = data.change >= 0;
+        list.innerHTML += `
+        <div class="item">
+          <div>
+            <div class="name">${data.name}</div>
+            <div class="code">${data.code}</div>
           </div>
-        </div>
-      </div>`;
-    } catch (e) {}
-    await new Promise(r => setTimeout(r, delay));
+          <div style="text-align:right">
+            <div class="price">${data.price.toFixed(2)}</div>
+            <div class="${up ? 'red' : 'green'}">
+              ${up ? '+' : ''}${data.change.toFixed(2)}%
+            </div>
+          </div>
+        </div>`;
+      } catch (e) {}
+      scanned++;
+      if (scanned % 100 === 0) {
+        tip.textContent = `正在扫描全网股票（${scanned}/${total}），请稍候...`;
+      }
+      await new Promise(r => setTimeout(r, delay));
+    }
   }
 
-  tip.textContent = "扫描完成！";
+  tip.textContent = `扫描完成！共扫描${total}只股票`;
 }
 
 window.onload = scan;
