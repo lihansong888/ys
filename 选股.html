@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>全市场自动选股</title>
+<title>全自动股票行情</title>
 <style>
   body{background:#f5f5f5;font-family:Arial;padding:10px;margin:0}
   .title{text-align:center;font-size:20px;margin:10px 0;color:#333}
-  .item{background:white;border-radius:10px;padding:12px;margin-bottom:8px;
-    display:flex;justify-content:space-between;align-items:center}
+  .item{background:white;border-radius:10px;padding:12px;margin-bottom:8px;display:flex;justify-content:space-between;align-items:center}
   .name{font-weight:bold}
   .code{font-size:12px;color:#666}
   .price{font-size:17px}
@@ -15,30 +14,22 @@
   .tip{text-align:center;color:#666;margin:10px;font-size:14px}
 </style>
 
-<div class="title">全市场自动选股</div>
-<div class="tip">打开页面自动扫描，无需手动输入代码</div>
+<div class="title">全自动股票行情</div>
+<div class="tip">打开页面自动加载，无需任何操作</div>
 <div id="list"></div>
 
 <script>
-// 全市场 A 股核心区间（自动遍历，不卡死）
-const start = 600000;
-const end   = 600100;
-const delay = 200;
-
+// 直接内置你要的股票代码，打开就自动加载
+const MY_STOCKS = ["000001", "600036"];
 const API = "https://stock-api-wheat.vercel.app/api/stock?code=";
 const list = document.getElementById("list");
 
-async function scan() {
-  for (let code = start; code <= end; code++) {
+async function loadAll() {
+  for (const code of MY_STOCKS) {
     try {
       const res = await fetch(API + code);
       const data = await res.json();
       if (!data.price || !data.change) continue;
-
-      // 你要的筛选条件：只显示上涨股票（可自己改）
-      const isGood = data.change > 0;
-      if (!isGood) continue;
-
       const up = data.change >= 0;
       list.innerHTML += `
       <div class="item">
@@ -54,9 +45,8 @@ async function scan() {
         </div>
       </div>`;
     } catch (e) {}
-    await new Promise(r => setTimeout(r, delay));
   }
 }
 
-window.onload = scan;
+window.onload = loadAll;
 </script>
