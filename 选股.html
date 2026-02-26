@@ -1,235 +1,95 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>基金数据展示</title>
-  <style>
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-      max-width: 800px;
-      margin: 0 auto;
-      padding: 20px;
-      background: #f5f5f5;
-    }
-    .import-section {
-      background: white;
-      border-radius: 12px;
-      padding: 16px;
-      margin-bottom: 20px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-    }
-    .import-section textarea {
-      width: 100%;
-      height: 80px;
-      padding: 12px;
-      border: 1px solid #e8e8e8;
-      border-radius: 8px;
-      font-size: 14px;
-      margin-bottom: 12px;
-      resize: vertical;
-    }
-    .import-btn {
-      padding: 10px 20px;
-      background: #1677ff;
-      color: white;
-      border: none;
-      border-radius: 8px;
-      font-size: 14px;
-      cursor: pointer;
-    }
-    .refresh-btn {
-      width: 100%;
-      padding: 12px;
-      background: #1677ff;
-      color: white;
-      border: none;
-      border-radius: 8px;
-      font-size: 16px;
-      margin-bottom: 20px;
-    }
-    .fund-item {
-      background: white;
-      border-radius: 12px;
-      padding: 16px;
-      margin-bottom: 12px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-    .fund-info {
-      flex: 1;
-    }
-    .fund-name {
-      font-size: 16px;
-      font-weight: 600;
-      margin-bottom: 4px;
-    }
-    .fund-code {
-      font-size: 13px;
-      color: #666;
-    }
-    .fund-data {
-      text-align: right;
-    }
-    .fund-price {
-      font-size: 18px;
-      font-weight: 600;
-      color: #1677ff;
-    }
-    .fund-change {
-      font-size: 14px;
-      margin-top: 4px;
-    }
-    .up { color: #f5222d; }
-    .down { color: #52c41a; }
-    .btn-group {
-      display: flex;
-      gap: 8px;
-      margin-top: 8px;
-    }
-    button {
-      padding: 6px 12px;
-      border: none;
-      border-radius: 6px;
-      font-size: 13px;
-      cursor: pointer;
-    }
-    .btn-edit {
-      background: #e6f7ff;
-      color: #1677ff;
-    }
-    .btn-delete {
-      background: #fff1f0;
-      color: #f5222d;
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>股票实时行情</title>
+<style>
+*{box-sizing:border-box}
+body{font-family:Arial;background:#f5f5f5;margin:0;padding:15px}
+.main{max-width:480px;margin:auto}
+.batch-box{background:white;padding:12px;border-radius:10px;margin-bottom:10px}
+textarea{width:100%;height:100px;border:1px solid #ddd;border-radius:8px;padding:10px;resize:none}
+.btn{width:100%;background:#007bff;color:white;border:none;padding:12px;border-radius:8px;margin:5px 0;font-size:16px}
+.item{background:white;padding:12px;border-radius:10px;margin-bottom:8px;display:flex;justify-content:space-between}
+.name{font-weight:bold}
+.code{font-size:12px;color:#666}
+.price{font-size:18px;color:#007bff}
+.red{color:red}
+.green{color:green}
+.del{color:red;font-size:12px;cursor:pointer}
+</style>
 </head>
 <body>
-  <h2>基金数据展示</h2>
-
-  <div class="import-section">
-    <h3>批量导入基金/股票代码</h3>
-    <textarea id="code-input" placeholder="请输入代码，一行一个，例如：
+<div class="main">
+  <div class="batch-box">
+    <textarea id="codes" placeholder="一行一个股票代码
 000001
-000002
 600036"></textarea>
-    <button class="import-btn" onclick="importFunds()">批量导入</button>
+    <button class="btn" onclick="batchAdd()">批量导入</button>
+    <button class="btn" onclick="refreshAll()">刷新全部</button>
   </div>
+  <div id="list"></div>
+</div>
 
-  <button class="refresh-btn" onclick="refreshAllFunds()">刷新全部数据</button>
-  <div id="fund-list"></div>
+<script>
+const API = "https://stock-api-wheat.vercel.app/api/stock?code=";
+let stocks = JSON.parse(localStorage.getItem("stocks")) || [];
 
-  <script>
-    // 从本地存储加载基金列表
-    let funds = JSON.parse(localStorage.getItem('funds')) || [];
+function save() { localStorage.setItem("stocks", JSON.stringify(stocks)); }
+function render() {
+  const dom = document.getElementById("list");
+  dom.innerHTML = "";
+  stocks.forEach(s => {
+    const change = Number(s.change);
+    dom.innerHTML += `
+    <div class="item">
+      <div>
+        <div class="name">${s.name}</div>
+        <div class="code">${s.code}</div>
+        <span class="del" onclick="del('${s.code}')">删除</span>
+      </div>
+      <div style="text-align:right">
+        <div class="price">${s.price || '-'}</div>
+        <div class="${change>=0?'red':'green'}">${change>=0?'+':''}${change.toFixed(2)}%</div>
+      </div>
+    </div>`;
+  });
+}
 
-    // 批量导入
-    function importFunds() {
-      const text = document.getElementById('code-input').value.trim();
-      if (!text) return;
-      const codes = text.split('\n').map(line => line.trim()).filter(line => line);
-      const newFunds = codes.map(code => ({
-        code,
-        name: code, // 先用代码当名称，刷新后会自动替换
-        holdAmount: 0
-      }));
-      // 去重合并
-      const existingCodes = new Set(funds.map(f => f.code));
-      newFunds.forEach(f => {
-        if (!existingCodes.has(f.code)) {
-          funds.push(f);
-        }
-      });
-      localStorage.setItem('funds', JSON.stringify(funds));
-      renderFundList();
-      refreshAllFunds();
+async function getOne(code) {
+  try {
+    const r = await fetch(API+code);
+    const d = await r.json();
+    const item = stocks.find(x=>x.code===code);
+    if(item && d.price!=null){
+      item.name = d.name || code;
+      item.price = Number(d.price).toFixed(2);
+      item.change = Number(d.change);
     }
+  }catch(e){}
+}
 
-    // 渲染基金列表
-    function renderFundList() {
-      const container = document.getElementById('fund-list');
-      container.innerHTML = '';
-      funds.forEach(fund => {
-        const item = document.createElement('div');
-        item.className = 'fund-item';
-        item.innerHTML = `
-          <div class="fund-info">
-            <div class="fund-name">${fund.name}</div>
-            <div class="fund-code">${fund.code}</div>
-            <div class="btn-group">
-              <button class="btn-edit" onclick="editFund('${fund.code}')">编辑持有金额</button>
-              <button class="btn-delete" onclick="deleteFund('${fund.code}')">删除</button>
-            </div>
-          </div>
-          <div class="fund-data">
-            <div class="fund-price">${fund.price || '--'}</div>
-            <div class="fund-change ${fund.change > 0 ? 'up' : 'down'}">${fund.change ? fund.change.toFixed(2) + '%' : '--'}</div>
-          </div>
-        `;
-        container.appendChild(item);
-      });
-    }
+async function refreshAll(){
+  for(let s of stocks) await getOne(s.code);
+  save(); render();
+}
 
-    // 刷新单个基金数据
-    async function refreshFund(code) {
-      try {
-        const res = await fetch(`https://stock-api-wheat.vercel.app/api/stock?code=${code}`);
-        const data = await res.json();
-        if (data.price && data.change) {
-          const fund = funds.find(f => f.code === code);
-          if (fund) {
-            fund.price = data.price.toFixed(3);
-            fund.change = data.change;
-            if (data.name) fund.name = data.name; // 用真实名称替换
-          }
-        }
-      } catch (err) {
-        console.error('刷新失败', err);
-      }
-    }
+function batchAdd(){
+  const t = document.getElementById("codes").value.trim();
+  if(!t) return;
+  const codes = t.split("\n").map(x=>x.trim()).filter(x=>x);
+  codes.forEach(c=>{
+    if(!stocks.some(x=>x.code===c)) stocks.push({code:c,name:c,price:"-",change:0});
+  });
+  save(); render(); refreshAll();
+}
 
-    // 刷新全部基金
-    async function refreshAllFunds() {
-      for (const fund of funds) {
-        await refreshFund(fund.code);
-      }
-      renderFundList();
-      localStorage.setItem('funds', JSON.stringify(funds));
-    }
+function del(code){
+  stocks = stocks.filter(x=>x.code!==code); save(); render();
+}
 
-    // 编辑持有金额
-    function editFund(code) {
-      const fund = funds.find(f => f.code === code);
-      if (fund) {
-        const newAmount = prompt('请输入新的持有金额', fund.holdAmount);
-        if (newAmount && !isNaN(newAmount)) {
-          fund.holdAmount = Number(newAmount);
-          localStorage.setItem('funds', JSON.stringify(funds));
-          renderFundList();
-        }
-      }
-    }
-
-    // 删除基金
-    function deleteFund(code) {
-      if (confirm('确定要删除该基金吗？')) {
-        funds = funds.filter(f => f.code !== code);
-        localStorage.setItem('funds', JSON.stringify(funds));
-        renderFundList();
-      }
-    }
-
-    // 页面加载时初始化
-    window.onload = function() {
-      renderFundList();
-      if (funds.length > 0) {
-        refreshAllFunds();
-        // 每30秒自动刷新一次
-        setInterval(refreshAllFunds, 30000);
-      }
-    };
-  </script>
+window.onload = ()=>{ render(); if(stocks.length) refreshAll(); };
+</script>
 </body>
 </html>
