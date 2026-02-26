@@ -21,7 +21,7 @@
 </style>
 
 <div class="title">全市场自动选股</div>
-<div class="scan-tip" id="tip">正在扫描全网股票，请稍候...</div>
+<div class="scan-tip" id="tip">正在扫描全网股票（约5000+只），请稍候...</div>
 <div id="list"></div>
 
 <script>
@@ -43,13 +43,10 @@ const list = document.getElementById("list");
 const tip = document.getElementById("tip");
 
 async function scan() {
-  let total = 0;
-  for (const r of ranges) {
-    total += r.end - r.start + 1;
-  }
-  tip.textContent = `正在扫描全网股票（共${total}只），请稍候...`;
-
   let scanned = 0;
+  // 不再计算错误的总数，只提示约5000+只
+  tip.textContent = "正在扫描全网股票（约5000+只），请稍候...";
+
   for (const { start, end } of ranges) {
     for (let code = start; code <= end; code++) {
       const fullCode = code.toString().padStart(6, '0');
@@ -78,14 +75,15 @@ async function scan() {
         </div>`;
       } catch (e) {}
       scanned++;
+      // 每扫100只更新一次提示，避免数字吓人
       if (scanned % 100 === 0) {
-        tip.textContent = `正在扫描全网股票（${scanned}/${total}），请稍候...`;
+        tip.textContent = `正在扫描全网股票（已扫${scanned}只），请稍候...`;
       }
       await new Promise(r => setTimeout(r, delay));
     }
   }
 
-  tip.textContent = `扫描完成！共扫描${total}只股票`;
+  tip.textContent = `扫描完成！共扫描${scanned}只代码`;
 }
 
 window.onload = scan;
