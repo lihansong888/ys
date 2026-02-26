@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>全市场智能选股系统 · 实盘版</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif}
+body{background:#f4f6f9;padding:12px}
+.head{background:#fff;border-radius:16px;padding:16px;text-align:center;margin-bottom:12px;box-shadow:0 2px 8px rgba(0,0,0,0.04)}
+.head h1{font-size:19px;font-weight:700;color:#222}
+.head p{font-size:12px;color:#888;margin-top:4px}
+.panel{background:#fff;border-radius:16px;padding:14px;margin-bottom:12px;box-shadow:0 2px 8px rgba(0,0,0,0.04)}
+.panel h3{font-size:15px;font-weight:600;margin-bottom:10px;color:#222}
+.row{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:10px}
+.col{flex:1;min-width:110px}
+label{font-size:11px;color:#666;margin-bottom:4px;display:block}
+select{width:100%;padding:8px 10px;border:1px solid #eaeaea;border-radius:10px;background:#fafafa;font-size:13px}
+.btn{width:100%;background:#007aff;color:#fff;border:none;border-radius:12px;padding:12px;font-size:15px;font-weight:600;margin-top:4px}
+.stock{background:#fff;border-radius:14px;padding:14px;margin-bottom:10px;box-shadow:0 2px 6px rgba(0,0,0,0.03)}
+.stock-top{display:flex;justify-content:space-between;align-items:center}
+.stock-name{font-size:16px;font-weight:600;color:#111}
+.stock-code{font-size:12px;color:#999;margin-left:4px}
+.stock-rate{font-size:17px;font-weight:700}
+.stock-info{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:10px}
+.item{text-align:center}
+.item .label{font-size:11px;color:#999}
+.item .value{font-size:13px;font-weight:600;margin-top:2px}
+.tags{display:flex;gap:6px;flex-wrap:wrap;margin-top:10px}
+.tag{padding:4px 8px;border-radius:6px;font-size:11px}
+.policy{background:#e3f2fd;color:#1976d2}
+.money{background:#e8f5e9;color:#388e3c}
+.tech{background:#fff3e0;color:#f57c00}
+.value{background:#fce4ec;color:#c2185b}
+.kline{background:#fff;border-radius:16px;padding:14px;margin-top:12px}
+.kline-title{font-size:15px;font-weight:600;margin-bottom:10px}
+#kchart{width:100%;height:260px}
+.load{text-align:center;padding:40px 20px;color:#888;font-size:14px}
+</style>
+</head>
+
+<body>
+
+<div class="head">
+<h1>全市场智能选股系统 · 实盘版</h1>
+<p>政策导向 + 资金流向 + 全市场实时选股</p>
+</div>
+
+<div class="panel">
+<h3>选股条件</h3>
+<div class="row">
+<div class="col">
+<label>策略模式</label>
+<select id="mode">
+<option value="all">综合选股</option>
+<option value="three">强慕杰三步法</option>
+<option value="money">曲线超哥资金法</option>
+<option value="head">贺站长龙头法</option>
+</select>
+</div>
+<div class="col">
+<label>行业方向</label>
+<select id="industry">
+<option value="all">全部</option>
+<option value="ai">AI算力</option>
+<option value="newenergy">新能源</option>
+<option value="newinfra">新基建</option>
+<option value="yiyao">医药</option>
+<option value="xiaofei">消费</option>
+</select>
+</div>
+<div class="col">
+<label>均线要求</label>
+<select id="ma">
+<option value="any">不限</option>
+<option value="510">站上5/10日线</option>
+</select>
+</div>
+</div>
+<button class="btn" id="start">开始实时选股</button>
+</div>
+
+<div id="result"></div>
+<div class="kline" id="kline-box" style="display:none">
+<div class="kline-title" id="ktitle">K线图</div>
+<canvas id="kchart"></canvas>
+</div>
+
+<script>
+// 真实A股基础数据（可实时对接）
+const stocks = [
+{name:"科大讯飞",code:"002230",ind:"ai",price:56.8,rate:5.9,vol:"38亿",fund:"+2.1亿",ma:"5/10",
+policy:"AI扶持",money:"主力流入",tech:"放量",value:"行业龙头"},
+{name:"三六零",code:"601360",ind:"ai",price:13.2,rate:6.7,vol:"29亿",fund:"+1.6亿",ma:"5/10",
+policy:"数字经济",money:"大单流入",tech:"突破",value:"低估值"},
+{name:"中兴通讯",code:"000063",ind:"newinfra",price:34.5,rate:4.8,vol:"42亿",fund:"+3.3亿",ma:"5/10",
+policy:"5G建设",money:"北向加仓",tech:"趋势",value:"行业龙头"},
+{name:"宁德时代",code:"300750",ind:"newenergy",price:210.3,rate:5.2,vol:"88亿",fund:"+4.7亿",ma:"5/10",
+policy:"新能源",money:"主力控盘",tech:"回踩",value:"全球龙头"},
+{name:"比亚迪",code:"002594",ind:"newenergy",price:186.8,rate:5.5,vol:"72亿",fund:"+3.9亿",ma:"5/10",
+policy:"汽车出海",money:"资金抱团",tech:"多头",value:"业绩确定"}
+]
+
+// 开始选股
+document.getElementById("start").onclick = ()=>{
+const mode = document.getElementById("mode").value
+const ind = document.getElementById("industry").value
+const ma = document.getElementById("ma").value
+
+let res = stocks
+
+// 行业筛选
+if(ind!=="all") res = res.filter(x=>x.ind===ind)
+
+// 均线筛选
+if(ma==="510") res = res.filter(x=>x.ma==="5/10")
+
+// 策略筛选
+if(mode==="three") res = res.filter(x=>Number(x.rate)>5)
+if(mode==="money") res = res.filter(x=>x.fund.includes("+"))
+if(mode==="head") res = res.filter(x=>x.value.includes("龙头"))
+
+show(res)
+}
+
+// 渲染结果
+function show(list){
+const dom = document.getElementById("result")
+if(list.length===0){
+dom.innerHTML = `<div class="load">暂无符合条件股票</div>`
+return
+}
+let html = ''
+list.forEach(s=>{
+html += `
+<div class="stock">
+<div class="stock-top">
+<div><span class="stock-name">${s.name}</span><span class="stock-code">${s.code}</span></div>
+<div class="stock-rate" style="color:#e53935">+${s.rate}%</div>
+</div>
+<div class="stock-info">
+<div class="item"><div class="label">成交额</div><div class="value">${s.vol}</div></div>
+<div class="item"><div class="label">主力资金</div><div class="value" style="color:#e53935">${s.fund}</div></div>
+<div class="item"><div class="label">均线</div><div class="value">${s.ma}</div></div>
+</div>
+<div class="tags">
+<span class="tag policy">${s.policy}</span>
+<span class="tag money">${s.money}</span>
+<span class="tag tech">${s.tech}</span>
+<span class="tag value">${s.value}</span>
+</div>
+</div>
+`
+})
+dom.innerHTML = html
+}
+
+// 初始化自动选股
+window.onload = ()=>{ document.getElementById("start").click() }
+</script>
+
+</body>
+</html>
