@@ -12,6 +12,42 @@
       padding: 20px;
       background: #f5f5f5;
     }
+    .import-section {
+      background: white;
+      border-radius: 12px;
+      padding: 16px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
+    .import-section textarea {
+      width: 100%;
+      height: 80px;
+      padding: 12px;
+      border: 1px solid #e8e8e8;
+      border-radius: 8px;
+      font-size: 14px;
+      margin-bottom: 12px;
+      resize: vertical;
+    }
+    .import-btn {
+      padding: 10px 20px;
+      background: #1677ff;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 14px;
+      cursor: pointer;
+    }
+    .refresh-btn {
+      width: 100%;
+      padding: 12px;
+      background: #1677ff;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
     .fund-item {
       background: white;
       border-radius: 12px;
@@ -68,29 +104,48 @@
       background: #fff1f0;
       color: #f5222d;
     }
-    .refresh-btn {
-      width: 100%;
-      padding: 12px;
-      background: #1677ff;
-      color: white;
-      border: none;
-      border-radius: 8px;
-      font-size: 16px;
-      margin-bottom: 20px;
-    }
   </style>
 </head>
 <body>
   <h2>基金数据展示</h2>
+
+  <div class="import-section">
+    <h3>批量导入基金/股票代码</h3>
+    <textarea id="code-input" placeholder="请输入代码，一行一个，例如：
+000001
+000002
+600036"></textarea>
+    <button class="import-btn" onclick="importFunds()">批量导入</button>
+  </div>
+
   <button class="refresh-btn" onclick="refreshAllFunds()">刷新全部数据</button>
   <div id="fund-list"></div>
 
   <script>
     // 从本地存储加载基金列表
-    let funds = JSON.parse(localStorage.getItem('funds')) || [
-      { code: '000001', name: '华夏成长混合', holdAmount: 10000 },
-      { code: '000002', name: '嘉实增长混合', holdAmount: 5000 }
-    ];
+    let funds = JSON.parse(localStorage.getItem('funds')) || [];
+
+    // 批量导入
+    function importFunds() {
+      const text = document.getElementById('code-input').value.trim();
+      if (!text) return;
+      const codes = text.split('\n').map(line => line.trim()).filter(line => line);
+      const newFunds = codes.map(code => ({
+        code,
+        name: code, // 先用代码当名称，刷新后会自动替换
+        holdAmount: 0
+      }));
+      // 去重合并
+      const existingCodes = new Set(funds.map(f => f.code));
+      newFunds.forEach(f => {
+        if (!existingCodes.has(f.code)) {
+          funds.push(f);
+        }
+      });
+      localStorage.setItem('funds', JSON.stringify(funds));
+      renderFundList();
+      refreshAllFunds();
+    }
 
     // 渲染基金列表
     function renderFundList() {
@@ -127,6 +182,7 @@
           if (fund) {
             fund.price = data.price.toFixed(3);
             fund.change = data.change;
+            if (data.name) fund.name = data.name; // 用真实名称替换
           }
         }
       } catch (err) {
@@ -168,9 +224,11 @@
     // 页面加载时初始化
     window.onload = function() {
       renderFundList();
-      refreshAllFunds();
-      // 每30秒自动刷新一次
-      setInterval(refreshAllFunds, 30000);
+      if (funds.length > 0) {
+        refreshAllFunds();
+        // 每30秒自动刷新一次
+        setInterval(refreshAllFunds, 30000);
+      }
     };
   </script>
 </body>
