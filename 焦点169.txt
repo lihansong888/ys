@@ -1,5 +1,8 @@
 测试,#genre#
 MBDD-2189 东条奈津/冰蓝色的奇迹,https://mmsi02.com/stream/HO_jlqMcHciu4wV4K4zM5g/kjhhiuahiuhgihdf/1786778572/73801015/master.m3u8
+2,https://mmsi02.com/stream/HO_jlqMcHciu4wV4K4zM5g/kjhhiuahiuhgihdf/1786778572/73801015/index-f1-v1-a1.m3u8
+3,https://mmsi02.com/stream/HO_jlqMcHciu4wV4K4zM5g/kjhhiuahiuhgihdf/1786778572/73801015/index-f3-v1-a1.m3u8
+4,https://mmsi02.com/stream/HO_jlqMcHciu4wV4K4zM5g/kjhhiuahiuhgihdf/1786778572/73801015/index-f2-v1-a1.m3u8
 香港,#genre#
 凤凰中文,p3p://108.181.32.169:23213/6410229e000655dd98612e41401e3e7d
 凤凰资讯,p3p://108.181.32.169:23213/641022be000e5cc69861ad4f5a025336
