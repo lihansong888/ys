@@ -1,8 +1,3 @@
-测试,#genre#
-CCTV4,https://live-play-hls.cctvnews.cctv.com/CCTVChannel/channel_cctv4_mbd.m3u8?auth_key=1786791600-1-b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c-332df0c31a4d48178c742bb0365ed750&yid=b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c
-
-
-CCTV4超清,https://live-play-hls.cctvnews.cctv.com/CCTVChannel/channel_cctv4k_mbd.m3u8?auth_key=1786791600-1-b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c-435006b9c438b5479c1e7b4d18eadd48&yid=b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c
 精品频道,#genre#
 MyCamTV MILF,http://live.mycamtv.com/milf.m3u8
 MyCamTV Mature,http://live.mycamtv.com/bigtits.m3u8
