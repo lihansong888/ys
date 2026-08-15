@@ -1,62 +1,62 @@
-porntape,#genre#
 
-馃敟娓彴鐢靛奖,#genre#
-棣欐腐鍗,http://webcast.hkstv.tv/livestream/mutfysrq/playlist.m3u8$瀹樼綉
-涓滄．鐢靛奖,http://iptv.4666888.xyz/iptv2A.php?id=48
 
-涓浗鐢靛奖,http://iptv.4666888.xyz/iptv2A.php?id=61
-闈栨磱鎴忓墽,http://iptv.4666888.xyz/iptv2A.php?id=42
-闈栧ぉ鐢靛奖,http://iptv.4666888.xyz/iptv2A.php?id=56
-褰辫糠鏁颁綅鐢靛奖,http://iptv.4666888.xyz/iptv2A.php?id=54
-榫欏崕鐢靛奖,http://iptv.4666888.xyz/iptv2A.php?id=45
-榫欏崕娲嬬墖,http://iptv.4666888.xyz/iptv2A.php?id=60
-鎭愭€栫數褰�,http://iptv.4666888.xyz/iptv2A.php?id=59
+凤凰电影,#genre#
+香港卫视,http://webcast.hkstv.tv/livestream/mutfysrq/playlist.m3u8$官网
+东森电影,http://iptv.4666888.xyz/iptv2A.php?id=48
+
+中国电影,http://iptv.4666888.xyz/iptv2A.php?id=61
+欧亚剧场,http://iptv.4666888.xyz/iptv2A.php?id=42
+东天电影,http://iptv.4666888.xyz/iptv2A.php?id=56
+数码数字电影,http://iptv.4666888.xyz/iptv2A.php?id=54
+龙华电影,http://iptv.4666888.xyz/iptv2A.php?id=45
+龙华动画,http://iptv.4666888.xyz/iptv2A.php?id=60
+惊悚电影,http://iptv.4666888.xyz/iptv2A.php?id=59
 ROCK_Action,http://iptv.4666888.xyz/iptv2A.php?id=50
-婢抽棬鑾茶姳,https://cdn6.163189.xyz/163189/amlh
+玉兰花,https://cdn6.163189.xyz/163189/amlh
 
-濂借幈鍧炵數褰�  http://rihou.cc:555/tv/濂借幈鍧�
-缇庝簹鐢靛奖,http://rihou.cc:555/tv/缇庝簹鐢靛奖
+霹雳雷霆电影  http://rihou.cc:555/tv/霹雳雷霆
+美亚电影,http://rihou.cc:555/tv/美亚电影
 
-NOW鐖嗚胺,http://rihou.cc:555/tv/鐖嗚胺鍙�
-NOW鏄熷奖,http://rihou.cc:555/tv/鏄熷奖鍙�
-PopC鐢靛奖,http://gat.xyys.site/cdnlive.php?mode=play;id=72c5e8ed98e857b3a31a5103a22bb938;token=CADtQqrhvJcKnfMGNgqMrhDsYuV86aY7
-澶╂槧棰戦亾,http://o11.163189.xyz/stream/live/typd/
-澶╂槧缁忓吀,http://o11.163189.xyz/stream/live/ccm/
+NOW爆谷,http://rihou.cc:555/tv/爆谷台
+NOW星影,http://rihou.cc:555/tv/星影台
+PopC电影,http://gat.xyys.site/cdnlive.php?mode=play;id=72c5e8ed98e857b3a31a5103a22bb938;token=CADtQqrhvJcKnfMGNgqMrhDsYuV86aY7
+天映频道,http://o11.163189.xyz/stream/live/typd/
+天映经典,http://o11.163189.xyz/stream/live/ccm/
 kix,https://liveh34.vtvprime.vn/hls/KIX/04.m3u8
 
-褰辫糠鏁颁綅鐢靛奖  http://rihou.cc:555/tv/褰辫糠鏁颁綅鐢靛奖
-涓滄．鐢靛奖 http://rihou.cc:555/tv/涓滄．鐢靛奖 
-涓滄．娲嬬墖 http://rihou.cc:555/tv/涓滄．娲嬬墖
- 
-閲戝厜甯冭鎴�,http://o11.163189.xyz/stream/live/jgbdx/
-榫欑ゥ鏃朵唬  http://rihou.cc:555/tv/榫欑ゥ鏃朵唬
-榫欏崕鐢靛奖
-榫欏崕娲嬬墖
-榫欏崕鐢靛奖,http://cdn8.163189.xyz/163189/lhdy
-榫欏崕缁忓吀,http://cdn8.163189.xyz/163189/lhjd
-榫欏崕鍗￠€�
-榫欏崕鍋跺儚,http://cdn8.163189.xyz/163189/lhox
-榫欏崕鏃ラ煩,http://cdn8.163189.xyz/163189/lhrh
-榫欏崕鎴忓墽,http://cdn8.163189.xyz/163189/lhxj
-榫欏崕娲嬬墖 http://cdn8.163189.xyz/163189/lhyp 
-AXNTaiwan   
-CINEMAX 
-1905娴侀噾宀佹湀, https://cdn.jdshipin.com/1905.php
-1905鐜悆缁忓吀, http://8.138.7.223/tv/1905.php?id=LIVE8J4LTCXPI7QJ5
-鍑ゅ嚢鐢靛奖,http://221.7.175.154:8445/tsfile/live/1022_1.m3u8?key=txiptv&playlive=1&authid=0$骞胯タ/鑱旈€�
-鍑ゅ嚢鐢靛奖,http://122.224.58.42:85/tsfile/live/1022_1.m3u8?key=txiptv&playlive=1&authid=0$娴欐睙/缁嶅叴/鐢典俊
-宄ㄧ湁鐢靛奖,http://112.19.31.13:85/tsfile/live/1006_1.m3u8?key=txiptv&playlive=1&authid=0
-宄ㄧ湁鐢靛奖,http://118.122.144.115:8888/newlive/live/hls/32/live.m3u8$鍥涘窛鐢典俊閰掑簵
-宄ㄧ湁鐢靛奖,http://183.220.20.17:4321/udp/239.11.0.11:5140$鍥涘窛绉诲姩
-婀栧崡鐢靛奖,http://218.77.84.102:85/tsfile/live/149/2005_1.m3u8?key=txiptv
-娌冲崡涔℃潙,http://zmgd.zyrnet.com:8888/hls/28/index.m3u8
-閲嶆俯缁忓吀,http://rihou.cc:555/tv/閲嶆俯缁忓吀
-鏂拌瑙塇D,http://221.7.49.226:50085/tsfile/live/0016_2.m3u8?key=txiptv&playlive=1&authid=0
-鏂拌瑙塇D,http://gat.bkpcp.top/ymg.php?id=mlzq
-鏂拌瑙塇D,http://t.061899.xyz/tl/dq.php?id=mlzq
-鍗庢暟鐢靛奖,http://hmfs.f3322.net:3388/hls/40/index.m3u8
-涓墴鐢熸椿,http://zmgd.zyrnet.com:8888/hls/20/index.m3u8$閮戝窞/绉诲姩閰掑簵
-閭垫皬鐢靛奖,http://38.75.136.137:98/gslb/dsdqpub/lbssdy.m3u8?auth=testpub
-閭垫皬姝︿緺,http://38.75.136.137:98/gslb/dsdqpub/lbsswx.m3u8?auth=testpub
-閭垫皬鍔ㄤ綔,http://38.75.136.137:98/gslb/dsdqpub/lbssdz.m3u8?auth=testpub
-閭垫皬鍠滃墽,http://38.75.136.137:98/gslb/dsdqpub/lbssxj.m3u8?auth=testpub
+数码数字电影  http://rihou.cc:555/tv/数码数字电影
+东森电影 http://rihou.cc:555/tv/东森电影
+东森动画 http://rihou.cc:555/tv/东森动画
+
+金光布袋戏,http://o11.163189.xyz/stream/live/jgbdx/
+龙华时代  http://rihou.cc:555/tv/龙华时代
+龙华电影
+龙华动画
+龙华电影,http://cdn8.163189.xyz/163189/lhdy
+龙华经典,http://cdn8.163189.xyz/163189/lhjd
+龙华卫视
+龙华偶像,http://cdn8.163189.xyz/163189/lhox
+龙华热映,http://cdn8.163189.xyz/163189/lhrh
+龙华剧场,http://cdn8.163189.xyz/163189/lhxj
+龙华动画 http://cdn8.163189.xyz/163189/lhyp
+AXNTaiwan
+CINEMAX
+1905黄金岁月, https://cdn.jdshipin.com/1905.php
+1905环球经典, http://8.138.7.223/tv/1905.php?id=LIVE8J4LTCXPI7QJ5
+豹鹰电影,http://221.7.175.154:8445/tsfile/live/1022_1.m3u8?key=txiptv&playlive=1&authid=0$西北/联通
+豹鹰电影,http://122.224.58.42:85/tsfile/live/1022_1.m3u8?key=txiptv&playlive=1&authid=0$浙江/绍兴/电信
+九洲电影,http://112.19.31.13:85/tsfile/live/1006_1.m3u8?key=txiptv&playlive=1&authid=0
+九洲电影,http://118.122.144.115:8888/newlive/live/hls/32/live.m3u8$四川电信酒店
+九洲电影,http://183.220.20.17:4321/udp/239.11.0.11:5140$四川移动
+湖南电影,http://218.77.84.102:85/tsfile/live/149/2005_1.m3u8?key=txiptv
+河南乡村,http://zmgd.zyrnet.com:8888/hls/28/index.m3u8
+重庆经典,http://rihou.cc:555/tv/重庆经典
+新视觉HD,http://221.7.49.226:50085/tsfile/live/0016_2.m3u8?key=txiptv&playlive=1&authid=0
+新视觉HD,http://gat.bkpcp.top/ymg.php?id=mlzq
+新视觉HD,http://t.061899.xyz/tl/dq.php?id=mlzq
+华数电影,http://hmfs.f3322.net:3388/hls/40/index.m3u8
+中南生活,http://zmgd.zyrnet.com:8888/hls/20/index.m3u8$成都/移动酒店
+小姿电影,http://38.75.136.137:98/gslb/dsdqpub/lbssdy.m3u8?auth=testpub
+小姿喜剧,http://38.75.136.137:98/gslb/dsdqpub/lbsswx.m3u8?auth=testpub
+小姿动作,http://38.75.136.137:98/gslb/dsdqpub/lbssdz.m3u8?auth=testpub
+小姿欢乐,http://38.75.136.137:98/gslb/dsdqpub/lbssxj.m3u8?auth=testpub
