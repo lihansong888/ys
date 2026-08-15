@@ -123,15 +123,4 @@ MOMO亲子台,http://4gtv.cnlive.club/channel/n33a56e39/index.m3u8?q=17826398858
 Nice TV 东森戏剧台,http://4gtv.cnlive.club/channel/n122ce57e/index.m3u8?q=1782639885837
 Nick Jr. 幼儿频道,http://4gtv.cnlive.club/channel/23ac0723/index.m3u8?q=1782639885837
 ROCK Action,http://4gtv.cnlive.club/channel/n21b197ce/index.m3u8?q=1782639885837
-私密频道,#genre#
-移动网络影视,
-好看1,rtmp://112.29.121.74/live/星彩TV-jyt
-星光2,rtmp://112.29.121.74/live/星彩TV-xjt
-好看2,http://ctrl.yunshipin.bbroot.com:8080/streams/ds7fcf8th2/gc/playlist.m3u8
-好看,http://15.204.105.50:25461/live/G2s9zK2n9m/xDtwVfWM8T/85.ts
-综艺台,http://15.204.105.50:25461/live/G2s9zK2n9m/xDtwVfWM8T/86.ts
-影视,http://15.204.105.50:25461/live/G2s9zK2n9m/xDtwVfWM8T/87.ts
-星1,http://15.204.105.50:25461/live/G2s9zK2n9m/xDtwVfWM8T/88.ts
-星2,http://15.204.105.50:25461/live/G2s9zK2n9m/xDtwVfWM8T/89.ts
-星3,http://15.204.105.50:25461/live/G2s9zK2n9m/xDtwVfWM8T/90.ts
-星光,http://15.204.105.50:25461/live/G2s9zK2n9m/xDtwVfWM8T/117.ts
+
