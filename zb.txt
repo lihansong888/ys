@@ -31,21 +31,14 @@ kix,https://liveh34.vtvprime.vn/hls/KIX/04.m3u8
 金光布袋戏,http://o11.163189.xyz/stream/live/jgbdx/
 龙华时代  http://rihou.cc:555/tv/龙华时代
 龙华电影
-龙华动画
-龙华电影,http://cdn8.163189.xyz/163189/lhdy
-龙华经典,http://cdn8.163189.xyz/163189/lhjd
-龙华卫视
-龙华偶像,http://cdn8.163189.xyz/163189/lhox
-龙华热映,http://cdn8.163189.xyz/163189/lhrh
-龙华剧场,http://cdn8.163189.xyz/163189/lhxj
-龙华动画 http://cdn8.163189.xyz/163189/lhyp
+
+
 AXNTaiwan
 CINEMAX
-1905黄金岁月, https://cdn.jdshipin.com/1905.php
-1905环球经典, http://8.138.7.223/tv/1905.php?id=LIVE8J4LTCXPI7QJ5
+
 豹鹰电影,http://221.7.175.154:8445/tsfile/live/1022_1.m3u8?key=txiptv&playlive=1&authid=0$西北/联通
 豹鹰电影,http://122.224.58.42:85/tsfile/live/1022_1.m3u8?key=txiptv&playlive=1&authid=0$浙江/绍兴/电信
-九洲电影,http://112.19.31.13:85/tsfile/live/1006_1.m3u8?key=txiptv&playlive=1&authid=0
+
 九洲电影,http://118.122.144.115:8888/newlive/live/hls/32/live.m3u8$四川电信酒店
 九洲电影,http://183.220.20.17:4321/udp/239.11.0.11:5140$四川移动
 湖南电影,http://218.77.84.102:85/tsfile/live/149/2005_1.m3u8?key=txiptv
