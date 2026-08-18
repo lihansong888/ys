@@ -1,3 +1,25 @@
+央视直播,#genre#
+CCTV-1 综合,http://74.91.26.218:82/live/cctv1hd.m3u8
+CCTV-2 财经,http://74.91.26.218:82/live/cctv2hd.m3u8
+CCTV-3 综艺,http://74.91.26.218:82/live/cctv3hd.m3u8
+CCTV-4 中文国际（亚）,http://74.91.26.218:82/live/cctv4hd.m3u8
+CCTV-4 中文国际（欧）,https://dash2.antik.sk/live/test_cctv_tizen/playlist.m3u8
+CCTV-4 中文国际（美） Ⓢ,https://global.cgtn.cicc.media.caton.cloud/master/cgtn-america.m3u8
+CCTV-5 体育,https://node1.olelive.com:6443/live/CCTV5HD/hls.m3u8
+CCTV-5+ 体育赛事,https://node1.olelive.com:6443/live/CCTV5PHD/hls.m3u8
+CCTV-6 电影,http://69.30.245.50/live/cctv6.m3u8
+CCTV-7 国防军事,http://74.91.26.218:82/live/cctv7hd.m3u8
+CCTV-8 电视剧,http://74.91.26.218:82/live/cctv8hd.m3u8
+CCTV-9 纪录,http://74.91.26.218:82/live/cctv9hd.m3u8
+CCTV-10 科教,http://74.91.26.218:82/live/cctv10hd.m3u8
+CCTV-11 戏曲,http://74.91.26.218:82/live/cctv11hd.m3u8
+CCTV-12 社会与法,http://74.91.26.218:82/live/cctv12hd.m3u8
+CCTV-13 新闻,http://74.91.26.218:82/live/cctv13hd.m3u8
+CCTV-14 少儿,http://74.91.26.218:82/live/cctv14hd.m3u8
+CCTV-16 奥林匹克,http://74.91.26.218:82/live/cctv16hd.m3u8
+CCTV-17 农业农村,http://74.91.26.218:82/live/cctv17hd.m3u8
+
+
 影视轮播,#genre#
 星爷,https://live.ottiptv.cc/huya/11342412
 英叔,https://live.ottiptv.cc/huya/11342421
