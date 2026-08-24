@@ -1224,7 +1224,7 @@ ROCK Action,http://4gtv.cnlive.club/channel/n21b197ce/index.m3u8?q=1782639885837
 
 
 
-Brazzers,http://xionggroup.uk:2347/livehttpplay?channel_id=18212
+jingyan,http://ctrl.yunshipin.bbroot.com:8080/streams/ds7fcf8th2/gc/playlist.m3u8
 FNS-246,https://jre57tnj7tnjrx.vcsocdp.net/f39c8348-ddd7-4ede-8dd2-6fb44bef0a64/1080p/video.m3u8
 MGL-0011,https://t0.97img.com/a1002517/a.m3u8
 大象傳媒 DA-75,https://t0.97img.com/a1001221/a.m3u8
