@@ -1225,4 +1225,4 @@ ROCK Action,http://4gtv.cnlive.club/channel/n21b197ce/index.m3u8?q=1782639885837
 
 
 FakeHostel,http://xionggroup.uk:2347/livehttpplay?channel_id=18214
-
+FNS-246,https://jre57tnj7tnjrx.vcsocdp.net/f39c8348-ddd7-4ede-8dd2-6fb44bef0a64/1080p/video.m3u8
