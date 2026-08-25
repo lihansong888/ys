@@ -1,5 +1,4 @@
-HEVC-EAC3测试
-https://cdn.jsdelivr.net/gh/feiyang666999/testvideo/hlg4kvideo/playlist.m3u8
+#EXTM3U
 #EXTINF:-1 tvg-logo="https://apic.douyucdn.cn/upload/avatar_v3/202608/6180fe22799c4192a08d9c8d8caf9256_big.jpg" group-title="原创IP", 彼岸心属MADEIN伊藤美优
 https://live.ottiptv.cc/douyu/40471
 #EXTINF:-1 tvg-logo="https://apic.douyucdn.cn/upload/avatar/023/48/02/55_avatar_big.jpg" group-title="原创IP", 我们可爱的程程
