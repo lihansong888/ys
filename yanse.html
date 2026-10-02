@@ -4,26 +4,40 @@
 <meta charset="UTF-8">
 <title>颜色代码查看器</title>
 <style>
-*{box-sizing:border-box;font-family:system-ui}
-body{max-width:700px;margin:30px auto;padding:0 20px;background:#f5f5f5}
-.box{background:#fff;padding:24px;border-radius:12px;box-shadow:0 2px 10px #00000012}
-.color-view{width:100%;height:160px;border-radius:8px;margin-bottom:20px;border:1px solid #ddd}
-.row{display:flex;gap:10px;margin-bottom:12px;align-items:center}
+*{box-sizing:border-box;font-family:system-ui, sans-serif;margin:0;padding:0}
+body{max-width:720px;margin:30px auto;padding:0 20px;background:#f5f5f5}
+.box{background:#fff;padding:28px;border-radius:14px;box-shadow:0 2px 12px #00000015}
+.color-view{width:100%;height:170px;border-radius:10px;margin-bottom:22px;border:1px solid #ddd;cursor:pointer}
+.row{display:flex;gap:10px;margin-bottom:14px;align-items:center}
 input{padding:10px;font-size:16px;border:1px solid #ccc;border-radius:6px;flex:1}
-button{padding:10px 16px;border:none;background:#2563eb;color:#fff;border-radius:6px;cursor:pointer}
+button{padding:10px 16px;border:none;background:#2563eb;color:#fff;border-radius:6px;cursor:pointer;transition:background 0.2s}
 button:active{background:#1d4ed8}
-.color-item{padding:10px;background:#f8f8f8;border-radius:6px;margin:8px 0;display:flex;justify-content:space-between}
+.color-item{padding:12px;background:#f8f8f8;border-radius:8px;margin:10px 0;display:flex;justify-content:space-between;align-items:center;gap:12px}
 .color-palette{display:grid;grid-template-columns:repeat(8,1fr);gap:6px;margin-top:20px}
-.pal{height:36px;border-radius:4px;cursor:pointer;border:1px solid #ddd}
+.pal{height:38px;border-radius:5px;cursor:pointer;border:1px solid #ddd;transition:transform 0.15s}
+.pal:hover{transform:scale(1.08)}
+.tip{height:24px;color:#22c55e;font-size:14px;margin:8px 0}
+.compare-box{display:flex;gap:10px;margin:12px 0}
+.compare{width:50%;height:60px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:14px}
+.slider-row{margin:14px 0;display:flex;align-items:center;gap:10px}
+#alphaSlider{flex:1}
+.preview-info{display:flex;align-items:center;gap:10px}
+.preview-text{font-family:monospace;font-size:15px;color:#333}
 </style>
 </head>
 <body>
 <div class="box">
   <input type="color" id="colorPicker" class="color-view">
+
   <div class="row">
     <label>HEX：</label>
     <input id="hex" placeholder="#000000">
     <button onclick="copy('hex')">复制</button>
+  </div>
+  <div class="row">
+    <label>8位HEX：</label>
+    <input id="hex8" placeholder="#000000FF">
+    <button onclick="copy('hex8')">复制</button>
   </div>
   <div class="row">
     <label>RGB：</label>
@@ -31,14 +45,38 @@ button:active{background:#1d4ed8}
     <button onclick="copy('rgb')">复制</button>
   </div>
   <div class="row">
+    <label>RGBA：</label>
+    <input id="rgba" placeholder="rgba(0,0,0,1)">
+    <button onclick="copy('rgba')">复制</button>
+  </div>
+  <div class="row">
     <label>HSL：</label>
     <input id="hsl" placeholder="hsl(0,0%,0%)">
     <button onclick="copy('hsl')">复制</button>
   </div>
+
+  <div class="slider-row">
+    <label>透明度：<span id="alphaText">100%</span></label>
+    <input type="range" id="alphaSlider" min="0" max="100" value="100">
+  </div>
+
+  <!-- 修改这里：预览色块旁边增加色值文本 -->
   <div class="color-item">
     <span>当前颜色预览</span>
-    <div id="preview" style="width:40px;height:30px;border-radius:4px"></div>
+    <div class="preview-info">
+        <div id="preview" style="width:50px;height:36px;border-radius:6px"></div>
+        <span class="preview-text" id="previewCode">#000000</span>
+    </div>
   </div>
+
+  <div>白底 / 黑底对比预览</div>
+  <div class="compare-box">
+    <div class="compare" style="background:#fff" id="preWhite">文字示例</div>
+    <div class="compare" style="background:#000;color:#fff" id="preBlack">文字示例</div>
+  </div>
+
+  <div class="tip" id="msg"></div>
+
   <div>常用色板：</div>
   <div class="color-palette" id="palette"></div>
 </div>
@@ -46,11 +84,19 @@ button:active{background:#1d4ed8}
 <script>
 const picker = document.getElementById('colorPicker');
 const hexInput = document.getElementById('hex');
+const hex8Input = document.getElementById('hex8');
 const rgbInput = document.getElementById('rgb');
+const rgbaInput = document.getElementById('rgba');
 const hslInput = document.getElementById('hsl');
 const preview = document.getElementById('preview');
+const previewCode = document.getElementById('previewCode');
+const preWhite = document.getElementById('preWhite');
+const preBlack = document.getElementById('preBlack');
+const alphaSlider = document.getElementById('alphaSlider');
+const alphaText = document.getElementById('alphaText');
+const msg = document.getElementById('msg');
 
-// 色板颜色列表
+// 预设色板
 const colors = [
   '#000000','#ffffff','#ff0000','#00ff00','#0000ff','#ffff00','#00ffff','#ff00ff',
   '#333333','#666666','#999999','#ff6600','#669900','#0099cc','#9933cc','#cc0066',
@@ -58,13 +104,17 @@ const colors = [
   '#4682b4','#4169e1','#9370db','#800080','#c71585','#cd5c5c','#f08080','#f0e68c'
 ];
 
-// 生成色板
+// 渲染色板
 const paletteWrap = document.getElementById('palette');
 colors.forEach(c=>{
   const div = document.createElement('div');
   div.className = 'pal';
   div.style.background = c;
-  div.onclick = ()=> picker.value = c;
+  div.onclick = ()=> {
+    picker.value = c;
+    alphaSlider.value = 100;
+    updateAll();
+  }
   paletteWrap.appendChild(div);
 })
 
@@ -75,6 +125,7 @@ function hexToRgb(hex) {
   let b = parseInt(hex.slice(5,7),16);
   return {r,g,b};
 }
+
 // RGB转HSL
 function rgbToHsl(r, g, b){
   r /=255;g/=255;b/=255;
@@ -92,26 +143,59 @@ function rgbToHsl(r, g, b){
   return {h:Math.round(h*360), s:Math.round(s*100), l:Math.round(l*100)};
 }
 
-// 更新所有值
-picker.oninput = function(){
-  const hex = this.value;
+// 更新全部色值
+function updateAll(){
+  const hex = picker.value;
+  const alpha = alphaSlider.value / 100;
   const {r,g,b} = hexToRgb(hex);
   const {h,s,l} = rgbToHsl(r,g,b);
+  const aHex = Math.round(alpha*255).toString(16).padStart(2,'0').toUpperCase();
+  const hex8 = hex + aHex;
+
   hexInput.value = hex;
+  hex8Input.value = hex8;
   rgbInput.value = `rgb(${r},${g},${b})`;
+  rgbaInput.value = `rgba(${r},${g},${b},${alpha.toFixed(2)})`;
   hslInput.value = `hsl(${h},${s}%,${l}%)`;
-  preview.style.background = hex;
+  alphaText.innerText = `${alphaSlider.value}%`;
+
+  preview.style.background = `rgba(${r},${g},${b},${alpha})`;
+  // 更新预览色块旁边的文字色值
+  previewCode.innerText = hex;
+
+  preWhite.style.color = `rgba(${r},${g},${b},${alpha})`;
+  preBlack.style.color = `rgba(${r},${g},${b},${alpha})`;
 }
 
-// 复制文本
+// 复制函数
 function copy(id){
   const val = document.getElementById(id).value;
-  navigator.clipboard.writeText(val).then(()=>alert('已复制：'+val))
+  navigator.clipboard.writeText(val).then(()=>{
+    msg.innerText = `✅ 已复制：${val}`;
+    setTimeout(()=>msg.innerText='',1500);
+  })
+}
+
+// 事件监听
+picker.oninput = updateAll;
+alphaSlider.oninput = updateAll;
+
+// 手动输入HEX
+hexInput.onchange = function(){
+  let val = this.value.trim();
+  if(/^#[0-9a-fA-F]{6}$/.test(val)){
+    picker.value = val;
+    updateAll();
+  }else{
+    msg.innerText = "❌ HEX格式错误";
+    setTimeout(()=>msg.innerText='',1500);
+  }
 }
 
 // 初始化
-picker.value="#000000";
-picker.dispatchEvent(new Event('input'));
+picker.value="#2563eb";
+alphaSlider.value=100;
+updateAll();
 </script>
 </body>
 </html>
