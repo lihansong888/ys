@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>颜色代码查看器</title>
+<style>
+*{box-sizing:border-box;font-family:system-ui}
+body{max-width:700px;margin:30px auto;padding:0 20px;background:#f5f5f5}
+.box{background:#fff;padding:24px;border-radius:12px;box-shadow:0 2px 10px #00000012}
+.color-view{width:100%;height:160px;border-radius:8px;margin-bottom:20px;border:1px solid #ddd}
+.row{display:flex;gap:10px;margin-bottom:12px;align-items:center}
+input{padding:10px;font-size:16px;border:1px solid #ccc;border-radius:6px;flex:1}
+button{padding:10px 16px;border:none;background:#2563eb;color:#fff;border-radius:6px;cursor:pointer}
+button:active{background:#1d4ed8}
+.color-item{padding:10px;background:#f8f8f8;border-radius:6px;margin:8px 0;display:flex;justify-content:space-between}
+.color-palette{display:grid;grid-template-columns:repeat(8,1fr);gap:6px;margin-top:20px}
+.pal{height:36px;border-radius:4px;cursor:pointer;border:1px solid #ddd}
+</style>
+</head>
+<body>
+<div class="box">
+  <input type="color" id="colorPicker" class="color-view">
+  <div class="row">
+    <label>HEX：</label>
+    <input id="hex" placeholder="#000000">
+    <button onclick="copy('hex')">复制</button>
+  </div>
+  <div class="row">
+    <label>RGB：</label>
+    <input id="rgb" placeholder="rgb(0,0,0)">
+    <button onclick="copy('rgb')">复制</button>
+  </div>
+  <div class="row">
+    <label>HSL：</label>
+    <input id="hsl" placeholder="hsl(0,0%,0%)">
+    <button onclick="copy('hsl')">复制</button>
+  </div>
+  <div class="color-item">
+    <span>当前颜色预览</span>
+    <div id="preview" style="width:40px;height:30px;border-radius:4px"></div>
+  </div>
+  <div>常用色板：</div>
+  <div class="color-palette" id="palette"></div>
+</div>
+
+<script>
+const picker = document.getElementById('colorPicker');
+const hexInput = document.getElementById('hex');
+const rgbInput = document.getElementById('rgb');
+const hslInput = document.getElementById('hsl');
+const preview = document.getElementById('preview');
+
+// 色板颜色列表
+const colors = [
+  '#000000','#ffffff','#ff0000','#00ff00','#0000ff','#ffff00','#00ffff','#ff00ff',
+  '#333333','#666666','#999999','#ff6600','#669900','#0099cc','#9933cc','#cc0066',
+  '#8b4513','#a0522d','#d2691e','#ff8c00','#ffd700','#9acd32','#32cd32','#20b2aa',
+  '#4682b4','#4169e1','#9370db','#800080','#c71585','#cd5c5c','#f08080','#f0e68c'
+];
+
+// 生成色板
+const paletteWrap = document.getElementById('palette');
+colors.forEach(c=>{
+  const div = document.createElement('div');
+  div.className = 'pal';
+  div.style.background = c;
+  div.onclick = ()=> picker.value = c;
+  paletteWrap.appendChild(div);
+})
+
+// HEX转RGB
+function hexToRgb(hex) {
+  let r = parseInt(hex.slice(1,3),16);
+  let g = parseInt(hex.slice(3,5),16);
+  let b = parseInt(hex.slice(5,7),16);
+  return {r,g,b};
+}
+// RGB转HSL
+function rgbToHsl(r, g, b){
+  r /=255;g/=255;b/=255;
+  const max = Math.max(r,g,b), min = Math.min(r,g,b);
+  let h,s,l = (max+min)/2;
+  if(max===min){h=s=0;}else{
+    const d = max-min;
+    s = l>0.5 ? d/(2-max-min) : d/(max+min);
+    switch(max){
+      case r: h = ((g-b)/d + (g<b?6:0))/6;break;
+      case g: h = ((b-r)/d +2)/6;break;
+      case b: h = ((r-g)/d +4)/6;break;
+    }
+  }
+  return {h:Math.round(h*360), s:Math.round(s*100), l:Math.round(l*100)};
+}
+
+// 更新所有值
+picker.oninput = function(){
+  const hex = this.value;
+  const {r,g,b} = hexToRgb(hex);
+  const {h,s,l} = rgbToHsl(r,g,b);
+  hexInput.value = hex;
+  rgbInput.value = `rgb(${r},${g},${b})`;
+  hslInput.value = `hsl(${h},${s}%,${l}%)`;
+  preview.style.background = hex;
+}
+
+// 复制文本
+function copy(id){
+  const val = document.getElementById(id).value;
+  navigator.clipboard.writeText(val).then(()=>alert('已复制：'+val))
+}
+
+// 初始化
+picker.value="#000000";
+picker.dispatchEvent(new Event('input'));
+</script>
+</body>
+</html>
