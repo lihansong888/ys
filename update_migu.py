@@ -8,7 +8,8 @@ def main():
     # --- 2. 精品频道 (保留你实测秒开的源) ---
     output.append("精品频道,#genre#")
     try:
-        r = requests.get("http://adultiptv.net/chs.m3u", headers=headers, timeout=10)
+        secure_url = "https://adultiptv.net/chs.m3u"
+        r = requests.get(secure_url, headers=headers, timeout=10, verify=True)
         if r.status_code == 200:
             name = ""
             for line in r.text.split('\n'):
