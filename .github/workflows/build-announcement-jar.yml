@@ -49,7 +49,9 @@ jobs:
           mkdir -p build/classes build/newdex new-smali
           ANDROID_JAR="$ANDROID_HOME/platforms/android-35/android.jar"
           javac -source 8 -target 8 -encoding UTF-8 -cp "$ANDROID_JAR" -d build/classes announcement-src/com/example/popup/AnnouncementPopup.java
-          "$ANDROID_HOME/build-tools/35.0.0/d8" --min-api 21 --lib "$ANDROID_JAR" --output build/newdex build/classes
+          mapfile -t CLASS_FILES < <(find build/classes -type f -name '*.class' | sort)
+          test "${#CLASS_FILES[@]}" -gt 0
+          "$ANDROID_HOME/build-tools/35.0.0/d8" --min-api 21 --lib "$ANDROID_JAR" --output build/newdex "${CLASS_FILES[@]}"
           java -jar "$(find /usr/share/java -maxdepth 1 -name 'baksmali*.jar' | head -n 1)" disassemble build/newdex/classes.dex -o new-smali
           cp -a new-smali/. smali/
 
