@@ -19,31 +19,65 @@ jobs:
           curl -fL --retry 3 "https://raw.githubusercontent.com/lihansong888/ys/main/88888.jar" -o 88888.apk
           test "$(stat -c%s 88888.apk)" = "3245502"
           file 88888.apk
-      - name: Install apktool
+
+      - name: Install inspection tools
         run: |
           sudo apt-get update
-          sudo apt-get install -y apktool
+          sudo apt-get install -y apktool libsmali-java unzip zip
           apktool --version
-      - name: Decode APK resources and Smali
+          mkdir -p raw smali
+
+      - name: Extract and inspect APK
+        shell: bash
         run: |
-          apktool d -f 88888.apk -o decoded
-          test -s decoded/AndroidManifest.xml
-          find decoded -maxdepth 2 -type d -name 'smali*' -print
-          grep -RniE 'GateHook;->run|VerifyGate;->start|lihansong.top/verify/api.php' decoded/smali* > hook-hits.txt || true
+          set +e
+          unzip -q 88888.apk -d raw
+          apktool d -f 88888.apk -o decoded > apktool.log 2>&1
+          echo "apktool_exit=$?" >> apk-inspection.txt
+
+          if [ -s decoded/AndroidManifest.xml ]; then
+            cp decoded/AndroidManifest.xml AndroidManifest.xml
+          else
+            aapt dump xmltree 88888.apk AndroidManifest.xml > manifest-tree.txt 2>&1
+          fi
+
+          BAKSMALI_JAR="$(find /usr/share/java -maxdepth 1 -iname 'baksmali*.jar' | head -n 1)"
+          if [ -n "$BAKSMALI_JAR" ]; then
+            for dex in raw/classes*.dex; do
+              [ -f "$dex" ] || continue
+              base="$(basename "$dex" .dex)"
+              java -cp "$BAKSMALI_JAR" org.jf.baksmali.Main disassemble "$dex" -o "smali/$base" >> baksmali.log 2>&1
+            done
+          fi
+
           {
-            echo "=== Manifest ==="
-            sed -n '1,240p' decoded/AndroidManifest.xml
+            echo "=== APK identity ==="
+            file 88888.apk
+            sha256sum 88888.apk
             echo
-            echo "=== Old gate hook references ==="
-            cat hook-hits.txt
+            echo "=== Decoded manifest ==="
+            if [ -s AndroidManifest.xml ]; then sed -n '1,240p' AndroidManifest.xml; else cat manifest-tree.txt 2>/dev/null; fi
             echo
-            echo "=== Smali files ==="
-            find decoded -type f -name '*.smali' | wc -l
-          } > apk-inspection.txt
-          zip -qr 88888-apktool-inspection.zip decoded/AndroidManifest.xml decoded/smali* hook-hits.txt apk-inspection.txt
+            echo "=== Old verification references ==="
+            grep -RniE 'GateHook;->run|VerifyGate;->start|lihansong.top/verify/api.php|本站需要验证|验证码' smali decoded/smali* 2>/dev/null | head -n 500
+            echo
+            echo "=== Smali file count ==="
+            find smali decoded -type f -name '*.smali' 2>/dev/null | wc -l
+            echo
+            echo "=== Apktool output ==="
+            tail -n 100 apktool.log
+            echo
+            echo "=== Baksmali output ==="
+            cat baksmali.log 2>/dev/null
+          } >> apk-inspection.txt
+
+          zip -qr 88888-apktool-inspection.zip apk-inspection.txt apktool.log raw/classes*.dex smali AndroidManifest.xml manifest-tree.txt baksmali.log 2>/dev/null || true
+          test -s apk-inspection.txt
+
       - name: Upload inspection artifact
         uses: actions/upload-artifact@v4
         with:
           name: 88888-apktool-inspection
           path: 88888-apktool-inspection.zip
+          if-no-files-found: error
           retention-days: 3
