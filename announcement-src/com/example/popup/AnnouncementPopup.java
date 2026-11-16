@@ -13,7 +13,6 @@ import android.os.Handler;
 import android.os.Looper;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
-import android.graphics.drawable.GradientDrawable;
 import android.net.Uri;
 import android.util.DisplayMetrics;
 import android.util.TypedValue;
@@ -547,8 +546,8 @@ public final class AnnouncementPopup {
     private static void showDialog(final Activity activity, String title, String content,
                                    ArrayList<Bitmap> images, ArrayList<ButtonSpec> buttons) {
         DisplayMetrics metrics = activity.getResources().getDisplayMetrics();
-        int dialogWidth = (int) (metrics.widthPixels * 0.60f);
-        int maxDialogHeight = (int) (metrics.heightPixels * 0.50f);
+        int dialogWidth = (int) (metrics.widthPixels * 0.70f);
+        int maxDialogHeight = (int) (metrics.heightPixels * 0.60f);
         int reservedHeight = dp(activity, 125);
         int maxContentHeight = Math.max(dp(activity, 90), maxDialogHeight - reservedHeight);
         int pad = dp(activity, 18);
@@ -571,7 +570,7 @@ public final class AnnouncementPopup {
 
         int innerWidth = Math.max(dp(activity, 120), dialogWidth - pad * 2);
         int imageColumnWidth = images != null && images.size() > 0
-                ? Math.max(dp(activity, 64), (int) (innerWidth * 0.28f)) : 0;
+                ? Math.max(dp(activity, 80), (int) (innerWidth * 0.36f)) : 0;
 
         if (images != null && images.size() > 0) {
             LinearLayout imageColumn = new LinearLayout(activity);
@@ -579,7 +578,7 @@ public final class AnnouncementPopup {
             imageColumn.setGravity(Gravity.CENTER);
             int imageCount = images.size();
             int imageHeight = Math.max(dp(activity, 48),
-                    Math.min(dp(activity, 110), maxContentHeight / imageCount));
+                    Math.min(dp(activity, 150), maxContentHeight / imageCount));
 
             for (Bitmap bitmap : images) {
                 ImageView image = new ImageView(activity);
@@ -636,31 +635,10 @@ public final class AnnouncementPopup {
         AlertDialog dialog = builder.create();
         dialog.show();
 
-        // Make configured actions look like real buttons rather than faint
-        // text-only dialog actions. Keep the standard dialog click behavior.
-        styleActionButton(activity, dialog.getButton(AlertDialog.BUTTON_POSITIVE));
-        styleActionButton(activity, dialog.getButton(AlertDialog.BUTTON_NEGATIVE));
-        styleActionButton(activity, dialog.getButton(AlertDialog.BUTTON_NEUTRAL));
-
         Window window = dialog.getWindow();
         if (window != null) {
             window.setLayout(dialogWidth, ViewGroup.LayoutParams.WRAP_CONTENT);
         }
-    }
-
-    private static void styleActionButton(Context context, Button button) {
-        if (button == null || button.getVisibility() != ViewGroup.VISIBLE) return;
-
-        GradientDrawable background = new GradientDrawable();
-        background.setColor(0xFF2878E5);
-        background.setCornerRadius(dp(context, 8));
-        button.setBackground(background);
-        button.setTextColor(0xFFFFFFFF);
-        button.setTypeface(null, android.graphics.Typeface.BOLD);
-        button.setTextSize(TypedValue.COMPLEX_UNIT_SP, 14);
-        button.setPadding(dp(context, 12), dp(context, 8), dp(context, 12), dp(context, 8));
-        button.setMinHeight(dp(context, 40));
-        button.setAllCaps(false);
     }
 
     private static void runButtonAction(Context context, ButtonSpec button) {
