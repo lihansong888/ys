@@ -1,0 +1,41 @@
+name: Probe Announcement API
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [ main ]
+    paths:
+      - '.github/workflows/probe-announcement-api.yml'
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Fetch announcement API
+        shell: bash
+        run: |
+          set -euo pipefail
+          curl -L --connect-timeout 15 --max-time 30 -sS -D response-headers.txt 'https://lihansong.top/jar/api.php' -o response.json
+          echo "=== HTTP headers ==="
+          sed -n '1,30p' response-headers.txt
+          echo "=== API body ==="
+          cat response.json
+          echo
+          echo "=== JSON validation ==="
+          python3 - <<'PY'
+          import json
+          with open("response.json", encoding="utf-8") as f:
+              data=json.load(f)
+          print(json.dumps(data, ensure_ascii=False, indent=2))
+          print("\nTOP_LEVEL_TYPE:", type(data).__name__)
+          if isinstance(data, dict):
+              print("TOP_LEVEL_KEYS:", ", ".join(data.keys()))
+          PY
+      - name: Upload API response
+        uses: actions/upload-artifact@v4
+        with:
+          name: announcement-api-probe
+          path: |
+            response-headers.txt
+            response.json
+          retention-days: 3
