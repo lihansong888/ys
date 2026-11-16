@@ -24,11 +24,25 @@ jobs:
           curl -fL --retry 3 "https://github.com/skylot/jadx/releases/download/v1.5.1/jadx-1.5.1.zip" -o jadx.zip
           unzip -q jadx.zip -d jadx
           chmod +x jadx/bin/jadx
-      - name: Decompile APK
+      - name: Decompile APK (keep partial output on decode errors)
         run: |
-          ./jadx/bin/jadx --show-bad-code -d decompiled 88888.apk
-          grep -RniE '验证码|验证|AlertDialog|Dialog\\$|CloudDialogClickListener|setPositiveButton|setNegativeButton' decompiled/sources > dialog-hits.txt || true
-          zip -qr 88888-decompiled-sources.zip decompiled/sources dialog-hits.txt
+          set +e
+          ./jadx/bin/jadx --show-bad-code --no-res -d decompiled 88888.apk
+          JADX_STATUS=$?
+          set -e
+          echo "JADX exit status: $JADX_STATUS"
+          mkdir -p decompiled/sources
+          grep -RniE '验证码|验证|AlertDialog|Dialog\$|CloudDialogClickListener|setPositiveButton|setNegativeButton|WebView' decompiled/sources > dialog-hits.txt || true
+          {
+            echo "JADX_EXIT_STATUS=$JADX_STATUS"
+            echo "SOURCE_FILE_COUNT=$(find decompiled/sources -type f 2>/dev/null | wc -l)"
+            echo "DIALOG_HIT_COUNT=$(wc -l < dialog-hits.txt)"
+            echo
+            echo "=== Dialog search hits ==="
+            cat dialog-hits.txt
+          } > analysis-summary.txt
+          zip -qr 88888-decompiled-sources.zip decompiled/sources dialog-hits.txt analysis-summary.txt
+          test -s 88888-decompiled-sources.zip
       - name: Upload decompiled sources
         uses: actions/upload-artifact@v4
         with:
