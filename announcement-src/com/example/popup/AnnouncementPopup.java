@@ -1,12 +1,16 @@
 package com.example.popup;
 
 import android.app.Activity;
+import android.app.Application;
 import android.app.AlertDialog;
 import android.content.ClipData;
 import android.content.ClipboardManager;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.os.Bundle;
+import android.os.Handler;
+import android.os.Looper;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.net.Uri;
@@ -35,61 +39,137 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.Locale;
 import java.util.Map;
+import java.lang.ref.WeakReference;
 import java.util.concurrent.atomic.AtomicBoolean;
 
 public final class AnnouncementPopup {
     private static final String API = "https://lihansong.top/jar/api.php";
     private static final String PREFS = "announcement_popup_v1";
     private static final AtomicBoolean STARTED = new AtomicBoolean(false);
-    private static volatile String dataFrequencyHolder = "daily";
+    private static final Handler MAIN = new Handler(Looper.getMainLooper());
+    private static volatile Application registeredApplication;
+    private static volatile Application.ActivityLifecycleCallbacks lifecycleCallbacks;
+    private static volatile WeakReference<Activity> resumedActivity = new WeakReference<Activity>(null);
+    private static volatile PendingAnnouncement pendingAnnouncement;
 
     private AnnouncementPopup() {}
 
     public static void run(Context context) {
         if (context == null || !STARTED.compareAndSet(false, true)) return;
-        final Context app = context.getApplicationContext() == null ? context : context.getApplicationContext();
+
+        final Context app = context.getApplicationContext() == null
+                ? context : context.getApplicationContext();
+
+        if (context instanceof Activity) {
+            resumedActivity = new WeakReference<Activity>((Activity) context);
+        } else if (app instanceof Application) {
+            registerActivityTracking((Application) app);
+        }
+
         new Thread(new Runnable() {
             @Override public void run() {
                 try {
-                    Activity activity = waitActivity(app);
-                    if (activity == null) return;
                     JSONObject data = requestJson(API);
-                    if (data == null) return;
-                    resetFrequencyIfConfigChanged(app, data);
-                    if (!enabled(data) || !withinDateWindow(data)) return;
-                    if (!shouldShow(app, data)) return;
+                    if (data == null) {
+                        finishWithoutShowing();
+                        return;
+                    }
 
-                    final String title = nonEmpty(firstString(data, "title", "公告通知"), "公告通知");
-                    final String content = firstString(data, "content", "");
-                    final ArrayList<Bitmap> images = loadImages(data.optJSONArray("images"));
-                    final ArrayList<ButtonSpec> buttons = readButtons(data);
+                    resetFrequencyIfVersionChanged(app, data);
 
-                    activity.runOnUiThread(new Runnable() {
+                    if (!enabled(data) || !withinDateWindow(data)) {
+                        finishWithoutShowing();
+                        return;
+                    }
+
+                    if (!shouldShow(app, data)) {
+                        finishWithoutShowing();
+                        return;
+                    }
+
+                    String title = nonEmpty(firstString(data, "title", "公告通知"), "公告通知");
+                    String content = firstString(data, "content", "");
+                    JSONArray imageUrls = data.optJSONArray("image_urls");
+                    if (imageUrls == null || imageUrls.length() == 0) {
+                        imageUrls = data.optJSONArray("images");
+                    }
+
+                    PendingAnnouncement pending = new PendingAnnouncement(
+                            app,
+                            data.optString("frequency", "daily"),
+                            title,
+                            content,
+                            loadImages(imageUrls),
+                            readButtons(data),
+                            serverNow(data)
+                    );
+
+                    MAIN.post(new Runnable() {
                         @Override public void run() {
-                            if (activity.isFinishing() || activity.isDestroyed()) return;
-                            showDialog(activity, title, content, images, buttons);
-                            markShown(app, dataFrequencyHolder);
+                            pendingAnnouncement = pending;
+                            showPendingIfPossible();
                         }
                     });
                 } catch (Throwable ignored) {
-                } finally {
-                    STARTED.set(false);
+                    finishWithoutShowing();
                 }
             }
         }, "announcement-popup").start();
     }
 
-    private static Activity waitActivity(Context context) {
-        for (int i = 0; i < 40; i++) {
-            Activity activity = findActivity(context);
-            if (activity != null && !activity.isFinishing()) return activity;
-            try { Thread.sleep(500L); } catch (InterruptedException ignored) {}
-        }
-        return null;
+    /*
+     * Init.init() supplies the Application object, not an Activity.
+     * Track the real foreground Activity through public lifecycle callbacks.
+     * This avoids relying on Android hidden-API reflection to read ActivityThread.
+     */
+    private static void registerActivityTracking(final Application application) {
+        MAIN.post(new Runnable() {
+            @Override public void run() {
+                if (registeredApplication == application && lifecycleCallbacks != null) return;
+
+                registeredApplication = application;
+                lifecycleCallbacks = new Application.ActivityLifecycleCallbacks() {
+                    @Override public void onActivityCreated(Activity activity, Bundle state) {}
+
+                    @Override public void onActivityStarted(Activity activity) {}
+
+                    @Override public void onActivityResumed(Activity activity) {
+                        resumedActivity = new WeakReference<Activity>(activity);
+                        showPendingIfPossible();
+                    }
+
+                    @Override public void onActivityPaused(Activity activity) {
+                        Activity current = resumedActivity.get();
+                        if (current == activity) {
+                            resumedActivity = new WeakReference<Activity>(null);
+                        }
+                    }
+
+                    @Override public void onActivityStopped(Activity activity) {}
+
+                    @Override public void onActivitySaveInstanceState(Activity activity, Bundle state) {}
+
+                    @Override public void onActivityDestroyed(Activity activity) {
+                        Activity current = resumedActivity.get();
+                        if (current == activity) {
+                            resumedActivity = new WeakReference<Activity>(null);
+                        }
+                    }
+                };
+
+                application.registerActivityLifecycleCallbacks(lifecycleCallbacks);
+
+                // One non-blocking fallback for apps where init happens after onResume.
+                Activity active = findActivity(application);
+                if (active != null && !active.isFinishing()) {
+                    resumedActivity = new WeakReference<Activity>(active);
+                    showPendingIfPossible();
+                }
+            }
+        });
     }
 
     private static Activity findActivity(Context context) {
-        if (context instanceof Activity) return (Activity) context;
         try {
             Class<?> threadClass = Class.forName("android.app.ActivityThread");
             Method currentThread = threadClass.getMethod("currentActivityThread");
@@ -98,11 +178,14 @@ public final class AnnouncementPopup {
             activitiesField.setAccessible(true);
             Object value = activitiesField.get(thread);
             if (!(value instanceof Map)) return null;
+
             for (Object record : ((Map<?, ?>) value).values()) {
                 if (record == null) continue;
+
                 Field pausedField = record.getClass().getDeclaredField("paused");
                 pausedField.setAccessible(true);
                 if (pausedField.getBoolean(record)) continue;
+
                 Field activityField = record.getClass().getDeclaredField("activity");
                 activityField.setAccessible(true);
                 Object activity = activityField.get(record);
@@ -111,6 +194,53 @@ public final class AnnouncementPopup {
         } catch (Throwable ignored) {
         }
         return null;
+    }
+
+    private static void showPendingIfPossible() {
+        if (Looper.myLooper() != Looper.getMainLooper()) {
+            MAIN.post(new Runnable() {
+                @Override public void run() { showPendingIfPossible(); }
+            });
+            return;
+        }
+
+        final PendingAnnouncement pending = pendingAnnouncement;
+        final Activity activity = resumedActivity.get();
+
+        if (pending == null || activity == null || activity.isFinishing() || activity.isDestroyed()) return;
+
+        try {
+            showDialog(activity, pending.title, pending.content, pending.images, pending.buttons);
+            markShown(pending.context, pending.frequency, pending.serverTime);
+            pendingAnnouncement = null;
+            unregisterActivityTracking();
+            STARTED.set(false);
+        } catch (Throwable ignored) {
+            finishWithoutShowing();
+        }
+    }
+
+    private static void finishWithoutShowing() {
+        MAIN.post(new Runnable() {
+            @Override public void run() {
+                pendingAnnouncement = null;
+                unregisterActivityTracking();
+                STARTED.set(false);
+            }
+        });
+    }
+
+    private static void unregisterActivityTracking() {
+        Application app = registeredApplication;
+        Application.ActivityLifecycleCallbacks callbacks = lifecycleCallbacks;
+
+        if (app != null && callbacks != null) {
+            try { app.unregisterActivityLifecycleCallbacks(callbacks); } catch (Throwable ignored) {}
+        }
+
+        registeredApplication = null;
+        lifecycleCallbacks = null;
+        resumedActivity = new WeakReference<Activity>(null);
     }
 
     private static JSONObject requestJson(String address) {
@@ -150,15 +280,33 @@ public final class AnnouncementPopup {
     }
 
     private static boolean withinDateWindow(JSONObject data) {
-        long now = System.currentTimeMillis();
+        long now = serverNow(data);
         long start = parseDate(data.optString("start_at", "").trim());
         long end = parseDate(data.optString("end_at", "").trim());
         return (start <= 0 || now >= start) && (end <= 0 || now <= end);
     }
 
+    /*
+     * server_time and the admin-entered date strings use the server's wall clock.
+     * Parsing both in the same device timezone lets the server timestamp govern
+     * the window even when the device clock itself is inaccurate.
+     */
+    private static long serverNow(JSONObject data) {
+        long server = parseDate(data.optString("server_time", "").trim());
+        return server > 0 ? server : System.currentTimeMillis();
+    }
+
     private static long parseDate(String value) {
         if (value == null || value.length() == 0) return 0;
-        String[] patterns = {"yyyy-MM-dd HH:mm:ss", "yyyy-MM-dd'T'HH:mm:ss", "yyyy-MM-dd"};
+
+        String[] patterns = {
+                "yyyy-MM-dd'T'HH:mm:ssXXX",
+                "yyyy-MM-dd'T'HH:mm:ss.SSSXXX",
+                "yyyy-MM-dd HH:mm:ss",
+                "yyyy-MM-dd'T'HH:mm:ss",
+                "yyyy-MM-dd"
+        };
+
         for (String pattern : patterns) {
             try {
                 SimpleDateFormat format = new SimpleDateFormat(pattern, Locale.US);
@@ -170,15 +318,37 @@ public final class AnnouncementPopup {
         return 0;
     }
 
-
-    private static void resetFrequencyIfConfigChanged(Context context, JSONObject data) {
-        StringBuilder signature = new StringBuilder();
-        String[] keys = {"enabled", "title", "content", "frequency", "interval_value", "start_at", "end_at", "images", "buttons", "button_text", "button_url"};
-        for (String key : keys) {
-            signature.append(key).append('=').append(data.optString(key, "")).append('|');
-        }
-        String value = Integer.toHexString(signature.toString().hashCode());
+    private static void resetFrequencyIfVersionChanged(Context context, JSONObject data) {
         SharedPreferences prefs = context.getSharedPreferences(PREFS, Context.MODE_PRIVATE);
+        String version = data.optString("version", "").trim();
+
+        if (version.length() > 0) {
+            String oldVersion = prefs.getString("announcement_version", "");
+            if (!version.equals(oldVersion)) {
+                prefs.edit()
+                        .remove("shown_once")
+                        .remove("last_shown")
+                        .remove("last_day")
+                        .putString("announcement_version", version)
+                        .apply();
+            }
+            return;
+        }
+
+        // Compatibility for older API responses that do not provide version.
+        StringBuilder signature = new StringBuilder();
+        String[] keys = {
+                "enabled", "title", "content", "frequency", "interval_value",
+                "start_at", "end_at", "image_urls", "images", "buttons",
+                "button_text", "button_url"
+        };
+        for (String key : keys) {
+            Object value = data.opt(key);
+            signature.append(key).append('=')
+                    .append(value == null ? "" : value.toString()).append('|');
+        }
+
+        String value = Integer.toHexString(signature.toString().hashCode());
         String old = prefs.getString("config_signature", "");
         if (!value.equals(old)) {
             prefs.edit().remove("shown_once").remove("last_shown").remove("last_day")
@@ -189,30 +359,52 @@ public final class AnnouncementPopup {
     private static boolean shouldShow(Context context, JSONObject data) {
         SharedPreferences prefs = context.getSharedPreferences(PREFS, Context.MODE_PRIVATE);
         String frequency = data.optString("frequency", "daily").trim().toLowerCase(Locale.US);
-        if ("always".equals(frequency) || "every_launch".equals(frequency) || "每次".equals(frequency)) return true;
+
+        // Match the exact options provided by admin.php.
+        if ("never".equals(frequency) || "永久不显示".equals(frequency)) return false;
+        if ("startup".equals(frequency) || "always".equals(frequency)
+                || "every_launch".equals(frequency) || "每次".equals(frequency)) return true;
+
         if ("once".equals(frequency) || "only_once".equals(frequency) || "仅一次".equals(frequency)) {
             return !prefs.getBoolean("shown_once", false);
         }
+
         long last = prefs.getLong("last_shown", 0L);
         long now = System.currentTimeMillis();
-        if ("interval".equals(frequency) || "every_n_days".equals(frequency)) {
+
+        if ("interval_days".equals(frequency) || "interval".equals(frequency)
+                || "every_n_days".equals(frequency)) {
             int days = data.optInt("interval_value", 1);
             if (days < 1) days = 1;
             return last == 0L || now - last >= days * 86400000L;
         }
-        if ("hourly".equals(frequency)) return last == 0L || now - last >= 3600000L;
-        if ("weekly".equals(frequency)) return last == 0L || now - last >= 604800000L;
-        String today = new SimpleDateFormat("yyyyMMdd", Locale.US).format(new Date(now));
+
+        if ("interval_hours".equals(frequency) || "hourly".equals(frequency)) {
+            int hours = data.optInt("interval_value", 1);
+            if (hours < 1) hours = 1;
+            return last == 0L || now - last >= hours * 3600000L;
+        }
+
+        if ("weekly".equals(frequency)) {
+            return last == 0L || now - last >= 604800000L;
+        }
+
+        String today = new SimpleDateFormat("yyyyMMdd", Locale.US).format(new Date(serverNow(data)));
         return !today.equals(prefs.getString("last_day", ""));
     }
 
-    private static void markShown(Context context, String frequency) {
+    private static void markShown(Context context, String frequency, long serverTime) {
+        long now = serverTime > 0 ? serverTime : System.currentTimeMillis();
+
         SharedPreferences.Editor editor = context.getSharedPreferences(PREFS, Context.MODE_PRIVATE).edit();
-        editor.putLong("last_shown", System.currentTimeMillis());
-        editor.putString("last_day", new SimpleDateFormat("yyyyMMdd", Locale.US).format(new Date()));
-        if ("once".equalsIgnoreCase(frequency) || "only_once".equalsIgnoreCase(frequency) || "仅一次".equals(frequency)) {
+        editor.putLong("last_shown", now);
+        editor.putString("last_day", new SimpleDateFormat("yyyyMMdd", Locale.US).format(new Date(now)));
+
+        if ("once".equalsIgnoreCase(frequency) || "only_once".equalsIgnoreCase(frequency)
+                || "仅一次".equals(frequency)) {
             editor.putBoolean("shown_once", true);
         }
+
         editor.apply();
     }
 
@@ -228,10 +420,12 @@ public final class AnnouncementPopup {
     private static ArrayList<Bitmap> loadImages(JSONArray urls) {
         ArrayList<Bitmap> result = new ArrayList<Bitmap>();
         if (urls == null) return result;
+
         int count = Math.min(urls.length(), 5);
         for (int i = 0; i < count; i++) {
             String address = urls.optString(i, "").trim();
             if (address.length() == 0) continue;
+
             Bitmap bitmap = downloadBitmap(resolveImageUrl(address));
             if (bitmap != null) result.add(bitmap);
         }
@@ -297,6 +491,12 @@ public final class AnnouncementPopup {
 
     private static void showDialog(final Activity activity, String title, String content,
                                    ArrayList<Bitmap> images, ArrayList<ButtonSpec> buttons) {
+        DisplayMetrics metrics = activity.getResources().getDisplayMetrics();
+        int dialogWidth = (int) (metrics.widthPixels * 0.60f);
+        int maxDialogHeight = (int) (metrics.heightPixels * 0.50f);
+        int reservedHeight = dp(activity, 125);
+        int maxContentHeight = Math.max(dp(activity, 90), maxDialogHeight - reservedHeight);
+
         LinearLayout column = new LinearLayout(activity);
         column.setOrientation(LinearLayout.VERTICAL);
         int pad = dp(activity, 18);
@@ -313,22 +513,25 @@ public final class AnnouncementPopup {
                     ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT));
         }
 
+        int maxImageWidth = Math.max(dp(activity, 100), dialogWidth - dp(activity, 36));
         for (Bitmap bitmap : images) {
             ImageView image = new ImageView(activity);
             image.setImageBitmap(bitmap);
             image.setAdjustViewBounds(true);
             image.setScaleType(ImageView.ScaleType.FIT_CENTER);
             image.setMaxHeight(dp(activity, 170));
-            image.setMaxWidth(dp(activity, 520));
+            image.setMaxWidth(maxImageWidth);
+
             LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(
-                    ViewGroup.LayoutParams.MATCH_PARENT, dp(activity, 170));
+                    ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT);
             params.topMargin = dp(activity, 10);
             column.addView(image, params);
         }
 
-        ScrollView scroll = new ScrollView(activity);
+        BoundedScrollView scroll = new BoundedScrollView(activity, maxContentHeight);
         scroll.setFillViewport(false);
-        scroll.addView(column);
+        scroll.addView(column, new ScrollView.LayoutParams(
+                ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT));
 
         AlertDialog.Builder builder = new AlertDialog.Builder(activity)
                 .setTitle(nonEmpty(title, "公告通知"))
@@ -350,12 +553,10 @@ public final class AnnouncementPopup {
 
         AlertDialog dialog = builder.create();
         dialog.show();
+
         Window window = dialog.getWindow();
         if (window != null) {
-            DisplayMetrics metrics = activity.getResources().getDisplayMetrics();
-            int width = (int) (metrics.widthPixels * (metrics.widthPixels > metrics.heightPixels ? 0.72f : 0.90f));
-            int height = (int) (metrics.heightPixels * 0.76f);
-            window.setLayout(width, height);
+            window.setLayout(dialogWidth, ViewGroup.LayoutParams.WRAP_CONTENT);
         }
     }
 
@@ -382,6 +583,47 @@ public final class AnnouncementPopup {
 
     private static int dp(Context context, int value) {
         return (int) (value * context.getResources().getDisplayMetrics().density + 0.5f);
+    }
+
+    private static final class PendingAnnouncement {
+        final Context context;
+        final String frequency;
+        final String title;
+        final String content;
+        final ArrayList<Bitmap> images;
+        final ArrayList<ButtonSpec> buttons;
+        final long serverTime;
+
+        PendingAnnouncement(Context context, String frequency, String title, String content,
+                            ArrayList<Bitmap> images, ArrayList<ButtonSpec> buttons, long serverTime) {
+            this.context = context;
+            this.frequency = frequency;
+            this.title = title;
+            this.content = content;
+            this.images = images;
+            this.buttons = buttons;
+            this.serverTime = serverTime;
+        }
+    }
+
+    private static final class BoundedScrollView extends ScrollView {
+        private final int maxHeight;
+
+        BoundedScrollView(Context context, int maxHeight) {
+            super(context);
+            this.maxHeight = maxHeight;
+        }
+
+        @Override protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
+            int mode = MeasureSpec.getMode(heightMeasureSpec);
+            int size = MeasureSpec.getSize(heightMeasureSpec);
+
+            if (mode == MeasureSpec.UNSPECIFIED || size > maxHeight) {
+                heightMeasureSpec = MeasureSpec.makeMeasureSpec(maxHeight, MeasureSpec.AT_MOST);
+            }
+
+            super.onMeasure(widthMeasureSpec, heightMeasureSpec);
+        }
     }
 
     private static final class ButtonSpec {
