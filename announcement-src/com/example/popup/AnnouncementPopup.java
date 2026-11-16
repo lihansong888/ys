@@ -548,48 +548,75 @@ public final class AnnouncementPopup {
         int maxDialogHeight = (int) (metrics.heightPixels * 0.50f);
         int reservedHeight = dp(activity, 125);
         int maxContentHeight = Math.max(dp(activity, 90), maxDialogHeight - reservedHeight);
-
-        LinearLayout column = new LinearLayout(activity);
-        column.setOrientation(LinearLayout.VERTICAL);
         int pad = dp(activity, 18);
-        column.setPadding(pad, dp(activity, 8), pad, dp(activity, 8));
 
-        if (content != null && content.trim().length() > 0) {
-            TextView message = new TextView(activity);
-            message.setText(content);
-            message.setTextSize(TypedValue.COMPLEX_UNIT_SP, 16);
-            message.setTextColor(0xFF222222);
-            message.setLineSpacing(dp(activity, 3), 1.0f);
-            message.setGravity(Gravity.START);
-            column.addView(message, new LinearLayout.LayoutParams(
-                    ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT));
+        // Keep the title in its own centered row at the top of the dialog.
+        TextView titleView = new TextView(activity);
+        titleView.setText(nonEmpty(title, "公告通知"));
+        titleView.setTextSize(TypedValue.COMPLEX_UNIT_SP, 20);
+        titleView.setTextColor(0xFF222222);
+        titleView.setGravity(Gravity.CENTER);
+        titleView.setPadding(pad, dp(activity, 14), pad, dp(activity, 10));
+        titleView.setTypeface(null, android.graphics.Typeface.BOLD);
+
+        // The image gallery uses a fixed 28% column on the left. Text occupies
+        // the remaining width; standard AlertDialog action buttons stay below.
+        LinearLayout body = new LinearLayout(activity);
+        body.setOrientation(LinearLayout.HORIZONTAL);
+        body.setGravity(Gravity.CENTER_VERTICAL);
+        body.setPadding(pad, dp(activity, 8), pad, dp(activity, 8));
+
+        int innerWidth = Math.max(dp(activity, 120), dialogWidth - pad * 2);
+        int imageColumnWidth = images != null && images.size() > 0
+                ? Math.max(dp(activity, 64), (int) (innerWidth * 0.28f)) : 0;
+
+        if (images != null && images.size() > 0) {
+            LinearLayout imageColumn = new LinearLayout(activity);
+            imageColumn.setOrientation(LinearLayout.VERTICAL);
+            imageColumn.setGravity(Gravity.CENTER);
+            int imageCount = images.size();
+            int imageHeight = Math.max(dp(activity, 48),
+                    Math.min(dp(activity, 110), maxContentHeight / imageCount));
+
+            for (Bitmap bitmap : images) {
+                ImageView image = new ImageView(activity);
+                image.setImageBitmap(bitmap);
+                image.setAdjustViewBounds(true);
+                image.setScaleType(ImageView.ScaleType.FIT_CENTER);
+                LinearLayout.LayoutParams imageParams = new LinearLayout.LayoutParams(
+                        ViewGroup.LayoutParams.MATCH_PARENT, imageHeight);
+                imageParams.bottomMargin = dp(activity, 5);
+                imageColumn.addView(image, imageParams);
+            }
+
+            LinearLayout.LayoutParams imageColumnParams = new LinearLayout.LayoutParams(
+                    imageColumnWidth, ViewGroup.LayoutParams.WRAP_CONTENT);
+            imageColumnParams.rightMargin = dp(activity, 12);
+            body.addView(imageColumn, imageColumnParams);
         }
 
-        int maxImageWidth = Math.max(dp(activity, 100), dialogWidth - dp(activity, 36));
-        for (Bitmap bitmap : images) {
-            ImageView image = new ImageView(activity);
-            image.setImageBitmap(bitmap);
-            image.setAdjustViewBounds(true);
-            image.setScaleType(ImageView.ScaleType.FIT_CENTER);
-            image.setMaxHeight(dp(activity, 170));
-            image.setMaxWidth(maxImageWidth);
-
-            LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(
-                    ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT);
-            params.topMargin = dp(activity, 10);
-            column.addView(image, params);
-        }
+        TextView message = new TextView(activity);
+        message.setText(content == null ? "" : content);
+        message.setTextSize(TypedValue.COMPLEX_UNIT_SP, 16);
+        message.setTextColor(0xFF222222);
+        message.setLineSpacing(dp(activity, 3), 1.0f);
+        message.setGravity(Gravity.CENTER_VERTICAL | Gravity.START);
+        LinearLayout.LayoutParams messageParams = new LinearLayout.LayoutParams(
+                0, ViewGroup.LayoutParams.WRAP_CONTENT, 1.0f);
+        body.addView(message, messageParams);
 
         BoundedScrollView scroll = new BoundedScrollView(activity, maxContentHeight);
         scroll.setFillViewport(false);
-        scroll.addView(column, new ScrollView.LayoutParams(
+        scroll.addView(body, new ScrollView.LayoutParams(
                 ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT));
 
         AlertDialog.Builder builder = new AlertDialog.Builder(activity)
-                .setTitle(nonEmpty(title, "公告通知"))
+                .setCustomTitle(titleView)
                 .setView(scroll)
                 .setCancelable(true);
 
+        // AlertDialog owns the bottom action row, so images and text cannot
+        // cover or push the buttons out of the dialog.
         if (buttons.size() > 0) {
             final ButtonSpec spec = buttons.get(0);
             builder.setPositiveButton(spec.text, (dialog, which) -> runButtonAction(activity, spec));
