@@ -19,8 +19,16 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y libsmali-java zip unzip
 
+      - name: Set up Java 17
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: 17
+
       - name: Set up Android SDK
         uses: android-actions/setup-android@v3
+        with:
+          packages: platform-tools
 
       - name: Install Android platform and build tools
         run: |
