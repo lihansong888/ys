@@ -13,12 +13,14 @@ import android.os.Handler;
 import android.os.Looper;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.graphics.drawable.GradientDrawable;
 import android.net.Uri;
 import android.util.DisplayMetrics;
 import android.util.TypedValue;
 import android.view.Gravity;
 import android.view.ViewGroup;
 import android.view.Window;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ScrollView;
@@ -634,10 +636,31 @@ public final class AnnouncementPopup {
         AlertDialog dialog = builder.create();
         dialog.show();
 
+        // Make configured actions look like real buttons rather than faint
+        // text-only dialog actions. Keep the standard dialog click behavior.
+        styleActionButton(activity, dialog.getButton(AlertDialog.BUTTON_POSITIVE));
+        styleActionButton(activity, dialog.getButton(AlertDialog.BUTTON_NEGATIVE));
+        styleActionButton(activity, dialog.getButton(AlertDialog.BUTTON_NEUTRAL));
+
         Window window = dialog.getWindow();
         if (window != null) {
             window.setLayout(dialogWidth, ViewGroup.LayoutParams.WRAP_CONTENT);
         }
+    }
+
+    private static void styleActionButton(Context context, Button button) {
+        if (button == null || button.getVisibility() != ViewGroup.VISIBLE) return;
+
+        GradientDrawable background = new GradientDrawable();
+        background.setColor(0xFF2878E5);
+        background.setCornerRadius(dp(context, 8));
+        button.setBackground(background);
+        button.setTextColor(0xFFFFFFFF);
+        button.setTypeface(null, android.graphics.Typeface.BOLD);
+        button.setTextSize(TypedValue.COMPLEX_UNIT_SP, 14);
+        button.setPadding(dp(context, 12), dp(context, 8), dp(context, 12), dp(context, 8));
+        button.setMinHeight(dp(context, 40));
+        button.setAllCaps(false);
     }
 
     private static void runButtonAction(Context context, ButtonSpec button) {
