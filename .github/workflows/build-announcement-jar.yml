@@ -1,0 +1,94 @@
+name: Build 88888 Announcement Test JAR
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [ main ]
+    paths:
+      - 'announcement-src/**'
+      - '.github/workflows/build-announcement-jar.yml'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install Smali tools
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y libsmali-java zip unzip
+
+      - name: Set up Android SDK
+        uses: android-actions/setup-android@v3
+
+      - name: Install Android platform and build tools
+        run: |
+          sdkmanager "platforms;android-35" "build-tools;35.0.0"
+
+      - name: Extract original JAR and disassemble DEX
+        run: |
+          set -euo pipefail
+          test -s 88888.jar
+          mkdir original smali
+          unzip -q 88888.jar -d original
+          test -s original/classes.dex
+          java -jar "$(find /usr/share/java -maxdepth 1 -name 'baksmali*.jar' | head -n 1)" disassemble original/classes.dex -o smali
+
+      - name: Compile announcement popup and merge classes
+        run: |
+          set -euo pipefail
+          mkdir -p build/classes build/newdex new-smali
+          ANDROID_JAR="$ANDROID_HOME/platforms/android-35/android.jar"
+          javac -source 8 -target 8 -encoding UTF-8 -cp "$ANDROID_JAR" -d build/classes announcement-src/com/example/popup/AnnouncementPopup.java
+          "$ANDROID_HOME/build-tools/35.0.0/d8" --min-api 21 --lib "$ANDROID_JAR" --output build/newdex build/classes
+          java -jar "$(find /usr/share/java -maxdepth 1 -name 'baksmali*.jar' | head -n 1)" disassemble build/newdex/classes.dex -o new-smali
+          cp -a new-smali/. smali/
+
+          cat > smali/com/example/popup/GateHook.smali <<'SMALI'
+          .class public final Lcom/example/popup/GateHook;
+          .super Ljava/lang/Object;
+          .source "GateHook.java"
+
+          .method private constructor <init>()V
+              .registers 1
+              invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+              return-void
+          .end method
+
+          .method public static run(Landroid/content/Context;)V
+              .registers 1
+              invoke-static {p0}, Lcom/example/popup/AnnouncementPopup;->run(Landroid/content/Context;)V
+              return-void
+          .end method
+          SMALI
+
+          java -jar "$(find /usr/share/java -maxdepth 1 -name 'smali*.jar' ! -name 'baksmali*.jar' | head -n 1)" assemble smali -o build/classes.dex
+
+      - name: Rebuild original JAR without changing other entries
+        run: |
+          set -euo pipefail
+          mkdir -p output
+          cp original/META-INF/MANIFEST.MF output/MANIFEST.MF
+          cp build/classes.dex output/classes.dex
+          (cd output && zip -X -q ../88888-announcement-test.jar MANIFEST.MF classes.dex)
+          unzip -t 88888-announcement-test.jar
+          test "$(unzip -p 88888-announcement-test.jar classes.dex | wc -c)" -gt 1000000
+
+      - name: Verify replacement was compiled into final DEX
+        run: |
+          set -euo pipefail
+          mkdir verify
+          unzip -p 88888-announcement-test.jar classes.dex > verify/classes.dex
+          java -jar "$(find /usr/share/java -maxdepth 1 -name 'baksmali*.jar' | head -n 1)" disassemble verify/classes.dex -o verify/smali
+          grep -q 'Lcom/example/popup/AnnouncementPopup;' verify/smali/com/example/popup/GateHook.smali
+          grep -q 'AnnouncementPopup;->run' verify/smali/com/example/popup/GateHook.smali
+          test -s verify/smali/com/example/popup/AnnouncementPopup.smali
+          echo "Final JAR static verification passed."
+
+      - name: Upload test JAR
+        uses: actions/upload-artifact@v4
+        with:
+          name: 88888-announcement-test-jar
+          path: 88888-announcement-test.jar
+          retention-days: 7
