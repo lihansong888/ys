@@ -262,7 +262,6 @@ public final class AnnouncementPopup {
             while ((count = in.read(buffer)) != -1) out.write(buffer, 0, count);
             in.close();
             JSONObject object = new JSONObject(new String(out.toByteArray(), "UTF-8"));
-            dataFrequencyHolder = object.optString("frequency", "daily");
             return object;
         } catch (Throwable ignored) {
             return null;
