@@ -54,7 +54,9 @@ public final class AnnouncementPopup {
                     Activity activity = waitActivity(app);
                     if (activity == null) return;
                     JSONObject data = requestJson(API);
-                    if (data == null || !enabled(data) || !withinDateWindow(data)) return;
+                    if (data == null) return;
+                    resetFrequencyIfConfigChanged(app, data);
+                    if (!enabled(data) || !withinDateWindow(data)) return;
                     if (!shouldShow(app, data)) return;
 
                     final String title = nonEmpty(firstString(data, "title", "公告通知"), "公告通知");
@@ -70,6 +72,8 @@ public final class AnnouncementPopup {
                         }
                     });
                 } catch (Throwable ignored) {
+                } finally {
+                    STARTED.set(false);
                 }
             }
         }, "announcement-popup").start();
@@ -164,6 +168,22 @@ public final class AnnouncementPopup {
             } catch (Throwable ignored) {}
         }
         return 0;
+    }
+
+
+    private static void resetFrequencyIfConfigChanged(Context context, JSONObject data) {
+        StringBuilder signature = new StringBuilder();
+        String[] keys = {"enabled", "title", "content", "frequency", "interval_value", "start_at", "end_at", "images", "buttons", "button_text", "button_url"};
+        for (String key : keys) {
+            signature.append(key).append('=').append(data.optString(key, "")).append('|');
+        }
+        String value = Integer.toHexString(signature.toString().hashCode());
+        SharedPreferences prefs = context.getSharedPreferences(PREFS, Context.MODE_PRIVATE);
+        String old = prefs.getString("config_signature", "");
+        if (!value.equals(old)) {
+            prefs.edit().remove("shown_once").remove("last_shown").remove("last_day")
+                    .putString("config_signature", value).apply();
+        }
     }
 
     private static boolean shouldShow(Context context, JSONObject data) {
@@ -298,8 +318,10 @@ public final class AnnouncementPopup {
             image.setImageBitmap(bitmap);
             image.setAdjustViewBounds(true);
             image.setScaleType(ImageView.ScaleType.FIT_CENTER);
+            image.setMaxHeight(dp(activity, 170));
+            image.setMaxWidth(dp(activity, 520));
             LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(
-                    ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT);
+                    ViewGroup.LayoutParams.MATCH_PARENT, dp(activity, 170));
             params.topMargin = dp(activity, 10);
             column.addView(image, params);
         }
@@ -331,7 +353,9 @@ public final class AnnouncementPopup {
         Window window = dialog.getWindow();
         if (window != null) {
             DisplayMetrics metrics = activity.getResources().getDisplayMetrics();
-            window.setLayout((int) (metrics.widthPixels * 0.88f), ViewGroup.LayoutParams.WRAP_CONTENT);
+            int width = (int) (metrics.widthPixels * (metrics.widthPixels > metrics.heightPixels ? 0.72f : 0.90f));
+            int height = (int) (metrics.heightPixels * 0.76f);
+            window.setLayout(width, height);
         }
     }
 
