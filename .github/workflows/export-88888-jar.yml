@@ -1,0 +1,30 @@
+name: Export 88888 JAR for analysis
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - '.github/workflows/export-88888-jar.yml'
+
+permissions:
+  contents: read
+  actions: write
+
+jobs:
+  export:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Download original JAR
+        run: |
+          set -euo pipefail
+          curl -fL --retry 3 \
+            "https://raw.githubusercontent.com/lihansong888/ys/main/88888.jar" \
+            -o 88888.jar
+          test "$(stat -c%s 88888.jar)" -eq 3245502
+          sha1sum 88888.jar
+      - name: Upload JAR as temporary artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: 88888-jar-analysis
+          path: 88888.jar
+          retention-days: 1
