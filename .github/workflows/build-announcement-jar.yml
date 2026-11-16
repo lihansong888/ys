@@ -83,8 +83,9 @@ jobs:
           mkdir -p output/META-INF
           cp original/META-INF/MANIFEST.MF output/META-INF/MANIFEST.MF
           cp build/classes.dex output/classes.dex
-          (cd output && zip -X -q ../88888-announcement-test.jar MANIFEST.MF classes.dex)
+          (cd output && zip -X -q ../88888-announcement-test.jar META-INF/MANIFEST.MF classes.dex)
           unzip -t 88888-announcement-test.jar
+          unzip -p 88888-announcement-test.jar META-INF/MANIFEST.MF | grep -q 'Manifest-Version: 1.0'
           test "$(unzip -p 88888-announcement-test.jar classes.dex | wc -c)" -gt 1000000
 
       - name: Verify replacement was compiled into final DEX
