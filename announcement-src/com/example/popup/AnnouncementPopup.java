@@ -566,11 +566,11 @@ public final class AnnouncementPopup {
         LinearLayout body = new LinearLayout(activity);
         body.setOrientation(LinearLayout.HORIZONTAL);
         body.setGravity(Gravity.CENTER_VERTICAL);
-        body.setPadding(pad, dp(activity, 8), pad, dp(activity, 8));
+        body.setPadding(dp(activity, 10), dp(activity, 8), dp(activity, 14), dp(activity, 8));
 
         int innerWidth = Math.max(dp(activity, 120), dialogWidth - pad * 2);
         int imageColumnWidth = images != null && images.size() > 0
-                ? Math.max(dp(activity, 80), (int) (innerWidth * 0.36f)) : 0;
+                ? Math.max(dp(activity, 80), (int) (innerWidth * 0.27f)) : 0;
 
         if (images != null && images.size() > 0) {
             LinearLayout imageColumn = new LinearLayout(activity);
@@ -593,7 +593,7 @@ public final class AnnouncementPopup {
 
             LinearLayout.LayoutParams imageColumnParams = new LinearLayout.LayoutParams(
                     imageColumnWidth, ViewGroup.LayoutParams.WRAP_CONTENT);
-            imageColumnParams.rightMargin = dp(activity, 12);
+            imageColumnParams.rightMargin = dp(activity, 8);
             body.addView(imageColumn, imageColumnParams);
         }
 
