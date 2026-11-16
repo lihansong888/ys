@@ -2,7 +2,8 @@ package com.example.popup;
 
 import android.app.Activity;
 import android.app.AlertDialog;
-import android.app.Application;
+import android.content.ClipData;
+import android.content.ClipboardManager;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -18,54 +19,43 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ScrollView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import org.json.JSONArray;
 import org.json.JSONObject;
 
 import java.io.ByteArrayOutputStream;
 import java.io.InputStream;
+import java.lang.reflect.Field;
+import java.lang.reflect.Method;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.Locale;
+import java.util.Map;
 import java.util.concurrent.atomic.AtomicBoolean;
 
-public final class AnnouncementPopup implements Application.ActivityLifecycleCallbacks {
+public final class AnnouncementPopup {
     private static final String API = "https://lihansong.top/jar/api.php";
     private static final String PREFS = "announcement_popup_v1";
-    private static final AtomicBoolean FETCHING = new AtomicBoolean(false);
-    private static volatile boolean registered;
-    private static volatile boolean shownInProcess;
-    private final Application application;
+    private static final AtomicBoolean STARTED = new AtomicBoolean(false);
+    private static volatile String dataFrequencyHolder = "daily";
 
-    private AnnouncementPopup(Application app) {
-        application = app;
-    }
+    private AnnouncementPopup() {}
 
     public static void run(Context context) {
-        if (context == null) return;
-        Context appContext = context.getApplicationContext();
-        if (!(appContext instanceof Application)) return;
-        Application app = (Application) appContext;
-        synchronized (AnnouncementPopup.class) {
-            if (registered) return;
-            registered = true;
-            app.registerActivityLifecycleCallbacks(new AnnouncementPopup(app));
-        }
-    }
-
-    @Override public void onActivityResumed(final Activity activity) {
-        if (activity == null || activity.isFinishing() || shownInProcess) return;
-        if (!FETCHING.compareAndSet(false, true)) return;
-        shownInProcess = true;
+        if (context == null || !STARTED.compareAndSet(false, true)) return;
+        final Context app = context.getApplicationContext() == null ? context : context.getApplicationContext();
         new Thread(new Runnable() {
             @Override public void run() {
                 try {
+                    Activity activity = waitActivity(app);
+                    if (activity == null) return;
                     JSONObject data = requestJson(API);
                     if (data == null || !enabled(data) || !withinDateWindow(data)) return;
-                    if (!shouldShow(application, data)) return;
+                    if (!shouldShow(app, data)) return;
 
                     final String title = nonEmpty(firstString(data, "title", "公告通知"), "公告通知");
                     final String content = firstString(data, "content", "");
@@ -76,18 +66,48 @@ public final class AnnouncementPopup implements Application.ActivityLifecycleCal
                         @Override public void run() {
                             if (activity.isFinishing() || activity.isDestroyed()) return;
                             showDialog(activity, title, content, images, buttons);
-                            markShown(application, dataFrequencyHolder);
+                            markShown(app, dataFrequencyHolder);
                         }
                     });
                 } catch (Throwable ignored) {
-                } finally {
-                    FETCHING.set(false);
                 }
             }
-        }, "announcement-fetch").start();
+        }, "announcement-popup").start();
     }
 
-    private static volatile String dataFrequencyHolder = "daily";
+    private static Activity waitActivity(Context context) {
+        for (int i = 0; i < 40; i++) {
+            Activity activity = findActivity(context);
+            if (activity != null && !activity.isFinishing()) return activity;
+            try { Thread.sleep(500L); } catch (InterruptedException ignored) {}
+        }
+        return null;
+    }
+
+    private static Activity findActivity(Context context) {
+        if (context instanceof Activity) return (Activity) context;
+        try {
+            Class<?> threadClass = Class.forName("android.app.ActivityThread");
+            Method currentThread = threadClass.getMethod("currentActivityThread");
+            Object thread = currentThread.invoke(null);
+            Field activitiesField = threadClass.getDeclaredField("mActivities");
+            activitiesField.setAccessible(true);
+            Object value = activitiesField.get(thread);
+            if (!(value instanceof Map)) return null;
+            for (Object record : ((Map<?, ?>) value).values()) {
+                if (record == null) continue;
+                Field pausedField = record.getClass().getDeclaredField("paused");
+                pausedField.setAccessible(true);
+                if (pausedField.getBoolean(record)) continue;
+                Field activityField = record.getClass().getDeclaredField("activity");
+                activityField.setAccessible(true);
+                Object activity = activityField.get(record);
+                if (activity instanceof Activity) return (Activity) activity;
+            }
+        } catch (Throwable ignored) {
+        }
+        return null;
+    }
 
     private static JSONObject requestJson(String address) {
         HttpURLConnection connection = null;
@@ -100,8 +120,7 @@ public final class AnnouncementPopup implements Application.ActivityLifecycleCal
             connection.setInstanceFollowRedirects(true);
             connection.setRequestProperty("Accept", "application/json");
             connection.setRequestProperty("Cache-Control", "no-cache");
-            int status = connection.getResponseCode();
-            if (status != 200) return null;
+            if (connection.getResponseCode() != 200) return null;
             InputStream in = connection.getInputStream();
             ByteArrayOutputStream out = new ByteArrayOutputStream();
             byte[] buffer = new byte[4096];
@@ -128,26 +147,21 @@ public final class AnnouncementPopup implements Application.ActivityLifecycleCal
 
     private static boolean withinDateWindow(JSONObject data) {
         long now = System.currentTimeMillis();
-        String start = data.optString("start_at", "").trim();
-        String end = data.optString("end_at", "").trim();
-        long startTime = parseDate(start);
-        long endTime = parseDate(end);
-        if (startTime > 0 && now < startTime) return false;
-        if (endTime > 0 && now > endTime) return false;
-        return true;
+        long start = parseDate(data.optString("start_at", "").trim());
+        long end = parseDate(data.optString("end_at", "").trim());
+        return (start <= 0 || now >= start) && (end <= 0 || now <= end);
     }
 
     private static long parseDate(String value) {
         if (value == null || value.length() == 0) return 0;
-        String[] patterns = new String[] {"yyyy-MM-dd HH:mm:ss", "yyyy-MM-dd'T'HH:mm:ss", "yyyy-MM-dd"};
+        String[] patterns = {"yyyy-MM-dd HH:mm:ss", "yyyy-MM-dd'T'HH:mm:ss", "yyyy-MM-dd"};
         for (String pattern : patterns) {
             try {
                 SimpleDateFormat format = new SimpleDateFormat(pattern, Locale.US);
                 format.setLenient(false);
                 Date date = format.parse(value);
                 if (date != null) return date.getTime();
-            } catch (Throwable ignored) {
-            }
+            } catch (Throwable ignored) {}
         }
         return 0;
     }
@@ -242,19 +256,21 @@ public final class AnnouncementPopup implements Application.ActivityLifecycleCal
                     if (text.length() == 0) text = firstString(button, "title", "");
                     if (text.length() == 0) text = firstString(button, "name", "");
                     if (text.length() == 0) text = firstString(button, "label", "");
-                    String url = firstString(button, "url", "");
-                    if (url.length() == 0) url = firstString(button, "link", "");
-                    if (url.length() == 0) url = firstString(button, "href", "");
-                    if (text.trim().length() > 0) result.add(new ButtonSpec(text, url));
+                    String type = firstString(button, "type", "url");
+                    String value = firstString(button, "value", "");
+                    if (value.length() == 0) value = firstString(button, "url", "");
+                    if (value.length() == 0) value = firstString(button, "link", "");
+                    if (value.length() == 0) value = firstString(button, "href", "");
+                    if (text.trim().length() > 0) result.add(new ButtonSpec(text, type, value));
                 } else if (item instanceof String && ((String) item).trim().length() > 0) {
-                    result.add(new ButtonSpec(((String) item).trim(), ""));
+                    result.add(new ButtonSpec(((String) item).trim(), "url", ""));
                 }
             }
         }
         if (result.size() == 0) {
             String text = firstString(data, "button_text", "");
-            String url = firstString(data, "button_url", "");
-            if (text.trim().length() > 0) result.add(new ButtonSpec(text, url));
+            String value = firstString(data, "button_url", "");
+            if (text.trim().length() > 0) result.add(new ButtonSpec(text, "url", value));
         }
         return result;
     }
@@ -282,10 +298,10 @@ public final class AnnouncementPopup implements Application.ActivityLifecycleCal
             image.setImageBitmap(bitmap);
             image.setAdjustViewBounds(true);
             image.setScaleType(ImageView.ScaleType.FIT_CENTER);
-            LinearLayout.LayoutParams imageParams = new LinearLayout.LayoutParams(
+            LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(
                     ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT);
-            imageParams.topMargin = dp(activity, 10);
-            column.addView(image, imageParams);
+            params.topMargin = dp(activity, 10);
+            column.addView(image, params);
         }
 
         ScrollView scroll = new ScrollView(activity);
@@ -299,15 +315,15 @@ public final class AnnouncementPopup implements Application.ActivityLifecycleCal
 
         if (buttons.size() > 0) {
             final ButtonSpec spec = buttons.get(0);
-            builder.setPositiveButton(spec.text, (dialog, which) -> openLink(activity, spec.url));
+            builder.setPositiveButton(spec.text, (dialog, which) -> runButtonAction(activity, spec));
         }
         if (buttons.size() > 1) {
             final ButtonSpec spec = buttons.get(1);
-            builder.setNegativeButton(spec.text, (dialog, which) -> openLink(activity, spec.url));
+            builder.setNegativeButton(spec.text, (dialog, which) -> runButtonAction(activity, spec));
         }
         if (buttons.size() > 2) {
             final ButtonSpec spec = buttons.get(2);
-            builder.setNeutralButton(spec.text, (dialog, which) -> openLink(activity, spec.url));
+            builder.setNeutralButton(spec.text, (dialog, which) -> runButtonAction(activity, spec));
         }
 
         AlertDialog dialog = builder.create();
@@ -319,14 +335,25 @@ public final class AnnouncementPopup implements Application.ActivityLifecycleCal
         }
     }
 
+    private static void runButtonAction(Context context, ButtonSpec button) {
+        if ("copy".equalsIgnoreCase(button.type)) {
+            try {
+                ClipboardManager clipboard = (ClipboardManager) context.getSystemService(Context.CLIPBOARD_SERVICE);
+                if (clipboard != null) clipboard.setPrimaryClip(ClipData.newPlainText(button.text, button.value));
+                Toast.makeText(context, "已复制", Toast.LENGTH_SHORT).show();
+            } catch (Throwable ignored) {}
+            return;
+        }
+        openLink(context, button.value);
+    }
+
     private static void openLink(Context context, String address) {
         if (address == null || address.trim().length() == 0) return;
         try {
             Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(address.trim()));
             intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
             context.startActivity(intent);
-        } catch (Throwable ignored) {
-        }
+        } catch (Throwable ignored) {}
     }
 
     private static int dp(Context context, int value) {
@@ -335,17 +362,12 @@ public final class AnnouncementPopup implements Application.ActivityLifecycleCal
 
     private static final class ButtonSpec {
         final String text;
-        final String url;
-        ButtonSpec(String text, String url) {
+        final String type;
+        final String value;
+        ButtonSpec(String text, String type, String value) {
             this.text = text;
-            this.url = url;
+            this.type = type;
+            this.value = value;
         }
     }
-
-    @Override public void onActivityCreated(Activity activity, android.os.Bundle state) {}
-    @Override public void onActivityStarted(Activity activity) {}
-    @Override public void onActivityPaused(Activity activity) {}
-    @Override public void onActivityStopped(Activity activity) {}
-    @Override public void onActivitySaveInstanceState(Activity activity, android.os.Bundle state) {}
-    @Override public void onActivityDestroyed(Activity activity) {}
 }
