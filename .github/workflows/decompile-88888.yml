@@ -1,0 +1,33 @@
+name: Decompile 88888 APK for dialog analysis
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  actions: write
+
+jobs:
+  decompile:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Download original APK
+        run: |
+          curl -fL --retry 3 "https://raw.githubusercontent.com/lihansong888/ys/main/88888.jar" -o 88888.apk
+          test "$(stat -c%s 88888.apk)" = "3245502"
+      - name: Install JADX
+        run: |
+          curl -fL --retry 3 "https://github.com/skylot/jadx/releases/download/v1.5.1/jadx-1.5.1.zip" -o jadx.zip
+          unzip -q jadx.zip -d jadx
+          chmod +x jadx/bin/jadx
+      - name: Decompile APK
+        run: |
+          ./jadx/bin/jadx --show-bad-code -d decompiled 88888.apk
+          grep -RniE '验证码|验证|AlertDialog|Dialog\\$|CloudDialogClickListener|setPositiveButton|setNegativeButton' decompiled/sources > dialog-hits.txt || true
+          zip -qr 88888-decompiled-sources.zip decompiled/sources dialog-hits.txt
+      - name: Upload decompiled sources
+        uses: actions/upload-artifact@v4
+        with:
+          name: 88888-decompiled-sources
+          path: 88888-decompiled-sources.zip
+          retention-days: 1
