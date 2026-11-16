@@ -51,6 +51,8 @@ public final class AnnouncementPopup {
     private static volatile Application.ActivityLifecycleCallbacks lifecycleCallbacks;
     private static volatile WeakReference<Activity> resumedActivity = new WeakReference<Activity>(null);
     private static volatile PendingAnnouncement pendingAnnouncement;
+    private static int activityRetryCount;
+    private static boolean activityRetryScheduled;
 
     private AnnouncementPopup() {}
 
@@ -107,7 +109,9 @@ public final class AnnouncementPopup {
                     MAIN.post(new Runnable() {
                         @Override public void run() {
                             pendingAnnouncement = pending;
+                            activityRetryCount = 0;
                             showPendingIfPossible();
+                            scheduleActivityRetry();
                         }
                     });
                 } catch (Throwable ignored) {
@@ -218,6 +222,55 @@ public final class AnnouncementPopup {
         } catch (Throwable ignored) {
             finishWithoutShowing();
         }
+    }
+
+    /*
+     * Retry locating the foreground Activity. This covers the case where
+     * AnnouncementPopup.run() is called with an Application context after
+     * the first Activity has already resumed and lifecycle callbacks therefore
+     * have no new onActivityResumed event to observe.
+     */
+    private static void scheduleActivityRetry() {
+        if (Looper.myLooper() != Looper.getMainLooper()) {
+            MAIN.post(new Runnable() {
+                @Override public void run() { scheduleActivityRetry(); }
+            });
+            return;
+        }
+
+        if (pendingAnnouncement == null || activityRetryScheduled) return;
+        activityRetryScheduled = true;
+
+        MAIN.postDelayed(new Runnable() {
+            @Override public void run() {
+                activityRetryScheduled = false;
+                if (pendingAnnouncement == null) return;
+
+                Activity active = resumedActivity.get();
+                if (active == null || active.isFinishing() || active.isDestroyed()) {
+                    Application app = registeredApplication;
+                    if (app != null) {
+                        Activity found = findActivity(app);
+                        if (found != null && !found.isFinishing() && !found.isDestroyed()) {
+                            resumedActivity = new WeakReference<Activity>(found);
+                            active = found;
+                        }
+                    }
+                }
+
+                if (active != null && !active.isFinishing() && !active.isDestroyed()) {
+                    showPendingIfPossible();
+                    return;
+                }
+
+                activityRetryCount++;
+                if (activityRetryCount < 120) {
+                    scheduleActivityRetry();
+                } else {
+                    finishWithoutShowing();
+                }
+            }
+        }, 500L);
     }
 
     private static void finishWithoutShowing() {
