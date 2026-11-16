@@ -77,14 +77,18 @@ jobs:
           test -n "$SMALI_JAR"
           java -jar "$SMALI_JAR" assemble smali -o build/classes.dex
 
-      - name: Rebuild original JAR without changing other entries
+      - name: Replace only classes.dex and preserve all other original JAR entries
         run: |
           set -euo pipefail
-          mkdir -p output/META-INF
-          cp original/META-INF/MANIFEST.MF output/META-INF/MANIFEST.MF
-          cp build/classes.dex output/classes.dex
-          (cd output && zip -X -q ../88888-announcement-test.jar META-INF/MANIFEST.MF classes.dex)
+          cp 88888.jar 88888-announcement-test.jar
+          zip -q -d 88888-announcement-test.jar classes.dex
+          cp build/classes.dex ./classes.dex
+          zip -X -q 88888-announcement-test.jar classes.dex
+          rm classes.dex
+          # Original signatures are invalid after classes.dex changes; remove only signature files.
+          zip -q -d 88888-announcement-test.jar 'META-INF/*.SF' 'META-INF/*.RSA' 'META-INF/*.DSA' 'META-INF/*.EC' 'META-INF/SIG-*' || true
           unzip -t 88888-announcement-test.jar
+          unzip -l 88888-announcement-test.jar
           unzip -p 88888-announcement-test.jar META-INF/MANIFEST.MF | grep -q 'Manifest-Version: 1.0'
           test "$(unzip -p 88888-announcement-test.jar classes.dex | wc -c)" -gt 1000000
 
