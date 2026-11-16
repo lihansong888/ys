@@ -37,3 +37,5 @@ jobs:
               --title "88888 公告弹窗测试包" \
               --notes "公告弹窗测试包。原始构建通过 GitHub Actions 编译与静态检查。"
           fi
+
+# republish updated artifact
