@@ -73,7 +73,9 @@ jobs:
           .end method
           SMALI
 
-          java -jar "$(find /usr/share/java -maxdepth 1 -name 'smali*.jar' ! -name 'baksmali*.jar' | head -n 1)" assemble smali -o build/classes.dex
+          SMALI_JAR="$(find /usr/share/java -maxdepth 1 -name 'smali-[0-9]*.jar' | head -n 1)"
+          test -n "$SMALI_JAR"
+          java -jar "$SMALI_JAR" assemble smali -o build/classes.dex
 
       - name: Rebuild original JAR without changing other entries
         run: |
