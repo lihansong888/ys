@@ -473,8 +473,9 @@ public final class AnnouncementPopup {
         ArrayList<Bitmap> result = new ArrayList<Bitmap>();
         if (urls == null) return result;
 
-        int count = Math.min(urls.length(), 5);
-        for (int i = 0; i < count; i++) {
+        // The announcement layout intentionally supports exactly one image.
+        // If an earlier URL is unavailable, try the next one until one loads.
+        for (int i = 0; i < urls.length() && result.isEmpty(); i++) {
             String address = urls.optString(i, "").trim();
             if (address.length() == 0) continue;
 
