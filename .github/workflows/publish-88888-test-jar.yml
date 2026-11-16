@@ -1,0 +1,32 @@
+name: Publish 88888 Test JAR Direct Download
+
+on:
+  push:
+    branches: [ main ]
+    paths:
+      - '.github/workflows/publish-88888-test-jar.yml'
+
+permissions:
+  actions: read
+  contents: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Download the successful test artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: 88888-announcement-test-jar
+          path: ./release
+          run-id: 43919595510
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Publish direct-download release
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          test -f ./release/88888-announcement-test.jar
+          gh release create announcement-test-20261117 ./release/88888-announcement-test.jar \
+            --title "88888 公告弹窗测试包" \
+            --notes "公告弹窗测试包。原始构建通过 GitHub Actions 编译与静态检查。"
