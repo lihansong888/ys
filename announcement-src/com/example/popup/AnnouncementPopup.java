@@ -546,7 +546,7 @@ public final class AnnouncementPopup {
     private static void showDialog(final Activity activity, String title, String content,
                                    ArrayList<Bitmap> images, ArrayList<ButtonSpec> buttons) {
         DisplayMetrics metrics = activity.getResources().getDisplayMetrics();
-        int dialogWidth = (int) (metrics.widthPixels * 0.70f);
+        int dialogWidth = (int) (metrics.widthPixels * 0.65f);
         int maxDialogHeight = (int) (metrics.heightPixels * 0.60f);
         int reservedHeight = dp(activity, 125);
         int maxContentHeight = Math.max(dp(activity, 90), maxDialogHeight - reservedHeight);
