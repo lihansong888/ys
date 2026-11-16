@@ -369,7 +369,7 @@ public final class AnnouncementPopup {
         }
 
         long last = prefs.getLong("last_shown", 0L);
-        long now = System.currentTimeMillis();
+        long now = serverNow(data);
 
         if ("interval_days".equals(frequency) || "interval".equals(frequency)
                 || "every_n_days".equals(frequency)) {
