@@ -1,0 +1,49 @@
+name: Inspect 88888 APK with apktool
+
+on:
+  push:
+    branches: [ main ]
+    paths:
+      - '.github/workflows/inspect-88888-apktool.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  inspect:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Download original APK
+        run: |
+          curl -fL --retry 3 "https://raw.githubusercontent.com/lihansong888/ys/main/88888.jar" -o 88888.apk
+          test "$(stat -c%s 88888.apk)" = "3245502"
+          file 88888.apk
+      - name: Install apktool
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y apktool
+          apktool --version
+      - name: Decode APK resources and Smali
+        run: |
+          apktool d -f 88888.apk -o decoded
+          test -s decoded/AndroidManifest.xml
+          find decoded -maxdepth 2 -type d -name 'smali*' -print
+          grep -RniE 'GateHook;->run|VerifyGate;->start|lihansong.top/verify/api.php' decoded/smali* > hook-hits.txt || true
+          {
+            echo "=== Manifest ==="
+            sed -n '1,240p' decoded/AndroidManifest.xml
+            echo
+            echo "=== Old gate hook references ==="
+            cat hook-hits.txt
+            echo
+            echo "=== Smali files ==="
+            find decoded -type f -name '*.smali' | wc -l
+          } > apk-inspection.txt
+          zip -qr 88888-apktool-inspection.zip decoded/AndroidManifest.xml decoded/smali* hook-hits.txt apk-inspection.txt
+      - name: Upload inspection artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: 88888-apktool-inspection
+          path: 88888-apktool-inspection.zip
+          retention-days: 3
