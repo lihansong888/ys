@@ -2,6 +2,10 @@ name: Decompile 88888 APK for dialog analysis
 
 on:
   workflow_dispatch:
+  push:
+    branches: [ main ]
+    paths:
+      - '.github/workflows/decompile-88888.yml'
 
 permissions:
   contents: read
