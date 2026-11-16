@@ -22,7 +22,7 @@ jobs:
         with:
           name: 88888-announcement-test-jar
           path: ./release
-          run-id: 43919595510
+          run-id: 43923695510
           github-token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Publish direct-download release
@@ -30,6 +30,10 @@ jobs:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           test -f ./release/88888-announcement-test.jar
-          gh release create announcement-test-20261117 ./release/88888-announcement-test.jar \
-            --title "88888 公告弹窗测试包" \
-            --notes "公告弹窗测试包。原始构建通过 GitHub Actions 编译与静态检查。"
+          if gh release view announcement-test-20261117 >/dev/null 2>&1; then
+            gh release upload announcement-test-20261117 ./release/88888-announcement-test.jar --clobber
+          else
+            gh release create announcement-test-20261117 ./release/88888-announcement-test.jar \
+              --title "88888 公告弹窗测试包" \
+              --notes "公告弹窗测试包。原始构建通过 GitHub Actions 编译与静态检查。"
+          fi
