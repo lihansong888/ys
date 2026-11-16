@@ -1,10 +1,10 @@
 name: Publish 88888 Test JAR Direct Download
 
 on:
-  push:
-    branches: [ main ]
-    paths:
-      - '.github/workflows/publish-88888-test-jar.yml'
+  workflow_run:
+    workflows: ["Build 88888 Announcement Test JAR"]
+    types: [completed]
+    branches: [main]
 
 permissions:
   actions: read
@@ -12,30 +12,30 @@ permissions:
 
 jobs:
   publish:
+    if: ${{ github.event.workflow_run.conclusion == 'success' }}
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Download the successful test artifact
+      - name: Download the artifact from this exact successful build
         uses: actions/download-artifact@v4
         with:
           name: 88888-announcement-test-jar
           path: ./release
-          run-id: 43923695510
+          run-id: ${{ github.event.workflow_run.id }}
           github-token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Publish direct-download release
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          test -f ./release/88888-announcement-test.jar
+          set -euo pipefail
+          test -s ./release/88888-announcement-test.jar
           if gh release view announcement-test-20261117 >/dev/null 2>&1; then
             gh release upload announcement-test-20261117 ./release/88888-announcement-test.jar --clobber
           else
             gh release create announcement-test-20261117 ./release/88888-announcement-test.jar \
               --title "88888 公告弹窗测试包" \
-              --notes "公告弹窗测试包。原始构建通过 GitHub Actions 编译与静态检查。"
+              --notes "公告弹窗测试包。由成功的 GitHub Actions 构建自动发布。"
           fi
-
-# republish updated artifact
