@@ -68,8 +68,8 @@ jobs:
       - name: Rebuild original JAR without changing other entries
         run: |
           set -euo pipefail
-          mkdir -p output
-          cp original/META-INF/MANIFEST.MF output/MANIFEST.MF
+          mkdir -p output/META-INF
+          cp original/META-INF/MANIFEST.MF output/META-INF/MANIFEST.MF
           cp build/classes.dex output/classes.dex
           (cd output && zip -X -q ../88888-announcement-test.jar MANIFEST.MF classes.dex)
           unzip -t 88888-announcement-test.jar
