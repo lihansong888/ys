@@ -58,68 +58,76 @@ public final class AnnouncementPopup {
     private AnnouncementPopup() {}
 
     public static void run(Context context) {
-        if (context == null || !STARTED.compareAndSet(false, true)) return;
+        if (context == null) return;
+        if (!STARTED.compareAndSet(false, true)) return;
 
-        final Context app = context.getApplicationContext() == null
-                ? context : context.getApplicationContext();
+        try {
+            final Context app = context.getApplicationContext() == null
+                    ? context : context.getApplicationContext();
 
-        if (context instanceof Activity) {
-            resumedActivity = new WeakReference<Activity>((Activity) context);
-        } else if (app instanceof Application) {
-            registerActivityTracking((Application) app);
-        }
-
-        new Thread(new Runnable() {
-            @Override public void run() {
-                try {
-                    JSONObject data = requestJson(API);
-                    if (data == null) {
-                        finishWithoutShowing();
-                        return;
-                    }
-
-                    resetFrequencyIfVersionChanged(app, data);
-
-                    if (!enabled(data) || !withinDateWindow(data)) {
-                        finishWithoutShowing();
-                        return;
-                    }
-
-                    if (!shouldShow(app, data)) {
-                        finishWithoutShowing();
-                        return;
-                    }
-
-                    String title = nonEmpty(firstString(data, "title", "公告通知"), "公告通知");
-                    String content = firstString(data, "content", "");
-                    JSONArray imageUrls = data.optJSONArray("image_urls");
-                    if (imageUrls == null || imageUrls.length() == 0) {
-                        imageUrls = data.optJSONArray("images");
-                    }
-
-                    PendingAnnouncement pending = new PendingAnnouncement(
-                            app,
-                            data.optString("frequency", "daily"),
-                            title,
-                            content,
-                            loadImages(imageUrls),
-                            readButtons(data),
-                            serverNow(data)
-                    );
-
-                    MAIN.post(new Runnable() {
-                        @Override public void run() {
-                            pendingAnnouncement = pending;
-                            activityRetryCount = 0;
-                            showPendingIfPossible();
-                            scheduleActivityRetry();
-                        }
-                    });
-                } catch (Throwable ignored) {
-                    finishWithoutShowing();
-                }
+            if (context instanceof Activity) {
+                resumedActivity = new WeakReference<Activity>((Activity) context);
+            } else if (app instanceof Application) {
+                registerActivityTracking((Application) app);
             }
-        }, "announcement-popup").start();
+
+            new Thread(new Runnable() {
+                @Override public void run() {
+                    try {
+                        JSONObject data = requestJson(API);
+                        if (data == null) {
+                            finishWithoutShowing();
+                            return;
+                        }
+
+                        resetFrequencyIfVersionChanged(app, data);
+
+                        if (!enabled(data) || !withinDateWindow(data)) {
+                            finishWithoutShowing();
+                            return;
+                        }
+
+                        if (!shouldShow(app, data)) {
+                            finishWithoutShowing();
+                            return;
+                        }
+
+                        String title = nonEmpty(firstString(data, "title", "公告通知"), "公告通知");
+                        String content = firstString(data, "content", "");
+                        JSONArray imageUrls = data.optJSONArray("image_urls");
+                        if (imageUrls == null || imageUrls.length() == 0) {
+                            imageUrls = data.optJSONArray("images");
+                        }
+
+                        PendingAnnouncement pending = new PendingAnnouncement(
+                                app,
+                                data.optString("frequency", "daily"),
+                                title,
+                                content,
+                                loadImages(imageUrls),
+                                readButtons(data),
+                                serverNow(data)
+                        );
+
+                        MAIN.post(new Runnable() {
+                            @Override public void run() {
+                                pendingAnnouncement = pending;
+                                activityRetryCount = 0;
+                                showPendingIfPossible();
+                                scheduleActivityRetry();
+                            }
+                        });
+                    } catch (Throwable ignored) {
+                        finishWithoutShowing();
+                    }
+                }
+            }, "announcement-popup").start();
+        } catch (Throwable ignored) {
+            // The optional announcement must never break the host's JAR loading.
+            pendingAnnouncement = null;
+            STARTED.set(false);
+            try { unregisterActivityTracking(); } catch (Throwable ignoredAgain) {}
+        }
     }
 
     /*
