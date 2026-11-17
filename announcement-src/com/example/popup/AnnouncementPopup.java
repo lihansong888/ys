@@ -554,16 +554,24 @@ public final class AnnouncementPopup {
     private static void showDialog(final Activity activity, String title, String content,
                                    ArrayList<Bitmap> images, ArrayList<ButtonSpec> buttons) {
         DisplayMetrics metrics = activity.getResources().getDisplayMetrics();
-        int dialogWidth = (int) (metrics.widthPixels * 0.65f);
+        // Portrait phones use almost the full available width so the dialog
+        // remains a horizontal card instead of collapsing into a narrow column.
+        boolean portrait = metrics.heightPixels > metrics.widthPixels;
+        int screenWidth = metrics.widthPixels;
+        int availableWidth = Math.max(dp(activity, 180), screenWidth - dp(activity, 24));
+        float widthRatio = portrait ? 0.92f : 0.65f;
+        int dialogWidth = Math.min(availableWidth, (int) (screenWidth * widthRatio));
+        dialogWidth = Math.min(dialogWidth, dp(activity, 960));
+
         int maxDialogHeight = (int) (metrics.heightPixels * 0.60f);
         int reservedHeight = dp(activity, 125);
         int maxContentHeight = Math.max(dp(activity, 90), maxDialogHeight - reservedHeight);
-        int pad = dp(activity, 18);
+        int pad = dp(activity, 14);
 
         // Keep the title in its own centered row at the top of the dialog.
         TextView titleView = new TextView(activity);
         titleView.setText(nonEmpty(title, "公告通知"));
-        titleView.setTextSize(TypedValue.COMPLEX_UNIT_SP, 20);
+        titleView.setTextSize(TypedValue.COMPLEX_UNIT_SP, 19);
         titleView.setTextColor(0xFF222222);
         titleView.setGravity(Gravity.CENTER);
         titleView.setPadding(pad, dp(activity, 14), pad, dp(activity, 10));
@@ -607,7 +615,7 @@ public final class AnnouncementPopup {
 
         TextView message = new TextView(activity);
         message.setText(content == null ? "" : content);
-        message.setTextSize(TypedValue.COMPLEX_UNIT_SP, 16);
+        message.setTextSize(TypedValue.COMPLEX_UNIT_SP, 15);
         message.setTextColor(0xFF222222);
         message.setLineSpacing(dp(activity, 3), 1.0f);
         message.setGravity(Gravity.CENTER_VERTICAL | Gravity.START);
