@@ -438,7 +438,7 @@ function detail(id) {
         vod_actor: actor,
         vod_director: director,
         vod_remarks: score,
-        vod_content: "⛔警告：高清4K影视所有资源均采集于互联网络公开渠道，仅供个人学习爬虫、网络技术研究使用，禁止私自转载、售卖、商用牟利。所有内容版权归属原站点及版权方，软件仅做内容检索整理，不存储违规资源，不对第三方内容承担任何法律与连带责任。🚫警告：高清4K影视提示您：请勿相信片中广告！\n" + (desc || cls)
+        vod_content: (desc || cls)
     };
 
     // 线路名：nav-tabs 里 a[href="#tabs-home-{sid}"]，文本去 svg/badge
