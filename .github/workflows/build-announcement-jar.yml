@@ -71,7 +71,7 @@ jobs:
           .method public static run(Landroid/content/Context;)V
               .registers 2
               :try_start
-              invoke-static {p1}, Lcom/example/popup/AnnouncementPopup;->run(Landroid/content/Context;)V
+              invoke-static {p0}, Lcom/example/popup/AnnouncementPopup;->run(Landroid/content/Context;)V
               :try_end
               goto :done
               .catch Ljava/lang/Throwable; {:try_start .. :try_end} :catch_all
