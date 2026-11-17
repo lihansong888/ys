@@ -1,5 +1,5 @@
 {"lives": [
-{"name": "高清4K影视专区",
+{"name": "DS",
 "type": 0,
 "url": "https://cyuan.netlify.app/tvbox/lives/18+/18+千部独家传媒无水印来袭tvlist.txt",
 "epg": "http://epg.112114.xyz/?ch={name}&date={date}"}],
@@ -26,7 +26,7 @@
 
 {
       "key": "XMVideo",
-      "name": "寒松高清CR影视",
+      "name": "XMVideo",
       "type": 3,
       "api": "csp_XMVideo",
       "searchable": 1,
@@ -37,7 +37,7 @@
             
 {
             "key": "JAVSB",
-            "name": "寒松高清CR影视",
+            "name": "JAVSB",
             "type": 3,
             "api": "csp_XBPQ",
            "jar": "https://gitee.com/lihansong86220952/ys/raw/master/jar/JAVSB.jar",
