@@ -1,13 +1,13 @@
-name: Build 88888 Announcement Test JAR
+name: Build Dongchen Announcement Test JAR
 
 on:
   workflow_dispatch:
   push:
     branches: [ main ]
     paths:
+      - 'dongchen.jar'
       - 'announcement-src/**'
-      - 'js/**'
-      - 'lib/**'
+      - '.github/scripts/inject_announcement_hook.py'
       - '.github/workflows/build-announcement-jar.yml'
 
 jobs:
@@ -36,16 +36,17 @@ jobs:
         run: |
           sdkmanager "platforms;android-35" "build-tools;35.0.0"
 
-      - name: Extract original JAR and disassemble DEX
+      - name: Extract dongchen.jar and disassemble original DEX
         run: |
           set -euo pipefail
-          test -s 88888.jar
+          test -s dongchen.jar
           mkdir original smali
-          unzip -q 88888.jar -d original
+          unzip -q dongchen.jar -d original
           test -s original/classes.dex
           java -jar "$(find /usr/share/java -maxdepth 1 -name 'baksmali*.jar' | head -n 1)" disassemble original/classes.dex -o smali
+          test -s smali/com/github/catvod/spider/Init.smali
 
-      - name: Compile announcement popup and merge classes
+      - name: Compile popup classes and merge into original DEX
         run: |
           set -euo pipefail
           mkdir -p build/classes build/newdex new-smali
@@ -82,39 +83,38 @@ jobs:
           .end method
           SMALI
 
+          python3 .github/scripts/inject_announcement_hook.py smali
+
           SMALI_JAR="$(find /usr/share/java -maxdepth 1 -name 'smali-[0-9]*.jar' | head -n 1)"
           test -n "$SMALI_JAR"
           java -jar "$SMALI_JAR" assemble smali -o build/classes.dex
 
-      - name: Replace only classes.dex and preserve all other original JAR entries
+      - name: Replace classes.dex and remove invalid old signatures
         run: |
           set -euo pipefail
-          cp 88888.jar 88888-announcement-test.jar
-          zip -q -d 88888-announcement-test.jar classes.dex
+          cp dongchen.jar dongchen-announcement-test.jar
+          zip -q -d dongchen-announcement-test.jar classes.dex
           cp build/classes.dex ./classes.dex
-          zip -X -q 88888-announcement-test.jar classes.dex
+          zip -X -q dongchen-announcement-test.jar classes.dex
           rm classes.dex
-          # Original signatures are invalid after classes.dex changes; remove only signature files.
-          zip -q -d 88888-announcement-test.jar 'META-INF/*.SF' 'META-INF/*.RSA' 'META-INF/*.DSA' 'META-INF/*.EC' 'META-INF/SIG-*' || true
-          unzip -t 88888-announcement-test.jar
-          unzip -l 88888-announcement-test.jar
-          unzip -p 88888-announcement-test.jar META-INF/MANIFEST.MF | grep -q 'Manifest-Version: 1.0'
-          test "$(unzip -p 88888-announcement-test.jar classes.dex | wc -c)" -gt 1000000
+          zip -q -d dongchen-announcement-test.jar 'META-INF/*.SF' 'META-INF/*.RSA' 'META-INF/*.DSA' 'META-INF/*.EC' 'META-INF/SIG-*' || true
+          unzip -t dongchen-announcement-test.jar
+          test "$(unzip -p dongchen-announcement-test.jar classes.dex | wc -c)" -gt 1000000
 
-      - name: Verify replacement was compiled into final DEX
+      - name: Verify popup and actual Init hook in final JAR
         run: |
           set -euo pipefail
           mkdir verify
-          unzip -p 88888-announcement-test.jar classes.dex > verify/classes.dex
+          unzip -p dongchen-announcement-test.jar classes.dex > verify/classes.dex
           java -jar "$(find /usr/share/java -maxdepth 1 -name 'baksmali*.jar' | head -n 1)" disassemble verify/classes.dex -o verify/smali
           grep -q 'Lcom/example/popup/AnnouncementPopup;' verify/smali/com/example/popup/GateHook.smali
-          grep -q 'AnnouncementPopup;->run' verify/smali/com/example/popup/GateHook.smali
+          grep -q 'GateHook;->run(Landroid/content/Context;)V' verify/smali/com/github/catvod/spider/Init.smali
           test -s verify/smali/com/example/popup/AnnouncementPopup.smali
           echo "Final JAR static verification passed."
 
       - name: Upload test JAR
         uses: actions/upload-artifact@v4
         with:
-          name: 88888-announcement-test-jar
-          path: 88888-announcement-test.jar
+          name: dongchen-announcement-test-jar
+          path: dongchen-announcement-test.jar
           retention-days: 7
