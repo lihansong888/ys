@@ -6,6 +6,8 @@ on:
     branches: [ main ]
     paths:
       - 'announcement-src/**'
+      - 'js/**'
+      - 'lib/**'
       - '.github/workflows/build-announcement-jar.yml'
 
 jobs:
